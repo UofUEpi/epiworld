@@ -4,92 +4,54 @@
 \contentsline {section}{\numberline {1.2}Hello world}{1}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Tools}{2}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Contagion}{2}{subsection.1.2.2}%
-\contentsline {chapter}{\numberline {2}Hierarchical Index}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Class Hierarchy}{3}{section.2.1}%
-\contentsline {chapter}{\numberline {3}Class Index}{5}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Class List}{5}{section.3.1}%
-\contentsline {chapter}{\numberline {4}Class Documentation}{7}{chapter.4}%
-\contentsline {section}{\numberline {4.1}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::values\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::abstract\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}value$<$ T $>$ Class Template Reference}{7}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Adj\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}List Class Reference}{9}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Constructor \& Destructor Documentation}{9}{subsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.1.1}AdjList()}{9}{subsubsection.4.2.1.1}%
-\contentsline {section}{\numberline {4.3}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::values\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::parser\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}tool\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Argu\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desc Struct Reference}{10}{section.4.3}%
-\contentsline {section}{\numberline {4.4}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::argument\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}incorrect\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}type Class Reference}{10}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base$<$ TSeq $>$ Class Template Reference}{11}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{12}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Member Function Documentation}{12}{subsection.4.5.2}%
-\contentsline {subsubsection}{\numberline {4.5.2.1}get\_today\_total()}{12}{subsubsection.4.5.2.1}%
-\contentsline {subsubsection}{\numberline {4.5.2.2}record\_variant()}{13}{subsubsection.4.5.2.2}%
-\contentsline {section}{\numberline {4.6}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Help\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Group\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Details Struct Reference}{13}{section.4.6}%
-\contentsline {section}{\numberline {4.7}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Help\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Option\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Details Struct Reference}{14}{section.4.7}%
-\contentsline {section}{\numberline {4.8}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::values\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::parser\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}tool\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Integer\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Desc Struct Reference}{14}{section.4.8}%
-\contentsline {section}{\numberline {4.9}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}option\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}format\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}error Class Reference}{15}{section.4.9}%
-\contentsline {section}{\numberline {4.10}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Parse\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Result\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Iterator Class Reference}{16}{section.4.10}%
-\contentsline {section}{\numberline {4.11}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Key\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Value Class Reference}{16}{section.4.11}%
-\contentsline {section}{\numberline {4.12}LFMCMC$<$ TData $>$ Class Template Reference}{17}{section.4.12}%
-\contentsline {subsection}{\numberline {4.12.1}Detailed Description}{17}{subsection.4.12.1}%
-\contentsline {subsection}{\numberline {4.12.2}Member Function Documentation}{18}{subsection.4.12.2}%
-\contentsline {subsubsection}{\numberline {4.12.2.1}set\_rand\_engine()}{18}{subsubsection.4.12.2.1}%
-\contentsline {section}{\numberline {4.13}Location$<$ TSeq $>$ Class Template Reference}{18}{section.4.13}%
-\contentsline {section}{\numberline {4.14}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::missing\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}argument\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}exception Class Reference}{19}{section.4.14}%
-\contentsline {section}{\numberline {4.15}Model$<$ TSeq $>$ Class Template Reference}{20}{section.4.15}%
-\contentsline {subsection}{\numberline {4.15.1}Member Function Documentation}{23}{subsection.4.15.1}%
-\contentsline {subsubsection}{\numberline {4.15.1.1}add\_param()}{23}{subsubsection.4.15.1.1}%
-\contentsline {subsubsection}{\numberline {4.15.1.2}add\_status\_susceptible()}{24}{subsubsection.4.15.1.2}%
-\contentsline {subsubsection}{\numberline {4.15.1.3}init()}{24}{subsubsection.4.15.1.3}%
-\contentsline {subsubsection}{\numberline {4.15.1.4}pop\_from\_adjlist()}{25}{subsubsection.4.15.1.4}%
-\contentsline {subsubsection}{\numberline {4.15.1.5}reset()}{25}{subsubsection.4.15.1.5}%
-\contentsline {subsubsection}{\numberline {4.15.1.6}reset\_status\_codes()}{25}{subsubsection.4.15.1.6}%
-\contentsline {subsubsection}{\numberline {4.15.1.7}set\_backup()}{26}{subsubsection.4.15.1.7}%
-\contentsline {subsubsection}{\numberline {4.15.1.8}set\_rand\_engine()}{26}{subsubsection.4.15.1.8}%
-\contentsline {subsubsection}{\numberline {4.15.1.9}set\_rewire\_fun()}{26}{subsubsection.4.15.1.9}%
-\contentsline {subsubsection}{\numberline {4.15.1.10}set\_user\_data()}{27}{subsubsection.4.15.1.10}%
-\contentsline {subsubsection}{\numberline {4.15.1.11}write\_data()}{27}{subsubsection.4.15.1.11}%
-\contentsline {subsubsection}{\numberline {4.15.1.12}write\_edgelist()}{27}{subsubsection.4.15.1.12}%
-\contentsline {section}{\numberline {4.16}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Option Struct Reference}{28}{section.4.16}%
-\contentsline {section}{\numberline {4.17}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::option\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}exists\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}error Class Reference}{29}{section.4.17}%
-\contentsline {section}{\numberline {4.18}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::option\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}has\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}no\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}value\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}exception Class Reference}{30}{section.4.18}%
-\contentsline {section}{\numberline {4.19}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::option\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}not\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}exists\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}exception Class Reference}{31}{section.4.19}%
-\contentsline {section}{\numberline {4.20}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::option\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}not\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}has\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}argument\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}exception Class Reference}{33}{section.4.20}%
-\contentsline {section}{\numberline {4.21}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::option\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}not\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}present\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}exception Class Reference}{34}{section.4.21}%
-\contentsline {section}{\numberline {4.22}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::option\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}required\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}exception Class Reference}{36}{section.4.22}%
-\contentsline {section}{\numberline {4.23}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::option\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}requires\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}argument\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}exception Class Reference}{37}{section.4.23}%
-\contentsline {section}{\numberline {4.24}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::option\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}syntax\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}exception Class Reference}{39}{section.4.24}%
-\contentsline {section}{\numberline {4.25}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Option\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Adder Class Reference}{40}{section.4.25}%
-\contentsline {section}{\numberline {4.26}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Option\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Details Class Reference}{40}{section.4.26}%
-\contentsline {section}{\numberline {4.27}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Option\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception Class Reference}{41}{section.4.27}%
-\contentsline {section}{\numberline {4.28}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Option\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Parse\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception Class Reference}{42}{section.4.28}%
-\contentsline {section}{\numberline {4.29}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Option\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Parser Class Reference}{43}{section.4.29}%
-\contentsline {section}{\numberline {4.30}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Options Class Reference}{43}{section.4.30}%
-\contentsline {section}{\numberline {4.31}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Option\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Spec\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception Class Reference}{44}{section.4.31}%
-\contentsline {section}{\numberline {4.32}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Option\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Value Class Reference}{45}{section.4.32}%
-\contentsline {section}{\numberline {4.33}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Parse\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Result Class Reference}{45}{section.4.33}%
-\contentsline {section}{\numberline {4.34}Person$<$ TSeq $>$ Class Template Reference}{46}{section.4.34}%
-\contentsline {section}{\numberline {4.35}Person\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tools$<$ TSeq $>$ Class Template Reference}{47}{section.4.35}%
-\contentsline {subsection}{\numberline {4.35.1}Detailed Description}{47}{subsection.4.35.1}%
-\contentsline {section}{\numberline {4.36}Person\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Viruses$<$ TSeq $>$ Class Template Reference}{48}{section.4.36}%
-\contentsline {subsection}{\numberline {4.36.1}Detailed Description}{48}{subsection.4.36.1}%
-\contentsline {section}{\numberline {4.37}Progress Class Reference}{48}{section.4.37}%
-\contentsline {subsection}{\numberline {4.37.1}Detailed Description}{49}{subsection.4.37.1}%
-\contentsline {section}{\numberline {4.38}Queue$<$ TSeq $>$ Class Template Reference}{49}{section.4.38}%
-\contentsline {subsection}{\numberline {4.38.1}Detailed Description}{49}{subsection.4.38.1}%
-\contentsline {section}{\numberline {4.39}Rand\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Graph Class Reference}{50}{section.4.39}%
-\contentsline {section}{\numberline {4.40}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::values\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Signed\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Check$<$ T, B $>$ Struct Template Reference}{50}{section.4.40}%
-\contentsline {section}{\numberline {4.41}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::values\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Signed\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Check$<$ T, false $>$ Struct Template Reference}{50}{section.4.41}%
-\contentsline {section}{\numberline {4.42}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::values\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Signed\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Check$<$ T, true $>$ Struct Template Reference}{50}{section.4.42}%
-\contentsline {section}{\numberline {4.43}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::values\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::standard\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}value$<$ T $>$ Class Template Reference}{51}{section.4.43}%
-\contentsline {section}{\numberline {4.44}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::values\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::standard\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}value$<$ bool $>$ Class Reference}{53}{section.4.44}%
-\contentsline {section}{\numberline {4.45}Tool$<$ TSeq $>$ Class Template Reference}{54}{section.4.45}%
-\contentsline {subsection}{\numberline {4.45.1}Detailed Description}{55}{subsection.4.45.1}%
-\contentsline {subsection}{\numberline {4.45.2}Member Function Documentation}{56}{subsection.4.45.2}%
-\contentsline {subsubsection}{\numberline {4.45.2.1}get\_susceptibility\_reduction()}{56}{subsubsection.4.45.2.1}%
-\contentsline {section}{\numberline {4.46}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::values\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::type\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}is\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}container$<$ T $>$ Struct Template Reference}{56}{section.4.46}%
-\contentsline {section}{\numberline {4.47}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::values\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::type\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}is\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}container$<$ std\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::vector$<$ T $>$ $>$ Struct Template Reference}{56}{section.4.47}%
-\contentsline {section}{\numberline {4.48}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data$<$ TSeq $>$ Class Template Reference}{57}{section.4.48}%
-\contentsline {section}{\numberline {4.49}cxxopts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Value Class Reference}{58}{section.4.49}%
-\contentsline {section}{\numberline {4.50}vec\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hasher$<$ T $>$ Struct Template Reference}{59}{section.4.50}%
-\contentsline {section}{\numberline {4.51}Virus$<$ TSeq $>$ Class Template Reference}{59}{section.4.51}%
-\contentsline {subsection}{\numberline {4.51.1}Detailed Description}{60}{subsection.4.51.1}%
-\contentsline {subsection}{\numberline {4.51.2}Member Function Documentation}{60}{subsection.4.51.2}%
-\contentsline {subsubsection}{\numberline {4.51.2.1}get\_prob\_infecting()}{60}{subsubsection.4.51.2.1}%
-\contentsline {chapter}{Index}{63}{section*.109}%
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Class Documentation}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Adj\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}List Class Reference}{5}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Constructor \& Destructor Documentation}{5}{subsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.1.1}AdjList()}{5}{subsubsection.3.1.1.1}%
+\contentsline {section}{\numberline {3.2}Data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base$<$ TSeq $>$ Class Template Reference}{6}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Detailed Description}{7}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Member Function Documentation}{7}{subsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}get\_today\_total()}{7}{subsubsection.3.2.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2.2}record\_variant()}{7}{subsubsection.3.2.2.2}%
+\contentsline {section}{\numberline {3.3}LFMCMC$<$ TData $>$ Class Template Reference}{8}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Detailed Description}{9}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Member Function Documentation}{9}{subsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}set\_rand\_engine()}{9}{subsubsection.3.3.2.1}%
+\contentsline {section}{\numberline {3.4}Location$<$ TSeq $>$ Class Template Reference}{9}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Model$<$ TSeq $>$ Class Template Reference}{10}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Member Function Documentation}{13}{subsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.1.1}add\_param()}{13}{subsubsection.3.5.1.1}%
+\contentsline {subsubsection}{\numberline {3.5.1.2}add\_status\_susceptible()}{14}{subsubsection.3.5.1.2}%
+\contentsline {subsubsection}{\numberline {3.5.1.3}init()}{14}{subsubsection.3.5.1.3}%
+\contentsline {subsubsection}{\numberline {3.5.1.4}pop\_from\_adjlist()}{14}{subsubsection.3.5.1.4}%
+\contentsline {subsubsection}{\numberline {3.5.1.5}reset()}{15}{subsubsection.3.5.1.5}%
+\contentsline {subsubsection}{\numberline {3.5.1.6}reset\_status\_codes()}{15}{subsubsection.3.5.1.6}%
+\contentsline {subsubsection}{\numberline {3.5.1.7}set\_backup()}{16}{subsubsection.3.5.1.7}%
+\contentsline {subsubsection}{\numberline {3.5.1.8}set\_rand\_engine()}{16}{subsubsection.3.5.1.8}%
+\contentsline {subsubsection}{\numberline {3.5.1.9}set\_rewire\_fun()}{16}{subsubsection.3.5.1.9}%
+\contentsline {subsubsection}{\numberline {3.5.1.10}set\_user\_data()}{17}{subsubsection.3.5.1.10}%
+\contentsline {subsubsection}{\numberline {3.5.1.11}write\_data()}{17}{subsubsection.3.5.1.11}%
+\contentsline {subsubsection}{\numberline {3.5.1.12}write\_edgelist()}{17}{subsubsection.3.5.1.12}%
+\contentsline {section}{\numberline {3.6}Person$<$ TSeq $>$ Class Template Reference}{18}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Person\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tools$<$ TSeq $>$ Class Template Reference}{19}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Detailed Description}{19}{subsection.3.7.1}%
+\contentsline {section}{\numberline {3.8}Person\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Viruses$<$ TSeq $>$ Class Template Reference}{20}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Detailed Description}{20}{subsection.3.8.1}%
+\contentsline {section}{\numberline {3.9}Progress Class Reference}{21}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Detailed Description}{21}{subsection.3.9.1}%
+\contentsline {section}{\numberline {3.10}Queue$<$ TSeq $>$ Class Template Reference}{21}{section.3.10}%
+\contentsline {subsection}{\numberline {3.10.1}Detailed Description}{21}{subsection.3.10.1}%
+\contentsline {section}{\numberline {3.11}Rand\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Graph Class Reference}{22}{section.3.11}%
+\contentsline {section}{\numberline {3.12}Tool$<$ TSeq $>$ Class Template Reference}{22}{section.3.12}%
+\contentsline {subsection}{\numberline {3.12.1}Detailed Description}{23}{subsection.3.12.1}%
+\contentsline {subsection}{\numberline {3.12.2}Member Function Documentation}{23}{subsection.3.12.2}%
+\contentsline {subsubsection}{\numberline {3.12.2.1}get\_susceptibility\_reduction()}{23}{subsubsection.3.12.2.1}%
+\contentsline {section}{\numberline {3.13}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data$<$ TSeq $>$ Class Template Reference}{24}{section.3.13}%
+\contentsline {section}{\numberline {3.14}vec\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hasher$<$ T $>$ Struct Template Reference}{24}{section.3.14}%
+\contentsline {section}{\numberline {3.15}Virus$<$ TSeq $>$ Class Template Reference}{25}{section.3.15}%
+\contentsline {subsection}{\numberline {3.15.1}Detailed Description}{25}{subsection.3.15.1}%
+\contentsline {subsection}{\numberline {3.15.2}Member Function Documentation}{26}{subsection.3.15.2}%
+\contentsline {subsubsection}{\numberline {3.15.2.1}get\_prob\_infecting()}{26}{subsubsection.3.15.2.1}%
+\contentsline {chapter}{Index}{27}{section*.32}%

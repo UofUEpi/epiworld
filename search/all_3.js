@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['helpgroupdetails_19',['HelpGroupDetails',['../structcxxopts_1_1_help_group_details.html',1,'cxxopts']]],
-  ['helpoptiondetails_20',['HelpOptionDetails',['../structcxxopts_1_1_help_option_details.html',1,'cxxopts']]]
+  ['init_15',['init',['../class_model.html#a237dbec55b0d47a037a11502eecc8733',1,'Model']]]
 ];

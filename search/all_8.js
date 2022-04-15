@@ -1,20 +1,7 @@
 var searchData=
 [
-  ['option_32',['Option',['../structcxxopts_1_1_option.html',1,'cxxopts']]],
-  ['option_5fexists_5ferror_33',['option_exists_error',['../classcxxopts_1_1option__exists__error.html',1,'cxxopts']]],
-  ['option_5fhas_5fno_5fvalue_5fexception_34',['option_has_no_value_exception',['../classcxxopts_1_1option__has__no__value__exception.html',1,'cxxopts']]],
-  ['option_5fnot_5fexists_5fexception_35',['option_not_exists_exception',['../classcxxopts_1_1option__not__exists__exception.html',1,'cxxopts']]],
-  ['option_5fnot_5fhas_5fargument_5fexception_36',['option_not_has_argument_exception',['../classcxxopts_1_1option__not__has__argument__exception.html',1,'cxxopts']]],
-  ['option_5fnot_5fpresent_5fexception_37',['option_not_present_exception',['../classcxxopts_1_1option__not__present__exception.html',1,'cxxopts']]],
-  ['option_5frequired_5fexception_38',['option_required_exception',['../classcxxopts_1_1option__required__exception.html',1,'cxxopts']]],
-  ['option_5frequires_5fargument_5fexception_39',['option_requires_argument_exception',['../classcxxopts_1_1option__requires__argument__exception.html',1,'cxxopts']]],
-  ['option_5fsyntax_5fexception_40',['option_syntax_exception',['../classcxxopts_1_1option__syntax__exception.html',1,'cxxopts']]],
-  ['optionadder_41',['OptionAdder',['../classcxxopts_1_1_option_adder.html',1,'cxxopts']]],
-  ['optiondetails_42',['OptionDetails',['../classcxxopts_1_1_option_details.html',1,'cxxopts']]],
-  ['optionexception_43',['OptionException',['../classcxxopts_1_1_option_exception.html',1,'cxxopts']]],
-  ['optionparseexception_44',['OptionParseException',['../classcxxopts_1_1_option_parse_exception.html',1,'cxxopts']]],
-  ['optionparser_45',['OptionParser',['../classcxxopts_1_1_option_parser.html',1,'cxxopts']]],
-  ['options_46',['Options',['../classcxxopts_1_1_options.html',1,'cxxopts']]],
-  ['optionspecexception_47',['OptionSpecException',['../classcxxopts_1_1_option_spec_exception.html',1,'cxxopts']]],
-  ['optionvalue_48',['OptionValue',['../classcxxopts_1_1_option_value.html',1,'cxxopts']]]
+  ['randgraph_32',['RandGraph',['../class_rand_graph.html',1,'']]],
+  ['record_5fvariant_33',['record_variant',['../class_data_base.html#a0058539b69a0082728b36df5c7f71d9f',1,'DataBase::record_variant()'],['../class_model.html#aecf6782e468b78459a37187903845d12',1,'Model::record_variant(Virus&lt; TSeq &gt; *v)']]],
+  ['reset_34',['reset',['../class_model.html#a9591eb76c7cf1ed7e1510342ff602d37',1,'Model']]],
+  ['reset_5fstatus_5fcodes_35',['reset_status_codes',['../class_model.html#aa5819bef86c4c7d5623a7525831fb73c',1,'Model']]]
 ];

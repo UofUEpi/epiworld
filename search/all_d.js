@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['tool_76',['Tool',['../class_tool.html',1,'']]],
-  ['type_5fis_5fcontainer_77',['type_is_container',['../structcxxopts_1_1values_1_1type__is__container.html',1,'cxxopts::values']]],
-  ['type_5fis_5fcontainer_3c_20std_3a_3avector_3c_20t_20_3e_20_3e_78',['type_is_container&lt; std::vector&lt; T &gt; &gt;',['../structcxxopts_1_1values_1_1type__is__container_3_01std_1_1vector_3_01_t_01_4_01_4.html',1,'cxxopts::values']]]
+  ['write_5fdata_46',['write_data',['../class_data_base.html#a728d678114efad7b3184e0ae7198a1c1',1,'DataBase::write_data()'],['../class_model.html#a6c07199ce0c9102cccb9749a7eda421d',1,'Model::write_data(std::string fn_variant_info, std::string fn_variant_hist, std::string fn_total_hist, std::string fn_transmission, std::string fn_transition) const']]],
+  ['write_5fedgelist_47',['write_edgelist',['../class_model.html#a93fc0b94d8d9abe2c8f491f06358d8b7',1,'Model']]]
 ];

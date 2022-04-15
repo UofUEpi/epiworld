@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['keyvalue_25',['KeyValue',['../classcxxopts_1_1_key_value.html',1,'cxxopts']]]
+  ['model_18',['Model',['../class_model.html',1,'']]],
+  ['model_3c_20bool_20_3e_19',['Model&lt; bool &gt;',['../class_model.html',1,'']]],
+  ['model_3c_20tseq_20_3e_20',['Model&lt; TSeq &gt;',['../class_model.html',1,'']]]
 ];

@@ -1,154 +1,109 @@
 \begin{theindex}
 
   \item {add\_param}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{23}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{13}
   \item {add\_status\_susceptible}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{24}
-  \item {AdjList}, \hyperpage{9}
-    \subitem {AdjList}, \hyperpage{9}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{13}
+  \item {AdjList}, \hyperpage{5}
+    \subitem {AdjList}, \hyperpage{5}
 
   \indexspace
 
-  \item {cxxopts::argument\_incorrect\_type}, \hyperpage{10}
-  \item {cxxopts::HelpGroupDetails}, \hyperpage{13}
-  \item {cxxopts::HelpOptionDetails}, \hyperpage{14}
-  \item {cxxopts::invalid\_option\_format\_error}, \hyperpage{15}
-  \item {cxxopts::KeyValue}, \hyperpage{16}
-  \item {cxxopts::missing\_argument\_exception}, \hyperpage{19}
-  \item {cxxopts::Option}, \hyperpage{28}
-  \item {cxxopts::option\_exists\_error}, \hyperpage{29}
-  \item {cxxopts::option\_has\_no\_value\_exception}, \hyperpage{30}
-  \item {cxxopts::option\_not\_exists\_exception}, \hyperpage{31}
-  \item {cxxopts::option\_not\_has\_argument\_exception}, 
-		\hyperpage{33}
-  \item {cxxopts::option\_not\_present\_exception}, \hyperpage{34}
-  \item {cxxopts::option\_required\_exception}, \hyperpage{36}
-  \item {cxxopts::option\_requires\_argument\_exception}, 
-		\hyperpage{37}
-  \item {cxxopts::option\_syntax\_exception}, \hyperpage{39}
-  \item {cxxopts::OptionAdder}, \hyperpage{40}
-  \item {cxxopts::OptionDetails}, \hyperpage{40}
-  \item {cxxopts::OptionException}, \hyperpage{41}
-  \item {cxxopts::OptionParseException}, \hyperpage{42}
-  \item {cxxopts::OptionParser}, \hyperpage{43}
-  \item {cxxopts::Options}, \hyperpage{43}
-  \item {cxxopts::OptionSpecException}, \hyperpage{44}
-  \item {cxxopts::OptionValue}, \hyperpage{45}
-  \item {cxxopts::ParseResult}, \hyperpage{45}
-  \item {cxxopts::ParseResult::Iterator}, \hyperpage{16}
-  \item {cxxopts::Value}, \hyperpage{58}
-  \item {cxxopts::values::abstract\_value$<$ T $>$}, \hyperpage{7}
-  \item {cxxopts::values::detail::SignedCheck$<$ T, B $>$}, 
-		\hyperpage{50}
-  \item {cxxopts::values::detail::SignedCheck$<$ T, false $>$}, 
-		\hyperpage{50}
-  \item {cxxopts::values::detail::SignedCheck$<$ T, true $>$}, 
-		\hyperpage{50}
-  \item {cxxopts::values::parser\_tool::ArguDesc}, \hyperpage{10}
-  \item {cxxopts::values::parser\_tool::IntegerDesc}, \hyperpage{14}
-  \item {cxxopts::values::standard\_value$<$ bool $>$}, \hyperpage{53}
-  \item {cxxopts::values::standard\_value$<$ T $>$}, \hyperpage{51}
-  \item {cxxopts::values::type\_is\_container$<$ std::vector$<$ T $>$ $>$}, 
-		\hyperpage{56}
-  \item {cxxopts::values::type\_is\_container$<$ T $>$}, \hyperpage{56}
-
-  \indexspace
-
-  \item {DataBase$<$ TSeq $>$}, \hyperpage{11}
-    \subitem {get\_today\_total}, \hyperpage{12}
-    \subitem {record\_variant}, \hyperpage{13}
+  \item {DataBase$<$ TSeq $>$}, \hyperpage{6}
+    \subitem {get\_today\_total}, \hyperpage{7}
+    \subitem {record\_variant}, \hyperpage{7}
 
   \indexspace
 
   \item {get\_prob\_infecting}
-    \subitem {Virus$<$ TSeq $>$}, \hyperpage{60}
+    \subitem {Virus$<$ TSeq $>$}, \hyperpage{26}
   \item {get\_susceptibility\_reduction}
-    \subitem {Tool$<$ TSeq $>$}, \hyperpage{56}
+    \subitem {Tool$<$ TSeq $>$}, \hyperpage{23}
   \item {get\_today\_total}
-    \subitem {DataBase$<$ TSeq $>$}, \hyperpage{12}
+    \subitem {DataBase$<$ TSeq $>$}, \hyperpage{7}
 
   \indexspace
 
   \item {init}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{24}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{14}
 
   \indexspace
 
-  \item {LFMCMC$<$ TData $>$}, \hyperpage{17}
-    \subitem {set\_rand\_engine}, \hyperpage{18}
-  \item {Location$<$ TSeq $>$}, \hyperpage{18}
+  \item {LFMCMC$<$ TData $>$}, \hyperpage{8}
+    \subitem {set\_rand\_engine}, \hyperpage{9}
+  \item {Location$<$ TSeq $>$}, \hyperpage{9}
 
   \indexspace
 
-  \item {Model$<$ TSeq $>$}, \hyperpage{20}
-    \subitem {add\_param}, \hyperpage{23}
-    \subitem {add\_status\_susceptible}, \hyperpage{24}
-    \subitem {init}, \hyperpage{24}
-    \subitem {pop\_from\_adjlist}, \hyperpage{24}
-    \subitem {reset}, \hyperpage{25}
-    \subitem {reset\_status\_codes}, \hyperpage{25}
-    \subitem {set\_backup}, \hyperpage{26}
-    \subitem {set\_rand\_engine}, \hyperpage{26}
-    \subitem {set\_rewire\_fun}, \hyperpage{26}
-    \subitem {set\_user\_data}, \hyperpage{27}
-    \subitem {write\_data}, \hyperpage{27}
-    \subitem {write\_edgelist}, \hyperpage{27}
+  \item {Model$<$ TSeq $>$}, \hyperpage{10}
+    \subitem {add\_param}, \hyperpage{13}
+    \subitem {add\_status\_susceptible}, \hyperpage{13}
+    \subitem {init}, \hyperpage{14}
+    \subitem {pop\_from\_adjlist}, \hyperpage{14}
+    \subitem {reset}, \hyperpage{15}
+    \subitem {reset\_status\_codes}, \hyperpage{15}
+    \subitem {set\_backup}, \hyperpage{16}
+    \subitem {set\_rand\_engine}, \hyperpage{16}
+    \subitem {set\_rewire\_fun}, \hyperpage{16}
+    \subitem {set\_user\_data}, \hyperpage{17}
+    \subitem {write\_data}, \hyperpage{17}
+    \subitem {write\_edgelist}, \hyperpage{17}
 
   \indexspace
 
-  \item {Person$<$ TSeq $>$}, \hyperpage{46}
-  \item {PersonTools$<$ TSeq $>$}, \hyperpage{47}
-  \item {PersonViruses$<$ TSeq $>$}, \hyperpage{48}
+  \item {Person$<$ TSeq $>$}, \hyperpage{18}
+  \item {PersonTools$<$ TSeq $>$}, \hyperpage{19}
+  \item {PersonViruses$<$ TSeq $>$}, \hyperpage{20}
   \item {pop\_from\_adjlist}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{24}
-  \item {Progress}, \hyperpage{48}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{14}
+  \item {Progress}, \hyperpage{21}
 
   \indexspace
 
-  \item {Queue$<$ TSeq $>$}, \hyperpage{49}
+  \item {Queue$<$ TSeq $>$}, \hyperpage{21}
 
   \indexspace
 
-  \item {RandGraph}, \hyperpage{50}
+  \item {RandGraph}, \hyperpage{22}
   \item {record\_variant}
-    \subitem {DataBase$<$ TSeq $>$}, \hyperpage{13}
+    \subitem {DataBase$<$ TSeq $>$}, \hyperpage{7}
   \item {reset}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{25}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{15}
   \item {reset\_status\_codes}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{25}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{15}
 
   \indexspace
 
   \item {set\_backup}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{26}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{16}
   \item {set\_rand\_engine}
-    \subitem {LFMCMC$<$ TData $>$}, \hyperpage{18}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{26}
+    \subitem {LFMCMC$<$ TData $>$}, \hyperpage{9}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{16}
   \item {set\_rewire\_fun}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{26}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{16}
   \item {set\_user\_data}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{27}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{17}
 
   \indexspace
 
-  \item {Tool$<$ TSeq $>$}, \hyperpage{54}
-    \subitem {get\_susceptibility\_reduction}, \hyperpage{56}
+  \item {Tool$<$ TSeq $>$}, \hyperpage{22}
+    \subitem {get\_susceptibility\_reduction}, \hyperpage{23}
 
   \indexspace
 
-  \item {UserData$<$ TSeq $>$}, \hyperpage{57}
+  \item {UserData$<$ TSeq $>$}, \hyperpage{24}
 
   \indexspace
 
-  \item {vecHasher$<$ T $>$}, \hyperpage{59}
-  \item {Virus$<$ TSeq $>$}, \hyperpage{59}
-    \subitem {get\_prob\_infecting}, \hyperpage{60}
+  \item {vecHasher$<$ T $>$}, \hyperpage{24}
+  \item {Virus$<$ TSeq $>$}, \hyperpage{25}
+    \subitem {get\_prob\_infecting}, \hyperpage{26}
 
   \indexspace
 
   \item {write\_data}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{27}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{17}
   \item {write\_edgelist}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{27}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{17}
 
 \end{theindex}
