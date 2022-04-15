@@ -1,6 +1,0 @@
-examples/*/*
-!*.md
-!Makefile
-!*.cpp
-.Rproj.user
-.Rhistory
