@@ -1,0 +1,143 @@
+\label{index_md_README}%
+\Hypertarget{index_md_README}%
+ \href{https://github.com/UofUEpi/epiworld/actions/workflows/ci.yml}{\texttt{ }}\hypertarget{index_autotoc_md0}{}\doxysection{epiworld}\label{index_autotoc_md0}
+This C++ template-\/header-\/only library provides a general framework for epidemiologic simulation. The main features of the library are\+:
+
+
+\begin{DoxyEnumerate}
+\item Four key classes\+: {\ttfamily \mbox{\hyperlink{class_model}{Model}}}, {\ttfamily \mbox{\hyperlink{class_person}{Person}}}, {\ttfamily \mbox{\hyperlink{class_tool}{Tool}}}, and {\ttfamily \mbox{\hyperlink{class_virus}{Virus}}}.
+\item The model features a social networks of {\ttfamily Persons}.
+\item {\ttfamily Persons} can have multiple {\ttfamily Tools} as a defense system.
+\item {\ttfamily Tools} can reduce contagion rate, transmissibility, death rates, and improve recovery rates.
+\item {\ttfamily Viruses} can mutate (generating new variants).
+\item {\ttfamily Models} can feature multiple states, e.\+g., {\ttfamily HEALTHY}, {\ttfamily SUSCEPTIBLE}, etc.
+\item {\ttfamily Models} can have an arbitrary number of parameters.
+\item {\bfseries{REALLY FAST}} About 6.\+5 Million person/day simulations per second.
+\end{DoxyEnumerate}
+
+\hypertarget{index_autotoc_md1}{}\doxysection{Hello world}\label{index_autotoc_md1}
+Here is a simple SIRS model implemented with
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "{}../include/epiworld/epiworld.hpp"{}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{using namespace }epiworld;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int} main()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{comment}{// Creating a model}}
+\DoxyCodeLine{    \mbox{\hyperlink{class_model}{Model<>}} model;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Adding the tool and virus}}
+\DoxyCodeLine{    \mbox{\hyperlink{class_virus}{Virus<>}} virus(\textcolor{stringliteral}{"{}covid 19"{}});}
+\DoxyCodeLine{    virus.set\_post\_immunity(1.0);}
+\DoxyCodeLine{    model.add\_virus\_n(virus, 5);}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \mbox{\hyperlink{class_tool}{Tool<>}} tool(\textcolor{stringliteral}{"{}vaccine"{}});}
+\DoxyCodeLine{    model.add\_tool(tool, .5);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Generating a random pop }}
+\DoxyCodeLine{    model.pop\_from\_random(100000);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Initializing setting days and seed}}
+\DoxyCodeLine{    model.\mbox{\hyperlink{class_model_a237dbec55b0d47a037a11502eecc8733}{init}}(100, 123);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{// Running the model}}
+\DoxyCodeLine{    model.run();}
+\DoxyCodeLine{    model.print();}
+\DoxyCodeLine{  }
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+And you should get something like the following\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Running the model...}
+\DoxyCodeLine{\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_}
+\DoxyCodeLine{||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| done.}
+\DoxyCodeLine{}
+\DoxyCodeLine{\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_}
+\DoxyCodeLine{SIMULATION STUDY}
+\DoxyCodeLine{}
+\DoxyCodeLine{Population size    : 100000}
+\DoxyCodeLine{Days (duration)    : 100 (of 100)}
+\DoxyCodeLine{Number of variants : 1}
+\DoxyCodeLine{Last run elapsed t : 280.00ms}
+\DoxyCodeLine{Rewiring           : off}
+\DoxyCodeLine{}
+\DoxyCodeLine{Virus(es):}
+\DoxyCodeLine{ -\/ covid 19 (baseline prevalence: 5 seeds)}
+\DoxyCodeLine{Tool(s):}
+\DoxyCodeLine{ -\/ vaccine (baseline prevalence: 50.00\%)}
+\DoxyCodeLine{}
+\DoxyCodeLine{Model parameters:}
+\DoxyCodeLine{}
+\DoxyCodeLine{Distribution of the population at time 100:}
+\DoxyCodeLine{ -\/ Total healthy (S)   :   99995 -\/> 97390}
+\DoxyCodeLine{ -\/ Total recovered (S) :       0 -\/> 2554}
+\DoxyCodeLine{ -\/ Total infected (I)  :       5 -\/> 56}
+\DoxyCodeLine{ -\/ Total removed (R)   :       0 -\/> 0}
+\DoxyCodeLine{}
+\DoxyCodeLine{(S): Susceptible, (I): Infected, (R): Recovered}
+\DoxyCodeLine{\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_}
+
+\end{DoxyCode}
+
+
+Which took about 0.\+280 seconds.\hypertarget{index_autotoc_md2}{}\doxysubsection{Tools}\label{index_autotoc_md2}
+\hypertarget{index_autotoc_md3}{}\doxysubsection{Contagion}\label{index_autotoc_md3}
+Susceptible individuals can acquire a virus from any of their infected connections. The probability that susceptible individual {\ttfamily i} gets the virus {\ttfamily v} from individual {\ttfamily j} depends on how three things\+:
+
+
+\begin{DoxyEnumerate}
+\item The transmissibility of the virus, Pv in \mbox{[}0,1\mbox{]},
+\item The contagion reduction factor of {\ttfamily i}, Cr in \mbox{[}0,1\mbox{]}, and
+\item The host\textquotesingle{}s transmission reduction factor, Tr \mbox{[}0,1\mbox{]}.
+\end{DoxyEnumerate}
+
+The last two are computed from {\ttfamily i} and {\ttfamily j}\textquotesingle{}s tools. Ultimately, the probability of {\ttfamily i} getting virus {\ttfamily v} from {\ttfamily j} equals\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{P(Virus v) = Pv * (1 -\/ Cr) *(1 -\/ Tr) }
+
+\end{DoxyCode}
+
+
+Nonetheless, the default behavior of the simulation model is to assume that individuals can acquire only one disease at a time, if any. This way, the actual probability is\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{P(Virus v| at most one virus) = Prcond(i,v,j)}
+
+\end{DoxyCode}
+
+
+The latter is calculated using Bayes\textquotesingle{} rule
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Prcond(i,v,j) = P(at most one virus|Virus v) * P(Variant v) / P(at most one virus)}
+\DoxyCodeLine{              = P(Only Virus v)/P(Virus v) * P(Virus v) / P(at most one virus)}
+\DoxyCodeLine{              = P(Only Virus v)/P(at most one virus)}
+
+\end{DoxyCode}
+
+
+Where
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{P(Vnly Virus V)      = P(Virus V) * Prod(m!=V) (1 -\/ P(Virus m))}
+\DoxyCodeLine{P(at most one virus) = P(None) + Sum(k in viruses) P(Virus k) * Prod(m != k) (1 -\/ P(Virus m))}
+\DoxyCodeLine{P(None)              = Prod(k in Viruses) (1 -\/ P(Virus k))}
+
+\end{DoxyCode}
+
+
+This way, viruses with higher transmissibility will be more likely to be acquired when competing with other variants. 

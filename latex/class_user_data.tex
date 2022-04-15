@@ -1,0 +1,60 @@
+\hypertarget{class_user_data}{}\doxysection{User\+Data$<$ TSeq $>$ Class Template Reference}
+\label{class_user_data}\index{UserData$<$ TSeq $>$@{UserData$<$ TSeq $>$}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_user_data_adee45d65067910e75af85ed06aa4eaf4}\label{class_user_data_adee45d65067910e75af85ed06aa4eaf4}} 
+{\bfseries User\+Data} (std\+::vector$<$ std\+::string $>$ names)
+\item 
+\mbox{\Hypertarget{class_user_data_af5b2e637536227178636a9c4409a3338}\label{class_user_data_af5b2e637536227178636a9c4409a3338}} 
+void {\bfseries add} (std\+::vector$<$ epiworld\+\_\+double $>$ x)
+\item 
+\mbox{\Hypertarget{class_user_data_abb780cd801fd045c2082f887daa20935}\label{class_user_data_abb780cd801fd045c2082f887daa20935}} 
+void {\bfseries add} (unsigned int j, epiworld\+\_\+double x)
+\item 
+\mbox{\Hypertarget{class_user_data_a47c2b4bf53b4d4f259cff3c508560fa2}\label{class_user_data_a47c2b4bf53b4d4f259cff3c508560fa2}} 
+epiworld\+\_\+double \& {\bfseries operator()} (unsigned int i, unsigned int j)
+\item 
+\mbox{\Hypertarget{class_user_data_a0124f68193cae9818b4740a28bbc34d2}\label{class_user_data_a0124f68193cae9818b4740a28bbc34d2}} 
+epiworld\+\_\+double \& {\bfseries operator()} (unsigned int i, std\+::string name)
+\item 
+\mbox{\Hypertarget{class_user_data_a7dd6692a5017a3d7317f81d3df8ef19e}\label{class_user_data_a7dd6692a5017a3d7317f81d3df8ef19e}} 
+std\+::vector$<$ std\+::string $>$ \& {\bfseries get\+\_\+names} ()
+\item 
+\mbox{\Hypertarget{class_user_data_aee5fc14bcdd63727814d3d4e78e33add}\label{class_user_data_aee5fc14bcdd63727814d3d4e78e33add}} 
+std\+::vector$<$ int $>$ \& {\bfseries get\+\_\+dates} ()
+\item 
+\mbox{\Hypertarget{class_user_data_aa392849561abd3211799461241d00d00}\label{class_user_data_aa392849561abd3211799461241d00d00}} 
+std\+::vector$<$ epiworld\+\_\+double $>$ \& {\bfseries get\+\_\+data} ()
+\item 
+\mbox{\Hypertarget{class_user_data_a4901be780934888fce8e14ecfa2ead64}\label{class_user_data_a4901be780934888fce8e14ecfa2ead64}} 
+void {\bfseries get\+\_\+all} (std\+::vector$<$ std\+::string $>$ $\ast$names=nullptr, std\+::vector$<$ int $>$ $\ast$date=nullptr, std\+::vector$<$ epiworld\+\_\+double $>$ $\ast$data=nullptr)
+\item 
+\mbox{\Hypertarget{class_user_data_a26ed1d63b0dcad2d272d970a0e2225ec}\label{class_user_data_a26ed1d63b0dcad2d272d970a0e2225ec}} 
+unsigned int {\bfseries nrow} () const
+\item 
+\mbox{\Hypertarget{class_user_data_ad9e86c5f8138c975b37625ca0202aa69}\label{class_user_data_ad9e86c5f8138c975b37625ca0202aa69}} 
+unsigned int {\bfseries ncol} () const
+\item 
+\mbox{\Hypertarget{class_user_data_a94d718e83afbe80eca2ca5d04219a302}\label{class_user_data_a94d718e83afbe80eca2ca5d04219a302}} 
+void {\bfseries write} (std\+::string fn)
+\item 
+\mbox{\Hypertarget{class_user_data_a6d14ebf71d0484428492f6339ecc835e}\label{class_user_data_a6d14ebf71d0484428492f6339ecc835e}} 
+void {\bfseries print} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_user_data_aa4532e80368ab60b4fda5bb917f6f0ca}\label{class_user_data_aa4532e80368ab60b4fda5bb917f6f0ca}} 
+class {\bfseries Model$<$ TSeq $>$}
+\item 
+\mbox{\Hypertarget{class_user_data_a8c2c72b4a49cd6654843fe6fb4c36aa4}\label{class_user_data_a8c2c72b4a49cd6654843fe6fb4c36aa4}} 
+class {\bfseries Data\+Base$<$ TSeq $>$}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/epiworld/database-\/bones.\+hpp\item 
+include/epiworld/userdata-\/bones.\+hpp\item 
+include/epiworld/userdata-\/meat.\+hpp\end{DoxyCompactItemize}

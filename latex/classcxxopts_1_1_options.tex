@@ -1,0 +1,70 @@
+\hypertarget{classcxxopts_1_1_options}{}\doxysection{cxxopts\+::Options Class Reference}
+\label{classcxxopts_1_1_options}\index{cxxopts::Options@{cxxopts::Options}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcxxopts_1_1_options_ab73d569871f0a8ae1ba9be77397fab5e}\label{classcxxopts_1_1_options_ab73d569871f0a8ae1ba9be77397fab5e}} 
+{\bfseries Options} (std\+::string program, std\+::string help\+\_\+string=\char`\"{}\char`\"{})
+\item 
+\mbox{\Hypertarget{classcxxopts_1_1_options_aae2dd95b1726d4889f93ef0936eb3b5b}\label{classcxxopts_1_1_options_aae2dd95b1726d4889f93ef0936eb3b5b}} 
+\mbox{\hyperlink{classcxxopts_1_1_options}{Options}} \& {\bfseries positional\+\_\+help} (std\+::string help\+\_\+text)
+\item 
+\mbox{\Hypertarget{classcxxopts_1_1_options_acd1dc7d2032955d657b4cb8d0ba37e37}\label{classcxxopts_1_1_options_acd1dc7d2032955d657b4cb8d0ba37e37}} 
+\mbox{\hyperlink{classcxxopts_1_1_options}{Options}} \& {\bfseries custom\+\_\+help} (std\+::string help\+\_\+text)
+\item 
+\mbox{\Hypertarget{classcxxopts_1_1_options_a23772aa39f437ca9b47adf77c20f88ff}\label{classcxxopts_1_1_options_a23772aa39f437ca9b47adf77c20f88ff}} 
+\mbox{\hyperlink{classcxxopts_1_1_options}{Options}} \& {\bfseries show\+\_\+positional\+\_\+help} ()
+\item 
+\mbox{\Hypertarget{classcxxopts_1_1_options_a44321f4b0e761d12530d704808842b20}\label{classcxxopts_1_1_options_a44321f4b0e761d12530d704808842b20}} 
+\mbox{\hyperlink{classcxxopts_1_1_options}{Options}} \& {\bfseries allow\+\_\+unrecognised\+\_\+options} ()
+\item 
+\mbox{\Hypertarget{classcxxopts_1_1_options_aedb6ecdcac6d2514383fab57b4413a62}\label{classcxxopts_1_1_options_aedb6ecdcac6d2514383fab57b4413a62}} 
+\mbox{\hyperlink{classcxxopts_1_1_options}{Options}} \& {\bfseries set\+\_\+width} (size\+\_\+t width)
+\item 
+\mbox{\Hypertarget{classcxxopts_1_1_options_a5372107ffade40578b1d6123b5ecddb6}\label{classcxxopts_1_1_options_a5372107ffade40578b1d6123b5ecddb6}} 
+\mbox{\hyperlink{classcxxopts_1_1_options}{Options}} \& {\bfseries set\+\_\+tab\+\_\+expansion} (bool expansion=true)
+\item 
+\mbox{\Hypertarget{classcxxopts_1_1_options_a3e740564cc4c991078f1451e1fcd082b}\label{classcxxopts_1_1_options_a3e740564cc4c991078f1451e1fcd082b}} 
+\mbox{\hyperlink{classcxxopts_1_1_parse_result}{Parse\+Result}} {\bfseries parse} (int argc, const char $\ast$const $\ast$argv)
+\item 
+\mbox{\Hypertarget{classcxxopts_1_1_options_a8c4fcf551295cde940a1a60012b3e9b6}\label{classcxxopts_1_1_options_a8c4fcf551295cde940a1a60012b3e9b6}} 
+\mbox{\hyperlink{classcxxopts_1_1_option_adder}{Option\+Adder}} {\bfseries add\+\_\+options} (std\+::string group=\char`\"{}\char`\"{})
+\item 
+\mbox{\Hypertarget{classcxxopts_1_1_options_a95878aa582f2ed8e0a2b73e735eb287d}\label{classcxxopts_1_1_options_a95878aa582f2ed8e0a2b73e735eb287d}} 
+void {\bfseries add\+\_\+options} (const std\+::string \&group, std\+::initializer\+\_\+list$<$ \mbox{\hyperlink{structcxxopts_1_1_option}{Option}} $>$ options)
+\item 
+\mbox{\Hypertarget{classcxxopts_1_1_options_ac698adfe5b5ca50d36017a52b27fb828}\label{classcxxopts_1_1_options_ac698adfe5b5ca50d36017a52b27fb828}} 
+void {\bfseries add\+\_\+option} (const std\+::string \&group, const \mbox{\hyperlink{structcxxopts_1_1_option}{Option}} \&option)
+\item 
+\mbox{\Hypertarget{classcxxopts_1_1_options_af6a920c65d1a22140278b8f2637f8930}\label{classcxxopts_1_1_options_af6a920c65d1a22140278b8f2637f8930}} 
+void {\bfseries add\+\_\+option} (const std\+::string \&group, const std\+::string \&s, const std\+::string \&l, std\+::string desc, const std\+::shared\+\_\+ptr$<$ const \mbox{\hyperlink{classcxxopts_1_1_value}{Value}} $>$ \&value, std\+::string arg\+\_\+help)
+\item 
+\mbox{\Hypertarget{classcxxopts_1_1_options_a08d69938b38f43d9bc534ec3b60e672b}\label{classcxxopts_1_1_options_a08d69938b38f43d9bc534ec3b60e672b}} 
+void {\bfseries parse\+\_\+positional} (std\+::string option)
+\item 
+\mbox{\Hypertarget{classcxxopts_1_1_options_a9078209209185ac59cb6b293558919da}\label{classcxxopts_1_1_options_a9078209209185ac59cb6b293558919da}} 
+void {\bfseries parse\+\_\+positional} (std\+::vector$<$ std\+::string $>$ options)
+\item 
+\mbox{\Hypertarget{classcxxopts_1_1_options_a21ddde716cb71a6ba1b7943e313a3398}\label{classcxxopts_1_1_options_a21ddde716cb71a6ba1b7943e313a3398}} 
+void {\bfseries parse\+\_\+positional} (std\+::initializer\+\_\+list$<$ std\+::string $>$ options)
+\item 
+\mbox{\Hypertarget{classcxxopts_1_1_options_a2e7b51be5b760aab92134268812f2042}\label{classcxxopts_1_1_options_a2e7b51be5b760aab92134268812f2042}} 
+{\footnotesize template$<$typename Iterator $>$ }\\void {\bfseries parse\+\_\+positional} (Iterator begin, Iterator end)
+\item 
+\mbox{\Hypertarget{classcxxopts_1_1_options_a7392b09071f42ed45dea85738af965b4}\label{classcxxopts_1_1_options_a7392b09071f42ed45dea85738af965b4}} 
+std\+::string {\bfseries help} (const std\+::vector$<$ std\+::string $>$ \&groups=\{\}) const
+\item 
+\mbox{\Hypertarget{classcxxopts_1_1_options_a86dce378e2f277514653394952715021}\label{classcxxopts_1_1_options_a86dce378e2f277514653394952715021}} 
+std\+::vector$<$ std\+::string $>$ {\bfseries groups} () const
+\item 
+\mbox{\Hypertarget{classcxxopts_1_1_options_ab5ebc9a3f07419d8b5a58d55c9929f09}\label{classcxxopts_1_1_options_ab5ebc9a3f07419d8b5a58d55c9929f09}} 
+const \mbox{\hyperlink{structcxxopts_1_1_help_group_details}{Help\+Group\+Details}} \& {\bfseries group\+\_\+help} (const std\+::string \&group) const
+\item 
+\mbox{\Hypertarget{classcxxopts_1_1_options_aca8179bc20648d11a17d74282ec9eff5}\label{classcxxopts_1_1_options_aca8179bc20648d11a17d74282ec9eff5}} 
+const std\+::string \& {\bfseries program} () const
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/cxxopts/cxxopts.\+hpp\end{DoxyCompactItemize}

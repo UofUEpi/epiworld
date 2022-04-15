@@ -1,0 +1,73 @@
+\hypertarget{class_person_viruses}{}\doxysection{Person\+Viruses$<$ TSeq $>$ Class Template Reference}
+\label{class_person_viruses}\index{PersonViruses$<$ TSeq $>$@{PersonViruses$<$ TSeq $>$}}
+
+
+Set of viruses in host.  
+
+
+
+
+{\ttfamily \#include $<$personviruses-\/bones.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_person_viruses_af3ca3af497262800573e0afd5c443ce5}\label{class_person_viruses_af3ca3af497262800573e0afd5c443ce5}} 
+void {\bfseries add\+\_\+virus} (epiworld\+\_\+fast\+\_\+uint new\+\_\+status, \mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ v)
+\item 
+\mbox{\Hypertarget{class_person_viruses_ae74d3c4b1c93fd1466de582783f5a745}\label{class_person_viruses_ae74d3c4b1c93fd1466de582783f5a745}} 
+size\+\_\+t {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{class_person_viruses_a28b122477b766e222974c46d82d2baad}\label{class_person_viruses_a28b122477b766e222974c46d82d2baad}} 
+int {\bfseries size\+\_\+active} () const
+\item 
+\mbox{\Hypertarget{class_person_viruses_a3916ef3b78a670396b22fd12ae9ca5e4}\label{class_person_viruses_a3916ef3b78a670396b22fd12ae9ca5e4}} 
+\mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ \& {\bfseries operator()} (int i)
+\item 
+\mbox{\Hypertarget{class_person_viruses_a7dcf4f505d846222ec8eb6ea9a324730}\label{class_person_viruses_a7dcf4f505d846222ec8eb6ea9a324730}} 
+void {\bfseries mutate} ()
+\item 
+\mbox{\Hypertarget{class_person_viruses_a44d9408af99f73eb94330260090bba3c}\label{class_person_viruses_a44d9408af99f73eb94330260090bba3c}} 
+void {\bfseries reset} ()
+\item 
+\mbox{\Hypertarget{class_person_viruses_a6db9905f60b493da02297abff34c285c}\label{class_person_viruses_a6db9905f60b493da02297abff34c285c}} 
+void {\bfseries deactivate} (\mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ \&v)
+\item 
+\mbox{\Hypertarget{class_person_viruses_a8979471f2b2ce2eb2bc6fd7266272824}\label{class_person_viruses_a8979471f2b2ce2eb2bc6fd7266272824}} 
+\mbox{\hyperlink{class_person}{Person}}$<$ TSeq $>$ $\ast$ {\bfseries get\+\_\+host} ()
+\item 
+\mbox{\Hypertarget{class_person_viruses_a5797b8dc833ef35afa38c9e2e29ef43e}\label{class_person_viruses_a5797b8dc833ef35afa38c9e2e29ef43e}} 
+bool {\bfseries has\+\_\+virus} (unsigned int v) const
+\item 
+\mbox{\Hypertarget{class_person_viruses_ad52030615c244f5076930480649710b8}\label{class_person_viruses_ad52030615c244f5076930480649710b8}} 
+bool {\bfseries has\+\_\+virus} (std\+::string vname) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_person_viruses_a195def33d9d6483c6a309af6984bbf90}\label{class_person_viruses_a195def33d9d6483c6a309af6984bbf90}} 
+class {\bfseries Person$<$ TSeq $>$}
+\item 
+\mbox{\Hypertarget{class_person_viruses_aa4532e80368ab60b4fda5bb917f6f0ca}\label{class_person_viruses_aa4532e80368ab60b4fda5bb917f6f0ca}} 
+class {\bfseries Model$<$ TSeq $>$}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename TSeq = bool$>$\newline
+class Person\+Viruses$<$ TSeq $>$}
+
+Set of viruses in host. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TSeq} & \\
+\hline
+\end{DoxyTemplParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/epiworld/person-\/bones.\+hpp\item 
+include/epiworld/personviruses-\/bones.\+hpp\item 
+include/epiworld/personviruses-\/meat.\+hpp\end{DoxyCompactItemize}

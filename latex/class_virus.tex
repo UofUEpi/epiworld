@@ -1,0 +1,168 @@
+\hypertarget{class_virus}{}\doxysection{Virus$<$ TSeq $>$ Class Template Reference}
+\label{class_virus}\index{Virus$<$ TSeq $>$@{Virus$<$ TSeq $>$}}
+
+
+\mbox{\hyperlink{class_virus}{Virus}}.  
+
+
+
+
+{\ttfamily \#include $<$virus-\/bones.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_virus_a833b1b798d9f1a1d8eb724b454502080}\label{class_virus_a833b1b798d9f1a1d8eb724b454502080}} 
+{\bfseries Virus} (std\+::string name=\char`\"{}unknown virus\char`\"{})
+\item 
+\mbox{\Hypertarget{class_virus_a548c563e063237d997f08863c7d0db24}\label{class_virus_a548c563e063237d997f08863c7d0db24}} 
+void {\bfseries mutate} ()
+\item 
+\mbox{\Hypertarget{class_virus_aa14d649b04e30d262d91e96e87789690}\label{class_virus_aa14d649b04e30d262d91e96e87789690}} 
+void {\bfseries set\+\_\+mutation} (Mut\+Fun$<$ TSeq $>$ fun)
+\item 
+\mbox{\Hypertarget{class_virus_a09652f429fe7c9f3dd3ec23aa8cb7cc4}\label{class_virus_a09652f429fe7c9f3dd3ec23aa8cb7cc4}} 
+const TSeq $\ast$ {\bfseries get\+\_\+sequence} ()
+\item 
+\mbox{\Hypertarget{class_virus_a43c3bc089caf149e8f2db4b4453e38d2}\label{class_virus_a43c3bc089caf149e8f2db4b4453e38d2}} 
+void {\bfseries set\+\_\+sequence} (TSeq sequence)
+\item 
+\mbox{\Hypertarget{class_virus_ab7d0fe4910d2a776203a053a0c3124d5}\label{class_virus_ab7d0fe4910d2a776203a053a0c3124d5}} 
+\mbox{\hyperlink{class_person}{Person}}$<$ TSeq $>$ $\ast$ {\bfseries get\+\_\+host} ()
+\item 
+\mbox{\Hypertarget{class_virus_a2dbce3d4acea1a18e735f4089af709cd}\label{class_virus_a2dbce3d4acea1a18e735f4089af709cd}} 
+\mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$ {\bfseries get\+\_\+model} ()
+\item 
+\mbox{\Hypertarget{class_virus_ab23f9aac7fc542c0f926014205ef5d2c}\label{class_virus_ab23f9aac7fc542c0f926014205ef5d2c}} 
+void {\bfseries set\+\_\+date} (int d)
+\item 
+\mbox{\Hypertarget{class_virus_a6962697285f4f458cfe7c39a8f7c4c7f}\label{class_virus_a6962697285f4f458cfe7c39a8f7c4c7f}} 
+int {\bfseries get\+\_\+date} () const
+\item 
+\mbox{\Hypertarget{class_virus_ac15f6e63790edb791b40ec469047852a}\label{class_virus_ac15f6e63790edb791b40ec469047852a}} 
+void {\bfseries set\+\_\+id} (int idx)
+\item 
+\mbox{\Hypertarget{class_virus_ad0f02f316d7db38ca72fc4894ff5220c}\label{class_virus_ad0f02f316d7db38ca72fc4894ff5220c}} 
+int {\bfseries get\+\_\+id} () const
+\item 
+\mbox{\Hypertarget{class_virus_a7b6217aad886d3d192418da6bf152895}\label{class_virus_a7b6217aad886d3d192418da6bf152895}} 
+bool {\bfseries is\+\_\+active} () const
+\item 
+\mbox{\Hypertarget{class_virus_aae910960151e4403de91e0fe989b5130}\label{class_virus_aae910960151e4403de91e0fe989b5130}} 
+void {\bfseries deactivate} ()
+\item 
+epiworld\+\_\+double \mbox{\hyperlink{class_virus_aad6614ef755a101d2bb52d48504041fd}{get\+\_\+prob\+\_\+infecting}} ()
+\begin{DoxyCompactList}\small\item\em Get and set the tool functions. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_virus_af922e7e240e4f6cc0c34808723aebdaf}\label{class_virus_af922e7e240e4f6cc0c34808723aebdaf}} 
+epiworld\+\_\+double {\bfseries get\+\_\+prob\+\_\+recovery} ()
+\item 
+\mbox{\Hypertarget{class_virus_a24645f3c7ad9d5b5972e443403c3fb9c}\label{class_virus_a24645f3c7ad9d5b5972e443403c3fb9c}} 
+epiworld\+\_\+double {\bfseries get\+\_\+prob\+\_\+death} ()
+\item 
+\mbox{\Hypertarget{class_virus_a3cda3024c6046a411ffa7dc18695422d}\label{class_virus_a3cda3024c6046a411ffa7dc18695422d}} 
+void {\bfseries post\+\_\+recovery} ()
+\item 
+\mbox{\Hypertarget{class_virus_a4005d252549d4ed123aea265e7c63da6}\label{class_virus_a4005d252549d4ed123aea265e7c63da6}} 
+void {\bfseries set\+\_\+post\+\_\+recovery} (Post\+Recovery\+Fun$<$ TSeq $>$ fun)
+\item 
+\mbox{\Hypertarget{class_virus_a08f041504b387bc5a9871d722bb83cab}\label{class_virus_a08f041504b387bc5a9871d722bb83cab}} 
+void {\bfseries set\+\_\+post\+\_\+immunity} (epiworld\+\_\+double prob)
+\item 
+\mbox{\Hypertarget{class_virus_a5aba224d6537d28b21c7824fc65069b6}\label{class_virus_a5aba224d6537d28b21c7824fc65069b6}} 
+void {\bfseries set\+\_\+post\+\_\+immunity} (epiworld\+\_\+double $\ast$prob)
+\item 
+\mbox{\Hypertarget{class_virus_ac58b6d98644231d4d98fd588f5b977e1}\label{class_virus_ac58b6d98644231d4d98fd588f5b977e1}} 
+void {\bfseries set\+\_\+prob\+\_\+infecting\+\_\+fun} (Virus\+Fun$<$ TSeq $>$ fun)
+\item 
+\mbox{\Hypertarget{class_virus_a1d90cb9cc5d1d721375620cfcb2cd850}\label{class_virus_a1d90cb9cc5d1d721375620cfcb2cd850}} 
+void {\bfseries set\+\_\+prob\+\_\+recovery\+\_\+fun} (Virus\+Fun$<$ TSeq $>$ fun)
+\item 
+\mbox{\Hypertarget{class_virus_a84cdd19ec455f54e3335a78405a439f4}\label{class_virus_a84cdd19ec455f54e3335a78405a439f4}} 
+void {\bfseries set\+\_\+prob\+\_\+death\+\_\+fun} (Virus\+Fun$<$ TSeq $>$ fun)
+\item 
+\mbox{\Hypertarget{class_virus_a963cfb86e4b6f8aa9eadfd3a952c14a4}\label{class_virus_a963cfb86e4b6f8aa9eadfd3a952c14a4}} 
+void {\bfseries set\+\_\+prob\+\_\+infecting} (epiworld\+\_\+double $\ast$prob)
+\item 
+\mbox{\Hypertarget{class_virus_a1c0d495958e61a2aefc8ec711ca2153f}\label{class_virus_a1c0d495958e61a2aefc8ec711ca2153f}} 
+void {\bfseries set\+\_\+prob\+\_\+recovery} (epiworld\+\_\+double $\ast$prob)
+\item 
+\mbox{\Hypertarget{class_virus_a170035082a09bfcde1d099a895ed4d12}\label{class_virus_a170035082a09bfcde1d099a895ed4d12}} 
+void {\bfseries set\+\_\+prob\+\_\+death} (epiworld\+\_\+double $\ast$prob)
+\item 
+\mbox{\Hypertarget{class_virus_adb213e6f3ae0774875235f8158a5a4db}\label{class_virus_adb213e6f3ae0774875235f8158a5a4db}} 
+void {\bfseries set\+\_\+prob\+\_\+infecting} (epiworld\+\_\+double prob)
+\item 
+\mbox{\Hypertarget{class_virus_a921990d5e27c19a60c46fb53c8c3b575}\label{class_virus_a921990d5e27c19a60c46fb53c8c3b575}} 
+void {\bfseries set\+\_\+prob\+\_\+recovery} (epiworld\+\_\+double prob)
+\item 
+\mbox{\Hypertarget{class_virus_a5427e370939a6a8ec19bcb200fc51831}\label{class_virus_a5427e370939a6a8ec19bcb200fc51831}} 
+void {\bfseries set\+\_\+prob\+\_\+death} (epiworld\+\_\+double prob)
+\item 
+\mbox{\Hypertarget{class_virus_ae4631d1e4413a9c0040c77073d3c1019}\label{class_virus_ae4631d1e4413a9c0040c77073d3c1019}} 
+void \mbox{\hyperlink{class_virus_ae4631d1e4413a9c0040c77073d3c1019}{set\+\_\+name}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em @\mbox{]} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_virus_a3ed03a833c81c733d8d44d6620b22e18}\label{class_virus_a3ed03a833c81c733d8d44d6620b22e18}} 
+std\+::string {\bfseries get\+\_\+name} () const
+\item 
+\mbox{\Hypertarget{class_virus_aae3d461f14353d68e349ee107e7a46a6}\label{class_virus_aae3d461f14353d68e349ee107e7a46a6}} 
+std\+::vector$<$ epiworld\+\_\+double $>$ \& {\bfseries get\+\_\+data} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_virus_a195def33d9d6483c6a309af6984bbf90}\label{class_virus_a195def33d9d6483c6a309af6984bbf90}} 
+class {\bfseries Person$<$ TSeq $>$}
+\item 
+\mbox{\Hypertarget{class_virus_aa4532e80368ab60b4fda5bb917f6f0ca}\label{class_virus_aa4532e80368ab60b4fda5bb917f6f0ca}} 
+class {\bfseries Model$<$ TSeq $>$}
+\item 
+\mbox{\Hypertarget{class_virus_a1702eec2d75a695cf54edad3ca88ac2f}\label{class_virus_a1702eec2d75a695cf54edad3ca88ac2f}} 
+class {\bfseries Person\+Viruses$<$ TSeq $>$}
+\item 
+\mbox{\Hypertarget{class_virus_a8c2c72b4a49cd6654843fe6fb4c36aa4}\label{class_virus_a8c2c72b4a49cd6654843fe6fb4c36aa4}} 
+class {\bfseries Data\+Base$<$ TSeq $>$}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename TSeq = bool$>$\newline
+class Virus$<$ TSeq $>$}
+
+\mbox{\hyperlink{class_virus}{Virus}}. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TSeq} & \\
+\hline
+\end{DoxyTemplParams}
+Raw transmisibility of a virus should be a function of its genetic sequence. Nonetheless, transmisibility can be reduced as a result of having one or more tools to fight the virus. Because of this, transmisibility should be a function of the host. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_virus_aad6614ef755a101d2bb52d48504041fd}\label{class_virus_aad6614ef755a101d2bb52d48504041fd}} 
+\index{Virus$<$ TSeq $>$@{Virus$<$ TSeq $>$}!get\_prob\_infecting@{get\_prob\_infecting}}
+\index{get\_prob\_infecting@{get\_prob\_infecting}!Virus$<$ TSeq $>$@{Virus$<$ TSeq $>$}}
+\doxysubsubsection{\texorpdfstring{get\_prob\_infecting()}{get\_prob\_infecting()}}
+{\footnotesize\ttfamily template$<$typename TSeq $>$ \\
+epiworld\+\_\+double \mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$\+::get\+\_\+prob\+\_\+infecting\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get and set the tool functions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The virus over which to operate \\
+\hline
+{\em fun} & the function to be used\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+epiworld\+\_\+double @\mbox{[} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/epiworld/config.\+hpp\item 
+include/epiworld/virus-\/bones.\+hpp\item 
+include/epiworld/virus-\/meat.\+hpp\end{DoxyCompactItemize}
