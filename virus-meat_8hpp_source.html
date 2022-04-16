@@ -89,7 +89,7 @@ $(function() {
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">if</span> (mutation_fun)</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">if</span> (mutation_fun(host, <span class="keyword">this</span>, this-&gt;get_model()))</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            host-&gt;get_model()-&gt;<a class="code" href="class_model.html#aecf6782e468b78459a37187903845d12">record_variant</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            host-&gt;get_model()-&gt;record_variant(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
@@ -402,7 +402,7 @@ $(function() {
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;}</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160; </div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l00333"></a><span class="lineno"><a class="line" href="class_virus.html#ae4631d1e4413a9c0040c77073d3c1019">  333</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_virus.html#ae4631d1e4413a9c0040c77073d3c1019">Virus&lt;TSeq&gt;::set_name</a>(std::string name)</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_virus.html">Virus&lt;TSeq&gt;::set_name</a>(std::string name)</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;{</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;&quot;</span>)</div>
@@ -430,12 +430,10 @@ $(function() {
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160; </div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_model_html"><div class="ttname"><a href="class_model.html">Model&lt; TSeq &gt;</a></div></div>
-<div class="ttc" id="aclass_model_html_aecf6782e468b78459a37187903845d12"><div class="ttname"><a href="class_model.html#aecf6782e468b78459a37187903845d12">Model::record_variant</a></div><div class="ttdeci">void record_variant(Virus&lt; TSeq &gt; *v)</div><div class="ttdoc">@]</div></div>
 <div class="ttc" id="aclass_person_html"><div class="ttname"><a href="class_person.html">Person</a></div><div class="ttdef"><b>Definition:</b> person-bones.hpp:20</div></div>
 <div class="ttc" id="aclass_tool_html"><div class="ttname"><a href="class_tool.html">Tool</a></div><div class="ttdoc">Tools for defending the host against the virus.</div><div class="ttdef"><b>Definition:</b> tools-bones.hpp:26</div></div>
 <div class="ttc" id="aclass_virus_html"><div class="ttname"><a href="class_virus.html">Virus</a></div><div class="ttdoc">Virus.</div><div class="ttdef"><b>Definition:</b> virus-bones.hpp:29</div></div>
 <div class="ttc" id="aclass_virus_html_aad6614ef755a101d2bb52d48504041fd"><div class="ttname"><a href="class_virus.html#aad6614ef755a101d2bb52d48504041fd">Virus::get_prob_infecting</a></div><div class="ttdeci">epiworld_double get_prob_infecting()</div><div class="ttdoc">Get and set the tool functions.</div><div class="ttdef"><b>Definition:</b> virus-meat.hpp:94</div></div>
-<div class="ttc" id="aclass_virus_html_ae4631d1e4413a9c0040c77073d3c1019"><div class="ttname"><a href="class_virus.html#ae4631d1e4413a9c0040c77073d3c1019">Virus::set_name</a></div><div class="ttdeci">void set_name(std::string name)</div><div class="ttdoc">@]</div><div class="ttdef"><b>Definition:</b> virus-meat.hpp:333</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

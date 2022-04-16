@@ -71,7 +71,7 @@ $(function() {
 epiworld</h1>
 <p>This C++ template-header-only library provides a general framework for epidemiologic simulation. The main features of the library are:</p>
 <ol type="1">
-<li>Four key classes: <code><a class="el" href="class_model.html">Model</a></code>, <code><a class="el" href="class_person.html">Person</a></code>, <code><a class="el" href="class_tool.html" title="Tools for defending the host against the virus.">Tool</a></code>, and <code><a class="el" href="class_virus.html" title="Virus.">Virus</a></code>.</li>
+<li>Four key classes: <code><a class="el" href="class_model.html" title="Core class of epiworld.">Model</a></code>, <code><a class="el" href="class_person.html">Person</a></code>, <code><a class="el" href="class_tool.html" title="Tools for defending the host against the virus.">Tool</a></code>, and <code><a class="el" href="class_virus.html" title="Virus.">Virus</a></code>.</li>
 <li>The model features a social networks of <code>Persons</code>.</li>
 <li><code>Persons</code> can have multiple <code>Tools</code> as a defense system.</li>
 <li><code>Tools</code> can reduce contagion rate, transmissibility, death rates, and improve recovery rates.</li>
@@ -113,8 +113,8 @@ Hello world</h1>
 <div class="line">    model.print();</div>
 <div class="line">  </div>
 <div class="line">}</div>
-<div class="ttc" id="aclass_model_html"><div class="ttname"><a href="class_model.html">Model</a></div><div class="ttdef"><b>Definition:</b> model-bones.hpp:22</div></div>
-<div class="ttc" id="aclass_model_html_a237dbec55b0d47a037a11502eecc8733"><div class="ttname"><a href="class_model.html#a237dbec55b0d47a037a11502eecc8733">Model::init</a></div><div class="ttdeci">void init(unsigned int ndays, unsigned int seed)</div><div class="ttdoc">@]</div></div>
+<div class="ttc" id="aclass_model_html"><div class="ttname"><a href="class_model.html">Model</a></div><div class="ttdoc">Core class of epiworld.</div><div class="ttdef"><b>Definition:</b> model-bones.hpp:31</div></div>
+<div class="ttc" id="aclass_model_html_a237dbec55b0d47a037a11502eecc8733"><div class="ttname"><a href="class_model.html#a237dbec55b0d47a037a11502eecc8733">Model::init</a></div><div class="ttdeci">void init(unsigned int ndays, unsigned int seed)</div><div class="ttdoc">Functions to run the model.</div></div>
 <div class="ttc" id="aclass_tool_html"><div class="ttname"><a href="class_tool.html">Tool</a></div><div class="ttdoc">Tools for defending the host against the virus.</div><div class="ttdef"><b>Definition:</b> tools-bones.hpp:26</div></div>
 <div class="ttc" id="aclass_virus_html"><div class="ttname"><a href="class_virus.html">Virus</a></div><div class="ttdoc">Virus.</div><div class="ttdef"><b>Definition:</b> virus-bones.hpp:29</div></div>
 </div><!-- fragment --><p>And you should get something like the following:</p>

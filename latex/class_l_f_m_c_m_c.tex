@@ -33,35 +33,9 @@ void {\bfseries set\+\_\+summary\+\_\+fun} (FUN$<$ VEC(epiworld\+\_\+double)(TDa
 \mbox{\Hypertarget{class_l_f_m_c_m_c_a96647ce34cd5891a4a6802fa95a48588}\label{class_l_f_m_c_m_c_a96647ce34cd5891a4a6802fa95a48588}} 
 void {\bfseries set\+\_\+kernel\+\_\+fun} (FUN$<$ epiworld\+\_\+double(VEC(epiworld\+\_\+double)\&, epiworld\+\_\+double, \mbox{\hyperlink{class_l_f_m_c_m_c}{LFMCMC}}$<$ TData $>$ $\ast$)$>$ fun)
 \item 
-void \mbox{\hyperlink{class_l_f_m_c_m_c_a00c0ccfbe011fd425bcbfa379ca3dcdb}{set\+\_\+rand\+\_\+engine}} (std\+::mt19937 \&eng)
-\begin{DoxyCompactList}\small\item\em Random number generation. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_l_f_m_c_m_c_aa130a175abca5ad1f6d1182917642495}\label{class_l_f_m_c_m_c_aa130a175abca5ad1f6d1182917642495}} 
-std\+::mt19937 $\ast$ {\bfseries get\+\_\+rand\+\_\+endgine} ()
-\item 
-\mbox{\Hypertarget{class_l_f_m_c_m_c_a995ed29dcf55e66111c1a1de2dccad3c}\label{class_l_f_m_c_m_c_a995ed29dcf55e66111c1a1de2dccad3c}} 
-void {\bfseries seed} (unsigned int s)
-\item 
-\mbox{\Hypertarget{class_l_f_m_c_m_c_a78ce129b42d2c54c4e65d26d7ab62af4}\label{class_l_f_m_c_m_c_a78ce129b42d2c54c4e65d26d7ab62af4}} 
-void {\bfseries set\+\_\+rand\+\_\+gamma} (epiworld\+\_\+double alpha, epiworld\+\_\+double beta)
-\item 
-\mbox{\Hypertarget{class_l_f_m_c_m_c_aa08a4486ccf2a1baef67f47e72ea55c2}\label{class_l_f_m_c_m_c_aa08a4486ccf2a1baef67f47e72ea55c2}} 
-epiworld\+\_\+double {\bfseries runif} ()
-\item 
-\mbox{\Hypertarget{class_l_f_m_c_m_c_ae0f76300aafd9a7144c2974ec3dec201}\label{class_l_f_m_c_m_c_ae0f76300aafd9a7144c2974ec3dec201}} 
-epiworld\+\_\+double {\bfseries rnorm} ()
-\item 
-\mbox{\Hypertarget{class_l_f_m_c_m_c_a758f32d2ec8de7da436b87e261290ef6}\label{class_l_f_m_c_m_c_a758f32d2ec8de7da436b87e261290ef6}} 
-epiworld\+\_\+double {\bfseries rnorm} (epiworld\+\_\+double mean, epiworld\+\_\+double sd)
-\item 
-\mbox{\Hypertarget{class_l_f_m_c_m_c_a9c11e5f7a375ba7d4bc6b1e6dadf8610}\label{class_l_f_m_c_m_c_a9c11e5f7a375ba7d4bc6b1e6dadf8610}} 
-epiworld\+\_\+double {\bfseries rgamma} ()
-\item 
-\mbox{\Hypertarget{class_l_f_m_c_m_c_ad808bc052f81024c91c109df8caf61d1}\label{class_l_f_m_c_m_c_ad808bc052f81024c91c109df8caf61d1}} 
-epiworld\+\_\+double {\bfseries rgamma} (epiworld\+\_\+double alpha, epiworld\+\_\+double beta)
-\item 
 \mbox{\Hypertarget{class_l_f_m_c_m_c_a14908203c50406e6f44cfb1995d55b85}\label{class_l_f_m_c_m_c_a14908203c50406e6f44cfb1995d55b85}} 
-const size\+\_\+t \mbox{\hyperlink{class_l_f_m_c_m_c_a14908203c50406e6f44cfb1995d55b85}{get\+\_\+n\+\_\+samples}} ()
-\begin{DoxyCompactList}\small\item\em @\mbox{]} \end{DoxyCompactList}\item 
+const size\+\_\+t {\bfseries get\+\_\+n\+\_\+samples} ()
+\item 
 \mbox{\Hypertarget{class_l_f_m_c_m_c_af9a019473a0bc10d62f793e1f7266f21}\label{class_l_f_m_c_m_c_af9a019473a0bc10d62f793e1f7266f21}} 
 const size\+\_\+t {\bfseries get\+\_\+n\+\_\+statistics} ()
 \item 
@@ -101,6 +75,36 @@ const {\bfseries VEC} (epiworld\+\_\+double) \&get\+\_\+drawn\+\_\+prob()
 \mbox{\Hypertarget{class_l_f_m_c_m_c_a9705024196f1a491f643da69cd3ca8d9}\label{class_l_f_m_c_m_c_a9705024196f1a491f643da69cd3ca8d9}} 
 {\bfseries VEC} (TData) $\ast$get\+\_\+sampled\+\_\+data()
 \end{DoxyCompactItemize}
+\textbf{ }\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_l_f_m_c_m_c_a00c0ccfbe011fd425bcbfa379ca3dcdb}{set\+\_\+rand\+\_\+engine}} (std\+::mt19937 \&eng)
+\begin{DoxyCompactList}\small\item\em Random number generation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_l_f_m_c_m_c_aa130a175abca5ad1f6d1182917642495}\label{class_l_f_m_c_m_c_aa130a175abca5ad1f6d1182917642495}} 
+std\+::mt19937 $\ast$ {\bfseries get\+\_\+rand\+\_\+endgine} ()
+\item 
+\mbox{\Hypertarget{class_l_f_m_c_m_c_a995ed29dcf55e66111c1a1de2dccad3c}\label{class_l_f_m_c_m_c_a995ed29dcf55e66111c1a1de2dccad3c}} 
+void {\bfseries seed} (unsigned int s)
+\item 
+\mbox{\Hypertarget{class_l_f_m_c_m_c_a78ce129b42d2c54c4e65d26d7ab62af4}\label{class_l_f_m_c_m_c_a78ce129b42d2c54c4e65d26d7ab62af4}} 
+void {\bfseries set\+\_\+rand\+\_\+gamma} (epiworld\+\_\+double alpha, epiworld\+\_\+double beta)
+\item 
+\mbox{\Hypertarget{class_l_f_m_c_m_c_aa08a4486ccf2a1baef67f47e72ea55c2}\label{class_l_f_m_c_m_c_aa08a4486ccf2a1baef67f47e72ea55c2}} 
+epiworld\+\_\+double {\bfseries runif} ()
+\item 
+\mbox{\Hypertarget{class_l_f_m_c_m_c_ae0f76300aafd9a7144c2974ec3dec201}\label{class_l_f_m_c_m_c_ae0f76300aafd9a7144c2974ec3dec201}} 
+epiworld\+\_\+double {\bfseries rnorm} ()
+\item 
+\mbox{\Hypertarget{class_l_f_m_c_m_c_a758f32d2ec8de7da436b87e261290ef6}\label{class_l_f_m_c_m_c_a758f32d2ec8de7da436b87e261290ef6}} 
+epiworld\+\_\+double {\bfseries rnorm} (epiworld\+\_\+double mean, epiworld\+\_\+double sd)
+\item 
+\mbox{\Hypertarget{class_l_f_m_c_m_c_a9c11e5f7a375ba7d4bc6b1e6dadf8610}\label{class_l_f_m_c_m_c_a9c11e5f7a375ba7d4bc6b1e6dadf8610}} 
+epiworld\+\_\+double {\bfseries rgamma} ()
+\item 
+\mbox{\Hypertarget{class_l_f_m_c_m_c_ad808bc052f81024c91c109df8caf61d1}\label{class_l_f_m_c_m_c_ad808bc052f81024c91c109df8caf61d1}} 
+epiworld\+\_\+double {\bfseries rgamma} (epiworld\+\_\+double alpha, epiworld\+\_\+double beta)
+\end{DoxyCompactItemize}
+
 
 
 \doxysubsection{Detailed Description}
@@ -130,7 +134,7 @@ Random number generation.
 
 
 \begin{DoxyParams}{Parameters}
-{\em eng} & @\mbox{[} \\
+{\em eng} & \\
 \hline
 \end{DoxyParams}
 
