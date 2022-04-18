@@ -66,7 +66,7 @@ $(function() {
 <div class="title">epiworld Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_README"></a> <a href="https://github.com/UofUEpi/epiworld/actions/workflows/ci.yml"><img src="https://github.com/UofUEpi/epiworld/actions/workflows/ci.yml/badge.svg" alt="Tests and coverage" style="pointer-events: none;" class="inline"/></a></p>
+<div class="textblock"><p><a class="anchor" id="md_README"></a> <a href="https://github.com/UofUEpi/epiworld/actions/workflows/ci.yml"><img src="https://github.com/UofUEpi/epiworld/actions/workflows/ci.yml/badge.svg" alt="Tests and coverage" style="pointer-events: none;" class="inline"/></a> <a href="https://UofUEpi.github.io/epiworld"><img src="https://img.shields.io/badge/Docs-Doxygen-brightgreen" alt="C++ Documentation" class="inline"/></a></p>
 <h1><a class="anchor" id="autotoc_md0"></a>
 epiworld</h1>
 <p>This C++ template-header-only library provides a general framework for epidemiologic simulation. The main features of the library are:</p>
@@ -106,15 +106,15 @@ Hello world</h1>
 <div class="line">    model.pop_from_random(100000);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Initializing setting days and seed</span></div>
-<div class="line">    model.<a class="code" href="class_model.html#a237dbec55b0d47a037a11502eecc8733">init</a>(100, 123);</div>
+<div class="line">    model.init(100, 123);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Running the model</span></div>
-<div class="line">    model.run();</div>
+<div class="line">    model.<a class="code" href="class_model.html#a825c7fb2498c7693cbf1bfcd0a416ef4">run</a>();</div>
 <div class="line">    model.print();</div>
 <div class="line">  </div>
 <div class="line">}</div>
 <div class="ttc" id="aclass_model_html"><div class="ttname"><a href="class_model.html">Model</a></div><div class="ttdoc">Core class of epiworld.</div><div class="ttdef"><b>Definition:</b> model-bones.hpp:31</div></div>
-<div class="ttc" id="aclass_model_html_a237dbec55b0d47a037a11502eecc8733"><div class="ttname"><a href="class_model.html#a237dbec55b0d47a037a11502eecc8733">Model::init</a></div><div class="ttdeci">void init(unsigned int ndays, unsigned int seed)</div><div class="ttdoc">Functions to run the model.</div></div>
+<div class="ttc" id="aclass_model_html_a825c7fb2498c7693cbf1bfcd0a416ef4"><div class="ttname"><a href="class_model.html#a825c7fb2498c7693cbf1bfcd0a416ef4">Model::run</a></div><div class="ttdeci">void run()</div><div class="ttdoc">Runs the simulation (after initialization)</div></div>
 <div class="ttc" id="aclass_tool_html"><div class="ttname"><a href="class_tool.html">Tool</a></div><div class="ttdoc">Tools for defending the host against the virus.</div><div class="ttdef"><b>Definition:</b> tools-bones.hpp:26</div></div>
 <div class="ttc" id="aclass_virus_html"><div class="ttname"><a href="class_virus.html">Virus</a></div><div class="ttdoc">Virus.</div><div class="ttdef"><b>Definition:</b> virus-bones.hpp:29</div></div>
 </div><!-- fragment --><p>And you should get something like the following:</p>

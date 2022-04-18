@@ -75,11 +75,17 @@ const {\bfseries VEC} (epiworld\+\_\+double) \&get\+\_\+drawn\+\_\+prob()
 \mbox{\Hypertarget{class_l_f_m_c_m_c_a9705024196f1a491f643da69cd3ca8d9}\label{class_l_f_m_c_m_c_a9705024196f1a491f643da69cd3ca8d9}} 
 {\bfseries VEC} (TData) $\ast$get\+\_\+sampled\+\_\+data()
 \end{DoxyCompactItemize}
-\textbf{ }\par
-\begin{DoxyCompactItemize}
+\begin{Indent}\textbf{ Random number generation}\par
+{\em 
+\begin{DoxyParams}{Parameters}
+{\em eng} & \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_l_f_m_c_m_c_a00c0ccfbe011fd425bcbfa379ca3dcdb}{set\+\_\+rand\+\_\+engine}} (std\+::mt19937 \&eng)
-\begin{DoxyCompactList}\small\item\em Random number generation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_l_f_m_c_m_c_a00c0ccfbe011fd425bcbfa379ca3dcdb}\label{class_l_f_m_c_m_c_a00c0ccfbe011fd425bcbfa379ca3dcdb}} 
+void {\bfseries set\+\_\+rand\+\_\+engine} (std\+::mt19937 \&eng)
+\item 
 \mbox{\Hypertarget{class_l_f_m_c_m_c_aa130a175abca5ad1f6d1182917642495}\label{class_l_f_m_c_m_c_aa130a175abca5ad1f6d1182917642495}} 
 std\+::mt19937 $\ast$ {\bfseries get\+\_\+rand\+\_\+endgine} ()
 \item 
@@ -104,7 +110,7 @@ epiworld\+\_\+double {\bfseries rgamma} ()
 \mbox{\Hypertarget{class_l_f_m_c_m_c_ad808bc052f81024c91c109df8caf61d1}\label{class_l_f_m_c_m_c_ad808bc052f81024c91c109df8caf61d1}} 
 epiworld\+\_\+double {\bfseries rgamma} (epiworld\+\_\+double alpha, epiworld\+\_\+double beta)
 \end{DoxyCompactItemize}
-
+\end{Indent}
 
 
 \doxysubsection{Detailed Description}
@@ -118,25 +124,6 @@ Likelihood-\/\+Free Markov Chain Monte Carlo.
 {\em TData} & Type of data that is generated \\
 \hline
 \end{DoxyTemplParams}
-
-
-\doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_l_f_m_c_m_c_a00c0ccfbe011fd425bcbfa379ca3dcdb}\label{class_l_f_m_c_m_c_a00c0ccfbe011fd425bcbfa379ca3dcdb}} 
-\index{LFMCMC$<$ TData $>$@{LFMCMC$<$ TData $>$}!set\_rand\_engine@{set\_rand\_engine}}
-\index{set\_rand\_engine@{set\_rand\_engine}!LFMCMC$<$ TData $>$@{LFMCMC$<$ TData $>$}}
-\doxysubsubsection{\texorpdfstring{set\_rand\_engine()}{set\_rand\_engine()}}
-{\footnotesize\ttfamily template$<$typename TData $>$ \\
-void \mbox{\hyperlink{class_l_f_m_c_m_c}{LFMCMC}}$<$ TData $>$\+::set\+\_\+rand\+\_\+engine (\begin{DoxyParamCaption}\item[{std\+::mt19937 \&}]{eng }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Random number generation. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em eng} & \\
-\hline
-\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

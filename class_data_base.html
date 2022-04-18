@@ -141,9 +141,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>add_user_data</b> (un
 <tr class="memitem:a3323ea7c7b2fbd8366ac7e8efd5528b8"><td class="memItemLeft" align="right" valign="top"><a id="a3323ea7c7b2fbd8366ac7e8efd5528b8"></a>
 <a class="el" href="class_user_data.html">UserData</a>&lt; TSeq &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_user_data</b> ()</td></tr>
 <tr class="separator:a3323ea7c7b2fbd8366ac7e8efd5528b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a69c71eb460b142fb092e5035742760e8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_base.html#a69c71eb460b142fb092e5035742760e8">get_today_total</a> (std::string what) const</td></tr>
-<tr class="memdesc:a69c71eb460b142fb092e5035742760e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get recorded information from the model.  <a href="class_data_base.html#a69c71eb460b142fb092e5035742760e8">More...</a><br /></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Get recorded information from the model</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">what</td><td>std::string, The status, e.g., 0, 1, 2, ... </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>In <code>get_today_total</code>, the current counts of <code>what</code>. </dd>
+<dd>
+In <code>get_today_variant</code>, the current counts of <code>what</code> for each variant. </dd>
+<dd>
+In <code>get_hist_total</code>, the time series of <code>what</code> </dd>
+<dd>
+In <code>get_hist_variant</code>, the time series of what for each variant. </dd>
+<dd>
+In <code>get_hist_total_date</code> and <code>get_hist_variant_date</code> the corresponding dates </dd></dl>
+</div></td></tr>
+<tr class="memitem:a69c71eb460b142fb092e5035742760e8"><td class="memItemLeft" align="right" valign="top"><a id="a69c71eb460b142fb092e5035742760e8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>get_today_total</b> (std::string what) const</td></tr>
 <tr class="separator:a69c71eb460b142fb092e5035742760e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ae2fbc2d7b4530b14584faa8b90a9a7"><td class="memItemLeft" align="right" valign="top"><a id="a5ae2fbc2d7b4530b14584faa8b90a9a7"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>get_today_total</b> (epiworld_fast_uint what) const</td></tr>
@@ -179,51 +195,6 @@ class DataBase&lt; TSeq &gt;</h3>
   </dd>
 </dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a69c71eb460b142fb092e5035742760e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69c71eb460b142fb092e5035742760e8">&#9670;&nbsp;</a></span>get_today_total()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TSeq &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int <a class="el" href="class_data_base.html">DataBase</a>&lt; TSeq &gt;::get_today_total </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>what</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get recorded information from the model. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">what</td><td>std::string, The status, e.g., 0, 1, 2, ... </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>In <code>get_today_total</code>, the current counts of <code>what</code>. </dd>
-<dd>
-In <code>get_today_variant</code>, the current counts of <code>what</code> for each variant. </dd>
-<dd>
-In <code>get_hist_total</code>, the time series of <code>what</code> </dd>
-<dd>
-In <code>get_hist_variant</code>, the time series of what for each variant. </dd>
-<dd>
-In <code>get_hist_total_date</code> and <code>get_hist_variant_date</code> the corresponding dates </dd></dl>
-
-</div>
-</div>
 <a id="a0058539b69a0082728b36df5c7f71d9f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0058539b69a0082728b36df5c7f71d9f">&#9670;&nbsp;</a></span>record_variant()</h2>
 

@@ -1,109 +1,68 @@
 \begin{theindex}
 
-  \item {add\_param}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{14}
-  \item {add\_status\_susceptible}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{14}
+  \item {add\_global\_action}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{15}
   \item {AdjList}, \hyperpage{5}
     \subitem {AdjList}, \hyperpage{5}
 
   \indexspace
 
   \item {DataBase$<$ TSeq $>$}, \hyperpage{6}
-    \subitem {get\_today\_total}, \hyperpage{7}
     \subitem {record\_variant}, \hyperpage{7}
 
   \indexspace
 
-  \item {get\_prob\_infecting}
-    \subitem {Virus$<$ TSeq $>$}, \hyperpage{27}
-  \item {get\_susceptibility\_reduction}
-    \subitem {Tool$<$ TSeq $>$}, \hyperpage{24}
-  \item {get\_today\_total}
-    \subitem {DataBase$<$ TSeq $>$}, \hyperpage{7}
-
-  \indexspace
-
-  \item {init}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{15}
-
-  \indexspace
-
   \item {LFMCMC$<$ TData $>$}, \hyperpage{8}
-    \subitem {set\_rand\_engine}, \hyperpage{9}
   \item {Location$<$ TSeq $>$}, \hyperpage{9}
 
   \indexspace
 
-  \item {Model$<$ TSeq $>$}, \hyperpage{10}
-    \subitem {add\_param}, \hyperpage{14}
-    \subitem {add\_status\_susceptible}, \hyperpage{14}
-    \subitem {init}, \hyperpage{15}
-    \subitem {pop\_from\_adjlist}, \hyperpage{15}
-    \subitem {reset}, \hyperpage{16}
+  \item {Model$<$ TSeq $>$}, \hyperpage{9}
+    \subitem {add\_global\_action}, \hyperpage{15}
+    \subitem {reset}, \hyperpage{15}
     \subitem {reset\_status\_codes}, \hyperpage{16}
-    \subitem {set\_backup}, \hyperpage{16}
-    \subitem {set\_rand\_engine}, \hyperpage{16}
-    \subitem {set\_rewire\_fun}, \hyperpage{17}
-    \subitem {set\_user\_data}, \hyperpage{17}
-    \subitem {write\_data}, \hyperpage{17}
-    \subitem {write\_edgelist}, \hyperpage{18}
+    \subitem {run\_multiple}, \hyperpage{16}
+    \subitem {write\_data}, \hyperpage{16}
 
   \indexspace
 
-  \item {Person$<$ TSeq $>$}, \hyperpage{18}
-  \item {PersonTools$<$ TSeq $>$}, \hyperpage{19}
-  \item {PersonViruses$<$ TSeq $>$}, \hyperpage{20}
-  \item {pop\_from\_adjlist}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{15}
-  \item {Progress}, \hyperpage{21}
+  \item {Person$<$ TSeq $>$}, \hyperpage{17}
+  \item {PersonTools$<$ TSeq $>$}, \hyperpage{18}
+  \item {PersonViruses$<$ TSeq $>$}, \hyperpage{19}
+  \item {Progress}, \hyperpage{20}
 
   \indexspace
 
-  \item {Queue$<$ TSeq $>$}, \hyperpage{22}
+  \item {Queue$<$ TSeq $>$}, \hyperpage{20}
 
   \indexspace
 
-  \item {RandGraph}, \hyperpage{22}
+  \item {RandGraph}, \hyperpage{21}
   \item {record\_variant}
     \subitem {DataBase$<$ TSeq $>$}, \hyperpage{7}
   \item {reset}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{16}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{15}
   \item {reset\_status\_codes}
     \subitem {Model$<$ TSeq $>$}, \hyperpage{16}
-
-  \indexspace
-
-  \item {set\_backup}
+  \item {run\_multiple}
     \subitem {Model$<$ TSeq $>$}, \hyperpage{16}
-  \item {set\_rand\_engine}
-    \subitem {LFMCMC$<$ TData $>$}, \hyperpage{9}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{16}
-  \item {set\_rewire\_fun}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{17}
-  \item {set\_user\_data}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{17}
 
   \indexspace
 
-  \item {Tool$<$ TSeq $>$}, \hyperpage{23}
-    \subitem {get\_susceptibility\_reduction}, \hyperpage{24}
+  \item {Tool$<$ TSeq $>$}, \hyperpage{21}
 
   \indexspace
 
-  \item {UserData$<$ TSeq $>$}, \hyperpage{25}
+  \item {UserData$<$ TSeq $>$}, \hyperpage{22}
 
   \indexspace
 
-  \item {vecHasher$<$ T $>$}, \hyperpage{25}
-  \item {Virus$<$ TSeq $>$}, \hyperpage{25}
-    \subitem {get\_prob\_infecting}, \hyperpage{27}
+  \item {vecHasher$<$ T $>$}, \hyperpage{23}
+  \item {Virus$<$ TSeq $>$}, \hyperpage{23}
 
   \indexspace
 
   \item {write\_data}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{17}
-  \item {write\_edgelist}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{18}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{16}
 
 \end{theindex}

@@ -102,20 +102,8 @@ void \mbox{\hyperlink{class_model_aa5819bef86c4c7d5623a7525831fb73c}{reset\+\_\+
 \mbox{\Hypertarget{class_model_acff738dcd85c99e96ca206d8239ceb21}\label{class_model_acff738dcd85c99e96ca206d8239ceb21}} 
 void {\bfseries get\+\_\+elapsed} (std\+::string unit=\char`\"{}auto\char`\"{}, epiworld\+\_\+double $\ast$last\+\_\+elapsed=nullptr, epiworld\+\_\+double $\ast$total\+\_\+elapsed=nullptr, std\+::string $\ast$unit\+\_\+abbr=nullptr, bool print=true) const
 \item 
-void \mbox{\hyperlink{class_model_adc8d49825ecf57ac045a4c93e4d63924}{set\+\_\+user\+\_\+data}} (std\+::vector$<$ std\+::string $>$ names)
-\begin{DoxyCompactList}\small\item\em Set the user data object. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_model_afb8f52c3c04282276ee3ff51c3031cf9}\label{class_model_afb8f52c3c04282276ee3ff51c3031cf9}} 
-void {\bfseries add\+\_\+user\+\_\+data} (unsigned int j, epiworld\+\_\+double x)
-\item 
-\mbox{\Hypertarget{class_model_afe5b13a42b44107da27f65935f58a875}\label{class_model_afe5b13a42b44107da27f65935f58a875}} 
-void {\bfseries add\+\_\+user\+\_\+data} (std\+::vector$<$ epiworld\+\_\+double $>$ x)
-\item 
-\mbox{\Hypertarget{class_model_a4c6238df673ea53b6945e42ae13da57f}\label{class_model_a4c6238df673ea53b6945e42ae13da57f}} 
-\mbox{\hyperlink{class_user_data}{User\+Data}}$<$ TSeq $>$ \& {\bfseries get\+\_\+user\+\_\+data} ()
-\item 
-\mbox{\Hypertarget{class_model_a519b1a1abb96d3aac1bb7ebe80c39d19}\label{class_model_a519b1a1abb96d3aac1bb7ebe80c39d19}} 
-void {\bfseries add\+\_\+global\+\_\+action} (std\+::function$<$ void(\mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$)$>$ fun, int date)
-\item 
+void \mbox{\hyperlink{class_model_a519b1a1abb96d3aac1bb7ebe80c39d19}{add\+\_\+global\+\_\+action}} (std\+::function$<$ void(\mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$)$>$ fun, int date)
+\begin{DoxyCompactList}\small\item\em Set a global action. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_model_acd6c8412beb06a0f0e143cfd09074362}\label{class_model_acd6c8412beb06a0f0e143cfd09074362}} 
 void {\bfseries run\+\_\+global\+\_\+actions} ()
 \item 
@@ -124,33 +112,28 @@ void {\bfseries clear\+\_\+status\+\_\+set} ()
 \item 
 \mbox{\Hypertarget{class_model_a5a5392dbe1c59fe1d2de493b50c1b1ce}\label{class_model_a5a5392dbe1c59fe1d2de493b50c1b1ce}} 
 void {\bfseries toggle\+\_\+visited} ()
-\item 
-\mbox{\Hypertarget{class_model_a1cbe26a38285095c62d1971251a6c3db}\label{class_model_a1cbe26a38285095c62d1971251a6c3db}} 
-void {\bfseries queuing\+\_\+on} ()
-\item 
-\mbox{\Hypertarget{class_model_a70f0e1d4c74e1cfc887aca35984c52b6}\label{class_model_a70f0e1d4c74e1cfc887aca35984c52b6}} 
-void {\bfseries queuing\+\_\+off} ()
-\item 
-\mbox{\Hypertarget{class_model_a2c4ac58e918e9e8dc2e58be6521d8827}\label{class_model_a2c4ac58e918e9e8dc2e58be6521d8827}} 
-bool {\bfseries is\+\_\+queuing\+\_\+on} () const
-\item 
-\mbox{\Hypertarget{class_model_aaf33c877732b9bdc7cb77e063ad0c1a6}\label{class_model_aaf33c877732b9bdc7cb77e063ad0c1a6}} 
-\mbox{\hyperlink{class_queue}{Queue}}$<$ TSeq $>$ \& {\bfseries get\+\_\+queue} ()
 \end{DoxyCompactItemize}
-\textbf{ }\par
-\begin{DoxyCompactItemize}
+\begin{Indent}\textbf{ Set the backup object}\par
+{\em {\ttfamily backup} can be used to restore the entire object after a run. This can be useful if the user wishes to have individuals start with the same network from the beginning. }\begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_model_a3e8aaab3491ea7f54cac04fca7d25b13}{set\+\_\+backup}} ()
-\begin{DoxyCompactList}\small\item\em Set the backup object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_a3e8aaab3491ea7f54cac04fca7d25b13}\label{class_model_a3e8aaab3491ea7f54cac04fca7d25b13}} 
+void {\bfseries set\+\_\+backup} ()
+\item 
 \mbox{\Hypertarget{class_model_a70652b17bd02fe5b23a7040cf91decb6}\label{class_model_a70652b17bd02fe5b23a7040cf91decb6}} 
 void {\bfseries restore\+\_\+backup} ()
 \end{DoxyCompactItemize}
-
-\textbf{ }\par
-\begin{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Random number generation}\par
+{\em 
+\begin{DoxyParams}{Parameters}
+{\em eng} & \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_model_a9cd759fcd96ff1500665f6009127bf6a}{set\+\_\+rand\+\_\+engine}} (std\+::mt19937 \&eng)
-\begin{DoxyCompactList}\small\item\em Random number generation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_a9cd759fcd96ff1500665f6009127bf6a}\label{class_model_a9cd759fcd96ff1500665f6009127bf6a}} 
+void {\bfseries set\+\_\+rand\+\_\+engine} (std\+::mt19937 \&eng)
+\item 
 \mbox{\Hypertarget{class_model_ac51fba0aa22973a5865d5cae2b89bbf0}\label{class_model_ac51fba0aa22973a5865d5cae2b89bbf0}} 
 std\+::mt19937 $\ast$ {\bfseries get\+\_\+rand\+\_\+endgine} ()
 \item 
@@ -175,12 +158,28 @@ epiworld\+\_\+double {\bfseries rgamma} ()
 \mbox{\Hypertarget{class_model_a26d8e413b4943b58b12d3b186d8aac1a}\label{class_model_a26d8e413b4943b58b12d3b186d8aac1a}} 
 epiworld\+\_\+double {\bfseries rgamma} (epiworld\+\_\+double alpha, epiworld\+\_\+double beta)
 \end{DoxyCompactItemize}
-
-\textbf{ }\par
-\begin{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Accessing population of the model}\par
+{\em 
+\begin{DoxyParams}{Parameters}
+{\em fn} & std\+::string Filename of the edgelist file. \\
+\hline
+{\em skip} & int Number of lines to skip in {\ttfamily fn}. \\
+\hline
+{\em directed} & bool Whether the graph is directed or not. \\
+\hline
+{\em min\+\_\+id} & int Minimum id number (if negative, the program will try to guess from the data.) \\
+\hline
+{\em max\+\_\+id} & int Maximum id number (if negative, the program will try to guess from the data.) \\
+\hline
+{\em al} & \mbox{\hyperlink{class_adj_list}{Adj\+List}} to read into the model. \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_model_ad228aed8654e0f1eb6f5ccc58156cfb6}{pop\+\_\+from\+\_\+adjlist}} (std\+::string fn, int skip=0, bool directed=false, int min\+\_\+id=-\/1, int max\+\_\+id=-\/1)
-\begin{DoxyCompactList}\small\item\em Accessing population of the model. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_ad228aed8654e0f1eb6f5ccc58156cfb6}\label{class_model_ad228aed8654e0f1eb6f5ccc58156cfb6}} 
+void {\bfseries pop\+\_\+from\+\_\+adjlist} (std\+::string fn, int skip=0, bool directed=false, int min\+\_\+id=-\/1, int max\+\_\+id=-\/1)
+\item 
 \mbox{\Hypertarget{class_model_a0afb11e07c35341134dbd1d219fbe8a1}\label{class_model_a0afb11e07c35341134dbd1d219fbe8a1}} 
 void {\bfseries pop\+\_\+from\+\_\+adjlist} (\mbox{\hyperlink{class_adj_list}{Adj\+List}} al)
 \item 
@@ -193,12 +192,22 @@ std\+::vector$<$ \mbox{\hyperlink{class_person}{Person}}$<$ TSeq $>$ $>$ $\ast$ 
 \mbox{\Hypertarget{class_model_a1d148129766a675e1695872027962247}\label{class_model_a1d148129766a675e1695872027962247}} 
 void {\bfseries pop\+\_\+from\+\_\+random} (unsigned int n=1000, unsigned int k=5, bool d=false, epiworld\+\_\+double p=.\+01)
 \end{DoxyCompactItemize}
-
-\textbf{ }\par
-\begin{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Functions to run the model}\par
+{\em 
+\begin{DoxyParams}{Parameters}
+{\em seed} & Seed to be used for Pseudo-\/\+RNG. \\
+\hline
+{\em ndays} & Number of days (steps) of the simulation. \\
+\hline
+{\em fun} & In the case of {\ttfamily run\+\_\+multiple}, a function that is called after each experiment. \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_model_a237dbec55b0d47a037a11502eecc8733}{init}} (unsigned int ndays, unsigned int seed)
-\begin{DoxyCompactList}\small\item\em Functions to run the model. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_a237dbec55b0d47a037a11502eecc8733}\label{class_model_a237dbec55b0d47a037a11502eecc8733}} 
+void {\bfseries init} (unsigned int ndays, unsigned int seed)
+\item 
 \mbox{\Hypertarget{class_model_ae551e7b2be3d8fb3d3d857153681aa94}\label{class_model_ae551e7b2be3d8fb3d3d857153681aa94}} 
 void {\bfseries update\+\_\+status} ()
 \item 
@@ -209,17 +218,27 @@ void {\bfseries mutate\+\_\+variant} ()
 void {\bfseries next} ()
 \item 
 \mbox{\Hypertarget{class_model_a825c7fb2498c7693cbf1bfcd0a416ef4}\label{class_model_a825c7fb2498c7693cbf1bfcd0a416ef4}} 
-void {\bfseries run} ()
-\item 
-\mbox{\Hypertarget{class_model_a19824502152690539d276715589683c9}\label{class_model_a19824502152690539d276715589683c9}} 
-void {\bfseries run\+\_\+multiple} (unsigned int nexperiments, std\+::function$<$ void(\mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$)$>$ fun, bool \mbox{\hyperlink{class_model_a9591eb76c7cf1ed7e1510342ff602d37}{reset}}, bool verbose)
+void \mbox{\hyperlink{class_model_a825c7fb2498c7693cbf1bfcd0a416ef4}{run}} ()
+\begin{DoxyCompactList}\small\item\em Runs the simulation (after initialization) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_a19824502152690539d276715589683c9}{run\+\_\+multiple}} (unsigned int nexperiments, std\+::function$<$ void(\mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$)$>$ fun, bool \mbox{\hyperlink{class_model_a9591eb76c7cf1ed7e1510342ff602d37}{reset}}, bool verbose)
 \end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Rewire the network preserving the degree sequence.}\par
+{\em This implementation assumes an undirected network, thus if \{(i,j), (k,l)\} -\/$>$ \{(i,l), (k,j)\}, the reciprocal is also true, i.\+e., \{(j,i), (l,k)\} -\/$>$ \{(j,k), (l,i)\}.
 
-\textbf{ }\par
-\begin{DoxyCompactItemize}
+
+\begin{DoxyParams}{Parameters}
+{\em proportion} & Proportion of ties to be rewired.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A rewired version of the network. 
+\end{DoxyReturn}
+}\begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_model_ae3c3f9d908aebef89e5ce98823af8cb1}{set\+\_\+rewire\+\_\+fun}} (std\+::function$<$ void(std\+::vector$<$ \mbox{\hyperlink{class_person}{Person}}$<$ TSeq $>$$>$ $\ast$, \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$, epiworld\+\_\+double)$>$ fun)
-\begin{DoxyCompactList}\small\item\em Rewire the network preserving the degree sequence. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_ae3c3f9d908aebef89e5ce98823af8cb1}\label{class_model_ae3c3f9d908aebef89e5ce98823af8cb1}} 
+void {\bfseries set\+\_\+rewire\+\_\+fun} (std\+::function$<$ void(std\+::vector$<$ \mbox{\hyperlink{class_person}{Person}}$<$ TSeq $>$$>$ $\ast$, \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$, epiworld\+\_\+double)$>$ fun)
+\item 
 \mbox{\Hypertarget{class_model_a857e5f803c8bedab79b2c9c5ea702aa1}\label{class_model_a857e5f803c8bedab79b2c9c5ea702aa1}} 
 void {\bfseries set\+\_\+rewire\+\_\+prop} (epiworld\+\_\+double prop)
 \item 
@@ -229,21 +248,48 @@ epiworld\+\_\+double {\bfseries get\+\_\+rewire\+\_\+prop} () const
 \mbox{\Hypertarget{class_model_a3a7d80cad56fef18c90698a89d805da1}\label{class_model_a3a7d80cad56fef18c90698a89d805da1}} 
 void {\bfseries rewire} ()
 \end{DoxyCompactItemize}
-
-\textbf{ }\par
-\begin{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Export the network data in edgelist form}\par
+{\em 
+\begin{DoxyParams}{Parameters}
+{\em fn} & std\+::string. File name. \\
+\hline
+{\em source} & Integer vector \\
+\hline
+{\em target} & Integer vector\\
+\hline
+\end{DoxyParams}
+When passing the source and target, the function will write the edgelist on those. }\begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_model_a93fc0b94d8d9abe2c8f491f06358d8b7}{write\+\_\+edgelist}} (std\+::string fn) const
-\begin{DoxyCompactList}\small\item\em Export the network data in edgelist form. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_a93fc0b94d8d9abe2c8f491f06358d8b7}\label{class_model_a93fc0b94d8d9abe2c8f491f06358d8b7}} 
+void {\bfseries write\+\_\+edgelist} (std\+::string fn) const
+\item 
 \mbox{\Hypertarget{class_model_a34ec3040315eaf6c1c4fff6a146a85e1}\label{class_model_a34ec3040315eaf6c1c4fff6a146a85e1}} 
 void {\bfseries write\+\_\+edgelist} (std\+::vector$<$ unsigned int $>$ \&source, std\+::vector$<$ unsigned int $>$ \&target) const
 \end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Manage status (states) in the model}\par
+{\em Adding values of {\ttfamily s} that are already present in the model will result in an error.
 
-\textbf{ }\par
-\begin{DoxyCompactItemize}
+The functions {\ttfamily get\+\_\+status\+\_\+$\ast$} return the current values for the statuses included in the model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & {\ttfamily unsigned int} Code of the status \\
+\hline
+{\em lab} & {\ttfamily std\+::string} Name of the status.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily add\+\_\+status$\ast$} returns nothing. 
+
+{\ttfamily get\+\_\+status\+\_\+$\ast$} returns a vector of pairs with the statuses and their labels. 
+\end{DoxyReturn}
+}\begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_model_ad8dcbd73a6af4d2136641d66121c0c51}{add\+\_\+status\+\_\+susceptible}} (epiworld\+\_\+fast\+\_\+uint s, std\+::string lab)
-\begin{DoxyCompactList}\small\item\em Adds extra statuses to the model. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_ad8dcbd73a6af4d2136641d66121c0c51}\label{class_model_ad8dcbd73a6af4d2136641d66121c0c51}} 
+void {\bfseries add\+\_\+status\+\_\+susceptible} (epiworld\+\_\+fast\+\_\+uint s, std\+::string lab)
+\item 
 \mbox{\Hypertarget{class_model_a722d349d0cf4fb5a794ac5b99e27e60b}\label{class_model_a722d349d0cf4fb5a794ac5b99e27e60b}} 
 void {\bfseries add\+\_\+status\+\_\+exposed} (epiworld\+\_\+fast\+\_\+uint s, std\+::string lab)
 \item 
@@ -289,7 +335,44 @@ epiworld\+\_\+fast\+\_\+uint {\bfseries get\+\_\+default\+\_\+exposed} () const
 \mbox{\Hypertarget{class_model_a8a4e9b0c0a803df412d7914dc6f4d72e}\label{class_model_a8a4e9b0c0a803df412d7914dc6f4d72e}} 
 epiworld\+\_\+fast\+\_\+uint {\bfseries get\+\_\+default\+\_\+removed} () const
 \end{DoxyCompactItemize}
-
+\end{Indent}
+\begin{Indent}\textbf{ Set the user data object}\par
+{\em 
+\begin{DoxyParams}{Parameters}
+{\em names} & string vector with the names of the variables. \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_model_adc8d49825ecf57ac045a4c93e4d63924}\label{class_model_adc8d49825ecf57ac045a4c93e4d63924}} 
+void \mbox{\hyperlink{class_model_adc8d49825ecf57ac045a4c93e4d63924}{set\+\_\+user\+\_\+data}} (std\+::vector$<$ std\+::string $>$ names)
+\begin{DoxyCompactList}\small\item\em \mbox{[}@ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_afb8f52c3c04282276ee3ff51c3031cf9}\label{class_model_afb8f52c3c04282276ee3ff51c3031cf9}} 
+void {\bfseries add\+\_\+user\+\_\+data} (unsigned int j, epiworld\+\_\+double x)
+\item 
+\mbox{\Hypertarget{class_model_afe5b13a42b44107da27f65935f58a875}\label{class_model_afe5b13a42b44107da27f65935f58a875}} 
+void {\bfseries add\+\_\+user\+\_\+data} (std\+::vector$<$ epiworld\+\_\+double $>$ x)
+\item 
+\mbox{\Hypertarget{class_model_a4c6238df673ea53b6945e42ae13da57f}\label{class_model_a4c6238df673ea53b6945e42ae13da57f}} 
+\mbox{\hyperlink{class_user_data}{User\+Data}}$<$ TSeq $>$ \& {\bfseries get\+\_\+user\+\_\+data} ()
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Queuing system}\par
+{\em When queueing is on, the model will keep track of which agents are either in risk of exposure or exposed. This then is used at each step to act only on the aforementioned agents. }\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_model_a1cbe26a38285095c62d1971251a6c3db}\label{class_model_a1cbe26a38285095c62d1971251a6c3db}} 
+void \mbox{\hyperlink{class_model_a1cbe26a38285095c62d1971251a6c3db}{queuing\+\_\+on}} ()
+\begin{DoxyCompactList}\small\item\em Activates the queuing system (default.) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_a70f0e1d4c74e1cfc887aca35984c52b6}\label{class_model_a70f0e1d4c74e1cfc887aca35984c52b6}} 
+void \mbox{\hyperlink{class_model_a70f0e1d4c74e1cfc887aca35984c52b6}{queuing\+\_\+off}} ()
+\begin{DoxyCompactList}\small\item\em Deactivates the queuing system. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_a2c4ac58e918e9e8dc2e58be6521d8827}\label{class_model_a2c4ac58e918e9e8dc2e58be6521d8827}} 
+bool \mbox{\hyperlink{class_model_a2c4ac58e918e9e8dc2e58be6521d8827}{is\+\_\+queuing\+\_\+on}} () const
+\begin{DoxyCompactList}\small\item\em Query if the queuing system is on. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_aaf33c877732b9bdc7cb77e063ad0c1a6}\label{class_model_aaf33c877732b9bdc7cb77e063ad0c1a6}} 
+\mbox{\hyperlink{class_queue}{Queue}}$<$ TSeq $>$ \& \mbox{\hyperlink{class_model_aaf33c877732b9bdc7cb77e063ad0c1a6}{get\+\_\+queue}} ()
+\begin{DoxyCompactList}\small\item\em Retrieve the {\ttfamily \mbox{\hyperlink{class_queue}{Queue}}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -311,6 +394,24 @@ class {\bfseries Data\+Base$<$ TSeq $>$}
 \mbox{\Hypertarget{class_model_a2bfabd70b21ded1907307daeb724ae58}\label{class_model_a2bfabd70b21ded1907307daeb724ae58}} 
 class {\bfseries Queue$<$ TSeq $>$}
 \end{DoxyCompactItemize}
+\doxysubsection*{Setting and accessing parameters from the model}
+\label{_amgrp61207d51bcc1b661804b11cec5dc845e}%
+ Tools can incorporate parameters included in the model. Internally, parameters in the tool are stored as pointers to an std\+::map$<$$>$ of parameters in the model. Using the {\ttfamily unsigned int} method directly fetches the parameters in the order these were added to the tool. Accessing parameters via the {\ttfamily std\+::string} method involves searching the parameter directly in the std\+::map$<$$>$ member of the model (so it is not recommended.)
+
+The function {\ttfamily set\+\_\+param()} can be used when the parameter already exists in the model.
+
+The {\ttfamily par()} function members are aliases for {\ttfamily get\+\_\+param()}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+\_\+val} & \\
+\hline
+{\em pname} & Name of the parameter to add or to fetch \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The current value of the parameter in the model. 
+\end{DoxyReturn}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_model_aa2f745ba76db76be973556fce73aced0}\label{class_model_aa2f745ba76db76be973556fce73aced0}} 
@@ -436,8 +537,9 @@ epiworld\+\_\+double $\ast$ {\bfseries p39}
 \mbox{\Hypertarget{class_model_a6b01550c5b2e08ccc9417d3ca80ed329}\label{class_model_a6b01550c5b2e08ccc9417d3ca80ed329}} 
 unsigned int {\bfseries npar\+\_\+used} = 0u
 \item 
-epiworld\+\_\+double \mbox{\hyperlink{class_model_a412e4addbe3799787dccc43322aa2954}{add\+\_\+param}} (epiworld\+\_\+double initial\+\_\+val, std\+::string pname)
-\begin{DoxyCompactList}\small\item\em Setting and accessing parameters from the model. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_model_a412e4addbe3799787dccc43322aa2954}\label{class_model_a412e4addbe3799787dccc43322aa2954}} 
+epiworld\+\_\+double {\bfseries add\+\_\+param} (epiworld\+\_\+double initial\+\_\+val, std\+::string pname)
+\item 
 \mbox{\Hypertarget{class_model_a1db9259e58b919268420fa54f2aba8fb}\label{class_model_a1db9259e58b919268420fa54f2aba8fb}} 
 epiworld\+\_\+double {\bfseries set\+\_\+param} (std\+::string pname)
 \item 
@@ -471,107 +573,25 @@ The model class provides the wrapper that puts together {\ttfamily \mbox{\hyperl
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_model_a412e4addbe3799787dccc43322aa2954}\label{class_model_a412e4addbe3799787dccc43322aa2954}} 
-\index{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!add\_param@{add\_param}}
-\index{add\_param@{add\_param}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}}
-\doxysubsubsection{\texorpdfstring{add\_param()}{add\_param()}}
+\mbox{\Hypertarget{class_model_a519b1a1abb96d3aac1bb7ebe80c39d19}\label{class_model_a519b1a1abb96d3aac1bb7ebe80c39d19}} 
+\index{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!add\_global\_action@{add\_global\_action}}
+\index{add\_global\_action@{add\_global\_action}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}}
+\doxysubsubsection{\texorpdfstring{add\_global\_action()}{add\_global\_action()}}
 {\footnotesize\ttfamily template$<$typename TSeq  = bool$>$ \\
-epiworld\+\_\+double \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$\+::add\+\_\+param (\begin{DoxyParamCaption}\item[{epiworld\+\_\+double}]{initial\+\_\+val,  }\item[{std\+::string}]{pname }\end{DoxyParamCaption})}
+void \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$\+::add\+\_\+global\+\_\+action (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(\mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$)$>$}]{fun,  }\item[{int}]{date }\end{DoxyParamCaption})}
 
 
 
-Setting and accessing parameters from the model. 
-
-Tools can incorporate parameters included in the model. Internally, parameters in the tool are stored as pointers to an std\+::map$<$$>$ of parameters in the model. Using the {\ttfamily unsigned int} method directly fetches the parameters in the order these were added to the tool. Accessing parameters via the {\ttfamily std\+::string} method involves searching the parameter directly in the std\+::map$<$$>$ member of the model (so it is not recommended.)
-
-The function {\ttfamily set\+\_\+param()} can be used when the parameter already exists in the model.
-
-The {\ttfamily par()} function members are aliases for {\ttfamily get\+\_\+param()}.
+Set a global action. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em initial\+\_\+val} & \\
+{\em fun} & A function to be called on the prescribed dates \\
 \hline
-{\em pname} & Name of the parameter to add or to fetch \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-The current value of the parameter in the model. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{class_model_ad8dcbd73a6af4d2136641d66121c0c51}\label{class_model_ad8dcbd73a6af4d2136641d66121c0c51}} 
-\index{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!add\_status\_susceptible@{add\_status\_susceptible}}
-\index{add\_status\_susceptible@{add\_status\_susceptible}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}}
-\doxysubsubsection{\texorpdfstring{add\_status\_susceptible()}{add\_status\_susceptible()}}
-{\footnotesize\ttfamily template$<$typename TSeq  = bool$>$ \\
-void \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$\+::add\+\_\+status\+\_\+susceptible (\begin{DoxyParamCaption}\item[{epiworld\+\_\+fast\+\_\+uint}]{s,  }\item[{std\+::string}]{lab }\end{DoxyParamCaption})}
-
-
-
-Adds extra statuses to the model. 
-
-Adding values of {\ttfamily s} that are already present in the model will result in an error.
-
-The functions {\ttfamily get\+\_\+status\+\_\+$\ast$} return the current values for the statuses included in the model.
-
-
-\begin{DoxyParams}{Parameters}
-{\em s} & {\ttfamily unsigned int} Code of the status \\
-\hline
-{\em lab} & {\ttfamily std\+::string} Name of the status.\\
+{\em date} & Integer indicating when the function is called (see details)\\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-{\ttfamily add\+\_\+status$\ast$} returns nothing. 
-
-{\ttfamily get\+\_\+status\+\_\+$\ast$} returns a vector of pairs with the statuses and their labels. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{class_model_a237dbec55b0d47a037a11502eecc8733}\label{class_model_a237dbec55b0d47a037a11502eecc8733}} 
-\index{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!init@{init}}
-\index{init@{init}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}}
-\doxysubsubsection{\texorpdfstring{init()}{init()}}
-{\footnotesize\ttfamily template$<$typename TSeq  = bool$>$ \\
-void \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$\+::init (\begin{DoxyParamCaption}\item[{unsigned int}]{ndays,  }\item[{unsigned int}]{seed }\end{DoxyParamCaption})}
-
-
-
-Functions to run the model. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em seed} & Seed to be used for Pseudo-\/\+RNG. \\
-\hline
-{\em ndays} & Number of days (steps) of the simulation. \\
-\hline
-{\em fun} & In the case of {\ttfamily run\+\_\+multiple}, a function that is called after each experiment. \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{class_model_ad228aed8654e0f1eb6f5ccc58156cfb6}\label{class_model_ad228aed8654e0f1eb6f5ccc58156cfb6}} 
-\index{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!pop\_from\_adjlist@{pop\_from\_adjlist}}
-\index{pop\_from\_adjlist@{pop\_from\_adjlist}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}}
-\doxysubsubsection{\texorpdfstring{pop\_from\_adjlist()}{pop\_from\_adjlist()}}
-{\footnotesize\ttfamily template$<$typename TSeq  = bool$>$ \\
-void \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$\+::pop\+\_\+from\+\_\+adjlist (\begin{DoxyParamCaption}\item[{std\+::string}]{fn,  }\item[{int}]{skip = {\ttfamily 0},  }\item[{bool}]{directed = {\ttfamily false},  }\item[{int}]{min\+\_\+id = {\ttfamily -\/1},  }\item[{int}]{max\+\_\+id = {\ttfamily -\/1} }\end{DoxyParamCaption})}
-
-
-
-Accessing population of the model. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em fn} & std\+::string Filename of the edgelist file. \\
-\hline
-{\em skip} & int Number of lines to skip in {\ttfamily fn}. \\
-\hline
-{\em directed} & bool Whether the graph is directed or not. \\
-\hline
-{\em min\+\_\+id} & int Minimum id number (if negative, the program will try to guess from the data.) \\
-\hline
-{\em max\+\_\+id} & int Maximum id number (if negative, the program will try to guess from the data.) \\
-\hline
-{\em al} & \mbox{\hyperlink{class_adj_list}{Adj\+List}} to read into the model. \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{class_model_a9591eb76c7cf1ed7e1510342ff602d37}\label{class_model_a9591eb76c7cf1ed7e1510342ff602d37}} 
+When date is less than zero, then the function is called at the end of every day. Otherwise, the function will be called only at the end of the indicated date. \mbox{\Hypertarget{class_model_a9591eb76c7cf1ed7e1510342ff602d37}\label{class_model_a9591eb76c7cf1ed7e1510342ff602d37}} 
 \index{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!reset@{reset}}
 \index{reset@{reset}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}}
 \doxysubsubsection{\texorpdfstring{reset()}{reset()}}
@@ -585,7 +605,7 @@ Reset the model.
 Resetting the model will\+:
 \begin{DoxyItemize}
 \item clear the database
-\item restore the population (if {\ttfamily \mbox{\hyperlink{class_model_a3e8aaab3491ea7f54cac04fca7d25b13}{set\+\_\+backup()}}} was called before)
+\item restore the population (if {\ttfamily set\+\_\+backup()} was called before)
 \item re-\/distribute tools
 \item re-\/distribute viruses
 \item set the date to 0 
@@ -611,68 +631,16 @@ The default values are those specified in the enum STATUS.
 {\em verbose} & When {\ttfamily true}, it will print the new mappings. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_model_a3e8aaab3491ea7f54cac04fca7d25b13}\label{class_model_a3e8aaab3491ea7f54cac04fca7d25b13}} 
-\index{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!set\_backup@{set\_backup}}
-\index{set\_backup@{set\_backup}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}}
-\doxysubsubsection{\texorpdfstring{set\_backup()}{set\_backup()}}
+\mbox{\Hypertarget{class_model_a19824502152690539d276715589683c9}\label{class_model_a19824502152690539d276715589683c9}} 
+\index{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!run\_multiple@{run\_multiple}}
+\index{run\_multiple@{run\_multiple}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}}
+\doxysubsubsection{\texorpdfstring{run\_multiple()}{run\_multiple()}}
 {\footnotesize\ttfamily template$<$typename TSeq  = bool$>$ \\
-void \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$\+::set\+\_\+backup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Set the backup object. 
-
-{\ttfamily backup} can be used to restore the entire object after a run. This can be useful if the user wishes to have individuals start with the same network from the beginning. \mbox{\Hypertarget{class_model_a9cd759fcd96ff1500665f6009127bf6a}\label{class_model_a9cd759fcd96ff1500665f6009127bf6a}} 
-\index{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!set\_rand\_engine@{set\_rand\_engine}}
-\index{set\_rand\_engine@{set\_rand\_engine}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}}
-\doxysubsubsection{\texorpdfstring{set\_rand\_engine()}{set\_rand\_engine()}}
-{\footnotesize\ttfamily template$<$typename TSeq  = bool$>$ \\
-void \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$\+::set\+\_\+rand\+\_\+engine (\begin{DoxyParamCaption}\item[{std\+::mt19937 \&}]{eng }\end{DoxyParamCaption})}
-
-
-
-Random number generation. 
+void \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$\+::run\+\_\+multiple (\begin{DoxyParamCaption}\item[{unsigned int}]{nexperiments,  }\item[{std\+::function$<$ void(\mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$)$>$}]{fun,  }\item[{bool}]{reset,  }\item[{bool}]{verbose }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}
-{\em eng} & \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{class_model_ae3c3f9d908aebef89e5ce98823af8cb1}\label{class_model_ae3c3f9d908aebef89e5ce98823af8cb1}} 
-\index{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!set\_rewire\_fun@{set\_rewire\_fun}}
-\index{set\_rewire\_fun@{set\_rewire\_fun}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}}
-\doxysubsubsection{\texorpdfstring{set\_rewire\_fun()}{set\_rewire\_fun()}}
-{\footnotesize\ttfamily template$<$typename TSeq  = bool$>$ \\
-void \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$\+::set\+\_\+rewire\+\_\+fun (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(std\+::vector$<$ \mbox{\hyperlink{class_person}{Person}}$<$ TSeq $>$$>$ $\ast$, \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$, epiworld\+\_\+double)$>$}]{fun }\end{DoxyParamCaption})}
-
-
-
-Rewire the network preserving the degree sequence. 
-
-This implementation assumes an undirected network, thus if \{(i,j), (k,l)\} -\/$>$ \{(i,l), (k,j)\}, the reciprocal is also true, i.\+e., \{(j,i), (l,k)\} -\/$>$ \{(j,k), (l,i)\}.
-
-
-\begin{DoxyParams}{Parameters}
-{\em proportion} & Proportion of ties to be rewired.\\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-A rewired version of the network. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{class_model_adc8d49825ecf57ac045a4c93e4d63924}\label{class_model_adc8d49825ecf57ac045a4c93e4d63924}} 
-\index{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!set\_user\_data@{set\_user\_data}}
-\index{set\_user\_data@{set\_user\_data}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}}
-\doxysubsubsection{\texorpdfstring{set\_user\_data()}{set\_user\_data()}}
-{\footnotesize\ttfamily template$<$typename TSeq  = bool$>$ \\
-void \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$\+::set\+\_\+user\+\_\+data (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{names }\end{DoxyParamCaption})}
-
-
-
-Set the user data object. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em names} & \mbox{[}@ \\
+{\em nexperiments} & Multiple runs of the simulation \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{class_model_a6c07199ce0c9102cccb9749a7eda421d}\label{class_model_a6c07199ce0c9102cccb9749a7eda421d}} 
@@ -699,27 +667,7 @@ Wrapper of {\ttfamily Data\+Base\+::write\+\_\+data}
 {\em fn\+\_\+transition} & Filename. Markov transition history. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_model_a93fc0b94d8d9abe2c8f491f06358d8b7}\label{class_model_a93fc0b94d8d9abe2c8f491f06358d8b7}} 
-\index{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!write\_edgelist@{write\_edgelist}}
-\index{write\_edgelist@{write\_edgelist}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}}
-\doxysubsubsection{\texorpdfstring{write\_edgelist()}{write\_edgelist()}}
-{\footnotesize\ttfamily template$<$typename TSeq  = bool$>$ \\
-void \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$\+::write\+\_\+edgelist (\begin{DoxyParamCaption}\item[{std\+::string}]{fn }\end{DoxyParamCaption}) const}
 
-
-
-Export the network data in edgelist form. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em fn} & std\+::string. File name. \\
-\hline
-{\em source} & Integer vector \\
-\hline
-{\em target} & Integer vector\\
-\hline
-\end{DoxyParams}
-When passing the source and target, the function will write the edgelist on those. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

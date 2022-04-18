@@ -42,11 +42,22 @@ std\+::string {\bfseries get\+\_\+name} () const
 \mbox{\Hypertarget{class_tool_a467bf8f79f47563d11ad0ba3b65de2d5}\label{class_tool_a467bf8f79f47563d11ad0ba3b65de2d5}} 
 unsigned int {\bfseries get\+\_\+id} () const
 \end{DoxyCompactItemize}
-\textbf{ }\par
-\begin{DoxyCompactItemize}
+\begin{Indent}\textbf{ Get and set the tool functions}\par
+{\em 
+\begin{DoxyParams}{Parameters}
+{\em v} & The virus over which to operate \\
+\hline
+{\em fun} & the function to be used\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+epiworld\+\_\+double 
+\end{DoxyReturn}
+}\begin{DoxyCompactItemize}
 \item 
-epiworld\+\_\+double \mbox{\hyperlink{class_tool_adbc3bec3b25a2768fb51275c680be2d9}{get\+\_\+susceptibility\+\_\+reduction}} (\mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ $\ast$v)
-\begin{DoxyCompactList}\small\item\em Get and set the tool functions. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tool_adbc3bec3b25a2768fb51275c680be2d9}\label{class_tool_adbc3bec3b25a2768fb51275c680be2d9}} 
+epiworld\+\_\+double {\bfseries get\+\_\+susceptibility\+\_\+reduction} (\mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ $\ast$v)
+\item 
 \mbox{\Hypertarget{class_tool_a3891e99bd8fbd5e2233ddfd133035e2c}\label{class_tool_a3891e99bd8fbd5e2233ddfd133035e2c}} 
 epiworld\+\_\+double {\bfseries get\+\_\+transmission\+\_\+reduction} (\mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ $\ast$v)
 \item 
@@ -92,7 +103,7 @@ void {\bfseries set\+\_\+recovery\+\_\+enhancer} (epiworld\+\_\+double prob)
 \mbox{\Hypertarget{class_tool_ad73a2e6bf631669872e34af574a8d88e}\label{class_tool_ad73a2e6bf631669872e34af574a8d88e}} 
 void {\bfseries set\+\_\+death\+\_\+reduction} (epiworld\+\_\+double prob)
 \end{DoxyCompactItemize}
-
+\end{Indent}
 \doxysubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
@@ -118,30 +129,6 @@ Tools for defending the host against the virus.
 {\em TSeq} & Type of sequence \\
 \hline
 \end{DoxyTemplParams}
-
-
-\doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_tool_adbc3bec3b25a2768fb51275c680be2d9}\label{class_tool_adbc3bec3b25a2768fb51275c680be2d9}} 
-\index{Tool$<$ TSeq $>$@{Tool$<$ TSeq $>$}!get\_susceptibility\_reduction@{get\_susceptibility\_reduction}}
-\index{get\_susceptibility\_reduction@{get\_susceptibility\_reduction}!Tool$<$ TSeq $>$@{Tool$<$ TSeq $>$}}
-\doxysubsubsection{\texorpdfstring{get\_susceptibility\_reduction()}{get\_susceptibility\_reduction()}}
-{\footnotesize\ttfamily template$<$typename TSeq $>$ \\
-epiworld\+\_\+double \mbox{\hyperlink{class_tool}{Tool}}$<$ TSeq $>$\+::get\+\_\+susceptibility\+\_\+reduction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ $\ast$}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Get and set the tool functions. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em v} & The virus over which to operate \\
-\hline
-{\em fun} & the function to be used\\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-epiworld\+\_\+double 
-\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

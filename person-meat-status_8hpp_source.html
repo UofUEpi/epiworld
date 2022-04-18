@@ -140,7 +140,7 @@ $(function() {
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="comment">/* And it is a function of susceptibility_reduction as well */</span> </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            tmp_transmission = </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                (1.0 - p-&gt;get_susceptibility_reduction(tmp_v)) * </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                tmp_v-&gt;<a class="code" href="class_virus.html#aad6614ef755a101d2bb52d48504041fd">get_prob_infecting</a>() * </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                tmp_v-&gt;get_prob_infecting() * </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                (1.0 - neighbor-&gt;get_transmission_reduction(tmp_v)) </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                ; </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        </div>
@@ -205,7 +205,6 @@ $(function() {
 <div class="ttc" id="aclass_person_html"><div class="ttname"><a href="class_person.html">Person</a></div><div class="ttdef"><b>Definition:</b> person-bones.hpp:20</div></div>
 <div class="ttc" id="aclass_person_viruses_html"><div class="ttname"><a href="class_person_viruses.html">PersonViruses</a></div><div class="ttdoc">Set of viruses in host.</div><div class="ttdef"><b>Definition:</b> personviruses-bones.hpp:10</div></div>
 <div class="ttc" id="aclass_virus_html"><div class="ttname"><a href="class_virus.html">Virus</a></div><div class="ttdoc">Virus.</div><div class="ttdef"><b>Definition:</b> virus-bones.hpp:29</div></div>
-<div class="ttc" id="aclass_virus_html_aad6614ef755a101d2bb52d48504041fd"><div class="ttname"><a href="class_virus.html#aad6614ef755a101d2bb52d48504041fd">Virus::get_prob_infecting</a></div><div class="ttdeci">epiworld_double get_prob_infecting()</div><div class="ttdoc">Get and set the tool functions.</div><div class="ttdef"><b>Definition:</b> virus-meat.hpp:94</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

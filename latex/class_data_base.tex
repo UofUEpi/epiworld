@@ -74,11 +74,28 @@ void {\bfseries add\+\_\+user\+\_\+data} (unsigned int j, epiworld\+\_\+double x
 \mbox{\Hypertarget{class_data_base_a3323ea7c7b2fbd8366ac7e8efd5528b8}\label{class_data_base_a3323ea7c7b2fbd8366ac7e8efd5528b8}} 
 \mbox{\hyperlink{class_user_data}{User\+Data}}$<$ TSeq $>$ \& {\bfseries get\+\_\+user\+\_\+data} ()
 \end{DoxyCompactItemize}
-\textbf{ }\par
-\begin{DoxyCompactItemize}
+\begin{Indent}\textbf{ Get recorded information from the model}\par
+{\em 
+\begin{DoxyParams}{Parameters}
+{\em what} & std\+::string, The status, e.\+g., 0, 1, 2, ... \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+In {\ttfamily get\+\_\+today\+\_\+total}, the current counts of {\ttfamily what}. 
+
+In {\ttfamily get\+\_\+today\+\_\+variant}, the current counts of {\ttfamily what} for each variant. 
+
+In {\ttfamily get\+\_\+hist\+\_\+total}, the time series of {\ttfamily what} 
+
+In {\ttfamily get\+\_\+hist\+\_\+variant}, the time series of what for each variant. 
+
+In {\ttfamily get\+\_\+hist\+\_\+total\+\_\+date} and {\ttfamily get\+\_\+hist\+\_\+variant\+\_\+date} the corresponding dates 
+\end{DoxyReturn}
+}\begin{DoxyCompactItemize}
 \item 
-int \mbox{\hyperlink{class_data_base_a69c71eb460b142fb092e5035742760e8}{get\+\_\+today\+\_\+total}} (std\+::string what) const
-\begin{DoxyCompactList}\small\item\em Get recorded information from the model. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_data_base_a69c71eb460b142fb092e5035742760e8}\label{class_data_base_a69c71eb460b142fb092e5035742760e8}} 
+int {\bfseries get\+\_\+today\+\_\+total} (std\+::string what) const
+\item 
 \mbox{\Hypertarget{class_data_base_a5ae2fbc2d7b4530b14584faa8b90a9a7}\label{class_data_base_a5ae2fbc2d7b4530b14584faa8b90a9a7}} 
 int {\bfseries get\+\_\+today\+\_\+total} (epiworld\+\_\+fast\+\_\+uint what) const
 \item 
@@ -94,7 +111,7 @@ void {\bfseries get\+\_\+hist\+\_\+total} (std\+::vector$<$ int $>$ $\ast$date, 
 \mbox{\Hypertarget{class_data_base_a241a3cc333ef0200dc1775de5c0beee4}\label{class_data_base_a241a3cc333ef0200dc1775de5c0beee4}} 
 void {\bfseries get\+\_\+hist\+\_\+variant} (std\+::vector$<$ int $>$ \&date, std\+::vector$<$ int $>$ \&id, std\+::vector$<$ std\+::string $>$ \&status, std\+::vector$<$ int $>$ \&counts) const
 \end{DoxyCompactItemize}
-
+\end{Indent}
 \doxysubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
@@ -117,33 +134,6 @@ Statistical data about the process.
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_data_base_a69c71eb460b142fb092e5035742760e8}\label{class_data_base_a69c71eb460b142fb092e5035742760e8}} 
-\index{DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}!get\_today\_total@{get\_today\_total}}
-\index{get\_today\_total@{get\_today\_total}!DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}}
-\doxysubsubsection{\texorpdfstring{get\_today\_total()}{get\_today\_total()}}
-{\footnotesize\ttfamily template$<$typename TSeq $>$ \\
-int \mbox{\hyperlink{class_data_base}{Data\+Base}}$<$ TSeq $>$\+::get\+\_\+today\+\_\+total (\begin{DoxyParamCaption}\item[{std\+::string}]{what }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Get recorded information from the model. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em what} & std\+::string, The status, e.\+g., 0, 1, 2, ... \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-In {\ttfamily get\+\_\+today\+\_\+total}, the current counts of {\ttfamily what}. 
-
-In {\ttfamily get\+\_\+today\+\_\+variant}, the current counts of {\ttfamily what} for each variant. 
-
-In {\ttfamily get\+\_\+hist\+\_\+total}, the time series of {\ttfamily what} 
-
-In {\ttfamily get\+\_\+hist\+\_\+variant}, the time series of what for each variant. 
-
-In {\ttfamily get\+\_\+hist\+\_\+total\+\_\+date} and {\ttfamily get\+\_\+hist\+\_\+variant\+\_\+date} the corresponding dates 
-\end{DoxyReturn}
 \mbox{\Hypertarget{class_data_base_a0058539b69a0082728b36df5c7f71d9f}\label{class_data_base_a0058539b69a0082728b36df5c7f71d9f}} 
 \index{DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}!record\_variant@{record\_variant}}
 \index{record\_variant@{record\_variant}!DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}}

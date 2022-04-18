@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['init_8',['init',['../class_model.html#a237dbec55b0d47a037a11502eecc8733',1,'Model']]]
+  ['is_5fqueuing_5fon_5',['is_queuing_on',['../class_model.html#a2c4ac58e918e9e8dc2e58be6521d8827',1,'Model']]]
 ];
