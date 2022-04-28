@@ -1,23 +1,19 @@
 \hypertarget{class_user_data}{}\doxysection{User\+Data$<$ TSeq $>$ Class Template Reference}
 \label{class_user_data}\index{UserData$<$ TSeq $>$@{UserData$<$ TSeq $>$}}
+
+
+Personalized data by the user.  
+
+
+
+
+{\ttfamily \#include $<$userdata-\/bones.\+hpp$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_user_data_adee45d65067910e75af85ed06aa4eaf4}\label{class_user_data_adee45d65067910e75af85ed06aa4eaf4}} 
-{\bfseries User\+Data} (std\+::vector$<$ std\+::string $>$ names)
-\item 
-\mbox{\Hypertarget{class_user_data_af5b2e637536227178636a9c4409a3338}\label{class_user_data_af5b2e637536227178636a9c4409a3338}} 
-void {\bfseries add} (std\+::vector$<$ epiworld\+\_\+double $>$ x)
-\item 
-\mbox{\Hypertarget{class_user_data_abb780cd801fd045c2082f887daa20935}\label{class_user_data_abb780cd801fd045c2082f887daa20935}} 
-void {\bfseries add} (unsigned int j, epiworld\+\_\+double x)
-\item 
-\mbox{\Hypertarget{class_user_data_a47c2b4bf53b4d4f259cff3c508560fa2}\label{class_user_data_a47c2b4bf53b4d4f259cff3c508560fa2}} 
-epiworld\+\_\+double \& {\bfseries operator()} (unsigned int i, unsigned int j)
-\item 
-\mbox{\Hypertarget{class_user_data_a0124f68193cae9818b4740a28bbc34d2}\label{class_user_data_a0124f68193cae9818b4740a28bbc34d2}} 
-epiworld\+\_\+double \& {\bfseries operator()} (unsigned int i, std\+::string name)
-\item 
+\mbox{\hyperlink{class_user_data_adee45d65067910e75af85ed06aa4eaf4}{User\+Data}} (std\+::vector$<$ std\+::string $>$ names)
+\begin{DoxyCompactList}\small\item\em Construct a new User Data object. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_user_data_a7dd6692a5017a3d7317f81d3df8ef19e}\label{class_user_data_a7dd6692a5017a3d7317f81d3df8ef19e}} 
 std\+::vector$<$ std\+::string $>$ \& {\bfseries get\+\_\+names} ()
 \item 
@@ -42,6 +38,43 @@ void {\bfseries write} (std\+::string fn)
 \mbox{\Hypertarget{class_user_data_a6d14ebf71d0484428492f6339ecc835e}\label{class_user_data_a6d14ebf71d0484428492f6339ecc835e}} 
 void {\bfseries print} () const
 \end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Append data}\par
+{\em 
+\begin{DoxyParams}{Parameters}
+{\em x} & A vector of length {\ttfamily ncol()} (if vector), otherwise a {\ttfamily epiworld\+\_\+double}. \\
+\hline
+{\em j} & Index of the data point, from 0 to {\ttfamily ncol() -\/ 1}. \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_user_data_af5b2e637536227178636a9c4409a3338}\label{class_user_data_af5b2e637536227178636a9c4409a3338}} 
+void {\bfseries add} (std\+::vector$<$ epiworld\+\_\+double $>$ x)
+\item 
+\mbox{\Hypertarget{class_user_data_abb780cd801fd045c2082f887daa20935}\label{class_user_data_abb780cd801fd045c2082f887daa20935}} 
+void {\bfseries add} (unsigned int j, epiworld\+\_\+double x)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Access data}\par
+{\em 
+\begin{DoxyParams}{Parameters}
+{\em i} & Row (0 through ndays -\/ 1.) \\
+\hline
+{\em j} & Column (0 through {\ttfamily ncols()}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+epiworld\+\_\+double\& 
+\end{DoxyReturn}
+}\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_user_data_a47c2b4bf53b4d4f259cff3c508560fa2}\label{class_user_data_a47c2b4bf53b4d4f259cff3c508560fa2}} 
+epiworld\+\_\+double \& {\bfseries operator()} (unsigned int i, unsigned int j)
+\item 
+\mbox{\Hypertarget{class_user_data_a0124f68193cae9818b4740a28bbc34d2}\label{class_user_data_a0124f68193cae9818b4740a28bbc34d2}} 
+epiworld\+\_\+double \& {\bfseries operator()} (unsigned int i, std\+::string name)
+\end{DoxyCompactItemize}
+\end{Indent}
 \doxysubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
@@ -51,6 +84,38 @@ class {\bfseries Model$<$ TSeq $>$}
 \mbox{\Hypertarget{class_user_data_a8c2c72b4a49cd6654843fe6fb4c36aa4}\label{class_user_data_a8c2c72b4a49cd6654843fe6fb4c36aa4}} 
 class {\bfseries Data\+Base$<$ TSeq $>$}
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename TSeq$>$\newline
+class User\+Data$<$ TSeq $>$}
+
+Personalized data by the user. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TSeq} & \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_user_data_adee45d65067910e75af85ed06aa4eaf4}\label{class_user_data_adee45d65067910e75af85ed06aa4eaf4}} 
+\index{UserData$<$ TSeq $>$@{UserData$<$ TSeq $>$}!UserData@{UserData}}
+\index{UserData@{UserData}!UserData$<$ TSeq $>$@{UserData$<$ TSeq $>$}}
+\doxysubsubsection{\texorpdfstring{UserData()}{UserData()}}
+{\footnotesize\ttfamily template$<$typename TSeq $>$ \\
+\mbox{\hyperlink{class_user_data}{User\+Data}}$<$ TSeq $>$\+::\mbox{\hyperlink{class_user_data}{User\+Data}} (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{names }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new User Data object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em names} & A vector of names. The length of the vector sets the number of columns to record. \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

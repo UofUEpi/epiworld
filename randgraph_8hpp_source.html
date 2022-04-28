@@ -175,14 +175,14 @@ $(function() {
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <a class="code" href="class_person.html">Person&lt;TSeq&gt;</a> &amp; p01 = persons-&gt;operator[](p0.get_neighbors()[id01]-&gt;get_index());</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordflow">for</span> (n0 = 0; n0 &lt; p01.get_neighbors().size(); ++n0)</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            {</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                <span class="keywordflow">if</span> (p0.get_id() == p01.get_neighbors()[n0]-&gt;get_id())</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                <span class="keywordflow">if</span> (p0.<a class="code" href="class_person.html#acf7e4e893a350de8de760e568f58cd53">get_id</a>() == p01.get_neighbors()[n0]-&gt;get_id())</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                    <span class="keywordflow">break</span>;            </div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            }</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <a class="code" href="class_person.html">Person&lt;TSeq&gt;</a> &amp; p11 = persons-&gt;operator[](p1.get_neighbors()[id11]-&gt;get_index());</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keywordflow">for</span> (n1 = 0; n1 &lt; p11.get_neighbors().size(); ++n1)</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            {</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                <span class="keywordflow">if</span> (p1.get_id() == p11.get_neighbors()[n1]-&gt;get_id())</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                <span class="keywordflow">if</span> (p1.<a class="code" href="class_person.html#acf7e4e893a350de8de760e568f58cd53">get_id</a>() == p11.get_neighbors()[n1]-&gt;get_id())</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                    <span class="keywordflow">break</span>;            </div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            }</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
@@ -472,7 +472,8 @@ $(function() {
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_adj_list_html"><div class="ttname"><a href="class_adj_list.html">AdjList</a></div><div class="ttdef"><b>Definition:</b> adjlist-bones.hpp:4</div></div>
 <div class="ttc" id="aclass_model_html"><div class="ttname"><a href="class_model.html">Model</a></div><div class="ttdoc">Core class of epiworld.</div><div class="ttdef"><b>Definition:</b> model-bones.hpp:31</div></div>
-<div class="ttc" id="aclass_person_html"><div class="ttname"><a href="class_person.html">Person</a></div><div class="ttdef"><b>Definition:</b> person-bones.hpp:20</div></div>
+<div class="ttc" id="aclass_person_html"><div class="ttname"><a href="class_person.html">Person</a></div><div class="ttdoc">Person (agents)</div><div class="ttdef"><b>Definition:</b> person-bones.hpp:25</div></div>
+<div class="ttc" id="aclass_person_html_acf7e4e893a350de8de760e568f58cd53"><div class="ttname"><a href="class_person.html#acf7e4e893a350de8de760e568f58cd53">Person::get_id</a></div><div class="ttdeci">int get_id() const</div><div class="ttdoc">Id of the individual.</div><div class="ttdef"><b>Definition:</b> person-meat.hpp:87</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

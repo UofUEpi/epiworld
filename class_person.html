@@ -70,6 +70,11 @@ $(function() {
 <div class="title">Person&lt; TSeq &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="class_person.html" title="Person (agents)">Person</a> (agents)  
+ <a href="class_person.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="person-bones_8hpp_source.html">person-bones.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -85,23 +90,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>add_virus</b> (<a cla
 <tr class="memitem:a6da4dad60d48af503255689b3a2b6a34"><td class="memItemLeft" align="right" valign="top"><a id="a6da4dad60d48af503255689b3a2b6a34"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>rm_virus</b> (<a class="el" href="class_virus.html">Virus</a>&lt; TSeq &gt; *virus)</td></tr>
 <tr class="separator:a6da4dad60d48af503255689b3a2b6a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5663349488a5af1538324c174b95cfe"><td class="memItemLeft" align="right" valign="top"><a id="ac5663349488a5af1538324c174b95cfe"></a>
-epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>get_susceptibility_reduction</b> (<a class="el" href="class_virus.html">Virus</a>&lt; TSeq &gt; *v)</td></tr>
-<tr class="separator:ac5663349488a5af1538324c174b95cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb3ed931c34da611d9d9bbdae7547fc6"><td class="memItemLeft" align="right" valign="top"><a id="acb3ed931c34da611d9d9bbdae7547fc6"></a>
-epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>get_transmission_reduction</b> (<a class="el" href="class_virus.html">Virus</a>&lt; TSeq &gt; *v)</td></tr>
-<tr class="separator:acb3ed931c34da611d9d9bbdae7547fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99b0cbdd57d726e1725a5fb62ad94d45"><td class="memItemLeft" align="right" valign="top"><a id="a99b0cbdd57d726e1725a5fb62ad94d45"></a>
-epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>get_recovery_enhancer</b> (<a class="el" href="class_virus.html">Virus</a>&lt; TSeq &gt; *v)</td></tr>
-<tr class="separator:a99b0cbdd57d726e1725a5fb62ad94d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82327a7b0c99f00114724a192924a3f0"><td class="memItemLeft" align="right" valign="top"><a id="a82327a7b0c99f00114724a192924a3f0"></a>
-epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>get_death_reduction</b> (<a class="el" href="class_virus.html">Virus</a>&lt; TSeq &gt; *v)</td></tr>
-<tr class="separator:a82327a7b0c99f00114724a192924a3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf7e4e893a350de8de760e568f58cd53"><td class="memItemLeft" align="right" valign="top"><a id="acf7e4e893a350de8de760e568f58cd53"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>get_id</b> () const</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_person.html#acf7e4e893a350de8de760e568f58cd53">get_id</a> () const</td></tr>
+<tr class="memdesc:acf7e4e893a350de8de760e568f58cd53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Id of the individual. <br /></td></tr>
 <tr class="separator:acf7e4e893a350de8de760e568f58cd53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3dece9840b808b3bf8efc6ba09efacb"><td class="memItemLeft" align="right" valign="top"><a id="ab3dece9840b808b3bf8efc6ba09efacb"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>get_index</b> () const</td></tr>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_person.html#ab3dece9840b808b3bf8efc6ba09efacb">get_index</a> () const</td></tr>
+<tr class="memdesc:ab3dece9840b808b3bf8efc6ba09efacb"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_location.html">Location</a> (0, ..., n-1). <br /></td></tr>
 <tr class="separator:ab3dece9840b808b3bf8efc6ba09efacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3437be3b8de22ce08da40daeaa18aee"><td class="memItemLeft" align="right" valign="top"><a id="ae3437be3b8de22ce08da40daeaa18aee"></a>
 std::mt19937 *&#160;</td><td class="memItemRight" valign="bottom"><b>get_rand_endgine</b> ()</td></tr>
@@ -145,15 +140,6 @@ const epiworld_fast_uint &amp;&#160;</td><td class="memItemRight" valign="bottom
 <tr class="memitem:af2b851c0ad112504d47191626866c962"><td class="memItemLeft" align="right" valign="top"><a id="af2b851c0ad112504d47191626866c962"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>reset</b> ()</td></tr>
 <tr class="separator:af2b851c0ad112504d47191626866c962"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abac8f8e8c491ed110d27cb2dcca28eaa"><td class="memItemLeft" align="right" valign="top"><a id="abac8f8e8c491ed110d27cb2dcca28eaa"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_update_susceptible</b> (UpdateFun&lt; TSeq &gt; fun)</td></tr>
-<tr class="separator:abac8f8e8c491ed110d27cb2dcca28eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af87733b616ea29fa55b297ab73930d6d"><td class="memItemLeft" align="right" valign="top"><a id="af87733b616ea29fa55b297ab73930d6d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_update_exposed</b> (UpdateFun&lt; TSeq &gt; fun)</td></tr>
-<tr class="separator:af87733b616ea29fa55b297ab73930d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2304a14ef778e35786ea8273de3e2f2"><td class="memItemLeft" align="right" valign="top"><a id="ab2304a14ef778e35786ea8273de3e2f2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_update_removed</b> (UpdateFun&lt; TSeq &gt; fun)</td></tr>
-<tr class="separator:ab2304a14ef778e35786ea8273de3e2f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af79e4ae29a70c0935224ddcbfe45c645"><td class="memItemLeft" align="right" valign="top"><a id="af79e4ae29a70c0935224ddcbfe45c645"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_tool</b> (unsigned int t) const</td></tr>
 <tr class="separator:af79e4ae29a70c0935224ddcbfe45c645"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,12 +152,37 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_virus</b> (unsign
 <tr class="memitem:ae4badf21e27b1ba3b1cc98d46da000fa"><td class="memItemLeft" align="right" valign="top"><a id="ae4badf21e27b1ba3b1cc98d46da000fa"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_virus</b> (std::string name) const</td></tr>
 <tr class="separator:ae4badf21e27b1ba3b1cc98d46da000fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a849ff08f39fd83b32341f2a17cc29d73"><td class="memItemLeft" align="right" valign="top"><a id="a849ff08f39fd83b32341f2a17cc29d73"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>visited</b> () const</td></tr>
-<tr class="separator:a849ff08f39fd83b32341f2a17cc29d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0af234db1b0611890373aeb366cf2052"><td class="memItemLeft" align="right" valign="top"><a id="a0af234db1b0611890373aeb366cf2052"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>toggle_visited</b> ()</td></tr>
-<tr class="separator:a0af234db1b0611890373aeb366cf2052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Get the rates (multipliers) for the agent</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>A pointer to a virus. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>epiworld_double </dd></dl>
+</div></td></tr>
+<tr class="memitem:ac5663349488a5af1538324c174b95cfe"><td class="memItemLeft" align="right" valign="top"><a id="ac5663349488a5af1538324c174b95cfe"></a>
+epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>get_susceptibility_reduction</b> (<a class="el" href="class_virus.html">Virus</a>&lt; TSeq &gt; *v)</td></tr>
+<tr class="separator:ac5663349488a5af1538324c174b95cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb3ed931c34da611d9d9bbdae7547fc6"><td class="memItemLeft" align="right" valign="top"><a id="acb3ed931c34da611d9d9bbdae7547fc6"></a>
+epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>get_transmission_reduction</b> (<a class="el" href="class_virus.html">Virus</a>&lt; TSeq &gt; *v)</td></tr>
+<tr class="separator:acb3ed931c34da611d9d9bbdae7547fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99b0cbdd57d726e1725a5fb62ad94d45"><td class="memItemLeft" align="right" valign="top"><a id="a99b0cbdd57d726e1725a5fb62ad94d45"></a>
+epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>get_recovery_enhancer</b> (<a class="el" href="class_virus.html">Virus</a>&lt; TSeq &gt; *v)</td></tr>
+<tr class="separator:a99b0cbdd57d726e1725a5fb62ad94d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82327a7b0c99f00114724a192924a3f0"><td class="memItemLeft" align="right" valign="top"><a id="a82327a7b0c99f00114724a192924a3f0"></a>
+epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>get_death_reduction</b> (<a class="el" href="class_virus.html">Virus</a>&lt; TSeq &gt; *v)</td></tr>
+<tr class="separator:a82327a7b0c99f00114724a192924a3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:abac8f8e8c491ed110d27cb2dcca28eaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_person.html#abac8f8e8c491ed110d27cb2dcca28eaa">set_update_susceptible</a> (UpdateFun&lt; TSeq &gt; fun)</td></tr>
+<tr class="memdesc:abac8f8e8c491ed110d27cb2dcca28eaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the update functions.  <a href="class_person.html#abac8f8e8c491ed110d27cb2dcca28eaa">More...</a><br /></td></tr>
+<tr class="separator:abac8f8e8c491ed110d27cb2dcca28eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af87733b616ea29fa55b297ab73930d6d"><td class="memItemLeft" align="right" valign="top"><a id="af87733b616ea29fa55b297ab73930d6d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_update_exposed</b> (UpdateFun&lt; TSeq &gt; fun)</td></tr>
+<tr class="separator:af87733b616ea29fa55b297ab73930d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2304a14ef778e35786ea8273de3e2f2"><td class="memItemLeft" align="right" valign="top"><a id="ab2304a14ef778e35786ea8273de3e2f2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_update_removed</b> (UpdateFun&lt; TSeq &gt; fun)</td></tr>
+<tr class="separator:ab2304a14ef778e35786ea8273de3e2f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -185,6 +196,54 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Tool&lt; TSeq &gt;</
 class&#160;</td><td class="memItemRight" valign="bottom"><b>Queue&lt; TSeq &gt;</b></td></tr>
 <tr class="separator:a2bfabd70b21ded1907307daeb724ae58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename TSeq = bool&gt;<br />
+class Person&lt; TSeq &gt;</h3>
+
+<p><a class="el" href="class_person.html" title="Person (agents)">Person</a> (agents) </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TSeq</td><td>Sequence type (should match <code>TSeq</code> across the model) </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="abac8f8e8c491ed110d27cb2dcca28eaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abac8f8e8c491ed110d27cb2dcca28eaa">&#9670;&nbsp;</a></span>set_update_susceptible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TSeq &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_person.html">Person</a>&lt; TSeq &gt;::set_update_susceptible </td>
+          <td>(</td>
+          <td class="paramtype">UpdateFun&lt; TSeq &gt;&#160;</td>
+          <td class="paramname"><em>fun</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the update functions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fun</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/epiworld/<a class="el" href="config_8hpp_source.html">config.hpp</a></li>
 <li>include/epiworld/<a class="el" href="person-bones_8hpp_source.html">person-bones.hpp</a></li>
