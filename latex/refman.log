@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Alpine Linux) (preloaded format=pdflatex 2022.4.28)  28 APR 2022 18:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Alpine Linux) (preloaded format=pdflatex 2022.5.3)  3 MAY 2022 21:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1179,7 +1179,7 @@ Package rerunfilecheck Info: File `refman.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  17573 strings out of 480478
- 276601 string characters out of 5905924
+ 276601 string characters out of 5905925
  553231 words of memory out of 5000000
  32692 multiletter control sequences out of 15000+600000
  599375 words of font info for 108 fonts, out of 8000000 for 9000
