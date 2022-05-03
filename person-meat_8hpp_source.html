@@ -290,82 +290,76 @@ $(function() {
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keywordflow">if</span> (new_status == status)</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="comment">// No change if removed</span></div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordtype">bool</span> status_ok = </div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        IN(new_status, model-&gt;status_removed) |</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        IN(new_status, model-&gt;status_susceptible) |</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        IN(new_status, model-&gt;status_exposed);</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordflow">if</span> (!status_ok)</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="keywordflow">throw</span> std::range_error(</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            <span class="stringliteral">&quot;The reported status &quot;</span> + std::to_string(new_status) + <span class="stringliteral">&quot; is not valid.&quot;</span>);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordflow">if</span> (new_status &gt;= model-&gt;nstatus)</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="keywordflow">throw</span> std::range_error(</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            <span class="stringliteral">&quot;The reported status &quot;</span> + std::to_string(new_status) + <span class="stringliteral">&quot; is not valid.&quot;</span>);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    status_next = new_status;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    </div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;}</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    status_next = new_status;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    </div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;}</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> epiworld_fast_uint &amp; <a class="code" href="class_person.html">Person&lt;TSeq&gt;::get_status</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordflow">return</span> status;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;}</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> epiworld_fast_uint &amp; <a class="code" href="class_person.html">Person&lt;TSeq&gt;::get_status_next</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keywordflow">return</span> status_next;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;}</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_person.html">Person&lt;TSeq&gt;::reset</a>() {</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    this-&gt;viruses.reset();</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    this-&gt;tools.reset();</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    this-&gt;status      = model-&gt;baseline_status_susceptible;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    this-&gt;status_next = model-&gt;baseline_status_susceptible;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;}</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l00258"></a><span class="lineno"><a class="line" href="class_person.html#abac8f8e8c491ed110d27cb2dcca28eaa">  258</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_person.html#abac8f8e8c491ed110d27cb2dcca28eaa">Person&lt;TSeq&gt;::set_update_susceptible</a>(UpdateFun&lt;TSeq&gt; fun) {</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    update_susceptible = fun;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;}</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_person.html">Person&lt;TSeq&gt;::set_update_exposed</a>(UpdateFun&lt;TSeq&gt; fun) {</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    update_exposed = fun;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;}</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_person.html">Person&lt;TSeq&gt;::set_update_removed</a>(UpdateFun&lt;TSeq&gt; fun) {</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    update_removed = fun;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;}</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_person.html">Person&lt;TSeq&gt;::has_tool</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> t)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="keywordflow">return</span> tools.has_tool(t);</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;}</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160; </div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_person.html">Person&lt;TSeq&gt;::has_tool</a>(std::string name)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordflow">return</span> tools.has_tool(name);</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;}</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_person.html">Person&lt;TSeq&gt;::has_virus</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> t)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordflow">return</span> viruses.has_virus(t);</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;}</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160; </div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_person.html">Person&lt;TSeq&gt;::has_virus</a>(std::string name)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keywordflow">return</span> viruses.has_virus(name);</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;}</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160; </div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> epiworld_fast_uint &amp; <a class="code" href="class_person.html">Person&lt;TSeq&gt;::get_status</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordflow">return</span> status;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;}</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> epiworld_fast_uint &amp; <a class="code" href="class_person.html">Person&lt;TSeq&gt;::get_status_next</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordflow">return</span> status_next;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;}</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_person.html">Person&lt;TSeq&gt;::reset</a>() {</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    this-&gt;viruses.reset();</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    this-&gt;tools.reset();</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    this-&gt;status      = model-&gt;baseline_status_susceptible;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    this-&gt;status_next = model-&gt;baseline_status_susceptible;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;}</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
+<div class="line"><a name="l00252"></a><span class="lineno"><a class="line" href="class_person.html#abac8f8e8c491ed110d27cb2dcca28eaa">  252</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_person.html#abac8f8e8c491ed110d27cb2dcca28eaa">Person&lt;TSeq&gt;::set_update_susceptible</a>(UpdateFun&lt;TSeq&gt; fun) {</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    update_susceptible = fun;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;}</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_person.html">Person&lt;TSeq&gt;::set_update_exposed</a>(UpdateFun&lt;TSeq&gt; fun) {</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    update_exposed = fun;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;}</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_person.html">Person&lt;TSeq&gt;::set_update_removed</a>(UpdateFun&lt;TSeq&gt; fun) {</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    update_removed = fun;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;}</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_person.html">Person&lt;TSeq&gt;::has_tool</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> t)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordflow">return</span> tools.has_tool(t);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;}</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; </div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_person.html">Person&lt;TSeq&gt;::has_tool</a>(std::string name)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keywordflow">return</span> tools.has_tool(name);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;}</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_person.html">Person&lt;TSeq&gt;::has_virus</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> t)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keywordflow">return</span> viruses.has_virus(t);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;}</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_person.html">Person&lt;TSeq&gt;::has_virus</a>(std::string name)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="keywordflow">return</span> viruses.has_virus(name);</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;}</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_model_html"><div class="ttname"><a href="class_model.html">Model&lt; TSeq &gt;</a></div></div>
 <div class="ttc" id="aclass_person_html"><div class="ttname"><a href="class_person.html">Person</a></div><div class="ttdoc">Person (agents)</div><div class="ttdef"><b>Definition:</b> person-bones.hpp:25</div></div>
 <div class="ttc" id="aclass_person_html_ab3dece9840b808b3bf8efc6ba09efacb"><div class="ttname"><a href="class_person.html#ab3dece9840b808b3bf8efc6ba09efacb">Person::get_index</a></div><div class="ttdeci">unsigned int get_index() const</div><div class="ttdoc">Location (0, ..., n-1).</div><div class="ttdef"><b>Definition:</b> person-meat.hpp:93</div></div>
-<div class="ttc" id="aclass_person_html_abac8f8e8c491ed110d27cb2dcca28eaa"><div class="ttname"><a href="class_person.html#abac8f8e8c491ed110d27cb2dcca28eaa">Person::set_update_susceptible</a></div><div class="ttdeci">void set_update_susceptible(UpdateFun&lt; TSeq &gt; fun)</div><div class="ttdoc">Set the update functions.</div><div class="ttdef"><b>Definition:</b> person-meat.hpp:258</div></div>
+<div class="ttc" id="aclass_person_html_abac8f8e8c491ed110d27cb2dcca28eaa"><div class="ttname"><a href="class_person.html#abac8f8e8c491ed110d27cb2dcca28eaa">Person::set_update_susceptible</a></div><div class="ttdeci">void set_update_susceptible(UpdateFun&lt; TSeq &gt; fun)</div><div class="ttdoc">Set the update functions.</div><div class="ttdef"><b>Definition:</b> person-meat.hpp:252</div></div>
 <div class="ttc" id="aclass_person_html_acf7e4e893a350de8de760e568f58cd53"><div class="ttname"><a href="class_person.html#acf7e4e893a350de8de760e568f58cd53">Person::get_id</a></div><div class="ttdeci">int get_id() const</div><div class="ttdoc">Id of the individual.</div><div class="ttdef"><b>Definition:</b> person-meat.hpp:87</div></div>
 <div class="ttc" id="aclass_person_tools_html"><div class="ttname"><a href="class_person_tools.html">PersonTools</a></div><div class="ttdoc">List of tools available for the individual to.</div><div class="ttdef"><b>Definition:</b> persontools-bones.hpp:10</div></div>
 <div class="ttc" id="aclass_person_viruses_html"><div class="ttname"><a href="class_person_viruses.html">PersonViruses</a></div><div class="ttdoc">Set of viruses in host.</div><div class="ttdef"><b>Definition:</b> personviruses-bones.hpp:10</div></div>
