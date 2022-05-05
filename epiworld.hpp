@@ -101,6 +101,13 @@ enum STATUS {
     REMOVED
 };
 
+/**
+ * @name Constants in epiworld 
+ * 
+ * @details The following are the default values some probabilities and
+ * rates take when no value has been specified in the model.
+ */
+///@{
 #ifndef DEFAULT_TOOL_CONTAGION_REDUCTION
     #define DEFAULT_TOOL_CONTAGION_REDUCTION    0.0
 #endif
@@ -128,6 +135,7 @@ enum STATUS {
 #ifndef EPI_DEFAULT_VIRUS_PROB_DEATH
     #define EPI_DEFAULT_VIRUS_PROB_DEATH        0.0
 #endif
+///@}
 
 #ifdef EPI_DEBUG
     #define EPI_DEBUG_NOTIFY_ACTIVE() \
@@ -250,9 +258,22 @@ enum STATUS {
     epiworld::PostRecoveryFun<tseq> funname = \
     [](epiworld::Person<tseq> * p, \
     epiworld::Virus<tseq>* v, \
-    epiworld::Model<tseq> * m)
+    epiworld::Model<tseq> * m) -> void
 
-#define EPI_NEW_VIRUSFUN(funname,tseq) inline void \
+#define EPI_NEW_VIRUSMUTFUN(funname,tseq) inline bool \
+    (funname)( \
+    epiworld::Person<tseq> * p, \
+    epiworld::Virus<tseq>* v, \
+    epiworld::Model<tseq> * m\
+    )
+
+#define EPI_NEW_VIRUSMUTFUN_LAMBDA(funname,tseq) \
+    epiworld::VirusFun<tseq> funname = \
+    [](epiworld::Person<tseq> * p, \
+    epiworld::Virus<tseq>* v, \
+    epiworld::Model<tseq> * m) -> bool
+
+#define EPI_NEW_VIRUSFUN(funname,tseq) inline double \
     (funname)( \
     epiworld::Person<tseq> * p, \
     epiworld::Virus<tseq>* v, \
@@ -263,7 +284,7 @@ enum STATUS {
     epiworld::VirusFun<tseq> funname = \
     [](epiworld::Person<tseq> * p, \
     epiworld::Virus<tseq>* v, \
-    epiworld::Model<tseq> * m)
+    epiworld::Model<tseq> * m) -> double
 
 #define EPI_RUNIF() m->runif()
 
@@ -280,7 +301,7 @@ enum STATUS {
 #define EPI_NEW_UPDATEFUN(funname,tseq) inline epiworld_fast_uint \
     (funname)(epiworld::Person<tseq> * p, epiworld::Model<tseq> * m)
 
-#define EPI_NEW_UPDATEFUN_LAMBDA(funname,tseq) inline epiworld_fast_uint \
+#define EPI_NEW_UPDATEFUN_LAMBDA(funname,tseq) \
     epiworld::UpdateFun<tseq> funname = \
     [](epiworld::Person<tseq> * p, epiworld::Model<tseq> * m)
 
@@ -402,7 +423,7 @@ inline std::vector<epiworld_double> default_sequence() {
  * @return `true` if `a in b`, and `false` otherwise.
  */
 template<typename Ta>
-inline bool IN(const Ta & a, const std::vector< Ta > & b)
+inline bool IN(const Ta & a, const std::vector< Ta > & b) noexcept
 {
     for (const auto & i : b)
         if (a == i)
@@ -1190,6 +1211,7 @@ public:
      * @brief Registering a new variant
      * 
      * @param v Pointer to the new variant.
+     * 
      * Since variants are originated in the host, the numbers simply move around.
      * From the parent variant to the new variant. And the total number of infected
      * does not change.
@@ -1552,7 +1574,14 @@ inline int DataBase<TSeq>::get_today_total(
             return today_total[i];
     }
 
-    throw std::range_error("The value '" + what + "' is not in the model.");
+    std::string possible_values = "";
+    for (auto & a : labels)
+        possible_values += (" \"" + a + "\"");
+
+    throw std::range_error(
+        "The value '" + what + "' is not in the model. Possible values are:" +
+        possible_values
+        );
 
 }
 
@@ -3011,6 +3040,10 @@ public:
         );
     ///@}
 
+    /**
+     * @brief Record new variants
+     * @details See function of the same name in in the DataBase class.
+     */
     void record_variant(Virus<TSeq> * v);
 
     int get_nvariants() const;
@@ -3913,12 +3946,12 @@ inline void Model<TSeq>::run()
     EPIWORLD_RUN((*this))
     {
 
+        // We start with the global actions
+        this->run_global_actions();
+
         // We can execute these components in whatever order the
         // user needs.
         this->update_status();       
-    
-        // We start with the global actions
-        this->run_global_actions();
 
         // In this case we are applying degree sequence rewiring
         // to change the network just a bit.
@@ -5098,7 +5131,7 @@ private:
     int id   = -99;
     bool active = true;
     MutFun<TSeq>          mutation_fun                 = nullptr;
-    PostRecoveryFun<TSeq> post_recovery_fun                = nullptr;
+    PostRecoveryFun<TSeq> post_recovery_fun            = nullptr;
     VirusFun<TSeq>        probability_of_infecting_fun = nullptr;
     VirusFun<TSeq>        probability_of_recovery_fun  = nullptr;
     VirusFun<TSeq>        probability_of_death_fun     = nullptr;

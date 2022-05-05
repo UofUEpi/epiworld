@@ -26,7 +26,7 @@ EPI_NEW_MUTFUN(covid19_mut, DAT) {
 }
 
 // Post covid recovery
-EPI_NEW_VIRUSFUN(post_covid, DAT) {
+EPI_NEW_POSTRECOVERYFUN(post_covid, DAT) {
 
     epiworld::Tool<DAT> immunity;
     immunity.set_sequence(*v->get_sequence());

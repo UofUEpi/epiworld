@@ -234,6 +234,10 @@ public:
         );
     ///@}
 
+    /**
+     * @brief Record new variants
+     * @details See function of the same name in in the DataBase class.
+     */
     void record_variant(Virus<TSeq> * v);
 
     int get_nvariants() const;

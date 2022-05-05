@@ -1,3 +1,5 @@
+
+#define EPI_DEBUG
 #include "../../epiworld.hpp"
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -39,64 +41,103 @@
  *  Omicron.
  */
 
-// Designing variants ------------------------------------------------------
+epiworld::Virus<int> * variant_x_ptr;
+int weekly_infections_x = 50;
+int weekly_infections_x_cum = 0;
+int weekly_infections_start_day = 14; // Week 2 since the start of the model
+
+// At first, we will pick an individual at random for starting the variant x.
+// The virus will start from Omicron
+EPI_NEW_GLOBALFUN(global_variant_x, int)
+{
+    // Identify an individual that will acquire the new variant
+    int total_infected = m->get_db().get_today_total("exposed");
+    int who = static_cast<int>( total_infected * m->runif() );
+
+    const auto & queue = m->get_queue();
+
+    int cum_counts = 0;
+    auto population = (*m->get_population());
+    for (size_t i = 0u; i < m->size(); ++i)
+        if (queue[i] > 0u)
+        {
+            // Is this person infected
+            auto & person = population[i];
+            
+            if (person.has_virus("Omicron"))
+            {
+                if (++cum_counts == who)
+                {
+                    // Replacing the virus
+                    person.get_virus(0) = *variant_x_ptr;
+                    break;
+                }
+            }
+            
+        }
+
+}
+
+// At the beginning of every week we reset the counter
+EPI_NEW_GLOBALFUN(global_reset_count, int)
+{
+    if ((m->today() %  weekly_infections_start_day) == 0)
+        weekly_infections_x_cum = 0;
+}
+
+// Infections will happen for sure if it is below the 50 mark
+EPI_NEW_VIRUSFUN(transmission_of_x, int)
+{
+    if (weekly_infections_x_cum < weekly_infections_x)
+    {
+        return 1.0;
+    } else
+        return 0.0;
+}
+
+EPI_NEW_VIRUSFUN(recovery_of_x, int)
+{
+    if ((m->today() - v->get_date()) < 2)
+        return 0.0;
+    else
+        return 0.3;
+}
 
 int main()
 {
-
+    // Designing variants ------------------------------------------------------
     // Delta
-    epiworld::Virus variant_delta("Delta");
+    epiworld::Virus<int> variant_delta("Delta");
+    variant_delta.set_sequence(0);
     variant_delta.set_post_immunity(.4);
-    variant_delta.set_prob_infecting(.9);
-    variant_delta.set_prob_recovery(.3);
+    variant_delta.set_prob_infecting(.95);
+    variant_delta.set_prob_recovery(.2);
 
     // Omicron
-    epiworld::Virus variant_omicron("Omicron");
+    epiworld::Virus<int> variant_omicron("Omicron");
+    variant_delta.set_sequence(1);
     variant_omicron.set_post_immunity(.4);
-    variant_omicron.set_prob_infecting(.9);
-    variant_omicron.set_prob_recovery(.3);
+    variant_omicron.set_prob_infecting(.95);
+    variant_omicron.set_prob_recovery(.2);
 
     // Variant X
-    epiworld::Virus variant_x("X");
+    epiworld::Virus<int> variant_x("X");
+    variant_x.set_sequence(2);
     variant_x.set_post_immunity(.4);
-    variant_x.set_prob_infecting(.9);
-    variant_x.set_prob_recovery(.3);
-
-    EPI_NEW_GLOBALFUN_LAMBDA(global_variant_x,bool)
-    {
-        // Identify an individual that will acquire the new variant
-        int total_infected = m->get_db().get_today_total("infected");
-        int who = static_cast<int>( total_infected * m->runif() );
-
-        const auto & queue = m->get_queue();
-
-        int cum_counts = 0;
-        auto population = (*m->get_population());
-        for (size_t i = 0u; i < m->size(); ++i)
-            if (queue[i] > 0u)
-            {
-                // Is this person infected
-                auto & person = population[i];
-                
-                if (person.has_virus("Omicron"))
-                {
-                    if (++cum_counts == who)
-                    {
-                        // Replacing the virus
-                        person.get_virus(0) = variant_x;
-                        break;
-                    }
-                }
-                
-            }
-
-    };
-
+    variant_x.set_prob_recovery_fun(recovery_of_x);
+    variant_x.set_prob_infecting_fun(transmission_of_x);
+    variant_x_ptr = &variant_x;
+    
     // Setup
-    epiworld::Model<> model;
+    epiworld::Model<int> model;
     model.pop_from_random();
-    model.add_virus(epiworld::Virus<>(), 0.1);
-    model.add_tool(epiworld::Tool<>(), 1.0);
+
+    model.add_virus(variant_delta, 0.1);
+    model.add_virus(variant_omicron, 0.2);
+    model.add_virus_n(variant_x, 0);
+
+    model.add_global_action(global_reset_count, -1);
+    model.add_global_action(global_variant_x, weekly_infections_start_day); // Appears at day 30
 
     // Initializing and running the model
     model.init(100, 226);
@@ -104,6 +145,8 @@ int main()
 
     // Printing the output
     model.print();
+
+    model.write_data("variants.csv", "variants_hist.csv", "total_hist.csv", "", "transition.csv");
 
     return 0;
 

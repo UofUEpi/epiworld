@@ -58,9 +58,22 @@
     epiworld::PostRecoveryFun<tseq> funname = \
     [](epiworld::Person<tseq> * p, \
     epiworld::Virus<tseq>* v, \
-    epiworld::Model<tseq> * m)
+    epiworld::Model<tseq> * m) -> void
 
-#define EPI_NEW_VIRUSFUN(funname,tseq) inline void \
+#define EPI_NEW_VIRUSMUTFUN(funname,tseq) inline bool \
+    (funname)( \
+    epiworld::Person<tseq> * p, \
+    epiworld::Virus<tseq>* v, \
+    epiworld::Model<tseq> * m\
+    )
+
+#define EPI_NEW_VIRUSMUTFUN_LAMBDA(funname,tseq) \
+    epiworld::VirusFun<tseq> funname = \
+    [](epiworld::Person<tseq> * p, \
+    epiworld::Virus<tseq>* v, \
+    epiworld::Model<tseq> * m) -> bool
+
+#define EPI_NEW_VIRUSFUN(funname,tseq) inline double \
     (funname)( \
     epiworld::Person<tseq> * p, \
     epiworld::Virus<tseq>* v, \
@@ -71,7 +84,7 @@
     epiworld::VirusFun<tseq> funname = \
     [](epiworld::Person<tseq> * p, \
     epiworld::Virus<tseq>* v, \
-    epiworld::Model<tseq> * m)
+    epiworld::Model<tseq> * m) -> double
 
 #define EPI_RUNIF() m->runif()
 
@@ -88,7 +101,7 @@
 #define EPI_NEW_UPDATEFUN(funname,tseq) inline epiworld_fast_uint \
     (funname)(epiworld::Person<tseq> * p, epiworld::Model<tseq> * m)
 
-#define EPI_NEW_UPDATEFUN_LAMBDA(funname,tseq) inline epiworld_fast_uint \
+#define EPI_NEW_UPDATEFUN_LAMBDA(funname,tseq) \
     epiworld::UpdateFun<tseq> funname = \
     [](epiworld::Person<tseq> * p, epiworld::Model<tseq> * m)
 

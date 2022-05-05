@@ -649,12 +649,12 @@ inline void Model<TSeq>::run()
     EPIWORLD_RUN((*this))
     {
 
+        // We start with the global actions
+        this->run_global_actions();
+
         // We can execute these components in whatever order the
         // user needs.
         this->update_status();       
-    
-        // We start with the global actions
-        this->run_global_actions();
 
         // In this case we are applying degree sequence rewiring
         // to change the network just a bit.

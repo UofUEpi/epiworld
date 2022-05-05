@@ -246,7 +246,14 @@ inline int DataBase<TSeq>::get_today_total(
             return today_total[i];
     }
 
-    throw std::range_error("The value '" + what + "' is not in the model.");
+    std::string possible_values = "";
+    for (auto & a : labels)
+        possible_values += (" \"" + a + "\"");
+
+    throw std::range_error(
+        "The value '" + what + "' is not in the model. Possible values are:" +
+        possible_values
+        );
 
 }
 
