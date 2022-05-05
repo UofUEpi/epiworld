@@ -48,9 +48,8 @@ void {\bfseries add\+\_\+tool} (\mbox{\hyperlink{class_tool}{Tool}}$<$ TSeq $>$ 
 \mbox{\Hypertarget{class_model_aae8acdadbe354fd81f789ef267b061f0}\label{class_model_aae8acdadbe354fd81f789ef267b061f0}} 
 void {\bfseries add\+\_\+tool\+\_\+n} (\mbox{\hyperlink{class_tool}{Tool}}$<$ TSeq $>$ t, unsigned int preval)
 \item 
-\mbox{\Hypertarget{class_model_aecf6782e468b78459a37187903845d12}\label{class_model_aecf6782e468b78459a37187903845d12}} 
-void {\bfseries record\+\_\+variant} (\mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ $\ast$v)
-\item 
+void \mbox{\hyperlink{class_model_aecf6782e468b78459a37187903845d12}{record\+\_\+variant}} (\mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ $\ast$v)
+\begin{DoxyCompactList}\small\item\em Record new variants. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_model_a5eac1533dd336124785f9ba2c79a168c}\label{class_model_a5eac1533dd336124785f9ba2c79a168c}} 
 int {\bfseries get\+\_\+nvariants} () const
 \item 
@@ -211,8 +210,8 @@ void {\bfseries update\+\_\+status} ()
 \mbox{\Hypertarget{class_model_ae9912f5a26a38ac64e6499ccc4d897cb}\label{class_model_ae9912f5a26a38ac64e6499ccc4d897cb}} 
 void {\bfseries mutate\+\_\+variant} ()
 \item 
-\mbox{\Hypertarget{class_model_a0f8b730f9ce77cb330da51ee0599ae82}\label{class_model_a0f8b730f9ce77cb330da51ee0599ae82}} 
-void {\bfseries next} ()
+\mbox{\Hypertarget{class_model_a42b57f46054db16699617dec5cc6a4a5}\label{class_model_a42b57f46054db16699617dec5cc6a4a5}} 
+void {\bfseries next\+\_\+status} ()
 \item 
 \mbox{\Hypertarget{class_model_a825c7fb2498c7693cbf1bfcd0a416ef4}\label{class_model_a825c7fb2498c7693cbf1bfcd0a416ef4}} 
 void \mbox{\hyperlink{class_model_a825c7fb2498c7693cbf1bfcd0a416ef4}{run}} ()
@@ -588,7 +587,18 @@ Set a global action.
 {\em date} & Integer indicating when the function is called (see details)\\
 \hline
 \end{DoxyParams}
-When date is less than zero, then the function is called at the end of every day. Otherwise, the function will be called only at the end of the indicated date. \mbox{\Hypertarget{class_model_a9591eb76c7cf1ed7e1510342ff602d37}\label{class_model_a9591eb76c7cf1ed7e1510342ff602d37}} 
+When date is less than zero, then the function is called at the end of every day. Otherwise, the function will be called only at the end of the indicated date. \mbox{\Hypertarget{class_model_aecf6782e468b78459a37187903845d12}\label{class_model_aecf6782e468b78459a37187903845d12}} 
+\index{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!record\_variant@{record\_variant}}
+\index{record\_variant@{record\_variant}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}}
+\doxysubsubsection{\texorpdfstring{record\_variant()}{record\_variant()}}
+{\footnotesize\ttfamily template$<$typename TSeq  = bool$>$ \\
+void \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$\+::record\+\_\+variant (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ $\ast$}]{v }\end{DoxyParamCaption})}
+
+
+
+Record new variants. 
+
+See function of the same name in in the \mbox{\hyperlink{class_data_base}{Data\+Base}} class. \mbox{\Hypertarget{class_model_a9591eb76c7cf1ed7e1510342ff602d37}\label{class_model_a9591eb76c7cf1ed7e1510342ff602d37}} 
 \index{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!reset@{reset}}
 \index{reset@{reset}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}}
 \doxysubsubsection{\texorpdfstring{reset()}{reset()}}

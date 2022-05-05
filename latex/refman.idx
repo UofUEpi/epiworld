@@ -9,17 +9,19 @@
 \indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{9}
 \indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!add\_global\_action@{add\_global\_action}|hyperpage}{15}
 \indexentry{add\_global\_action@{add\_global\_action}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{15}
+\indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!record\_variant@{record\_variant}|hyperpage}{15}
+\indexentry{record\_variant@{record\_variant}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{15}
 \indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!reset@{reset}|hyperpage}{15}
 \indexentry{reset@{reset}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{15}
 \indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!reset\_status\_codes@{reset\_status\_codes}|hyperpage}{16}
 \indexentry{reset\_status\_codes@{reset\_status\_codes}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{16}
 \indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!run\_multiple@{run\_multiple}|hyperpage}{16}
 \indexentry{run\_multiple@{run\_multiple}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{16}
-\indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!write\_data@{write\_data}|hyperpage}{16}
-\indexentry{write\_data@{write\_data}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{16}
+\indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!write\_data@{write\_data}|hyperpage}{17}
+\indexentry{write\_data@{write\_data}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{17}
 \indexentry{Person$<$ TSeq $>$@{Person$<$ TSeq $>$}|hyperpage}{17}
-\indexentry{Person$<$ TSeq $>$@{Person$<$ TSeq $>$}!set\_update\_susceptible@{set\_update\_susceptible}|hyperpage}{18}
-\indexentry{set\_update\_susceptible@{set\_update\_susceptible}!Person$<$ TSeq $>$@{Person$<$ TSeq $>$}|hyperpage}{18}
+\indexentry{Person$<$ TSeq $>$@{Person$<$ TSeq $>$}!set\_update\_susceptible@{set\_update\_susceptible}|hyperpage}{19}
+\indexentry{set\_update\_susceptible@{set\_update\_susceptible}!Person$<$ TSeq $>$@{Person$<$ TSeq $>$}|hyperpage}{19}
 \indexentry{PersonTools$<$ TSeq $>$@{PersonTools$<$ TSeq $>$}|hyperpage}{19}
 \indexentry{PersonViruses$<$ TSeq $>$@{PersonViruses$<$ TSeq $>$}|hyperpage}{20}
 \indexentry{Progress@{Progress}|hyperpage}{21}

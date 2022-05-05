@@ -21,16 +21,17 @@
 \contentsline {subsection}{\numberline {3.5.1}Detailed Description}{15}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}Member Function Documentation}{15}{subsection.3.5.2}%
 \contentsline {subsubsection}{\numberline {3.5.2.1}add\_global\_action()}{15}{subsubsection.3.5.2.1}%
-\contentsline {subsubsection}{\numberline {3.5.2.2}reset()}{15}{subsubsection.3.5.2.2}%
-\contentsline {subsubsection}{\numberline {3.5.2.3}reset\_status\_codes()}{16}{subsubsection.3.5.2.3}%
-\contentsline {subsubsection}{\numberline {3.5.2.4}run\_multiple()}{16}{subsubsection.3.5.2.4}%
-\contentsline {subsubsection}{\numberline {3.5.2.5}write\_data()}{16}{subsubsection.3.5.2.5}%
+\contentsline {subsubsection}{\numberline {3.5.2.2}record\_variant()}{15}{subsubsection.3.5.2.2}%
+\contentsline {subsubsection}{\numberline {3.5.2.3}reset()}{16}{subsubsection.3.5.2.3}%
+\contentsline {subsubsection}{\numberline {3.5.2.4}reset\_status\_codes()}{16}{subsubsection.3.5.2.4}%
+\contentsline {subsubsection}{\numberline {3.5.2.5}run\_multiple()}{16}{subsubsection.3.5.2.5}%
+\contentsline {subsubsection}{\numberline {3.5.2.6}write\_data()}{17}{subsubsection.3.5.2.6}%
 \contentsline {section}{\numberline {3.6}Person$<$ TSeq $>$ Class Template Reference}{17}{section.3.6}%
 \contentsline {subsection}{\numberline {3.6.1}Detailed Description}{18}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Member Function Documentation}{18}{subsection.3.6.2}%
-\contentsline {subsubsection}{\numberline {3.6.2.1}set\_update\_susceptible()}{18}{subsubsection.3.6.2.1}%
+\contentsline {subsection}{\numberline {3.6.2}Member Function Documentation}{19}{subsection.3.6.2}%
+\contentsline {subsubsection}{\numberline {3.6.2.1}set\_update\_susceptible()}{19}{subsubsection.3.6.2.1}%
 \contentsline {section}{\numberline {3.7}Person\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tools$<$ TSeq $>$ Class Template Reference}{19}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Detailed Description}{19}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.1}Detailed Description}{20}{subsection.3.7.1}%
 \contentsline {section}{\numberline {3.8}Person\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Viruses$<$ TSeq $>$ Class Template Reference}{20}{section.3.8}%
 \contentsline {subsection}{\numberline {3.8.1}Detailed Description}{20}{subsection.3.8.1}%
 \contentsline {section}{\numberline {3.9}Progress Class Reference}{21}{section.3.9}%

@@ -115,8 +115,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>add_tool</b> (<a clas
 <tr class="memitem:aae8acdadbe354fd81f789ef267b061f0"><td class="memItemLeft" align="right" valign="top"><a id="aae8acdadbe354fd81f789ef267b061f0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>add_tool_n</b> (<a class="el" href="class_tool.html">Tool</a>&lt; TSeq &gt; t, unsigned int preval)</td></tr>
 <tr class="separator:aae8acdadbe354fd81f789ef267b061f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecf6782e468b78459a37187903845d12"><td class="memItemLeft" align="right" valign="top"><a id="aecf6782e468b78459a37187903845d12"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>record_variant</b> (<a class="el" href="class_virus.html">Virus</a>&lt; TSeq &gt; *v)</td></tr>
+<tr class="memitem:aecf6782e468b78459a37187903845d12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#aecf6782e468b78459a37187903845d12">record_variant</a> (<a class="el" href="class_virus.html">Virus</a>&lt; TSeq &gt; *v)</td></tr>
+<tr class="memdesc:aecf6782e468b78459a37187903845d12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record new variants.  <a href="class_model.html#aecf6782e468b78459a37187903845d12">More...</a><br /></td></tr>
 <tr class="separator:aecf6782e468b78459a37187903845d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5eac1533dd336124785f9ba2c79a168c"><td class="memItemLeft" align="right" valign="top"><a id="a5eac1533dd336124785f9ba2c79a168c"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>get_nvariants</b> () const</td></tr>
@@ -273,9 +273,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>update_status</b> ()<
 <tr class="memitem:ae9912f5a26a38ac64e6499ccc4d897cb"><td class="memItemLeft" align="right" valign="top"><a id="ae9912f5a26a38ac64e6499ccc4d897cb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>mutate_variant</b> ()</td></tr>
 <tr class="separator:ae9912f5a26a38ac64e6499ccc4d897cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f8b730f9ce77cb330da51ee0599ae82"><td class="memItemLeft" align="right" valign="top"><a id="a0f8b730f9ce77cb330da51ee0599ae82"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>next</b> ()</td></tr>
-<tr class="separator:a0f8b730f9ce77cb330da51ee0599ae82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42b57f46054db16699617dec5cc6a4a5"><td class="memItemLeft" align="right" valign="top"><a id="a42b57f46054db16699617dec5cc6a4a5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>next_status</b> ()</td></tr>
+<tr class="separator:a42b57f46054db16699617dec5cc6a4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a825c7fb2498c7693cbf1bfcd0a416ef4"><td class="memItemLeft" align="right" valign="top"><a id="a825c7fb2498c7693cbf1bfcd0a416ef4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a825c7fb2498c7693cbf1bfcd0a416ef4">run</a> ()</td></tr>
 <tr class="memdesc:a825c7fb2498c7693cbf1bfcd0a416ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the simulation (after initialization) <br /></td></tr>
@@ -650,6 +650,29 @@ template&lt;typename TSeq  = bool&gt; </div>
   </dd>
 </dl>
 <p>When date is less than zero, then the function is called at the end of every day. Otherwise, the function will be called only at the end of the indicated date. </p>
+
+</div>
+</div>
+<a id="aecf6782e468b78459a37187903845d12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecf6782e468b78459a37187903845d12">&#9670;&nbsp;</a></span>record_variant()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TSeq  = bool&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_model.html">Model</a>&lt; TSeq &gt;::record_variant </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_virus.html">Virus</a>&lt; TSeq &gt; *&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Record new variants. </p>
+<p>See function of the same name in in the <a class="el" href="class_data_base.html" title="Statistical data about the process.">DataBase</a> class. </p>
 
 </div>
 </div>

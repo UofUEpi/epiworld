@@ -19,15 +19,16 @@
 
   \item {Model$<$ TSeq $>$}, \hyperpage{9}
     \subitem {add\_global\_action}, \hyperpage{15}
+    \subitem {record\_variant}, \hyperpage{15}
     \subitem {reset}, \hyperpage{15}
     \subitem {reset\_status\_codes}, \hyperpage{16}
     \subitem {run\_multiple}, \hyperpage{16}
-    \subitem {write\_data}, \hyperpage{16}
+    \subitem {write\_data}, \hyperpage{17}
 
   \indexspace
 
   \item {Person$<$ TSeq $>$}, \hyperpage{17}
-    \subitem {set\_update\_susceptible}, \hyperpage{18}
+    \subitem {set\_update\_susceptible}, \hyperpage{19}
   \item {PersonTools$<$ TSeq $>$}, \hyperpage{19}
   \item {PersonViruses$<$ TSeq $>$}, \hyperpage{20}
   \item {Progress}, \hyperpage{21}
@@ -41,6 +42,7 @@
   \item {RandGraph}, \hyperpage{22}
   \item {record\_variant}
     \subitem {DataBase$<$ TSeq $>$}, \hyperpage{7}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{15}
   \item {reset}
     \subitem {Model$<$ TSeq $>$}, \hyperpage{15}
   \item {reset\_status\_codes}
@@ -51,7 +53,7 @@
   \indexspace
 
   \item {set\_update\_susceptible}
-    \subitem {Person$<$ TSeq $>$}, \hyperpage{18}
+    \subitem {Person$<$ TSeq $>$}, \hyperpage{19}
 
   \indexspace
 
@@ -72,6 +74,6 @@
   \indexspace
 
   \item {write\_data}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{16}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{17}
 
 \end{theindex}
