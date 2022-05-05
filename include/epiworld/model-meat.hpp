@@ -343,17 +343,8 @@ inline void Model<TSeq>::dist_virus()
         }
     }      
 
-    // Adding the next viruses
-    ADD_VIRUSES()
-
-    // Removing and deactivating viruses
-    RM_VIRUSES()
-
-    // Updating the queuing sequence
-    UPDATE_QUEUE()
-
-    // Moving to the next assigned status
-    UPDATE_STATUS()
+    // Adding and removing viruses and updating status
+    next_status();
 
 }
 
@@ -606,7 +597,7 @@ inline int Model<TSeq>::today() const {
 }
 
 template<typename TSeq>
-inline void Model<TSeq>::next() {
+inline void Model<TSeq>::next_status() {
 
     // Adding the next viruses
     ADD_VIRUSES()
@@ -619,14 +610,7 @@ inline void Model<TSeq>::next() {
 
     // Moving to the next assigned status
     UPDATE_STATUS()
-
-    ++this->current_date;
-    db.record();
     
-    // Advancing the progress bar
-    if (verbose)
-        pb.next();
-
     #ifdef EPI_DEBUG
     // Checking that all individuals in EXPOSED have a virus
     for (auto & p : population)
@@ -649,22 +633,29 @@ inline void Model<TSeq>::run()
     EPIWORLD_RUN((*this))
     {
 
-        // We start with the global actions
-        this->run_global_actions();
-
         // We can execute these components in whatever order the
         // user needs.
         this->update_status();       
+        this->next_status();
+
+        // We start with the global actions
+        this->run_global_actions();
+        this->next_status();
 
         // In this case we are applying degree sequence rewiring
         // to change the network just a bit.
         this->rewire();
 
-        // This locks all the changes
-        this->next();
-
         // Mutation must happen at the very end of all
         this->mutate_variant();
+
+        // Recording the day
+        ++current_date;
+        db.record();
+
+        // Advancing the progress bar
+        if (verbose)
+            pb.next();
 
     }
     chrono_end();

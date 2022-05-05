@@ -3030,7 +3030,7 @@ public:
     void init(unsigned int ndays, unsigned int seed);
     void update_status();
     void mutate_variant();
-    void next();
+    void next_status();
     void run(); ///< Runs the simulation (after initialization)
     void run_multiple( ///< Multiple runs of the simulation
         unsigned int nexperiments,
@@ -3640,17 +3640,8 @@ inline void Model<TSeq>::dist_virus()
         }
     }      
 
-    // Adding the next viruses
-    ADD_VIRUSES()
-
-    // Removing and deactivating viruses
-    RM_VIRUSES()
-
-    // Updating the queuing sequence
-    UPDATE_QUEUE()
-
-    // Moving to the next assigned status
-    UPDATE_STATUS()
+    // Adding and removing viruses and updating status
+    next_status();
 
 }
 
@@ -3903,7 +3894,7 @@ inline int Model<TSeq>::today() const {
 }
 
 template<typename TSeq>
-inline void Model<TSeq>::next() {
+inline void Model<TSeq>::next_status() {
 
     // Adding the next viruses
     ADD_VIRUSES()
@@ -3916,14 +3907,7 @@ inline void Model<TSeq>::next() {
 
     // Moving to the next assigned status
     UPDATE_STATUS()
-
-    ++this->current_date;
-    db.record();
     
-    // Advancing the progress bar
-    if (verbose)
-        pb.next();
-
     #ifdef EPI_DEBUG
     // Checking that all individuals in EXPOSED have a virus
     for (auto & p : population)
@@ -3948,6 +3932,7 @@ inline void Model<TSeq>::run()
 
         // We start with the global actions
         this->run_global_actions();
+        this->next_status();
 
         // We can execute these components in whatever order the
         // user needs.
@@ -3958,10 +3943,18 @@ inline void Model<TSeq>::run()
         this->rewire();
 
         // This locks all the changes
-        this->next();
+        this->next_status();
 
         // Mutation must happen at the very end of all
         this->mutate_variant();
+
+        // Recording the day
+        ++current_date;
+        db.record();
+
+        // Advancing the progress bar
+        if (verbose)
+            pb.next();
 
     }
     chrono_end();

@@ -224,7 +224,7 @@ public:
     void init(unsigned int ndays, unsigned int seed);
     void update_status();
     void mutate_variant();
-    void next();
+    void next_status();
     void run(); ///< Runs the simulation (after initialization)
     void run_multiple( ///< Multiple runs of the simulation
         unsigned int nexperiments,
