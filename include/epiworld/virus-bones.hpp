@@ -50,6 +50,9 @@ private:
 
 public:
     Virus(std::string name = "unknown virus");
+    Virus(const Virus<TSeq> & v);
+    Virus(Virus<TSeq> && v);
+    Virus<TSeq> & operator=(const Virus<TSeq> & v);
 
     void mutate();
     void set_mutation(MutFun<TSeq> fun);

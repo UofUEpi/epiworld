@@ -32,6 +32,10 @@ namespace epiworld {
     #define printf_epiworld fflush(stdout);printf
 #endif
 
+#ifndef EPIWORLD_HOST_CAPACITY
+    #define EPIWORLD_HOST_CAPACITY 10u
+#endif
+
 #ifndef EPIWORLD_MAXNEIGHBORS
     #define EPIWORLD_MAXNEIGHBORS 100000
 #endif
@@ -3301,61 +3305,6 @@ public:
 #define CHECK_INIT() if (!initialized) \
         throw std::logic_error("Model not initialized.");
 
-#define ADD_VIRUSES() \
-    for (size_t v = 0u; v < virus_to_add.size(); ++v) \
-    { \
-        \
-        Virus<TSeq> * virus   = virus_to_add[v]; \
-        Person<TSeq> * person = virus_to_add_person[v]; \
-        \
-        /* Recording transmission */ \
-        if (virus->get_host() != nullptr) \
-            db.record_transmission( \
-                virus->get_host()->get_id(),\
-                person->get_id(),\
-                virus->get_id()\
-            );\
-        \
-        /*Accounting for the transmission */ \
-        db.up_exposed(virus, person->status_next); \
-        \
-        /* Adding the virus */ \
-        person->get_viruses().add_virus(person->status_next, *virus); \
-        \
-    } \
-    virus_to_add.clear();virus_to_add_person.clear();
-
-#define RM_VIRUSES() \
-    for (auto v : virus_to_remove) \
-    { \
-        \
-        if (IN(v->get_host()->get_status(), status_susceptible)) \
-            v->post_recovery(); \
-        \
-        /* Accounting for the improve */ \
-        db.down_exposed(v, v->get_host()->status); \
-        \
-        /* Removing the virus (THIS SHOULD BE DEACTIVATE INSTEAD) */ \
-        v->get_host()->get_viruses().reset(); \
-        \
-    } \
-    \
-    virus_to_remove.clear(); 
-
-#define UPDATE_QUEUE() \
-    if (use_queuing) \
-        queue.update(); 
-
-#define UPDATE_STATUS() \
-    for (auto & p : population) \
-    { \
-        if (p.status_next != p.status) \
-        {\
-            db.state_change(p.status, p.status_next); \
-            p.status = p.status_next; \
-        }\
-    }
-
 template<typename TSeq>
 inline Model<TSeq>::Model(const Model<TSeq> & model) :
     db(model.db),
@@ -3896,17 +3845,64 @@ inline int Model<TSeq>::today() const {
 template<typename TSeq>
 inline void Model<TSeq>::next_status() {
 
-    // Adding the next viruses
-    ADD_VIRUSES()
+    // Viruses to add
+    for (size_t v = 0u; v < virus_to_add.size(); ++v) 
+    { 
+        
+        Virus<TSeq> * virus   = virus_to_add[v]; 
+        Person<TSeq> * person = virus_to_add_person[v]; 
+        
+        /* Checking id */
+        if (virus->get_id() < 0) 
+            db.record_variant(virus);
+        
+        /* Recording transmission */ 
+        if (virus->get_host() != nullptr) 
+            db.record_transmission( 
+                virus->get_host()->get_id(),
+                person->get_id(),
+                virus->get_id()
+            );
+        
+        /*Accounting for the transmission */ 
+        db.up_exposed(virus, person->status_next); 
+        
+        /* Adding the virus */ 
+        person->get_viruses().add_virus(person->status_next, *virus); 
+        
+    } 
+    virus_to_add.clear();virus_to_add_person.clear();
 
-    // Removing and deactivating viruses
-    RM_VIRUSES()
+    // Removing viruses to delete
+    for (auto v : virus_to_remove) 
+    { 
+        
+        if (IN(v->get_host()->get_status(), status_susceptible)) 
+            v->post_recovery(); 
+        
+        /* Accounting for the improve */ 
+        db.down_exposed(v, v->get_host()->status); 
+        
+        /* Removing the virus (THIS SHOULD BE DEACTIVATE INSTEAD) */ 
+        v->deactivate(); 
+        
+    } 
+    
+    virus_to_remove.clear(); 
 
-    // Updating the queuing sequence
-    UPDATE_QUEUE()
+    // Next step in queue
+    if (use_queuing)
+        queue.update(); 
 
-    // Moving to the next assigned status
-    UPDATE_STATUS()
+    // Moving to next status
+    for (auto & p : population) 
+    { 
+        if (p.status_next != p.status) 
+        {
+            db.state_change(p.status, p.status_next); 
+            p.status = p.status_next; 
+        }
+    }
     
     #ifdef EPI_DEBUG
     // Checking that all individuals in EXPOSED have a virus
@@ -3937,13 +3933,11 @@ inline void Model<TSeq>::run()
         // We can execute these components in whatever order the
         // user needs.
         this->update_status();       
+        this->next_status();
 
         // In this case we are applying degree sequence rewiring
         // to change the network just a bit.
         this->rewire();
-
-        // This locks all the changes
-        this->next_status();
 
         // Mutation must happen at the very end of all
         this->mutate_variant();
@@ -5058,11 +5052,6 @@ inline Queue<TSeq> & Model<TSeq>::get_queue()
 #undef EPIWORLD_CHECK_ALL_STATES
 #undef EPIWORLD_COLLECT_STATUSES
 
-#undef ADD_VIRUSES
-#undef RM_VIRUSES
-#undef UPDATE_QUEUE
-#undef UPDATE_STATUS
-
 #undef CHECK_INIT
 #endif
 /*//////////////////////////////////////////////////////////////////////////////
@@ -5135,6 +5124,9 @@ private:
 
 public:
     Virus(std::string name = "unknown virus");
+    Virus(const Virus<TSeq> & v);
+    Virus(Virus<TSeq> && v);
+    Virus<TSeq> & operator=(const Virus<TSeq> & v);
 
     void mutate();
     void set_mutation(MutFun<TSeq> fun);
@@ -5213,6 +5205,87 @@ public:
 template<typename TSeq>
 inline Virus<TSeq>::Virus(std::string name) {
     set_name(name);
+}
+
+template<typename TSeq>
+inline Virus<TSeq>::Virus(const Virus<TSeq> & v)
+{
+
+    // Basic data
+    this->host              = v.host;
+    this->baseline_sequence = v.baseline_sequence;
+    this->virus_name        = v.virus_name;
+    this->date              = v.date;
+    this->id                = v.id;
+    this->active            = v.active;
+
+    // Functions
+    this->mutation_fun                 = v.mutation_fun;
+    this->post_recovery_fun            = v.post_recovery_fun;
+    this->probability_of_infecting_fun = v.probability_of_infecting_fun;
+    this->probability_of_recovery_fun  = v.probability_of_recovery_fun;
+    this->probability_of_death_fun     = v.probability_of_death_fun;
+
+    // Setup parameters
+    this->params = v.params;
+    this->data   = v.data;
+
+}
+
+template<typename TSeq>
+inline Virus<TSeq>::Virus(Virus<TSeq> && v)
+{
+
+    // Basic data
+    this->host = v.host;
+    v.host = nullptr;
+    
+    this->baseline_sequence = std::move(v.baseline_sequence);
+    v.baseline_sequence = nullptr;
+
+    this->virus_name = std::move(v.virus_name);
+    this->date       = std::move(v.date);
+    this->id         = std::move(v.id);
+    this->active     = std::move(v.active);
+
+    // Functions
+    this->mutation_fun                 = std::move(v.mutation_fun);
+    this->post_recovery_fun            = std::move(v.post_recovery_fun);
+    this->probability_of_infecting_fun = std::move(v.probability_of_infecting_fun);
+    this->probability_of_recovery_fun  = std::move(v.probability_of_recovery_fun);
+    this->probability_of_death_fun     = std::move(v.probability_of_death_fun);
+
+    // Setup parameters
+    this->params = v.params;
+    this->data   = std::move(v.data);
+
+}
+
+template<typename TSeq>
+inline Virus<TSeq> &  Virus<TSeq>::operator=(const Virus<TSeq> & v)
+{
+
+    // Basic data
+    this->host              = v.host;
+    this->baseline_sequence = v.baseline_sequence;
+    this->virus_name        = v.virus_name;
+    this->date              = v.date;
+    this->id                = v.id;
+    this->active            = v.active;
+
+    // Functions
+    this->mutation_fun                 = v.mutation_fun;
+    this->post_recovery_fun            = v.post_recovery_fun;
+    this->probability_of_infecting_fun = v.probability_of_infecting_fun;
+    this->probability_of_recovery_fun  = v.probability_of_recovery_fun;
+    this->probability_of_death_fun     = v.probability_of_death_fun;
+
+    // Setup parameters
+    this->params = v.params;
+    this->data   = v.data;
+
+    return *this;
+
 }
 
 // template<typename TSeq>
@@ -5587,6 +5660,9 @@ inline std::vector< epiworld_double > & Virus<TSeq>::get_data() {
 #ifndef EPIWORLD_PERSONVIRUSES_BONES_HPP
 #define EPIWORLD_PERSONVIRUSES_BONES_HPP
 
+template<typename TSeq>
+class Virus;
+
 /**
  * @brief Set of viruses in host
  * 
@@ -5596,13 +5672,16 @@ template<typename TSeq = bool>
 class PersonViruses {
     friend class Person<TSeq>;
     friend class Model<TSeq>;
-
+    friend class Virus<TSeq>;
 private:
     Person<TSeq> * host;
     std::vector< Virus<TSeq> > viruses;
     int nactive = 0;
 
 public:
+
+    PersonViruses();
+    
     void add_virus(epiworld_fast_uint new_status, Virus<TSeq> v);
     size_t size() const;
     int size_active() const;
@@ -5640,10 +5719,24 @@ public:
 #define EPIWORLD_PERSONVIRUSES_MEAT_HPP
 
 template<typename TSeq>
+inline PersonViruses<TSeq>::PersonViruses()
+{
+    viruses.reserve(EPIWORLD_HOST_CAPACITY);
+}
+
+template<typename TSeq>
 inline void PersonViruses<TSeq>::add_virus(
     epiworld_fast_uint new_status,
     Virus<TSeq> v
 ) {
+
+    if ((EPIWORLD_HOST_CAPACITY - 1) == viruses.size())
+        throw std::out_of_range(
+            std::string("No more viruses can be added to this host. ") +
+            std::string("The current max size equals ") +
+            std::to_string(EPIWORLD_HOST_CAPACITY) + std::string(". ") +
+            std::string("You can change the size with the macro EPIWORLD_HOST_CAPACITY")
+            );
 
     // This will make an independent copy of the virus.
     // Will keep the original sequence and will point to the

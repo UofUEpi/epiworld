@@ -57,19 +57,23 @@ EPI_NEW_GLOBALFUN(global_variant_x, int)
     const auto & queue = m->get_queue();
 
     int cum_counts = 0;
-    auto population = (*m->get_population());
+    auto & population = (*m->get_population());
     for (size_t i = 0u; i < m->size(); ++i)
         if (queue[i] > 0u)
         {
             // Is this person infected
-            auto & person = population[i];
+            epiworld::Person<int> * person = &population[i];
             
-            if (person.has_virus("Omicron"))
+            if (person->has_virus("Omicron"))
             {
                 if (++cum_counts == who)
                 {
                     // Replacing the virus
-                    person.get_virus(0) = *variant_x_ptr;
+                    // person.get_virus(0) = *variant_x_ptr;
+                    person->rm_virus(&person->get_virus(0));
+                    person->add_virus(variant_x_ptr);
+                    person->update_status(m->get_default_exposed());
+
                     break;
                 }
             }
@@ -140,7 +144,7 @@ int main()
     model.add_global_action(global_variant_x, weekly_infections_start_day); // Appears at day 30
 
     // Initializing and running the model
-    model.init(100, 226);
+    model.init(100, 226); 
     model.run();
 
     // Printing the output

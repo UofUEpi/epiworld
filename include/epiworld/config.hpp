@@ -5,6 +5,10 @@
     #define printf_epiworld fflush(stdout);printf
 #endif
 
+#ifndef EPIWORLD_HOST_CAPACITY
+    #define EPIWORLD_HOST_CAPACITY 10u
+#endif
+
 #ifndef EPIWORLD_MAXNEIGHBORS
     #define EPIWORLD_MAXNEIGHBORS 100000
 #endif

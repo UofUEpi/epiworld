@@ -4,61 +4,6 @@
 #define CHECK_INIT() if (!initialized) \
         throw std::logic_error("Model not initialized.");
 
-#define ADD_VIRUSES() \
-    for (size_t v = 0u; v < virus_to_add.size(); ++v) \
-    { \
-        \
-        Virus<TSeq> * virus   = virus_to_add[v]; \
-        Person<TSeq> * person = virus_to_add_person[v]; \
-        \
-        /* Recording transmission */ \
-        if (virus->get_host() != nullptr) \
-            db.record_transmission( \
-                virus->get_host()->get_id(),\
-                person->get_id(),\
-                virus->get_id()\
-            );\
-        \
-        /*Accounting for the transmission */ \
-        db.up_exposed(virus, person->status_next); \
-        \
-        /* Adding the virus */ \
-        person->get_viruses().add_virus(person->status_next, *virus); \
-        \
-    } \
-    virus_to_add.clear();virus_to_add_person.clear();
-
-#define RM_VIRUSES() \
-    for (auto v : virus_to_remove) \
-    { \
-        \
-        if (IN(v->get_host()->get_status(), status_susceptible)) \
-            v->post_recovery(); \
-        \
-        /* Accounting for the improve */ \
-        db.down_exposed(v, v->get_host()->status); \
-        \
-        /* Removing the virus (THIS SHOULD BE DEACTIVATE INSTEAD) */ \
-        v->get_host()->get_viruses().reset(); \
-        \
-    } \
-    \
-    virus_to_remove.clear(); 
-
-#define UPDATE_QUEUE() \
-    if (use_queuing) \
-        queue.update(); 
-
-#define UPDATE_STATUS() \
-    for (auto & p : population) \
-    { \
-        if (p.status_next != p.status) \
-        {\
-            db.state_change(p.status, p.status_next); \
-            p.status = p.status_next; \
-        }\
-    }
-
 template<typename TSeq>
 inline Model<TSeq>::Model(const Model<TSeq> & model) :
     db(model.db),
@@ -599,17 +544,64 @@ inline int Model<TSeq>::today() const {
 template<typename TSeq>
 inline void Model<TSeq>::next_status() {
 
-    // Adding the next viruses
-    ADD_VIRUSES()
+    // Viruses to add
+    for (size_t v = 0u; v < virus_to_add.size(); ++v) 
+    { 
+        
+        Virus<TSeq> * virus   = virus_to_add[v]; 
+        Person<TSeq> * person = virus_to_add_person[v]; 
+        
+        /* Checking id */
+        if (virus->get_id() < 0) 
+            db.record_variant(virus);
+        
+        /* Recording transmission */ 
+        if (virus->get_host() != nullptr) 
+            db.record_transmission( 
+                virus->get_host()->get_id(),
+                person->get_id(),
+                virus->get_id()
+            );
+        
+        /*Accounting for the transmission */ 
+        db.up_exposed(virus, person->status_next); 
+        
+        /* Adding the virus */ 
+        person->get_viruses().add_virus(person->status_next, *virus); 
+        
+    } 
+    virus_to_add.clear();virus_to_add_person.clear();
 
-    // Removing and deactivating viruses
-    RM_VIRUSES()
+    // Removing viruses to delete
+    for (auto v : virus_to_remove) 
+    { 
+        
+        if (IN(v->get_host()->get_status(), status_susceptible)) 
+            v->post_recovery(); 
+        
+        /* Accounting for the improve */ 
+        db.down_exposed(v, v->get_host()->status); 
+        
+        /* Removing the virus (THIS SHOULD BE DEACTIVATE INSTEAD) */ 
+        v->deactivate(); 
+        
+    } 
+    
+    virus_to_remove.clear(); 
 
-    // Updating the queuing sequence
-    UPDATE_QUEUE()
+    // Next step in queue
+    if (use_queuing)
+        queue.update(); 
 
-    // Moving to the next assigned status
-    UPDATE_STATUS()
+    // Moving to next status
+    for (auto & p : population) 
+    { 
+        if (p.status_next != p.status) 
+        {
+            db.state_change(p.status, p.status_next); 
+            p.status = p.status_next; 
+        }
+    }
     
     #ifdef EPI_DEBUG
     // Checking that all individuals in EXPOSED have a virus
@@ -633,13 +625,13 @@ inline void Model<TSeq>::run()
     EPIWORLD_RUN((*this))
     {
 
+        // We start with the global actions
+        this->run_global_actions();
+        this->next_status();
+
         // We can execute these components in whatever order the
         // user needs.
         this->update_status();       
-        this->next_status();
-
-        // We start with the global actions
-        this->run_global_actions();
         this->next_status();
 
         // In this case we are applying degree sequence rewiring
@@ -1473,11 +1465,6 @@ inline Queue<TSeq> & Model<TSeq>::get_queue()
 #undef EPIWORLD_CHECK_STATE
 #undef EPIWORLD_CHECK_ALL_STATES
 #undef EPIWORLD_COLLECT_STATUSES
-
-#undef ADD_VIRUSES
-#undef RM_VIRUSES
-#undef UPDATE_QUEUE
-#undef UPDATE_STATUS
 
 #undef CHECK_INIT
 #endif

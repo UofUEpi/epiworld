@@ -6,6 +6,87 @@ inline Virus<TSeq>::Virus(std::string name) {
     set_name(name);
 }
 
+template<typename TSeq>
+inline Virus<TSeq>::Virus(const Virus<TSeq> & v)
+{
+
+    // Basic data
+    this->host              = v.host;
+    this->baseline_sequence = v.baseline_sequence;
+    this->virus_name        = v.virus_name;
+    this->date              = v.date;
+    this->id                = v.id;
+    this->active            = v.active;
+
+    // Functions
+    this->mutation_fun                 = v.mutation_fun;
+    this->post_recovery_fun            = v.post_recovery_fun;
+    this->probability_of_infecting_fun = v.probability_of_infecting_fun;
+    this->probability_of_recovery_fun  = v.probability_of_recovery_fun;
+    this->probability_of_death_fun     = v.probability_of_death_fun;
+
+    // Setup parameters
+    this->params = v.params;
+    this->data   = v.data;
+
+}
+
+template<typename TSeq>
+inline Virus<TSeq>::Virus(Virus<TSeq> && v)
+{
+
+    // Basic data
+    this->host = v.host;
+    v.host = nullptr;
+    
+    this->baseline_sequence = std::move(v.baseline_sequence);
+    v.baseline_sequence = nullptr;
+
+    this->virus_name = std::move(v.virus_name);
+    this->date       = std::move(v.date);
+    this->id         = std::move(v.id);
+    this->active     = std::move(v.active);
+
+    // Functions
+    this->mutation_fun                 = std::move(v.mutation_fun);
+    this->post_recovery_fun            = std::move(v.post_recovery_fun);
+    this->probability_of_infecting_fun = std::move(v.probability_of_infecting_fun);
+    this->probability_of_recovery_fun  = std::move(v.probability_of_recovery_fun);
+    this->probability_of_death_fun     = std::move(v.probability_of_death_fun);
+
+    // Setup parameters
+    this->params = v.params;
+    this->data   = std::move(v.data);
+
+}
+
+template<typename TSeq>
+inline Virus<TSeq> &  Virus<TSeq>::operator=(const Virus<TSeq> & v)
+{
+
+    // Basic data
+    this->host              = v.host;
+    this->baseline_sequence = v.baseline_sequence;
+    this->virus_name        = v.virus_name;
+    this->date              = v.date;
+    this->id                = v.id;
+    this->active            = v.active;
+
+    // Functions
+    this->mutation_fun                 = v.mutation_fun;
+    this->post_recovery_fun            = v.post_recovery_fun;
+    this->probability_of_infecting_fun = v.probability_of_infecting_fun;
+    this->probability_of_recovery_fun  = v.probability_of_recovery_fun;
+    this->probability_of_death_fun     = v.probability_of_death_fun;
+
+    // Setup parameters
+    this->params = v.params;
+    this->data   = v.data;
+
+    return *this;
+
+}
+
 // template<typename TSeq>
 // inline Virus<TSeq>::Virus(TSeq sequence, std::string name) {
 //     baseline_sequence = std::make_shared<TSeq>(sequence);

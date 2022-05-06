@@ -1,6 +1,9 @@
 #ifndef EPIWORLD_PERSONVIRUSES_BONES_HPP
 #define EPIWORLD_PERSONVIRUSES_BONES_HPP
 
+template<typename TSeq>
+class Virus;
+
 /**
  * @brief Set of viruses in host
  * 
@@ -10,13 +13,16 @@ template<typename TSeq = bool>
 class PersonViruses {
     friend class Person<TSeq>;
     friend class Model<TSeq>;
-
+    friend class Virus<TSeq>;
 private:
     Person<TSeq> * host;
     std::vector< Virus<TSeq> > viruses;
     int nactive = 0;
 
 public:
+
+    PersonViruses();
+    
     void add_virus(epiworld_fast_uint new_status, Virus<TSeq> v);
     size_t size() const;
     int size_active() const;

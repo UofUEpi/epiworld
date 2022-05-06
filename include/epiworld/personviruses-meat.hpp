@@ -2,10 +2,24 @@
 #define EPIWORLD_PERSONVIRUSES_MEAT_HPP
 
 template<typename TSeq>
+inline PersonViruses<TSeq>::PersonViruses()
+{
+    viruses.reserve(EPIWORLD_HOST_CAPACITY);
+}
+
+template<typename TSeq>
 inline void PersonViruses<TSeq>::add_virus(
     epiworld_fast_uint new_status,
     Virus<TSeq> v
 ) {
+
+    if ((EPIWORLD_HOST_CAPACITY - 1) == viruses.size())
+        throw std::out_of_range(
+            std::string("No more viruses can be added to this host. ") +
+            std::string("The current max size equals ") +
+            std::to_string(EPIWORLD_HOST_CAPACITY) + std::string(". ") +
+            std::string("You can change the size with the macro EPIWORLD_HOST_CAPACITY")
+            );
 
     // This will make an independent copy of the virus.
     // Will keep the original sequence and will point to the
