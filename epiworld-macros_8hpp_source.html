@@ -154,12 +154,12 @@ $(function() {
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#define EPI_TOKENPASTE(a,b) a ## b</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#define MPAR(num) *(m-&gt;EPI_TOKENPASTE(p,num))</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#define EPI_NEW_UPDATEFUN(funname,tseq) inline epiworld_fast_uint \</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#define EPI_NEW_UPDATEFUN(funname,tseq) inline void \</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">    (funname)(epiworld::Person&lt;tseq&gt; * p, epiworld::Model&lt;tseq&gt; * m)</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#define EPI_NEW_UPDATEFUN_LAMBDA(funname,tseq) \</span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">    epiworld::UpdateFun&lt;tseq&gt; funname = \</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">    [](epiworld::Person&lt;tseq&gt; * p, epiworld::Model&lt;tseq&gt; * m)</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">    [](epiworld::Person&lt;tseq&gt; * p, epiworld::Model&lt;tseq&gt; * m) -&gt; void</span></div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#define EPI_NEW_GLOBALFUN(funname,tseq) inline void \</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">    (funname)(epiworld::Model&lt;tseq&gt;* m)</span></div>

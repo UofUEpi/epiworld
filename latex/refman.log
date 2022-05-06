@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Alpine Linux) (preloaded format=pdflatex 2022.5.5)  5 MAY 2022 23:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Alpine Linux) (preloaded format=pdflatex 2022.5.6)  6 MAY 2022 22:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -998,7 +998,7 @@ Underfull \hbox (badness 10000) detected at line 279
  []
 
 [12] [13]
-Underfull \hbox (badness 10000) detected at line 408
+Underfull \hbox (badness 10000) detected at line 411
 [][][]
  []
 
@@ -1020,7 +1020,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
 [17]
-Underfull \hbox (badness 10000) detected at line 93
+Underfull \hbox (badness 10000) detected at line 90
 [][][]
  []
 
@@ -1158,7 +1158,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
 
-Underfull \hbox (badness 10000) detected at line 71
+Underfull \hbox (badness 10000) detected at line 77
 [][][]
  []
 
@@ -1178,10 +1178,10 @@ Package rerunfilecheck Info: File `refman.out' has not changed.
 (rerunfilecheck)             Checksum: 593FDEE98CC24D8CBE85094D836ADBD6;10993.
  ) 
 Here is how much of TeX's memory you used:
- 17575 strings out of 480478
- 276645 string characters out of 5905925
- 553473 words of memory out of 5000000
- 32693 multiletter control sequences out of 15000+600000
+ 17581 strings out of 480478
+ 276921 string characters out of 5905925
+ 553580 words of memory out of 5000000
+ 32696 multiletter control sequences out of 15000+600000
  599375 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,15n,96p,938b,710s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1197,10 +1197,10 @@ rr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/share
 pe1/urw/helvetic/uhvb8ac.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uh
 vbo8ac.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/sha
 re/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (33 pages, 216997 bytes).
+Output written on refman.pdf (33 pages, 217295 bytes).
 PDF statistics:
- 1242 PDF objects out of 1440 (max. 8388607)
- 1179 compressed objects within 12 object streams
- 552 named destinations out of 1000 (max. 500000)
+ 1248 PDF objects out of 1440 (max. 8388607)
+ 1185 compressed objects within 12 object streams
+ 555 named destinations out of 1000 (max. 500000)
  409 words of extra memory for PDF output out of 10000 (max. 10000000)
 
