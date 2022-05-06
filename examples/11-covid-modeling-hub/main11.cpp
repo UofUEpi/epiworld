@@ -72,7 +72,6 @@ EPI_NEW_GLOBALFUN(global_variant_x, int)
                     // person.get_virus(0) = *variant_x_ptr;
                     person->rm_virus(&person->get_virus(0));
                     person->add_virus(variant_x_ptr);
-                    person->update_status(m->get_default_exposed());
 
                     break;
                 }

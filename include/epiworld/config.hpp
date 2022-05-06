@@ -118,9 +118,13 @@ enum STATUS {
     #define EPI_DEBUG_NOTIFY_ACTIVE() \
         printf_epiworld("[epiworld-debug] DEBUGGING ON (compiled with EPI_DEBUG defined)\n");
     #define EPI_DEBUG_ALL_NON_NEGATIVE(vect) \
-        for (auto & v : vect) \
-            if (static_cast<double>(v) < 0.0) \
-                throw std::logic_error("A negative value not allowed.");
+        for (size_t i = 0u; i < vect.size(); ++i) \
+            if (static_cast<double>(vect[i]) < 0.0) \
+                throw std::logic_error( \
+                std::string("A negative value not allowed.") + \
+                std::string("Negative value at element ") + std::to_string(i) + \
+                std::string(".") \
+                );
 
     #define EPI_DEBUG_SUM_DBL(vect, num) \
         double _epi_debug_sum = 0.0; \

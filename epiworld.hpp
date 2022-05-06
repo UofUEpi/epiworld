@@ -145,9 +145,13 @@ enum STATUS {
     #define EPI_DEBUG_NOTIFY_ACTIVE() \
         printf_epiworld("[epiworld-debug] DEBUGGING ON (compiled with EPI_DEBUG defined)\n");
     #define EPI_DEBUG_ALL_NON_NEGATIVE(vect) \
-        for (auto & v : vect) \
-            if (static_cast<double>(v) < 0.0) \
-                throw std::logic_error("A negative value not allowed.");
+        for (size_t i = 0u; i < vect.size(); ++i) \
+            if (static_cast<double>(vect[i]) < 0.0) \
+                throw std::logic_error( \
+                std::string("A negative value not allowed.") + \
+                std::string("Negative value at element ") + std::to_string(i) + \
+                std::string(".") \
+                );
 
     #define EPI_DEBUG_SUM_DBL(vect, num) \
         double _epi_debug_sum = 0.0; \
@@ -1532,6 +1536,19 @@ inline void DataBase<TSeq>::down_exposed(
 
     today_variant_next[v->get_id()][prev_status]--;
 
+    #ifdef EPI_DEBUG
+    if (
+        -today_variant_next[v->get_id()][prev_status] >
+        today_variant[v->get_id()][prev_status])
+        {
+            throw std::logic_error(
+                std::string("today_variant will have negative values ") +
+                std::string("for virus " + std::to_string(v->get_id())) +
+                std::string(".")
+                );
+        }
+    #endif
+
 }
 
 template<typename TSeq>
@@ -1541,6 +1558,29 @@ inline void DataBase<TSeq>::state_change(
 ) {
     today_total_next[prev_status]--;
     today_total_next[new_status]++;
+
+    #ifdef EPI_DEBUG
+    if (
+        -today_total_next[prev_status] >
+        today_total[prev_status])
+        {
+            throw std::logic_error(
+                std::string("today_total will have negative values ") +
+                std::string("for status ") + std::to_string(prev_status)
+                );
+        }
+
+    if (
+        -today_total_next[new_status] >
+        today_total[new_status])
+        {
+            throw std::logic_error(
+                std::string("today_total will have negative values ") +
+                std::string("for status ") + std::to_string(new_status)
+                );
+        }
+    #endif
+
     return;
 }
 
@@ -5675,13 +5715,13 @@ class PersonViruses {
     friend class Virus<TSeq>;
 private:
     Person<TSeq> * host;
-    std::vector< Virus<TSeq> > viruses;
+    std::vector< std::shared_ptr< Virus<TSeq> > > viruses;
     int nactive = 0;
 
 public:
 
     PersonViruses();
-    
+
     void add_virus(epiworld_fast_uint new_status, Virus<TSeq> v);
     size_t size() const;
     int size_active() const;
@@ -5741,10 +5781,10 @@ inline void PersonViruses<TSeq>::add_virus(
     // This will make an independent copy of the virus.
     // Will keep the original sequence and will point to the
     // mutation and transmisibility functions.
-    viruses.push_back(v);
+    viruses.push_back(std::make_shared< Virus<TSeq> >(v));
     int vloc = viruses.size() - 1u;
-    viruses[vloc].host = host;
-    viruses[vloc].date = host->get_model()->today();
+    viruses[vloc]->host = host;
+    viruses[vloc]->date = host->get_model()->today();
 
     nactive++;
 
@@ -5766,7 +5806,7 @@ inline Virus<TSeq> & PersonViruses<TSeq>::operator()(
     int i
 ) {
 
-    return viruses.at(i);
+    return *viruses.at(i);
 
 }
 
@@ -5774,7 +5814,7 @@ template<typename TSeq>
 inline void PersonViruses<TSeq>::mutate()
 {
     for (auto & v : viruses)
-        v.mutate();
+        v->mutate();
 }
 
 template<typename TSeq>
@@ -5807,7 +5847,7 @@ inline bool PersonViruses<TSeq>::has_virus(unsigned int v) const
 {
     int v2 = static_cast<int>(v);
     for (auto & virus : viruses)
-        if (v2 == virus.get_id())
+        if (v2 == virus->get_id())
             return true;
 
     return false;
@@ -5817,7 +5857,7 @@ template<typename TSeq>
 inline bool PersonViruses<TSeq>::has_virus(std::string vname) const
 {
     for (auto & virus : viruses)
-        if (vname == virus.get_name())
+        if (vname == virus->get_name())
             return true;
             
     return false;

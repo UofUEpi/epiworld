@@ -24,10 +24,10 @@ inline void PersonViruses<TSeq>::add_virus(
     // This will make an independent copy of the virus.
     // Will keep the original sequence and will point to the
     // mutation and transmisibility functions.
-    viruses.push_back(v);
+    viruses.push_back(std::make_shared< Virus<TSeq> >(v));
     int vloc = viruses.size() - 1u;
-    viruses[vloc].host = host;
-    viruses[vloc].date = host->get_model()->today();
+    viruses[vloc]->host = host;
+    viruses[vloc]->date = host->get_model()->today();
 
     nactive++;
 
@@ -49,7 +49,7 @@ inline Virus<TSeq> & PersonViruses<TSeq>::operator()(
     int i
 ) {
 
-    return viruses.at(i);
+    return *viruses.at(i);
 
 }
 
@@ -57,7 +57,7 @@ template<typename TSeq>
 inline void PersonViruses<TSeq>::mutate()
 {
     for (auto & v : viruses)
-        v.mutate();
+        v->mutate();
 }
 
 template<typename TSeq>
@@ -90,7 +90,7 @@ inline bool PersonViruses<TSeq>::has_virus(unsigned int v) const
 {
     int v2 = static_cast<int>(v);
     for (auto & virus : viruses)
-        if (v2 == virus.get_id())
+        if (v2 == virus->get_id())
             return true;
 
     return false;
@@ -100,7 +100,7 @@ template<typename TSeq>
 inline bool PersonViruses<TSeq>::has_virus(std::string vname) const
 {
     for (auto & virus : viruses)
-        if (vname == virus.get_name())
+        if (vname == virus->get_name())
             return true;
             
     return false;

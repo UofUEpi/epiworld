@@ -200,6 +200,19 @@ inline void DataBase<TSeq>::down_exposed(
 
     today_variant_next[v->get_id()][prev_status]--;
 
+    #ifdef EPI_DEBUG
+    if (
+        -today_variant_next[v->get_id()][prev_status] >
+        today_variant[v->get_id()][prev_status])
+        {
+            throw std::logic_error(
+                std::string("today_variant will have negative values ") +
+                std::string("for virus " + std::to_string(v->get_id())) +
+                std::string(".")
+                );
+        }
+    #endif
+
 }
 
 template<typename TSeq>
@@ -209,6 +222,29 @@ inline void DataBase<TSeq>::state_change(
 ) {
     today_total_next[prev_status]--;
     today_total_next[new_status]++;
+
+    #ifdef EPI_DEBUG
+    if (
+        -today_total_next[prev_status] >
+        today_total[prev_status])
+        {
+            throw std::logic_error(
+                std::string("today_total will have negative values ") +
+                std::string("for status ") + std::to_string(prev_status)
+                );
+        }
+
+    if (
+        -today_total_next[new_status] >
+        today_total[new_status])
+        {
+            throw std::logic_error(
+                std::string("today_total will have negative values ") +
+                std::string("for status ") + std::to_string(new_status)
+                );
+        }
+    #endif
+
     return;
 }
 

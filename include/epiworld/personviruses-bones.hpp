@@ -16,13 +16,13 @@ class PersonViruses {
     friend class Virus<TSeq>;
 private:
     Person<TSeq> * host;
-    std::vector< Virus<TSeq> > viruses;
+    std::vector< std::shared_ptr< Virus<TSeq> > > viruses;
     int nactive = 0;
 
 public:
 
     PersonViruses();
-    
+
     void add_virus(epiworld_fast_uint new_status, Virus<TSeq> v);
     size_t size() const;
     int size_active() const;
