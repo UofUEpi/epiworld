@@ -38,7 +38,7 @@ class Person;
     }
 
 template<typename TSeq>
-inline epiworld_fast_uint default_update_susceptible(
+inline void default_update_susceptible(
     Person<TSeq> * p,
     Model<TSeq> * m
     )
@@ -80,17 +80,15 @@ inline epiworld_fast_uint default_update_susceptible(
 
     // No virus to compute
     if (nvariants_tmp == 0u)
-        return p->get_status();
+        return ;
 
     // Running the roulette
     int which = roulette(nvariants_tmp, m);
 
     if (which < 0)
-        return p->get_status();
+        return ;
 
-    p->add_virus(m->array_virus_tmp[which]); 
-
-    return m->get_default_exposed();
+    p->add_virus(m->array_virus_tmp[which], m->get_default_exposed()); 
 
 }
 
@@ -101,7 +99,7 @@ inline epiworld_fast_uint default_update_susceptible(
 
 
 template<typename TSeq>
-inline epiworld_fast_uint default_update_exposed(Person<TSeq> * p, Model<TSeq> * m) {
+inline void default_update_exposed(Person<TSeq> * p, Model<TSeq> * m) {
 
     epiworld::Virus<TSeq> * v = &(p->get_virus(0u)); 
     epiworld_double p_rec = v->get_prob_recovery() * (1.0 - p->get_recovery_enhancer(v)); 
@@ -112,19 +110,19 @@ inline epiworld_fast_uint default_update_exposed(Person<TSeq> * p, Model<TSeq> *
 
     if (r < cumsum)
     {
-        p->rm_virus(v);
-        return m->get_default_removed();
+        v->rm(m->get_default_removed());
+        return;
     }
     
     cumsum += p_rec * (1 - p_die) / (1.0 - p_die * p_rec);
     
     if (r < cumsum)
     {
-        p->rm_virus(v);
-        return m->get_default_removed();
+        v->rm(m->get_default_removed());
+        return;
     }
 
-    return p->get_status();
+    return;
 
 }
 

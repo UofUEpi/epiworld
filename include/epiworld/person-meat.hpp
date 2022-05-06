@@ -30,28 +30,34 @@ inline void Person<TSeq>::add_tool(
 
 template<typename TSeq>
 inline void Person<TSeq>::add_virus(
-    Virus<TSeq> * virus
+    Virus<TSeq> * virus,
+    epiworld_fast_uint next_status
 )
 {
 
     model->virus_to_add.push_back(virus);
     model->virus_to_add_person.push_back(this);
 
+    /* Checking id */
+    if (virus->get_id() < 0) 
+        model->get_db().record_variant(virus);
+    else    
+        model->get_db().up_exposed(virus, next_status);
+        
+    model->get_db().state_change(status, next_status);
+
     if (model->is_queuing_on())
         model->get_queue() += this;
 
-}
-
-template<typename TSeq>
-inline void Person<TSeq>::rm_virus(
-    Virus<TSeq> * virus
-)
-{
-
-    model->virus_to_remove.push_back(virus);
-
-    if (model->is_queuing_on())
-        model->get_queue() -= this;
+    status_next = next_status;
+    
+    /* Recording transmission */ 
+    if (virus->get_host() != nullptr) 
+        model->get_db().record_transmission( 
+            virus->get_host()->get_id(),
+            id,
+            virus->get_id()
+        );
 
 }
 
@@ -188,7 +194,7 @@ inline void Person<TSeq>::update_status()
     if (IN(status, model->status_removed))
     {
         if (update_removed)
-            status_next = update_removed(this, model);
+            update_removed(this, model);
 
     } else if (IN(status, model->status_susceptible)) {
         
@@ -196,12 +202,12 @@ inline void Person<TSeq>::update_status()
             throw std::logic_error("No update_susceptible function?!");
 
         if (update_susceptible)
-            status_next = update_susceptible(this, model);
+            update_susceptible(this, model);
 
     } else if (IN(status, model->status_exposed)) {
 
         if (update_exposed)
-            status_next = update_exposed(this, model);
+            update_exposed(this, model);
 
     } else
         throw std::range_error(

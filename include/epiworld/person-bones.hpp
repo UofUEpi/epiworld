@@ -26,6 +26,7 @@ class Person {
     friend class Model<TSeq>;
     friend class Tool<TSeq>;
     friend class Queue<TSeq>;
+    friend class Virus<TSeq>;
 private:
     Model<TSeq> * model;
     PersonViruses<TSeq> viruses;
@@ -47,8 +48,10 @@ public:
     void init(epiworld_fast_uint baseline_status);
 
     void add_tool(int d, Tool<TSeq> tool);
-    void add_virus(Virus<TSeq> * virus);
-    void rm_virus(Virus<TSeq> * virus);
+    void add_virus(
+        Virus<TSeq> * virus,
+        epiworld_fast_uint next_status
+        );
 
     /**
      * @name Get the rates (multipliers) for the agent

@@ -280,8 +280,7 @@ inline void Model<TSeq>::dist_virus()
 
             Person<TSeq> & person = population[loc];
             
-            person.add_virus(&viruses[v]);
-            person.status_next = baseline_status_exposed;
+            person.add_virus(&viruses[v], baseline_status_exposed);
 
             nsampled--;
 
@@ -550,22 +549,7 @@ inline void Model<TSeq>::next_status() {
         
         Virus<TSeq> * virus   = virus_to_add[v]; 
         Person<TSeq> * person = virus_to_add_person[v]; 
-        
-        /* Checking id */
-        if (virus->get_id() < 0) 
-            db.record_variant(virus);
-        
-        /* Recording transmission */ 
-        if (virus->get_host() != nullptr) 
-            db.record_transmission( 
-                virus->get_host()->get_id(),
-                person->get_id(),
-                virus->get_id()
-            );
-        
-        /*Accounting for the transmission */ 
-        db.up_exposed(virus, person->status_next); 
-        
+                
         /* Adding the virus */ 
         person->get_viruses().add_virus(person->status_next, *virus); 
         
@@ -578,12 +562,9 @@ inline void Model<TSeq>::next_status() {
         
         if (IN(v->get_host()->get_status(), status_susceptible)) 
             v->post_recovery(); 
-        
-        /* Accounting for the improve */ 
-        db.down_exposed(v, v->get_host()->status); 
-        
+                
         /* Removing the virus (THIS SHOULD BE DEACTIVATE INSTEAD) */ 
-        v->deactivate(); 
+        v->~Virus<TSeq>();
         
     } 
     

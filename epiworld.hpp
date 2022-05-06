@@ -90,7 +90,7 @@ template<typename TSeq>
 using VirusFun = std::function<epiworld_double(Person<TSeq>*,Virus<TSeq>*,Model<TSeq>*)>;
 
 template<typename TSeq>
-using UpdateFun = std::function<epiworld_fast_uint(Person<TSeq>*,Model<TSeq>*)>;
+using UpdateFun = std::function<void(Person<TSeq>*,Model<TSeq>*)>;
 
 template<typename TSeq>
 using GlobalFun = std::function<void(Model<TSeq>*)>;
@@ -306,12 +306,12 @@ enum STATUS {
 #define EPI_TOKENPASTE(a,b) a ## b
 #define MPAR(num) *(m->EPI_TOKENPASTE(p,num))
 
-#define EPI_NEW_UPDATEFUN(funname,tseq) inline epiworld_fast_uint \
+#define EPI_NEW_UPDATEFUN(funname,tseq) inline void \
     (funname)(epiworld::Person<tseq> * p, epiworld::Model<tseq> * m)
 
 #define EPI_NEW_UPDATEFUN_LAMBDA(funname,tseq) \
     epiworld::UpdateFun<tseq> funname = \
-    [](epiworld::Person<tseq> * p, epiworld::Model<tseq> * m)
+    [](epiworld::Person<tseq> * p, epiworld::Model<tseq> * m) -> void
 
 #define EPI_NEW_GLOBALFUN(funname,tseq) inline void \
     (funname)(epiworld::Model<tseq>* m)
@@ -2882,6 +2882,7 @@ class Model {
     friend class Person<TSeq>;
     friend class DataBase<TSeq>;
     friend class Queue<TSeq>;
+    friend class Virus<TSeq>;
 private:
 
     DataBase<TSeq> db;
@@ -3621,8 +3622,7 @@ inline void Model<TSeq>::dist_virus()
 
             Person<TSeq> & person = population[loc];
             
-            person.add_virus(&viruses[v]);
-            person.status_next = baseline_status_exposed;
+            person.add_virus(&viruses[v], baseline_status_exposed);
 
             nsampled--;
 
@@ -3891,22 +3891,7 @@ inline void Model<TSeq>::next_status() {
         
         Virus<TSeq> * virus   = virus_to_add[v]; 
         Person<TSeq> * person = virus_to_add_person[v]; 
-        
-        /* Checking id */
-        if (virus->get_id() < 0) 
-            db.record_variant(virus);
-        
-        /* Recording transmission */ 
-        if (virus->get_host() != nullptr) 
-            db.record_transmission( 
-                virus->get_host()->get_id(),
-                person->get_id(),
-                virus->get_id()
-            );
-        
-        /*Accounting for the transmission */ 
-        db.up_exposed(virus, person->status_next); 
-        
+                
         /* Adding the virus */ 
         person->get_viruses().add_virus(person->status_next, *virus); 
         
@@ -3919,12 +3904,9 @@ inline void Model<TSeq>::next_status() {
         
         if (IN(v->get_host()->get_status(), status_susceptible)) 
             v->post_recovery(); 
-        
-        /* Accounting for the improve */ 
-        db.down_exposed(v, v->get_host()->status); 
-        
+                
         /* Removing the virus (THIS SHOULD BE DEACTIVATE INSTEAD) */ 
-        v->deactivate(); 
+        v->~Virus<TSeq>();
         
     } 
     
@@ -5151,7 +5133,6 @@ private:
     std::shared_ptr<std::string> virus_name = nullptr;
     int date = -99;
     int id   = -99;
-    bool active = true;
     MutFun<TSeq>          mutation_fun                 = nullptr;
     PostRecoveryFun<TSeq> post_recovery_fun            = nullptr;
     VirusFun<TSeq>        probability_of_infecting_fun = nullptr;
@@ -5170,16 +5151,20 @@ public:
 
     void mutate();
     void set_mutation(MutFun<TSeq> fun);
+    
     const TSeq* get_sequence();
     void set_sequence(TSeq sequence);
+    
     Person<TSeq> * get_host();
     Model<TSeq> * get_model();
+    
     void set_date(int d);
     int get_date() const;
+    
     void set_id(int idx);
     int get_id() const;
-    bool is_active() const;
-    void deactivate();
+    
+    void rm(epiworld_fast_uint next_status);
 
     /**
      * @name Get and set the tool functions
@@ -5257,7 +5242,6 @@ inline Virus<TSeq>::Virus(const Virus<TSeq> & v)
     this->virus_name        = v.virus_name;
     this->date              = v.date;
     this->id                = v.id;
-    this->active            = v.active;
 
     // Functions
     this->mutation_fun                 = v.mutation_fun;
@@ -5286,7 +5270,6 @@ inline Virus<TSeq>::Virus(Virus<TSeq> && v)
     this->virus_name = std::move(v.virus_name);
     this->date       = std::move(v.date);
     this->id         = std::move(v.id);
-    this->active     = std::move(v.active);
 
     // Functions
     this->mutation_fun                 = std::move(v.mutation_fun);
@@ -5311,7 +5294,6 @@ inline Virus<TSeq> &  Virus<TSeq>::operator=(const Virus<TSeq> & v)
     this->virus_name        = v.virus_name;
     this->date              = v.date;
     this->id                = v.id;
-    this->active            = v.active;
 
     // Functions
     this->mutation_fun                 = v.mutation_fun;
@@ -5396,17 +5378,29 @@ inline int Virus<TSeq>::get_date() const {
     return date;
 }
 
-template<typename TSeq>
-inline bool Virus<TSeq>::is_active() const {
-    return active;
-}
 
 template<typename TSeq>
-inline void Virus<TSeq>::deactivate()
+inline void Virus<TSeq>::rm(epiworld_fast_uint next_status)
 {
 
-    active = false;
+    Model<TSeq> * model = get_model();
+
+    // Downcount the next exposed for this virus
+    model->get_db().down_exposed(this, host->status);
+
+    // Down count the status and upcount the next status
+    model->get_db().state_change(host->get_status(), next_status);
+
+    // Will update the status of the person
+    host->update_status(next_status);
+
+    // Finally, downcount the number of active viruses and
+    // add the virus to the list.
     host->get_viruses().nactive--;
+    model->virus_to_remove.push_back(this);
+
+    if (model->is_queuing_on())
+        model->get_queue() -= host;
 
 }
 
@@ -5728,7 +5722,6 @@ public:
     Virus<TSeq> & operator()(int i);
     void mutate();
     void reset();
-    void deactivate(Virus<TSeq> & v);
     Person<TSeq> * get_host();
     bool has_virus(unsigned int v) const;
     bool has_virus(std::string vname) const;
@@ -5823,17 +5816,6 @@ inline void PersonViruses<TSeq>::reset()
 
     this->viruses.clear();
     nactive = 0;
-
-}
-
-template<typename TSeq>
-inline void PersonViruses<TSeq>::deactivate(Virus<TSeq> & v)
-{
-
-    if (v.get_host()->id != host->id)
-        throw std::logic_error("A host cannot deactivate someone else's virus.");
-
-    v.deactivate();
 
 }
 
@@ -6634,7 +6616,7 @@ class Person;
     }
 
 template<typename TSeq>
-inline epiworld_fast_uint default_update_susceptible(
+inline void default_update_susceptible(
     Person<TSeq> * p,
     Model<TSeq> * m
     )
@@ -6676,17 +6658,15 @@ inline epiworld_fast_uint default_update_susceptible(
 
     // No virus to compute
     if (nvariants_tmp == 0u)
-        return p->get_status();
+        return ;
 
     // Running the roulette
     int which = roulette(nvariants_tmp, m);
 
     if (which < 0)
-        return p->get_status();
+        return ;
 
-    p->add_virus(m->array_virus_tmp[which]); 
-
-    return m->get_default_exposed();
+    p->add_virus(m->array_virus_tmp[which], m->get_default_exposed()); 
 
 }
 
@@ -6697,7 +6677,7 @@ inline epiworld_fast_uint default_update_susceptible(
 
 
 template<typename TSeq>
-inline epiworld_fast_uint default_update_exposed(Person<TSeq> * p, Model<TSeq> * m) {
+inline void default_update_exposed(Person<TSeq> * p, Model<TSeq> * m) {
 
     epiworld::Virus<TSeq> * v = &(p->get_virus(0u)); 
     epiworld_double p_rec = v->get_prob_recovery() * (1.0 - p->get_recovery_enhancer(v)); 
@@ -6708,19 +6688,19 @@ inline epiworld_fast_uint default_update_exposed(Person<TSeq> * p, Model<TSeq> *
 
     if (r < cumsum)
     {
-        p->rm_virus(v);
-        return m->get_default_removed();
+        v->rm(m->get_default_removed());
+        return;
     }
     
     cumsum += p_rec * (1 - p_die) / (1.0 - p_die * p_rec);
     
     if (r < cumsum)
     {
-        p->rm_virus(v);
-        return m->get_default_removed();
+        v->rm(m->get_default_removed());
+        return;
     }
 
-    return p->get_status();
+    return;
 
 }
 
@@ -6771,6 +6751,7 @@ class Person {
     friend class Model<TSeq>;
     friend class Tool<TSeq>;
     friend class Queue<TSeq>;
+    friend class Virus<TSeq>;
 private:
     Model<TSeq> * model;
     PersonViruses<TSeq> viruses;
@@ -6792,8 +6773,10 @@ public:
     void init(epiworld_fast_uint baseline_status);
 
     void add_tool(int d, Tool<TSeq> tool);
-    void add_virus(Virus<TSeq> * virus);
-    void rm_virus(Virus<TSeq> * virus);
+    void add_virus(
+        Virus<TSeq> * virus,
+        epiworld_fast_uint next_status
+        );
 
     /**
      * @name Get the rates (multipliers) for the agent
@@ -6907,28 +6890,34 @@ inline void Person<TSeq>::add_tool(
 
 template<typename TSeq>
 inline void Person<TSeq>::add_virus(
-    Virus<TSeq> * virus
+    Virus<TSeq> * virus,
+    epiworld_fast_uint next_status
 )
 {
 
     model->virus_to_add.push_back(virus);
     model->virus_to_add_person.push_back(this);
 
+    /* Checking id */
+    if (virus->get_id() < 0) 
+        model->get_db().record_variant(virus);
+    else    
+        model->get_db().up_exposed(virus, next_status);
+        
+    model->get_db().state_change(status, next_status);
+
     if (model->is_queuing_on())
         model->get_queue() += this;
 
-}
-
-template<typename TSeq>
-inline void Person<TSeq>::rm_virus(
-    Virus<TSeq> * virus
-)
-{
-
-    model->virus_to_remove.push_back(virus);
-
-    if (model->is_queuing_on())
-        model->get_queue() -= this;
+    status_next = next_status;
+    
+    /* Recording transmission */ 
+    if (virus->get_host() != nullptr) 
+        model->get_db().record_transmission( 
+            virus->get_host()->get_id(),
+            id,
+            virus->get_id()
+        );
 
 }
 
@@ -7065,7 +7054,7 @@ inline void Person<TSeq>::update_status()
     if (IN(status, model->status_removed))
     {
         if (update_removed)
-            status_next = update_removed(this, model);
+            update_removed(this, model);
 
     } else if (IN(status, model->status_susceptible)) {
         
@@ -7073,12 +7062,12 @@ inline void Person<TSeq>::update_status()
             throw std::logic_error("No update_susceptible function?!");
 
         if (update_susceptible)
-            status_next = update_susceptible(this, model);
+            update_susceptible(this, model);
 
     } else if (IN(status, model->status_exposed)) {
 
         if (update_exposed)
-            status_next = update_exposed(this, model);
+            update_exposed(this, model);
 
     } else
         throw std::range_error(

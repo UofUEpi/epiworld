@@ -32,6 +32,7 @@ class Model {
     friend class Person<TSeq>;
     friend class DataBase<TSeq>;
     friend class Queue<TSeq>;
+    friend class Virus<TSeq>;
 private:
 
     DataBase<TSeq> db;

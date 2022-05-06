@@ -70,7 +70,7 @@ EPI_NEW_GLOBALFUN(global_variant_x, int)
                 {
                     // Replacing the virus
                     // person.get_virus(0) = *variant_x_ptr;
-                    person->rm_virus(&person->get_virus(0));
+                    person->get_virus(0u).rm(person->get_status());
                     person->add_virus(variant_x_ptr);
 
                     break;

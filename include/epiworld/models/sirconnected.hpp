@@ -80,14 +80,15 @@ EPI_NEW_UPDATEFUN(update_susceptible, bool)
 
         // Infecting the individual
         p->add_virus(
-            &tracked_agents_infected[which]->get_virus(0u)
+            &tracked_agents_infected[which]->get_virus(0u),
+            SIRCONSTATUS::INFECTED
             ); 
 
-        return SIRCONSTATUS::INFECTED;
+        return;
 
     }
 
-    return p->get_status();
+    return;
 
 }
 
@@ -101,16 +102,16 @@ EPI_NEW_UPDATEFUN(update_infected, bool)
     {
 
         tracked_ninfected_next--;
-        epiworld::Virus<> * v = &p->get_virus(0u);
-        p->rm_virus(v);
-        return SIRCONSTATUS::RECOVERED;
+        p->get_virus(0u).rm(SIRCONSTATUS::RECOVERED);
+
+        return;
 
     }
 
     // Will be present next
     tracked_agents_infected_next.push_back(p);
 
-    return p->get_status();
+    return;
 
 }
 

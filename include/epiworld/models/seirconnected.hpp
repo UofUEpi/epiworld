@@ -59,7 +59,7 @@ EPI_NEW_UPDATEFUN(update_susceptible, bool)
 
     // No infected individual?
     if (tracked_ninfected == 0)
-        return p->get_status();
+        return;
 
     // Computing probability of contagion
     // P(infected) = 1 - (1 - beta/Pop * ptransmit) ^ ninfected
@@ -92,14 +92,15 @@ EPI_NEW_UPDATEFUN(update_susceptible, bool)
         }
         #endif
         p->add_virus(
-            &tracked_agents_infected[which]->get_virus(0u)
+            &tracked_agents_infected[which]->get_virus(0u),
+            SEIRCONSTATUS::EXPOSED
             ); 
 
-        return SEIRCONSTATUS::EXPOSED;
+        return ;
 
     }
 
-    return p->get_status();
+    return;
 
 }
 
@@ -119,7 +120,9 @@ EPI_NEW_UPDATEFUN(update_infected, bool)
             tracked_agents_infected_next.push_back(p);
             tracked_ninfected_next++;
 
-            return SEIRCONSTATUS::INFECTED;
+            p->update_status(SEIRCONSTATUS::INFECTED);
+
+            return;
 
         }
 
@@ -131,8 +134,8 @@ EPI_NEW_UPDATEFUN(update_infected, bool)
         {
 
             tracked_ninfected_next--;
-            p->rm_virus(&p->get_virus(0u));
-            return SEIRCONSTATUS::RECOVERED;
+            p->get_virus(0u).rm(SEIRCONSTATUS::RECOVERED);
+            return;
 
         }
 
@@ -140,7 +143,7 @@ EPI_NEW_UPDATEFUN(update_infected, bool)
 
     } 
 
-    return status;
+    return;
 
 }
 

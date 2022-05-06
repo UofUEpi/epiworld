@@ -29,7 +29,6 @@ public:
     Virus<TSeq> & operator()(int i);
     void mutate();
     void reset();
-    void deactivate(Virus<TSeq> & v);
     Person<TSeq> * get_host();
     bool has_virus(unsigned int v) const;
     bool has_virus(std::string vname) const;

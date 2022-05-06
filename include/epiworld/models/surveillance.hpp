@@ -25,16 +25,16 @@ EPI_NEW_UPDATEFUN(surveillance_update_susceptible, TSeq) {
 
     // No virus to compute on
     if (probs.size() == 0)
-        return p->get_status();
+        return;
 
     // Running the roulette
     int which = roulette(probs, m);
 
     if (which < 0)
-        return p->get_status();
+        return;
 
-    p->add_virus(variants[which]); 
-    return m->get_default_exposed();
+    p->add_virus(variants[which], m->get_default_exposed()); 
+    return ;
 
 }
 
@@ -61,13 +61,13 @@ EPI_NEW_UPDATEFUN(surveillance_update_exposed,TSeq)
     
     // If still latent, nothing happens
     if (days_since_exposed <= v->get_data()[0u])
-        return status;
+        return;
 
     // If past days infected + latent, then bye.
     if (days_since_exposed >= v->get_data()[1u])
     {
-        p->rm_virus(v);
-        return SURVSTATUS::RECOVERED;
+        v->rm(SURVSTATUS::RECOVERED);
+        return;
     }
 
     // If it is infected, then it can be asymptomatic or symptomatic
@@ -78,22 +78,24 @@ EPI_NEW_UPDATEFUN(surveillance_update_exposed,TSeq)
         if (EPI_RUNIF() < MPAR(2))
         {
             // If you are symptomatic, then you may be catched
-            return static_cast<epiworld_fast_uint>(SURVSTATUS::SYMPTOMATIC);
+            p->update_status(SURVSTATUS::SYMPTOMATIC);
+            return;
 
         }
         
-        return static_cast<epiworld_fast_uint>(SURVSTATUS::ASYMPTOMATIC);
+        p->update_status(SURVSTATUS::ASYMPTOMATIC);
+        return;
 
     }
     
     // Otherwise, it can be removed
     if (EPI_RUNIF() < p_die)
     {
-        p->rm_virus(v);
-        return SURVSTATUS::REMOVED;
+        v.rm(SURVSTATUS::REMOVED);
+        return;
     }
     
-    return p->get_status();
+    return;
 
 }
 

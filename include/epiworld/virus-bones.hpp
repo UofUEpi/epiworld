@@ -37,7 +37,6 @@ private:
     std::shared_ptr<std::string> virus_name = nullptr;
     int date = -99;
     int id   = -99;
-    bool active = true;
     MutFun<TSeq>          mutation_fun                 = nullptr;
     PostRecoveryFun<TSeq> post_recovery_fun            = nullptr;
     VirusFun<TSeq>        probability_of_infecting_fun = nullptr;
@@ -56,16 +55,20 @@ public:
 
     void mutate();
     void set_mutation(MutFun<TSeq> fun);
+    
     const TSeq* get_sequence();
     void set_sequence(TSeq sequence);
+    
     Person<TSeq> * get_host();
     Model<TSeq> * get_model();
+    
     void set_date(int d);
     int get_date() const;
+    
     void set_id(int idx);
     int get_id() const;
-    bool is_active() const;
-    void deactivate();
+    
+    void rm(epiworld_fast_uint next_status);
 
     /**
      * @name Get and set the tool functions

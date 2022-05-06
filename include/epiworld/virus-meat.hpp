@@ -16,7 +16,6 @@ inline Virus<TSeq>::Virus(const Virus<TSeq> & v)
     this->virus_name        = v.virus_name;
     this->date              = v.date;
     this->id                = v.id;
-    this->active            = v.active;
 
     // Functions
     this->mutation_fun                 = v.mutation_fun;
@@ -45,7 +44,6 @@ inline Virus<TSeq>::Virus(Virus<TSeq> && v)
     this->virus_name = std::move(v.virus_name);
     this->date       = std::move(v.date);
     this->id         = std::move(v.id);
-    this->active     = std::move(v.active);
 
     // Functions
     this->mutation_fun                 = std::move(v.mutation_fun);
@@ -70,7 +68,6 @@ inline Virus<TSeq> &  Virus<TSeq>::operator=(const Virus<TSeq> & v)
     this->virus_name        = v.virus_name;
     this->date              = v.date;
     this->id                = v.id;
-    this->active            = v.active;
 
     // Functions
     this->mutation_fun                 = v.mutation_fun;
@@ -155,17 +152,29 @@ inline int Virus<TSeq>::get_date() const {
     return date;
 }
 
-template<typename TSeq>
-inline bool Virus<TSeq>::is_active() const {
-    return active;
-}
 
 template<typename TSeq>
-inline void Virus<TSeq>::deactivate()
+inline void Virus<TSeq>::rm(epiworld_fast_uint next_status)
 {
 
-    active = false;
+    Model<TSeq> * model = get_model();
+
+    // Downcount the next exposed for this virus
+    model->get_db().down_exposed(this, host->status);
+
+    // Down count the status and upcount the next status
+    model->get_db().state_change(host->get_status(), next_status);
+
+    // Will update the status of the person
+    host->update_status(next_status);
+
+    // Finally, downcount the number of active viruses and
+    // add the virus to the list.
     host->get_viruses().nactive--;
+    model->virus_to_remove.push_back(this);
+
+    if (model->is_queuing_on())
+        model->get_queue() -= host;
 
 }
 

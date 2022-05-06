@@ -70,17 +70,6 @@ inline void PersonViruses<TSeq>::reset()
 }
 
 template<typename TSeq>
-inline void PersonViruses<TSeq>::deactivate(Virus<TSeq> & v)
-{
-
-    if (v.get_host()->id != host->id)
-        throw std::logic_error("A host cannot deactivate someone else's virus.");
-
-    v.deactivate();
-
-}
-
-template<typename TSeq>
 inline Person<TSeq> * PersonViruses<TSeq>::get_host() {
     return host;
 }
