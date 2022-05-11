@@ -143,15 +143,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>verbose_on</b> ()</td
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#aa3ce8d5f025e239f8090ab9645f3e917">today</a> () const</td></tr>
 <tr class="memdesc:aa3ce8d5f025e239f8090ab9645f3e917"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current time of the model. <br /></td></tr>
 <tr class="separator:aa3ce8d5f025e239f8090ab9645f3e917"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd773e1a9dd762b8735886e6f27598bd"><td class="memItemLeft" align="right" valign="top"><a id="acd773e1a9dd762b8735886e6f27598bd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_update_susceptible</b> (UpdateFun&lt; TSeq &gt; fun)</td></tr>
-<tr class="separator:acd773e1a9dd762b8735886e6f27598bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f0468cdca24a951e39d9a06fb73d7b9"><td class="memItemLeft" align="right" valign="top"><a id="a7f0468cdca24a951e39d9a06fb73d7b9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_update_exposed</b> (UpdateFun&lt; TSeq &gt; fun)</td></tr>
-<tr class="separator:a7f0468cdca24a951e39d9a06fb73d7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe91a508a304b20929208b7b156ff4cd"><td class="memItemLeft" align="right" valign="top"><a id="afe91a508a304b20929208b7b156ff4cd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_update_removed</b> (UpdateFun&lt; TSeq &gt; fun)</td></tr>
-<tr class="separator:afe91a508a304b20929208b7b156ff4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c07199ce0c9102cccb9749a7eda421d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a6c07199ce0c9102cccb9749a7eda421d">write_data</a> (std::string fn_variant_info, std::string fn_variant_hist, std::string fn_total_hist, std::string fn_transmission, std::string fn_transition) const</td></tr>
 <tr class="memdesc:a6c07199ce0c9102cccb9749a7eda421d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper of <code>DataBase::write_data</code>  <a href="class_model.html#a6c07199ce0c9102cccb9749a7eda421d">More...</a><br /></td></tr>
 <tr class="separator:a6c07199ce0c9102cccb9749a7eda421d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,9 +158,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>print</b> () const</t
 <tr class="memitem:a66c80c4753f8f2b6459cb5735781b777"><td class="memItemLeft" align="right" valign="top"><a id="a66c80c4753f8f2b6459cb5735781b777"></a>
 <a class="el" href="class_model.html">Model</a>&lt; TSeq &gt; &amp;&amp;&#160;</td><td class="memItemRight" valign="bottom"><b>clone</b> () const</td></tr>
 <tr class="separator:a66c80c4753f8f2b6459cb5735781b777"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5819bef86c4c7d5623a7525831fb73c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#aa5819bef86c4c7d5623a7525831fb73c">reset_status_codes</a> (std::vector&lt; epiworld_fast_uint &gt; codes, std::vector&lt; std::string &gt; names, bool verbose=true)</td></tr>
-<tr class="memdesc:aa5819bef86c4c7d5623a7525831fb73c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset all the status codes of the model.  <a href="class_model.html#aa5819bef86c4c7d5623a7525831fb73c">More...</a><br /></td></tr>
-<tr class="separator:aa5819bef86c4c7d5623a7525831fb73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acff738dcd85c99e96ca206d8239ceb21"><td class="memItemLeft" align="right" valign="top"><a id="acff738dcd85c99e96ca206d8239ceb21"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>get_elapsed</b> (std::string unit=&quot;auto&quot;, epiworld_double *last_elapsed=nullptr, epiworld_double *total_elapsed=nullptr, std::string *unit_abbr=nullptr, bool print=true) const</td></tr>
 <tr class="separator:acff738dcd85c99e96ca206d8239ceb21"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -322,11 +310,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>write_edgelist</b> (s
 void&#160;</td><td class="memItemRight" valign="bottom"><b>write_edgelist</b> (std::vector&lt; unsigned int &gt; &amp;source, std::vector&lt; unsigned int &gt; &amp;target) const</td></tr>
 <tr class="separator:a34ec3040315eaf6c1c4fff6a146a85e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Manage status (states) in the model</div></td></tr>
-<tr><td colspan="2"><div class="groupText"><p>Adding values of <code>s</code> that are already present in the model will result in an error.</p>
-<p>The functions <code>get_status_*</code> return the current values for the statuses included in the model.</p>
+<tr><td colspan="2"><div class="groupText"><p>The functions <code>get_status</code> return the current values for the statuses included in the model.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td><code>unsigned int</code> Code of the status </td></tr>
     <tr><td class="paramname">lab</td><td><code>std::string</code> Name of the status.</td></tr>
   </table>
   </dd>
@@ -335,54 +321,21 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>write_edgelist</b> (s
 <dd>
 <code>get_status_*</code> returns a vector of pairs with the statuses and their labels. </dd></dl>
 </div></td></tr>
-<tr class="memitem:ad8dcbd73a6af4d2136641d66121c0c51"><td class="memItemLeft" align="right" valign="top"><a id="ad8dcbd73a6af4d2136641d66121c0c51"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>add_status_susceptible</b> (epiworld_fast_uint s, std::string lab)</td></tr>
-<tr class="separator:ad8dcbd73a6af4d2136641d66121c0c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a722d349d0cf4fb5a794ac5b99e27e60b"><td class="memItemLeft" align="right" valign="top"><a id="a722d349d0cf4fb5a794ac5b99e27e60b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>add_status_exposed</b> (epiworld_fast_uint s, std::string lab)</td></tr>
-<tr class="separator:a722d349d0cf4fb5a794ac5b99e27e60b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48821df94966d9378d95b331c572cf46"><td class="memItemLeft" align="right" valign="top"><a id="a48821df94966d9378d95b331c572cf46"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>add_status_removed</b> (epiworld_fast_uint s, std::string lab)</td></tr>
-<tr class="separator:a48821df94966d9378d95b331c572cf46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61949aaf7d1a50760833b407d870f9e0"><td class="memItemLeft" align="right" valign="top"><a id="a61949aaf7d1a50760833b407d870f9e0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>add_status_susceptible</b> (std::string lab)</td></tr>
-<tr class="separator:a61949aaf7d1a50760833b407d870f9e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af24f512a9370addfeec8723d9b735e05"><td class="memItemLeft" align="right" valign="top"><a id="af24f512a9370addfeec8723d9b735e05"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>add_status_exposed</b> (std::string lab)</td></tr>
-<tr class="separator:af24f512a9370addfeec8723d9b735e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32c38a9855bbb306df3dd0abea7bcbc8"><td class="memItemLeft" align="right" valign="top"><a id="a32c38a9855bbb306df3dd0abea7bcbc8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>add_status_removed</b> (std::string lab)</td></tr>
-<tr class="separator:a32c38a9855bbb306df3dd0abea7bcbc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55f091a185494b60ef50921a975a44c4"><td class="memItemLeft" align="right" valign="top"><a id="a55f091a185494b60ef50921a975a44c4"></a>
-const std::vector&lt; epiworld_fast_uint &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_status_susceptible</b> () const</td></tr>
-<tr class="separator:a55f091a185494b60ef50921a975a44c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4fb552e3055ea87e02617d65caf0696"><td class="memItemLeft" align="right" valign="top"><a id="ad4fb552e3055ea87e02617d65caf0696"></a>
-const std::vector&lt; epiworld_fast_uint &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_status_exposed</b> () const</td></tr>
-<tr class="separator:ad4fb552e3055ea87e02617d65caf0696"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d6b8eb714e7215aaf5d9c04d91014fe"><td class="memItemLeft" align="right" valign="top"><a id="a7d6b8eb714e7215aaf5d9c04d91014fe"></a>
-const std::vector&lt; epiworld_fast_uint &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_status_removed</b> () const</td></tr>
-<tr class="separator:a7d6b8eb714e7215aaf5d9c04d91014fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac98e21dc16470e647c7342996b746bff"><td class="memItemLeft" align="right" valign="top"><a id="ac98e21dc16470e647c7342996b746bff"></a>
-const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_status_susceptible_labels</b> () const</td></tr>
-<tr class="separator:ac98e21dc16470e647c7342996b746bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc3ced758c18f81e22bbe25af4374a12"><td class="memItemLeft" align="right" valign="top"><a id="abc3ced758c18f81e22bbe25af4374a12"></a>
-const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_status_exposed_labels</b> () const</td></tr>
-<tr class="separator:abc3ced758c18f81e22bbe25af4374a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9ffb93362850b7e7383307ec04f1ee7"><td class="memItemLeft" align="right" valign="top"><a id="ab9ffb93362850b7e7383307ec04f1ee7"></a>
-const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_status_removed_labels</b> () const</td></tr>
-<tr class="separator:ab9ffb93362850b7e7383307ec04f1ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a605b9a62c08b881848da69415ea9ffeb"><td class="memItemLeft" align="right" valign="top"><a id="a605b9a62c08b881848da69415ea9ffeb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add_status</b> (std::string lab, UpdateFun&lt; TSeq &gt; fun)</td></tr>
+<tr class="separator:a605b9a62c08b881848da69415ea9ffeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10df23e7d3e110dda68e92efb43323c5"><td class="memItemLeft" align="right" valign="top"><a id="a10df23e7d3e110dda68e92efb43323c5"></a>
+const std::vector&lt; epiworld_fast_uint &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_status</b> () const</td></tr>
+<tr class="separator:a10df23e7d3e110dda68e92efb43323c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a845ca17ff67855f2c71015112028153d"><td class="memItemLeft" align="right" valign="top"><a id="a845ca17ff67855f2c71015112028153d"></a>
+const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_status_labels</b> () const</td></tr>
+<tr class="separator:a845ca17ff67855f2c71015112028153d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec13f8d3ef1a3e2ff5413c34cdc2e92b"><td class="memItemLeft" align="right" valign="top"><a id="aec13f8d3ef1a3e2ff5413c34cdc2e92b"></a>
+const std::vector&lt; UpdateFun&lt; TSeq &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_status_fun</b> () const</td></tr>
+<tr class="separator:aec13f8d3ef1a3e2ff5413c34cdc2e92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a280daf95b8f2f81f19297816ac319a82"><td class="memItemLeft" align="right" valign="top"><a id="a280daf95b8f2f81f19297816ac319a82"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>print_status_codes</b> () const</td></tr>
 <tr class="separator:a280daf95b8f2f81f19297816ac319a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a969a74cd135276bdab6a7022b7c6f6aa"><td class="memItemLeft" align="right" valign="top"><a id="a969a74cd135276bdab6a7022b7c6f6aa"></a>
-epiworld_fast_uint&#160;</td><td class="memItemRight" valign="bottom"><b>get_default_susceptible</b> () const</td></tr>
-<tr class="separator:a969a74cd135276bdab6a7022b7c6f6aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9be5663b3f3abb6d830fd66eaaf97e1d"><td class="memItemLeft" align="right" valign="top"><a id="a9be5663b3f3abb6d830fd66eaaf97e1d"></a>
-epiworld_fast_uint&#160;</td><td class="memItemRight" valign="bottom"><b>get_default_exposed</b> () const</td></tr>
-<tr class="separator:a9be5663b3f3abb6d830fd66eaaf97e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a4e9b0c0a803df412d7914dc6f4d72e"><td class="memItemLeft" align="right" valign="top"><a id="a8a4e9b0c0a803df412d7914dc6f4d72e"></a>
-epiworld_fast_uint&#160;</td><td class="memItemRight" valign="bottom"><b>get_default_removed</b> () const</td></tr>
-<tr class="separator:a8a4e9b0c0a803df412d7914dc6f4d72e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Set the user data object</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -678,53 +631,6 @@ template&lt;typename TSeq  = bool&gt; </div>
 <li>re-distribute viruses</li>
 <li>set the date to 0 </li>
 </ul>
-
-</div>
-</div>
-<a id="aa5819bef86c4c7d5623a7525831fb73c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5819bef86c4c7d5623a7525831fb73c">&#9670;&nbsp;</a></span>reset_status_codes()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TSeq  = bool&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="class_model.html">Model</a>&lt; TSeq &gt;::reset_status_codes </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; epiworld_fast_uint &gt;&#160;</td>
-          <td class="paramname"><em>codes</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
-          <td class="paramname"><em>names</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>verbose</em> = <code>true</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Reset all the status codes of the model. </p>
-<p>The default values are those specified in the enum STATUS.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">codes</td><td>In the following order: Susceptible, Infected, Removed </td></tr>
-    <tr><td class="paramname">names</td><td>Names matching the codes </td></tr>
-    <tr><td class="paramname">verbose</td><td>When <code>true</code>, it will print the new mappings. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

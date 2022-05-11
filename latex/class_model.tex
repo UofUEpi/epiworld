@@ -75,15 +75,6 @@ void {\bfseries verbose\+\_\+on} ()
 \mbox{\Hypertarget{class_model_aa3ce8d5f025e239f8090ab9645f3e917}\label{class_model_aa3ce8d5f025e239f8090ab9645f3e917}} 
 int \mbox{\hyperlink{class_model_aa3ce8d5f025e239f8090ab9645f3e917}{today}} () const
 \begin{DoxyCompactList}\small\item\em The current time of the model. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{class_model_acd773e1a9dd762b8735886e6f27598bd}\label{class_model_acd773e1a9dd762b8735886e6f27598bd}} 
-void {\bfseries set\+\_\+update\+\_\+susceptible} (Update\+Fun$<$ TSeq $>$ fun)
-\item 
-\mbox{\Hypertarget{class_model_a7f0468cdca24a951e39d9a06fb73d7b9}\label{class_model_a7f0468cdca24a951e39d9a06fb73d7b9}} 
-void {\bfseries set\+\_\+update\+\_\+exposed} (Update\+Fun$<$ TSeq $>$ fun)
-\item 
-\mbox{\Hypertarget{class_model_afe91a508a304b20929208b7b156ff4cd}\label{class_model_afe91a508a304b20929208b7b156ff4cd}} 
-void {\bfseries set\+\_\+update\+\_\+removed} (Update\+Fun$<$ TSeq $>$ fun)
-\item 
 void \mbox{\hyperlink{class_model_a6c07199ce0c9102cccb9749a7eda421d}{write\+\_\+data}} (std\+::string fn\+\_\+variant\+\_\+info, std\+::string fn\+\_\+variant\+\_\+hist, std\+::string fn\+\_\+total\+\_\+hist, std\+::string fn\+\_\+transmission, std\+::string fn\+\_\+transition) const
 \begin{DoxyCompactList}\small\item\em Wrapper of {\ttfamily Data\+Base\+::write\+\_\+data} \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_model_ad4ef616002233662f80614f8e917d005}\label{class_model_ad4ef616002233662f80614f8e917d005}} 
@@ -97,8 +88,6 @@ void {\bfseries print} () const
 \mbox{\Hypertarget{class_model_a66c80c4753f8f2b6459cb5735781b777}\label{class_model_a66c80c4753f8f2b6459cb5735781b777}} 
 \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ \&\& {\bfseries clone} () const
 \item 
-void \mbox{\hyperlink{class_model_aa5819bef86c4c7d5623a7525831fb73c}{reset\+\_\+status\+\_\+codes}} (std\+::vector$<$ epiworld\+\_\+fast\+\_\+uint $>$ codes, std\+::vector$<$ std\+::string $>$ names, bool verbose=true)
-\begin{DoxyCompactList}\small\item\em Reset all the status codes of the model. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_model_acff738dcd85c99e96ca206d8239ceb21}\label{class_model_acff738dcd85c99e96ca206d8239ceb21}} 
 void {\bfseries get\+\_\+elapsed} (std\+::string unit=\char`\"{}auto\char`\"{}, epiworld\+\_\+double $\ast$last\+\_\+elapsed=nullptr, epiworld\+\_\+double $\ast$total\+\_\+elapsed=nullptr, std\+::string $\ast$unit\+\_\+abbr=nullptr, bool print=true) const
 \item 
@@ -266,14 +255,10 @@ void {\bfseries write\+\_\+edgelist} (std\+::vector$<$ unsigned int $>$ \&source
 \end{DoxyCompactItemize}
 \end{Indent}
 \begin{Indent}\textbf{ Manage status (states) in the model}\par
-{\em Adding values of {\ttfamily s} that are already present in the model will result in an error.
-
-The functions {\ttfamily get\+\_\+status\+\_\+$\ast$} return the current values for the statuses included in the model.
+{\em The functions {\ttfamily get\+\_\+status} return the current values for the statuses included in the model.
 
 
 \begin{DoxyParams}{Parameters}
-{\em s} & {\ttfamily unsigned int} Code of the status \\
-\hline
 {\em lab} & {\ttfamily std\+::string} Name of the status.\\
 \hline
 \end{DoxyParams}
@@ -284,53 +269,20 @@ The functions {\ttfamily get\+\_\+status\+\_\+$\ast$} return the current values 
 \end{DoxyReturn}
 }\begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_model_ad8dcbd73a6af4d2136641d66121c0c51}\label{class_model_ad8dcbd73a6af4d2136641d66121c0c51}} 
-void {\bfseries add\+\_\+status\+\_\+susceptible} (epiworld\+\_\+fast\+\_\+uint s, std\+::string lab)
+\mbox{\Hypertarget{class_model_a605b9a62c08b881848da69415ea9ffeb}\label{class_model_a605b9a62c08b881848da69415ea9ffeb}} 
+void {\bfseries add\+\_\+status} (std\+::string lab, Update\+Fun$<$ TSeq $>$ fun)
 \item 
-\mbox{\Hypertarget{class_model_a722d349d0cf4fb5a794ac5b99e27e60b}\label{class_model_a722d349d0cf4fb5a794ac5b99e27e60b}} 
-void {\bfseries add\+\_\+status\+\_\+exposed} (epiworld\+\_\+fast\+\_\+uint s, std\+::string lab)
+\mbox{\Hypertarget{class_model_a10df23e7d3e110dda68e92efb43323c5}\label{class_model_a10df23e7d3e110dda68e92efb43323c5}} 
+const std\+::vector$<$ epiworld\+\_\+fast\+\_\+uint $>$ \& {\bfseries get\+\_\+status} () const
 \item 
-\mbox{\Hypertarget{class_model_a48821df94966d9378d95b331c572cf46}\label{class_model_a48821df94966d9378d95b331c572cf46}} 
-void {\bfseries add\+\_\+status\+\_\+removed} (epiworld\+\_\+fast\+\_\+uint s, std\+::string lab)
+\mbox{\Hypertarget{class_model_a845ca17ff67855f2c71015112028153d}\label{class_model_a845ca17ff67855f2c71015112028153d}} 
+const std\+::vector$<$ std\+::string $>$ \& {\bfseries get\+\_\+status\+\_\+labels} () const
 \item 
-\mbox{\Hypertarget{class_model_a61949aaf7d1a50760833b407d870f9e0}\label{class_model_a61949aaf7d1a50760833b407d870f9e0}} 
-void {\bfseries add\+\_\+status\+\_\+susceptible} (std\+::string lab)
-\item 
-\mbox{\Hypertarget{class_model_af24f512a9370addfeec8723d9b735e05}\label{class_model_af24f512a9370addfeec8723d9b735e05}} 
-void {\bfseries add\+\_\+status\+\_\+exposed} (std\+::string lab)
-\item 
-\mbox{\Hypertarget{class_model_a32c38a9855bbb306df3dd0abea7bcbc8}\label{class_model_a32c38a9855bbb306df3dd0abea7bcbc8}} 
-void {\bfseries add\+\_\+status\+\_\+removed} (std\+::string lab)
-\item 
-\mbox{\Hypertarget{class_model_a55f091a185494b60ef50921a975a44c4}\label{class_model_a55f091a185494b60ef50921a975a44c4}} 
-const std\+::vector$<$ epiworld\+\_\+fast\+\_\+uint $>$ \& {\bfseries get\+\_\+status\+\_\+susceptible} () const
-\item 
-\mbox{\Hypertarget{class_model_ad4fb552e3055ea87e02617d65caf0696}\label{class_model_ad4fb552e3055ea87e02617d65caf0696}} 
-const std\+::vector$<$ epiworld\+\_\+fast\+\_\+uint $>$ \& {\bfseries get\+\_\+status\+\_\+exposed} () const
-\item 
-\mbox{\Hypertarget{class_model_a7d6b8eb714e7215aaf5d9c04d91014fe}\label{class_model_a7d6b8eb714e7215aaf5d9c04d91014fe}} 
-const std\+::vector$<$ epiworld\+\_\+fast\+\_\+uint $>$ \& {\bfseries get\+\_\+status\+\_\+removed} () const
-\item 
-\mbox{\Hypertarget{class_model_ac98e21dc16470e647c7342996b746bff}\label{class_model_ac98e21dc16470e647c7342996b746bff}} 
-const std\+::vector$<$ std\+::string $>$ \& {\bfseries get\+\_\+status\+\_\+susceptible\+\_\+labels} () const
-\item 
-\mbox{\Hypertarget{class_model_abc3ced758c18f81e22bbe25af4374a12}\label{class_model_abc3ced758c18f81e22bbe25af4374a12}} 
-const std\+::vector$<$ std\+::string $>$ \& {\bfseries get\+\_\+status\+\_\+exposed\+\_\+labels} () const
-\item 
-\mbox{\Hypertarget{class_model_ab9ffb93362850b7e7383307ec04f1ee7}\label{class_model_ab9ffb93362850b7e7383307ec04f1ee7}} 
-const std\+::vector$<$ std\+::string $>$ \& {\bfseries get\+\_\+status\+\_\+removed\+\_\+labels} () const
+\mbox{\Hypertarget{class_model_aec13f8d3ef1a3e2ff5413c34cdc2e92b}\label{class_model_aec13f8d3ef1a3e2ff5413c34cdc2e92b}} 
+const std\+::vector$<$ Update\+Fun$<$ TSeq $>$ $>$ \& {\bfseries get\+\_\+status\+\_\+fun} () const
 \item 
 \mbox{\Hypertarget{class_model_a280daf95b8f2f81f19297816ac319a82}\label{class_model_a280daf95b8f2f81f19297816ac319a82}} 
 void {\bfseries print\+\_\+status\+\_\+codes} () const
-\item 
-\mbox{\Hypertarget{class_model_a969a74cd135276bdab6a7022b7c6f6aa}\label{class_model_a969a74cd135276bdab6a7022b7c6f6aa}} 
-epiworld\+\_\+fast\+\_\+uint {\bfseries get\+\_\+default\+\_\+susceptible} () const
-\item 
-\mbox{\Hypertarget{class_model_a9be5663b3f3abb6d830fd66eaaf97e1d}\label{class_model_a9be5663b3f3abb6d830fd66eaaf97e1d}} 
-epiworld\+\_\+fast\+\_\+uint {\bfseries get\+\_\+default\+\_\+exposed} () const
-\item 
-\mbox{\Hypertarget{class_model_a8a4e9b0c0a803df412d7914dc6f4d72e}\label{class_model_a8a4e9b0c0a803df412d7914dc6f4d72e}} 
-epiworld\+\_\+fast\+\_\+uint {\bfseries get\+\_\+default\+\_\+removed} () const
 \end{DoxyCompactItemize}
 \end{Indent}
 \begin{Indent}\textbf{ Set the user data object}\par
@@ -606,29 +558,7 @@ Resetting the model will\+:
 \item re-\/distribute tools
 \item re-\/distribute viruses
 \item set the date to 0 
-\end{DoxyItemize}\mbox{\Hypertarget{class_model_aa5819bef86c4c7d5623a7525831fb73c}\label{class_model_aa5819bef86c4c7d5623a7525831fb73c}} 
-\index{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!reset\_status\_codes@{reset\_status\_codes}}
-\index{reset\_status\_codes@{reset\_status\_codes}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}}
-\doxysubsubsection{\texorpdfstring{reset\_status\_codes()}{reset\_status\_codes()}}
-{\footnotesize\ttfamily template$<$typename TSeq  = bool$>$ \\
-void \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$\+::reset\+\_\+status\+\_\+codes (\begin{DoxyParamCaption}\item[{std\+::vector$<$ epiworld\+\_\+fast\+\_\+uint $>$}]{codes,  }\item[{std\+::vector$<$ std\+::string $>$}]{names,  }\item[{bool}]{verbose = {\ttfamily true} }\end{DoxyParamCaption})}
-
-
-
-Reset all the status codes of the model. 
-
-The default values are those specified in the enum STATUS.
-
-
-\begin{DoxyParams}{Parameters}
-{\em codes} & In the following order\+: Susceptible, Infected, Removed \\
-\hline
-{\em names} & Names matching the codes \\
-\hline
-{\em verbose} & When {\ttfamily true}, it will print the new mappings. \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{class_model_a19824502152690539d276715589683c9}\label{class_model_a19824502152690539d276715589683c9}} 
+\end{DoxyItemize}\mbox{\Hypertarget{class_model_a19824502152690539d276715589683c9}\label{class_model_a19824502152690539d276715589683c9}} 
 \index{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!run\_multiple@{run\_multiple}}
 \index{run\_multiple@{run\_multiple}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}}
 \doxysubsubsection{\texorpdfstring{run\_multiple()}{run\_multiple()}}

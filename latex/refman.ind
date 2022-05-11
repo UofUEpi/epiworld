@@ -1,26 +1,26 @@
 \begin{theindex}
 
+  \item {Action$<$ TSeq $>$}, \hyperpage{5}
   \item {add\_global\_action}
     \subitem {Model$<$ TSeq $>$}, \hyperpage{15}
-  \item {AdjList}, \hyperpage{5}
-    \subitem {AdjList}, \hyperpage{5}
+  \item {AdjList}, \hyperpage{6}
+    \subitem {AdjList}, \hyperpage{6}
 
   \indexspace
 
-  \item {DataBase$<$ TSeq $>$}, \hyperpage{6}
-    \subitem {record\_variant}, \hyperpage{7}
+  \item {DataBase$<$ TSeq $>$}, \hyperpage{7}
+    \subitem {record\_variant}, \hyperpage{8}
 
   \indexspace
 
   \item {LFMCMC$<$ TData $>$}, \hyperpage{8}
-  \item {Location$<$ TSeq $>$}, \hyperpage{9}
+  \item {Location$<$ TSeq $>$}, \hyperpage{10}
 
   \indexspace
 
-  \item {Model$<$ TSeq $>$}, \hyperpage{9}
+  \item {Model$<$ TSeq $>$}, \hyperpage{10}
     \subitem {add\_global\_action}, \hyperpage{15}
-    \subitem {reset}, \hyperpage{15}
-    \subitem {reset\_status\_codes}, \hyperpage{16}
+    \subitem {reset}, \hyperpage{16}
     \subitem {run\_multiple}, \hyperpage{16}
     \subitem {write\_data}, \hyperpage{16}
 
@@ -28,22 +28,20 @@
 
   \item {Person$<$ TSeq $>$}, \hyperpage{17}
     \subitem {set\_update\_susceptible}, \hyperpage{18}
-  \item {PersonTools$<$ TSeq $>$}, \hyperpage{19}
-  \item {PersonViruses$<$ TSeq $>$}, \hyperpage{20}
-  \item {Progress}, \hyperpage{21}
+  \item {PersonTools$<$ TSeq $>$}, \hyperpage{20}
+  \item {PersonViruses$<$ TSeq $>$}, \hyperpage{21}
+  \item {Progress}, \hyperpage{22}
 
   \indexspace
 
-  \item {Queue$<$ TSeq $>$}, \hyperpage{21}
+  \item {Queue$<$ TSeq $>$}, \hyperpage{22}
 
   \indexspace
 
-  \item {RandGraph}, \hyperpage{22}
+  \item {RandGraph}, \hyperpage{23}
   \item {record\_variant}
-    \subitem {DataBase$<$ TSeq $>$}, \hyperpage{7}
+    \subitem {DataBase$<$ TSeq $>$}, \hyperpage{8}
   \item {reset}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{15}
-  \item {reset\_status\_codes}
     \subitem {Model$<$ TSeq $>$}, \hyperpage{16}
   \item {run\_multiple}
     \subitem {Model$<$ TSeq $>$}, \hyperpage{16}
@@ -55,19 +53,19 @@
 
   \indexspace
 
-  \item {Tool$<$ TSeq $>$}, \hyperpage{22}
+  \item {Tool$<$ TSeq $>$}, \hyperpage{23}
 
   \indexspace
 
   \item {UserData}
-    \subitem {UserData$<$ TSeq $>$}, \hyperpage{25}
-  \item {UserData$<$ TSeq $>$}, \hyperpage{23}
-    \subitem {UserData}, \hyperpage{25}
+    \subitem {UserData$<$ TSeq $>$}, \hyperpage{26}
+  \item {UserData$<$ TSeq $>$}, \hyperpage{24}
+    \subitem {UserData}, \hyperpage{26}
 
   \indexspace
 
-  \item {vecHasher$<$ T $>$}, \hyperpage{25}
-  \item {Virus$<$ TSeq $>$}, \hyperpage{26}
+  \item {vecHasher$<$ T $>$}, \hyperpage{26}
+  \item {Virus$<$ TSeq $>$}, \hyperpage{27}
 
   \indexspace
 
