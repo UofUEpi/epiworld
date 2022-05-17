@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['vechasher_59',['vecHasher',['../structvec_hasher.html',1,'']]],
-  ['virus_60',['Virus',['../class_virus.html',1,'']]]
+  ['vechasher_57',['vecHasher',['../structvec_hasher.html',1,'']]],
+  ['virus_58',['Virus',['../class_virus.html',1,'']]]
 ];

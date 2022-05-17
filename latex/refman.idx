@@ -17,16 +17,16 @@
 \indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!write\_data@{write\_data}|hyperpage}{16}
 \indexentry{write\_data@{write\_data}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{16}
 \indexentry{Person$<$ TSeq $>$@{Person$<$ TSeq $>$}|hyperpage}{17}
-\indexentry{Person$<$ TSeq $>$@{Person$<$ TSeq $>$}!set\_update\_susceptible@{set\_update\_susceptible}|hyperpage}{18}
-\indexentry{set\_update\_susceptible@{set\_update\_susceptible}!Person$<$ TSeq $>$@{Person$<$ TSeq $>$}|hyperpage}{18}
-\indexentry{PersonTools$<$ TSeq $>$@{PersonTools$<$ TSeq $>$}|hyperpage}{20}
-\indexentry{PersonViruses$<$ TSeq $>$@{PersonViruses$<$ TSeq $>$}|hyperpage}{21}
-\indexentry{Progress@{Progress}|hyperpage}{22}
-\indexentry{Queue$<$ TSeq $>$@{Queue$<$ TSeq $>$}|hyperpage}{22}
-\indexentry{RandGraph@{RandGraph}|hyperpage}{23}
-\indexentry{Tool$<$ TSeq $>$@{Tool$<$ TSeq $>$}|hyperpage}{23}
-\indexentry{UserData$<$ TSeq $>$@{UserData$<$ TSeq $>$}|hyperpage}{24}
-\indexentry{UserData$<$ TSeq $>$@{UserData$<$ TSeq $>$}!UserData@{UserData}|hyperpage}{26}
-\indexentry{UserData@{UserData}!UserData$<$ TSeq $>$@{UserData$<$ TSeq $>$}|hyperpage}{26}
-\indexentry{vecHasher$<$ T $>$@{vecHasher$<$ T $>$}|hyperpage}{26}
-\indexentry{Virus$<$ TSeq $>$@{Virus$<$ TSeq $>$}|hyperpage}{27}
+\indexentry{Person$<$ TSeq $>$@{Person$<$ TSeq $>$}!set\_update\_susceptible@{set\_update\_susceptible}|hyperpage}{19}
+\indexentry{set\_update\_susceptible@{set\_update\_susceptible}!Person$<$ TSeq $>$@{Person$<$ TSeq $>$}|hyperpage}{19}
+\indexentry{PersonTools$<$ TSeq $>$@{PersonTools$<$ TSeq $>$}|hyperpage}{19}
+\indexentry{PersonViruses$<$ TSeq $>$@{PersonViruses$<$ TSeq $>$}|hyperpage}{20}
+\indexentry{Progress@{Progress}|hyperpage}{21}
+\indexentry{Queue$<$ TSeq $>$@{Queue$<$ TSeq $>$}|hyperpage}{21}
+\indexentry{RandGraph@{RandGraph}|hyperpage}{22}
+\indexentry{Tool$<$ TSeq $>$@{Tool$<$ TSeq $>$}|hyperpage}{22}
+\indexentry{UserData$<$ TSeq $>$@{UserData$<$ TSeq $>$}|hyperpage}{23}
+\indexentry{UserData$<$ TSeq $>$@{UserData$<$ TSeq $>$}!UserData@{UserData}|hyperpage}{25}
+\indexentry{UserData@{UserData}!UserData$<$ TSeq $>$@{UserData$<$ TSeq $>$}|hyperpage}{25}
+\indexentry{vecHasher$<$ T $>$@{vecHasher$<$ T $>$}|hyperpage}{25}
+\indexentry{Virus$<$ TSeq $>$@{Virus$<$ TSeq $>$}|hyperpage}{26}

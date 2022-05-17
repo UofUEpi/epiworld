@@ -41,18 +41,6 @@ const std\+::vector$<$ int $>$ \& {\bfseries get\+\_\+nexposed} () const
 \mbox{\Hypertarget{class_data_base_a743d5061724b6cb3c8d669195fc995be}\label{class_data_base_a743d5061724b6cb3c8d669195fc995be}} 
 size\+\_\+t {\bfseries size} () const
 \item 
-\mbox{\Hypertarget{class_data_base_abaa181853432a592f51b92d5297b8033}\label{class_data_base_abaa181853432a592f51b92d5297b8033}} 
-void {\bfseries update\+\_\+state} (epiworld\+\_\+fast\+\_\+uint prev\+\_\+status, epiworld\+\_\+fast\+\_\+uint new\+\_\+status)
-\item 
-\mbox{\Hypertarget{class_data_base_afb80949b4429ea95d4528801e1154069}\label{class_data_base_afb80949b4429ea95d4528801e1154069}} 
-void {\bfseries update\+\_\+virus} (epiworld\+\_\+fast\+\_\+uint prev\+\_\+status, epiworld\+\_\+fast\+\_\+uint new\+\_\+status)
-\item 
-\mbox{\Hypertarget{class_data_base_a9a195417e4058a65d11d4613c88c1d5f}\label{class_data_base_a9a195417e4058a65d11d4613c88c1d5f}} 
-void {\bfseries update\+\_\+tool} (epiworld\+\_\+fast\+\_\+uint prev\+\_\+status, epiworld\+\_\+fast\+\_\+uint new\+\_\+status)
-\item 
-\mbox{\Hypertarget{class_data_base_a8117602f2e80e6a29bd5f5b36e43f098}\label{class_data_base_a8117602f2e80e6a29bd5f5b36e43f098}} 
-void {\bfseries record\+\_\+transition} (epiworld\+\_\+fast\+\_\+uint from, epiworld\+\_\+fast\+\_\+uint to)
-\item 
 \mbox{\Hypertarget{class_data_base_ae66bc221cf008a7a10068d219cbbc2a3}\label{class_data_base_ae66bc221cf008a7a10068d219cbbc2a3}} 
 void {\bfseries write\+\_\+data} (std\+::string fn\+\_\+variant\+\_\+info, std\+::string fn\+\_\+variant\+\_\+hist, std\+::string fn\+\_\+tool\+\_\+info, std\+::string fn\+\_\+tool\+\_\+hist, std\+::string fn\+\_\+total\+\_\+hist, std\+::string fn\+\_\+transmission, std\+::string fn\+\_\+transition) const
 \item 
@@ -120,6 +108,18 @@ void {\bfseries get\+\_\+hist\+\_\+variant} (std\+::vector$<$ int $>$ \&date, st
 \item 
 \mbox{\Hypertarget{class_data_base_aa4532e80368ab60b4fda5bb917f6f0ca}\label{class_data_base_aa4532e80368ab60b4fda5bb917f6f0ca}} 
 class {\bfseries Model$<$ TSeq $>$}
+\item 
+\mbox{\Hypertarget{class_data_base_a5a80a0876b1453c31734f5728c30144f}\label{class_data_base_a5a80a0876b1453c31734f5728c30144f}} 
+void {\bfseries default\+\_\+add\+\_\+virus} (\mbox{\hyperlink{struct_action}{Action}}$<$ TSeq $>$ \&a, \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$m)
+\item 
+\mbox{\Hypertarget{class_data_base_a1f4deae20e873213f82b53cd4d5db4f7}\label{class_data_base_a1f4deae20e873213f82b53cd4d5db4f7}} 
+void {\bfseries default\+\_\+add\+\_\+tool} (\mbox{\hyperlink{struct_action}{Action}}$<$ TSeq $>$ \&a, \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$m)
+\item 
+\mbox{\Hypertarget{class_data_base_a16cc390e86f20526d2e9c2fde4bffb2e}\label{class_data_base_a16cc390e86f20526d2e9c2fde4bffb2e}} 
+void {\bfseries default\+\_\+rm\+\_\+virus} (\mbox{\hyperlink{struct_action}{Action}}$<$ TSeq $>$ \&a, \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$m)
+\item 
+\mbox{\Hypertarget{class_data_base_a9d273869be3324c1e3de0ff81bf8c112}\label{class_data_base_a9d273869be3324c1e3de0ff81bf8c112}} 
+void {\bfseries default\+\_\+rm\+\_\+tool} (\mbox{\hyperlink{struct_action}{Action}}$<$ TSeq $>$ \&a, \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$m)
 \end{DoxyCompactItemize}
 
 

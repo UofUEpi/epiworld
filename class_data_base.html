@@ -108,18 +108,6 @@ const std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="
 <tr class="memitem:a743d5061724b6cb3c8d669195fc995be"><td class="memItemLeft" align="right" valign="top"><a id="a743d5061724b6cb3c8d669195fc995be"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const</td></tr>
 <tr class="separator:a743d5061724b6cb3c8d669195fc995be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abaa181853432a592f51b92d5297b8033"><td class="memItemLeft" align="right" valign="top"><a id="abaa181853432a592f51b92d5297b8033"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update_state</b> (epiworld_fast_uint prev_status, epiworld_fast_uint new_status)</td></tr>
-<tr class="separator:abaa181853432a592f51b92d5297b8033"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb80949b4429ea95d4528801e1154069"><td class="memItemLeft" align="right" valign="top"><a id="afb80949b4429ea95d4528801e1154069"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update_virus</b> (epiworld_fast_uint prev_status, epiworld_fast_uint new_status)</td></tr>
-<tr class="separator:afb80949b4429ea95d4528801e1154069"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a195417e4058a65d11d4613c88c1d5f"><td class="memItemLeft" align="right" valign="top"><a id="a9a195417e4058a65d11d4613c88c1d5f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update_tool</b> (epiworld_fast_uint prev_status, epiworld_fast_uint new_status)</td></tr>
-<tr class="separator:a9a195417e4058a65d11d4613c88c1d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8117602f2e80e6a29bd5f5b36e43f098"><td class="memItemLeft" align="right" valign="top"><a id="a8117602f2e80e6a29bd5f5b36e43f098"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>record_transition</b> (epiworld_fast_uint from, epiworld_fast_uint to)</td></tr>
-<tr class="separator:a8117602f2e80e6a29bd5f5b36e43f098"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66bc221cf008a7a10068d219cbbc2a3"><td class="memItemLeft" align="right" valign="top"><a id="ae66bc221cf008a7a10068d219cbbc2a3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>write_data</b> (std::string fn_variant_info, std::string fn_variant_hist, std::string fn_tool_info, std::string fn_tool_hist, std::string fn_total_hist, std::string fn_transmission, std::string fn_transition) const</td></tr>
 <tr class="separator:ae66bc221cf008a7a10068d219cbbc2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,6 +173,18 @@ Friends</h2></td></tr>
 <tr class="memitem:aa4532e80368ab60b4fda5bb917f6f0ca"><td class="memItemLeft" align="right" valign="top"><a id="aa4532e80368ab60b4fda5bb917f6f0ca"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>Model&lt; TSeq &gt;</b></td></tr>
 <tr class="separator:aa4532e80368ab60b4fda5bb917f6f0ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a80a0876b1453c31734f5728c30144f"><td class="memItemLeft" align="right" valign="top"><a id="a5a80a0876b1453c31734f5728c30144f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>default_add_virus</b> (<a class="el" href="struct_action.html">Action</a>&lt; TSeq &gt; &amp;a, <a class="el" href="class_model.html">Model</a>&lt; TSeq &gt; *m)</td></tr>
+<tr class="separator:a5a80a0876b1453c31734f5728c30144f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f4deae20e873213f82b53cd4d5db4f7"><td class="memItemLeft" align="right" valign="top"><a id="a1f4deae20e873213f82b53cd4d5db4f7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>default_add_tool</b> (<a class="el" href="struct_action.html">Action</a>&lt; TSeq &gt; &amp;a, <a class="el" href="class_model.html">Model</a>&lt; TSeq &gt; *m)</td></tr>
+<tr class="separator:a1f4deae20e873213f82b53cd4d5db4f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16cc390e86f20526d2e9c2fde4bffb2e"><td class="memItemLeft" align="right" valign="top"><a id="a16cc390e86f20526d2e9c2fde4bffb2e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>default_rm_virus</b> (<a class="el" href="struct_action.html">Action</a>&lt; TSeq &gt; &amp;a, <a class="el" href="class_model.html">Model</a>&lt; TSeq &gt; *m)</td></tr>
+<tr class="separator:a16cc390e86f20526d2e9c2fde4bffb2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d273869be3324c1e3de0ff81bf8c112"><td class="memItemLeft" align="right" valign="top"><a id="a9d273869be3324c1e3de0ff81bf8c112"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>default_rm_tool</b> (<a class="el" href="struct_action.html">Action</a>&lt; TSeq &gt; &amp;a, <a class="el" href="class_model.html">Model</a>&lt; TSeq &gt; *m)</td></tr>
+<tr class="separator:a9d273869be3324c1e3de0ff81bf8c112"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename TSeq&gt;<br />

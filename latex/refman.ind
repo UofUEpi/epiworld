@@ -27,18 +27,18 @@
   \indexspace
 
   \item {Person$<$ TSeq $>$}, \hyperpage{17}
-    \subitem {set\_update\_susceptible}, \hyperpage{18}
-  \item {PersonTools$<$ TSeq $>$}, \hyperpage{20}
-  \item {PersonViruses$<$ TSeq $>$}, \hyperpage{21}
-  \item {Progress}, \hyperpage{22}
+    \subitem {set\_update\_susceptible}, \hyperpage{19}
+  \item {PersonTools$<$ TSeq $>$}, \hyperpage{19}
+  \item {PersonViruses$<$ TSeq $>$}, \hyperpage{20}
+  \item {Progress}, \hyperpage{21}
 
   \indexspace
 
-  \item {Queue$<$ TSeq $>$}, \hyperpage{22}
+  \item {Queue$<$ TSeq $>$}, \hyperpage{21}
 
   \indexspace
 
-  \item {RandGraph}, \hyperpage{23}
+  \item {RandGraph}, \hyperpage{22}
   \item {record\_variant}
     \subitem {DataBase$<$ TSeq $>$}, \hyperpage{8}
   \item {reset}
@@ -49,23 +49,23 @@
   \indexspace
 
   \item {set\_update\_susceptible}
-    \subitem {Person$<$ TSeq $>$}, \hyperpage{18}
+    \subitem {Person$<$ TSeq $>$}, \hyperpage{19}
 
   \indexspace
 
-  \item {Tool$<$ TSeq $>$}, \hyperpage{23}
+  \item {Tool$<$ TSeq $>$}, \hyperpage{22}
 
   \indexspace
 
   \item {UserData}
-    \subitem {UserData$<$ TSeq $>$}, \hyperpage{26}
-  \item {UserData$<$ TSeq $>$}, \hyperpage{24}
-    \subitem {UserData}, \hyperpage{26}
+    \subitem {UserData$<$ TSeq $>$}, \hyperpage{25}
+  \item {UserData$<$ TSeq $>$}, \hyperpage{23}
+    \subitem {UserData}, \hyperpage{25}
 
   \indexspace
 
-  \item {vecHasher$<$ T $>$}, \hyperpage{26}
-  \item {Virus$<$ TSeq $>$}, \hyperpage{27}
+  \item {vecHasher$<$ T $>$}, \hyperpage{25}
+  \item {Virus$<$ TSeq $>$}, \hyperpage{26}
 
   \indexspace
 
