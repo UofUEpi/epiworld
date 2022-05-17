@@ -27,10 +27,8 @@
 \contentsline {subsubsection}{\numberline {3.6.2.4}write\_data()}{16}{subsubsection.3.6.2.4}%
 \contentsline {section}{\numberline {3.7}Person$<$ TSeq $>$ Class Template Reference}{17}{section.3.7}%
 \contentsline {subsection}{\numberline {3.7.1}Detailed Description}{18}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}Member Function Documentation}{19}{subsection.3.7.2}%
-\contentsline {subsubsection}{\numberline {3.7.2.1}set\_update\_susceptible()}{19}{subsubsection.3.7.2.1}%
 \contentsline {section}{\numberline {3.8}Person\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tools$<$ TSeq $>$ Class Template Reference}{19}{section.3.8}%
-\contentsline {subsection}{\numberline {3.8.1}Detailed Description}{20}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.1}Detailed Description}{19}{subsection.3.8.1}%
 \contentsline {section}{\numberline {3.9}Person\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Viruses$<$ TSeq $>$ Class Template Reference}{20}{section.3.9}%
 \contentsline {subsection}{\numberline {3.9.1}Detailed Description}{20}{subsection.3.9.1}%
 \contentsline {section}{\numberline {3.10}Progress Class Reference}{21}{section.3.10}%

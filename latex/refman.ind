@@ -27,7 +27,6 @@
   \indexspace
 
   \item {Person$<$ TSeq $>$}, \hyperpage{17}
-    \subitem {set\_update\_susceptible}, \hyperpage{19}
   \item {PersonTools$<$ TSeq $>$}, \hyperpage{19}
   \item {PersonViruses$<$ TSeq $>$}, \hyperpage{20}
   \item {Progress}, \hyperpage{21}
@@ -45,11 +44,6 @@
     \subitem {Model$<$ TSeq $>$}, \hyperpage{16}
   \item {run\_multiple}
     \subitem {Model$<$ TSeq $>$}, \hyperpage{16}
-
-  \indexspace
-
-  \item {set\_update\_susceptible}
-    \subitem {Person$<$ TSeq $>$}, \hyperpage{19}
 
   \indexspace
 

@@ -362,7 +362,27 @@ $(function() {
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    this-&gt;date = d;</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;}</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_tool.html">Tool&lt;TSeq&gt;::set_status</a>(</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    epiworld_fast_int init,</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    epiworld_fast_int end</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;)</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;{</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    status_init = init;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    status_end = end;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;}</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_tool.html">Tool&lt;TSeq&gt;::set_queue</a>(</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    epiworld_fast_int init,</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    epiworld_fast_int end</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;)</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;{</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    queue_init = init;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    queue_end = end;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;}</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_model_html"><div class="ttname"><a href="class_model.html">Model&lt; TSeq &gt;</a></div></div>
 <div class="ttc" id="aclass_person_html"><div class="ttname"><a href="class_person.html">Person&lt; TSeq &gt;</a></div></div>
 <div class="ttc" id="aclass_tool_html"><div class="ttname"><a href="class_tool.html">Tool</a></div><div class="ttdoc">Tools for defending the host against the virus.</div><div class="ttdef"><b>Definition:</b> tools-bones.hpp:26</div></div>

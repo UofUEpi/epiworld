@@ -110,45 +110,56 @@ $(function() {
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// Setup parameters</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::vector&lt; epiworld_double * &gt; params;  </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_tool.html">Tool</a>(std::string name = <span class="stringliteral">&quot;unknown tool&quot;</span>);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// Tool(TSeq d, std::string name = &quot;unknown tool&quot;);</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> set_sequence(TSeq d);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> set_sequence_unique(TSeq d);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> set_sequence(std::shared_ptr&lt;TSeq&gt; d);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    std::shared_ptr&lt;TSeq&gt; get_sequence();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    TSeq &amp; get_sequence_unique();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    epiworld_fast_int status_init = -1;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    epiworld_fast_int status_end = -1;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    epiworld_fast_int queue_init = 1; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    epiworld_fast_int queue_post = -1; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_tool.html">Tool</a>(std::string name = <span class="stringliteral">&quot;unknown tool&quot;</span>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// Tool(TSeq d, std::string name = &quot;unknown tool&quot;);</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    epiworld_double get_susceptibility_reduction(<a class="code" href="class_virus.html">Virus&lt;TSeq&gt;</a> * v);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    epiworld_double get_transmission_reduction(<a class="code" href="class_virus.html">Virus&lt;TSeq&gt;</a> * v);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    epiworld_double get_recovery_enhancer(<a class="code" href="class_virus.html">Virus&lt;TSeq&gt;</a> * v);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    epiworld_double get_death_reduction(<a class="code" href="class_virus.html">Virus&lt;TSeq&gt;</a> * v);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> set_susceptibility_reduction_fun(ToolFun&lt;TSeq&gt; fun);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> set_transmission_reduction_fun(ToolFun&lt;TSeq&gt; fun);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> set_recovery_enhancer_fun(ToolFun&lt;TSeq&gt; fun);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> set_death_reduction_fun(ToolFun&lt;TSeq&gt; fun);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> set_susceptibility_reduction(epiworld_double * prob);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> set_transmission_reduction(epiworld_double * prob);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> set_recovery_enhancer(epiworld_double * prob);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> set_death_reduction(epiworld_double * prob);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> set_susceptibility_reduction(epiworld_double prob);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> set_transmission_reduction(epiworld_double prob);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> set_recovery_enhancer(epiworld_double prob);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> set_death_reduction(epiworld_double prob);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> set_name(std::string name);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    std::string get_name() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> set_sequence(TSeq d);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> set_sequence_unique(TSeq d);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> set_sequence(std::shared_ptr&lt;TSeq&gt; d);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    std::shared_ptr&lt;TSeq&gt; get_sequence();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    TSeq &amp; get_sequence_unique();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    epiworld_double get_susceptibility_reduction(<a class="code" href="class_virus.html">Virus&lt;TSeq&gt;</a> * v);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    epiworld_double get_transmission_reduction(<a class="code" href="class_virus.html">Virus&lt;TSeq&gt;</a> * v);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    epiworld_double get_recovery_enhancer(<a class="code" href="class_virus.html">Virus&lt;TSeq&gt;</a> * v);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    epiworld_double get_death_reduction(<a class="code" href="class_virus.html">Virus&lt;TSeq&gt;</a> * v);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> set_susceptibility_reduction_fun(ToolFun&lt;TSeq&gt; fun);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> set_transmission_reduction_fun(ToolFun&lt;TSeq&gt; fun);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> set_recovery_enhancer_fun(ToolFun&lt;TSeq&gt; fun);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> set_death_reduction_fun(ToolFun&lt;TSeq&gt; fun);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> set_susceptibility_reduction(epiworld_double * prob);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> set_transmission_reduction(epiworld_double * prob);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> set_recovery_enhancer(epiworld_double * prob);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> set_death_reduction(epiworld_double * prob);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="class_person.html">Person&lt;TSeq&gt;</a> * get_person();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> get_id() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> set_id(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> set_date(<span class="keywordtype">int</span> d);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> set_susceptibility_reduction(epiworld_double prob);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> set_transmission_reduction(epiworld_double prob);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> set_recovery_enhancer(epiworld_double prob);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> set_death_reduction(epiworld_double prob);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> set_name(std::string name);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    std::string get_name() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="class_person.html">Person&lt;TSeq&gt;</a> * get_person();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> get_id() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> set_id(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> set_date(<span class="keywordtype">int</span> d);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> set_status(epiworld_fast_int init, epiworld_fast_int end);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> set_queue(epiworld_fast_int init, epiworld_fast_int end);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_model_html"><div class="ttname"><a href="class_model.html">Model</a></div><div class="ttdoc">Core class of epiworld.</div><div class="ttdef"><b>Definition:</b> model-bones.hpp:31</div></div>
 <div class="ttc" id="aclass_person_html"><div class="ttname"><a href="class_person.html">Person</a></div><div class="ttdoc">Person (agents)</div><div class="ttdef"><b>Definition:</b> person-bones.hpp:37</div></div>
 <div class="ttc" id="aclass_person_tools_html"><div class="ttname"><a href="class_person_tools.html">PersonTools</a></div><div class="ttdoc">List of tools available for the individual to.</div><div class="ttdef"><b>Definition:</b> persontools-bones.hpp:10</div></div>

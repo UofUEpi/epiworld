@@ -17,8 +17,6 @@
 \indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!write\_data@{write\_data}|hyperpage}{16}
 \indexentry{write\_data@{write\_data}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{16}
 \indexentry{Person$<$ TSeq $>$@{Person$<$ TSeq $>$}|hyperpage}{17}
-\indexentry{Person$<$ TSeq $>$@{Person$<$ TSeq $>$}!set\_update\_susceptible@{set\_update\_susceptible}|hyperpage}{19}
-\indexentry{set\_update\_susceptible@{set\_update\_susceptible}!Person$<$ TSeq $>$@{Person$<$ TSeq $>$}|hyperpage}{19}
 \indexentry{PersonTools$<$ TSeq $>$@{PersonTools$<$ TSeq $>$}|hyperpage}{19}
 \indexentry{PersonViruses$<$ TSeq $>$@{PersonViruses$<$ TSeq $>$}|hyperpage}{20}
 \indexentry{Progress@{Progress}|hyperpage}{21}
