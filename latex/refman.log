@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Alpine Linux) (preloaded format=pdflatex 2022.5.11)  11 MAY 2022 21:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Alpine Linux) (preloaded format=pdflatex 2022.5.17)  17 MAY 2022 05:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -954,15 +954,15 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
 [6]
-Underfull \hbox (badness 10000) detected at line 83
+Underfull \hbox (badness 10000) detected at line 86
 [][][]
  []
 
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 84.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 87.
 [7]
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 6.29996pt on input line 125.
+(Font)              scaled to size 6.29996pt on input line 128.
 ) (./class_l_f_m_c_m_c.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1027,7 +1027,7 @@ Underfull \hbox (badness 10000) detected at line 265
  []
 
 [13]
-Underfull \hbox (badness 10000) detected at line 361
+Underfull \hbox (badness 10000) detected at line 358
 [][][]
  []
 
@@ -1121,12 +1121,8 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-
-Overfull \vbox (21.52592pt too high) has occurred while \output is active []
-
-
 [23]
-Underfull \hbox (badness 10000) detected at line 53
+Underfull \hbox (badness 10000) detected at line 59
 [][][]
  []
 
@@ -1206,10 +1202,10 @@ Package rerunfilecheck Info: File `refman.out' has not changed.
 (rerunfilecheck)             Checksum: 224E2894A003599C77C7F03952AB322D;10868.
  ) 
 Here is how much of TeX's memory you used:
- 17566 strings out of 480478
- 275963 string characters out of 5905924
- 551701 words of memory out of 5000000
- 32692 multiletter control sequences out of 15000+600000
+ 17572 strings out of 480478
+ 276171 string characters out of 5905924
+ 552804 words of memory out of 5000000
+ 32696 multiletter control sequences out of 15000+600000
  599375 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,15n,96p,938b,710s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1225,10 +1221,10 @@ rr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/share
 pe1/urw/helvetic/uhvb8ac.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uh
 vbo8ac.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/sha
 re/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (33 pages, 220100 bytes).
+Output written on refman.pdf (33 pages, 220312 bytes).
 PDF statistics:
- 1231 PDF objects out of 1440 (max. 8388607)
- 1164 compressed objects within 12 object streams
- 542 named destinations out of 1000 (max. 500000)
+ 1234 PDF objects out of 1440 (max. 8388607)
+ 1167 compressed objects within 12 object streams
+ 544 named destinations out of 1000 (max. 500000)
  406 words of extra memory for PDF output out of 10000 (max. 10000000)
 

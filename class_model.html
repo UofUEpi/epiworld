@@ -143,9 +143,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>verbose_on</b> ()</td
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#aa3ce8d5f025e239f8090ab9645f3e917">today</a> () const</td></tr>
 <tr class="memdesc:aa3ce8d5f025e239f8090ab9645f3e917"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current time of the model. <br /></td></tr>
 <tr class="separator:aa3ce8d5f025e239f8090ab9645f3e917"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c07199ce0c9102cccb9749a7eda421d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a6c07199ce0c9102cccb9749a7eda421d">write_data</a> (std::string fn_variant_info, std::string fn_variant_hist, std::string fn_total_hist, std::string fn_transmission, std::string fn_transition) const</td></tr>
-<tr class="memdesc:a6c07199ce0c9102cccb9749a7eda421d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper of <code>DataBase::write_data</code>  <a href="class_model.html#a6c07199ce0c9102cccb9749a7eda421d">More...</a><br /></td></tr>
-<tr class="separator:a6c07199ce0c9102cccb9749a7eda421d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4664c30171aa08485430cc8c1cb4e23f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a4664c30171aa08485430cc8c1cb4e23f">write_data</a> (std::string fn_variant_info, std::string fn_variant_hist, std::string fn_tool_info, std::string fn_tool_hist, std::string fn_total_hist, std::string fn_transmission, std::string fn_transition) const</td></tr>
+<tr class="memdesc:a4664c30171aa08485430cc8c1cb4e23f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper of <code>DataBase::write_data</code>  <a href="class_model.html#a4664c30171aa08485430cc8c1cb4e23f">More...</a><br /></td></tr>
+<tr class="separator:a4664c30171aa08485430cc8c1cb4e23f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4ef616002233662f80614f8e917d005"><td class="memItemLeft" align="right" valign="top"><a id="ad4ef616002233662f80614f8e917d005"></a>
 std::map&lt; std::string, epiworld_double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>params</b> ()</td></tr>
 <tr class="separator:ad4ef616002233662f80614f8e917d005"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -324,12 +324,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>write_edgelist</b> (s
 <tr class="memitem:a605b9a62c08b881848da69415ea9ffeb"><td class="memItemLeft" align="right" valign="top"><a id="a605b9a62c08b881848da69415ea9ffeb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>add_status</b> (std::string lab, UpdateFun&lt; TSeq &gt; fun)</td></tr>
 <tr class="separator:a605b9a62c08b881848da69415ea9ffeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10df23e7d3e110dda68e92efb43323c5"><td class="memItemLeft" align="right" valign="top"><a id="a10df23e7d3e110dda68e92efb43323c5"></a>
-const std::vector&lt; epiworld_fast_uint &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_status</b> () const</td></tr>
-<tr class="separator:a10df23e7d3e110dda68e92efb43323c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a845ca17ff67855f2c71015112028153d"><td class="memItemLeft" align="right" valign="top"><a id="a845ca17ff67855f2c71015112028153d"></a>
-const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_status_labels</b> () const</td></tr>
-<tr class="separator:a845ca17ff67855f2c71015112028153d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6ff20e949dfc95ce348fc1265bb1f0b"><td class="memItemLeft" align="right" valign="top"><a id="ac6ff20e949dfc95ce348fc1265bb1f0b"></a>
+const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_status</b> () const</td></tr>
+<tr class="separator:ac6ff20e949dfc95ce348fc1265bb1f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec13f8d3ef1a3e2ff5413c34cdc2e92b"><td class="memItemLeft" align="right" valign="top"><a id="aec13f8d3ef1a3e2ff5413c34cdc2e92b"></a>
 const std::vector&lt; UpdateFun&lt; TSeq &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_status_fun</b> () const</td></tr>
 <tr class="separator:aec13f8d3ef1a3e2ff5413c34cdc2e92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -682,8 +679,8 @@ template&lt;typename TSeq  = bool&gt; </div>
 
 </div>
 </div>
-<a id="a6c07199ce0c9102cccb9749a7eda421d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c07199ce0c9102cccb9749a7eda421d">&#9670;&nbsp;</a></span>write_data()</h2>
+<a id="a4664c30171aa08485430cc8c1cb4e23f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4664c30171aa08485430cc8c1cb4e23f">&#9670;&nbsp;</a></span>write_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -701,6 +698,18 @@ template&lt;typename TSeq  = bool&gt; </div>
           <td></td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>fn_variant_hist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>fn_tool_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>fn_tool_hist</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -733,6 +742,8 @@ template&lt;typename TSeq  = bool&gt; </div>
   <table class="params">
     <tr><td class="paramname">fn_variant_info</td><td>Filename. Information about the variant. </td></tr>
     <tr><td class="paramname">fn_variant_hist</td><td>Filename. History of the variant. </td></tr>
+    <tr><td class="paramname">fn_tool_info</td><td>Filename. Information about the tool. </td></tr>
+    <tr><td class="paramname">fn_tool_hist</td><td>Filename. History of the tool. </td></tr>
     <tr><td class="paramname">fn_total_hist</td><td>Filename. Aggregated history (status) </td></tr>
     <tr><td class="paramname">fn_transmission</td><td>Filename. Transmission history. </td></tr>
     <tr><td class="paramname">fn_transition</td><td>Filename. Markov transition history. </td></tr>

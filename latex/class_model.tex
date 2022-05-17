@@ -75,7 +75,7 @@ void {\bfseries verbose\+\_\+on} ()
 \mbox{\Hypertarget{class_model_aa3ce8d5f025e239f8090ab9645f3e917}\label{class_model_aa3ce8d5f025e239f8090ab9645f3e917}} 
 int \mbox{\hyperlink{class_model_aa3ce8d5f025e239f8090ab9645f3e917}{today}} () const
 \begin{DoxyCompactList}\small\item\em The current time of the model. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_model_a6c07199ce0c9102cccb9749a7eda421d}{write\+\_\+data}} (std\+::string fn\+\_\+variant\+\_\+info, std\+::string fn\+\_\+variant\+\_\+hist, std\+::string fn\+\_\+total\+\_\+hist, std\+::string fn\+\_\+transmission, std\+::string fn\+\_\+transition) const
+void \mbox{\hyperlink{class_model_a4664c30171aa08485430cc8c1cb4e23f}{write\+\_\+data}} (std\+::string fn\+\_\+variant\+\_\+info, std\+::string fn\+\_\+variant\+\_\+hist, std\+::string fn\+\_\+tool\+\_\+info, std\+::string fn\+\_\+tool\+\_\+hist, std\+::string fn\+\_\+total\+\_\+hist, std\+::string fn\+\_\+transmission, std\+::string fn\+\_\+transition) const
 \begin{DoxyCompactList}\small\item\em Wrapper of {\ttfamily Data\+Base\+::write\+\_\+data} \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_model_ad4ef616002233662f80614f8e917d005}\label{class_model_ad4ef616002233662f80614f8e917d005}} 
 std\+::map$<$ std\+::string, epiworld\+\_\+double $>$ \& {\bfseries params} ()
@@ -272,11 +272,8 @@ void {\bfseries write\+\_\+edgelist} (std\+::vector$<$ unsigned int $>$ \&source
 \mbox{\Hypertarget{class_model_a605b9a62c08b881848da69415ea9ffeb}\label{class_model_a605b9a62c08b881848da69415ea9ffeb}} 
 void {\bfseries add\+\_\+status} (std\+::string lab, Update\+Fun$<$ TSeq $>$ fun)
 \item 
-\mbox{\Hypertarget{class_model_a10df23e7d3e110dda68e92efb43323c5}\label{class_model_a10df23e7d3e110dda68e92efb43323c5}} 
-const std\+::vector$<$ epiworld\+\_\+fast\+\_\+uint $>$ \& {\bfseries get\+\_\+status} () const
-\item 
-\mbox{\Hypertarget{class_model_a845ca17ff67855f2c71015112028153d}\label{class_model_a845ca17ff67855f2c71015112028153d}} 
-const std\+::vector$<$ std\+::string $>$ \& {\bfseries get\+\_\+status\+\_\+labels} () const
+\mbox{\Hypertarget{class_model_ac6ff20e949dfc95ce348fc1265bb1f0b}\label{class_model_ac6ff20e949dfc95ce348fc1265bb1f0b}} 
+const std\+::vector$<$ std\+::string $>$ \& {\bfseries get\+\_\+status} () const
 \item 
 \mbox{\Hypertarget{class_model_aec13f8d3ef1a3e2ff5413c34cdc2e92b}\label{class_model_aec13f8d3ef1a3e2ff5413c34cdc2e92b}} 
 const std\+::vector$<$ Update\+Fun$<$ TSeq $>$ $>$ \& {\bfseries get\+\_\+status\+\_\+fun} () const
@@ -570,12 +567,12 @@ void \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$\+::run\+\_\+multiple (\be
 {\em nexperiments} & Multiple runs of the simulation \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_model_a6c07199ce0c9102cccb9749a7eda421d}\label{class_model_a6c07199ce0c9102cccb9749a7eda421d}} 
+\mbox{\Hypertarget{class_model_a4664c30171aa08485430cc8c1cb4e23f}\label{class_model_a4664c30171aa08485430cc8c1cb4e23f}} 
 \index{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!write\_data@{write\_data}}
 \index{write\_data@{write\_data}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}}
 \doxysubsubsection{\texorpdfstring{write\_data()}{write\_data()}}
 {\footnotesize\ttfamily template$<$typename TSeq  = bool$>$ \\
-void \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$\+::write\+\_\+data (\begin{DoxyParamCaption}\item[{std\+::string}]{fn\+\_\+variant\+\_\+info,  }\item[{std\+::string}]{fn\+\_\+variant\+\_\+hist,  }\item[{std\+::string}]{fn\+\_\+total\+\_\+hist,  }\item[{std\+::string}]{fn\+\_\+transmission,  }\item[{std\+::string}]{fn\+\_\+transition }\end{DoxyParamCaption}) const}
+void \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$\+::write\+\_\+data (\begin{DoxyParamCaption}\item[{std\+::string}]{fn\+\_\+variant\+\_\+info,  }\item[{std\+::string}]{fn\+\_\+variant\+\_\+hist,  }\item[{std\+::string}]{fn\+\_\+tool\+\_\+info,  }\item[{std\+::string}]{fn\+\_\+tool\+\_\+hist,  }\item[{std\+::string}]{fn\+\_\+total\+\_\+hist,  }\item[{std\+::string}]{fn\+\_\+transmission,  }\item[{std\+::string}]{fn\+\_\+transition }\end{DoxyParamCaption}) const}
 
 
 
@@ -586,6 +583,10 @@ Wrapper of {\ttfamily Data\+Base\+::write\+\_\+data}
 {\em fn\+\_\+variant\+\_\+info} & Filename. Information about the variant. \\
 \hline
 {\em fn\+\_\+variant\+\_\+hist} & Filename. History of the variant. \\
+\hline
+{\em fn\+\_\+tool\+\_\+info} & Filename. Information about the tool. \\
+\hline
+{\em fn\+\_\+tool\+\_\+hist} & Filename. History of the tool. \\
 \hline
 {\em fn\+\_\+total\+\_\+hist} & Filename. Aggregated history (status) \\
 \hline
