@@ -12,9 +12,6 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_person_af7e11e0674cc2b5dc1859c198a7224fa}\label{class_person_af7e11e0674cc2b5dc1859c198a7224fa}} 
-void {\bfseries init} (epiworld\+\_\+fast\+\_\+uint baseline\+\_\+status)
-\item 
 \mbox{\Hypertarget{class_person_acf7e4e893a350de8de760e568f58cd53}\label{class_person_acf7e4e893a350de8de760e568f58cd53}} 
 int \mbox{\hyperlink{class_person_acf7e4e893a350de8de760e568f58cd53}{get\+\_\+id}} () const
 \begin{DoxyCompactList}\small\item\em Id of the individual. \end{DoxyCompactList}\item 
@@ -27,17 +24,23 @@ std\+::mt19937 $\ast$ {\bfseries get\+\_\+rand\+\_\+endgine} ()
 \mbox{\Hypertarget{class_person_a8dd0ec1b9409ad2a09ad66fa1554906a}\label{class_person_a8dd0ec1b9409ad2a09ad66fa1554906a}} 
 \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$ {\bfseries get\+\_\+model} ()
 \item 
-\mbox{\Hypertarget{class_person_a934978459f41b176c2091a6c3b4d241d}\label{class_person_a934978459f41b176c2091a6c3b4d241d}} 
-\mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ \& {\bfseries get\+\_\+virus} (int i)
+\mbox{\Hypertarget{class_person_ac82d1aab2828dd85d01075bf1589151b}\label{class_person_ac82d1aab2828dd85d01075bf1589151b}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ $>$ \& {\bfseries get\+\_\+virus} (int i)
 \item 
-\mbox{\Hypertarget{class_person_a16b66b7d2d5be8a0425aa4e3ad7d9f72}\label{class_person_a16b66b7d2d5be8a0425aa4e3ad7d9f72}} 
-\mbox{\hyperlink{class_person_viruses}{Person\+Viruses}}$<$ TSeq $>$ \& {\bfseries get\+\_\+viruses} ()
+\mbox{\Hypertarget{class_person_ad38b49d7ec68e4aba3826d562e8a545f}\label{class_person_ad38b49d7ec68e4aba3826d562e8a545f}} 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ $>$ $>$ \& {\bfseries get\+\_\+viruses} ()
 \item 
-\mbox{\Hypertarget{class_person_a9843bc60b2af15752e60b51955faa2e1}\label{class_person_a9843bc60b2af15752e60b51955faa2e1}} 
-\mbox{\hyperlink{class_tool}{Tool}}$<$ TSeq $>$ \& {\bfseries get\+\_\+tool} (int i)
+\mbox{\Hypertarget{class_person_aa3280de77c7913751492503e62a6b79a}\label{class_person_aa3280de77c7913751492503e62a6b79a}} 
+size\+\_\+t {\bfseries get\+\_\+n\+\_\+viruses} () const noexcept
 \item 
-\mbox{\Hypertarget{class_person_a354668df872bac67c4943f76a4895e77}\label{class_person_a354668df872bac67c4943f76a4895e77}} 
-\mbox{\hyperlink{class_person_tools}{Person\+Tools}}$<$ TSeq $>$ \& {\bfseries get\+\_\+tools} ()
+\mbox{\Hypertarget{class_person_a79d557e6574cae15cb535b532b313d44}\label{class_person_a79d557e6574cae15cb535b532b313d44}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_tool}{Tool}}$<$ TSeq $>$ $>$ \& {\bfseries get\+\_\+tool} (int i)
+\item 
+\mbox{\Hypertarget{class_person_aa726239c9813d73880d0dc230bc69c87}\label{class_person_aa726239c9813d73880d0dc230bc69c87}} 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_tool}{Tool}}$<$ TSeq $>$ $>$ $>$ \& {\bfseries get\+\_\+tools} ()
+\item 
+\mbox{\Hypertarget{class_person_aa9b8722f2729970f3a831e06130ea21a}\label{class_person_aa9b8722f2729970f3a831e06130ea21a}} 
+size\+\_\+t {\bfseries get\+\_\+n\+\_\+tools} () const noexcept
 \item 
 \mbox{\Hypertarget{class_person_ac4843ae724c057095b171ba922598890}\label{class_person_ac4843ae724c057095b171ba922598890}} 
 void {\bfseries mutate\+\_\+variant} ()

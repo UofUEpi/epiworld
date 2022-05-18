@@ -2,7 +2,7 @@
 
   \item {Action$<$ TSeq $>$}, \hyperpage{5}
   \item {add\_global\_action}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{15}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{16}
   \item {AdjList}, \hyperpage{6}
     \subitem {AdjList}, \hyperpage{6}
 
@@ -19,25 +19,25 @@
   \indexspace
 
   \item {Model$<$ TSeq $>$}, \hyperpage{10}
-    \subitem {add\_global\_action}, \hyperpage{15}
+    \subitem {add\_global\_action}, \hyperpage{16}
     \subitem {reset}, \hyperpage{16}
     \subitem {run\_multiple}, \hyperpage{16}
-    \subitem {write\_data}, \hyperpage{16}
+    \subitem {write\_data}, \hyperpage{18}
 
   \indexspace
 
-  \item {Person$<$ TSeq $>$}, \hyperpage{17}
-  \item {PersonTools$<$ TSeq $>$}, \hyperpage{19}
-  \item {PersonViruses$<$ TSeq $>$}, \hyperpage{20}
-  \item {Progress}, \hyperpage{21}
+  \item {Person$<$ TSeq $>$}, \hyperpage{18}
+  \item {PersonTools$<$ TSeq $>$}, \hyperpage{20}
+  \item {PersonViruses$<$ TSeq $>$}, \hyperpage{21}
+  \item {Progress}, \hyperpage{22}
 
   \indexspace
 
-  \item {Queue$<$ TSeq $>$}, \hyperpage{21}
+  \item {Queue$<$ TSeq $>$}, \hyperpage{22}
 
   \indexspace
 
-  \item {RandGraph}, \hyperpage{22}
+  \item {RandGraph}, \hyperpage{23}
   \item {record\_variant}
     \subitem {DataBase$<$ TSeq $>$}, \hyperpage{8}
   \item {reset}
@@ -47,23 +47,23 @@
 
   \indexspace
 
-  \item {Tool$<$ TSeq $>$}, \hyperpage{22}
+  \item {Tool$<$ TSeq $>$}, \hyperpage{23}
 
   \indexspace
 
   \item {UserData}
-    \subitem {UserData$<$ TSeq $>$}, \hyperpage{25}
-  \item {UserData$<$ TSeq $>$}, \hyperpage{23}
-    \subitem {UserData}, \hyperpage{25}
+    \subitem {UserData$<$ TSeq $>$}, \hyperpage{26}
+  \item {UserData$<$ TSeq $>$}, \hyperpage{24}
+    \subitem {UserData}, \hyperpage{26}
 
   \indexspace
 
-  \item {vecHasher$<$ T $>$}, \hyperpage{25}
-  \item {Virus$<$ TSeq $>$}, \hyperpage{26}
+  \item {vecHasher$<$ T $>$}, \hyperpage{26}
+  \item {Virus$<$ TSeq $>$}, \hyperpage{27}
 
   \indexspace
 
   \item {write\_data}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{16}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{18}
 
 \end{theindex}

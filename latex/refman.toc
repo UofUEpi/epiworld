@@ -20,30 +20,30 @@
 \contentsline {section}{\numberline {3.5}Location$<$ TSeq $>$ Class Template Reference}{10}{section.3.5}%
 \contentsline {section}{\numberline {3.6}Model$<$ TSeq $>$ Class Template Reference}{10}{section.3.6}%
 \contentsline {subsection}{\numberline {3.6.1}Detailed Description}{15}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Member Function Documentation}{15}{subsection.3.6.2}%
-\contentsline {subsubsection}{\numberline {3.6.2.1}add\_global\_action()}{15}{subsubsection.3.6.2.1}%
+\contentsline {subsection}{\numberline {3.6.2}Member Function Documentation}{16}{subsection.3.6.2}%
+\contentsline {subsubsection}{\numberline {3.6.2.1}add\_global\_action()}{16}{subsubsection.3.6.2.1}%
 \contentsline {subsubsection}{\numberline {3.6.2.2}reset()}{16}{subsubsection.3.6.2.2}%
-\contentsline {subsubsection}{\numberline {3.6.2.3}run\_multiple()}{16}{subsubsection.3.6.2.3}%
-\contentsline {subsubsection}{\numberline {3.6.2.4}write\_data()}{16}{subsubsection.3.6.2.4}%
-\contentsline {section}{\numberline {3.7}Person$<$ TSeq $>$ Class Template Reference}{17}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Detailed Description}{18}{subsection.3.7.1}%
-\contentsline {section}{\numberline {3.8}Person\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tools$<$ TSeq $>$ Class Template Reference}{19}{section.3.8}%
-\contentsline {subsection}{\numberline {3.8.1}Detailed Description}{19}{subsection.3.8.1}%
-\contentsline {section}{\numberline {3.9}Person\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Viruses$<$ TSeq $>$ Class Template Reference}{20}{section.3.9}%
-\contentsline {subsection}{\numberline {3.9.1}Detailed Description}{20}{subsection.3.9.1}%
-\contentsline {section}{\numberline {3.10}Progress Class Reference}{21}{section.3.10}%
-\contentsline {subsection}{\numberline {3.10.1}Detailed Description}{21}{subsection.3.10.1}%
-\contentsline {section}{\numberline {3.11}Queue$<$ TSeq $>$ Class Template Reference}{21}{section.3.11}%
-\contentsline {subsection}{\numberline {3.11.1}Detailed Description}{21}{subsection.3.11.1}%
-\contentsline {section}{\numberline {3.12}Rand\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Graph Class Reference}{22}{section.3.12}%
-\contentsline {section}{\numberline {3.13}Tool$<$ TSeq $>$ Class Template Reference}{22}{section.3.13}%
-\contentsline {subsection}{\numberline {3.13.1}Detailed Description}{23}{subsection.3.13.1}%
-\contentsline {section}{\numberline {3.14}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data$<$ TSeq $>$ Class Template Reference}{23}{section.3.14}%
-\contentsline {subsection}{\numberline {3.14.1}Detailed Description}{24}{subsection.3.14.1}%
-\contentsline {subsection}{\numberline {3.14.2}Constructor \& Destructor Documentation}{25}{subsection.3.14.2}%
-\contentsline {subsubsection}{\numberline {3.14.2.1}UserData()}{25}{subsubsection.3.14.2.1}%
-\contentsline {section}{\numberline {3.15}vec\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hasher$<$ T $>$ Struct Template Reference}{25}{section.3.15}%
-\contentsline {subsection}{\numberline {3.15.1}Detailed Description}{25}{subsection.3.15.1}%
-\contentsline {section}{\numberline {3.16}Virus$<$ TSeq $>$ Class Template Reference}{26}{section.3.16}%
-\contentsline {subsection}{\numberline {3.16.1}Detailed Description}{27}{subsection.3.16.1}%
+\contentsline {subsubsection}{\numberline {3.6.2.3}run\_multiple()}{17}{subsubsection.3.6.2.3}%
+\contentsline {subsubsection}{\numberline {3.6.2.4}write\_data()}{18}{subsubsection.3.6.2.4}%
+\contentsline {section}{\numberline {3.7}Person$<$ TSeq $>$ Class Template Reference}{18}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Detailed Description}{20}{subsection.3.7.1}%
+\contentsline {section}{\numberline {3.8}Person\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tools$<$ TSeq $>$ Class Template Reference}{20}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Detailed Description}{21}{subsection.3.8.1}%
+\contentsline {section}{\numberline {3.9}Person\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Viruses$<$ TSeq $>$ Class Template Reference}{21}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Detailed Description}{21}{subsection.3.9.1}%
+\contentsline {section}{\numberline {3.10}Progress Class Reference}{22}{section.3.10}%
+\contentsline {subsection}{\numberline {3.10.1}Detailed Description}{22}{subsection.3.10.1}%
+\contentsline {section}{\numberline {3.11}Queue$<$ TSeq $>$ Class Template Reference}{22}{section.3.11}%
+\contentsline {subsection}{\numberline {3.11.1}Detailed Description}{22}{subsection.3.11.1}%
+\contentsline {section}{\numberline {3.12}Rand\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Graph Class Reference}{23}{section.3.12}%
+\contentsline {section}{\numberline {3.13}Tool$<$ TSeq $>$ Class Template Reference}{23}{section.3.13}%
+\contentsline {subsection}{\numberline {3.13.1}Detailed Description}{24}{subsection.3.13.1}%
+\contentsline {section}{\numberline {3.14}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data$<$ TSeq $>$ Class Template Reference}{24}{section.3.14}%
+\contentsline {subsection}{\numberline {3.14.1}Detailed Description}{25}{subsection.3.14.1}%
+\contentsline {subsection}{\numberline {3.14.2}Constructor \& Destructor Documentation}{26}{subsection.3.14.2}%
+\contentsline {subsubsection}{\numberline {3.14.2.1}UserData()}{26}{subsubsection.3.14.2.1}%
+\contentsline {section}{\numberline {3.15}vec\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hasher$<$ T $>$ Struct Template Reference}{26}{section.3.15}%
+\contentsline {subsection}{\numberline {3.15.1}Detailed Description}{26}{subsection.3.15.1}%
+\contentsline {section}{\numberline {3.16}Virus$<$ TSeq $>$ Class Template Reference}{27}{section.3.16}%
+\contentsline {subsection}{\numberline {3.16.1}Detailed Description}{28}{subsection.3.16.1}%
 \contentsline {chapter}{Index}{29}{section*.39}%

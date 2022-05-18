@@ -36,18 +36,6 @@ epiworld\+\_\+double \& {\bfseries operator()} (std\+::string pname)
 \mbox{\Hypertarget{class_model_a40f2aa6db21fb71bc9b591aadd26ce3a}\label{class_model_a40f2aa6db21fb71bc9b591aadd26ce3a}} 
 size\+\_\+t {\bfseries size} () const
 \item 
-\mbox{\Hypertarget{class_model_a3a1e9be2e50d761a4f0ca8d6ece9bb22}\label{class_model_a3a1e9be2e50d761a4f0ca8d6ece9bb22}} 
-void {\bfseries add\+\_\+virus} (\mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ v, epiworld\+\_\+double preval)
-\item 
-\mbox{\Hypertarget{class_model_a78854237bf9bb5b810240db4b19845f1}\label{class_model_a78854237bf9bb5b810240db4b19845f1}} 
-void {\bfseries add\+\_\+virus\+\_\+n} (\mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ v, unsigned int preval)
-\item 
-\mbox{\Hypertarget{class_model_a1ad232953a10299b7a82d53ad7b64cd0}\label{class_model_a1ad232953a10299b7a82d53ad7b64cd0}} 
-void {\bfseries add\+\_\+tool} (\mbox{\hyperlink{class_tool}{Tool}}$<$ TSeq $>$ t, epiworld\+\_\+double preval)
-\item 
-\mbox{\Hypertarget{class_model_aae8acdadbe354fd81f789ef267b061f0}\label{class_model_aae8acdadbe354fd81f789ef267b061f0}} 
-void {\bfseries add\+\_\+tool\+\_\+n} (\mbox{\hyperlink{class_tool}{Tool}}$<$ TSeq $>$ t, unsigned int preval)
-\item 
 \mbox{\Hypertarget{class_model_aecf6782e468b78459a37187903845d12}\label{class_model_aecf6782e468b78459a37187903845d12}} 
 void {\bfseries record\+\_\+variant} (\mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ $\ast$v)
 \item 
@@ -112,7 +100,9 @@ void {\bfseries restore\+\_\+backup} ()
 \begin{Indent}\textbf{ Random number generation}\par
 {\em 
 \begin{DoxyParams}{Parameters}
-{\em eng} & \\
+{\em eng} & Random number generator \\
+\hline
+{\em s} & Seed \\
 \hline
 \end{DoxyParams}
 }\begin{DoxyCompactItemize}
@@ -145,6 +135,33 @@ epiworld\+\_\+double {\bfseries rgamma} ()
 epiworld\+\_\+double {\bfseries rgamma} (epiworld\+\_\+double alpha, epiworld\+\_\+double beta)
 \end{DoxyCompactItemize}
 \end{Indent}
+\begin{Indent}\textbf{ Add Virus/\+Tool to the model}\par
+{\em This is done before the model has been initialized.
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & \mbox{\hyperlink{class_virus}{Virus}} to be added \\
+\hline
+{\em t} & \mbox{\hyperlink{class_tool}{Tool}} to be added \\
+\hline
+{\em preval} & Initial prevalence (initial state.) It can be specified as a proportion (between zero and one,) or an integer indicating number of individuals. \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_model_a3a1e9be2e50d761a4f0ca8d6ece9bb22}\label{class_model_a3a1e9be2e50d761a4f0ca8d6ece9bb22}} 
+void {\bfseries add\+\_\+virus} (\mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ v, epiworld\+\_\+double preval)
+\item 
+\mbox{\Hypertarget{class_model_a78854237bf9bb5b810240db4b19845f1}\label{class_model_a78854237bf9bb5b810240db4b19845f1}} 
+void {\bfseries add\+\_\+virus\+\_\+n} (\mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ v, unsigned int preval)
+\item 
+\mbox{\Hypertarget{class_model_a1ad232953a10299b7a82d53ad7b64cd0}\label{class_model_a1ad232953a10299b7a82d53ad7b64cd0}} 
+void {\bfseries add\+\_\+tool} (\mbox{\hyperlink{class_tool}{Tool}}$<$ TSeq $>$ t, epiworld\+\_\+double preval)
+\item 
+\mbox{\Hypertarget{class_model_aae8acdadbe354fd81f789ef267b061f0}\label{class_model_aae8acdadbe354fd81f789ef267b061f0}} 
+void {\bfseries add\+\_\+tool\+\_\+n} (\mbox{\hyperlink{class_tool}{Tool}}$<$ TSeq $>$ t, unsigned int preval)
+\end{DoxyCompactItemize}
+\end{Indent}
 \begin{Indent}\textbf{ Accessing population of the model}\par
 {\em 
 \begin{DoxyParams}{Parameters}
@@ -163,11 +180,11 @@ epiworld\+\_\+double {\bfseries rgamma} (epiworld\+\_\+double alpha, epiworld\+\
 \end{DoxyParams}
 }\begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_model_ad228aed8654e0f1eb6f5ccc58156cfb6}\label{class_model_ad228aed8654e0f1eb6f5ccc58156cfb6}} 
-void {\bfseries pop\+\_\+from\+\_\+adjlist} (std\+::string fn, int skip=0, bool directed=false, int min\+\_\+id=-\/1, int max\+\_\+id=-\/1)
+\mbox{\Hypertarget{class_model_a96f342585ec949235cd5048b90bd4162}\label{class_model_a96f342585ec949235cd5048b90bd4162}} 
+void {\bfseries population\+\_\+from\+\_\+adjlist} (std\+::string fn, int skip=0, bool directed=false, int min\+\_\+id=-\/1, int max\+\_\+id=-\/1)
 \item 
-\mbox{\Hypertarget{class_model_a0afb11e07c35341134dbd1d219fbe8a1}\label{class_model_a0afb11e07c35341134dbd1d219fbe8a1}} 
-void {\bfseries pop\+\_\+from\+\_\+adjlist} (\mbox{\hyperlink{class_adj_list}{Adj\+List}} al)
+\mbox{\Hypertarget{class_model_a956cc43f33836049722357c0e0da76e4}\label{class_model_a956cc43f33836049722357c0e0da76e4}} 
+void {\bfseries population\+\_\+from\+\_\+adjlist} (\mbox{\hyperlink{class_adj_list}{Adj\+List}} al)
 \item 
 \mbox{\Hypertarget{class_model_a9e65d452cd5ccf2aff1f53dd454faa0e}\label{class_model_a9e65d452cd5ccf2aff1f53dd454faa0e}} 
 bool {\bfseries is\+\_\+directed} () const
@@ -175,8 +192,8 @@ bool {\bfseries is\+\_\+directed} () const
 \mbox{\Hypertarget{class_model_ab1de4c1012bca9afc8f17e579d367744}\label{class_model_ab1de4c1012bca9afc8f17e579d367744}} 
 std\+::vector$<$ \mbox{\hyperlink{class_person}{Person}}$<$ TSeq $>$ $>$ $\ast$ {\bfseries get\+\_\+population} ()
 \item 
-\mbox{\Hypertarget{class_model_a1d148129766a675e1695872027962247}\label{class_model_a1d148129766a675e1695872027962247}} 
-void {\bfseries pop\+\_\+from\+\_\+random} (unsigned int n=1000, unsigned int k=5, bool d=false, epiworld\+\_\+double p=.\+01)
+\mbox{\Hypertarget{class_model_a6c631334f5abb94e84c673995f00d1da}\label{class_model_a6c631334f5abb94e84c673995f00d1da}} 
+void {\bfseries population\+\_\+smallworld} (unsigned int n=1000, unsigned int k=5, bool d=false, epiworld\+\_\+double p=.\+01)
 \end{DoxyCompactItemize}
 \end{Indent}
 \begin{Indent}\textbf{ Functions to run the model}\par
@@ -318,6 +335,42 @@ bool \mbox{\hyperlink{class_model_a2c4ac58e918e9e8dc2e58be6521d8827}{is\+\_\+que
 \mbox{\Hypertarget{class_model_aaf33c877732b9bdc7cb77e063ad0c1a6}\label{class_model_aaf33c877732b9bdc7cb77e063ad0c1a6}} 
 \mbox{\hyperlink{class_queue}{Queue}}$<$ TSeq $>$ \& \mbox{\hyperlink{class_model_aaf33c877732b9bdc7cb77e063ad0c1a6}{get\+\_\+queue}} ()
 \begin{DoxyCompactList}\small\item\em Retrieve the {\ttfamily \mbox{\hyperlink{class_queue}{Queue}}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Get the susceptibility reduction object}\par
+{\em 
+\begin{DoxyParams}{Parameters}
+{\em v} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+epiworld\+\_\+double 
+\end{DoxyReturn}
+}\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_model_a9beff77c9c678dab926c9bce6a97f197}\label{class_model_a9beff77c9c678dab926c9bce6a97f197}} 
+epiworld\+\_\+double {\bfseries get\+\_\+susceptibility\+\_\+reduction} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ $>$ v)
+\item 
+\mbox{\Hypertarget{class_model_a4fae57be0b215cba3b161b19a1df5806}\label{class_model_a4fae57be0b215cba3b161b19a1df5806}} 
+epiworld\+\_\+double {\bfseries get\+\_\+transmission\+\_\+reduction} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ $>$ v)
+\item 
+\mbox{\Hypertarget{class_model_ab12d97f56a1f1529b4c1bade20047d49}\label{class_model_ab12d97f56a1f1529b4c1bade20047d49}} 
+epiworld\+\_\+double {\bfseries get\+\_\+recovery\+\_\+enhancer} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ $>$ v)
+\item 
+\mbox{\Hypertarget{class_model_ab96157e81046c8df3a075965325223c8}\label{class_model_ab96157e81046c8df3a075965325223c8}} 
+epiworld\+\_\+double {\bfseries get\+\_\+death\+\_\+reduction} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ $>$ v)
+\item 
+\mbox{\Hypertarget{class_model_a5700406b7170de6cc67d232bc3dfb3b5}\label{class_model_a5700406b7170de6cc67d232bc3dfb3b5}} 
+void {\bfseries set\+\_\+susceptibility\+\_\+reduction\+\_\+mixer} (Mixer\+Fun$<$ TSeq $>$ fun)
+\item 
+\mbox{\Hypertarget{class_model_a054f267e3579c39e81d949979f8db515}\label{class_model_a054f267e3579c39e81d949979f8db515}} 
+void {\bfseries set\+\_\+transmission\+\_\+reduction\+\_\+mixer} (Mixer\+Fun$<$ TSeq $>$ fun)
+\item 
+\mbox{\Hypertarget{class_model_a71718eb5cf4d3316b98401e822e174e5}\label{class_model_a71718eb5cf4d3316b98401e822e174e5}} 
+void {\bfseries set\+\_\+recovery\+\_\+enhancer\+\_\+mixer} (Mixer\+Fun$<$ TSeq $>$ fun)
+\item 
+\mbox{\Hypertarget{class_model_a1e7c06c02d0376d7fc7f5a60268a3878}\label{class_model_a1e7c06c02d0376d7fc7f5a60268a3878}} 
+void {\bfseries set\+\_\+death\+\_\+reduction\+\_\+mixer} (Mixer\+Fun$<$ TSeq $>$ fun)
+\end{DoxyCompactItemize}
 \end{Indent}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
