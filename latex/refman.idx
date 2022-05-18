@@ -23,8 +23,10 @@
 \indexentry{Queue$<$ TSeq $>$@{Queue$<$ TSeq $>$}|hyperpage}{22}
 \indexentry{RandGraph@{RandGraph}|hyperpage}{23}
 \indexentry{Tool$<$ TSeq $>$@{Tool$<$ TSeq $>$}|hyperpage}{23}
-\indexentry{UserData$<$ TSeq $>$@{UserData$<$ TSeq $>$}|hyperpage}{24}
+\indexentry{ToolPtr$<$ TSeq $>$@{ToolPtr$<$ TSeq $>$}|hyperpage}{24}
+\indexentry{UserData$<$ TSeq $>$@{UserData$<$ TSeq $>$}|hyperpage}{25}
 \indexentry{UserData$<$ TSeq $>$@{UserData$<$ TSeq $>$}!UserData@{UserData}|hyperpage}{26}
 \indexentry{UserData@{UserData}!UserData$<$ TSeq $>$@{UserData$<$ TSeq $>$}|hyperpage}{26}
 \indexentry{vecHasher$<$ T $>$@{vecHasher$<$ T $>$}|hyperpage}{26}
 \indexentry{Virus$<$ TSeq $>$@{Virus$<$ TSeq $>$}|hyperpage}{27}
+\indexentry{VirusPtr$<$ TSeq $>$@{VirusPtr$<$ TSeq $>$}|hyperpage}{29}

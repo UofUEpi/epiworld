@@ -48,18 +48,20 @@
   \indexspace
 
   \item {Tool$<$ TSeq $>$}, \hyperpage{23}
+  \item {ToolPtr$<$ TSeq $>$}, \hyperpage{24}
 
   \indexspace
 
   \item {UserData}
     \subitem {UserData$<$ TSeq $>$}, \hyperpage{26}
-  \item {UserData$<$ TSeq $>$}, \hyperpage{24}
+  \item {UserData$<$ TSeq $>$}, \hyperpage{25}
     \subitem {UserData}, \hyperpage{26}
 
   \indexspace
 
   \item {vecHasher$<$ T $>$}, \hyperpage{26}
   \item {Virus$<$ TSeq $>$}, \hyperpage{27}
+  \item {VirusPtr$<$ TSeq $>$}, \hyperpage{29}
 
   \indexspace
 
