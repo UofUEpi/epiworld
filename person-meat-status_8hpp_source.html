@@ -83,7 +83,7 @@ $(function() {
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define EPIWORLD_UPDATE_SUSCEPTIBLE_CALC_PROBS(probs,variants) \</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">    </span><span class="comment">/* Step 1: Compute the individual efficcacy */</span><span class="preprocessor"> \</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">    std::vector&lt; epiworld_double &gt; probs; \</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">    std::vector&lt; epiworld::Virus&lt;TSeq&gt;* &gt; variants; \</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">    std::vector&lt; epiworld::VirusPtr&lt;TSeq&gt; &gt; variants; \</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">    </span><span class="comment">/* Computing the susceptibility_reduction */</span><span class="preprocessor"> \</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">    for (unsigned int n = 0; n &lt; p-&gt;get_neighbors().size(); ++n) \</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">    { \</span></div>
@@ -97,7 +97,7 @@ $(function() {
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">        for (unsigned int v = 0; v &lt; nviruses.size(); ++v) \</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">        { \</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">            </span><span class="comment">/* Computing the corresponding susceptibility_reduction */</span><span class="preprocessor"> \</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">            epiworld::Virus&lt;TSeq&gt; * tmp_v = &amp;(nviruses(v)); \</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">            epiworld::VirusPtr&lt;TSeq&gt; tmp_v = &amp;(nviruses(v)); \</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">            </span><span class="comment">/* And it is a function of susceptibility_reduction as well */</span><span class="preprocessor"> \</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">            tmp_transmission = \</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">                (1.0 - p-&gt;get_susceptibility_reduction(tmp_v)) * \</span></div>
@@ -135,7 +135,7 @@ $(function() {
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        { </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="comment">/* Computing the corresponding susceptibility_reduction */</span> </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <a class="code" href="class_virus.html">Virus&lt;TSeq&gt;</a> * tmp_v = &amp;(nviruses(v)); </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            VirusPtr&lt;TSeq&gt; tmp_v = &amp;(nviruses(v)); </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="comment">/* And it is a function of susceptibility_reduction as well */</span> </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            tmp_transmission = </div>
@@ -167,7 +167,7 @@ $(function() {
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#define EPIWORLD_UPDATE_EXPOSED_CALC_PROBS(prob_rec, prob_die) \</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">    epiworld::Virus&lt;TSeq&gt; * v = &amp;(p-&gt;get_virus(0u)); \</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">    epiworld::VirusPtr&lt;TSeq&gt; v = &amp;(p-&gt;get_virus(0u)); \</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">    epiworld_double prob_rec = v-&gt;get_prob_recovery() * (1.0 - p-&gt;get_recovery_enhancer(v)); \</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">    epiworld_double prob_die = v-&gt;get_prob_death() * (1.0 - p-&gt;get_death_reduction(v)); </span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
@@ -175,7 +175,7 @@ $(function() {
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">inline</span> epiworld_fast_uint default_update_exposed(<a class="code" href="class_person.html">Person&lt;TSeq&gt;</a> * p, <a class="code" href="class_model.html">Model&lt;TSeq&gt;</a> * m) {</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    epiworld::Virus&lt;TSeq&gt; * v = &amp;(p-&gt;get_virus(0u)); </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    epiworld::VirusPtr&lt;TSeq&gt; v = &amp;(p-&gt;get_virus(0u)); </div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    epiworld_double p_rec = v-&gt;get_prob_recovery() * (1.0 - p-&gt;get_recovery_enhancer(v)); </div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    epiworld_double p_die = v-&gt;get_prob_death() * (1.0 - p-&gt;get_death_reduction(v)); </div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    </div>
@@ -204,7 +204,6 @@ $(function() {
 <div class="ttc" id="aclass_model_html"><div class="ttname"><a href="class_model.html">Model</a></div><div class="ttdoc">Core class of epiworld.</div><div class="ttdef"><b>Definition:</b> model-bones.hpp:31</div></div>
 <div class="ttc" id="aclass_person_html"><div class="ttname"><a href="class_person.html">Person</a></div><div class="ttdoc">Person (agents)</div><div class="ttdef"><b>Definition:</b> person-bones.hpp:37</div></div>
 <div class="ttc" id="aclass_person_viruses_html"><div class="ttname"><a href="class_person_viruses.html">PersonViruses</a></div><div class="ttdoc">Set of viruses in host.</div><div class="ttdef"><b>Definition:</b> personviruses-bones.hpp:10</div></div>
-<div class="ttc" id="aclass_virus_html"><div class="ttname"><a href="class_virus.html">Virus</a></div><div class="ttdoc">Virus.</div><div class="ttdef"><b>Definition:</b> virus-bones.hpp:29</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -103,9 +103,9 @@ epiworld_double &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>oper
 <tr class="memitem:a40f2aa6db21fb71bc9b591aadd26ce3a"><td class="memItemLeft" align="right" valign="top"><a id="a40f2aa6db21fb71bc9b591aadd26ce3a"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const</td></tr>
 <tr class="separator:a40f2aa6db21fb71bc9b591aadd26ce3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecf6782e468b78459a37187903845d12"><td class="memItemLeft" align="right" valign="top"><a id="aecf6782e468b78459a37187903845d12"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>record_variant</b> (<a class="el" href="class_virus.html">Virus</a>&lt; TSeq &gt; *v)</td></tr>
-<tr class="separator:aecf6782e468b78459a37187903845d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cae705e8ef38864cd59a396f1788ade"><td class="memItemLeft" align="right" valign="top"><a id="a1cae705e8ef38864cd59a396f1788ade"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>record_variant</b> (VirusPtr&lt; TSeq &gt; v)</td></tr>
+<tr class="separator:a1cae705e8ef38864cd59a396f1788ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5eac1533dd336124785f9ba2c79a168c"><td class="memItemLeft" align="right" valign="top"><a id="a5eac1533dd336124785f9ba2c79a168c"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>get_nvariants</b> () const</td></tr>
 <tr class="separator:a5eac1533dd336124785f9ba2c79a168c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -394,18 +394,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>epiworld_double </dd></dl>
 </div></td></tr>
-<tr class="memitem:a9beff77c9c678dab926c9bce6a97f197"><td class="memItemLeft" align="right" valign="top"><a id="a9beff77c9c678dab926c9bce6a97f197"></a>
-epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>get_susceptibility_reduction</b> (std::shared_ptr&lt; <a class="el" href="class_virus.html">Virus</a>&lt; TSeq &gt; &gt; v)</td></tr>
-<tr class="separator:a9beff77c9c678dab926c9bce6a97f197"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fae57be0b215cba3b161b19a1df5806"><td class="memItemLeft" align="right" valign="top"><a id="a4fae57be0b215cba3b161b19a1df5806"></a>
-epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>get_transmission_reduction</b> (std::shared_ptr&lt; <a class="el" href="class_virus.html">Virus</a>&lt; TSeq &gt; &gt; v)</td></tr>
-<tr class="separator:a4fae57be0b215cba3b161b19a1df5806"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab12d97f56a1f1529b4c1bade20047d49"><td class="memItemLeft" align="right" valign="top"><a id="ab12d97f56a1f1529b4c1bade20047d49"></a>
-epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>get_recovery_enhancer</b> (std::shared_ptr&lt; <a class="el" href="class_virus.html">Virus</a>&lt; TSeq &gt; &gt; v)</td></tr>
-<tr class="separator:ab12d97f56a1f1529b4c1bade20047d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab96157e81046c8df3a075965325223c8"><td class="memItemLeft" align="right" valign="top"><a id="ab96157e81046c8df3a075965325223c8"></a>
-epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>get_death_reduction</b> (std::shared_ptr&lt; <a class="el" href="class_virus.html">Virus</a>&lt; TSeq &gt; &gt; v)</td></tr>
-<tr class="separator:ab96157e81046c8df3a075965325223c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bf0479260dd835bd7348664553c94cf"><td class="memItemLeft" align="right" valign="top"><a id="a2bf0479260dd835bd7348664553c94cf"></a>
+epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>get_susceptibility_reduction</b> (VirusPtr&lt; TSeq &gt; v)</td></tr>
+<tr class="separator:a2bf0479260dd835bd7348664553c94cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56cc682be061ae2c194595c1c466c56d"><td class="memItemLeft" align="right" valign="top"><a id="a56cc682be061ae2c194595c1c466c56d"></a>
+epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>get_transmission_reduction</b> (VirusPtr&lt; TSeq &gt; v)</td></tr>
+<tr class="separator:a56cc682be061ae2c194595c1c466c56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abedb663a0821b06b16d82fde1a9950e4"><td class="memItemLeft" align="right" valign="top"><a id="abedb663a0821b06b16d82fde1a9950e4"></a>
+epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>get_recovery_enhancer</b> (VirusPtr&lt; TSeq &gt; v)</td></tr>
+<tr class="separator:abedb663a0821b06b16d82fde1a9950e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73ad282a3544196da19776b4fc8dabcb"><td class="memItemLeft" align="right" valign="top"><a id="a73ad282a3544196da19776b4fc8dabcb"></a>
+epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>get_death_reduction</b> (VirusPtr&lt; TSeq &gt; v)</td></tr>
+<tr class="separator:a73ad282a3544196da19776b4fc8dabcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5700406b7170de6cc67d232bc3dfb3b5"><td class="memItemLeft" align="right" valign="top"><a id="a5700406b7170de6cc67d232bc3dfb3b5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_susceptibility_reduction_mixer</b> (MixerFun&lt; TSeq &gt; fun)</td></tr>
 <tr class="separator:a5700406b7170de6cc67d232bc3dfb3b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -424,9 +424,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a12df19c247eec2a54843fa969b01ca3e"><td class="memItemLeft" align="right" valign="top"><a id="a12df19c247eec2a54843fa969b01ca3e"></a>
 std::vector&lt; epiworld_double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>array_double_tmp</b></td></tr>
 <tr class="separator:a12df19c247eec2a54843fa969b01ca3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03f0db18b14110045f10c68f8a3a2599"><td class="memItemLeft" align="right" valign="top"><a id="a03f0db18b14110045f10c68f8a3a2599"></a>
-std::vector&lt; <a class="el" href="class_virus.html">Virus</a>&lt; TSeq &gt; * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>array_virus_tmp</b></td></tr>
-<tr class="separator:a03f0db18b14110045f10c68f8a3a2599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a565f4700735bd6b57135d4a7f26b19ce"><td class="memItemLeft" align="right" valign="top"><a id="a565f4700735bd6b57135d4a7f26b19ce"></a>
+std::vector&lt; VirusPtr&lt; TSeq &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>array_virus_tmp</b></td></tr>
+<tr class="separator:a565f4700735bd6b57135d4a7f26b19ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>

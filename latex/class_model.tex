@@ -36,8 +36,8 @@ epiworld\+\_\+double \& {\bfseries operator()} (std\+::string pname)
 \mbox{\Hypertarget{class_model_a40f2aa6db21fb71bc9b591aadd26ce3a}\label{class_model_a40f2aa6db21fb71bc9b591aadd26ce3a}} 
 size\+\_\+t {\bfseries size} () const
 \item 
-\mbox{\Hypertarget{class_model_aecf6782e468b78459a37187903845d12}\label{class_model_aecf6782e468b78459a37187903845d12}} 
-void {\bfseries record\+\_\+variant} (\mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ $\ast$v)
+\mbox{\Hypertarget{class_model_a1cae705e8ef38864cd59a396f1788ade}\label{class_model_a1cae705e8ef38864cd59a396f1788ade}} 
+void {\bfseries record\+\_\+variant} (Virus\+Ptr$<$ TSeq $>$ v)
 \item 
 \mbox{\Hypertarget{class_model_a5eac1533dd336124785f9ba2c79a168c}\label{class_model_a5eac1533dd336124785f9ba2c79a168c}} 
 int {\bfseries get\+\_\+nvariants} () const
@@ -347,17 +347,17 @@ epiworld\+\_\+double
 \end{DoxyReturn}
 }\begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_model_a9beff77c9c678dab926c9bce6a97f197}\label{class_model_a9beff77c9c678dab926c9bce6a97f197}} 
-epiworld\+\_\+double {\bfseries get\+\_\+susceptibility\+\_\+reduction} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ $>$ v)
+\mbox{\Hypertarget{class_model_a2bf0479260dd835bd7348664553c94cf}\label{class_model_a2bf0479260dd835bd7348664553c94cf}} 
+epiworld\+\_\+double {\bfseries get\+\_\+susceptibility\+\_\+reduction} (Virus\+Ptr$<$ TSeq $>$ v)
 \item 
-\mbox{\Hypertarget{class_model_a4fae57be0b215cba3b161b19a1df5806}\label{class_model_a4fae57be0b215cba3b161b19a1df5806}} 
-epiworld\+\_\+double {\bfseries get\+\_\+transmission\+\_\+reduction} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ $>$ v)
+\mbox{\Hypertarget{class_model_a56cc682be061ae2c194595c1c466c56d}\label{class_model_a56cc682be061ae2c194595c1c466c56d}} 
+epiworld\+\_\+double {\bfseries get\+\_\+transmission\+\_\+reduction} (Virus\+Ptr$<$ TSeq $>$ v)
 \item 
-\mbox{\Hypertarget{class_model_ab12d97f56a1f1529b4c1bade20047d49}\label{class_model_ab12d97f56a1f1529b4c1bade20047d49}} 
-epiworld\+\_\+double {\bfseries get\+\_\+recovery\+\_\+enhancer} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ $>$ v)
+\mbox{\Hypertarget{class_model_abedb663a0821b06b16d82fde1a9950e4}\label{class_model_abedb663a0821b06b16d82fde1a9950e4}} 
+epiworld\+\_\+double {\bfseries get\+\_\+recovery\+\_\+enhancer} (Virus\+Ptr$<$ TSeq $>$ v)
 \item 
-\mbox{\Hypertarget{class_model_ab96157e81046c8df3a075965325223c8}\label{class_model_ab96157e81046c8df3a075965325223c8}} 
-epiworld\+\_\+double {\bfseries get\+\_\+death\+\_\+reduction} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ $>$ v)
+\mbox{\Hypertarget{class_model_a73ad282a3544196da19776b4fc8dabcb}\label{class_model_a73ad282a3544196da19776b4fc8dabcb}} 
+epiworld\+\_\+double {\bfseries get\+\_\+death\+\_\+reduction} (Virus\+Ptr$<$ TSeq $>$ v)
 \item 
 \mbox{\Hypertarget{class_model_a5700406b7170de6cc67d232bc3dfb3b5}\label{class_model_a5700406b7170de6cc67d232bc3dfb3b5}} 
 void {\bfseries set\+\_\+susceptibility\+\_\+reduction\+\_\+mixer} (Mixer\+Fun$<$ TSeq $>$ fun)
@@ -378,8 +378,8 @@ void {\bfseries set\+\_\+death\+\_\+reduction\+\_\+mixer} (Mixer\+Fun$<$ TSeq $>
 \mbox{\Hypertarget{class_model_a12df19c247eec2a54843fa969b01ca3e}\label{class_model_a12df19c247eec2a54843fa969b01ca3e}} 
 std\+::vector$<$ epiworld\+\_\+double $>$ {\bfseries array\+\_\+double\+\_\+tmp}
 \item 
-\mbox{\Hypertarget{class_model_a03f0db18b14110045f10c68f8a3a2599}\label{class_model_a03f0db18b14110045f10c68f8a3a2599}} 
-std\+::vector$<$ \mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ $\ast$ $>$ {\bfseries array\+\_\+virus\+\_\+tmp}
+\mbox{\Hypertarget{class_model_a565f4700735bd6b57135d4a7f26b19ce}\label{class_model_a565f4700735bd6b57135d4a7f26b19ce}} 
+std\+::vector$<$ Virus\+Ptr$<$ TSeq $>$ $>$ {\bfseries array\+\_\+virus\+\_\+tmp}
 \end{DoxyCompactItemize}
 \doxysubsection*{Friends}
 \begin{DoxyCompactItemize}

@@ -24,20 +24,20 @@ std\+::mt19937 $\ast$ {\bfseries get\+\_\+rand\+\_\+endgine} ()
 \mbox{\Hypertarget{class_person_a8dd0ec1b9409ad2a09ad66fa1554906a}\label{class_person_a8dd0ec1b9409ad2a09ad66fa1554906a}} 
 \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$ {\bfseries get\+\_\+model} ()
 \item 
-\mbox{\Hypertarget{class_person_ac82d1aab2828dd85d01075bf1589151b}\label{class_person_ac82d1aab2828dd85d01075bf1589151b}} 
-std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ $>$ \& {\bfseries get\+\_\+virus} (int i)
+\mbox{\Hypertarget{class_person_a995c637eb77e9bf7ca2306512b3b4cd3}\label{class_person_a995c637eb77e9bf7ca2306512b3b4cd3}} 
+Virus\+Ptr$<$ TSeq $>$ \& {\bfseries get\+\_\+virus} (int i)
 \item 
-\mbox{\Hypertarget{class_person_ad38b49d7ec68e4aba3826d562e8a545f}\label{class_person_ad38b49d7ec68e4aba3826d562e8a545f}} 
-std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ $>$ $>$ \& {\bfseries get\+\_\+viruses} ()
+\mbox{\Hypertarget{class_person_a6a4211b3323b11b7cc0bcc21c8657b55}\label{class_person_a6a4211b3323b11b7cc0bcc21c8657b55}} 
+std\+::vector$<$ Virus\+Ptr$<$ TSeq $>$ $>$ \& {\bfseries get\+\_\+viruses} ()
 \item 
 \mbox{\Hypertarget{class_person_aa3280de77c7913751492503e62a6b79a}\label{class_person_aa3280de77c7913751492503e62a6b79a}} 
 size\+\_\+t {\bfseries get\+\_\+n\+\_\+viruses} () const noexcept
 \item 
-\mbox{\Hypertarget{class_person_a79d557e6574cae15cb535b532b313d44}\label{class_person_a79d557e6574cae15cb535b532b313d44}} 
-std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_tool}{Tool}}$<$ TSeq $>$ $>$ \& {\bfseries get\+\_\+tool} (int i)
+\mbox{\Hypertarget{class_person_a3519e0bf0594c9ede8777b192587e9fa}\label{class_person_a3519e0bf0594c9ede8777b192587e9fa}} 
+Tool\+Ptr$<$ TSeq $>$ \& {\bfseries get\+\_\+tool} (int i)
 \item 
-\mbox{\Hypertarget{class_person_aa726239c9813d73880d0dc230bc69c87}\label{class_person_aa726239c9813d73880d0dc230bc69c87}} 
-std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_tool}{Tool}}$<$ TSeq $>$ $>$ $>$ \& {\bfseries get\+\_\+tools} ()
+\mbox{\Hypertarget{class_person_a283492267b3126d101c4b3256b321bdf}\label{class_person_a283492267b3126d101c4b3256b321bdf}} 
+std\+::vector$<$ Tool\+Ptr$<$ TSeq $>$ $>$ \& {\bfseries get\+\_\+tools} ()
 \item 
 \mbox{\Hypertarget{class_person_aa9b8722f2729970f3a831e06130ea21a}\label{class_person_aa9b8722f2729970f3a831e06130ea21a}} 
 size\+\_\+t {\bfseries get\+\_\+n\+\_\+tools} () const noexcept
@@ -88,11 +88,11 @@ bool {\bfseries has\+\_\+virus} (std\+::string name) const
 \end{DoxyParams}
 }\begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_person_abc4ae75dd0cbdb5bc782782e76b9ece0}\label{class_person_abc4ae75dd0cbdb5bc782782e76b9ece0}} 
-void {\bfseries add\+\_\+tool} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_tool}{Tool}}$<$ TSeq $>$ $>$ tool, epiworld\+\_\+fast\+\_\+int status\+\_\+new=-\/1, epiworld\+\_\+fast\+\_\+int queue=0)
+\mbox{\Hypertarget{class_person_a124f966417eb2b9faef0519f52d6ef5a}\label{class_person_a124f966417eb2b9faef0519f52d6ef5a}} 
+void {\bfseries add\+\_\+tool} (Tool\+Ptr$<$ TSeq $>$ tool, epiworld\+\_\+fast\+\_\+int status\+\_\+new=-\/1, epiworld\+\_\+fast\+\_\+int queue=0)
 \item 
-\mbox{\Hypertarget{class_person_aca7a445869f6da51d916cc76d7649ef4}\label{class_person_aca7a445869f6da51d916cc76d7649ef4}} 
-void {\bfseries add\+\_\+virus} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ $>$ virus, epiworld\+\_\+fast\+\_\+int status\+\_\+new=-\/1, epiworld\+\_\+fast\+\_\+int queue=0)
+\mbox{\Hypertarget{class_person_a17bc3abb528a5986e66b28b745152b01}\label{class_person_a17bc3abb528a5986e66b28b745152b01}} 
+void {\bfseries add\+\_\+virus} (Virus\+Ptr$<$ TSeq $>$ virus, epiworld\+\_\+fast\+\_\+int status\+\_\+new=-\/1, epiworld\+\_\+fast\+\_\+int queue=0)
 \item 
 \mbox{\Hypertarget{class_person_aa6a1e5e69b9820d49b35b8b17da4ced9}\label{class_person_aa6a1e5e69b9820d49b35b8b17da4ced9}} 
 void {\bfseries rm\+\_\+tool} (epiworld\+\_\+fast\+\_\+uint tool\+\_\+idx, epiworld\+\_\+fast\+\_\+int status\+\_\+new=-\/1, epiworld\+\_\+fast\+\_\+int queue=0)
@@ -112,17 +112,17 @@ epiworld\+\_\+double
 \end{DoxyReturn}
 }\begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_person_ac5663349488a5af1538324c174b95cfe}\label{class_person_ac5663349488a5af1538324c174b95cfe}} 
-epiworld\+\_\+double {\bfseries get\+\_\+susceptibility\+\_\+reduction} (\mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ $\ast$v)
+\mbox{\Hypertarget{class_person_a75f4a3c9862dce2b86d7b4af2bdf97b0}\label{class_person_a75f4a3c9862dce2b86d7b4af2bdf97b0}} 
+epiworld\+\_\+double {\bfseries get\+\_\+susceptibility\+\_\+reduction} (Virus\+Ptr$<$ TSeq $>$ v)
 \item 
-\mbox{\Hypertarget{class_person_acb3ed931c34da611d9d9bbdae7547fc6}\label{class_person_acb3ed931c34da611d9d9bbdae7547fc6}} 
-epiworld\+\_\+double {\bfseries get\+\_\+transmission\+\_\+reduction} (\mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ $\ast$v)
+\mbox{\Hypertarget{class_person_adc97c52b5b5da2e7097ef3f05c11f74c}\label{class_person_adc97c52b5b5da2e7097ef3f05c11f74c}} 
+epiworld\+\_\+double {\bfseries get\+\_\+transmission\+\_\+reduction} (Virus\+Ptr$<$ TSeq $>$ v)
 \item 
-\mbox{\Hypertarget{class_person_a99b0cbdd57d726e1725a5fb62ad94d45}\label{class_person_a99b0cbdd57d726e1725a5fb62ad94d45}} 
-epiworld\+\_\+double {\bfseries get\+\_\+recovery\+\_\+enhancer} (\mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ $\ast$v)
+\mbox{\Hypertarget{class_person_a0c42f286cf7539cd0d96cc08165dbfae}\label{class_person_a0c42f286cf7539cd0d96cc08165dbfae}} 
+epiworld\+\_\+double {\bfseries get\+\_\+recovery\+\_\+enhancer} (Virus\+Ptr$<$ TSeq $>$ v)
 \item 
-\mbox{\Hypertarget{class_person_a82327a7b0c99f00114724a192924a3f0}\label{class_person_a82327a7b0c99f00114724a192924a3f0}} 
-epiworld\+\_\+double {\bfseries get\+\_\+death\+\_\+reduction} (\mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ $\ast$v)
+\mbox{\Hypertarget{class_person_a203235443e70de99ec71f8688cc05e08}\label{class_person_a203235443e70de99ec71f8688cc05e08}} 
+epiworld\+\_\+double {\bfseries get\+\_\+death\+\_\+reduction} (Virus\+Ptr$<$ TSeq $>$ v)
 \end{DoxyCompactItemize}
 \end{Indent}
 \doxysubsection*{Friends}

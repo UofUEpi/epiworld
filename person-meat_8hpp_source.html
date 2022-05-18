@@ -81,7 +81,7 @@ $(function() {
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_person.html">Person&lt;TSeq&gt;</a> * p = a.person;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    std::shared_ptr&lt; Virus&lt;TSeq&gt; &gt; v = p-&gt;virus_tmp;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    VirusPtr&lt;TSeq&gt; v = p-&gt;virus_tmp;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment">// Has a host? If so, we need to register the transmission</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">if</span> (v-&gt;get_host())</div>
@@ -117,7 +117,7 @@ $(function() {
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_person.html">Person&lt;TSeq&gt;</a> * p = a.person;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    std::shared_ptr&lt; Tool&lt;TSeq&gt; &gt; t = p-&gt;tool_tmp;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    ToolPtr&lt;TSeq&gt; t = p-&gt;tool_tmp;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// Update tool accounting</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    p-&gt;n_tools++;</div>
@@ -166,7 +166,7 @@ $(function() {
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_person.html">Person&lt;TSeq&gt;::add_tool</a>(</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    std::shared_ptr&lt; <a class="code" href="class_tool.html">Tool&lt;TSeq&gt;</a> &gt; tool,</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    ToolPtr&lt;TSeq&gt; tool,</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    epiworld_fast_int status_new,</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    epiworld_fast_int queue</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;) {</div>
@@ -182,7 +182,7 @@ $(function() {
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_person.html">Person&lt;TSeq&gt;::add_virus</a>(</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    std::shared_ptr&lt; <a class="code" href="class_virus.html">Virus&lt;TSeq&gt;</a> &gt; virus,</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    VirusPtr&lt;TSeq&gt; virus,</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    epiworld_fast_int status_new,</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    epiworld_fast_int queue</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;)</div>
@@ -199,28 +199,28 @@ $(function() {
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keyword">inline</span> epiworld_double <a class="code" href="class_person.html">Person&lt;TSeq&gt;::get_susceptibility_reduction</a>(</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <a class="code" href="class_virus.html">Virus&lt;TSeq&gt;</a> * v</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    VirusPtr&lt;TSeq&gt; v</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;) {</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">return</span> tools.get_susceptibility_reduction(v);</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="keyword">inline</span> epiworld_double <a class="code" href="class_person.html">Person&lt;TSeq&gt;::get_transmission_reduction</a>(</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <a class="code" href="class_virus.html">Virus&lt;TSeq&gt;</a> * v</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    VirusPtr&lt;TSeq&gt; v</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;) {</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">return</span> tools.get_transmission_reduction(v);</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;}</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="keyword">inline</span> epiworld_double <a class="code" href="class_person.html">Person&lt;TSeq&gt;::get_recovery_enhancer</a>(</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <a class="code" href="class_virus.html">Virus&lt;TSeq&gt;</a> * v</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    VirusPtr&lt;TSeq&gt; v</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;) {</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordflow">return</span> tools.get_recovery_enhancer(v);</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;}</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="keyword">inline</span> epiworld_double <a class="code" href="class_person.html">Person&lt;TSeq&gt;::get_death_reduction</a>(</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <a class="code" href="class_virus.html">Virus&lt;TSeq&gt;</a> * v</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    VirusPtr&lt;TSeq&gt; v</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;) {</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">return</span> tools.get_death_reduction(v);</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
@@ -248,12 +248,12 @@ $(function() {
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;}</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="keyword">inline</span> std::vector&lt; std::shared_ptr&lt;Virus&lt;TSeq&gt;&gt; &gt; &amp; <a class="code" href="class_person.html">Person&lt;TSeq&gt;::get_viruses</a>() {</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="keyword">inline</span> std::vector&lt; VirusPtr&lt;TSeq&gt; &gt; &amp; <a class="code" href="class_person.html">Person&lt;TSeq&gt;::get_viruses</a>() {</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordflow">return</span> viruses;</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;}</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="keyword">inline</span> std::shared_ptr&lt; Virus&lt;TSeq&gt; &gt; &amp; <a class="code" href="class_person.html">Person&lt;TSeq&gt;::get_virus</a>(<span class="keywordtype">int</span> i) {</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="keyword">inline</span> VirusPtr&lt;TSeq&gt; &amp; <a class="code" href="class_person.html">Person&lt;TSeq&gt;::get_virus</a>(<span class="keywordtype">int</span> i) {</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">return</span> viruses.at(i);</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;}</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
@@ -264,12 +264,12 @@ $(function() {
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;}</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="keyword">inline</span> std::vector&lt; std::shared_ptr&lt;Tool&lt;TSeq&gt;&gt; &gt; &amp; <a class="code" href="class_person.html">Person&lt;TSeq&gt;::get_tools</a>() {</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="keyword">inline</span> std::vector&lt; ToolPtr&lt;TSeq&gt; &gt; &amp; <a class="code" href="class_person.html">Person&lt;TSeq&gt;::get_tools</a>() {</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordflow">return</span> tools;</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;}</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="keyword">inline</span> std::shared_ptr&lt;Tool&lt;TSeq&gt;&gt; &amp; <a class="code" href="class_person.html">Person&lt;TSeq&gt;::get_tool</a>(<span class="keywordtype">int</span> i)</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="keyword">inline</span> ToolPtr&lt;TSeq&gt; &amp; <a class="code" href="class_person.html">Person&lt;TSeq&gt;::get_tool</a>(<span class="keywordtype">int</span> i)</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;{</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordflow">return</span> tools.at(i);</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;}</div>
@@ -397,7 +397,7 @@ $(function() {
 <div class="ttc" id="aclass_person_html_acf7e4e893a350de8de760e568f58cd53"><div class="ttname"><a href="class_person.html#acf7e4e893a350de8de760e568f58cd53">Person::get_id</a></div><div class="ttdeci">int get_id() const</div><div class="ttdoc">Id of the individual.</div></div>
 <div class="ttc" id="aclass_tool_html"><div class="ttname"><a href="class_tool.html">Tool</a></div><div class="ttdoc">Tools for defending the host against the virus.</div><div class="ttdef"><b>Definition:</b> tools-bones.hpp:26</div></div>
 <div class="ttc" id="aclass_virus_html"><div class="ttname"><a href="class_virus.html">Virus</a></div><div class="ttdoc">Virus.</div><div class="ttdef"><b>Definition:</b> virus-bones.hpp:29</div></div>
-<div class="ttc" id="astruct_action_html"><div class="ttname"><a href="struct_action.html">Action</a></div><div class="ttdef"><b>Definition:</b> config.hpp:71</div></div>
+<div class="ttc" id="astruct_action_html"><div class="ttname"><a href="struct_action.html">Action</a></div><div class="ttdef"><b>Definition:</b> config.hpp:76</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
