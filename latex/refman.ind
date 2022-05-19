@@ -21,15 +21,15 @@
   \item {Model$<$ TSeq $>$}, \hyperpage{10}
     \subitem {add\_global\_action}, \hyperpage{16}
     \subitem {reset}, \hyperpage{16}
-    \subitem {run\_multiple}, \hyperpage{16}
-    \subitem {write\_data}, \hyperpage{18}
+    \subitem {run\_multiple}, \hyperpage{17}
+    \subitem {write\_data}, \hyperpage{17}
 
   \indexspace
 
   \item {Person$<$ TSeq $>$}, \hyperpage{18}
-  \item {PersonTools$<$ TSeq $>$}, \hyperpage{20}
-  \item {PersonViruses$<$ TSeq $>$}, \hyperpage{21}
-  \item {Progress}, \hyperpage{22}
+  \item {PersonTools$<$ TSeq $>$}, \hyperpage{19}
+  \item {PersonViruses$<$ TSeq $>$}, \hyperpage{20}
+  \item {Progress}, \hyperpage{21}
 
   \indexspace
 
@@ -37,24 +37,23 @@
 
   \indexspace
 
-  \item {RandGraph}, \hyperpage{23}
+  \item {RandGraph}, \hyperpage{22}
   \item {record\_variant}
     \subitem {DataBase$<$ TSeq $>$}, \hyperpage{8}
   \item {reset}
     \subitem {Model$<$ TSeq $>$}, \hyperpage{16}
   \item {run\_multiple}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{16}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{17}
 
   \indexspace
 
   \item {Tool$<$ TSeq $>$}, \hyperpage{23}
-  \item {ToolPtr$<$ TSeq $>$}, \hyperpage{24}
 
   \indexspace
 
   \item {UserData}
     \subitem {UserData$<$ TSeq $>$}, \hyperpage{26}
-  \item {UserData$<$ TSeq $>$}, \hyperpage{25}
+  \item {UserData$<$ TSeq $>$}, \hyperpage{24}
     \subitem {UserData}, \hyperpage{26}
 
   \indexspace
@@ -65,6 +64,6 @@
   \indexspace
 
   \item {write\_data}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{18}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{17}
 
 \end{theindex}

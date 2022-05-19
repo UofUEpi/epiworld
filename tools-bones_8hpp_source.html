@@ -110,11 +110,11 @@ $(function() {
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// Setup parameters</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::vector&lt; epiworld_double * &gt; params;  </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    epiworld_fast_int status_init = -1;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    epiworld_fast_int status_end = -1;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    epiworld_fast_int status_init = -99;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    epiworld_fast_int status_post = -99;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    epiworld_fast_int queue_init = 1; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    epiworld_fast_int queue_post = -1; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    epiworld_fast_int queue_init = 0; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    epiworld_fast_int queue_post = 0; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_tool.html">Tool</a>(std::string name = <span class="stringliteral">&quot;unknown tool&quot;</span>);</div>
@@ -150,17 +150,21 @@ $(function() {
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    std::string get_name() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="class_person.html">Person&lt;TSeq&gt;</a> * get_person();</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> get_id() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> set_id(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> set_date(<span class="keywordtype">int</span> d);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> set_status(epiworld_fast_int init, epiworld_fast_int end);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> set_queue(epiworld_fast_int init, epiworld_fast_int end);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> set_person(<a class="code" href="class_person.html">Person&lt;TSeq&gt;</a> * p);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> get_id() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> set_id(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> set_date(<span class="keywordtype">int</span> d);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> set_status(epiworld_fast_int init, epiworld_fast_int post);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> set_queue(epiworld_fast_int init, epiworld_fast_int post);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> get_status(epiworld_fast_int * init, epiworld_fast_int * post);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_model.html#aaf33c877732b9bdc7cb77e063ad0c1a6">get_queue</a>(epiworld_fast_int * init, epiworld_fast_int * post);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;};</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_model_html"><div class="ttname"><a href="class_model.html">Model</a></div><div class="ttdoc">Core class of epiworld.</div><div class="ttdef"><b>Definition:</b> model-bones.hpp:40</div></div>
+<div class="ttc" id="aclass_model_html_aaf33c877732b9bdc7cb77e063ad0c1a6"><div class="ttname"><a href="class_model.html#aaf33c877732b9bdc7cb77e063ad0c1a6">Model::get_queue</a></div><div class="ttdeci">Queue&lt; TSeq &gt; &amp; get_queue()</div><div class="ttdoc">Retrieve the Queue object.</div></div>
 <div class="ttc" id="aclass_person_html"><div class="ttname"><a href="class_person.html">Person</a></div><div class="ttdoc">Person (agents)</div><div class="ttdef"><b>Definition:</b> person-bones.hpp:40</div></div>
 <div class="ttc" id="aclass_person_tools_html"><div class="ttname"><a href="class_person_tools.html">PersonTools</a></div><div class="ttdoc">List of tools available for the individual to.</div><div class="ttdef"><b>Definition:</b> persontools-bones.hpp:10</div></div>
 <div class="ttc" id="aclass_tool_html"><div class="ttname"><a href="class_tool.html">Tool</a></div><div class="ttdoc">Tools for defending the host against the virus.</div><div class="ttdef"><b>Definition:</b> tools-bones.hpp:26</div></div>

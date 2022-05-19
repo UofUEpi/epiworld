@@ -78,6 +78,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a8441c9f5e3aa0017874805445af1cc1f"><td class="memItemLeft" align="right" valign="top"><a id="a8441c9f5e3aa0017874805445af1cc1f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Person</b> (const <a class="el" href="class_person.html">Person</a>&lt; TSeq &gt; &amp;p)</td></tr>
+<tr class="separator:a8441c9f5e3aa0017874805445af1cc1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf7e4e893a350de8de760e568f58cd53"><td class="memItemLeft" align="right" valign="top"><a id="acf7e4e893a350de8de760e568f58cd53"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_person.html#acf7e4e893a350de8de760e568f58cd53">get_id</a> () const</td></tr>
 <tr class="memdesc:acf7e4e893a350de8de760e568f58cd53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Id of the individual. <br /></td></tr>
@@ -102,10 +105,10 @@ std::vector&lt; VirusPtr&lt; TSeq &gt; &gt; &amp;&#160;</td><td class="memItemRi
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_n_viruses</b> () const noexcept</td></tr>
 <tr class="separator:aa3280de77c7913751492503e62a6b79a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3519e0bf0594c9ede8777b192587e9fa"><td class="memItemLeft" align="right" valign="top"><a id="a3519e0bf0594c9ede8777b192587e9fa"></a>
-<a class="el" href="class_tool_ptr.html">ToolPtr</a>&lt; TSeq &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_tool</b> (int i)</td></tr>
+ToolPtr&lt; TSeq &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_tool</b> (int i)</td></tr>
 <tr class="separator:a3519e0bf0594c9ede8777b192587e9fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a283492267b3126d101c4b3256b321bdf"><td class="memItemLeft" align="right" valign="top"><a id="a283492267b3126d101c4b3256b321bdf"></a>
-std::vector&lt; <a class="el" href="class_tool_ptr.html">ToolPtr</a>&lt; TSeq &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_tools</b> ()</td></tr>
+std::vector&lt; ToolPtr&lt; TSeq &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_tools</b> ()</td></tr>
 <tr class="separator:a283492267b3126d101c4b3256b321bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9b8722f2729970f3a831e06130ea21a"><td class="memItemLeft" align="right" valign="top"><a id="aa9b8722f2729970f3a831e06130ea21a"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_n_tools</b> () const noexcept</td></tr>
@@ -156,11 +159,17 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_locked</b> () cons
 </dl>
 </div></td></tr>
 <tr class="memitem:aa43fce8ee0a786cd86e14f2630936d08"><td class="memItemLeft" align="right" valign="top"><a id="aa43fce8ee0a786cd86e14f2630936d08"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>add_tool</b> (<a class="el" href="class_tool_ptr.html">ToolPtr</a>&lt; TSeq &gt; tool, epiworld_fast_int status_new=-99, epiworld_fast_int queue=-99)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add_tool</b> (ToolPtr&lt; TSeq &gt; tool, epiworld_fast_int status_new=-99, epiworld_fast_int queue=-99)</td></tr>
 <tr class="separator:aa43fce8ee0a786cd86e14f2630936d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d3ce56504b249f0cca3c7065c9926ff"><td class="memItemLeft" align="right" valign="top"><a id="a8d3ce56504b249f0cca3c7065c9926ff"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add_tool</b> (<a class="el" href="class_tool.html">Tool</a>&lt; TSeq &gt; tool, epiworld_fast_int status_new=-99, epiworld_fast_int queue=-99)</td></tr>
+<tr class="separator:a8d3ce56504b249f0cca3c7065c9926ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace68715c2c680c624b614f9bfbed5cf0"><td class="memItemLeft" align="right" valign="top"><a id="ace68715c2c680c624b614f9bfbed5cf0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>add_virus</b> (VirusPtr&lt; TSeq &gt; virus, epiworld_fast_int status_new=-99, epiworld_fast_int queue=-99)</td></tr>
 <tr class="separator:ace68715c2c680c624b614f9bfbed5cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6022b76670bec92657e6d2c13acc9397"><td class="memItemLeft" align="right" valign="top"><a id="a6022b76670bec92657e6d2c13acc9397"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add_virus</b> (<a class="el" href="class_virus.html">Virus</a>&lt; TSeq &gt; virus, epiworld_fast_int status_new=-99, epiworld_fast_int queue=-99)</td></tr>
+<tr class="separator:a6022b76670bec92657e6d2c13acc9397"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04e380c298b7871e2b4c11f6e99137ad"><td class="memItemLeft" align="right" valign="top"><a id="a04e380c298b7871e2b4c11f6e99137ad"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>rm_tool</b> (epiworld_fast_uint tool_idx, epiworld_fast_int status_new=-99, epiworld_fast_int queue=-99)</td></tr>
 <tr class="separator:a04e380c298b7871e2b4c11f6e99137ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,9 +218,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>default_add_tool</b> 
 <tr class="memitem:a16cc390e86f20526d2e9c2fde4bffb2e"><td class="memItemLeft" align="right" valign="top"><a id="a16cc390e86f20526d2e9c2fde4bffb2e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>default_rm_virus</b> (<a class="el" href="struct_action.html">Action</a>&lt; TSeq &gt; &amp;a, <a class="el" href="class_model.html">Model</a>&lt; TSeq &gt; *m)</td></tr>
 <tr class="separator:a16cc390e86f20526d2e9c2fde4bffb2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7c208e6749445f5231ea02fc0226f46"><td class="memItemLeft" align="right" valign="top"><a id="aa7c208e6749445f5231ea02fc0226f46"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>default_rm_person</b> (<a class="el" href="struct_action.html">Action</a>&lt; TSeq &gt; &amp;a, <a class="el" href="class_model.html">Model</a>&lt; TSeq &gt; *m)</td></tr>
-<tr class="separator:aa7c208e6749445f5231ea02fc0226f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d273869be3324c1e3de0ff81bf8c112"><td class="memItemLeft" align="right" valign="top"><a id="a9d273869be3324c1e3de0ff81bf8c112"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>default_rm_tool</b> (<a class="el" href="struct_action.html">Action</a>&lt; TSeq &gt; &amp;a, <a class="el" href="class_model.html">Model</a>&lt; TSeq &gt; *m)</td></tr>
+<tr class="separator:a9d273869be3324c1e3de0ff81bf8c112"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename TSeq = bool&gt;<br />
