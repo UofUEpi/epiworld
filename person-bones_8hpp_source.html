@@ -127,12 +127,12 @@ $(function() {
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    std::vector&lt; VirusPtr&lt;TSeq&gt; &gt; viruses;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    VirusPtr&lt;TSeq&gt; virus_tmp;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    epiworld_fast_int virus_to_remove_idx;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    epiworld_fast_uint n_viruses;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    epiworld_fast_uint n_viruses = 0u;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    std::vector&lt; ToolPtr&lt;TSeq&gt; &gt; tools;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    ToolPtr&lt;TSeq&gt; tool_tmp;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    epiworld_fast_int tool_to_remove_idx;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    epiworld_fast_uint n_tools;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    epiworld_fast_uint n_tools = 0u;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    ActionFun&lt;TSeq&gt; add_virus_ = default_add_virus&lt;TSeq&gt;;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    ActionFun&lt;TSeq&gt; add_tool_ = default_add_tool&lt;TSeq&gt;;</div>
