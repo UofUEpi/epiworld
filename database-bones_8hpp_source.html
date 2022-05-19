@@ -82,8 +82,8 @@ $(function() {
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span><a class="code" href="class_user_data.html">UserData</a>;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_virus_ptr.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_virus_ptr.html">VirusPtr</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// template&lt;typename TSeq&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// class VirusPtr;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_tool_ptr.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tool_ptr.html">ToolPtr</a>;</div>
@@ -190,7 +190,7 @@ $(function() {
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <a class="code" href="class_data_base.html">DataBase</a>(<span class="keywordtype">int</span> freq = 1) : sampling_freq(freq) {};</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_data_base.html#a72493d18795fa53f627bb665850cd79b">record_variant</a>(<a class="code" href="class_virus_ptr.html">VirusPtr&lt;TSeq&gt;</a> v); </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_data_base.html#a72493d18795fa53f627bb665850cd79b">record_variant</a>(VirusPtr&lt;TSeq&gt; v); </div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordtype">void</span> record_tool(<a class="code" href="class_tool_ptr.html">ToolPtr&lt;TSeq&gt;</a> t); </div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">void</span> set_seq_hasher(std::function&lt;std::vector&lt;int&gt;(TSeq)&gt; fun);</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordtype">void</span> set_model(<a class="code" href="class_model.html">Model&lt;TSeq&gt;</a> &amp; m);</div>
@@ -256,14 +256,13 @@ $(function() {
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_data_base_html"><div class="ttname"><a href="class_data_base.html">DataBase</a></div><div class="ttdoc">Statistical data about the process.</div><div class="ttdef"><b>Definition:</b> database-bones.hpp:37</div></div>
 <div class="ttc" id="aclass_data_base_html_a72493d18795fa53f627bb665850cd79b"><div class="ttname"><a href="class_data_base.html#a72493d18795fa53f627bb665850cd79b">DataBase::record_variant</a></div><div class="ttdeci">void record_variant(VirusPtr&lt; TSeq &gt; v)</div><div class="ttdoc">Registering a new variant.</div><div class="ttdef"><b>Definition:</b> database-meat.hpp:93</div></div>
-<div class="ttc" id="aclass_model_html"><div class="ttname"><a href="class_model.html">Model</a></div><div class="ttdoc">Core class of epiworld.</div><div class="ttdef"><b>Definition:</b> model-bones.hpp:37</div></div>
+<div class="ttc" id="aclass_model_html"><div class="ttname"><a href="class_model.html">Model</a></div><div class="ttdoc">Core class of epiworld.</div><div class="ttdef"><b>Definition:</b> model-bones.hpp:40</div></div>
 <div class="ttc" id="aclass_model_html_a4664c30171aa08485430cc8c1cb4e23f"><div class="ttname"><a href="class_model.html#a4664c30171aa08485430cc8c1cb4e23f">Model::write_data</a></div><div class="ttdeci">void write_data(std::string fn_variant_info, std::string fn_variant_hist, std::string fn_tool_info, std::string fn_tool_hist, std::string fn_total_hist, std::string fn_transmission, std::string fn_transition) const</div><div class="ttdoc">Wrapper of DataBase::write_data</div></div>
 <div class="ttc" id="aclass_model_html_a9591eb76c7cf1ed7e1510342ff602d37"><div class="ttname"><a href="class_model.html#a9591eb76c7cf1ed7e1510342ff602d37">Model::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdoc">Reset the model.</div></div>
 <div class="ttc" id="aclass_model_html_adc8d49825ecf57ac045a4c93e4d63924"><div class="ttname"><a href="class_model.html#adc8d49825ecf57ac045a4c93e4d63924">Model::set_user_data</a></div><div class="ttdeci">void set_user_data(std::vector&lt; std::string &gt; names)</div><div class="ttdoc">[@</div></div>
 <div class="ttc" id="aclass_tool_ptr_html"><div class="ttname"><a href="class_tool_ptr.html">ToolPtr</a></div><div class="ttdef"><b>Definition:</b> database-bones.hpp:17</div></div>
 <div class="ttc" id="aclass_user_data_html"><div class="ttname"><a href="class_user_data.html">UserData</a></div><div class="ttdoc">Personalized data by the user.</div><div class="ttdef"><b>Definition:</b> userdata-bones.hpp:17</div></div>
 <div class="ttc" id="aclass_virus_html"><div class="ttname"><a href="class_virus.html">Virus</a></div><div class="ttdoc">Virus.</div><div class="ttdef"><b>Definition:</b> virus-bones.hpp:29</div></div>
-<div class="ttc" id="aclass_virus_ptr_html"><div class="ttname"><a href="class_virus_ptr.html">VirusPtr</a></div><div class="ttdef"><b>Definition:</b> database-bones.hpp:14</div></div>
 <div class="ttc" id="astruct_action_html"><div class="ttname"><a href="struct_action.html">Action</a></div><div class="ttdef"><b>Definition:</b> config.hpp:76</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

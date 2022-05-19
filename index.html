@@ -113,7 +113,7 @@ Hello world</h1>
 <div class="line">    model.print();</div>
 <div class="line">  </div>
 <div class="line">}</div>
-<div class="ttc" id="aclass_model_html"><div class="ttname"><a href="class_model.html">Model</a></div><div class="ttdoc">Core class of epiworld.</div><div class="ttdef"><b>Definition:</b> model-bones.hpp:37</div></div>
+<div class="ttc" id="aclass_model_html"><div class="ttname"><a href="class_model.html">Model</a></div><div class="ttdoc">Core class of epiworld.</div><div class="ttdef"><b>Definition:</b> model-bones.hpp:40</div></div>
 <div class="ttc" id="aclass_model_html_a825c7fb2498c7693cbf1bfcd0a416ef4"><div class="ttname"><a href="class_model.html#a825c7fb2498c7693cbf1bfcd0a416ef4">Model::run</a></div><div class="ttdeci">void run()</div><div class="ttdoc">Runs the simulation (after initialization)</div></div>
 <div class="ttc" id="aclass_tool_html"><div class="ttname"><a href="class_tool.html">Tool</a></div><div class="ttdoc">Tools for defending the host against the virus.</div><div class="ttdef"><b>Definition:</b> tools-bones.hpp:26</div></div>
 <div class="ttc" id="aclass_virus_html"><div class="ttname"><a href="class_virus.html">Virus</a></div><div class="ttdoc">Virus.</div><div class="ttdef"><b>Definition:</b> virus-bones.hpp:29</div></div>
@@ -153,23 +153,15 @@ Tools</h2>
 Contagion</h2>
 <p>Susceptible individuals can acquire a virus from any of their infected connections. The probability that susceptible individual <code>i</code> gets the virus <code>v</code> from individual <code>j</code> depends on how three things:</p>
 <ol type="1">
-<li>The transmissibility of the virus, Pv in [0,1],</li>
-<li>The contagion reduction factor of <code>i</code>, Cr in [0,1], and</li>
-<li>The host's transmission reduction factor, Tr [0,1].</li>
+<li>The transmissibility of the virus, <img src="https://render.githubusercontent.com/render/math?math=P_v%20%5Cin%20%5B0%2C1%5D" alt="" style="transform: translateY(0.1em); background: white;" class="inline"/>,</li>
+<li>The contagion reduction factor of <code>i</code>, <img src="https://render.githubusercontent.com/render/math?math=C_r%20%5Cin%20%5B0%2C1%5D" alt="" style="transform: translateY(0.1em); background: white;" class="inline"/>, and</li>
+<li>The host's transmission reduction factor, <img src="https://render.githubusercontent.com/render/math?math=T_r%20%5Cin%20%5B0%2C1%5D" alt="" style="transform: translateY(0.1em); background: white;" class="inline"/>.</li>
 </ol>
-<p>The last two are computed from <code>i</code> and <code>j</code>'s tools. Ultimately, the probability of <code>i</code> getting virus <code>v</code> from <code>j</code> equals:</p>
-<div class="fragment"><div class="line">P(Virus v) = Pv * (1 - Cr) *(1 - Tr) </div>
-</div><!-- fragment --><p>Nonetheless, the default behavior of the simulation model is to assume that individuals can acquire only one disease at a time, if any. This way, the actual probability is:</p>
-<div class="fragment"><div class="line">P(Virus v| at most one virus) = Prcond(i,v,j)</div>
-</div><!-- fragment --><p>The latter is calculated using Bayes' rule</p>
-<div class="fragment"><div class="line">Prcond(i,v,j) = P(at most one virus|Virus v) * P(Variant v) / P(at most one virus)</div>
-<div class="line">              = P(Only Virus v)/P(Virus v) * P(Virus v) / P(at most one virus)</div>
-<div class="line">              = P(Only Virus v)/P(at most one virus)</div>
-</div><!-- fragment --><p>Where</p>
-<div class="fragment"><div class="line">P(Vnly Virus V)      = P(Virus V) * Prod(m!=V) (1 - P(Virus m))</div>
-<div class="line">P(at most one virus) = P(None) + Sum(k in viruses) P(Virus k) * Prod(m != k) (1 - P(Virus m))</div>
-<div class="line">P(None)              = Prod(k in Viruses) (1 - P(Virus k))</div>
-</div><!-- fragment --><p>This way, viruses with higher transmissibility will be more likely to be acquired when competing with other variants. </p>
+<p>The last two are computed from <img src="https://render.githubusercontent.com/render/math?math=i" alt="" style="transform: translateY(0.1em); background: white;" class="inline"/> and <img src="https://render.githubusercontent.com/render/math?math=j" alt="" style="transform: translateY(0.1em); background: white;" class="inline"/>'s tools. Ultimately, the probability of <img src="https://render.githubusercontent.com/render/math?math=i" alt="" style="transform: translateY(0.1em); background: white;" class="inline"/> getting virus $v$ from <img src="https://render.githubusercontent.com/render/math?math=j" alt="" style="transform: translateY(0.1em); background: white;" class="inline"/> equals:</p>
+<div align="center"><img src="https://render.githubusercontent.com/render/math?math=P(Virus%20v)%20%3D%20P_v%20*%20(1%20-%20C_r)%20*(1%20-%20T_r)%20" alt="" style="background: white;" class="inline"/></div><p>Nonetheless, the default behavior of the simulation model is to assume that individuals can acquire only one disease at a time, if any. This way, the actual probability is:</p>
+<div align="center"><img src="https://render.githubusercontent.com/render/math?math=P(Virus%20v%7C%5Cmbox%7Bat%20most%20one%20virus%7D)%20%3D%20P_%7Bivj%7D" alt="" style="background: white;" class="inline"/></div><p>The latter is calculated using Bayes' rule</p>
+<div align="center"><img src="https://render.githubusercontent.com/render/math?math=%5Cbegin%7Balign*%7D%0AP_%7Bivj%7D%20%26%20%3D%20P(at%20most%20one%20virus%7CVirus%20v)%20*%20P_v%20%2F%20P(at%20most%20one%20virus)%20%5C%5C%0A%20%20%20%20%20%20%20%20%26%20%3D%20P(Only%20Virus%20v)%2FP_v%20*%20P(Virus%20v)%20%2F%20P(at%20most%20one%20virus)%20%5C%5C%0A%20%20%20%20%20%20%20%20%26%20%3D%20P(Only%20Virus%20v)%2FP(at%20most%20one%20virus)%0A%5Cend%7Balign*%7D" alt="" style="background: white;" class="inline"/></div><p>Where</p>
+<div align="center"><img src="https://render.githubusercontent.com/render/math?math=%5Cbegin%7Balign*%7D%0AP(Only%20Virus%20V)%20%20%20%20%20%20%26%20%3D%20P_v%20*%20%5Cprod_%7Bm!%3DV%7D%20(1%20-%20P_m)%20%5C%5C%0AP(at%20most%20one%20virus)%20%26%20%3D%20P(None)%20%2B%20%5Csum_%7Bk%20%5Cin%20viruses%7D%20P_k%20*%20%5Cprod_%7Bm%20!%3D%20k%7D%20(1%20-%20P_m)%20%5C%5C%0AP(None)%20%20%20%20%20%20%20%20%20%20%20%20%20%20%26%20%3D%20%5Cprod_%7Bk%20%5Cin%20Viruses%7D%20(1%20-%20P_k)%0A%5Cend%7Balign*%7D" alt="" style="background: white;" class="inline"/></div><p>This way, viruses with higher transmissibility will be more likely to be acquired when competing with other variants. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->

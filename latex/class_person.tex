@@ -25,10 +25,10 @@ std\+::mt19937 $\ast$ {\bfseries get\+\_\+rand\+\_\+endgine} ()
 \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$ {\bfseries get\+\_\+model} ()
 \item 
 \mbox{\Hypertarget{class_person_a995c637eb77e9bf7ca2306512b3b4cd3}\label{class_person_a995c637eb77e9bf7ca2306512b3b4cd3}} 
-\mbox{\hyperlink{class_virus_ptr}{Virus\+Ptr}}$<$ TSeq $>$ \& {\bfseries get\+\_\+virus} (int i)
+Virus\+Ptr$<$ TSeq $>$ \& {\bfseries get\+\_\+virus} (int i)
 \item 
 \mbox{\Hypertarget{class_person_a6a4211b3323b11b7cc0bcc21c8657b55}\label{class_person_a6a4211b3323b11b7cc0bcc21c8657b55}} 
-std\+::vector$<$ \mbox{\hyperlink{class_virus_ptr}{Virus\+Ptr}}$<$ TSeq $>$ $>$ \& {\bfseries get\+\_\+viruses} ()
+std\+::vector$<$ Virus\+Ptr$<$ TSeq $>$ $>$ \& {\bfseries get\+\_\+viruses} ()
 \item 
 \mbox{\Hypertarget{class_person_aa3280de77c7913751492503e62a6b79a}\label{class_person_aa3280de77c7913751492503e62a6b79a}} 
 size\+\_\+t {\bfseries get\+\_\+n\+\_\+viruses} () const noexcept
@@ -95,7 +95,7 @@ bool {\bfseries is\+\_\+locked} () const noexcept
 void {\bfseries add\+\_\+tool} (\mbox{\hyperlink{class_tool_ptr}{Tool\+Ptr}}$<$ TSeq $>$ tool, epiworld\+\_\+fast\+\_\+int status\+\_\+new=-\/99, epiworld\+\_\+fast\+\_\+int queue=-\/99)
 \item 
 \mbox{\Hypertarget{class_person_ace68715c2c680c624b614f9bfbed5cf0}\label{class_person_ace68715c2c680c624b614f9bfbed5cf0}} 
-void {\bfseries add\+\_\+virus} (\mbox{\hyperlink{class_virus_ptr}{Virus\+Ptr}}$<$ TSeq $>$ virus, epiworld\+\_\+fast\+\_\+int status\+\_\+new=-\/99, epiworld\+\_\+fast\+\_\+int queue=-\/99)
+void {\bfseries add\+\_\+virus} (Virus\+Ptr$<$ TSeq $>$ virus, epiworld\+\_\+fast\+\_\+int status\+\_\+new=-\/99, epiworld\+\_\+fast\+\_\+int queue=-\/99)
 \item 
 \mbox{\Hypertarget{class_person_a04e380c298b7871e2b4c11f6e99137ad}\label{class_person_a04e380c298b7871e2b4c11f6e99137ad}} 
 void {\bfseries rm\+\_\+tool} (epiworld\+\_\+fast\+\_\+uint tool\+\_\+idx, epiworld\+\_\+fast\+\_\+int status\+\_\+new=-\/99, epiworld\+\_\+fast\+\_\+int queue=-\/99)
@@ -116,16 +116,16 @@ epiworld\+\_\+double
 }\begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{class_person_a75f4a3c9862dce2b86d7b4af2bdf97b0}\label{class_person_a75f4a3c9862dce2b86d7b4af2bdf97b0}} 
-epiworld\+\_\+double {\bfseries get\+\_\+susceptibility\+\_\+reduction} (\mbox{\hyperlink{class_virus_ptr}{Virus\+Ptr}}$<$ TSeq $>$ v)
+epiworld\+\_\+double {\bfseries get\+\_\+susceptibility\+\_\+reduction} (Virus\+Ptr$<$ TSeq $>$ v)
 \item 
 \mbox{\Hypertarget{class_person_adc97c52b5b5da2e7097ef3f05c11f74c}\label{class_person_adc97c52b5b5da2e7097ef3f05c11f74c}} 
-epiworld\+\_\+double {\bfseries get\+\_\+transmission\+\_\+reduction} (\mbox{\hyperlink{class_virus_ptr}{Virus\+Ptr}}$<$ TSeq $>$ v)
+epiworld\+\_\+double {\bfseries get\+\_\+transmission\+\_\+reduction} (Virus\+Ptr$<$ TSeq $>$ v)
 \item 
 \mbox{\Hypertarget{class_person_a0c42f286cf7539cd0d96cc08165dbfae}\label{class_person_a0c42f286cf7539cd0d96cc08165dbfae}} 
-epiworld\+\_\+double {\bfseries get\+\_\+recovery\+\_\+enhancer} (\mbox{\hyperlink{class_virus_ptr}{Virus\+Ptr}}$<$ TSeq $>$ v)
+epiworld\+\_\+double {\bfseries get\+\_\+recovery\+\_\+enhancer} (Virus\+Ptr$<$ TSeq $>$ v)
 \item 
 \mbox{\Hypertarget{class_person_a203235443e70de99ec71f8688cc05e08}\label{class_person_a203235443e70de99ec71f8688cc05e08}} 
-epiworld\+\_\+double {\bfseries get\+\_\+death\+\_\+reduction} (\mbox{\hyperlink{class_virus_ptr}{Virus\+Ptr}}$<$ TSeq $>$ v)
+epiworld\+\_\+double {\bfseries get\+\_\+death\+\_\+reduction} (Virus\+Ptr$<$ TSeq $>$ v)
 \end{DoxyCompactItemize}
 \end{Indent}
 \doxysubsection*{Friends}
@@ -149,8 +149,8 @@ void {\bfseries default\+\_\+add\+\_\+tool} (\mbox{\hyperlink{struct_action}{Act
 \mbox{\Hypertarget{class_person_a16cc390e86f20526d2e9c2fde4bffb2e}\label{class_person_a16cc390e86f20526d2e9c2fde4bffb2e}} 
 void {\bfseries default\+\_\+rm\+\_\+virus} (\mbox{\hyperlink{struct_action}{Action}}$<$ TSeq $>$ \&a, \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$m)
 \item 
-\mbox{\Hypertarget{class_person_a9d273869be3324c1e3de0ff81bf8c112}\label{class_person_a9d273869be3324c1e3de0ff81bf8c112}} 
-void {\bfseries default\+\_\+rm\+\_\+tool} (\mbox{\hyperlink{struct_action}{Action}}$<$ TSeq $>$ \&a, \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$m)
+\mbox{\Hypertarget{class_person_aa7c208e6749445f5231ea02fc0226f46}\label{class_person_aa7c208e6749445f5231ea02fc0226f46}} 
+void {\bfseries default\+\_\+rm\+\_\+person} (\mbox{\hyperlink{struct_action}{Action}}$<$ TSeq $>$ \&a, \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$m)
 \end{DoxyCompactItemize}
 
 

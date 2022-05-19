@@ -121,24 +121,26 @@ void {\bfseries set\+\_\+prob\+\_\+death} (epiworld\+\_\+double prob)
 
 
 \begin{DoxyParams}{Parameters}
-{\em init} & \\
+{\em init} & After the virus/tool is added to the host. \\
 \hline
-{\em end} & \\
+{\em end} & After the virus/tool is removed. \\
+\hline
+{\em removed} & After the host (\mbox{\hyperlink{class_person}{Person}}) is removed. \\
 \hline
 \end{DoxyParams}
 }\begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_virus_a09b431525ef3874da7f6c1a97591e6ca}\label{class_virus_a09b431525ef3874da7f6c1a97591e6ca}} 
-void {\bfseries set\+\_\+status} (epiworld\+\_\+fast\+\_\+int init, epiworld\+\_\+fast\+\_\+int end)
+\mbox{\Hypertarget{class_virus_a93deeed7716c018acaeb8856880ec0a3}\label{class_virus_a93deeed7716c018acaeb8856880ec0a3}} 
+void {\bfseries set\+\_\+status} (epiworld\+\_\+fast\+\_\+int init, epiworld\+\_\+fast\+\_\+int end, epiworld\+\_\+fast\+\_\+int removed)
 \item 
-\mbox{\Hypertarget{class_virus_a473463be189349f25dd4d6feadb2fcb3}\label{class_virus_a473463be189349f25dd4d6feadb2fcb3}} 
-void {\bfseries set\+\_\+queue} (epiworld\+\_\+fast\+\_\+int init, epiworld\+\_\+fast\+\_\+int end)
+\mbox{\Hypertarget{class_virus_ab325bfba17d2a460739193c67f7a8b6f}\label{class_virus_ab325bfba17d2a460739193c67f7a8b6f}} 
+void {\bfseries set\+\_\+queue} (epiworld\+\_\+fast\+\_\+int init, epiworld\+\_\+fast\+\_\+int end, epiworld\+\_\+fast\+\_\+int removed)
 \item 
-\mbox{\Hypertarget{class_virus_a65cf5d63e364fa526d5ab01487b3133e}\label{class_virus_a65cf5d63e364fa526d5ab01487b3133e}} 
-void {\bfseries get\+\_\+status} (epiworld\+\_\+fast\+\_\+int $\ast$init, epiworld\+\_\+fast\+\_\+int $\ast$end)
+\mbox{\Hypertarget{class_virus_a1b3f967619437ddc5695e7ace63f7f91}\label{class_virus_a1b3f967619437ddc5695e7ace63f7f91}} 
+void {\bfseries get\+\_\+status} (epiworld\+\_\+fast\+\_\+int $\ast$init, epiworld\+\_\+fast\+\_\+int $\ast$end, epiworld\+\_\+fast\+\_\+int $\ast$removed)
 \item 
-\mbox{\Hypertarget{class_virus_ae96c7b9ba2e355573b26a46c3240b9ae}\label{class_virus_ae96c7b9ba2e355573b26a46c3240b9ae}} 
-void {\bfseries get\+\_\+queue} (epiworld\+\_\+fast\+\_\+int $\ast$init, epiworld\+\_\+fast\+\_\+int $\ast$end)
+\mbox{\Hypertarget{class_virus_abb6e1b368d3b341c2e43fa2217c3f9dd}\label{class_virus_abb6e1b368d3b341c2e43fa2217c3f9dd}} 
+void {\bfseries get\+\_\+queue} (epiworld\+\_\+fast\+\_\+int $\ast$init, epiworld\+\_\+fast\+\_\+int $\ast$end, epiworld\+\_\+fast\+\_\+int $\ast$removed)
 \end{DoxyCompactItemize}
 \end{Indent}
 \doxysubsection*{Friends}

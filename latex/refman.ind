@@ -61,7 +61,6 @@
 
   \item {vecHasher$<$ T $>$}, \hyperpage{26}
   \item {Virus$<$ TSeq $>$}, \hyperpage{27}
-  \item {VirusPtr$<$ TSeq $>$}, \hyperpage{29}
 
   \indexspace
 

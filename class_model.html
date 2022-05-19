@@ -88,7 +88,7 @@ epiworld_double &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>oper
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const</td></tr>
 <tr class="separator:a40f2aa6db21fb71bc9b591aadd26ce3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cae705e8ef38864cd59a396f1788ade"><td class="memItemLeft" align="right" valign="top"><a id="a1cae705e8ef38864cd59a396f1788ade"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>record_variant</b> (<a class="el" href="class_virus_ptr.html">VirusPtr</a>&lt; TSeq &gt; v)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>record_variant</b> (VirusPtr&lt; TSeq &gt; v)</td></tr>
 <tr class="separator:a1cae705e8ef38864cd59a396f1788ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5eac1533dd336124785f9ba2c79a168c"><td class="memItemLeft" align="right" valign="top"><a id="a5eac1533dd336124785f9ba2c79a168c"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>get_nvariants</b> () const</td></tr>
@@ -317,9 +317,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>write_edgelist</b> (s
 <dd>
 <code>get_status_*</code> returns a vector of pairs with the statuses and their labels. </dd></dl>
 </div></td></tr>
-<tr class="memitem:a605b9a62c08b881848da69415ea9ffeb"><td class="memItemLeft" align="right" valign="top"><a id="a605b9a62c08b881848da69415ea9ffeb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>add_status</b> (std::string lab, UpdateFun&lt; TSeq &gt; fun)</td></tr>
-<tr class="separator:a605b9a62c08b881848da69415ea9ffeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d889d940256492431efc02e868f6b9f"><td class="memItemLeft" align="right" valign="top"><a id="a0d889d940256492431efc02e868f6b9f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add_status</b> (std::string lab, UpdateFun&lt; TSeq &gt; fun=nullptr)</td></tr>
+<tr class="separator:a0d889d940256492431efc02e868f6b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6ff20e949dfc95ce348fc1265bb1f0b"><td class="memItemLeft" align="right" valign="top"><a id="ac6ff20e949dfc95ce348fc1265bb1f0b"></a>
 const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_status</b> () const</td></tr>
 <tr class="separator:ac6ff20e949dfc95ce348fc1265bb1f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -378,18 +378,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>epiworld_double </dd></dl>
 </div></td></tr>
-<tr class="memitem:a2bf0479260dd835bd7348664553c94cf"><td class="memItemLeft" align="right" valign="top"><a id="a2bf0479260dd835bd7348664553c94cf"></a>
-epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>get_susceptibility_reduction</b> (<a class="el" href="class_virus_ptr.html">VirusPtr</a>&lt; TSeq &gt; v)</td></tr>
-<tr class="separator:a2bf0479260dd835bd7348664553c94cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56cc682be061ae2c194595c1c466c56d"><td class="memItemLeft" align="right" valign="top"><a id="a56cc682be061ae2c194595c1c466c56d"></a>
-epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>get_transmission_reduction</b> (<a class="el" href="class_virus_ptr.html">VirusPtr</a>&lt; TSeq &gt; v)</td></tr>
-<tr class="separator:a56cc682be061ae2c194595c1c466c56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abedb663a0821b06b16d82fde1a9950e4"><td class="memItemLeft" align="right" valign="top"><a id="abedb663a0821b06b16d82fde1a9950e4"></a>
-epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>get_recovery_enhancer</b> (<a class="el" href="class_virus_ptr.html">VirusPtr</a>&lt; TSeq &gt; v)</td></tr>
-<tr class="separator:abedb663a0821b06b16d82fde1a9950e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73ad282a3544196da19776b4fc8dabcb"><td class="memItemLeft" align="right" valign="top"><a id="a73ad282a3544196da19776b4fc8dabcb"></a>
-epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>get_death_reduction</b> (<a class="el" href="class_virus_ptr.html">VirusPtr</a>&lt; TSeq &gt; v)</td></tr>
-<tr class="separator:a73ad282a3544196da19776b4fc8dabcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5700406b7170de6cc67d232bc3dfb3b5"><td class="memItemLeft" align="right" valign="top"><a id="a5700406b7170de6cc67d232bc3dfb3b5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_susceptibility_reduction_mixer</b> (MixerFun&lt; TSeq &gt; fun)</td></tr>
 <tr class="separator:a5700406b7170de6cc67d232bc3dfb3b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -421,9 +409,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Queue&lt; TSeq &gt;<
 <tr class="memitem:a12df19c247eec2a54843fa969b01ca3e"><td class="memItemLeft" align="right" valign="top"><a id="a12df19c247eec2a54843fa969b01ca3e"></a>
 std::vector&lt; epiworld_double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>array_double_tmp</b></td></tr>
 <tr class="separator:a12df19c247eec2a54843fa969b01ca3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a565f4700735bd6b57135d4a7f26b19ce"><td class="memItemLeft" align="right" valign="top"><a id="a565f4700735bd6b57135d4a7f26b19ce"></a>
-std::vector&lt; <a class="el" href="class_virus_ptr.html">VirusPtr</a>&lt; TSeq &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>array_virus_tmp</b></td></tr>
-<tr class="separator:a565f4700735bd6b57135d4a7f26b19ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58aaa942a8364b61a9b6beeeda7059aa"><td class="memItemLeft" align="right" valign="top"><a id="a58aaa942a8364b61a9b6beeeda7059aa"></a>
+std::vector&lt; VirusPtr&lt; TSeq &gt; * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>array_virus_tmp</b></td></tr>
+<tr class="separator:a58aaa942a8364b61a9b6beeeda7059aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e9cf2b4070a2eacb9f5cf3aadeafbe6"><td class="memItemLeft" align="right" valign="top"><a id="a3e9cf2b4070a2eacb9f5cf3aadeafbe6"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Model</b> ()</td></tr>
 <tr class="separator:a3e9cf2b4070a2eacb9f5cf3aadeafbe6"><td class="memSeparator" colspan="2">&#160;</td></tr>

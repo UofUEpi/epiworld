@@ -115,25 +115,25 @@ $(function() {
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">class </span><a class="code" href="class_tool.html">Tool</a>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">using</span> <a class="code" href="class_virus_ptr.html">VirusPtr</a> = std::shared_ptr&lt; Virus&lt; TSeq &gt; &gt;;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">using</span> VirusPtr = std::shared_ptr&lt; Virus&lt; TSeq &gt; &gt;;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">using</span> <a class="code" href="class_tool_ptr.html">ToolPtr</a> = std::shared_ptr&lt; Tool&lt; TSeq &gt; &gt;;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">using</span> ToolFun = std::function&lt;epiworld_double(<a class="code" href="class_tool_ptr.html">ToolPtr&lt;TSeq&gt;</a>,<a class="code" href="class_person.html">Person&lt;TSeq&gt;</a>*,<a class="code" href="class_virus_ptr.html">VirusPtr&lt;TSeq&gt;</a>,<a class="code" href="class_model.html">Model&lt;TSeq&gt;</a>*)&gt;;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">using</span> ToolFun = std::function&lt;epiworld_double(<a class="code" href="class_tool_ptr.html">ToolPtr&lt;TSeq&gt;</a>,<a class="code" href="class_person.html">Person&lt;TSeq&gt;</a>*,VirusPtr&lt;TSeq&gt;,<a class="code" href="class_model.html">Model&lt;TSeq&gt;</a>*)&gt;;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">using</span> MixerFun = std::function&lt;epiworld_double(<a class="code" href="class_person.html">Person&lt;TSeq&gt;</a>*,<a class="code" href="class_virus_ptr.html">VirusPtr&lt;TSeq&gt;</a>,<a class="code" href="class_model.html">Model&lt;TSeq&gt;</a>*)&gt;;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">using</span> MixerFun = std::function&lt;epiworld_double(<a class="code" href="class_person.html">Person&lt;TSeq&gt;</a>*,VirusPtr&lt;TSeq&gt;,<a class="code" href="class_model.html">Model&lt;TSeq&gt;</a>*)&gt;;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">using</span> MutFun = std::function&lt;bool(<a class="code" href="class_person.html">Person&lt;TSeq&gt;</a>*,<a class="code" href="class_virus_ptr.html">VirusPtr&lt;TSeq&gt;</a>,<a class="code" href="class_model.html">Model&lt;TSeq&gt;</a>*)&gt;;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">using</span> MutFun = std::function&lt;bool(<a class="code" href="class_person.html">Person&lt;TSeq&gt;</a>*,VirusPtr&lt;TSeq&gt;,<a class="code" href="class_model.html">Model&lt;TSeq&gt;</a>*)&gt;;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">using</span> PostRecoveryFun = std::function&lt;void(<a class="code" href="class_person.html">Person&lt;TSeq&gt;</a>*,<a class="code" href="class_virus_ptr.html">VirusPtr&lt;TSeq&gt;</a>,<a class="code" href="class_model.html">Model&lt;TSeq&gt;</a>*)&gt;;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">using</span> PostRecoveryFun = std::function&lt;void(<a class="code" href="class_person.html">Person&lt;TSeq&gt;</a>*,VirusPtr&lt;TSeq&gt;,<a class="code" href="class_model.html">Model&lt;TSeq&gt;</a>*)&gt;;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">using</span> VirusFun = std::function&lt;epiworld_double(<a class="code" href="class_person.html">Person&lt;TSeq&gt;</a>*,<a class="code" href="class_virus_ptr.html">VirusPtr&lt;TSeq&gt;</a>,<a class="code" href="class_model.html">Model&lt;TSeq&gt;</a>*)&gt;;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">using</span> VirusFun = std::function&lt;epiworld_double(<a class="code" href="class_person.html">Person&lt;TSeq&gt;</a>*,VirusPtr&lt;TSeq&gt;,<a class="code" href="class_model.html">Model&lt;TSeq&gt;</a>*)&gt;;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">using</span> UpdateFun = std::function&lt;void(<a class="code" href="class_person.html">Person&lt;TSeq&gt;</a>*,<a class="code" href="class_model.html">Model&lt;TSeq&gt;</a>*)&gt;;</div>
@@ -229,13 +229,12 @@ $(function() {
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclass_model_html"><div class="ttname"><a href="class_model.html">Model</a></div><div class="ttdoc">Core class of epiworld.</div><div class="ttdef"><b>Definition:</b> model-bones.hpp:37</div></div>
-<div class="ttc" id="aclass_person_html"><div class="ttname"><a href="class_person.html">Person</a></div><div class="ttdoc">Person (agents)</div><div class="ttdef"><b>Definition:</b> person-bones.hpp:37</div></div>
+<div class="ttc" id="aclass_model_html"><div class="ttname"><a href="class_model.html">Model</a></div><div class="ttdoc">Core class of epiworld.</div><div class="ttdef"><b>Definition:</b> model-bones.hpp:40</div></div>
+<div class="ttc" id="aclass_person_html"><div class="ttname"><a href="class_person.html">Person</a></div><div class="ttdoc">Person (agents)</div><div class="ttdef"><b>Definition:</b> person-bones.hpp:40</div></div>
 <div class="ttc" id="aclass_person_tools_html"><div class="ttname"><a href="class_person_tools.html">PersonTools</a></div><div class="ttdoc">List of tools available for the individual to.</div><div class="ttdef"><b>Definition:</b> persontools-bones.hpp:10</div></div>
 <div class="ttc" id="aclass_tool_html"><div class="ttname"><a href="class_tool.html">Tool</a></div><div class="ttdoc">Tools for defending the host against the virus.</div><div class="ttdef"><b>Definition:</b> tools-bones.hpp:26</div></div>
 <div class="ttc" id="aclass_tool_ptr_html"><div class="ttname"><a href="class_tool_ptr.html">ToolPtr</a></div><div class="ttdef"><b>Definition:</b> database-bones.hpp:17</div></div>
 <div class="ttc" id="aclass_virus_html"><div class="ttname"><a href="class_virus.html">Virus</a></div><div class="ttdoc">Virus.</div><div class="ttdef"><b>Definition:</b> virus-bones.hpp:29</div></div>
-<div class="ttc" id="aclass_virus_ptr_html"><div class="ttname"><a href="class_virus_ptr.html">VirusPtr</a></div><div class="ttdef"><b>Definition:</b> database-bones.hpp:14</div></div>
 <div class="ttc" id="astruct_action_html"><div class="ttname"><a href="struct_action.html">Action</a></div><div class="ttdef"><b>Definition:</b> config.hpp:76</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

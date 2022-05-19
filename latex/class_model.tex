@@ -22,7 +22,7 @@ epiworld\+\_\+double \& {\bfseries operator()} (std\+::string pname)
 size\+\_\+t {\bfseries size} () const
 \item 
 \mbox{\Hypertarget{class_model_a1cae705e8ef38864cd59a396f1788ade}\label{class_model_a1cae705e8ef38864cd59a396f1788ade}} 
-void {\bfseries record\+\_\+variant} (\mbox{\hyperlink{class_virus_ptr}{Virus\+Ptr}}$<$ TSeq $>$ v)
+void {\bfseries record\+\_\+variant} (Virus\+Ptr$<$ TSeq $>$ v)
 \item 
 \mbox{\Hypertarget{class_model_a5eac1533dd336124785f9ba2c79a168c}\label{class_model_a5eac1533dd336124785f9ba2c79a168c}} 
 int {\bfseries get\+\_\+nvariants} () const
@@ -271,8 +271,8 @@ void {\bfseries write\+\_\+edgelist} (std\+::vector$<$ unsigned int $>$ \&source
 \end{DoxyReturn}
 }\begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_model_a605b9a62c08b881848da69415ea9ffeb}\label{class_model_a605b9a62c08b881848da69415ea9ffeb}} 
-void {\bfseries add\+\_\+status} (std\+::string lab, Update\+Fun$<$ TSeq $>$ fun)
+\mbox{\Hypertarget{class_model_a0d889d940256492431efc02e868f6b9f}\label{class_model_a0d889d940256492431efc02e868f6b9f}} 
+void {\bfseries add\+\_\+status} (std\+::string lab, Update\+Fun$<$ TSeq $>$ fun=nullptr)
 \item 
 \mbox{\Hypertarget{class_model_ac6ff20e949dfc95ce348fc1265bb1f0b}\label{class_model_ac6ff20e949dfc95ce348fc1265bb1f0b}} 
 const std\+::vector$<$ std\+::string $>$ \& {\bfseries get\+\_\+status} () const
@@ -332,18 +332,6 @@ epiworld\+\_\+double
 \end{DoxyReturn}
 }\begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_model_a2bf0479260dd835bd7348664553c94cf}\label{class_model_a2bf0479260dd835bd7348664553c94cf}} 
-epiworld\+\_\+double {\bfseries get\+\_\+susceptibility\+\_\+reduction} (\mbox{\hyperlink{class_virus_ptr}{Virus\+Ptr}}$<$ TSeq $>$ v)
-\item 
-\mbox{\Hypertarget{class_model_a56cc682be061ae2c194595c1c466c56d}\label{class_model_a56cc682be061ae2c194595c1c466c56d}} 
-epiworld\+\_\+double {\bfseries get\+\_\+transmission\+\_\+reduction} (\mbox{\hyperlink{class_virus_ptr}{Virus\+Ptr}}$<$ TSeq $>$ v)
-\item 
-\mbox{\Hypertarget{class_model_abedb663a0821b06b16d82fde1a9950e4}\label{class_model_abedb663a0821b06b16d82fde1a9950e4}} 
-epiworld\+\_\+double {\bfseries get\+\_\+recovery\+\_\+enhancer} (\mbox{\hyperlink{class_virus_ptr}{Virus\+Ptr}}$<$ TSeq $>$ v)
-\item 
-\mbox{\Hypertarget{class_model_a73ad282a3544196da19776b4fc8dabcb}\label{class_model_a73ad282a3544196da19776b4fc8dabcb}} 
-epiworld\+\_\+double {\bfseries get\+\_\+death\+\_\+reduction} (\mbox{\hyperlink{class_virus_ptr}{Virus\+Ptr}}$<$ TSeq $>$ v)
-\item 
 \mbox{\Hypertarget{class_model_a5700406b7170de6cc67d232bc3dfb3b5}\label{class_model_a5700406b7170de6cc67d232bc3dfb3b5}} 
 void {\bfseries set\+\_\+susceptibility\+\_\+reduction\+\_\+mixer} (Mixer\+Fun$<$ TSeq $>$ fun)
 \item 
@@ -376,8 +364,8 @@ These functions combine the effects tools have to deliver a single effect. For e
 \mbox{\Hypertarget{class_model_a12df19c247eec2a54843fa969b01ca3e}\label{class_model_a12df19c247eec2a54843fa969b01ca3e}} 
 std\+::vector$<$ epiworld\+\_\+double $>$ {\bfseries array\+\_\+double\+\_\+tmp}
 \item 
-\mbox{\Hypertarget{class_model_a565f4700735bd6b57135d4a7f26b19ce}\label{class_model_a565f4700735bd6b57135d4a7f26b19ce}} 
-std\+::vector$<$ \mbox{\hyperlink{class_virus_ptr}{Virus\+Ptr}}$<$ TSeq $>$ $>$ {\bfseries array\+\_\+virus\+\_\+tmp}
+\mbox{\Hypertarget{class_model_a58aaa942a8364b61a9b6beeeda7059aa}\label{class_model_a58aaa942a8364b61a9b6beeeda7059aa}} 
+std\+::vector$<$ Virus\+Ptr$<$ TSeq $>$ $\ast$ $>$ {\bfseries array\+\_\+virus\+\_\+tmp}
 \item 
 \mbox{\Hypertarget{class_model_a3e9cf2b4070a2eacb9f5cf3aadeafbe6}\label{class_model_a3e9cf2b4070a2eacb9f5cf3aadeafbe6}} 
 {\bfseries Model} ()

@@ -47,5 +47,4 @@
 \contentsline {subsection}{\numberline {3.16.1}Detailed Description}{26}{subsection.3.16.1}%
 \contentsline {section}{\numberline {3.17}Virus$<$ TSeq $>$ Class Template Reference}{27}{section.3.17}%
 \contentsline {subsection}{\numberline {3.17.1}Detailed Description}{28}{subsection.3.17.1}%
-\contentsline {section}{\numberline {3.18}Virus\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ptr$<$ TSeq $>$ Class Template Reference}{29}{section.3.18}%
-\contentsline {chapter}{Index}{31}{section*.39}%
+\contentsline {chapter}{Index}{29}{section*.39}%

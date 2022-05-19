@@ -182,24 +182,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set_prob_death</b> (e
 <tr><td colspan="2"><div class="groupText"><p>After applied, viruses can change the status and affect the queue of agents. These function sets the default values, which are retrieved when adding or removing a virus does not specify a change in status or in queue.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">init</td><td></td></tr>
-    <tr><td class="paramname">end</td><td></td></tr>
+    <tr><td class="paramname">init</td><td>After the virus/tool is added to the host. </td></tr>
+    <tr><td class="paramname">end</td><td>After the virus/tool is removed. </td></tr>
+    <tr><td class="paramname">removed</td><td>After the host (<a class="el" href="class_person.html" title="Person (agents)">Person</a>) is removed. </td></tr>
   </table>
   </dd>
 </dl>
 </div></td></tr>
-<tr class="memitem:a09b431525ef3874da7f6c1a97591e6ca"><td class="memItemLeft" align="right" valign="top"><a id="a09b431525ef3874da7f6c1a97591e6ca"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_status</b> (epiworld_fast_int init, epiworld_fast_int end)</td></tr>
-<tr class="separator:a09b431525ef3874da7f6c1a97591e6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a473463be189349f25dd4d6feadb2fcb3"><td class="memItemLeft" align="right" valign="top"><a id="a473463be189349f25dd4d6feadb2fcb3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_queue</b> (epiworld_fast_int init, epiworld_fast_int end)</td></tr>
-<tr class="separator:a473463be189349f25dd4d6feadb2fcb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65cf5d63e364fa526d5ab01487b3133e"><td class="memItemLeft" align="right" valign="top"><a id="a65cf5d63e364fa526d5ab01487b3133e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>get_status</b> (epiworld_fast_int *init, epiworld_fast_int *end)</td></tr>
-<tr class="separator:a65cf5d63e364fa526d5ab01487b3133e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae96c7b9ba2e355573b26a46c3240b9ae"><td class="memItemLeft" align="right" valign="top"><a id="ae96c7b9ba2e355573b26a46c3240b9ae"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>get_queue</b> (epiworld_fast_int *init, epiworld_fast_int *end)</td></tr>
-<tr class="separator:ae96c7b9ba2e355573b26a46c3240b9ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93deeed7716c018acaeb8856880ec0a3"><td class="memItemLeft" align="right" valign="top"><a id="a93deeed7716c018acaeb8856880ec0a3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_status</b> (epiworld_fast_int init, epiworld_fast_int end, epiworld_fast_int removed)</td></tr>
+<tr class="separator:a93deeed7716c018acaeb8856880ec0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab325bfba17d2a460739193c67f7a8b6f"><td class="memItemLeft" align="right" valign="top"><a id="ab325bfba17d2a460739193c67f7a8b6f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_queue</b> (epiworld_fast_int init, epiworld_fast_int end, epiworld_fast_int removed)</td></tr>
+<tr class="separator:ab325bfba17d2a460739193c67f7a8b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b3f967619437ddc5695e7ace63f7f91"><td class="memItemLeft" align="right" valign="top"><a id="a1b3f967619437ddc5695e7ace63f7f91"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>get_status</b> (epiworld_fast_int *init, epiworld_fast_int *end, epiworld_fast_int *removed)</td></tr>
+<tr class="separator:a1b3f967619437ddc5695e7ace63f7f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb6e1b368d3b341c2e43fa2217c3f9dd"><td class="memItemLeft" align="right" valign="top"><a id="abb6e1b368d3b341c2e43fa2217c3f9dd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>get_queue</b> (epiworld_fast_int *init, epiworld_fast_int *end, epiworld_fast_int *removed)</td></tr>
+<tr class="separator:abb6e1b368d3b341c2e43fa2217c3f9dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
