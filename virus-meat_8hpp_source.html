@@ -326,76 +326,76 @@ $(function() {
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        </div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    }</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    std::shared_ptr&lt; TSeq &gt; _immune_id = -99;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    PostRecoveryFun&lt;TSeq&gt; tmpfun = </div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        [prob,_immune_id](<a class="code" href="class_person.html">Person&lt;TSeq&gt;</a> * p, <a class="code" href="class_virus.html">Virus&lt;TSeq&gt;</a> &amp; v, <a class="code" href="class_model.html">Model&lt;TSeq&gt;</a> * m)</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        {</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            <a class="code" href="class_tool.html">Tool&lt;TSeq&gt;</a> no_reinfect(</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                <span class="stringliteral">&quot;No reinfect virus &quot;</span> +</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                std::to_string(v.get_id())</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                );</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="comment">// To make sure that we keep registering the virus</span></div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    ToolPtr&lt;TSeq&gt; __no_reinfect = std::make_shared&lt;Tool&lt;TSeq&gt;&gt;(</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="stringliteral">&quot;Immunity (&quot;</span> + *virus_name + <span class="stringliteral">&quot;)&quot;</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    );</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    __no_reinfect-&gt;set_susceptibility_reduction(prob);</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    __no_reinfect-&gt;set_death_reduction(0.0);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    __no_reinfect-&gt;set_transmission_reduction(0.0);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    __no_reinfect-&gt;set_recovery_enhancer(0.0);</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            <span class="comment">// if (_immune_id &lt; 0)</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            <span class="comment">// {</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            <span class="comment">//     // Generating a random sequence</span></div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            <span class="comment">//     TSeq static_cast&lt; TSeq &gt;(m-&gt;runif())</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;            <span class="comment">//     no_reinfect.set_sequence(</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                    </div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            <span class="comment">//         );</span></div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            <span class="comment">// }</span></div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            </div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;            no_reinfect.set_susceptibility_reduction(prob);</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            no_reinfect.set_death_reduction(0.0);</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            no_reinfect.set_transmission_reduction(0.0);</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            no_reinfect.set_recovery_enhancer(0.0);</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;            p-&gt;add_tool(no_reinfect);</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        };</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    post_recovery_fun = tmpfun;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160; </div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;}</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160; </div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_virus.html">Virus&lt;TSeq&gt;::set_post_immunity</a>(</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    epiworld_double * prob</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;)</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;{</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordflow">if</span> (post_recovery_fun)</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    {</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; </div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        std::string msg =</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;            std::string(</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                <span class="stringliteral">&quot;You cannot set post immunity when a post_recovery &quot;</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                ) +</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;            std::string(</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                <span class="stringliteral">&quot;function is already in place. Redesign the post_recovery function.&quot;</span></div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                );</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160; </div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <span class="keywordflow">throw</span> std::logic_error(msg);</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    }</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    PostRecoveryFun&lt;TSeq&gt; tmpfun = </div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        [__no_reinfect](</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            <a class="code" href="class_person.html">Person&lt;TSeq&gt;</a> * p, <a class="code" href="class_virus.html">Virus&lt;TSeq&gt;</a> &amp; v, <a class="code" href="class_model.html">Model&lt;TSeq&gt;</a> * m</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            )</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        {</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;            </div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            <span class="comment">// Have we registered the tool?</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            <span class="keywordflow">if</span> (__no_reinfect-&gt;get_id() == -99)</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                m-&gt;get_db().record_tool(*__no_reinfect);</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160; </div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;            p-&gt;add_tool(__no_reinfect);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        };</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160; </div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    post_recovery_fun = tmpfun;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;}</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160; </div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_virus.html">Virus&lt;TSeq&gt;::set_post_immunity</a>(</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    epiworld_double * prob</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;)</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;{</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordflow">if</span> (post_recovery_fun)</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    {</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160; </div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        std::string msg =</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;            std::string(</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                <span class="stringliteral">&quot;You cannot set post immunity when a post_recovery &quot;</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                ) +</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;            std::string(</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                <span class="stringliteral">&quot;function is already in place. Redesign the post_recovery function.&quot;</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                );</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160; </div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="keywordflow">throw</span> std::logic_error(msg);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    }</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160; </div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="comment">// To make sure that we keep registering the virus</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    ToolPtr&lt;TSeq&gt; __no_reinfect = std::make_shared&lt;Tool&lt;TSeq&gt;&gt;(</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <span class="stringliteral">&quot;Immunity (&quot;</span> + *virus_name + <span class="stringliteral">&quot;)&quot;</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    );</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    PostRecoveryFun&lt;TSeq&gt; tmpfun = </div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        [prob](<a class="code" href="class_person.html">Person&lt;TSeq&gt;</a> * p, VirusPtr&lt;TSeq&gt; v, <a class="code" href="class_model.html">Model&lt;TSeq&gt;</a> * m)</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        {</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;            <a class="code" href="class_tool.html">Tool&lt;TSeq&gt;</a> no_reinfect(</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                <span class="stringliteral">&quot;No reinfect virus &quot;</span> +</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                std::to_string(v-&gt;<a class="code" href="class_person.html#acf7e4e893a350de8de760e568f58cd53">get_id</a>())</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                );</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            </div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            no_reinfect.set_susceptibility_reduction(*prob);</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;            no_reinfect.set_death_reduction(0.0);</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;            no_reinfect.set_transmission_reduction(0.0);</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;            no_reinfect.set_recovery_enhancer(0.0);</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    __no_reinfect-&gt;set_susceptibility_reduction(prob);</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    __no_reinfect-&gt;set_death_reduction(0.0);</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    __no_reinfect-&gt;set_transmission_reduction(0.0);</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    __no_reinfect-&gt;set_recovery_enhancer(0.0);</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    PostRecoveryFun&lt;TSeq&gt; tmpfun = </div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        [__no_reinfect](<a class="code" href="class_person.html">Person&lt;TSeq&gt;</a> * p, VirusPtr&lt;TSeq&gt; v, <a class="code" href="class_model.html">Model&lt;TSeq&gt;</a> * m)</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        {</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;            <span class="comment">// Have we registered the tool?</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;            <span class="keywordflow">if</span> (__no_reinfect-&gt;get_id() == -99)</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                m-&gt;get_db().record_tool(*__no_reinfect);</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160; </div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            p-&gt;add_tool(no_reinfect);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            p-&gt;add_tool(__no_reinfect);</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160; </div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160; </div>
@@ -499,8 +499,6 @@ $(function() {
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_model_html"><div class="ttname"><a href="class_model.html">Model&lt; TSeq &gt;</a></div></div>
 <div class="ttc" id="aclass_person_html"><div class="ttname"><a href="class_person.html">Person&lt; TSeq &gt;</a></div></div>
-<div class="ttc" id="aclass_person_html_acf7e4e893a350de8de760e568f58cd53"><div class="ttname"><a href="class_person.html#acf7e4e893a350de8de760e568f58cd53">Person::get_id</a></div><div class="ttdeci">int get_id() const</div><div class="ttdoc">Id of the individual.</div></div>
-<div class="ttc" id="aclass_tool_html"><div class="ttname"><a href="class_tool.html">Tool</a></div><div class="ttdoc">Tools for defending the host against the virus.</div><div class="ttdef"><b>Definition:</b> tools-bones.hpp:26</div></div>
 <div class="ttc" id="aclass_virus_html"><div class="ttname"><a href="class_virus.html">Virus</a></div><div class="ttdoc">Virus.</div><div class="ttdef"><b>Definition:</b> virus-bones.hpp:29</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
