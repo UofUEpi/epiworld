@@ -552,7 +552,7 @@ epiworld\+\_\+double {\bfseries par} (std\+::string pname)
 
 
 \doxysubsection{Detailed Description}
-\subsubsection*{template$<$typename TSeq = bool$>$\newline
+\subsubsection*{template$<$typename TSeq = int$>$\newline
 class Model$<$ TSeq $>$}
 
 Core class of epiworld. 
@@ -571,7 +571,7 @@ The model class provides the wrapper that puts together {\ttfamily \mbox{\hyperl
 \index{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!add\_global\_action@{add\_global\_action}}
 \index{add\_global\_action@{add\_global\_action}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}}
 \doxysubsubsection{\texorpdfstring{add\_global\_action()}{add\_global\_action()}}
-{\footnotesize\ttfamily template$<$typename TSeq  = bool$>$ \\
+{\footnotesize\ttfamily template$<$typename TSeq  = int$>$ \\
 void \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$\+::add\+\_\+global\+\_\+action (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(\mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$)$>$}]{fun,  }\item[{int}]{date }\end{DoxyParamCaption})}
 
 
@@ -589,7 +589,7 @@ When date is less than zero, then the function is called at the end of every day
 \index{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!reset@{reset}}
 \index{reset@{reset}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}}
 \doxysubsubsection{\texorpdfstring{reset()}{reset()}}
-{\footnotesize\ttfamily template$<$typename TSeq  = bool$>$ \\
+{\footnotesize\ttfamily template$<$typename TSeq  = int$>$ \\
 void \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -607,7 +607,7 @@ Resetting the model will\+:
 \index{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!run\_multiple@{run\_multiple}}
 \index{run\_multiple@{run\_multiple}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}}
 \doxysubsubsection{\texorpdfstring{run\_multiple()}{run\_multiple()}}
-{\footnotesize\ttfamily template$<$typename TSeq  = bool$>$ \\
+{\footnotesize\ttfamily template$<$typename TSeq  = int$>$ \\
 void \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$\+::run\+\_\+multiple (\begin{DoxyParamCaption}\item[{unsigned int}]{nexperiments,  }\item[{std\+::function$<$ void(\mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$)$>$}]{fun,  }\item[{bool}]{reset,  }\item[{bool}]{verbose }\end{DoxyParamCaption})}
 
 
@@ -619,7 +619,7 @@ void \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$\+::run\+\_\+multiple (\be
 \index{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!write\_data@{write\_data}}
 \index{write\_data@{write\_data}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}}
 \doxysubsubsection{\texorpdfstring{write\_data()}{write\_data()}}
-{\footnotesize\ttfamily template$<$typename TSeq  = bool$>$ \\
+{\footnotesize\ttfamily template$<$typename TSeq  = int$>$ \\
 void \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$\+::write\+\_\+data (\begin{DoxyParamCaption}\item[{std\+::string}]{fn\+\_\+variant\+\_\+info,  }\item[{std\+::string}]{fn\+\_\+variant\+\_\+hist,  }\item[{std\+::string}]{fn\+\_\+tool\+\_\+info,  }\item[{std\+::string}]{fn\+\_\+tool\+\_\+hist,  }\item[{std\+::string}]{fn\+\_\+total\+\_\+hist,  }\item[{std\+::string}]{fn\+\_\+transmission,  }\item[{std\+::string}]{fn\+\_\+transition }\end{DoxyParamCaption}) const}
 
 
