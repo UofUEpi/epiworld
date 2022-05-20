@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Alpine Linux) (preloaded format=pdflatex 2022.5.20)  20 MAY 2022 22:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Alpine Linux) (preloaded format=pdflatex 2022.5.20)  20 MAY 2022 23:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1018,22 +1018,22 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <9> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 55.
 [11] [12]
-Underfull \hbox (badness 10000) detected at line 225
+Underfull \hbox (badness 10000) detected at line 231
 [][][]
  []
 
 [13]
-Underfull \hbox (badness 10000) detected at line 270
+Underfull \hbox (badness 10000) detected at line 276
 [][][]
  []
 
 [14]
-Underfull \hbox (badness 10000) detected at line 333
+Underfull \hbox (badness 10000) detected at line 339
 [][][]
  []
 
 [15]
-Underfull \hbox (badness 10000) detected at line 406
+Underfull \hbox (badness 10000) detected at line 412
 [][][]
  []
 
@@ -1171,7 +1171,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-) (./class_virus.tex
+[27]) (./class_virus.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1188,14 +1188,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[27]
+
 Underfull \hbox (badness 10000) detected at line 68
 [][][]
  []
 
-[28]) [29] [30
+[28] [29]) [30] (./refman.ind [31
 
-] (./refman.ind [31
 
 
 
@@ -1209,10 +1208,10 @@ Package rerunfilecheck Info: File `refman.out' has not changed.
 (rerunfilecheck)             Checksum: 6D8C45585FDA4E34CF3371BB0922583A;11031.
  ) 
 Here is how much of TeX's memory you used:
- 17637 strings out of 480478
- 278529 string characters out of 5905924
- 554191 words of memory out of 5000000
- 32728 multiletter control sequences out of 15000+600000
+ 17657 strings out of 480478
+ 279441 string characters out of 5905924
+ 555581 words of memory out of 5000000
+ 32738 multiletter control sequences out of 15000+600000
  599375 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,96p,938b,720s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1228,10 +1227,10 @@ rr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/share
 pe1/urw/helvetic/uhvb8ac.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uh
 vbo8ac.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/sha
 re/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (35 pages, 227511 bytes).
+Output written on refman.pdf (35 pages, 228801 bytes).
 PDF statistics:
- 1316 PDF objects out of 1440 (max. 8388607)
- 1230 compressed objects within 13 object streams
- 577 named destinations out of 1000 (max. 500000)
+ 1343 PDF objects out of 1440 (max. 8388607)
+ 1257 compressed objects within 13 object streams
+ 587 named destinations out of 1000 (max. 500000)
  414 words of extra memory for PDF output out of 10000 (max. 10000000)
 
