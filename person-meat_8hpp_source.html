@@ -81,7 +81,7 @@ $(function() {
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_person.html">Person&lt;TSeq&gt;</a> * p = a.person;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    VirusPtr&lt;TSeq&gt; v = p-&gt;virus_tmp;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    VirusPtr&lt;TSeq&gt; v = a.virus;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment">// Has a host? If so, we need to register the transmission</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">if</span> (v-&gt;get_host())</div>
@@ -120,7 +120,7 @@ $(function() {
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_person.html">Person&lt;TSeq&gt;</a> * p = a.person;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    ToolPtr&lt;TSeq&gt; t = p-&gt;tool_tmp;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    ToolPtr&lt;TSeq&gt; t = a.tool;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// Update tool accounting</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    p-&gt;n_tools++;</div>
@@ -145,7 +145,7 @@ $(function() {
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="class_person.html">Person&lt;TSeq&gt;</a> * p = a.person;    </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">if</span> (--p-&gt;n_viruses &gt; 0)</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        std::swap(p-&gt;viruses[p-&gt;virus_to_remove_idx], p-&gt;viruses[p-&gt;n_viruses - 1]);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        std::swap(p-&gt;viruses[a.virus_idx], p-&gt;viruses[p-&gt;n_viruses - 1]);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
@@ -157,8 +157,8 @@ $(function() {
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="class_person.html">Person&lt;TSeq&gt;</a> * p = a.person;    </div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">if</span> (--p-&gt;n_viruses &gt; 0)</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        std::swap(p-&gt;viruses[p-&gt;virus_to_remove_idx], p-&gt;viruses[p-&gt;n_viruses - 1]);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">if</span> (--p-&gt;n_tools &gt; 0)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        std::swap(p-&gt;tools[a.tool_idx], p-&gt;tools[p-&gt;n_tools - 1]);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
@@ -232,9 +232,9 @@ $(function() {
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    CHECK_COALESCE_(status_new_, status_new, tool-&gt;status_init, status)</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    CHECK_COALESCE_(queue_, queue, tool-&gt;queue_init, 0)</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    tool_tmp = tool;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    model-&gt;actions_add(this, status_new_, add_tool_, queue_);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    model-&gt;actions_add(</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        this, <span class="keywordtype">nullptr</span>, tool, 0u, 0u, status_new_, queue_, add_tool_</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        );</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;}</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
@@ -265,10 +265,10 @@ $(function() {
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    CHECK_COALESCE_(status_new_, status_new, virus-&gt;status_init, status)</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    CHECK_COALESCE_(queue_, queue, virus-&gt;queue_init, 1)</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            </div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    virus_tmp = virus;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    model-&gt;actions_add(this, status_new_, add_virus_, queue_);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    model-&gt;actions_add(</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        this, virus, <span class="keywordtype">nullptr</span>, 0, 0, status_new_, queue_, add_virus_</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        );</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;}</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
@@ -302,9 +302,9 @@ $(function() {
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    CHECK_COALESCE_(status_new_, status_new, tool-&gt;status_post, status)</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    CHECK_COALESCE_(queue_, queue, tool-&gt;queue_post, 0)</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    tool_to_remove_idx = tool_idx;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    model-&gt;actions_add(this, status_new_, rm_virus_, queue_);</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    model-&gt;actions_add(</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        this, <span class="keywordtype">nullptr</span>, <span class="keywordtype">nullptr</span>, 0u, tool_idx, status_new_, queue_, rm_tool_</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        );</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;}</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
@@ -326,9 +326,9 @@ $(function() {
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    CHECK_COALESCE_(status_new_, status_new, virus-&gt;status_init, status)</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    CHECK_COALESCE_(queue_, queue, virus-&gt;queue_init, -1)</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    virus_to_remove_idx = virus_idx;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    model-&gt;actions_add(this, status_new_, rm_virus_, queue_);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    model-&gt;actions_add(</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        this, <span class="keywordtype">nullptr</span>, <span class="keywordtype">nullptr</span>, virus_idx, 0u, status_new_, queue_, rm_virus_</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        );</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    </div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;}</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
@@ -483,7 +483,7 @@ $(function() {
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;{</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160; </div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    model-&gt;actions_add(</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        <span class="keyword">this</span>, new_status, <span class="keyword">nullptr</span>, queue</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        <span class="keyword">this</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, 0u, 0u, new_status, queue, <span class="keyword">nullptr</span></div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    );</div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    </div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    <span class="keywordflow">return</span>;</div>
@@ -571,7 +571,7 @@ $(function() {
 <div class="ttc" id="aclass_person_html_acf7e4e893a350de8de760e568f58cd53"><div class="ttname"><a href="class_person.html#acf7e4e893a350de8de760e568f58cd53">Person::get_id</a></div><div class="ttdeci">int get_id() const</div><div class="ttdoc">Id of the individual.</div></div>
 <div class="ttc" id="aclass_tool_html"><div class="ttname"><a href="class_tool.html">Tool</a></div><div class="ttdoc">Tools for defending the host against the virus.</div><div class="ttdef"><b>Definition:</b> tools-bones.hpp:26</div></div>
 <div class="ttc" id="aclass_virus_html"><div class="ttname"><a href="class_virus.html">Virus</a></div><div class="ttdoc">Virus.</div><div class="ttdef"><b>Definition:</b> virus-bones.hpp:29</div></div>
-<div class="ttc" id="astruct_action_html"><div class="ttname"><a href="struct_action.html">Action</a></div><div class="ttdef"><b>Definition:</b> config.hpp:79</div></div>
+<div class="ttc" id="astruct_action_html"><div class="ttname"><a href="struct_action.html">Action</a></div><div class="ttdoc">Action data for update an agent.</div><div class="ttdef"><b>Definition:</b> config.hpp:84</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
