@@ -73,9 +73,9 @@ epiworld</h1>
 <ol type="1">
 <li>Four key classes: <code><a class="el" href="class_model.html" title="Core class of epiworld.">Model</a></code>, <code><a class="el" href="class_person.html" title="Person (agents)">Person</a></code>, <code><a class="el" href="class_tool.html" title="Tools for defending the host against the virus.">Tool</a></code>, and <code><a class="el" href="class_virus.html" title="Virus.">Virus</a></code>.</li>
 <li>The model features a social networks of <code>Persons</code>.</li>
-<li><code>Persons</code> can have multiple <code>Tools</code> as a defense system.</li>
-<li><code>Tools</code> can reduce contagion rate, transmissibility, death rates, and improve recovery rates.</li>
-<li><code>Viruses</code> can mutate (generating new variants).</li>
+<li><code>Persons</code> can have multiple <code><a class="el" href="class_tools.html">Tools</a></code> as a defense system.</li>
+<li><code><a class="el" href="class_tools.html">Tools</a></code> can reduce contagion rate, transmissibility, death rates, and improve recovery rates.</li>
+<li><code><a class="el" href="class_viruses.html">Viruses</a></code> can mutate (generating new variants).</li>
 <li><code>Models</code> can feature multiple states, e.g., <code>HEALTHY</code>, <code>SUSCEPTIBLE</code>, etc.</li>
 <li><code>Models</code> can have an arbitrary number of parameters.</li>
 <li><b>REALLY FAST</b> About 6.5 Million person/day simulations per second.</li>
@@ -115,8 +115,8 @@ Hello world</h1>
 <div class="line">}</div>
 <div class="ttc" id="aclass_model_html"><div class="ttname"><a href="class_model.html">Model</a></div><div class="ttdoc">Core class of epiworld.</div><div class="ttdef"><b>Definition:</b> model-bones.hpp:65</div></div>
 <div class="ttc" id="aclass_model_html_a825c7fb2498c7693cbf1bfcd0a416ef4"><div class="ttname"><a href="class_model.html#a825c7fb2498c7693cbf1bfcd0a416ef4">Model::run</a></div><div class="ttdeci">void run()</div><div class="ttdoc">Runs the simulation (after initialization)</div></div>
-<div class="ttc" id="aclass_tool_html"><div class="ttname"><a href="class_tool.html">Tool</a></div><div class="ttdoc">Tools for defending the host against the virus.</div><div class="ttdef"><b>Definition:</b> tools-bones.hpp:26</div></div>
-<div class="ttc" id="aclass_virus_html"><div class="ttname"><a href="class_virus.html">Virus</a></div><div class="ttdoc">Virus.</div><div class="ttdef"><b>Definition:</b> virus-bones.hpp:27</div></div>
+<div class="ttc" id="aclass_tool_html"><div class="ttname"><a href="class_tool.html">Tool</a></div><div class="ttdoc">Tools for defending the host against the virus.</div><div class="ttdef"><b>Definition:</b> tool-bones.hpp:23</div></div>
+<div class="ttc" id="aclass_virus_html"><div class="ttname"><a href="class_virus.html">Virus</a></div><div class="ttdoc">Virus.</div><div class="ttdef"><b>Definition:</b> virus-bones.hpp:25</div></div>
 </div><!-- fragment --><p>And you should get something like the following:</p>
 <div class="fragment"><div class="line">Running the model...</div>
 <div class="line">_________________________________________________________________________</div>

@@ -396,7 +396,7 @@ void {\bfseries clone\+\_\+population} (const \mbox{\hyperlink{class_model}{Mode
 \end{DoxyCompactItemize}
 \doxysubsection*{Setting and accessing parameters from the model}
 \label{_amgrp61207d51bcc1b661804b11cec5dc845e}%
- Tools can incorporate parameters included in the model. Internally, parameters in the tool are stored as pointers to an std\+::map$<$$>$ of parameters in the model. Using the {\ttfamily unsigned int} method directly fetches the parameters in the order these were added to the tool. Accessing parameters via the {\ttfamily std\+::string} method involves searching the parameter directly in the std\+::map$<$$>$ member of the model (so it is not recommended.)
+ \mbox{\hyperlink{class_tools}{Tools}} can incorporate parameters included in the model. Internally, parameters in the tool are stored as pointers to an std\+::map$<$$>$ of parameters in the model. Using the {\ttfamily unsigned int} method directly fetches the parameters in the order these were added to the tool. Accessing parameters via the {\ttfamily std\+::string} method involves searching the parameter directly in the std\+::map$<$$>$ member of the model (so it is not recommended.)
 
 The function {\ttfamily set\+\_\+param()} can be used when the parameter already exists in the model.
 
@@ -563,7 +563,7 @@ class Model$<$ TSeq $>$}
 
 Core class of epiworld. 
 
-The model class provides the wrapper that puts together {\ttfamily \mbox{\hyperlink{class_person}{Person}}}, {\ttfamily \mbox{\hyperlink{class_virus}{Virus}}}, and {\ttfamily Tools}.
+The model class provides the wrapper that puts together {\ttfamily \mbox{\hyperlink{class_person}{Person}}}, {\ttfamily \mbox{\hyperlink{class_virus}{Virus}}}, and {\ttfamily \mbox{\hyperlink{class_tools}{Tools}}}.
 
 
 \begin{DoxyTemplParams}{Template Parameters}

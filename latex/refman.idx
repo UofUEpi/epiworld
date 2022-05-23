@@ -19,14 +19,16 @@
 \indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!write\_data@{write\_data}|hyperpage}{18}
 \indexentry{write\_data@{write\_data}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{18}
 \indexentry{Person$<$ TSeq $>$@{Person$<$ TSeq $>$}|hyperpage}{19}
-\indexentry{PersonTools$<$ TSeq $>$@{PersonTools$<$ TSeq $>$}|hyperpage}{20}
-\indexentry{PersonViruses$<$ TSeq $>$@{PersonViruses$<$ TSeq $>$}|hyperpage}{21}
-\indexentry{Progress@{Progress}|hyperpage}{22}
-\indexentry{Queue$<$ TSeq $>$@{Queue$<$ TSeq $>$}|hyperpage}{23}
-\indexentry{RandGraph@{RandGraph}|hyperpage}{23}
-\indexentry{Tool$<$ TSeq $>$@{Tool$<$ TSeq $>$}|hyperpage}{24}
-\indexentry{UserData$<$ TSeq $>$@{UserData$<$ TSeq $>$}|hyperpage}{25}
-\indexentry{UserData$<$ TSeq $>$@{UserData$<$ TSeq $>$}!UserData@{UserData}|hyperpage}{27}
-\indexentry{UserData@{UserData}!UserData$<$ TSeq $>$@{UserData$<$ TSeq $>$}|hyperpage}{27}
-\indexentry{vecHasher$<$ T $>$@{vecHasher$<$ T $>$}|hyperpage}{27}
-\indexentry{Virus$<$ TSeq $>$@{Virus$<$ TSeq $>$}|hyperpage}{28}
+\indexentry{PersonTools$<$ TSeq $>$@{PersonTools$<$ TSeq $>$}|hyperpage}{21}
+\indexentry{Progress@{Progress}|hyperpage}{21}
+\indexentry{Queue$<$ TSeq $>$@{Queue$<$ TSeq $>$}|hyperpage}{21}
+\indexentry{RandGraph@{RandGraph}|hyperpage}{22}
+\indexentry{Tool$<$ TSeq $>$@{Tool$<$ TSeq $>$}|hyperpage}{22}
+\indexentry{Tools$<$ TSeq $>$@{Tools$<$ TSeq $>$}|hyperpage}{24}
+\indexentry{UserData$<$ TSeq $>$@{UserData$<$ TSeq $>$}|hyperpage}{24}
+\indexentry{UserData$<$ TSeq $>$@{UserData$<$ TSeq $>$}!UserData@{UserData}|hyperpage}{25}
+\indexentry{UserData@{UserData}!UserData$<$ TSeq $>$@{UserData$<$ TSeq $>$}|hyperpage}{25}
+\indexentry{vecHasher$<$ T $>$@{vecHasher$<$ T $>$}|hyperpage}{25}
+\indexentry{Virus$<$ TSeq $>$@{Virus$<$ TSeq $>$}|hyperpage}{26}
+\indexentry{Viruses$<$ TSeq $>$@{Viruses$<$ TSeq $>$}|hyperpage}{28}
+\indexentry{Viruses\_const$<$ TSeq $>$@{Viruses\_const$<$ TSeq $>$}|hyperpage}{28}

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['tool_54',['Tool',['../class_tool.html',1,'']]]
+  ['tool_55',['Tool',['../class_tool.html',1,'']]],
+  ['tools_56',['Tools',['../class_tools.html',1,'']]]
 ];

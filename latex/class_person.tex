@@ -30,8 +30,11 @@ std\+::mt19937 $\ast$ {\bfseries get\+\_\+rand\+\_\+endgine} ()
 \mbox{\Hypertarget{class_person_a995c637eb77e9bf7ca2306512b3b4cd3}\label{class_person_a995c637eb77e9bf7ca2306512b3b4cd3}} 
 Virus\+Ptr$<$ TSeq $>$ \& {\bfseries get\+\_\+virus} (int i)
 \item 
-\mbox{\Hypertarget{class_person_a6a4211b3323b11b7cc0bcc21c8657b55}\label{class_person_a6a4211b3323b11b7cc0bcc21c8657b55}} 
-std\+::vector$<$ Virus\+Ptr$<$ TSeq $>$ $>$ \& {\bfseries get\+\_\+viruses} ()
+\mbox{\Hypertarget{class_person_ab22f830f8337262ad63d35855fdabb00}\label{class_person_ab22f830f8337262ad63d35855fdabb00}} 
+\mbox{\hyperlink{class_viruses}{Viruses}}$<$ TSeq $>$ {\bfseries get\+\_\+viruses} ()
+\item 
+\mbox{\Hypertarget{class_person_a812acf15b29b9971340c252ba8ca24a9}\label{class_person_a812acf15b29b9971340c252ba8ca24a9}} 
+const \mbox{\hyperlink{class_viruses__const}{Viruses\+\_\+const}}$<$ TSeq $>$ {\bfseries get\+\_\+viruses} () const
 \item 
 \mbox{\Hypertarget{class_person_aa3280de77c7913751492503e62a6b79a}\label{class_person_aa3280de77c7913751492503e62a6b79a}} 
 size\+\_\+t {\bfseries get\+\_\+n\+\_\+viruses} () const noexcept
@@ -39,8 +42,11 @@ size\+\_\+t {\bfseries get\+\_\+n\+\_\+viruses} () const noexcept
 \mbox{\Hypertarget{class_person_a3519e0bf0594c9ede8777b192587e9fa}\label{class_person_a3519e0bf0594c9ede8777b192587e9fa}} 
 Tool\+Ptr$<$ TSeq $>$ \& {\bfseries get\+\_\+tool} (int i)
 \item 
-\mbox{\Hypertarget{class_person_a283492267b3126d101c4b3256b321bdf}\label{class_person_a283492267b3126d101c4b3256b321bdf}} 
-std\+::vector$<$ Tool\+Ptr$<$ TSeq $>$ $>$ \& {\bfseries get\+\_\+tools} ()
+\mbox{\Hypertarget{class_person_ad3f54e2c4a4eec938f3c3956566ad7f1}\label{class_person_ad3f54e2c4a4eec938f3c3956566ad7f1}} 
+\mbox{\hyperlink{class_tools}{Tools}}$<$ TSeq $>$ {\bfseries get\+\_\+tools} ()
+\item 
+\mbox{\Hypertarget{class_person_a8155f779fb02a0fb40c0177777192bb9}\label{class_person_a8155f779fb02a0fb40c0177777192bb9}} 
+const Tools\+\_\+const$<$ TSeq $>$ {\bfseries get\+\_\+tools} () const
 \item 
 \mbox{\Hypertarget{class_person_aa9b8722f2729970f3a831e06130ea21a}\label{class_person_aa9b8722f2729970f3a831e06130ea21a}} 
 size\+\_\+t {\bfseries get\+\_\+n\+\_\+tools} () const noexcept
@@ -143,8 +149,20 @@ epiworld\+\_\+double {\bfseries get\+\_\+death\+\_\+reduction} (Virus\+Ptr$<$ TS
 \mbox{\Hypertarget{class_person_aa4532e80368ab60b4fda5bb917f6f0ca}\label{class_person_aa4532e80368ab60b4fda5bb917f6f0ca}} 
 class {\bfseries Model$<$ TSeq $>$}
 \item 
+\mbox{\Hypertarget{class_person_abdfac6506b42b0ae094136b7b2cb9a8d}\label{class_person_abdfac6506b42b0ae094136b7b2cb9a8d}} 
+class {\bfseries Virus$<$ TSeq $>$}
+\item 
+\mbox{\Hypertarget{class_person_ab32fa944af324b3a7d9d2659bf7707e5}\label{class_person_ab32fa944af324b3a7d9d2659bf7707e5}} 
+class {\bfseries Viruses$<$ TSeq $>$}
+\item 
+\mbox{\Hypertarget{class_person_ad9f952e5dff1ad13e61850a308724d23}\label{class_person_ad9f952e5dff1ad13e61850a308724d23}} 
+class {\bfseries Viruses\+\_\+const$<$ TSeq $>$}
+\item 
 \mbox{\Hypertarget{class_person_ad2c21dac3d31f0bb261ca72aaebddced}\label{class_person_ad2c21dac3d31f0bb261ca72aaebddced}} 
 class {\bfseries Tool$<$ TSeq $>$}
+\item 
+\mbox{\Hypertarget{class_person_a33d7737e07302865e0bcf070010747fa}\label{class_person_a33d7737e07302865e0bcf070010747fa}} 
+class {\bfseries Tools$<$ TSeq $>$}
 \item 
 \mbox{\Hypertarget{class_person_a2bfabd70b21ded1907307daeb724ae58}\label{class_person_a2bfabd70b21ded1907307daeb724ae58}} 
 class {\bfseries Queue$<$ TSeq $>$}
