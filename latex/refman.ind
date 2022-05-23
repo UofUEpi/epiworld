@@ -51,6 +51,7 @@
 
   \item {Tool$<$ TSeq $>$}, \hyperpage{22}
   \item {Tools$<$ TSeq $>$}, \hyperpage{24}
+  \item {Tools\_const$<$ TSeq $>$}, \hyperpage{24}
 
   \indexspace
 
@@ -61,7 +62,7 @@
 
   \indexspace
 
-  \item {vecHasher$<$ T $>$}, \hyperpage{25}
+  \item {vecHasher$<$ T $>$}, \hyperpage{26}
   \item {Virus$<$ TSeq $>$}, \hyperpage{26}
   \item {Viruses$<$ TSeq $>$}, \hyperpage{28}
   \item {Viruses\_const$<$ TSeq $>$}, \hyperpage{28}

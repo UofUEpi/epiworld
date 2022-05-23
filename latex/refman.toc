@@ -39,14 +39,15 @@
 \contentsline {section}{\numberline {3.12}Tool$<$ TSeq $>$ Class Template Reference}{22}{section.3.12}%
 \contentsline {subsection}{\numberline {3.12.1}Detailed Description}{23}{subsection.3.12.1}%
 \contentsline {section}{\numberline {3.13}Tools$<$ TSeq $>$ Class Template Reference}{24}{section.3.13}%
-\contentsline {section}{\numberline {3.14}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data$<$ TSeq $>$ Class Template Reference}{24}{section.3.14}%
-\contentsline {subsection}{\numberline {3.14.1}Detailed Description}{25}{subsection.3.14.1}%
-\contentsline {subsection}{\numberline {3.14.2}Constructor \& Destructor Documentation}{25}{subsection.3.14.2}%
-\contentsline {subsubsection}{\numberline {3.14.2.1}UserData()}{25}{subsubsection.3.14.2.1}%
-\contentsline {section}{\numberline {3.15}vec\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hasher$<$ T $>$ Struct Template Reference}{25}{section.3.15}%
-\contentsline {subsection}{\numberline {3.15.1}Detailed Description}{26}{subsection.3.15.1}%
-\contentsline {section}{\numberline {3.16}Virus$<$ TSeq $>$ Class Template Reference}{26}{section.3.16}%
-\contentsline {subsection}{\numberline {3.16.1}Detailed Description}{27}{subsection.3.16.1}%
-\contentsline {section}{\numberline {3.17}Viruses$<$ TSeq $>$ Class Template Reference}{28}{section.3.17}%
-\contentsline {section}{\numberline {3.18}Viruses\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}const$<$ TSeq $>$ Class Template Reference}{28}{section.3.18}%
+\contentsline {section}{\numberline {3.14}Tools\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}const$<$ TSeq $>$ Class Template Reference}{24}{section.3.14}%
+\contentsline {section}{\numberline {3.15}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data$<$ TSeq $>$ Class Template Reference}{24}{section.3.15}%
+\contentsline {subsection}{\numberline {3.15.1}Detailed Description}{25}{subsection.3.15.1}%
+\contentsline {subsection}{\numberline {3.15.2}Constructor \& Destructor Documentation}{25}{subsection.3.15.2}%
+\contentsline {subsubsection}{\numberline {3.15.2.1}UserData()}{25}{subsubsection.3.15.2.1}%
+\contentsline {section}{\numberline {3.16}vec\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hasher$<$ T $>$ Struct Template Reference}{26}{section.3.16}%
+\contentsline {subsection}{\numberline {3.16.1}Detailed Description}{26}{subsection.3.16.1}%
+\contentsline {section}{\numberline {3.17}Virus$<$ TSeq $>$ Class Template Reference}{26}{section.3.17}%
+\contentsline {subsection}{\numberline {3.17.1}Detailed Description}{28}{subsection.3.17.1}%
+\contentsline {section}{\numberline {3.18}Viruses$<$ TSeq $>$ Class Template Reference}{28}{section.3.18}%
+\contentsline {section}{\numberline {3.19}Viruses\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}const$<$ TSeq $>$ Class Template Reference}{28}{section.3.19}%
 \contentsline {chapter}{Index}{29}{section*.35}%

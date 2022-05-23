@@ -25,10 +25,11 @@
 \indexentry{RandGraph@{RandGraph}|hyperpage}{22}
 \indexentry{Tool$<$ TSeq $>$@{Tool$<$ TSeq $>$}|hyperpage}{22}
 \indexentry{Tools$<$ TSeq $>$@{Tools$<$ TSeq $>$}|hyperpage}{24}
+\indexentry{Tools\_const$<$ TSeq $>$@{Tools\_const$<$ TSeq $>$}|hyperpage}{24}
 \indexentry{UserData$<$ TSeq $>$@{UserData$<$ TSeq $>$}|hyperpage}{24}
 \indexentry{UserData$<$ TSeq $>$@{UserData$<$ TSeq $>$}!UserData@{UserData}|hyperpage}{25}
 \indexentry{UserData@{UserData}!UserData$<$ TSeq $>$@{UserData$<$ TSeq $>$}|hyperpage}{25}
-\indexentry{vecHasher$<$ T $>$@{vecHasher$<$ T $>$}|hyperpage}{25}
+\indexentry{vecHasher$<$ T $>$@{vecHasher$<$ T $>$}|hyperpage}{26}
 \indexentry{Virus$<$ TSeq $>$@{Virus$<$ TSeq $>$}|hyperpage}{26}
 \indexentry{Viruses$<$ TSeq $>$@{Viruses$<$ TSeq $>$}|hyperpage}{28}
 \indexentry{Viruses\_const$<$ TSeq $>$@{Viruses\_const$<$ TSeq $>$}|hyperpage}{28}

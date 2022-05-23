@@ -94,41 +94,41 @@ $(function() {
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">friend</span> <span class="keywordtype">void</span> default_rm_tool&lt;TSeq&gt;(<a class="code" href="struct_action.html">Action&lt;TSeq&gt;</a> &amp; a, <a class="code" href="class_model.html">Model&lt;TSeq&gt;</a> * m);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_person.html">Person&lt;TSeq&gt;</a> * host = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    std::shared_ptr&lt;TSeq&gt; baseline_sequence = std::make_shared&lt;TSeq&gt;(default_sequence&lt;TSeq&gt;());</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    std::shared_ptr&lt;std::string&gt; virus_name = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">int</span> date = -99;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">int</span> <span class="keywordtype">id</span>   = -99;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">bool</span> active = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    MutFun&lt;TSeq&gt;          mutation_fun                 = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    PostRecoveryFun&lt;TSeq&gt; post_recovery_fun            = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    VirusFun&lt;TSeq&gt;        probability_of_infecting_fun = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    VirusFun&lt;TSeq&gt;        probability_of_recovery_fun  = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    VirusFun&lt;TSeq&gt;        probability_of_death_fun     = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// Setup parameters</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    std::vector&lt; epiworld_double * &gt; params;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    std::vector&lt; epiworld_double &gt; data;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    epiworld_fast_int status_init    = -99; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    epiworld_fast_int status_post    = -99; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    epiworld_fast_int status_removed = -99; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    epiworld_fast_int queue_init    = 1; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    epiworld_fast_int queue_post    = -1; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    epiworld_fast_int queue_removed = -99; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="class_virus.html">Virus</a>(std::string name = <span class="stringliteral">&quot;unknown virus&quot;</span>);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> mutate();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> set_mutation(MutFun&lt;TSeq&gt; fun);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">const</span> TSeq* get_sequence();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> set_sequence(TSeq sequence);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="class_person.html">Person&lt;TSeq&gt;</a> * get_host();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> set_host(<a class="code" href="class_person.html">Person&lt;TSeq&gt;</a> * p);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">int</span>        host_idx = -99;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    std::shared_ptr&lt;TSeq&gt; baseline_sequence = std::make_shared&lt;TSeq&gt;(default_sequence&lt;TSeq&gt;());</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::shared_ptr&lt;std::string&gt; virus_name = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">int</span> date = -99;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">int</span> <span class="keywordtype">id</span>   = -99;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">bool</span> active = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    MutFun&lt;TSeq&gt;          mutation_fun                 = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    PostRecoveryFun&lt;TSeq&gt; post_recovery_fun            = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    VirusFun&lt;TSeq&gt;        probability_of_infecting_fun = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    VirusFun&lt;TSeq&gt;        probability_of_recovery_fun  = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    VirusFun&lt;TSeq&gt;        probability_of_death_fun     = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// Setup parameters</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    std::vector&lt; epiworld_double * &gt; params;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    std::vector&lt; epiworld_double &gt; data;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    epiworld_fast_int status_init    = -99; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    epiworld_fast_int status_post    = -99; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    epiworld_fast_int status_removed = -99; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    epiworld_fast_int queue_init    = 1; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    epiworld_fast_int queue_post    = -1; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    epiworld_fast_int queue_removed = -99; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="class_virus.html">Virus</a>(std::string name = <span class="stringliteral">&quot;unknown virus&quot;</span>);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> mutate();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> set_mutation(MutFun&lt;TSeq&gt; fun);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">const</span> TSeq* get_sequence();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> set_sequence(TSeq sequence);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="class_person.html">Person&lt;TSeq&gt;</a> * get_host();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> set_host(<a class="code" href="class_person.html">Person&lt;TSeq&gt;</a> * p, epiworld_fast_uint idx);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="class_model.html">Model&lt;TSeq&gt;</a> * get_model();</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> set_date(<span class="keywordtype">int</span> d);</div>
@@ -193,7 +193,7 @@ $(function() {
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_data_base_html"><div class="ttname"><a href="class_data_base.html">DataBase</a></div><div class="ttdoc">Statistical data about the process.</div><div class="ttdef"><b>Definition:</b> database-bones.hpp:37</div></div>
 <div class="ttc" id="aclass_model_html"><div class="ttname"><a href="class_model.html">Model</a></div><div class="ttdoc">Core class of epiworld.</div><div class="ttdef"><b>Definition:</b> model-bones.hpp:65</div></div>
-<div class="ttc" id="aclass_person_html"><div class="ttname"><a href="class_person.html">Person</a></div><div class="ttdoc">Person (agents)</div><div class="ttdef"><b>Definition:</b> person-bones.hpp:43</div></div>
+<div class="ttc" id="aclass_person_html"><div class="ttname"><a href="class_person.html">Person</a></div><div class="ttdoc">Person (agents)</div><div class="ttdef"><b>Definition:</b> person-bones.hpp:46</div></div>
 <div class="ttc" id="aclass_virus_html"><div class="ttname"><a href="class_virus.html">Virus</a></div><div class="ttdoc">Virus.</div><div class="ttdef"><b>Definition:</b> virus-bones.hpp:25</div></div>
 <div class="ttc" id="astruct_action_html"><div class="ttname"><a href="struct_action.html">Action</a></div><div class="ttdoc">Action data for update an agent.</div><div class="ttdef"><b>Definition:</b> config.hpp:84</div></div>
 </div><!-- fragment --></div><!-- contents -->

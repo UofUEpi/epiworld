@@ -46,7 +46,7 @@ Tool\+Ptr$<$ TSeq $>$ \& {\bfseries get\+\_\+tool} (int i)
 \mbox{\hyperlink{class_tools}{Tools}}$<$ TSeq $>$ {\bfseries get\+\_\+tools} ()
 \item 
 \mbox{\Hypertarget{class_person_a8155f779fb02a0fb40c0177777192bb9}\label{class_person_a8155f779fb02a0fb40c0177777192bb9}} 
-const Tools\+\_\+const$<$ TSeq $>$ {\bfseries get\+\_\+tools} () const
+const \mbox{\hyperlink{class_tools__const}{Tools\+\_\+const}}$<$ TSeq $>$ {\bfseries get\+\_\+tools} () const
 \item 
 \mbox{\Hypertarget{class_person_aa9b8722f2729970f3a831e06130ea21a}\label{class_person_aa9b8722f2729970f3a831e06130ea21a}} 
 size\+\_\+t {\bfseries get\+\_\+n\+\_\+tools} () const noexcept
@@ -80,12 +80,9 @@ bool {\bfseries has\+\_\+virus} (unsigned int t) const
 \item 
 \mbox{\Hypertarget{class_person_ae4badf21e27b1ba3b1cc98d46da000fa}\label{class_person_ae4badf21e27b1ba3b1cc98d46da000fa}} 
 bool {\bfseries has\+\_\+virus} (std\+::string name) const
-\item 
-\mbox{\Hypertarget{class_person_a99efb8141621c574a3f7282585a410fe}\label{class_person_a99efb8141621c574a3f7282585a410fe}} 
-bool {\bfseries is\+\_\+locked} () const noexcept
 \end{DoxyCompactItemize}
 \begin{Indent}\textbf{ Add/\+Remove Virus/\+Tool}\par
-{\em Calling any of these functions will lock the agent (person) until the action is applied at the end of the iteration. Calling any of this functions when the agent is locked will cause an error.
+{\em Any of these is ultimately reflected at the end of the iteration.
 
 
 \begin{DoxyParams}{Parameters}
@@ -115,8 +112,14 @@ void {\bfseries add\+\_\+virus} (\mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $
 \mbox{\Hypertarget{class_person_a04e380c298b7871e2b4c11f6e99137ad}\label{class_person_a04e380c298b7871e2b4c11f6e99137ad}} 
 void {\bfseries rm\+\_\+tool} (epiworld\+\_\+fast\+\_\+uint tool\+\_\+idx, epiworld\+\_\+fast\+\_\+int status\+\_\+new=-\/99, epiworld\+\_\+fast\+\_\+int queue=-\/99)
 \item 
+\mbox{\Hypertarget{class_person_a76890f8d7b80f0e77cdc13625f69279f}\label{class_person_a76890f8d7b80f0e77cdc13625f69279f}} 
+void {\bfseries rm\+\_\+tool} (Tool\+Ptr$<$ TSeq $>$ \&tool, epiworld\+\_\+fast\+\_\+int status\+\_\+new=-\/99, epiworld\+\_\+fast\+\_\+int queue=-\/99)
+\item 
 \mbox{\Hypertarget{class_person_af9616e0e0b8290afcc8607fb10639925}\label{class_person_af9616e0e0b8290afcc8607fb10639925}} 
 void {\bfseries rm\+\_\+virus} (epiworld\+\_\+fast\+\_\+uint virus\+\_\+idx, epiworld\+\_\+fast\+\_\+int status\+\_\+new=-\/99, epiworld\+\_\+fast\+\_\+int queue=-\/99)
+\item 
+\mbox{\Hypertarget{class_person_abd401bd0d97d3d78bc6c0efe14e22cce}\label{class_person_abd401bd0d97d3d78bc6c0efe14e22cce}} 
+void {\bfseries rm\+\_\+virus} (Virus\+Ptr$<$ TSeq $>$ \&virus, epiworld\+\_\+fast\+\_\+int status\+\_\+new=-\/99, epiworld\+\_\+fast\+\_\+int queue=-\/99)
 \end{DoxyCompactItemize}
 \end{Indent}
 \begin{Indent}\textbf{ Get the rates (multipliers) for the agent}\par
