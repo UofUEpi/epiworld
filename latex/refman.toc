@@ -14,22 +14,22 @@
 \contentsline {section}{\numberline {3.2}Adj\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}List Class Reference}{7}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Constructor \& Destructor Documentation}{7}{subsection.3.2.1}%
 \contentsline {subsubsection}{\numberline {3.2.1.1}AdjList()}{7}{subsubsection.3.2.1.1}%
-\contentsline {section}{\numberline {3.3}Data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base$<$ TSeq $>$ Class Template Reference}{8}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Agent$<$ TSeq $>$ Class Template Reference}{8}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Detailed Description}{9}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Member Function Documentation}{9}{subsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.2.1}record\_variant()}{9}{subsubsection.3.3.2.1}%
-\contentsline {section}{\numberline {3.4}LFMCMC$<$ TData $>$ Class Template Reference}{9}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Detailed Description}{10}{subsection.3.4.1}%
-\contentsline {section}{\numberline {3.5}Location$<$ TSeq $>$ Class Template Reference}{11}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Model$<$ TSeq $>$ Class Template Reference}{11}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Detailed Description}{17}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Member Function Documentation}{17}{subsection.3.6.2}%
-\contentsline {subsubsection}{\numberline {3.6.2.1}add\_global\_action()}{17}{subsubsection.3.6.2.1}%
-\contentsline {subsubsection}{\numberline {3.6.2.2}reset()}{17}{subsubsection.3.6.2.2}%
-\contentsline {subsubsection}{\numberline {3.6.2.3}run\_multiple()}{18}{subsubsection.3.6.2.3}%
-\contentsline {subsubsection}{\numberline {3.6.2.4}write\_data()}{18}{subsubsection.3.6.2.4}%
-\contentsline {section}{\numberline {3.7}Person$<$ TSeq $>$ Class Template Reference}{19}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Detailed Description}{20}{subsection.3.7.1}%
+\contentsline {section}{\numberline {3.4}Data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base$<$ TSeq $>$ Class Template Reference}{10}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Detailed Description}{11}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Member Function Documentation}{11}{subsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.2.1}record\_variant()}{11}{subsubsection.3.4.2.1}%
+\contentsline {section}{\numberline {3.5}LFMCMC$<$ TData $>$ Class Template Reference}{11}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Detailed Description}{12}{subsection.3.5.1}%
+\contentsline {section}{\numberline {3.6}Location$<$ TSeq $>$ Class Template Reference}{13}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Model$<$ TSeq $>$ Class Template Reference}{13}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Detailed Description}{19}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Member Function Documentation}{19}{subsection.3.7.2}%
+\contentsline {subsubsection}{\numberline {3.7.2.1}add\_global\_action()}{19}{subsubsection.3.7.2.1}%
+\contentsline {subsubsection}{\numberline {3.7.2.2}reset()}{19}{subsubsection.3.7.2.2}%
+\contentsline {subsubsection}{\numberline {3.7.2.3}run\_multiple()}{20}{subsubsection.3.7.2.3}%
+\contentsline {subsubsection}{\numberline {3.7.2.4}write\_data()}{20}{subsubsection.3.7.2.4}%
 \contentsline {section}{\numberline {3.8}Person\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tools$<$ TSeq $>$ Class Template Reference}{21}{section.3.8}%
 \contentsline {section}{\numberline {3.9}Progress Class Reference}{21}{section.3.9}%
 \contentsline {subsection}{\numberline {3.9.1}Detailed Description}{21}{subsection.3.9.1}%

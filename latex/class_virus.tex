@@ -27,11 +27,11 @@ const TSeq $\ast$ {\bfseries get\+\_\+sequence} ()
 \mbox{\Hypertarget{class_virus_a43c3bc089caf149e8f2db4b4453e38d2}\label{class_virus_a43c3bc089caf149e8f2db4b4453e38d2}} 
 void {\bfseries set\+\_\+sequence} (TSeq sequence)
 \item 
-\mbox{\Hypertarget{class_virus_ab7d0fe4910d2a776203a053a0c3124d5}\label{class_virus_ab7d0fe4910d2a776203a053a0c3124d5}} 
-\mbox{\hyperlink{class_person}{Person}}$<$ TSeq $>$ $\ast$ {\bfseries get\+\_\+host} ()
+\mbox{\Hypertarget{class_virus_aa6078347c4a1e0f4c9505c881d93cd1a}\label{class_virus_aa6078347c4a1e0f4c9505c881d93cd1a}} 
+\mbox{\hyperlink{class_agent}{Agent}}$<$ TSeq $>$ $\ast$ {\bfseries get\+\_\+agent} ()
 \item 
-\mbox{\Hypertarget{class_virus_a351ab078a215aba45722c6f728c01762}\label{class_virus_a351ab078a215aba45722c6f728c01762}} 
-void {\bfseries set\+\_\+host} (\mbox{\hyperlink{class_person}{Person}}$<$ TSeq $>$ $\ast$p, epiworld\+\_\+fast\+\_\+uint idx)
+\mbox{\Hypertarget{class_virus_a0683a4236d510c99452a44fb65352801}\label{class_virus_a0683a4236d510c99452a44fb65352801}} 
+void {\bfseries set\+\_\+agent} (\mbox{\hyperlink{class_agent}{Agent}}$<$ TSeq $>$ $\ast$p, epiworld\+\_\+fast\+\_\+uint idx)
 \item 
 \mbox{\Hypertarget{class_virus_a2dbce3d4acea1a18e735f4089af709cd}\label{class_virus_a2dbce3d4acea1a18e735f4089af709cd}} 
 \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$ {\bfseries get\+\_\+model} ()
@@ -124,11 +124,11 @@ void {\bfseries set\+\_\+prob\+\_\+death} (epiworld\+\_\+double prob)
 
 
 \begin{DoxyParams}{Parameters}
-{\em init} & After the virus/tool is added to the host. \\
+{\em init} & After the virus/tool is added to the agent. \\
 \hline
 {\em end} & After the virus/tool is removed. \\
 \hline
-{\em removed} & After the host (\mbox{\hyperlink{class_person}{Person}}) is removed. \\
+{\em removed} & After the agent (\mbox{\hyperlink{class_agent}{Agent}}) is removed. \\
 \hline
 \end{DoxyParams}
 }\begin{DoxyCompactItemize}
@@ -149,8 +149,8 @@ void {\bfseries get\+\_\+queue} (epiworld\+\_\+fast\+\_\+int $\ast$init, epiworl
 \doxysubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_virus_a195def33d9d6483c6a309af6984bbf90}\label{class_virus_a195def33d9d6483c6a309af6984bbf90}} 
-class {\bfseries Person$<$ TSeq $>$}
+\mbox{\Hypertarget{class_virus_a4ebc26ee7b812cd7314ef1f7eb4cdebb}\label{class_virus_a4ebc26ee7b812cd7314ef1f7eb4cdebb}} 
+class {\bfseries Agent$<$ TSeq $>$}
 \item 
 \mbox{\Hypertarget{class_virus_aa4532e80368ab60b4fda5bb917f6f0ca}\label{class_virus_aa4532e80368ab60b4fda5bb917f6f0ca}} 
 class {\bfseries Model$<$ TSeq $>$}
@@ -183,10 +183,10 @@ class Virus$<$ TSeq $>$}
 {\em TSeq} & \\
 \hline
 \end{DoxyTemplParams}
-Raw transmisibility of a virus should be a function of its genetic sequence. Nonetheless, transmisibility can be reduced as a result of having one or more tools to fight the virus. Because of this, transmisibility should be a function of the host. 
+Raw transmisibility of a virus should be a function of its genetic sequence. Nonetheless, transmisibility can be reduced as a result of having one or more tools to fight the virus. Because of this, transmisibility should be a function of the agent. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-include/epiworld/config.\+hpp\item 
+include/epiworld/agent-\/bones.\+hpp\item 
 include/epiworld/virus-\/bones.\+hpp\item 
 include/epiworld/virus-\/meat.\+hpp\end{DoxyCompactItemize}

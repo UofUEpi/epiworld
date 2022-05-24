@@ -78,7 +78,7 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">class </span><a class="code" href="class_virus.html">Virus</a>;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span><a class="code" href="class_person.html">Person</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span><a class="code" href="class_agent.html">Agent</a>;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span><a class="code" href="class_model.html">Model</a>;</div>
@@ -88,7 +88,7 @@ $(function() {
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq = <span class="keywordtype">int</span>&gt; </div>
 <div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_tool.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tool.html">Tool</a> {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_person.html">Person</a>&lt;TSeq&gt;;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_agent.html">Agent</a>&lt;TSeq&gt;;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_model.html">Model</a>&lt;TSeq&gt;;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">friend</span> <span class="keywordtype">void</span> default_add_virus&lt;TSeq&gt;(<a class="code" href="struct_action.html">Action&lt;TSeq&gt;</a> &amp; a, <a class="code" href="class_model.html">Model&lt;TSeq&gt;</a> * m);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">friend</span> <span class="keywordtype">void</span> default_add_tool&lt;TSeq&gt;(<a class="code" href="struct_action.html">Action&lt;TSeq&gt;</a> &amp; a, <a class="code" href="class_model.html">Model&lt;TSeq&gt;</a> * m);</div>
@@ -96,8 +96,8 @@ $(function() {
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">friend</span> <span class="keywordtype">void</span> default_rm_tool&lt;TSeq&gt;(<a class="code" href="struct_action.html">Action&lt;TSeq&gt;</a> &amp; a, <a class="code" href="class_model.html">Model&lt;TSeq&gt;</a> * m);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="class_person.html">Person&lt;TSeq&gt;</a> * person = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">int</span> person_idx        = -99;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="class_agent.html">Agent&lt;TSeq&gt;</a> * agent = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">int</span> agent_idx        = -99;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">int</span> date = -99;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">int</span> <span class="keywordtype">id</span>   = -99;</div>
@@ -118,7 +118,7 @@ $(function() {
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    epiworld_fast_int queue_init = 0; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    epiworld_fast_int queue_post = 0; </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> set_person(<a class="code" href="class_person.html">Person&lt;TSeq&gt;</a> * p, <span class="keywordtype">size_t</span> idx);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> set_agent(<a class="code" href="class_agent.html">Agent&lt;TSeq&gt;</a> * p, <span class="keywordtype">size_t</span> idx);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="class_tool.html">Tool</a>(std::string name = <span class="stringliteral">&quot;unknown tool&quot;</span>);</div>
@@ -153,7 +153,7 @@ $(function() {
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> set_name(std::string name);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    std::string get_name() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="class_person.html">Person&lt;TSeq&gt;</a> * get_person();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="class_agent.html">Agent&lt;TSeq&gt;</a> * get_agent();</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">int</span> get_id() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> set_id(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> set_date(<span class="keywordtype">int</span> d);</div>
@@ -166,10 +166,10 @@ $(function() {
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;};</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_agent_html"><div class="ttname"><a href="class_agent.html">Agent</a></div><div class="ttdoc">Agent (agents)</div><div class="ttdef"><b>Definition:</b> agent-bones.hpp:46</div></div>
 <div class="ttc" id="aclass_model_html"><div class="ttname"><a href="class_model.html">Model</a></div><div class="ttdoc">Core class of epiworld.</div><div class="ttdef"><b>Definition:</b> model-bones.hpp:65</div></div>
 <div class="ttc" id="aclass_model_html_aaf33c877732b9bdc7cb77e063ad0c1a6"><div class="ttname"><a href="class_model.html#aaf33c877732b9bdc7cb77e063ad0c1a6">Model::get_queue</a></div><div class="ttdeci">Queue&lt; TSeq &gt; &amp; get_queue()</div><div class="ttdoc">Retrieve the Queue object.</div></div>
-<div class="ttc" id="aclass_person_html"><div class="ttname"><a href="class_person.html">Person</a></div><div class="ttdoc">Person (agents)</div><div class="ttdef"><b>Definition:</b> person-bones.hpp:46</div></div>
-<div class="ttc" id="aclass_tool_html"><div class="ttname"><a href="class_tool.html">Tool</a></div><div class="ttdoc">Tools for defending the host against the virus.</div><div class="ttdef"><b>Definition:</b> tool-bones.hpp:23</div></div>
+<div class="ttc" id="aclass_tool_html"><div class="ttname"><a href="class_tool.html">Tool</a></div><div class="ttdoc">Tools for defending the agent against the virus.</div><div class="ttdef"><b>Definition:</b> tool-bones.hpp:23</div></div>
 <div class="ttc" id="aclass_virus_html"><div class="ttname"><a href="class_virus.html">Virus</a></div><div class="ttdoc">Virus.</div><div class="ttdef"><b>Definition:</b> virus-bones.hpp:25</div></div>
 <div class="ttc" id="astruct_action_html"><div class="ttname"><a href="struct_action.html">Action</a></div><div class="ttdoc">Action data for update an agent.</div><div class="ttdef"><b>Definition:</b> config.hpp:84</div></div>
 </div><!-- fragment --></div><!-- contents -->

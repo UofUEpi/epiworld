@@ -1,0 +1,202 @@
+\hypertarget{class_agent}{}\doxysection{Agent$<$ TSeq $>$ Class Template Reference}
+\label{class_agent}\index{Agent$<$ TSeq $>$@{Agent$<$ TSeq $>$}}
+
+
+\mbox{\hyperlink{class_agent}{Agent}} (agents)  
+
+
+
+
+{\ttfamily \#include $<$agent-\/bones.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_agent_a44f380e5e3a6054949cb053fdc8af435}\label{class_agent_a44f380e5e3a6054949cb053fdc8af435}} 
+{\bfseries Agent} (const \mbox{\hyperlink{class_agent}{Agent}}$<$ TSeq $>$ \&p)
+\item 
+\mbox{\Hypertarget{class_agent_a3763f12b56e8dd7f0e23bbca4f183c8a}\label{class_agent_a3763f12b56e8dd7f0e23bbca4f183c8a}} 
+int \mbox{\hyperlink{class_agent_a3763f12b56e8dd7f0e23bbca4f183c8a}{get\+\_\+id}} () const
+\begin{DoxyCompactList}\small\item\em Id of the individual. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_agent_a5b35f00791d4090fdc4d8d45536dce0a}\label{class_agent_a5b35f00791d4090fdc4d8d45536dce0a}} 
+unsigned int \mbox{\hyperlink{class_agent_a5b35f00791d4090fdc4d8d45536dce0a}{get\+\_\+index}} () const
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_location}{Location}} (0, ..., n-\/1). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_agent_abc8d6e576252a91c3d4ad5a7342f648d}\label{class_agent_abc8d6e576252a91c3d4ad5a7342f648d}} 
+std\+::mt19937 $\ast$ {\bfseries get\+\_\+rand\+\_\+endgine} ()
+\item 
+\mbox{\Hypertarget{class_agent_a1836acf739f7149a43cfe6c91e4ec783}\label{class_agent_a1836acf739f7149a43cfe6c91e4ec783}} 
+\mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$ {\bfseries get\+\_\+model} ()
+\item 
+\mbox{\Hypertarget{class_agent_ab002ed58227fd59109aeffe498d63c04}\label{class_agent_ab002ed58227fd59109aeffe498d63c04}} 
+Virus\+Ptr$<$ TSeq $>$ \& {\bfseries get\+\_\+virus} (int i)
+\item 
+\mbox{\Hypertarget{class_agent_ae2eeaca3874017308ad96cbf920d08a6}\label{class_agent_ae2eeaca3874017308ad96cbf920d08a6}} 
+\mbox{\hyperlink{class_viruses}{Viruses}}$<$ TSeq $>$ {\bfseries get\+\_\+viruses} ()
+\item 
+\mbox{\Hypertarget{class_agent_a8ed02f2f30d5ee0e3f84c522e7d96d6a}\label{class_agent_a8ed02f2f30d5ee0e3f84c522e7d96d6a}} 
+const \mbox{\hyperlink{class_viruses__const}{Viruses\+\_\+const}}$<$ TSeq $>$ {\bfseries get\+\_\+viruses} () const
+\item 
+\mbox{\Hypertarget{class_agent_a199ee0afdc74d8b58bd798846a9c79b6}\label{class_agent_a199ee0afdc74d8b58bd798846a9c79b6}} 
+size\+\_\+t {\bfseries get\+\_\+n\+\_\+viruses} () const noexcept
+\item 
+\mbox{\Hypertarget{class_agent_ac3211ded4181d5df1dcc5652724b0854}\label{class_agent_ac3211ded4181d5df1dcc5652724b0854}} 
+Tool\+Ptr$<$ TSeq $>$ \& {\bfseries get\+\_\+tool} (int i)
+\item 
+\mbox{\Hypertarget{class_agent_acba59dea50d2758363af946f3ade529d}\label{class_agent_acba59dea50d2758363af946f3ade529d}} 
+\mbox{\hyperlink{class_tools}{Tools}}$<$ TSeq $>$ {\bfseries get\+\_\+tools} ()
+\item 
+\mbox{\Hypertarget{class_agent_aa89d41a3fd94ea640488a786ef6d2bad}\label{class_agent_aa89d41a3fd94ea640488a786ef6d2bad}} 
+const \mbox{\hyperlink{class_tools__const}{Tools\+\_\+const}}$<$ TSeq $>$ {\bfseries get\+\_\+tools} () const
+\item 
+\mbox{\Hypertarget{class_agent_af373a75291d2e5ec1d39e29970e938f0}\label{class_agent_af373a75291d2e5ec1d39e29970e938f0}} 
+size\+\_\+t {\bfseries get\+\_\+n\+\_\+tools} () const noexcept
+\item 
+\mbox{\Hypertarget{class_agent_afadd71ad266ecf1359918605e92da188}\label{class_agent_afadd71ad266ecf1359918605e92da188}} 
+void {\bfseries mutate\+\_\+variant} ()
+\item 
+\mbox{\Hypertarget{class_agent_aa20c7be29a7e87d9ab3698769f1650da}\label{class_agent_aa20c7be29a7e87d9ab3698769f1650da}} 
+void {\bfseries add\+\_\+neighbor} (\mbox{\hyperlink{class_agent}{Agent}}$<$ TSeq $>$ $\ast$p, bool check\+\_\+source=true, bool check\+\_\+target=true)
+\item 
+\mbox{\Hypertarget{class_agent_a6d230d9f2fff97635fac47119998b3d7}\label{class_agent_a6d230d9f2fff97635fac47119998b3d7}} 
+std\+::vector$<$ \mbox{\hyperlink{class_agent}{Agent}}$<$ TSeq $>$ $\ast$ $>$ \& {\bfseries get\+\_\+neighbors} ()
+\item 
+\mbox{\Hypertarget{class_agent_af1b0b4558844eb7f5e6af9029d913abf}\label{class_agent_af1b0b4558844eb7f5e6af9029d913abf}} 
+void {\bfseries change\+\_\+status} (epiworld\+\_\+fast\+\_\+uint new\+\_\+status, epiworld\+\_\+fast\+\_\+int queue=0)
+\item 
+\mbox{\Hypertarget{class_agent_ab3bb8294e4f24d7a316b112bab642d5b}\label{class_agent_ab3bb8294e4f24d7a316b112bab642d5b}} 
+const epiworld\+\_\+fast\+\_\+uint \& {\bfseries get\+\_\+status} () const
+\item 
+\mbox{\Hypertarget{class_agent_a1dda8431f4fcf1527fce531b236f8a4c}\label{class_agent_a1dda8431f4fcf1527fce531b236f8a4c}} 
+void {\bfseries reset} ()
+\item 
+\mbox{\Hypertarget{class_agent_aae7e2b4ee9647d8715a8fd71aac4b1fa}\label{class_agent_aae7e2b4ee9647d8715a8fd71aac4b1fa}} 
+bool {\bfseries has\+\_\+tool} (unsigned int t) const
+\item 
+\mbox{\Hypertarget{class_agent_ae725e1ce0f3c048b3f8d071682c5599b}\label{class_agent_ae725e1ce0f3c048b3f8d071682c5599b}} 
+bool {\bfseries has\+\_\+tool} (std\+::string name) const
+\item 
+\mbox{\Hypertarget{class_agent_a478e3ad844a4cb557eae90209e19d96f}\label{class_agent_a478e3ad844a4cb557eae90209e19d96f}} 
+bool {\bfseries has\+\_\+virus} (unsigned int t) const
+\item 
+\mbox{\Hypertarget{class_agent_a467ab50ed026af34de29409f73632cdb}\label{class_agent_a467ab50ed026af34de29409f73632cdb}} 
+bool {\bfseries has\+\_\+virus} (std\+::string name) const
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Add/\+Remove Virus/\+Tool}\par
+{\em Any of these is ultimately reflected at the end of the iteration.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tool} & \mbox{\hyperlink{class_tool}{Tool}} to add \\
+\hline
+{\em virus} & \mbox{\hyperlink{class_virus}{Virus}} to add \\
+\hline
+{\em status\+\_\+new} & Status after the change \\
+\hline
+{\em queue} & \\
+\hline
+\end{DoxyParams}
+}\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_agent_a2060b2ab35e0be9aaafff079be44a0e5}\label{class_agent_a2060b2ab35e0be9aaafff079be44a0e5}} 
+void {\bfseries add\+\_\+tool} (Tool\+Ptr$<$ TSeq $>$ tool, epiworld\+\_\+fast\+\_\+int status\+\_\+new=-\/99, epiworld\+\_\+fast\+\_\+int queue=-\/99)
+\item 
+\mbox{\Hypertarget{class_agent_a64f1196956ab593b356dd6de1b3591a0}\label{class_agent_a64f1196956ab593b356dd6de1b3591a0}} 
+void {\bfseries add\+\_\+tool} (\mbox{\hyperlink{class_tool}{Tool}}$<$ TSeq $>$ tool, epiworld\+\_\+fast\+\_\+int status\+\_\+new=-\/99, epiworld\+\_\+fast\+\_\+int queue=-\/99)
+\item 
+\mbox{\Hypertarget{class_agent_a9c6099fa272fc17303abfd1e330f9fac}\label{class_agent_a9c6099fa272fc17303abfd1e330f9fac}} 
+void {\bfseries add\+\_\+virus} (Virus\+Ptr$<$ TSeq $>$ virus, epiworld\+\_\+fast\+\_\+int status\+\_\+new=-\/99, epiworld\+\_\+fast\+\_\+int queue=-\/99)
+\item 
+\mbox{\Hypertarget{class_agent_ae53251a3addd19e9c0446a25b358bb27}\label{class_agent_ae53251a3addd19e9c0446a25b358bb27}} 
+void {\bfseries add\+\_\+virus} (\mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ virus, epiworld\+\_\+fast\+\_\+int status\+\_\+new=-\/99, epiworld\+\_\+fast\+\_\+int queue=-\/99)
+\item 
+\mbox{\Hypertarget{class_agent_a1f85f05cf94b82aeebc2011a1ce8cfeb}\label{class_agent_a1f85f05cf94b82aeebc2011a1ce8cfeb}} 
+void {\bfseries rm\+\_\+tool} (epiworld\+\_\+fast\+\_\+uint tool\+\_\+idx, epiworld\+\_\+fast\+\_\+int status\+\_\+new=-\/99, epiworld\+\_\+fast\+\_\+int queue=-\/99)
+\item 
+\mbox{\Hypertarget{class_agent_afe77a3423b71567c448118848316e1ec}\label{class_agent_afe77a3423b71567c448118848316e1ec}} 
+void {\bfseries rm\+\_\+tool} (Tool\+Ptr$<$ TSeq $>$ \&tool, epiworld\+\_\+fast\+\_\+int status\+\_\+new=-\/99, epiworld\+\_\+fast\+\_\+int queue=-\/99)
+\item 
+\mbox{\Hypertarget{class_agent_a3fe4839acfe70ae5207659c9fe9fa1c5}\label{class_agent_a3fe4839acfe70ae5207659c9fe9fa1c5}} 
+void {\bfseries rm\+\_\+virus} (epiworld\+\_\+fast\+\_\+uint virus\+\_\+idx, epiworld\+\_\+fast\+\_\+int status\+\_\+new=-\/99, epiworld\+\_\+fast\+\_\+int queue=-\/99)
+\item 
+\mbox{\Hypertarget{class_agent_a544419b60fb8aff92e89e4fa2d3c1875}\label{class_agent_a544419b60fb8aff92e89e4fa2d3c1875}} 
+void {\bfseries rm\+\_\+virus} (Virus\+Ptr$<$ TSeq $>$ \&virus, epiworld\+\_\+fast\+\_\+int status\+\_\+new=-\/99, epiworld\+\_\+fast\+\_\+int queue=-\/99)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Get the rates (multipliers) for the agent}\par
+{\em 
+\begin{DoxyParams}{Parameters}
+{\em v} & A pointer to a virus. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+epiworld\+\_\+double 
+\end{DoxyReturn}
+}\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_agent_a603ec02ce6eaabec99ec8f244e7b9a0c}\label{class_agent_a603ec02ce6eaabec99ec8f244e7b9a0c}} 
+epiworld\+\_\+double {\bfseries get\+\_\+susceptibility\+\_\+reduction} (Virus\+Ptr$<$ TSeq $>$ v)
+\item 
+\mbox{\Hypertarget{class_agent_a624fe35751f46c123b193e7ad8f5407a}\label{class_agent_a624fe35751f46c123b193e7ad8f5407a}} 
+epiworld\+\_\+double {\bfseries get\+\_\+transmission\+\_\+reduction} (Virus\+Ptr$<$ TSeq $>$ v)
+\item 
+\mbox{\Hypertarget{class_agent_abc00be138738421a1f571c6a5d0cb92e}\label{class_agent_abc00be138738421a1f571c6a5d0cb92e}} 
+epiworld\+\_\+double {\bfseries get\+\_\+recovery\+\_\+enhancer} (Virus\+Ptr$<$ TSeq $>$ v)
+\item 
+\mbox{\Hypertarget{class_agent_a9ebfa8ca3896ab7a1466f94f991d6056}\label{class_agent_a9ebfa8ca3896ab7a1466f94f991d6056}} 
+epiworld\+\_\+double {\bfseries get\+\_\+death\+\_\+reduction} (Virus\+Ptr$<$ TSeq $>$ v)
+\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_agent_aa4532e80368ab60b4fda5bb917f6f0ca}\label{class_agent_aa4532e80368ab60b4fda5bb917f6f0ca}} 
+class {\bfseries Model$<$ TSeq $>$}
+\item 
+\mbox{\Hypertarget{class_agent_abdfac6506b42b0ae094136b7b2cb9a8d}\label{class_agent_abdfac6506b42b0ae094136b7b2cb9a8d}} 
+class {\bfseries Virus$<$ TSeq $>$}
+\item 
+\mbox{\Hypertarget{class_agent_ab32fa944af324b3a7d9d2659bf7707e5}\label{class_agent_ab32fa944af324b3a7d9d2659bf7707e5}} 
+class {\bfseries Viruses$<$ TSeq $>$}
+\item 
+\mbox{\Hypertarget{class_agent_ad9f952e5dff1ad13e61850a308724d23}\label{class_agent_ad9f952e5dff1ad13e61850a308724d23}} 
+class {\bfseries Viruses\+\_\+const$<$ TSeq $>$}
+\item 
+\mbox{\Hypertarget{class_agent_ad2c21dac3d31f0bb261ca72aaebddced}\label{class_agent_ad2c21dac3d31f0bb261ca72aaebddced}} 
+class {\bfseries Tool$<$ TSeq $>$}
+\item 
+\mbox{\Hypertarget{class_agent_a33d7737e07302865e0bcf070010747fa}\label{class_agent_a33d7737e07302865e0bcf070010747fa}} 
+class {\bfseries Tools$<$ TSeq $>$}
+\item 
+\mbox{\Hypertarget{class_agent_a2bfabd70b21ded1907307daeb724ae58}\label{class_agent_a2bfabd70b21ded1907307daeb724ae58}} 
+class {\bfseries Queue$<$ TSeq $>$}
+\item 
+\mbox{\Hypertarget{class_agent_a5a80a0876b1453c31734f5728c30144f}\label{class_agent_a5a80a0876b1453c31734f5728c30144f}} 
+void {\bfseries default\+\_\+add\+\_\+virus} (\mbox{\hyperlink{struct_action}{Action}}$<$ TSeq $>$ \&a, \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$m)
+\item 
+\mbox{\Hypertarget{class_agent_a1f4deae20e873213f82b53cd4d5db4f7}\label{class_agent_a1f4deae20e873213f82b53cd4d5db4f7}} 
+void {\bfseries default\+\_\+add\+\_\+tool} (\mbox{\hyperlink{struct_action}{Action}}$<$ TSeq $>$ \&a, \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$m)
+\item 
+\mbox{\Hypertarget{class_agent_a16cc390e86f20526d2e9c2fde4bffb2e}\label{class_agent_a16cc390e86f20526d2e9c2fde4bffb2e}} 
+void {\bfseries default\+\_\+rm\+\_\+virus} (\mbox{\hyperlink{struct_action}{Action}}$<$ TSeq $>$ \&a, \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$m)
+\item 
+\mbox{\Hypertarget{class_agent_a9d273869be3324c1e3de0ff81bf8c112}\label{class_agent_a9d273869be3324c1e3de0ff81bf8c112}} 
+void {\bfseries default\+\_\+rm\+\_\+tool} (\mbox{\hyperlink{struct_action}{Action}}$<$ TSeq $>$ \&a, \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$m)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename TSeq = int$>$\newline
+class Agent$<$ TSeq $>$}
+
+\mbox{\hyperlink{class_agent}{Agent}} (agents) 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em TSeq} & Sequence type (should match {\ttfamily TSeq} across the model) \\
+\hline
+\end{DoxyTemplParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/epiworld/agent-\/bones.\+hpp\end{DoxyCompactItemize}

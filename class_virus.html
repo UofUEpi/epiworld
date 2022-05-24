@@ -93,12 +93,12 @@ const TSeq *&#160;</td><td class="memItemRight" valign="bottom"><b>get_sequence<
 <tr class="memitem:a43c3bc089caf149e8f2db4b4453e38d2"><td class="memItemLeft" align="right" valign="top"><a id="a43c3bc089caf149e8f2db4b4453e38d2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_sequence</b> (TSeq sequence)</td></tr>
 <tr class="separator:a43c3bc089caf149e8f2db4b4453e38d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7d0fe4910d2a776203a053a0c3124d5"><td class="memItemLeft" align="right" valign="top"><a id="ab7d0fe4910d2a776203a053a0c3124d5"></a>
-<a class="el" href="class_person.html">Person</a>&lt; TSeq &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>get_host</b> ()</td></tr>
-<tr class="separator:ab7d0fe4910d2a776203a053a0c3124d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a351ab078a215aba45722c6f728c01762"><td class="memItemLeft" align="right" valign="top"><a id="a351ab078a215aba45722c6f728c01762"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_host</b> (<a class="el" href="class_person.html">Person</a>&lt; TSeq &gt; *p, epiworld_fast_uint idx)</td></tr>
-<tr class="separator:a351ab078a215aba45722c6f728c01762"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6078347c4a1e0f4c9505c881d93cd1a"><td class="memItemLeft" align="right" valign="top"><a id="aa6078347c4a1e0f4c9505c881d93cd1a"></a>
+<a class="el" href="class_agent.html">Agent</a>&lt; TSeq &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>get_agent</b> ()</td></tr>
+<tr class="separator:aa6078347c4a1e0f4c9505c881d93cd1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0683a4236d510c99452a44fb65352801"><td class="memItemLeft" align="right" valign="top"><a id="a0683a4236d510c99452a44fb65352801"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_agent</b> (<a class="el" href="class_agent.html">Agent</a>&lt; TSeq &gt; *p, epiworld_fast_uint idx)</td></tr>
+<tr class="separator:a0683a4236d510c99452a44fb65352801"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dbce3d4acea1a18e735f4089af709cd"><td class="memItemLeft" align="right" valign="top"><a id="a2dbce3d4acea1a18e735f4089af709cd"></a>
 <a class="el" href="class_model.html">Model</a>&lt; TSeq &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>get_model</b> ()</td></tr>
 <tr class="separator:a2dbce3d4acea1a18e735f4089af709cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,9 +185,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set_prob_death</b> (e
 <tr><td colspan="2"><div class="groupText"><p>After applied, viruses can change the status and affect the queue of agents. These function sets the default values, which are retrieved when adding or removing a virus does not specify a change in status or in queue.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">init</td><td>After the virus/tool is added to the host. </td></tr>
+    <tr><td class="paramname">init</td><td>After the virus/tool is added to the agent. </td></tr>
     <tr><td class="paramname">end</td><td>After the virus/tool is removed. </td></tr>
-    <tr><td class="paramname">removed</td><td>After the host (<a class="el" href="class_person.html" title="Person (agents)">Person</a>) is removed. </td></tr>
+    <tr><td class="paramname">removed</td><td>After the agent (<a class="el" href="class_agent.html" title="Agent (agents)">Agent</a>) is removed. </td></tr>
   </table>
   </dd>
 </dl>
@@ -207,9 +207,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_queue</b> (epiwor
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a195def33d9d6483c6a309af6984bbf90"><td class="memItemLeft" align="right" valign="top"><a id="a195def33d9d6483c6a309af6984bbf90"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>Person&lt; TSeq &gt;</b></td></tr>
-<tr class="separator:a195def33d9d6483c6a309af6984bbf90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ebc26ee7b812cd7314ef1f7eb4cdebb"><td class="memItemLeft" align="right" valign="top"><a id="a4ebc26ee7b812cd7314ef1f7eb4cdebb"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Agent&lt; TSeq &gt;</b></td></tr>
+<tr class="separator:a4ebc26ee7b812cd7314ef1f7eb4cdebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4532e80368ab60b4fda5bb917f6f0ca"><td class="memItemLeft" align="right" valign="top"><a id="aa4532e80368ab60b4fda5bb917f6f0ca"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>Model&lt; TSeq &gt;</b></td></tr>
 <tr class="separator:aa4532e80368ab60b4fda5bb917f6f0ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -240,9 +240,9 @@ class Virus&lt; TSeq &gt;</h3>
   </table>
   </dd>
 </dl>
-<p>Raw transmisibility of a virus should be a function of its genetic sequence. Nonetheless, transmisibility can be reduced as a result of having one or more tools to fight the virus. Because of this, transmisibility should be a function of the host. </p>
+<p>Raw transmisibility of a virus should be a function of its genetic sequence. Nonetheless, transmisibility can be reduced as a result of having one or more tools to fight the virus. Because of this, transmisibility should be a function of the agent. </p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/epiworld/<a class="el" href="config_8hpp_source.html">config.hpp</a></li>
+<li>include/epiworld/<a class="el" href="agent-bones_8hpp_source.html">agent-bones.hpp</a></li>
 <li>include/epiworld/<a class="el" href="virus-bones_8hpp_source.html">virus-bones.hpp</a></li>
 <li>include/epiworld/<a class="el" href="virus-meat_8hpp_source.html">virus-meat.hpp</a></li>
 </ul>

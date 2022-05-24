@@ -77,14 +77,14 @@ $(function() {
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">class </span><a class="code" href="class_virus.html">Virus</a>;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span><a class="code" href="class_person.html">Person</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span><a class="code" href="class_agent.html">Agent</a>;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define VIRUSPTR std::shared_ptr&lt; Virus&lt;TSeq&gt; &gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_viruses.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_viruses.html">Viruses</a> {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_virus.html">Virus</a>&lt;TSeq&gt;;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_person.html">Person</a>&lt;TSeq&gt;;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_agent.html">Agent</a>&lt;TSeq&gt;;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    std::vector&lt; VIRUSPTR &gt; * dat;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">const</span> epiworld_fast_uint * n_viruses;</div>
@@ -92,7 +92,7 @@ $(function() {
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_viruses.html">Viruses</a>() = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_viruses.html">Viruses</a>(<a class="code" href="class_person.html">Person&lt;TSeq&gt;</a> &amp; p) : dat(&amp;p.viruses), n_viruses(&amp;p.n_viruses) {};</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_viruses.html">Viruses</a>(<a class="code" href="class_agent.html">Agent&lt;TSeq&gt;</a> &amp; p) : dat(&amp;p.viruses), n_viruses(&amp;p.n_viruses) {};</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">typename</span> std::vector&lt; VIRUSPTR &gt;::iterator begin();</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">typename</span> std::vector&lt; VIRUSPTR &gt;::iterator end();</div>
@@ -149,7 +149,7 @@ $(function() {
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
 <div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="class_viruses__const.html">   88</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_viruses__const.html">Viruses_const</a> {</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_virus.html">Virus</a>&lt;TSeq&gt;;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_person.html">Person</a>&lt;TSeq&gt;;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_agent.html">Agent</a>&lt;TSeq&gt;;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">const</span> std::vector&lt; VIRUSPTR &gt; * dat;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">const</span> epiworld_fast_uint * n_viruses;</div>
@@ -157,7 +157,7 @@ $(function() {
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="class_viruses__const.html">Viruses_const</a>() = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="class_viruses__const.html">Viruses_const</a>(<span class="keyword">const</span> <a class="code" href="class_person.html">Person&lt;TSeq&gt;</a> &amp; p) : dat(&amp;p.viruses), n_viruses(&amp;p.n_viruses) {};</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="class_viruses__const.html">Viruses_const</a>(<span class="keyword">const</span> <a class="code" href="class_agent.html">Agent&lt;TSeq&gt;</a> &amp; p) : dat(&amp;p.viruses), n_viruses(&amp;p.n_viruses) {};</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">typename</span> std::vector&lt; VIRUSPTR &gt;::const_iterator begin();</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">typename</span> std::vector&lt; VIRUSPTR &gt;::const_iterator end();</div>
@@ -214,7 +214,7 @@ $(function() {
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclass_person_html"><div class="ttname"><a href="class_person.html">Person</a></div><div class="ttdoc">Person (agents)</div><div class="ttdef"><b>Definition:</b> person-bones.hpp:46</div></div>
+<div class="ttc" id="aclass_agent_html"><div class="ttname"><a href="class_agent.html">Agent</a></div><div class="ttdoc">Agent (agents)</div><div class="ttdef"><b>Definition:</b> agent-bones.hpp:46</div></div>
 <div class="ttc" id="aclass_virus_html"><div class="ttname"><a href="class_virus.html">Virus</a></div><div class="ttdoc">Virus.</div><div class="ttdef"><b>Definition:</b> virus-bones.hpp:25</div></div>
 <div class="ttc" id="aclass_viruses__const_html"><div class="ttname"><a href="class_viruses__const.html">Viruses_const</a></div><div class="ttdoc">Set of Viruses (const) (useful for iterators)</div><div class="ttdef"><b>Definition:</b> viruses-bones.hpp:88</div></div>
 <div class="ttc" id="aclass_viruses_html"><div class="ttname"><a href="class_viruses.html">Viruses</a></div><div class="ttdoc">Set of viruses (useful for building iterators)</div><div class="ttdef"><b>Definition:</b> viruses-bones.hpp:18</div></div>

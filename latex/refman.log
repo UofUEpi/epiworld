@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Alpine Linux) (preloaded format=pdflatex 2022.5.24)  24 MAY 2022 18:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Alpine Linux) (preloaded format=pdflatex 2022.5.24)  24 MAY 2022 20:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -920,12 +920,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 pdfTeX warning: pdflatex (file ./struct_action__coll__graph.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
 >
-<struct_action__coll__graph.pdf, id=409, 167.62625pt x 167.62625pt>
+<struct_action__coll__graph.pdf, id=409, 164.615pt x 167.62625pt>
 File: struct_action__coll__graph.pdf Graphic file (type pdf)
 <use struct_action__coll__graph.pdf>
 Package pdftex.def Info: struct_action__coll__graph.pdf  used on input line 19.
 
-(pdftex.def)             Requested size: 167.0pt x 166.99916pt.
+(pdftex.def)             Requested size: 164.0pt x 167.00427pt.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 8.09995pt on input line 26.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
@@ -941,7 +941,7 @@ LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 69.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 69.
-) (./class_adj_list.tex [6]) (./class_data_base.tex
+) (./class_adj_list.tex [6]) (./class_agent.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -958,14 +958,36 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[7]
+[7] [8]
+Underfull \hbox (badness 10000) detected at line 131
+[][][]
+ []
+
+) (./class_data_base.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[9]
 Underfull \hbox (badness 10000) detected at line 77
 [][][]
  []
 
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 78.
-[8]
+[10]
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 6.29996pt on input line 131.
 ) (./class_l_f_m_c_m_c.tex
@@ -985,7 +1007,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[9] [10]) (./class_location.tex
+[11] [12]) (./class_location.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1021,49 +1043,36 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <9> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 52.
-[11] [12]
+[13] [14]
 Underfull \hbox (badness 10000) detected at line 228
 [][][]
  []
 
-[13]
+
+Underfull \hbox (badness 808) in paragraph at lines 233--236
+[][] \T1/phv/m/n/10 void \T1/phv/b/n/10 set[]_[]rewire[]_[]fun \T1/phv/m/n/10 (
+std[]::function$\OML/cmm/m/it/10 <$ \T1/phv/m/n/10 void(std[]::vector$\OML/cmm/
+m/it/10 <$ []$<$ \T1/phv/m/n/10 TSeq $\OML/cmm/m/it/10 >$$>$ $\OMS/cmsy/m/n/10 
+^^C$\T1/phv/m/n/10 , []$\OML/cmm/m/it/10 <$ \T1/phv/m/n/10 TSeq $\OML/cmm/m/it/
+10 >$ $\OMS/cmsy/m/n/10 ^^C$\T1/phv/m/n/10 ,
+ []
+
+[15]
 Underfull \hbox (badness 10000) detected at line 273
 [][][]
  []
 
-[14]
+[16]
 Underfull \hbox (badness 10000) detected at line 336
 [][][]
  []
 
-[15]
+[17]
 Underfull \hbox (badness 10000) detected at line 409
 [][][]
  []
 
-[16] [17]) (./class_person.tex
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
-[18] [19]
-Underfull \hbox (badness 10000) detected at line 131
-[][][]
- []
-
-) (./class_person_tools.tex
+[18] [19]) (./class_person_tools.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1269,12 +1278,12 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 208.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 208.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 208.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: A006012FD07525ADD1E0963FA948FAC6;12361.
+(rerunfilecheck)             Checksum: A291F088EBBC305A82C047C14954FE5F;12356.
  ) 
 Here is how much of TeX's memory you used:
  17696 strings out of 480478
- 280208 string characters out of 5905924
- 556348 words of memory out of 5000000
+ 280111 string characters out of 5905924
+ 556334 words of memory out of 5000000
  32756 multiletter control sequences out of 15000+600000
  599375 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1291,7 +1300,7 @@ rr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/share
 pe1/urw/helvetic/uhvb8ac.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uh
 vbo8ac.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/sha
 re/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (37 pages, 232701 bytes).
+Output written on refman.pdf (37 pages, 232642 bytes).
 PDF statistics:
  1412 PDF objects out of 1440 (max. 8388607)
  1323 compressed objects within 14 object streams

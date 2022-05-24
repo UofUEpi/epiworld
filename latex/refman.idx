@@ -4,21 +4,21 @@
 \indexentry{AdjList@{AdjList}|hyperpage}{7}
 \indexentry{AdjList@{AdjList}!AdjList@{AdjList}|hyperpage}{7}
 \indexentry{AdjList@{AdjList}!AdjList@{AdjList}|hyperpage}{7}
-\indexentry{DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}|hyperpage}{8}
-\indexentry{DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}!record\_variant@{record\_variant}|hyperpage}{9}
-\indexentry{record\_variant@{record\_variant}!DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}|hyperpage}{9}
-\indexentry{LFMCMC$<$ TData $>$@{LFMCMC$<$ TData $>$}|hyperpage}{9}
-\indexentry{Location$<$ TSeq $>$@{Location$<$ TSeq $>$}|hyperpage}{11}
-\indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{11}
-\indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!add\_global\_action@{add\_global\_action}|hyperpage}{17}
-\indexentry{add\_global\_action@{add\_global\_action}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{17}
-\indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!reset@{reset}|hyperpage}{17}
-\indexentry{reset@{reset}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{17}
-\indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!run\_multiple@{run\_multiple}|hyperpage}{18}
-\indexentry{run\_multiple@{run\_multiple}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{18}
-\indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!write\_data@{write\_data}|hyperpage}{18}
-\indexentry{write\_data@{write\_data}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{18}
-\indexentry{Person$<$ TSeq $>$@{Person$<$ TSeq $>$}|hyperpage}{19}
+\indexentry{Agent$<$ TSeq $>$@{Agent$<$ TSeq $>$}|hyperpage}{8}
+\indexentry{DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}|hyperpage}{10}
+\indexentry{DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}!record\_variant@{record\_variant}|hyperpage}{11}
+\indexentry{record\_variant@{record\_variant}!DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}|hyperpage}{11}
+\indexentry{LFMCMC$<$ TData $>$@{LFMCMC$<$ TData $>$}|hyperpage}{11}
+\indexentry{Location$<$ TSeq $>$@{Location$<$ TSeq $>$}|hyperpage}{13}
+\indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{13}
+\indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!add\_global\_action@{add\_global\_action}|hyperpage}{19}
+\indexentry{add\_global\_action@{add\_global\_action}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{19}
+\indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!reset@{reset}|hyperpage}{19}
+\indexentry{reset@{reset}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{19}
+\indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!run\_multiple@{run\_multiple}|hyperpage}{20}
+\indexentry{run\_multiple@{run\_multiple}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{20}
+\indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!write\_data@{write\_data}|hyperpage}{20}
+\indexentry{write\_data@{write\_data}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{20}
 \indexentry{PersonTools$<$ TSeq $>$@{PersonTools$<$ TSeq $>$}|hyperpage}{21}
 \indexentry{Progress@{Progress}|hyperpage}{21}
 \indexentry{Queue$<$ TSeq $>$@{Queue$<$ TSeq $>$}|hyperpage}{21}

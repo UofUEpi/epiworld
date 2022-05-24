@@ -198,7 +198,7 @@ epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>rgamma</b>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">v</td><td><a class="el" href="class_virus.html" title="Virus.">Virus</a> to be added </td></tr>
-    <tr><td class="paramname">t</td><td><a class="el" href="class_tool.html" title="Tools for defending the host against the virus.">Tool</a> to be added </td></tr>
+    <tr><td class="paramname">t</td><td><a class="el" href="class_tool.html" title="Tools for defending the agent against the virus.">Tool</a> to be added </td></tr>
     <tr><td class="paramname">preval</td><td>Initial prevalence (initial state.) It can be specified as a proportion (between zero and one,) or an integer indicating number of individuals. </td></tr>
   </table>
   </dd>
@@ -238,9 +238,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>population_from_adjli
 <tr class="memitem:a9e65d452cd5ccf2aff1f53dd454faa0e"><td class="memItemLeft" align="right" valign="top"><a id="a9e65d452cd5ccf2aff1f53dd454faa0e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_directed</b> () const</td></tr>
 <tr class="separator:a9e65d452cd5ccf2aff1f53dd454faa0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1de4c1012bca9afc8f17e579d367744"><td class="memItemLeft" align="right" valign="top"><a id="ab1de4c1012bca9afc8f17e579d367744"></a>
-std::vector&lt; <a class="el" href="class_person.html">Person</a>&lt; TSeq &gt; &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>get_population</b> ()</td></tr>
-<tr class="separator:ab1de4c1012bca9afc8f17e579d367744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39b143333039172457333d06b802842f"><td class="memItemLeft" align="right" valign="top"><a id="a39b143333039172457333d06b802842f"></a>
+std::vector&lt; <a class="el" href="class_agent.html">Agent</a>&lt; TSeq &gt; &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>get_population</b> ()</td></tr>
+<tr class="separator:a39b143333039172457333d06b802842f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c631334f5abb94e84c673995f00d1da"><td class="memItemLeft" align="right" valign="top"><a id="a6c631334f5abb94e84c673995f00d1da"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>population_smallworld</b> (unsigned int n=1000, unsigned int k=5, bool d=false, epiworld_double p=.01)</td></tr>
 <tr class="separator:a6c631334f5abb94e84c673995f00d1da"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -282,9 +282,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A rewired version of the network. </dd></dl>
 </div></td></tr>
-<tr class="memitem:ae3c3f9d908aebef89e5ce98823af8cb1"><td class="memItemLeft" align="right" valign="top"><a id="ae3c3f9d908aebef89e5ce98823af8cb1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_rewire_fun</b> (std::function&lt; void(std::vector&lt; <a class="el" href="class_person.html">Person</a>&lt; TSeq &gt;&gt; *, <a class="el" href="class_model.html">Model</a>&lt; TSeq &gt; *, epiworld_double)&gt; fun)</td></tr>
-<tr class="separator:ae3c3f9d908aebef89e5ce98823af8cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05861284cbf6325d48cbf708f4b278b4"><td class="memItemLeft" align="right" valign="top"><a id="a05861284cbf6325d48cbf708f4b278b4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_rewire_fun</b> (std::function&lt; void(std::vector&lt; <a class="el" href="class_agent.html">Agent</a>&lt; TSeq &gt;&gt; *, <a class="el" href="class_model.html">Model</a>&lt; TSeq &gt; *, epiworld_double)&gt; fun)</td></tr>
+<tr class="separator:a05861284cbf6325d48cbf708f4b278b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a857e5f803c8bedab79b2c9c5ea702aa1"><td class="memItemLeft" align="right" valign="top"><a id="a857e5f803c8bedab79b2c9c5ea702aa1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_rewire_prop</b> (epiworld_double prop)</td></tr>
 <tr class="separator:a857e5f803c8bedab79b2c9c5ea702aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -399,9 +399,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set_death_reduction_m
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a195def33d9d6483c6a309af6984bbf90"><td class="memItemLeft" align="right" valign="top"><a id="a195def33d9d6483c6a309af6984bbf90"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>Person&lt; TSeq &gt;</b></td></tr>
-<tr class="separator:a195def33d9d6483c6a309af6984bbf90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ebc26ee7b812cd7314ef1f7eb4cdebb"><td class="memItemLeft" align="right" valign="top"><a id="a4ebc26ee7b812cd7314ef1f7eb4cdebb"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Agent&lt; TSeq &gt;</b></td></tr>
+<tr class="separator:a4ebc26ee7b812cd7314ef1f7eb4cdebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c2c72b4a49cd6654843fe6fb4c36aa4"><td class="memItemLeft" align="right" valign="top"><a id="a8c2c72b4a49cd6654843fe6fb4c36aa4"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>DataBase&lt; TSeq &gt;</b></td></tr>
 <tr class="separator:a8c2c72b4a49cd6654843fe6fb4c36aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -430,9 +430,9 @@ std::vector&lt; <a class="el" href="class_virus.html">Virus</a>&lt; TSeq &gt; * 
 <tr class="memitem:a36f342658f9c49723c8a93a345b533bc"><td class="memItemLeft" align="right" valign="top"><a id="a36f342658f9c49723c8a93a345b533bc"></a>
 <a class="el" href="class_model.html">Model</a>&lt; TSeq &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_model.html">Model</a>&lt; TSeq &gt; &amp;m)</td></tr>
 <tr class="separator:a36f342658f9c49723c8a93a345b533bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53265dd7471b77f1571b184d298bf02b"><td class="memItemLeft" align="right" valign="top"><a id="a53265dd7471b77f1571b184d298bf02b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clone_population</b> (std::vector&lt; <a class="el" href="class_person.html">Person</a>&lt; TSeq &gt; &gt; &amp;p, std::map&lt; int, int &gt; &amp;p_ids, bool &amp;d, <a class="el" href="class_model.html">Model</a>&lt; TSeq &gt; *m=nullptr) const</td></tr>
-<tr class="separator:a53265dd7471b77f1571b184d298bf02b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa27a8ef94fcb6a797ef3140dc02d2aa5"><td class="memItemLeft" align="right" valign="top"><a id="aa27a8ef94fcb6a797ef3140dc02d2aa5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>clone_population</b> (std::vector&lt; <a class="el" href="class_agent.html">Agent</a>&lt; TSeq &gt; &gt; &amp;p, std::map&lt; int, int &gt; &amp;p_ids, bool &amp;d, <a class="el" href="class_model.html">Model</a>&lt; TSeq &gt; *m=nullptr) const</td></tr>
+<tr class="separator:aa27a8ef94fcb6a797ef3140dc02d2aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d9b9f0fdd85f6cbec1aa4004476ae85"><td class="memItemLeft" align="right" valign="top"><a id="a3d9b9f0fdd85f6cbec1aa4004476ae85"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clone_population</b> (const <a class="el" href="class_model.html">Model</a>&lt; TSeq &gt; &amp;m)</td></tr>
 <tr class="separator:a3d9b9f0fdd85f6cbec1aa4004476ae85"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -597,7 +597,7 @@ epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>par</b> (s
 class Model&lt; TSeq &gt;</h3>
 
 <p>Core class of epiworld. </p>
-<p>The model class provides the wrapper that puts together <code><a class="el" href="class_person.html" title="Person (agents)">Person</a></code>, <code><a class="el" href="class_virus.html" title="Virus.">Virus</a></code>, and <code><a class="el" href="class_tools.html" title="Set of tools (useful for building iterators)">Tools</a></code>.</p>
+<p>The model class provides the wrapper that puts together <code><a class="el" href="class_agent.html" title="Agent (agents)">Agent</a></code>, <code><a class="el" href="class_virus.html" title="Virus.">Virus</a></code>, and <code><a class="el" href="class_tools.html" title="Set of tools (useful for building iterators)">Tools</a></code>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">TSeq</td><td>Type of sequence. In principle, users can build models in which virus and human sequence is represented as numeric vectors (if needed.) </td></tr>
@@ -796,7 +796,7 @@ template&lt;typename TSeq  = int&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/epiworld/<a class="el" href="config_8hpp_source.html">config.hpp</a></li>
+<li>include/epiworld/<a class="el" href="agent-meat-status_8hpp_source.html">agent-meat-status.hpp</a></li>
 <li>include/epiworld/<a class="el" href="model-bones_8hpp_source.html">model-bones.hpp</a></li>
 </ul>
 </div><!-- contents -->

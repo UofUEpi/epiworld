@@ -5,31 +5,31 @@
   \item {Action$<$ TSeq $>$}, \hyperpage{5}
     \subitem {Action}, \hyperpage{6}
   \item {add\_global\_action}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{17}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{19}
   \item {AdjList}, \hyperpage{7}
     \subitem {AdjList}, \hyperpage{7}
+  \item {Agent$<$ TSeq $>$}, \hyperpage{8}
 
   \indexspace
 
-  \item {DataBase$<$ TSeq $>$}, \hyperpage{8}
-    \subitem {record\_variant}, \hyperpage{9}
+  \item {DataBase$<$ TSeq $>$}, \hyperpage{10}
+    \subitem {record\_variant}, \hyperpage{11}
 
   \indexspace
 
-  \item {LFMCMC$<$ TData $>$}, \hyperpage{9}
-  \item {Location$<$ TSeq $>$}, \hyperpage{11}
+  \item {LFMCMC$<$ TData $>$}, \hyperpage{11}
+  \item {Location$<$ TSeq $>$}, \hyperpage{13}
 
   \indexspace
 
-  \item {Model$<$ TSeq $>$}, \hyperpage{11}
-    \subitem {add\_global\_action}, \hyperpage{17}
-    \subitem {reset}, \hyperpage{17}
-    \subitem {run\_multiple}, \hyperpage{18}
-    \subitem {write\_data}, \hyperpage{18}
+  \item {Model$<$ TSeq $>$}, \hyperpage{13}
+    \subitem {add\_global\_action}, \hyperpage{19}
+    \subitem {reset}, \hyperpage{19}
+    \subitem {run\_multiple}, \hyperpage{20}
+    \subitem {write\_data}, \hyperpage{20}
 
   \indexspace
 
-  \item {Person$<$ TSeq $>$}, \hyperpage{19}
   \item {PersonTools$<$ TSeq $>$}, \hyperpage{21}
   \item {Progress}, \hyperpage{21}
 
@@ -41,11 +41,11 @@
 
   \item {RandGraph}, \hyperpage{22}
   \item {record\_variant}
-    \subitem {DataBase$<$ TSeq $>$}, \hyperpage{9}
+    \subitem {DataBase$<$ TSeq $>$}, \hyperpage{11}
   \item {reset}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{17}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{19}
   \item {run\_multiple}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{18}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{20}
 
   \indexspace
 
@@ -70,6 +70,6 @@
   \indexspace
 
   \item {write\_data}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{18}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{20}
 
 \end{theindex}
