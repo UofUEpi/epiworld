@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Alpine Linux) (preloaded format=pdflatex 2022.5.24)  24 MAY 2022 16:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Alpine Linux) (preloaded format=pdflatex 2022.5.24)  24 MAY 2022 18:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -872,20 +872,24 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 12.9599pt on input line 3.
- [1
-
-
-]
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 92.
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
-00.
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 8
+.
 
 (/usr/share/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 100.
+(Font)              scaled to size 8.99994pt on input line 8.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 14.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.99994pt on input line 14.
+ [1
+
+
+]
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 10.79993pt on input line 111.
 ) [2]
 Chapter 2.
 (./annotated.tex) [3
@@ -916,7 +920,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 pdfTeX warning: pdflatex (file ./struct_action__coll__graph.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
 >
-<struct_action__coll__graph.pdf, id=417, 167.62625pt x 167.62625pt>
+<struct_action__coll__graph.pdf, id=409, 167.62625pt x 167.62625pt>
 File: struct_action__coll__graph.pdf Graphic file (type pdf)
 <use struct_action__coll__graph.pdf>
 Package pdftex.def Info: struct_action__coll__graph.pdf  used on input line 19.
@@ -1268,8 +1272,8 @@ Package rerunfilecheck Info: File `refman.out' has not changed.
 (rerunfilecheck)             Checksum: A006012FD07525ADD1E0963FA948FAC6;12361.
  ) 
 Here is how much of TeX's memory you used:
- 17704 strings out of 480478
- 280258 string characters out of 5905924
+ 17696 strings out of 480478
+ 280208 string characters out of 5905924
  556348 words of memory out of 5000000
  32756 multiletter control sequences out of 15000+600000
  599375 words of font info for 108 fonts, out of 8000000 for 9000
@@ -1287,10 +1291,10 @@ rr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/share
 pe1/urw/helvetic/uhvb8ac.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uh
 vbo8ac.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/sha
 re/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (37 pages, 232743 bytes).
+Output written on refman.pdf (37 pages, 232701 bytes).
 PDF statistics:
- 1423 PDF objects out of 1440 (max. 8388607)
- 1334 compressed objects within 14 object streams
- 610 named destinations out of 1000 (max. 500000)
+ 1412 PDF objects out of 1440 (max. 8388607)
+ 1323 compressed objects within 14 object streams
+ 602 named destinations out of 1000 (max. 500000)
  454 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -69,40 +69,54 @@ $(function() {
 <div class="textblock"><p><a class="anchor" id="md_README"></a> <a href="https://github.com/UofUEpi/epiworld/actions/workflows/ci.yml"><img src="https://github.com/UofUEpi/epiworld/actions/workflows/ci.yml/badge.svg" alt="Tests and coverage" style="pointer-events: none;" class="inline"/></a> <a href="https://UofUEpi.github.io/epiworld"><img src="https://img.shields.io/badge/Docs-Doxygen-brightgreen" alt="C++ Documentation" class="inline"/></a></p>
 <h1><a class="anchor" id="autotoc_md0"></a>
 epiworld</h1>
-<p>This C++ template-header-only library provides a general framework for epidemiologic simulation. The main features of the library are:</p>
-<ol type="1">
-<li>Four key classes: <code><a class="el" href="class_model.html" title="Core class of epiworld.">Model</a></code>, <code><a class="el" href="class_person.html" title="Person (agents)">Person</a></code>, <code><a class="el" href="class_tool.html" title="Tools for defending the host against the virus.">Tool</a></code>, and <code><a class="el" href="class_virus.html" title="Virus.">Virus</a></code>.</li>
-<li>The model features a social networks of <code>Persons</code>.</li>
-<li><code>Persons</code> can have multiple <code><a class="el" href="class_tools.html" title="Set of tools (useful for building iterators)">Tools</a></code> as a defense system.</li>
-<li><code><a class="el" href="class_tools.html" title="Set of tools (useful for building iterators)">Tools</a></code> can reduce contagion rate, transmissibility, death rates, and improve recovery rates.</li>
-<li><code><a class="el" href="class_viruses.html" title="Set of viruses (useful for building iterators)">Viruses</a></code> can mutate (generating new variants).</li>
-<li><code>Models</code> can feature multiple states, e.g., <code>HEALTHY</code>, <code>SUSCEPTIBLE</code>, etc.</li>
-<li><code>Models</code> can have an arbitrary number of parameters.</li>
-<li><b>REALLY FAST</b> About 6.5 Million person/day simulations per second.</li>
-</ol>
-<p><img src="contents.svg" alt="" style="pointer-events: none;" class="inline"/></p>
+<p>This C++ library provides a general framework for epidemiologic simulation. The core principle of <code>epiworld</code> is fast epidemiological prototyping for building complex models quickly. Here are some of its main features:</p>
+<ul>
+<li>It only depends on the standard library (C++11 required.)</li>
+<li>It is a template library.</li>
+<li>It is header-only (<a href="epiworld.hpp">single file</a>).</li>
+<li>Models can have an arbitrary set of states.</li>
+<li><a class="el" href="class_viruses.html" title="Set of viruses (useful for building iterators)">Viruses</a> and tools (e.g., vaccines, mask-wearing) can be designed to have arbitrary features.</li>
+<li>Multiple tools and viruses can live in the same simulation.</li>
+<li>It is <em>FAST</em>: About 7.5 Million person/day simulations per second (see example below).</li>
+</ul>
+<p>Various examples can be found in the [examples](examples) folder.</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Hello world</h1>
-<p>Here is a simple SIRS model implemented with</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;../include/epiworld/epiworld.hpp&quot;</span></div>
+<p>Here is a simple SIR model implemented with <code>epiworld</code>. The source code can be found <a href="readme.cpp">here</a>, and you can compile the code as follows:</p>
+<div class="fragment"><div class="line">g++ -std=c++17 -O2 readme.cpp -o readme.o</div>
+</div><!-- fragment --><p>As you can see in <a href="readme.cpp">readme.cpp</a>, to use epiworld you only need to incorporate the single header file <a href="epiworld.hpp">epiworld.hpp</a>:</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;epiworld.hpp&quot;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">using namespace </span>epiworld;</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
 <div class="line"> </div>
-<div class="line">        <span class="comment">// Creating a model</span></div>
+<div class="line">    <span class="comment">// Creating a model with three statuses:</span></div>
+<div class="line">    <span class="comment">// - Susceptible: Status 0</span></div>
+<div class="line">    <span class="comment">// - Infected: Status 1</span></div>
+<div class="line">    <span class="comment">// - Recovered: Status 2</span></div>
 <div class="line">    <a class="code" href="class_model.html">Model&lt;&gt;</a> model;</div>
+<div class="line">    model.add_status(<span class="stringliteral">&quot;Susceptible&quot;</span>, default_update_susceptible&lt;&gt;);</div>
+<div class="line">    model.add_status(<span class="stringliteral">&quot;Infected&quot;</span>, default_update_exposed&lt;&gt;);</div>
+<div class="line">    model.add_status(<span class="stringliteral">&quot;Recovered&quot;</span>);</div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">// Adding the tool and virus</span></div>
+<div class="line">    <span class="comment">// Desgining a virus: This virus will:</span></div>
+<div class="line">    <span class="comment">// - Have a 90% transmission rate</span></div>
+<div class="line">    <span class="comment">// - Have a 50% recovery rate</span></div>
+<div class="line">    <span class="comment">// - Infected individuals become &quot;Infected&quot; (status 1)</span></div>
+<div class="line">    <span class="comment">// - Recovered individuals become &quot;Recovered&quot; (status 2)</span></div>
+<div class="line">    <span class="comment">// Only five individuals will have the virus from the beginning.</span></div>
 <div class="line">    <a class="code" href="class_virus.html">Virus&lt;&gt;</a> virus(<span class="stringliteral">&quot;covid 19&quot;</span>);</div>
-<div class="line">    virus.set_post_immunity(1.0);</div>
+<div class="line"> </div>
+<div class="line">    virus.set_prob_infecting(.9);</div>
+<div class="line">    virus.set_prob_recover(.5);</div>
+<div class="line">    </div>
+<div class="line">    virus.set_status(1, 2);</div>
+<div class="line"> </div>
 <div class="line">    model.add_virus_n(virus, 5);</div>
 <div class="line">    </div>
-<div class="line">    <a class="code" href="class_tool.html">Tool&lt;&gt;</a> tool(<span class="stringliteral">&quot;vaccine&quot;</span>);</div>
-<div class="line">    model.add_tool(tool, .5);</div>
-<div class="line"> </div>
-<div class="line">    <span class="comment">// Generating a random pop </span></div>
+<div class="line">    <span class="comment">// Generating a random pop from a smallworld network</span></div>
 <div class="line">    model.population_smallworld(100000);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Initializing setting days and seed</span></div>
@@ -115,7 +129,6 @@ Hello world</h1>
 <div class="line">}</div>
 <div class="ttc" id="aclass_model_html"><div class="ttname"><a href="class_model.html">Model</a></div><div class="ttdoc">Core class of epiworld.</div><div class="ttdef"><b>Definition:</b> model-bones.hpp:65</div></div>
 <div class="ttc" id="aclass_model_html_a825c7fb2498c7693cbf1bfcd0a416ef4"><div class="ttname"><a href="class_model.html#a825c7fb2498c7693cbf1bfcd0a416ef4">Model::run</a></div><div class="ttdeci">void run()</div><div class="ttdoc">Runs the simulation (after initialization)</div></div>
-<div class="ttc" id="aclass_tool_html"><div class="ttname"><a href="class_tool.html">Tool</a></div><div class="ttdoc">Tools for defending the host against the virus.</div><div class="ttdef"><b>Definition:</b> tool-bones.hpp:23</div></div>
 <div class="ttc" id="aclass_virus_html"><div class="ttname"><a href="class_virus.html">Virus</a></div><div class="ttdoc">Virus.</div><div class="ttdef"><b>Definition:</b> virus-bones.hpp:25</div></div>
 </div><!-- fragment --><p>And you should get something like the following:</p>
 <div class="fragment"><div class="line">Running the model...</div>
@@ -128,25 +141,23 @@ Hello world</h1>
 <div class="line">Population size    : 100000</div>
 <div class="line">Days (duration)    : 100 (of 100)</div>
 <div class="line">Number of variants : 1</div>
-<div class="line">Last run elapsed t : 280.00ms</div>
+<div class="line">Last run elapsed t : 134.00ms</div>
 <div class="line">Rewiring           : off</div>
 <div class="line"> </div>
 <div class="line">Virus(es):</div>
 <div class="line"> - covid 19 (baseline prevalence: 5 seeds)</div>
+<div class="line"> </div>
 <div class="line">Tool(s):</div>
-<div class="line"> - vaccine (baseline prevalence: 50.00%)</div>
+<div class="line"> (none)</div>
 <div class="line"> </div>
 <div class="line">Model parameters:</div>
+<div class="line"> (none)</div>
 <div class="line"> </div>
 <div class="line">Distribution of the population at time 100:</div>
-<div class="line"> - Total healthy (S)   :   99995 -&gt; 97390</div>
-<div class="line"> - Total recovered (S) :       0 -&gt; 2554</div>
-<div class="line"> - Total infected (I)  :       5 -&gt; 56</div>
-<div class="line"> - Total removed (R)   :       0 -&gt; 0</div>
-<div class="line"> </div>
-<div class="line">(S): Susceptible, (I): Infected, (R): Recovered</div>
-<div class="line">________________________________________________________________________________</div>
-</div><!-- fragment --><p>Which took about 0.280 seconds.</p>
+<div class="line">- (0) Total Susceptible :  99995 -&gt; 95466</div>
+<div class="line">- (1) Total Infected    :      5 -&gt; 70</div>
+<div class="line">- (2) Total Recovered   :      0 -&gt; 4464</div>
+</div><!-- fragment --><p>Which took about 0.134 seconds (~ 7.5 million ppl x day / second).</p>
 <h2><a class="anchor" id="autotoc_md2"></a>
 Tools</h2>
 <h2><a class="anchor" id="autotoc_md3"></a>

@@ -1,44 +1,65 @@
 \label{index_md_README}%
 \Hypertarget{index_md_README}%
  \href{https://github.com/UofUEpi/epiworld/actions/workflows/ci.yml}{\texttt{ }} \href{https://UofUEpi.github.io/epiworld}{\texttt{ }}\hypertarget{index_autotoc_md0}{}\doxysection{epiworld}\label{index_autotoc_md0}
-This C++ template-\/header-\/only library provides a general framework for epidemiologic simulation. The main features of the library are\+:
+This C++ library provides a general framework for epidemiologic simulation. The core principle of {\ttfamily epiworld} is fast epidemiological prototyping for building complex models quickly. Here are some of its main features\+:
 
 
-\begin{DoxyEnumerate}
-\item Four key classes\+: {\ttfamily \mbox{\hyperlink{class_model}{Model}}}, {\ttfamily \mbox{\hyperlink{class_person}{Person}}}, {\ttfamily \mbox{\hyperlink{class_tool}{Tool}}}, and {\ttfamily \mbox{\hyperlink{class_virus}{Virus}}}.
-\item The model features a social networks of {\ttfamily Persons}.
-\item {\ttfamily Persons} can have multiple {\ttfamily \mbox{\hyperlink{class_tools}{Tools}}} as a defense system.
-\item {\ttfamily \mbox{\hyperlink{class_tools}{Tools}}} can reduce contagion rate, transmissibility, death rates, and improve recovery rates.
-\item {\ttfamily \mbox{\hyperlink{class_viruses}{Viruses}}} can mutate (generating new variants).
-\item {\ttfamily Models} can feature multiple states, e.\+g., {\ttfamily HEALTHY}, {\ttfamily SUSCEPTIBLE}, etc.
-\item {\ttfamily Models} can have an arbitrary number of parameters.
-\item {\bfseries{REALLY FAST}} About 6.\+5 Million person/day simulations per second.
-\end{DoxyEnumerate}
+\begin{DoxyItemize}
+\item It only depends on the standard library (C++11 required.)
+\item It is a template library.
+\item It is header-\/only (\href{epiworld.hpp}{\texttt{ single file}}).
+\item Models can have an arbitrary set of states.
+\item \mbox{\hyperlink{class_viruses}{Viruses}} and tools (e.\+g., vaccines, mask-\/wearing) can be designed to have arbitrary features.
+\item Multiple tools and viruses can live in the same simulation.
+\item It is {\itshape FAST}\+: About 7.\+5 Million person/day simulations per second (see example below).
+\end{DoxyItemize}
 
-\hypertarget{index_autotoc_md1}{}\doxysection{Hello world}\label{index_autotoc_md1}
-Here is a simple SIRS model implemented with
+Various examples can be found in the \mbox{[}examples\mbox{]}(examples) folder.\hypertarget{index_autotoc_md1}{}\doxysection{Hello world}\label{index_autotoc_md1}
+Here is a simple SIR model implemented with {\ttfamily epiworld}. The source code can be found \href{readme.cpp}{\texttt{ here}}, and you can compile the code as follows\+:
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{\textcolor{preprocessor}{\#include "{}../include/epiworld/epiworld.hpp"{}}}
+\DoxyCodeLine{g++ -\/std=c++17 -\/O2 readme.cpp -\/o readme.o}
+
+\end{DoxyCode}
+
+
+As you can see in \href{readme.cpp}{\texttt{ readme.\+cpp}}, to use epiworld you only need to incorporate the single header file \href{epiworld.hpp}{\texttt{ epiworld.\+hpp}}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "{}epiworld.hpp"{}}}
 \DoxyCodeLine{}
 \DoxyCodeLine{\textcolor{keyword}{using namespace }epiworld;}
 \DoxyCodeLine{}
 \DoxyCodeLine{\textcolor{keywordtype}{int} main()}
 \DoxyCodeLine{\{}
 \DoxyCodeLine{}
-\DoxyCodeLine{        \textcolor{comment}{// Creating a model}}
+\DoxyCodeLine{    \textcolor{comment}{// Creating a model with three statuses:}}
+\DoxyCodeLine{    \textcolor{comment}{// -\/ Susceptible: Status 0}}
+\DoxyCodeLine{    \textcolor{comment}{// -\/ Infected: Status 1}}
+\DoxyCodeLine{    \textcolor{comment}{// -\/ Recovered: Status 2}}
 \DoxyCodeLine{    \mbox{\hyperlink{class_model}{Model<>}} model;}
+\DoxyCodeLine{    model.add\_status(\textcolor{stringliteral}{"{}Susceptible"{}}, default\_update\_susceptible<>);}
+\DoxyCodeLine{    model.add\_status(\textcolor{stringliteral}{"{}Infected"{}}, default\_update\_exposed<>);}
+\DoxyCodeLine{    model.add\_status(\textcolor{stringliteral}{"{}Recovered"{}});}
 \DoxyCodeLine{}
-\DoxyCodeLine{    \textcolor{comment}{// Adding the tool and virus}}
+\DoxyCodeLine{    \textcolor{comment}{// Desgining a virus: This virus will:}}
+\DoxyCodeLine{    \textcolor{comment}{// -\/ Have a 90\% transmission rate}}
+\DoxyCodeLine{    \textcolor{comment}{// -\/ Have a 50\% recovery rate}}
+\DoxyCodeLine{    \textcolor{comment}{// -\/ Infected individuals become "{}Infected"{} (status 1)}}
+\DoxyCodeLine{    \textcolor{comment}{// -\/ Recovered individuals become "{}Recovered"{} (status 2)}}
+\DoxyCodeLine{    \textcolor{comment}{// Only five individuals will have the virus from the beginning.}}
 \DoxyCodeLine{    \mbox{\hyperlink{class_virus}{Virus<>}} virus(\textcolor{stringliteral}{"{}covid 19"{}});}
-\DoxyCodeLine{    virus.set\_post\_immunity(1.0);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    virus.set\_prob\_infecting(.9);}
+\DoxyCodeLine{    virus.set\_prob\_recover(.5);}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    virus.set\_status(1, 2);}
+\DoxyCodeLine{}
 \DoxyCodeLine{    model.add\_virus\_n(virus, 5);}
 \DoxyCodeLine{    }
-\DoxyCodeLine{    \mbox{\hyperlink{class_tool}{Tool<>}} tool(\textcolor{stringliteral}{"{}vaccine"{}});}
-\DoxyCodeLine{    model.add\_tool(tool, .5);}
-\DoxyCodeLine{}
-\DoxyCodeLine{    \textcolor{comment}{// Generating a random pop }}
+\DoxyCodeLine{    \textcolor{comment}{// Generating a random pop from a smallworld network}}
 \DoxyCodeLine{    model.population\_smallworld(100000);}
 \DoxyCodeLine{}
 \DoxyCodeLine{    \textcolor{comment}{// Initializing setting days and seed}}
@@ -67,29 +88,27 @@ And you should get something like the following\+:
 \DoxyCodeLine{Population size    : 100000}
 \DoxyCodeLine{Days (duration)    : 100 (of 100)}
 \DoxyCodeLine{Number of variants : 1}
-\DoxyCodeLine{Last run elapsed t : 280.00ms}
+\DoxyCodeLine{Last run elapsed t : 134.00ms}
 \DoxyCodeLine{Rewiring           : off}
 \DoxyCodeLine{}
 \DoxyCodeLine{Virus(es):}
 \DoxyCodeLine{ -\/ covid 19 (baseline prevalence: 5 seeds)}
+\DoxyCodeLine{}
 \DoxyCodeLine{Tool(s):}
-\DoxyCodeLine{ -\/ vaccine (baseline prevalence: 50.00\%)}
+\DoxyCodeLine{ (none)}
 \DoxyCodeLine{}
 \DoxyCodeLine{Model parameters:}
+\DoxyCodeLine{ (none)}
 \DoxyCodeLine{}
 \DoxyCodeLine{Distribution of the population at time 100:}
-\DoxyCodeLine{ -\/ Total healthy (S)   :   99995 -\/> 97390}
-\DoxyCodeLine{ -\/ Total recovered (S) :       0 -\/> 2554}
-\DoxyCodeLine{ -\/ Total infected (I)  :       5 -\/> 56}
-\DoxyCodeLine{ -\/ Total removed (R)   :       0 -\/> 0}
-\DoxyCodeLine{}
-\DoxyCodeLine{(S): Susceptible, (I): Infected, (R): Recovered}
-\DoxyCodeLine{\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_}
+\DoxyCodeLine{-\/ (0) Total Susceptible :  99995 -\/> 95466}
+\DoxyCodeLine{-\/ (1) Total Infected    :      5 -\/> 70}
+\DoxyCodeLine{-\/ (2) Total Recovered   :      0 -\/> 4464}
 
 \end{DoxyCode}
 
 
-Which took about 0.\+280 seconds.\hypertarget{index_autotoc_md2}{}\doxysubsection{Tools}\label{index_autotoc_md2}
+Which took about 0.\+134 seconds ($\sim$ 7.\+5 million ppl x day / second).\hypertarget{index_autotoc_md2}{}\doxysubsection{Tools}\label{index_autotoc_md2}
 \hypertarget{index_autotoc_md3}{}\doxysubsection{Contagion}\label{index_autotoc_md3}
 Susceptible individuals can acquire a virus from any of their infected connections. The probability that susceptible individual {\ttfamily i} gets the virus {\ttfamily v} from individual {\ttfamily j} depends on how three things\+:
 
