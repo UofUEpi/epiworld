@@ -197,7 +197,7 @@ $(function() {
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordflow">while</span> (!filei.eof())</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    {</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordflow">if</span> (linenum &lt; skip)</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordflow">if</span> (linenum++ &lt; skip)</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        filei &gt;&gt; i &gt;&gt; j;</div>
@@ -241,11 +241,11 @@ $(function() {
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    }</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">if</span> (!filei.eof())</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordflow">throw</span> std::logic_error(</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            <span class="stringliteral">&quot;Wrong format found in the AdjList file &quot;</span> +</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            fn + <span class="stringliteral">&quot; in line &quot;</span> + std::to_string(linenum)</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        );</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="comment">// if (!filei.eof())</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="comment">//     throw std::logic_error(</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="comment">//         &quot;Wrong format found in the AdjList file &quot; +</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="comment">//         fn + &quot; in line &quot; + std::to_string(linenum)</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="comment">//     );</span></div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    </div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="comment">// Now using the right constructor</span></div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    *<span class="keyword">this</span> = <a class="code" href="class_adj_list.html">AdjList</a>(source_,target_,directed,min_id,max_id);</div>

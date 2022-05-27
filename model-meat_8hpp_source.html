@@ -368,20 +368,20 @@ $(function() {
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;}</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="keyword">inline</span> std::vector&lt;Agent&lt;TSeq&gt;&gt; * <a class="code" href="class_model.html">Model&lt;TSeq&gt;::get_population</a>()</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="keyword">inline</span> std::vector&lt;Agent&lt;TSeq&gt;&gt; * <a class="code" href="class_model.html">Model&lt;TSeq&gt;::get_agents</a>()</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;{</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordflow">return</span> &amp;population;</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;}</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_model.html">Model&lt;TSeq&gt;::population_smallworld</a>(</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_model.html">Model&lt;TSeq&gt;::agents_smallworld</a>(</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n,</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> k,</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keywordtype">bool</span> d,</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    epiworld_double p</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;)</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;{</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    population_from_adjlist(</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    agents_from_adjlist(</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        rgraph_smallworld(n, k, p, d, *<span class="keyword">this</span>)</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    );</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;}</div>
@@ -767,7 +767,7 @@ $(function() {
 <div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;}</div>
 <div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160; </div>
 <div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_model.html">Model&lt;TSeq&gt;::population_from_adjlist</a>(</div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_model.html">Model&lt;TSeq&gt;::agents_from_adjlist</a>(</div>
 <div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;    std::string fn,</div>
 <div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;    <span class="keywordtype">int</span> skip,</div>
 <div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;    <span class="keywordtype">bool</span> directed,</div>
@@ -777,12 +777,12 @@ $(function() {
 <div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160; </div>
 <div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;    <a class="code" href="class_adj_list.html">AdjList</a> al;</div>
 <div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;    al.read_edgelist(fn, skip, directed, min_id, max_id);</div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;    this-&gt;population_from_adjlist(al);</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;    this-&gt;agents_from_adjlist(al);</div>
 <div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160; </div>
 <div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;}</div>
 <div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160; </div>
 <div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_model.html">Model&lt;TSeq&gt;::population_from_adjlist</a>(<a class="code" href="class_adj_list.html">AdjList</a> al) {</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_model.html">Model&lt;TSeq&gt;::agents_from_adjlist</a>(<a class="code" href="class_adj_list.html">AdjList</a> al) {</div>
 <div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160; </div>
 <div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;    <span class="comment">// Resizing the people</span></div>
 <div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;    population.clear();</div>

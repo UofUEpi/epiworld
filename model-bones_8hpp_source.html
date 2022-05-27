@@ -256,17 +256,17 @@ $(function() {
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordtype">void</span> add_tool(<a class="code" href="class_tool.html">Tool&lt;TSeq&gt;</a> t, epiworld_double preval);</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordtype">void</span> add_tool_n(<a class="code" href="class_tool.html">Tool&lt;TSeq&gt;</a> t, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> preval);</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; </div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keywordtype">void</span> population_from_adjlist(</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keywordtype">void</span> agents_from_adjlist(</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        std::string fn,</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="keywordtype">int</span> skip = 0,</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <span class="keywordtype">bool</span> directed = <span class="keyword">false</span>,</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keywordtype">int</span> min_id = -1,</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="keywordtype">int</span> max_id = -1</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        );</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordtype">void</span> population_from_adjlist(<a class="code" href="class_adj_list.html">AdjList</a> al);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordtype">void</span> agents_from_adjlist(<a class="code" href="class_adj_list.html">AdjList</a> al);</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keywordtype">bool</span> is_directed() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    std::vector&lt; Agent&lt;TSeq&gt; &gt; * get_population();</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keywordtype">void</span> population_smallworld(</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    std::vector&lt; Agent&lt;TSeq&gt; &gt; * get_agents();</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keywordtype">void</span> agents_smallworld(</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n = 1000,</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> k = 5,</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <span class="keywordtype">bool</span> d = <span class="keyword">false</span>,</div>
