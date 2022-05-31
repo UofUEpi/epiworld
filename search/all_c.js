@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['vechasher_34',['vecHasher',['../structvec_hasher.html',1,'']]],
-  ['virus_35',['Virus',['../class_virus.html',1,'']]],
-  ['viruses_36',['Viruses',['../class_viruses.html',1,'']]],
-  ['viruses_5fconst_37',['Viruses_const',['../class_viruses__const.html',1,'']]]
+  ['userdata_35',['UserData',['../class_user_data.html',1,'UserData&lt; TSeq &gt;'],['../class_user_data.html#adee45d65067910e75af85ed06aa4eaf4',1,'UserData::UserData()']]]
 ];

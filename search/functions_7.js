@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['userdata_79',['UserData',['../class_user_data.html#adee45d65067910e75af85ed06aa4eaf4',1,'UserData']]]
+  ['today_83',['today',['../class_model.html#aa3ce8d5f025e239f8090ab9645f3e917',1,'Model']]]
 ];

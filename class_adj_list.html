@@ -72,40 +72,37 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac3a2f15c4f93bbf1527c4f808559d55e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adj_list.html#ac3a2f15c4f93bbf1527c4f808559d55e">AdjList</a> (const std::vector&lt; unsigned int &gt; &amp;source, const std::vector&lt; unsigned int &gt; &amp;target, bool directed, int min_id=-1, int max_id=-1)</td></tr>
-<tr class="memdesc:ac3a2f15c4f93bbf1527c4f808559d55e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Adj List object.  <a href="class_adj_list.html#ac3a2f15c4f93bbf1527c4f808559d55e">More...</a><br /></td></tr>
-<tr class="separator:ac3a2f15c4f93bbf1527c4f808559d55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c07113e353eab697964b64e38ad710e"><td class="memItemLeft" align="right" valign="top"><a id="a4c07113e353eab697964b64e38ad710e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>read_edgelist</b> (std::string fn, int skip=0, bool directed=true, int min_id=-1, int max_id=-1)</td></tr>
-<tr class="separator:a4c07113e353eab697964b64e38ad710e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62a25b8a845d552028d7e730b2098987"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adj_list.html#a62a25b8a845d552028d7e730b2098987">AdjList</a> (const std::vector&lt; unsigned int &gt; &amp;source, const std::vector&lt; unsigned int &gt; &amp;target, int size, bool directed)</td></tr>
+<tr class="memdesc:a62a25b8a845d552028d7e730b2098987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Adj List object.  <a href="class_adj_list.html#a62a25b8a845d552028d7e730b2098987">More...</a><br /></td></tr>
+<tr class="separator:a62a25b8a845d552028d7e730b2098987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa08631a4605cc3037f017bb437a96ef0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adj_list.html#aa08631a4605cc3037f017bb437a96ef0">read_edgelist</a> (std::string fn, int size, int skip=0, bool directed=true)</td></tr>
+<tr class="memdesc:aa08631a4605cc3037f017bb437a96ef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read an edgelist.  <a href="class_adj_list.html#aa08631a4605cc3037f017bb437a96ef0">More...</a><br /></td></tr>
+<tr class="separator:aa08631a4605cc3037f017bb437a96ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23842be8fec6210e8e1b78a80d2c6ac6"><td class="memItemLeft" align="right" valign="top"><a id="a23842be8fec6210e8e1b78a80d2c6ac6"></a>
 std::map&lt; unsigned int, unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (unsigned int i) const</td></tr>
 <tr class="separator:a23842be8fec6210e8e1b78a80d2c6ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0e9c3d2680ccc643ae48c6712a7741c"><td class="memItemLeft" align="right" valign="top"><a id="ac0e9c3d2680ccc643ae48c6712a7741c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>print</b> (unsigned int limit=20u) const</td></tr>
 <tr class="separator:ac0e9c3d2680ccc643ae48c6712a7741c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7d57ee2cce6de58017a81fefc1ee34f"><td class="memItemLeft" align="right" valign="top"><a id="aa7d57ee2cce6de58017a81fefc1ee34f"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>get_id_max</b> () const</td></tr>
-<tr class="separator:aa7d57ee2cce6de58017a81fefc1ee34f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaee5772f0833058619ade13657efa9b6"><td class="memItemLeft" align="right" valign="top"><a id="aaee5772f0833058619ade13657efa9b6"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>get_id_min</b> () const</td></tr>
-<tr class="separator:aaee5772f0833058619ade13657efa9b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bf3a057863c9dfb958d44ff370690d1"><td class="memItemLeft" align="right" valign="top"><a id="a2bf3a057863c9dfb958d44ff370690d1"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>vcount</b> () const</td></tr>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adj_list.html#a2bf3a057863c9dfb958d44ff370690d1">vcount</a> () const</td></tr>
+<tr class="memdesc:a2bf3a057863c9dfb958d44ff370690d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of vertices/nodes in the network. <br /></td></tr>
 <tr class="separator:a2bf3a057863c9dfb958d44ff370690d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a776cefb7cc85d544e4eb9e61aaa46f83"><td class="memItemLeft" align="right" valign="top"><a id="a776cefb7cc85d544e4eb9e61aaa46f83"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>ecount</b> () const</td></tr>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adj_list.html#a776cefb7cc85d544e4eb9e61aaa46f83">ecount</a> () const</td></tr>
+<tr class="memdesc:a776cefb7cc85d544e4eb9e61aaa46f83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of edges/arcs/ties in the network. <br /></td></tr>
 <tr class="separator:a776cefb7cc85d544e4eb9e61aaa46f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a388fe063ce84c0c0ef15767087bf17b1"><td class="memItemLeft" align="right" valign="top"><a id="a388fe063ce84c0c0ef15767087bf17b1"></a>
-std::map&lt; unsigned int, std::map&lt; unsigned int, unsigned int &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_dat</b> ()</td></tr>
-<tr class="separator:a388fe063ce84c0c0ef15767087bf17b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2ed9e3861d2864e72764375b172da37"><td class="memItemLeft" align="right" valign="top"><a id="ab2ed9e3861d2864e72764375b172da37"></a>
+std::vector&lt; std::map&lt; unsigned int, unsigned int &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_dat</b> ()</td></tr>
+<tr class="separator:ab2ed9e3861d2864e72764375b172da37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70e14a9f262278d028cecae547382049"><td class="memItemLeft" align="right" valign="top"><a id="a70e14a9f262278d028cecae547382049"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_directed</b> () const</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adj_list.html#a70e14a9f262278d028cecae547382049">is_directed</a> () const</td></tr>
+<tr class="memdesc:a70e14a9f262278d028cecae547382049"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>true</code> if the network is directed. <br /></td></tr>
 <tr class="separator:a70e14a9f262278d028cecae547382049"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ac3a2f15c4f93bbf1527c4f808559d55e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3a2f15c4f93bbf1527c4f808559d55e">&#9670;&nbsp;</a></span>AdjList()</h2>
+<a id="a62a25b8a845d552028d7e730b2098987"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62a25b8a845d552028d7e730b2098987">&#9670;&nbsp;</a></span>AdjList()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -128,20 +125,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_directed</b> () co
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>directed</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>min_id</em> = <code>-1</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>max_id</em> = <code>-1</code>&#160;</td>
+          <td class="paramname"><em>directed</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -157,14 +148,74 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_directed</b> () co
 </div><div class="memdoc">
 
 <p>Construct a new Adj List object. </p>
-<p>It will create an adjacency list object with <code>maxid - minid + 1</code> nodes. If min_id and max_id are not specified (both &lt; 0), then the program will try to figure them out automatically by looking at the range of the observed ids.</p>
+<p>Ids in the network are assume to range from <code>0</code> to <code>size - 1</code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">source</td><td>Unsigned int vector with the source </td></tr>
     <tr><td class="paramname">target</td><td>Unsigned int vector with the target </td></tr>
+    <tr><td class="paramname">size</td><td>Number of vertices in the network. </td></tr>
     <tr><td class="paramname">directed</td><td>Bool true if the network is directed </td></tr>
-    <tr><td class="paramname">min_id</td><td>int min id. </td></tr>
-    <tr><td class="paramname">max_id</td><td>int max id. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa08631a4605cc3037f017bb437a96ef0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa08631a4605cc3037f017bb437a96ef0">&#9670;&nbsp;</a></span>read_edgelist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AdjList::read_edgelist </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>skip</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>directed</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read an edgelist. </p>
+<p>Ids in the network are assume to range from <code>0</code> to <code>size - 1</code>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fn</td><td>Path to the file </td></tr>
+    <tr><td class="paramname">skip</td><td>Number of lines to skip (e.g., 1 if there's a header) </td></tr>
+    <tr><td class="paramname">directed</td><td><code>true</code> if the network is directed </td></tr>
+    <tr><td class="paramname">size</td><td>Number of vertices in the network. </td></tr>
   </table>
   </dd>
 </dl>

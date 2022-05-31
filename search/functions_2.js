@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['is_5fqueuing_5fon_70',['is_queuing_on',['../class_model.html#a2c4ac58e918e9e8dc2e58be6521d8827',1,'Model']]]
+  ['get_5fid_71',['get_id',['../class_agent.html#a3763f12b56e8dd7f0e23bbca4f183c8a',1,'Agent']]],
+  ['get_5fqueue_72',['get_queue',['../class_model.html#aaf33c877732b9bdc7cb77e063ad0c1a6',1,'Model']]]
 ];

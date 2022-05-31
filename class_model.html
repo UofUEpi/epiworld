@@ -222,16 +222,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>add_tool_n</b> (<a cl
     <tr><td class="paramname">fn</td><td>std::string Filename of the edgelist file. </td></tr>
     <tr><td class="paramname">skip</td><td>int Number of lines to skip in <code>fn</code>. </td></tr>
     <tr><td class="paramname">directed</td><td>bool Whether the graph is directed or not. </td></tr>
-    <tr><td class="paramname">min_id</td><td>int Minimum id number (if negative, the program will try to guess from the data.) </td></tr>
-    <tr><td class="paramname">max_id</td><td>int Maximum id number (if negative, the program will try to guess from the data.) </td></tr>
+    <tr><td class="paramname">size</td><td>Size of the network. </td></tr>
     <tr><td class="paramname">al</td><td><a class="el" href="class_adj_list.html">AdjList</a> to read into the model. </td></tr>
   </table>
   </dd>
 </dl>
 </div></td></tr>
-<tr class="memitem:ada079842956166ae691b27c867cb7013"><td class="memItemLeft" align="right" valign="top"><a id="ada079842956166ae691b27c867cb7013"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>agents_from_adjlist</b> (std::string fn, int skip=0, bool directed=false, int min_id=-1, int max_id=-1)</td></tr>
-<tr class="separator:ada079842956166ae691b27c867cb7013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2322e335233024af0f3f3f5e2cac5416"><td class="memItemLeft" align="right" valign="top"><a id="a2322e335233024af0f3f3f5e2cac5416"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>agents_from_adjlist</b> (std::string fn, int size, int skip=0, bool directed=false)</td></tr>
+<tr class="separator:a2322e335233024af0f3f3f5e2cac5416"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbea0aa9c6059d05f78e857fccc5ed8a"><td class="memItemLeft" align="right" valign="top"><a id="adbea0aa9c6059d05f78e857fccc5ed8a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>agents_from_adjlist</b> (<a class="el" href="class_adj_list.html">AdjList</a> al)</td></tr>
 <tr class="separator:adbea0aa9c6059d05f78e857fccc5ed8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -430,9 +429,9 @@ std::vector&lt; <a class="el" href="class_virus.html">Virus</a>&lt; TSeq &gt; * 
 <tr class="memitem:a36f342658f9c49723c8a93a345b533bc"><td class="memItemLeft" align="right" valign="top"><a id="a36f342658f9c49723c8a93a345b533bc"></a>
 <a class="el" href="class_model.html">Model</a>&lt; TSeq &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_model.html">Model</a>&lt; TSeq &gt; &amp;m)</td></tr>
 <tr class="separator:a36f342658f9c49723c8a93a345b533bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa27a8ef94fcb6a797ef3140dc02d2aa5"><td class="memItemLeft" align="right" valign="top"><a id="aa27a8ef94fcb6a797ef3140dc02d2aa5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clone_population</b> (std::vector&lt; <a class="el" href="class_agent.html">Agent</a>&lt; TSeq &gt; &gt; &amp;p, std::map&lt; int, int &gt; &amp;p_ids, bool &amp;d, <a class="el" href="class_model.html">Model</a>&lt; TSeq &gt; *m=nullptr) const</td></tr>
-<tr class="separator:aa27a8ef94fcb6a797ef3140dc02d2aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6aaa793f572e17aefa7576d7200e88dc"><td class="memItemLeft" align="right" valign="top"><a id="a6aaa793f572e17aefa7576d7200e88dc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>clone_population</b> (std::vector&lt; <a class="el" href="class_agent.html">Agent</a>&lt; TSeq &gt; &gt; &amp;p, bool &amp;d, <a class="el" href="class_model.html">Model</a>&lt; TSeq &gt; *m=nullptr) const</td></tr>
+<tr class="separator:a6aaa793f572e17aefa7576d7200e88dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d9b9f0fdd85f6cbec1aa4004476ae85"><td class="memItemLeft" align="right" valign="top"><a id="a3d9b9f0fdd85f6cbec1aa4004476ae85"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clone_population</b> (const <a class="el" href="class_model.html">Model</a>&lt; TSeq &gt; &amp;m)</td></tr>
 <tr class="separator:a3d9b9f0fdd85f6cbec1aa4004476ae85"><td class="memSeparator" colspan="2">&#160;</td></tr>

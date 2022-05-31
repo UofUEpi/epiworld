@@ -162,17 +162,15 @@ void {\bfseries add\+\_\+tool\+\_\+n} (\mbox{\hyperlink{class_tool}{Tool}}$<$ TS
 \hline
 {\em directed} & bool Whether the graph is directed or not. \\
 \hline
-{\em min\+\_\+id} & int Minimum id number (if negative, the program will try to guess from the data.) \\
-\hline
-{\em max\+\_\+id} & int Maximum id number (if negative, the program will try to guess from the data.) \\
+{\em size} & Size of the network. \\
 \hline
 {\em al} & \mbox{\hyperlink{class_adj_list}{Adj\+List}} to read into the model. \\
 \hline
 \end{DoxyParams}
 }\begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_model_ada079842956166ae691b27c867cb7013}\label{class_model_ada079842956166ae691b27c867cb7013}} 
-void {\bfseries agents\+\_\+from\+\_\+adjlist} (std\+::string fn, int skip=0, bool directed=false, int min\+\_\+id=-\/1, int max\+\_\+id=-\/1)
+\mbox{\Hypertarget{class_model_a2322e335233024af0f3f3f5e2cac5416}\label{class_model_a2322e335233024af0f3f3f5e2cac5416}} 
+void {\bfseries agents\+\_\+from\+\_\+adjlist} (std\+::string fn, int size, int skip=0, bool directed=false)
 \item 
 \mbox{\Hypertarget{class_model_adbea0aa9c6059d05f78e857fccc5ed8a}\label{class_model_adbea0aa9c6059d05f78e857fccc5ed8a}} 
 void {\bfseries agents\+\_\+from\+\_\+adjlist} (\mbox{\hyperlink{class_adj_list}{Adj\+List}} al)
@@ -385,8 +383,8 @@ std\+::vector$<$ \mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ $\ast$ $>$ {\
 \mbox{\Hypertarget{class_model_a36f342658f9c49723c8a93a345b533bc}\label{class_model_a36f342658f9c49723c8a93a345b533bc}} 
 \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ \& {\bfseries operator=} (const \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ \&m)
 \item 
-\mbox{\Hypertarget{class_model_aa27a8ef94fcb6a797ef3140dc02d2aa5}\label{class_model_aa27a8ef94fcb6a797ef3140dc02d2aa5}} 
-void {\bfseries clone\+\_\+population} (std\+::vector$<$ \mbox{\hyperlink{class_agent}{Agent}}$<$ TSeq $>$ $>$ \&p, std\+::map$<$ int, int $>$ \&p\+\_\+ids, bool \&d, \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$m=nullptr) const
+\mbox{\Hypertarget{class_model_a6aaa793f572e17aefa7576d7200e88dc}\label{class_model_a6aaa793f572e17aefa7576d7200e88dc}} 
+void {\bfseries clone\+\_\+population} (std\+::vector$<$ \mbox{\hyperlink{class_agent}{Agent}}$<$ TSeq $>$ $>$ \&p, bool \&d, \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$m=nullptr) const
 \item 
 \mbox{\Hypertarget{class_model_a3d9b9f0fdd85f6cbec1aa4004476ae85}\label{class_model_a3d9b9f0fdd85f6cbec1aa4004476ae85}} 
 void {\bfseries clone\+\_\+population} (const \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ \&m)

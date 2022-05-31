@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['queuing_5foff_71',['queuing_off',['../class_model.html#a70f0e1d4c74e1cfc887aca35984c52b6',1,'Model']]],
-  ['queuing_5fon_72',['queuing_on',['../class_model.html#a1cbe26a38285095c62d1971251a6c3db',1,'Model']]]
+  ['is_5fdirected_73',['is_directed',['../class_adj_list.html#a70e14a9f262278d028cecae547382049',1,'AdjList']]],
+  ['is_5fqueuing_5fon_74',['is_queuing_on',['../class_model.html#a2c4ac58e918e9e8dc2e58be6521d8827',1,'Model']]]
 ];
