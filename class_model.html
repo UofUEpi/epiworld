@@ -269,8 +269,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>next</b> ()</td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a825c7fb2498c7693cbf1bfcd0a416ef4">run</a> ()</td></tr>
 <tr class="memdesc:a825c7fb2498c7693cbf1bfcd0a416ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the simulation (after initialization) <br /></td></tr>
 <tr class="separator:a825c7fb2498c7693cbf1bfcd0a416ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19824502152690539d276715589683c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a19824502152690539d276715589683c9">run_multiple</a> (unsigned int nexperiments, std::function&lt; void(<a class="el" href="class_model.html">Model</a>&lt; TSeq &gt; *)&gt; fun, bool <a class="el" href="class_model.html#a9591eb76c7cf1ed7e1510342ff602d37">reset</a>, bool verbose)</td></tr>
-<tr class="separator:a19824502152690539d276715589683c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5be93bf007d2ca71c2ad3cb4cd84a9eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a5be93bf007d2ca71c2ad3cb4cd84a9eb">run_multiple</a> (unsigned int nexperiments, std::function&lt; void(size_t, <a class="el" href="class_model.html">Model</a>&lt; TSeq &gt; *)&gt; fun=save_run&lt; TSeq &gt;(), bool <a class="el" href="class_model.html#a9591eb76c7cf1ed7e1510342ff602d37">reset</a>=true, bool verbose=true)</td></tr>
+<tr class="separator:a5be93bf007d2ca71c2ad3cb4cd84a9eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Rewire the network preserving the degree sequence.</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>This implementation assumes an undirected network, thus if {(i,j), (k,l)} -&gt; {(i,l), (k,j)}, the reciprocal is also true, i.e., {(j,i), (l,k)} -&gt; {(j,k), (l,i)}.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -672,8 +672,8 @@ template&lt;typename TSeq  = int&gt; </div>
 
 </div>
 </div>
-<a id="a19824502152690539d276715589683c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19824502152690539d276715589683c9">&#9670;&nbsp;</a></span>run_multiple()</h2>
+<a id="a5be93bf007d2ca71c2ad3cb4cd84a9eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5be93bf007d2ca71c2ad3cb4cd84a9eb">&#9670;&nbsp;</a></span>run_multiple()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -689,20 +689,20 @@ template&lt;typename TSeq  = int&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; void(<a class="el" href="class_model.html">Model</a>&lt; TSeq &gt; *)&gt;&#160;</td>
-          <td class="paramname"><em>fun</em>, </td>
+          <td class="paramtype">std::function&lt; void(size_t, <a class="el" href="class_model.html">Model</a>&lt; TSeq &gt; *)&gt;&#160;</td>
+          <td class="paramname"><em>fun</em> = <code>save_run&lt;&#160;TSeq&#160;&gt;()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>reset</em>, </td>
+          <td class="paramname"><em>reset</em> = <code>true</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>verbose</em>&#160;</td>
+          <td class="paramname"><em>verbose</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>

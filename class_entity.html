@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>epiworld: Location&lt; TSeq &gt; Class Template Reference</title>
+<title>epiworld: Entity&lt; TSeq &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,38 +64,47 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="class_location-members.html">List of all members</a>  </div>
+<a href="class_entity-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Location&lt; TSeq &gt; Class Template Reference</div>  </div>
+<div class="title">Entity&lt; TSeq &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a05e8093d80f3472cfd25056efe62d208"><td class="memItemLeft" align="right" valign="top"><a id="a05e8093d80f3472cfd25056efe62d208"></a>
+<tr class="memitem:a08d621a708f27628dc066770216745eb"><td class="memItemLeft" align="right" valign="top"><a id="a08d621a708f27628dc066770216745eb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>add_agent</b> (<a class="el" href="class_agent.html">Agent</a>&lt; TSeq &gt; &amp;p)</td></tr>
-<tr class="separator:a05e8093d80f3472cfd25056efe62d208"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6501c887e705e9bf27abb2d1b2b1903"><td class="memItemLeft" align="right" valign="top"><a id="ab6501c887e705e9bf27abb2d1b2b1903"></a>
+<tr class="separator:a08d621a708f27628dc066770216745eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae5c0c22b017b1335b5b68d845b3b3f8"><td class="memItemLeft" align="right" valign="top"><a id="aae5c0c22b017b1335b5b68d845b3b3f8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>add_agent</b> (<a class="el" href="class_agent.html">Agent</a>&lt; TSeq &gt; *p)</td></tr>
-<tr class="separator:ab6501c887e705e9bf27abb2d1b2b1903"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d8453340d18154f96f272bd9c5e251d"><td class="memItemLeft" align="right" valign="top"><a id="a8d8453340d18154f96f272bd9c5e251d"></a>
+<tr class="separator:aae5c0c22b017b1335b5b68d845b3b3f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67d0547c3d0a2e0f873e794f67146fc3"><td class="memItemLeft" align="right" valign="top"><a id="a67d0547c3d0a2e0f873e794f67146fc3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>rm_agent</b> (size_t idx)</td></tr>
-<tr class="separator:a8d8453340d18154f96f272bd9c5e251d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a446f28675f0a16b0c6743de9025622b2"><td class="memItemLeft" align="right" valign="top"><a id="a446f28675f0a16b0c6743de9025622b2"></a>
+<tr class="separator:a67d0547c3d0a2e0f873e794f67146fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c3901491db07fc90aa3eeb8712888a7"><td class="memItemLeft" align="right" valign="top"><a id="a8c3901491db07fc90aa3eeb8712888a7"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const noexcept</td></tr>
-<tr class="separator:a446f28675f0a16b0c6743de9025622b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1cf34aa80fe89c3e677d1e8a2a5731b"><td class="memItemLeft" align="right" valign="top"><a id="ae1cf34aa80fe89c3e677d1e8a2a5731b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_location</b> (int lon, int lat, int alt=0)</td></tr>
-<tr class="separator:ae1cf34aa80fe89c3e677d1e8a2a5731b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c565422130e186137c24991b5119dbe"><td class="memItemLeft" align="right" valign="top"><a id="a1c565422130e186137c24991b5119dbe"></a>
+<tr class="separator:a8c3901491db07fc90aa3eeb8712888a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcfd298feb0c30acec8ef5907fef3e65"><td class="memItemLeft" align="right" valign="top"><a id="afcfd298feb0c30acec8ef5907fef3e65"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_location</b> (std::vector&lt; epiworld_double &gt; loc)</td></tr>
+<tr class="separator:afcfd298feb0c30acec8ef5907fef3e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630e6a99cdd50788f345ec21ba1c64a8"><td class="memItemLeft" align="right" valign="top"><a id="a630e6a99cdd50788f345ec21ba1c64a8"></a>
+std::vector&lt; epiworld_double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_location</b> ()</td></tr>
+<tr class="separator:a630e6a99cdd50788f345ec21ba1c64a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f41a7a90b916e9b0b8a40314050ed7d"><td class="memItemLeft" align="right" valign="top"><a id="a7f41a7a90b916e9b0b8a40314050ed7d"></a>
 std::vector&lt; <a class="el" href="class_agent.html">Agent</a>&lt; TSeq &gt; * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr>
-<tr class="separator:a1c565422130e186137c24991b5119dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a911acd3f5d6459a4fd52822a15d58b34"><td class="memItemLeft" align="right" valign="top"><a id="a911acd3f5d6459a4fd52822a15d58b34"></a>
+<tr class="separator:a7f41a7a90b916e9b0b8a40314050ed7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a857720a5a8a071c620ba63c018a742ae"><td class="memItemLeft" align="right" valign="top"><a id="a857720a5a8a071c620ba63c018a742ae"></a>
 std::vector&lt; <a class="el" href="class_agent.html">Agent</a>&lt; TSeq &gt; * &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> ()</td></tr>
-<tr class="separator:a911acd3f5d6459a4fd52822a15d58b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a857720a5a8a071c620ba63c018a742ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a961ad6e4b863fdf2c849898ae33290c2"><td class="memItemLeft" align="right" valign="top"><a id="a961ad6e4b863fdf2c849898ae33290c2"></a>
+std::vector&lt; <a class="el" href="class_agent.html">Agent</a>&lt; TSeq &gt; * &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> () const</td></tr>
+<tr class="separator:a961ad6e4b863fdf2c849898ae33290c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5fb3cce28cf0abaa1021a4e07976488"><td class="memItemLeft" align="right" valign="top"><a id="ab5fb3cce28cf0abaa1021a4e07976488"></a>
+std::vector&lt; <a class="el" href="class_agent.html">Agent</a>&lt; TSeq &gt; * &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () const</td></tr>
+<tr class="separator:ab5fb3cce28cf0abaa1021a4e07976488"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/epiworld/<a class="el" href="location-bones_8hpp_source.html">location-bones.hpp</a></li>
+<li>include/epiworld/<a class="el" href="entity-bones_8hpp_source.html">entity-bones.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

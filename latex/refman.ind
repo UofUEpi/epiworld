@@ -1,78 +1,81 @@
 \begin{theindex}
 
   \item {Action}
-    \subitem {Action$<$ TSeq $>$}, \hyperpage{6}
-  \item {Action$<$ TSeq $>$}, \hyperpage{5}
-    \subitem {Action}, \hyperpage{6}
+    \subitem {Action$<$ TSeq $>$}, \hyperpage{8}
+  \item {Action$<$ TSeq $>$}, \hyperpage{7}
+    \subitem {Action}, \hyperpage{8}
   \item {add\_global\_action}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{19}
-  \item {AdjList}, \hyperpage{7}
-    \subitem {AdjList}, \hyperpage{7}
-    \subitem {read\_edgelist}, \hyperpage{7}
-  \item {Agent$<$ TSeq $>$}, \hyperpage{8}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{21}
+  \item {AdjList}, \hyperpage{9}
+    \subitem {AdjList}, \hyperpage{9}
+    \subitem {read\_edgelist}, \hyperpage{9}
+  \item {Agent$<$ TSeq $>$}, \hyperpage{10}
 
   \indexspace
 
-  \item {DataBase$<$ TSeq $>$}, \hyperpage{10}
-    \subitem {record\_variant}, \hyperpage{11}
+  \item {DataBase$<$ TSeq $>$}, \hyperpage{12}
+    \subitem {record\_variant}, \hyperpage{14}
 
   \indexspace
 
-  \item {LFMCMC$<$ TData $>$}, \hyperpage{12}
-  \item {Location$<$ TSeq $>$}, \hyperpage{13}
+  \item {Entity$<$ TSeq $>$}, \hyperpage{14}
 
   \indexspace
 
-  \item {Model$<$ TSeq $>$}, \hyperpage{13}
-    \subitem {add\_global\_action}, \hyperpage{19}
-    \subitem {reset}, \hyperpage{20}
-    \subitem {run\_multiple}, \hyperpage{20}
-    \subitem {write\_data}, \hyperpage{20}
+  \item {LFMCMC$<$ TData $>$}, \hyperpage{14}
 
   \indexspace
 
-  \item {PersonTools$<$ TSeq $>$}, \hyperpage{21}
-  \item {Progress}, \hyperpage{21}
+  \item {Model$<$ TSeq $>$}, \hyperpage{16}
+    \subitem {add\_global\_action}, \hyperpage{21}
+    \subitem {reset}, \hyperpage{22}
+    \subitem {run\_multiple}, \hyperpage{22}
+    \subitem {write\_data}, \hyperpage{22}
 
   \indexspace
 
-  \item {Queue$<$ TSeq $>$}, \hyperpage{22}
+  \item {PersonTools$<$ TSeq $>$}, \hyperpage{23}
+  \item {Progress}, \hyperpage{23}
 
   \indexspace
 
-  \item {RandGraph}, \hyperpage{22}
+  \item {Queue$<$ TSeq $>$}, \hyperpage{24}
+
+  \indexspace
+
+  \item {RandGraph}, \hyperpage{24}
   \item {read\_edgelist}
-    \subitem {AdjList}, \hyperpage{7}
+    \subitem {AdjList}, \hyperpage{9}
   \item {record\_variant}
-    \subitem {DataBase$<$ TSeq $>$}, \hyperpage{11}
+    \subitem {DataBase$<$ TSeq $>$}, \hyperpage{14}
   \item {reset}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{20}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{22}
   \item {run\_multiple}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{20}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{22}
 
   \indexspace
 
-  \item {Tool$<$ TSeq $>$}, \hyperpage{23}
-  \item {Tools$<$ TSeq $>$}, \hyperpage{24}
-  \item {Tools\_const$<$ TSeq $>$}, \hyperpage{25}
+  \item {Tool$<$ TSeq $>$}, \hyperpage{25}
+  \item {Tools$<$ TSeq $>$}, \hyperpage{26}
+  \item {Tools\_const$<$ TSeq $>$}, \hyperpage{27}
 
   \indexspace
 
   \item {UserData}
-    \subitem {UserData$<$ TSeq $>$}, \hyperpage{27}
-  \item {UserData$<$ TSeq $>$}, \hyperpage{26}
-    \subitem {UserData}, \hyperpage{27}
+    \subitem {UserData$<$ TSeq $>$}, \hyperpage{29}
+  \item {UserData$<$ TSeq $>$}, \hyperpage{28}
+    \subitem {UserData}, \hyperpage{29}
 
   \indexspace
 
-  \item {vecHasher$<$ T $>$}, \hyperpage{27}
-  \item {Virus$<$ TSeq $>$}, \hyperpage{28}
-  \item {Viruses$<$ TSeq $>$}, \hyperpage{30}
-  \item {Viruses\_const$<$ TSeq $>$}, \hyperpage{30}
+  \item {vecHasher$<$ T $>$}, \hyperpage{30}
+  \item {Virus$<$ TSeq $>$}, \hyperpage{30}
+  \item {Viruses$<$ TSeq $>$}, \hyperpage{33}
+  \item {Viruses\_const$<$ TSeq $>$}, \hyperpage{34}
 
   \indexspace
 
   \item {write\_data}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{20}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{22}
 
 \end{theindex}
