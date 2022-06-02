@@ -44,8 +44,8 @@ size\+\_\+t {\bfseries size} () const
 \mbox{\Hypertarget{class_data_base_ae66bc221cf008a7a10068d219cbbc2a3}\label{class_data_base_ae66bc221cf008a7a10068d219cbbc2a3}} 
 void {\bfseries write\+\_\+data} (std\+::string fn\+\_\+variant\+\_\+info, std\+::string fn\+\_\+variant\+\_\+hist, std\+::string fn\+\_\+tool\+\_\+info, std\+::string fn\+\_\+tool\+\_\+hist, std\+::string fn\+\_\+total\+\_\+hist, std\+::string fn\+\_\+transmission, std\+::string fn\+\_\+transition) const
 \item 
-\mbox{\Hypertarget{class_data_base_ab0ec18d8e72264ed77559f65483c4d71}\label{class_data_base_ab0ec18d8e72264ed77559f65483c4d71}} 
-void {\bfseries record\+\_\+transmission} (int i, int j, int variant)
+\mbox{\Hypertarget{class_data_base_aef4f24579f104462c11d4a40dee3506f}\label{class_data_base_aef4f24579f104462c11d4a40dee3506f}} 
+void {\bfseries record\+\_\+transmission} (int i, int j, int variant, int i\+\_\+expo\+\_\+date)
 \item 
 \mbox{\Hypertarget{class_data_base_a2e8fb265733ecbdcd30cfdb4af331e3c}\label{class_data_base_a2e8fb265733ecbdcd30cfdb4af331e3c}} 
 size\+\_\+t {\bfseries get\+\_\+n\+\_\+variants} () const
@@ -106,6 +106,15 @@ void {\bfseries get\+\_\+hist\+\_\+total} (std\+::vector$<$ int $>$ $\ast$date, 
 void {\bfseries get\+\_\+hist\+\_\+variant} (std\+::vector$<$ int $>$ \&date, std\+::vector$<$ int $>$ \&id, std\+::vector$<$ std\+::string $>$ \&status, std\+::vector$<$ int $>$ \&counts) const
 \end{DoxyCompactItemize}
 \end{Indent}
+\textbf{ }\par
+\begin{DoxyCompactItemize}
+\item 
+Map\+Vec\+\_\+type$<$ int, int $>$ \mbox{\hyperlink{class_data_base_a5d43d9fba8e46bee17f529e0ebce670e}{reproductive\+\_\+number}} () const
+\begin{DoxyCompactList}\small\item\em Computes the reproductive number of each case. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_data_base_a24076459592eecd983344be203773770}\label{class_data_base_a24076459592eecd983344be203773770}} 
+void {\bfseries reproductive\+\_\+number} (std\+::string fn) const
+\end{DoxyCompactItemize}
+
 \doxysubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
@@ -154,6 +163,22 @@ Registering a new variant.
 
 \begin{DoxyParams}{Parameters}
 {\em v} & Pointer to the new variant. Since variants are originated in the agent, the numbers simply move around. From the parent variant to the new variant. And the total number of infected does not change. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_data_base_a5d43d9fba8e46bee17f529e0ebce670e}\label{class_data_base_a5d43d9fba8e46bee17f529e0ebce670e}} 
+\index{DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}!reproductive\_number@{reproductive\_number}}
+\index{reproductive\_number@{reproductive\_number}!DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}}
+\doxysubsubsection{\texorpdfstring{reproductive\_number()}{reproductive\_number()}}
+{\footnotesize\ttfamily template$<$typename TSeq $>$ \\
+Map\+Vec\+\_\+type$<$ int, int $>$ \mbox{\hyperlink{class_data_base}{Data\+Base}}$<$ TSeq $>$\+::reproductive\+\_\+number\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Computes the reproductive number of each case. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn} & File where to write out the reproductive number. \\
 \hline
 \end{DoxyParams}
 

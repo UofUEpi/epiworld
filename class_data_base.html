@@ -111,9 +111,9 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const</
 <tr class="memitem:ae66bc221cf008a7a10068d219cbbc2a3"><td class="memItemLeft" align="right" valign="top"><a id="ae66bc221cf008a7a10068d219cbbc2a3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>write_data</b> (std::string fn_variant_info, std::string fn_variant_hist, std::string fn_tool_info, std::string fn_tool_hist, std::string fn_total_hist, std::string fn_transmission, std::string fn_transition) const</td></tr>
 <tr class="separator:ae66bc221cf008a7a10068d219cbbc2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0ec18d8e72264ed77559f65483c4d71"><td class="memItemLeft" align="right" valign="top"><a id="ab0ec18d8e72264ed77559f65483c4d71"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>record_transmission</b> (int i, int j, int variant)</td></tr>
-<tr class="separator:ab0ec18d8e72264ed77559f65483c4d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef4f24579f104462c11d4a40dee3506f"><td class="memItemLeft" align="right" valign="top"><a id="aef4f24579f104462c11d4a40dee3506f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>record_transmission</b> (int i, int j, int variant, int i_expo_date)</td></tr>
+<tr class="separator:aef4f24579f104462c11d4a40dee3506f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e8fb265733ecbdcd30cfdb4af331e3c"><td class="memItemLeft" align="right" valign="top"><a id="a2e8fb265733ecbdcd30cfdb4af331e3c"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_n_variants</b> () const</td></tr>
 <tr class="separator:a2e8fb265733ecbdcd30cfdb4af331e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,6 +170,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>get_hist_total</b> (s
 <tr class="memitem:a241a3cc333ef0200dc1775de5c0beee4"><td class="memItemLeft" align="right" valign="top"><a id="a241a3cc333ef0200dc1775de5c0beee4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>get_hist_variant</b> (std::vector&lt; int &gt; &amp;date, std::vector&lt; int &gt; &amp;id, std::vector&lt; std::string &gt; &amp;status, std::vector&lt; int &gt; &amp;counts) const</td></tr>
 <tr class="separator:a241a3cc333ef0200dc1775de5c0beee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a5d43d9fba8e46bee17f529e0ebce670e"><td class="memItemLeft" align="right" valign="top">MapVec_type&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_base.html#a5d43d9fba8e46bee17f529e0ebce670e">reproductive_number</a> () const</td></tr>
+<tr class="memdesc:a5d43d9fba8e46bee17f529e0ebce670e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the reproductive number of each case.  <a href="class_data_base.html#a5d43d9fba8e46bee17f529e0ebce670e">More...</a><br /></td></tr>
+<tr class="separator:a5d43d9fba8e46bee17f529e0ebce670e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24076459592eecd983344be203773770"><td class="memItemLeft" align="right" valign="top"><a id="a24076459592eecd983344be203773770"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>reproductive_number</b> (std::string fn) const</td></tr>
+<tr class="separator:a24076459592eecd983344be203773770"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -231,6 +238,38 @@ template&lt;typename TSeq &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">v</td><td>Pointer to the new variant. Since variants are originated in the agent, the numbers simply move around. From the parent variant to the new variant. And the total number of infected does not change. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5d43d9fba8e46bee17f529e0ebce670e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d43d9fba8e46bee17f529e0ebce670e">&#9670;&nbsp;</a></span>reproductive_number()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TSeq &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MapVec_type&lt; int, int &gt; <a class="el" href="class_data_base.html">DataBase</a>&lt; TSeq &gt;::reproductive_number</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Computes the reproductive number of each case. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fn</td><td>File where to write out the reproductive number. </td></tr>
   </table>
   </dd>
 </dl>

@@ -5,7 +5,7 @@
   \item {Action$<$ TSeq $>$}, \hyperpage{7}
     \subitem {Action}, \hyperpage{8}
   \item {add\_global\_action}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{21}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{22}
   \item {AdjList}, \hyperpage{9}
     \subitem {AdjList}, \hyperpage{9}
     \subitem {read\_edgelist}, \hyperpage{9}
@@ -15,6 +15,7 @@
 
   \item {DataBase$<$ TSeq $>$}, \hyperpage{12}
     \subitem {record\_variant}, \hyperpage{14}
+    \subitem {reproductive\_number}, \hyperpage{14}
 
   \indexspace
 
@@ -22,20 +23,20 @@
 
   \indexspace
 
-  \item {LFMCMC$<$ TData $>$}, \hyperpage{14}
+  \item {LFMCMC$<$ TData $>$}, \hyperpage{15}
 
   \indexspace
 
   \item {Model$<$ TSeq $>$}, \hyperpage{16}
-    \subitem {add\_global\_action}, \hyperpage{21}
+    \subitem {add\_global\_action}, \hyperpage{22}
     \subitem {reset}, \hyperpage{22}
-    \subitem {run\_multiple}, \hyperpage{22}
-    \subitem {write\_data}, \hyperpage{22}
+    \subitem {run\_multiple}, \hyperpage{23}
+    \subitem {write\_data}, \hyperpage{23}
 
   \indexspace
 
-  \item {PersonTools$<$ TSeq $>$}, \hyperpage{23}
-  \item {Progress}, \hyperpage{23}
+  \item {PersonTools$<$ TSeq $>$}, \hyperpage{24}
+  \item {Progress}, \hyperpage{24}
 
   \indexspace
 
@@ -43,20 +44,22 @@
 
   \indexspace
 
-  \item {RandGraph}, \hyperpage{24}
+  \item {RandGraph}, \hyperpage{25}
   \item {read\_edgelist}
     \subitem {AdjList}, \hyperpage{9}
   \item {record\_variant}
     \subitem {DataBase$<$ TSeq $>$}, \hyperpage{14}
+  \item {reproductive\_number}
+    \subitem {DataBase$<$ TSeq $>$}, \hyperpage{14}
   \item {reset}
     \subitem {Model$<$ TSeq $>$}, \hyperpage{22}
   \item {run\_multiple}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{22}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{23}
 
   \indexspace
 
   \item {Tool$<$ TSeq $>$}, \hyperpage{25}
-  \item {Tools$<$ TSeq $>$}, \hyperpage{26}
+  \item {Tools$<$ TSeq $>$}, \hyperpage{27}
   \item {Tools\_const$<$ TSeq $>$}, \hyperpage{27}
 
   \indexspace
@@ -70,12 +73,12 @@
 
   \item {vecHasher$<$ T $>$}, \hyperpage{30}
   \item {Virus$<$ TSeq $>$}, \hyperpage{30}
-  \item {Viruses$<$ TSeq $>$}, \hyperpage{33}
-  \item {Viruses\_const$<$ TSeq $>$}, \hyperpage{34}
+  \item {Viruses$<$ TSeq $>$}, \hyperpage{32}
+  \item {Viruses\_const$<$ TSeq $>$}, \hyperpage{33}
 
   \indexspace
 
   \item {write\_data}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{22}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{23}
 
 \end{theindex}

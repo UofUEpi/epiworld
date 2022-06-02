@@ -23,28 +23,29 @@
 \contentsline {subsection}{\numberline {3.4.1}Detailed Description}{13}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Member Function Documentation}{14}{subsection.3.4.2}%
 \contentsline {subsubsection}{\numberline {3.4.2.1}record\_variant()}{14}{subsubsection.3.4.2.1}%
+\contentsline {subsubsection}{\numberline {3.4.2.2}reproductive\_number()}{14}{subsubsection.3.4.2.2}%
 \contentsline {section}{\numberline {3.5}Entity$<$ TSeq $>$ Class Template Reference}{14}{section.3.5}%
-\contentsline {section}{\numberline {3.6}LFMCMC$<$ TData $>$ Class Template Reference}{14}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Detailed Description}{15}{subsection.3.6.1}%
+\contentsline {section}{\numberline {3.6}LFMCMC$<$ TData $>$ Class Template Reference}{15}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Detailed Description}{16}{subsection.3.6.1}%
 \contentsline {section}{\numberline {3.7}Model$<$ TSeq $>$ Class Template Reference}{16}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Detailed Description}{21}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}Member Function Documentation}{21}{subsection.3.7.2}%
-\contentsline {subsubsection}{\numberline {3.7.2.1}add\_global\_action()}{21}{subsubsection.3.7.2.1}%
+\contentsline {subsection}{\numberline {3.7.1}Detailed Description}{22}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Member Function Documentation}{22}{subsection.3.7.2}%
+\contentsline {subsubsection}{\numberline {3.7.2.1}add\_global\_action()}{22}{subsubsection.3.7.2.1}%
 \contentsline {subsubsection}{\numberline {3.7.2.2}reset()}{22}{subsubsection.3.7.2.2}%
-\contentsline {subsubsection}{\numberline {3.7.2.3}run\_multiple()}{22}{subsubsection.3.7.2.3}%
-\contentsline {subsubsection}{\numberline {3.7.2.4}write\_data()}{22}{subsubsection.3.7.2.4}%
-\contentsline {section}{\numberline {3.8}Person\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tools$<$ TSeq $>$ Class Template Reference}{23}{section.3.8}%
-\contentsline {section}{\numberline {3.9}Progress Class Reference}{23}{section.3.9}%
+\contentsline {subsubsection}{\numberline {3.7.2.3}run\_multiple()}{23}{subsubsection.3.7.2.3}%
+\contentsline {subsubsection}{\numberline {3.7.2.4}write\_data()}{23}{subsubsection.3.7.2.4}%
+\contentsline {section}{\numberline {3.8}Person\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tools$<$ TSeq $>$ Class Template Reference}{24}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Progress Class Reference}{24}{section.3.9}%
 \contentsline {subsection}{\numberline {3.9.1}Detailed Description}{24}{subsection.3.9.1}%
 \contentsline {section}{\numberline {3.10}Queue$<$ TSeq $>$ Class Template Reference}{24}{section.3.10}%
 \contentsline {subsection}{\numberline {3.10.1}Detailed Description}{24}{subsection.3.10.1}%
-\contentsline {section}{\numberline {3.11}Rand\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Graph Class Reference}{24}{section.3.11}%
+\contentsline {section}{\numberline {3.11}Rand\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Graph Class Reference}{25}{section.3.11}%
 \contentsline {section}{\numberline {3.12}Tool$<$ TSeq $>$ Class Template Reference}{25}{section.3.12}%
 \contentsline {subsection}{\numberline {3.12.1}Detailed Description}{26}{subsection.3.12.1}%
-\contentsline {section}{\numberline {3.13}Tools$<$ TSeq $>$ Class Template Reference}{26}{section.3.13}%
+\contentsline {section}{\numberline {3.13}Tools$<$ TSeq $>$ Class Template Reference}{27}{section.3.13}%
 \contentsline {subsection}{\numberline {3.13.1}Detailed Description}{27}{subsection.3.13.1}%
 \contentsline {section}{\numberline {3.14}Tools\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}const$<$ TSeq $>$ Class Template Reference}{27}{section.3.14}%
-\contentsline {subsection}{\numberline {3.14.1}Detailed Description}{27}{subsection.3.14.1}%
+\contentsline {subsection}{\numberline {3.14.1}Detailed Description}{28}{subsection.3.14.1}%
 \contentsline {section}{\numberline {3.15}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data$<$ TSeq $>$ Class Template Reference}{28}{section.3.15}%
 \contentsline {subsection}{\numberline {3.15.1}Detailed Description}{29}{subsection.3.15.1}%
 \contentsline {subsection}{\numberline {3.15.2}Constructor \& Destructor Documentation}{29}{subsection.3.15.2}%
@@ -53,8 +54,8 @@
 \contentsline {subsection}{\numberline {3.16.1}Detailed Description}{30}{subsection.3.16.1}%
 \contentsline {section}{\numberline {3.17}Virus$<$ TSeq $>$ Class Template Reference}{30}{section.3.17}%
 \contentsline {subsection}{\numberline {3.17.1}Detailed Description}{32}{subsection.3.17.1}%
-\contentsline {section}{\numberline {3.18}Viruses$<$ TSeq $>$ Class Template Reference}{33}{section.3.18}%
+\contentsline {section}{\numberline {3.18}Viruses$<$ TSeq $>$ Class Template Reference}{32}{section.3.18}%
 \contentsline {subsection}{\numberline {3.18.1}Detailed Description}{33}{subsection.3.18.1}%
-\contentsline {section}{\numberline {3.19}Viruses\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}const$<$ TSeq $>$ Class Template Reference}{34}{section.3.19}%
-\contentsline {subsection}{\numberline {3.19.1}Detailed Description}{34}{subsection.3.19.1}%
+\contentsline {section}{\numberline {3.19}Viruses\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}const$<$ TSeq $>$ Class Template Reference}{33}{section.3.19}%
+\contentsline {subsection}{\numberline {3.19.1}Detailed Description}{33}{subsection.3.19.1}%
 \contentsline {chapter}{Index}{35}{section*.47}%
