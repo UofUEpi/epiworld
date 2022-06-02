@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Alpine Linux) (preloaded format=pdflatex 2022.6.2)  2 JUN 2022 17:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Alpine Linux) (preloaded format=pdflatex 2022.6.2)  2 JUN 2022 19:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1033,23 +1033,31 @@ e 31.
 LaTeX Warning: Reference `lfmcmc_8hpp' on page 19 undefined on input line 32.
 
 
+LaTeX Warning: Reference `lfmcmc-bones_8hpp' on page 19 undefined on input line
+ 33.
+
+
+LaTeX Warning: Reference `lfmcmc-meat_8hpp' on page 19 undefined on input line 
+34.
+
+
 LaTeX Warning: Reference `immune__system_8hpp' on page 19 undefined on input li
-ne 33.
+ne 35.
 
 
 LaTeX Warning: Reference `seirconnected_8hpp' on page 19 undefined on input lin
-e 34.
+e 36.
 
 
-LaTeX Warning: Reference `sir_8hpp' on page 19 undefined on input line 35.
+LaTeX Warning: Reference `sir_8hpp' on page 19 undefined on input line 37.
 
 
 LaTeX Warning: Reference `sirconnected_8hpp' on page 19 undefined on input line
- 36.
+ 38.
 
 
 LaTeX Warning: Reference `surveillance_8hpp' on page 19 undefined on input line
- 37.
+ 39.
 
 ) [19] [20
 
@@ -3984,7 +3992,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[152] [153]) (./struct_catch_1_1line_of_chars.tex)
+[152]
+Overfull \vbox (1.70619pt too high) has occurred while \output is active []
+
+
+[153]) (./struct_catch_1_1line_of_chars.tex)
 (./struct_catch_1_1_listener_description.tex <./struct_catch_1_1_listener_descr
 iption__coll__graph.pdf
 
@@ -3992,7 +4004,7 @@ pdfTeX warning: pdflatex (file ./struct_catch_1_1_listener_description__coll__g
 raph.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
 ge
 >
-<struct_catch_1_1_listener_description__coll__graph.pdf, id=8289, 211.79124pt x
+<struct_catch_1_1_listener_description__coll__graph.pdf, id=8292, 211.79124pt x
  167.62625pt>
 File: struct_catch_1_1_listener_description__coll__graph.pdf Graphic file (type
  pdf)
@@ -4093,7 +4105,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
  <./class_catch_1_1_matchers_1_1_detail_1_1_match_all_of__inherit__graph.pdf>
 <class_catch_1_1_matchers_1_1_detail_1_1_match_all_of__inherit__graph.pdf, id=8
-348, 207.77625pt x 245.91875pt>
+351, 207.77625pt x 245.91875pt>
 File: class_catch_1_1_matchers_1_1_detail_1_1_match_all_of__inherit__graph.pdf 
 Graphic file (type pdf)
 <use class_catch_1_1_matchers_1_1_detail_1_1_match_all_of__inherit__graph.pdf>
@@ -4102,7 +4114,7 @@ inherit__graph.pdf  used on input line 10.
 (pdftex.def)             Requested size: 207.0pt x 245.01004pt.
 
 [156] <./class_catch_1_1_matchers_1_1_detail_1_1_match_all_of__coll__graph.pdf>
-<class_catch_1_1_matchers_1_1_detail_1_1_match_all_of__coll__graph.pdf, id=8367
+<class_catch_1_1_matchers_1_1_detail_1_1_match_all_of__coll__graph.pdf, id=8370
 , 207.77625pt x 245.91875pt>
 File: class_catch_1_1_matchers_1_1_detail_1_1_match_all_of__coll__graph.pdf Gra
 phic file (type pdf)
@@ -4130,7 +4142,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
  <./class_catch_1_1_matchers_1_1_detail_1_1_match_all_of_generic__inherit__grap
 h.pdf>
 <class_catch_1_1_matchers_1_1_detail_1_1_match_all_of_generic__inherit__graph.p
-df, id=8398, 247.92625pt x 245.91875pt>
+df, id=8401, 247.92625pt x 245.91875pt>
 File: class_catch_1_1_matchers_1_1_detail_1_1_match_all_of_generic__inherit__gr
 aph.pdf Graphic file (type pdf)
 <use class_catch_1_1_matchers_1_1_detail_1_1_match_all_of_generic__inherit__gra
@@ -4146,7 +4158,7 @@ all_of_generic__coll__graph.pdf): PDF inclusion: multiple pdfs with page group
 included in a single page
 >
 <class_catch_1_1_matchers_1_1_detail_1_1_match_all_of_generic__coll__graph.pdf,
- id=8406, 247.92625pt x 245.91875pt>
+ id=8409, 247.92625pt x 245.91875pt>
 File: class_catch_1_1_matchers_1_1_detail_1_1_match_all_of_generic__coll__graph
 .pdf Graphic file (type pdf)
 <use class_catch_1_1_matchers_1_1_detail_1_1_match_all_of_generic__coll__graph.
@@ -4173,7 +4185,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
  <./class_catch_1_1_matchers_1_1_detail_1_1_match_any_of__inherit__graph.pdf>
 <class_catch_1_1_matchers_1_1_detail_1_1_match_any_of__inherit__graph.pdf, id=8
-468, 207.77625pt x 245.91875pt>
+471, 207.77625pt x 245.91875pt>
 File: class_catch_1_1_matchers_1_1_detail_1_1_match_any_of__inherit__graph.pdf 
 Graphic file (type pdf)
 <use class_catch_1_1_matchers_1_1_detail_1_1_match_any_of__inherit__graph.pdf>
@@ -4186,7 +4198,7 @@ pdfTeX warning: pdflatex (file ./class_catch_1_1_matchers_1_1_detail_1_1_match_
 any_of__coll__graph.pdf): PDF inclusion: multiple pdfs with page group included
  in a single page
 >
-<class_catch_1_1_matchers_1_1_detail_1_1_match_any_of__coll__graph.pdf, id=8476
+<class_catch_1_1_matchers_1_1_detail_1_1_match_any_of__coll__graph.pdf, id=8479
 , 207.77625pt x 245.91875pt>
 File: class_catch_1_1_matchers_1_1_detail_1_1_match_any_of__coll__graph.pdf Gra
 phic file (type pdf)
@@ -4214,7 +4226,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
  <./class_catch_1_1_matchers_1_1_detail_1_1_match_any_of_generic__inherit__grap
 h.pdf>
 <class_catch_1_1_matchers_1_1_detail_1_1_match_any_of_generic__inherit__graph.p
-df, id=8505, 252.945pt x 245.91875pt>
+df, id=8509, 252.945pt x 245.91875pt>
 File: class_catch_1_1_matchers_1_1_detail_1_1_match_any_of_generic__inherit__gr
 aph.pdf Graphic file (type pdf)
 <use class_catch_1_1_matchers_1_1_detail_1_1_match_any_of_generic__inherit__gra
@@ -4230,7 +4242,7 @@ any_of_generic__coll__graph.pdf): PDF inclusion: multiple pdfs with page group
 included in a single page
 >
 <class_catch_1_1_matchers_1_1_detail_1_1_match_any_of_generic__coll__graph.pdf,
- id=8514, 252.945pt x 245.91875pt>
+ id=8517, 252.945pt x 245.91875pt>
 File: class_catch_1_1_matchers_1_1_detail_1_1_match_any_of_generic__coll__graph
 .pdf Graphic file (type pdf)
 <use class_catch_1_1_matchers_1_1_detail_1_1_match_any_of_generic__coll__graph.
@@ -4256,7 +4268,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
  <./class_catch_1_1_matchers_1_1_matcher_base__inherit__graph.pdf>
-<class_catch_1_1_matchers_1_1_matcher_base__inherit__graph.pdf, id=8578, 213.79
+<class_catch_1_1_matchers_1_1_matcher_base__inherit__graph.pdf, id=8581, 213.79
 875pt x 245.91875pt>
 File: class_catch_1_1_matchers_1_1_matcher_base__inherit__graph.pdf Graphic fil
 e (type pdf)
@@ -4270,7 +4282,7 @@ pdfTeX warning: pdflatex (file ./class_catch_1_1_matchers_1_1_matcher_base__col
 l__graph.pdf): PDF inclusion: multiple pdfs with page group included in a singl
 e page
 >
-<class_catch_1_1_matchers_1_1_matcher_base__coll__graph.pdf, id=8586, 207.77625
+<class_catch_1_1_matchers_1_1_matcher_base__coll__graph.pdf, id=8589, 207.77625
 pt x 178.6675pt>
 File: class_catch_1_1_matchers_1_1_matcher_base__coll__graph.pdf Graphic file (
 type pdf)
@@ -4280,7 +4292,7 @@ Package pdftex.def Info: class_catch_1_1_matchers_1_1_matcher_base__coll__graph
 (pdftex.def)             Requested size: 207.0pt x 178.0073pt.
  [163]) (./class_catch_1_1_matchers_1_1_matcher_generic_base.tex <./class_catch
 _1_1_matchers_1_1_matcher_generic_base__inherit__graph.pdf>
-<class_catch_1_1_matchers_1_1_matcher_generic_base__inherit__graph.pdf, id=8605
+<class_catch_1_1_matchers_1_1_matcher_generic_base__inherit__graph.pdf, id=8608
 , 580.1675pt x 603.25375pt>
 File: class_catch_1_1_matchers_1_1_matcher_generic_base__inherit__graph.pdf Gra
 phic file (type pdf)
@@ -4294,7 +4306,7 @@ pdfTeX warning: pdflatex (file ./class_catch_1_1_matchers_1_1_matcher_generic_b
 ase__coll__graph.pdf): PDF inclusion: multiple pdfs with page group included in
  a single page
 >
-<class_catch_1_1_matchers_1_1_matcher_generic_base__coll__graph.pdf, id=8614, 2
+<class_catch_1_1_matchers_1_1_matcher_generic_base__coll__graph.pdf, id=8617, 2
 07.77625pt x 178.6675pt>
 File: class_catch_1_1_matchers_1_1_matcher_generic_base__coll__graph.pdf Graphi
 c file (type pdf)
@@ -4304,7 +4316,7 @@ l__graph.pdf  used on input line 20.
 (pdftex.def)             Requested size: 207.0pt x 178.0073pt.
  [164]) (./class_catch_1_1_matchers_1_1_matcher_untyped_base.tex <./class_catch
 _1_1_matchers_1_1_matcher_untyped_base__inherit__graph.pdf>
-<class_catch_1_1_matchers_1_1_matcher_untyped_base__inherit__graph.pdf, id=8636
+<class_catch_1_1_matchers_1_1_matcher_untyped_base__inherit__graph.pdf, id=8639
 , 774.895pt x 1340.00626pt>
 File: class_catch_1_1_matchers_1_1_matcher_untyped_base__inherit__graph.pdf Gra
 phic file (type pdf)
@@ -4331,7 +4343,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
  <./class_catch_1_1_match_expr__inherit__graph.pdf>
-<class_catch_1_1_match_expr__inherit__graph.pdf, id=8673, 217.81375pt x 167.626
+<class_catch_1_1_match_expr__inherit__graph.pdf, id=8676, 217.81375pt x 167.626
 25pt>
 File: class_catch_1_1_match_expr__inherit__graph.pdf Graphic file (type pdf)
 <use class_catch_1_1_match_expr__inherit__graph.pdf>
@@ -4343,7 +4355,7 @@ n input line 10.
 pdfTeX warning: pdflatex (file ./class_catch_1_1_match_expr__coll__graph.pdf): 
 PDF inclusion: multiple pdfs with page group included in a single page
 >
-<class_catch_1_1_match_expr__coll__graph.pdf, id=8681, 217.81375pt x 167.62625p
+<class_catch_1_1_match_expr__coll__graph.pdf, id=8684, 217.81375pt x 167.62625p
 t>
 File: class_catch_1_1_match_expr__coll__graph.pdf Graphic file (type pdf)
 <use class_catch_1_1_match_expr__coll__graph.pdf>
@@ -4369,7 +4381,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
  <./class_catch_1_1_matchers_1_1_detail_1_1_match_not_of__inherit__graph.pdf>
 <class_catch_1_1_matchers_1_1_detail_1_1_match_not_of__inherit__graph.pdf, id=8
-705, 207.77625pt x 245.91875pt>
+708, 207.77625pt x 245.91875pt>
 File: class_catch_1_1_matchers_1_1_detail_1_1_match_not_of__inherit__graph.pdf 
 Graphic file (type pdf)
 <use class_catch_1_1_matchers_1_1_detail_1_1_match_not_of__inherit__graph.pdf>
@@ -4382,7 +4394,7 @@ pdfTeX warning: pdflatex (file ./class_catch_1_1_matchers_1_1_detail_1_1_match_
 not_of__coll__graph.pdf): PDF inclusion: multiple pdfs with page group included
  in a single page
 >
-<class_catch_1_1_matchers_1_1_detail_1_1_match_not_of__coll__graph.pdf, id=8713
+<class_catch_1_1_matchers_1_1_detail_1_1_match_not_of__coll__graph.pdf, id=8716
 , 207.77625pt x 245.91875pt>
 File: class_catch_1_1_matchers_1_1_detail_1_1_match_not_of__coll__graph.pdf Gra
 phic file (type pdf)
@@ -4410,7 +4422,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
  <./class_catch_1_1_matchers_1_1_detail_1_1_match_not_of_generic__inherit__grap
 h.pdf>
 <class_catch_1_1_matchers_1_1_detail_1_1_match_not_of_generic__inherit__graph.p
-df, id=8733, 246.9225pt x 245.91875pt>
+df, id=8736, 246.9225pt x 245.91875pt>
 File: class_catch_1_1_matchers_1_1_detail_1_1_match_not_of_generic__inherit__gr
 aph.pdf Graphic file (type pdf)
 <use class_catch_1_1_matchers_1_1_detail_1_1_match_not_of_generic__inherit__gra
@@ -4421,7 +4433,7 @@ eneric__inherit__graph.pdf  used on input line 10.
  [169] <./class_catch_1_1_matchers_1_1_detail_1_1_match_not_of_generic__coll__g
 raph.pdf>
 <class_catch_1_1_matchers_1_1_detail_1_1_match_not_of_generic__coll__graph.pdf,
- id=8752, 246.9225pt x 245.91875pt>
+ id=8755, 246.9225pt x 245.91875pt>
 File: class_catch_1_1_matchers_1_1_detail_1_1_match_not_of_generic__coll__graph
 .pdf Graphic file (type pdf)
 <use class_catch_1_1_matchers_1_1_detail_1_1_match_not_of_generic__coll__graph.
@@ -4431,7 +4443,7 @@ eneric__coll__graph.pdf  used on input line 20.
 (pdftex.def)             Requested size: 246.0pt x 244.9988pt.
  [170]) (./struct_catch_1_1_message_builder.tex <./struct_catch_1_1_message_bui
 lder__inherit__graph.pdf>
-<struct_catch_1_1_message_builder__inherit__graph.pdf, id=8778, 198.7425pt x 15
+<struct_catch_1_1_message_builder__inherit__graph.pdf, id=8781, 198.7425pt x 15
 6.585pt>
 File: struct_catch_1_1_message_builder__inherit__graph.pdf Graphic file (type p
 df)
@@ -4444,7 +4456,7 @@ used on input line 10.
 pdfTeX warning: pdflatex (file ./struct_catch_1_1_message_builder__coll__graph.
 pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >
-<struct_catch_1_1_message_builder__coll__graph.pdf, id=8786, 462.72874pt x 292.
+<struct_catch_1_1_message_builder__coll__graph.pdf, id=8789, 462.72874pt x 292.
 09125pt>
 File: struct_catch_1_1_message_builder__coll__graph.pdf Graphic file (type pdf)
 
@@ -4454,7 +4466,7 @@ d on input line 20.
 (pdftex.def)             Requested size: 350.0pt x 220.93533pt.
  [171]) (./struct_catch_1_1_message_info.tex <./struct_catch_1_1_message_info__
 coll__graph.pdf>
-<struct_catch_1_1_message_info__coll__graph.pdf, id=8815, 299.1175pt x 167.6262
+<struct_catch_1_1_message_info__coll__graph.pdf, id=8818, 299.1175pt x 167.6262
 5pt>
 File: struct_catch_1_1_message_info__coll__graph.pdf Graphic file (type pdf)
 <use struct_catch_1_1_message_info__coll__graph.pdf>
@@ -4463,7 +4475,7 @@ n input line 10.
 (pdftex.def)             Requested size: 298.0pt x 167.01195pt.
  [172]) (./struct_catch_1_1_message_stream.tex <./struct_catch_1_1_message_stre
 am__inherit__graph.pdf>
-<struct_catch_1_1_message_stream__inherit__graph.pdf, id=8842, 198.7425pt x 156
+<struct_catch_1_1_message_stream__inherit__graph.pdf, id=8845, 198.7425pt x 156
 .585pt>
 File: struct_catch_1_1_message_stream__inherit__graph.pdf Graphic file (type pd
 f)
@@ -4476,7 +4488,7 @@ sed on input line 10.
 pdfTeX warning: pdflatex (file ./struct_catch_1_1_message_stream__coll__graph.p
 df): PDF inclusion: multiple pdfs with page group included in a single page
 >
-<struct_catch_1_1_message_stream__coll__graph.pdf, id=8850, 224.84pt x 224.84pt
+<struct_catch_1_1_message_stream__coll__graph.pdf, id=8853, 224.84pt x 224.84pt
 >
 File: struct_catch_1_1_message_stream__coll__graph.pdf Graphic file (type pdf)
 <use struct_catch_1_1_message_stream__coll__graph.pdf>
@@ -4535,7 +4547,7 @@ ti_reporter__inherit__graph.pdf
 pdfTeX warning: pdflatex (file ./class_catch_1_1_multi_reporter__inherit__graph
 .pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >
-<class_catch_1_1_multi_reporter__inherit__graph.pdf, id=9120, 190.7125pt x 156.
+<class_catch_1_1_multi_reporter__inherit__graph.pdf, id=9123, 190.7125pt x 156.
 585pt>
 File: class_catch_1_1_multi_reporter__inherit__graph.pdf Graphic file (type pdf
 )
@@ -4548,7 +4560,7 @@ ed on input line 10.
 pdfTeX warning: pdflatex (file ./class_catch_1_1_multi_reporter__coll__graph.pd
 f): PDF inclusion: multiple pdfs with page group included in a single page
 >
-<class_catch_1_1_multi_reporter__coll__graph.pdf, id=9128, 341.275pt x 282.0537
+<class_catch_1_1_multi_reporter__coll__graph.pdf, id=9131, 341.275pt x 282.0537
 6pt>
 File: class_catch_1_1_multi_reporter__coll__graph.pdf Graphic file (type pdf)
 <use class_catch_1_1_multi_reporter__coll__graph.pdf>
@@ -4558,7 +4570,7 @@ on input line 20.
  [182] [183]) (./struct_catch_1_1_test_case_tracking_1_1_name_and_location.tex 
 <./struct_catch_1_1_test_case_tracking_1_1_name_and_location__coll__graph.pdf>
 <struct_catch_1_1_test_case_tracking_1_1_name_and_location__coll__graph.pdf, id
-=9224, 206.7725pt x 178.6675pt>
+=9227, 206.7725pt x 178.6675pt>
 File: struct_catch_1_1_test_case_tracking_1_1_name_and_location__coll__graph.pd
 f Graphic file (type pdf)
 <use struct_catch_1_1_test_case_tracking_1_1_name_and_location__coll__graph.pdf
@@ -4572,7 +4584,7 @@ _coll__graph.pdf
 pdfTeX warning: pdflatex (file ./struct_catch_1_1_name_and_tags__coll__graph.pd
 f): PDF inclusion: multiple pdfs with page group included in a single page
 >
-<struct_catch_1_1_name_and_tags__coll__graph.pdf, id=9252, 192.72pt x 178.6675p
+<struct_catch_1_1_name_and_tags__coll__graph.pdf, id=9255, 192.72pt x 178.6675p
 t>
 File: struct_catch_1_1_name_and_tags__coll__graph.pdf Graphic file (type pdf)
 <use struct_catch_1_1_name_and_tags__coll__graph.pdf>
@@ -4598,7 +4610,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 ) (./class_catch_1_1_detail_1_1_non_copyable.tex [186] <./class_catch_1_1_detai
 l_1_1_non_copyable__inherit__graph.pdf>
-<class_catch_1_1_detail_1_1_non_copyable__inherit__graph.pdf, id=9298, 871.255p
+<class_catch_1_1_detail_1_1_non_copyable__inherit__graph.pdf, id=9301, 871.255p
 t x 426.59375pt>
 File: class_catch_1_1_detail_1_1_non_copyable__inherit__graph.pdf Graphic file 
 (type pdf)
@@ -4630,7 +4642,7 @@ pdfTeX warning: pdflatex (file ./class_catch_1_1_matchers_1_1_none_match_matche
 r__inherit__graph.pdf): PDF inclusion: multiple pdfs with page group included i
 n a single page
 >
-<class_catch_1_1_matchers_1_1_none_match_matcher__inherit__graph.pdf, id=9314, 
+<class_catch_1_1_matchers_1_1_none_match_matcher__inherit__graph.pdf, id=9317, 
 222.8325pt x 245.91875pt>
 File: class_catch_1_1_matchers_1_1_none_match_matcher__inherit__graph.pdf Graph
 ic file (type pdf)
@@ -4639,7 +4651,7 @@ Package pdftex.def Info: class_catch_1_1_matchers_1_1_none_match_matcher__inher
 it__graph.pdf  used on input line 10.
 (pdftex.def)             Requested size: 222.0pt x 245.00253pt.
  [187] <./class_catch_1_1_matchers_1_1_none_match_matcher__coll__graph.pdf>
-<class_catch_1_1_matchers_1_1_none_match_matcher__coll__graph.pdf, id=9331, 222
+<class_catch_1_1_matchers_1_1_none_match_matcher__coll__graph.pdf, id=9334, 222
 .8325pt x 245.91875pt>
 File: class_catch_1_1_matchers_1_1_none_match_matcher__coll__graph.pdf Graphic 
 file (type pdf)
@@ -4684,7 +4696,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 ) (./class_catch_1_1_clara_1_1_opt.tex <./class_catch_1_1_clara_1_1_opt__inheri
 t__graph.pdf>
-<class_catch_1_1_clara_1_1_opt__inherit__graph.pdf, id=9355, 202.7575pt x 369.3
+<class_catch_1_1_clara_1_1_opt__inherit__graph.pdf, id=9358, 202.7575pt x 369.3
 8pt>
 File: class_catch_1_1_clara_1_1_opt__inherit__graph.pdf Graphic file (type pdf)
 
@@ -4697,7 +4709,7 @@ d on input line 10.
 pdfTeX warning: pdflatex (file ./class_catch_1_1_clara_1_1_opt__coll__graph.pdf
 ): PDF inclusion: multiple pdfs with page group included in a single page
 >
-<class_catch_1_1_clara_1_1_opt__coll__graph.pdf, id=9376, 202.7575pt x 313.17pt
+<class_catch_1_1_clara_1_1_opt__coll__graph.pdf, id=9379, 202.7575pt x 313.17pt
 >
 File: class_catch_1_1_clara_1_1_opt__coll__graph.pdf Graphic file (type pdf)
 <use class_catch_1_1_clara_1_1_opt__coll__graph.pdf>
@@ -4724,7 +4736,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [191]) (./struct_catch_1_1_benchmark_1_1_outlier_classification.tex)
 (./class_catch_1_1_clara_1_1_parser.tex <./class_catch_1_1_clara_1_1_parser__in
 herit__graph.pdf>
-<class_catch_1_1_clara_1_1_parser__inherit__graph.pdf, id=9428, 182.6825pt x 16
+<class_catch_1_1_clara_1_1_parser__inherit__graph.pdf, id=9431, 182.6825pt x 16
 7.62625pt>
 File: class_catch_1_1_clara_1_1_parser__inherit__graph.pdf Graphic file (type p
 df)
@@ -4737,7 +4749,7 @@ used on input line 10.
 pdfTeX warning: pdflatex (file ./class_catch_1_1_clara_1_1_parser__coll__graph.
 pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >
-<class_catch_1_1_clara_1_1_parser__coll__graph.pdf, id=9466, 182.6825pt x 167.6
+<class_catch_1_1_clara_1_1_parser__coll__graph.pdf, id=9469, 182.6825pt x 167.6
 2625pt>
 File: class_catch_1_1_clara_1_1_parser__coll__graph.pdf Graphic file (type pdf)
 
@@ -4747,7 +4759,7 @@ d on input line 20.
 (pdftex.def)             Requested size: 182.0pt x 167.00684pt.
  [193]) (./class_catch_1_1_clara_1_1_detail_1_1_parser_base.tex <./class_catch_
 1_1_clara_1_1_detail_1_1_parser_base__inherit__graph.pdf>
-<class_catch_1_1_clara_1_1_detail_1_1_parser_base__inherit__graph.pdf, id=9507,
+<class_catch_1_1_clara_1_1_detail_1_1_parser_base__inherit__graph.pdf, id=9510,
  768.8725pt x 250.9375pt>
 File: class_catch_1_1_clara_1_1_detail_1_1_parser_base__inherit__graph.pdf Grap
 hic file (type pdf)
@@ -4780,7 +4792,7 @@ f_impl__inherit__graph.pdf): PDF inclusion: multiple pdfs with page group inclu
 ded in a single page
 >
 <class_catch_1_1_clara_1_1_detail_1_1_parser_ref_impl__inherit__graph.pdf, id=9
-521, 219.82124pt x 256.96pt>
+524, 219.82124pt x 256.96pt>
 File: class_catch_1_1_clara_1_1_detail_1_1_parser_ref_impl__inherit__graph.pdf 
 Graphic file (type pdf)
 <use class_catch_1_1_clara_1_1_detail_1_1_parser_ref_impl__inherit__graph.pdf>
@@ -4789,7 +4801,7 @@ inherit__graph.pdf  used on input line 10.
 (pdftex.def)             Requested size: 219.0pt x 256.00658pt.
  [194] <./class_catch_1_1_clara_1_1_detail_1_1_parser_ref_impl__coll__graph.pdf
 >
-<class_catch_1_1_clara_1_1_detail_1_1_parser_ref_impl__coll__graph.pdf, id=9542
+<class_catch_1_1_clara_1_1_detail_1_1_parser_ref_impl__coll__graph.pdf, id=9545
 , 219.82124pt x 256.96pt>
 File: class_catch_1_1_clara_1_1_detail_1_1_parser_ref_impl__coll__graph.pdf Gra
 phic file (type pdf)
@@ -4839,7 +4851,7 @@ pdfTeX warning: pdflatex (file ./class_catch_1_1_matchers_1_1_predicate_matcher
 __inherit__graph.pdf): PDF inclusion: multiple pdfs with page group included in
  a single page
 >
-<class_catch_1_1_matchers_1_1_predicate_matcher__inherit__graph.pdf, id=9593, 2
+<class_catch_1_1_matchers_1_1_predicate_matcher__inherit__graph.pdf, id=9596, 2
 13.79875pt x 245.91875pt>
 File: class_catch_1_1_matchers_1_1_predicate_matcher__inherit__graph.pdf Graphi
 c file (type pdf)
@@ -4853,7 +4865,7 @@ pdfTeX warning: pdflatex (file ./class_catch_1_1_matchers_1_1_predicate_matcher
 __coll__graph.pdf): PDF inclusion: multiple pdfs with page group included in a 
 single page
 >
-<class_catch_1_1_matchers_1_1_predicate_matcher__coll__graph.pdf, id=9602, 213.
+<class_catch_1_1_matchers_1_1_predicate_matcher__coll__graph.pdf, id=9605, 213.
 79875pt x 245.91875pt>
 File: class_catch_1_1_matchers_1_1_predicate_matcher__coll__graph.pdf Graphic f
 ile (type pdf)
@@ -4905,7 +4917,7 @@ _generator__inherit__graph.pdf): PDF inclusion: multiple pdfs with page group i
 ncluded in a single page
 >
 <class_catch_1_1_generators_1_1_random_floating_generator__inherit__graph.pdf, 
-id=9666, 210.7875pt x 256.96pt>
+id=9669, 210.7875pt x 256.96pt>
 File: class_catch_1_1_generators_1_1_random_floating_generator__inherit__graph.
 pdf Graphic file (type pdf)
 <use class_catch_1_1_generators_1_1_random_floating_generator__inherit__graph.p
@@ -4920,7 +4932,7 @@ _generator__coll__graph.pdf): PDF inclusion: multiple pdfs with page group incl
 uded in a single page
 >
 <class_catch_1_1_generators_1_1_random_floating_generator__coll__graph.pdf, id=
-9674, 210.7875pt x 256.96pt>
+9677, 210.7875pt x 256.96pt>
 File: class_catch_1_1_generators_1_1_random_floating_generator__coll__graph.pdf
  Graphic file (type pdf)
 <use class_catch_1_1_generators_1_1_random_floating_generator__coll__graph.pdf>
@@ -4954,7 +4966,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
  <./class_catch_1_1_generators_1_1_random_integer_generator__inherit__graph.pdf
 >
 <class_catch_1_1_generators_1_1_random_integer_generator__inherit__graph.pdf, i
-d=9698, 205.76875pt x 256.96pt>
+d=9702, 205.76875pt x 256.96pt>
 File: class_catch_1_1_generators_1_1_random_integer_generator__inherit__graph.p
 df Graphic file (type pdf)
 <use class_catch_1_1_generators_1_1_random_integer_generator__inherit__graph.pd
@@ -4965,7 +4977,7 @@ r__inherit__graph.pdf  used on input line 10.
  [201] <./class_catch_1_1_generators_1_1_random_integer_generator__coll__graph.
 pdf>
 <class_catch_1_1_generators_1_1_random_integer_generator__coll__graph.pdf, id=9
-719, 205.76875pt x 256.96pt>
+722, 205.76875pt x 256.96pt>
 File: class_catch_1_1_generators_1_1_random_integer_generator__coll__graph.pdf 
 Graphic file (type pdf)
 <use class_catch_1_1_generators_1_1_random_integer_generator__coll__graph.pdf>
@@ -4996,7 +5008,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
  <./class_catch_1_1_generators_1_1_range_generator__inherit__graph.pdf>
-<class_catch_1_1_generators_1_1_range_generator__inherit__graph.pdf, id=9740, 1
+<class_catch_1_1_generators_1_1_range_generator__inherit__graph.pdf, id=9743, 1
 98.7425pt x 245.91875pt>
 File: class_catch_1_1_generators_1_1_range_generator__inherit__graph.pdf Graphi
 c file (type pdf)
@@ -5010,7 +5022,7 @@ pdfTeX warning: pdflatex (file ./class_catch_1_1_generators_1_1_range_generator
 __coll__graph.pdf): PDF inclusion: multiple pdfs with page group included in a 
 single page
 >
-<class_catch_1_1_generators_1_1_range_generator__coll__graph.pdf, id=9748, 198.
+<class_catch_1_1_generators_1_1_range_generator__coll__graph.pdf, id=9751, 198.
 7425pt x 245.91875pt>
 File: class_catch_1_1_generators_1_1_range_generator__coll__graph.pdf Graphic f
 ile (type pdf)
@@ -5148,7 +5160,7 @@ pdfTeX warning: pdflatex (file ./class_catch_1_1_matchers_1_1_regex_matcher__in
 herit__graph.pdf): PDF inclusion: multiple pdfs with page group included in a s
 ingle page
 >
-<class_catch_1_1_matchers_1_1_regex_matcher__inherit__graph.pdf, id=9823, 234.8
+<class_catch_1_1_matchers_1_1_regex_matcher__inherit__graph.pdf, id=9826, 234.8
 775pt x 234.8775pt>
 File: class_catch_1_1_matchers_1_1_regex_matcher__inherit__graph.pdf Graphic fi
 le (type pdf)
@@ -5162,7 +5174,7 @@ pdfTeX warning: pdflatex (file ./class_catch_1_1_matchers_1_1_regex_matcher__co
 ll__graph.pdf): PDF inclusion: multiple pdfs with page group included in a sing
 le page
 >
-<class_catch_1_1_matchers_1_1_regex_matcher__coll__graph.pdf, id=9846, 234.8775
+<class_catch_1_1_matchers_1_1_regex_matcher__coll__graph.pdf, id=9849, 234.8775
 pt x 234.8775pt>
 File: class_catch_1_1_matchers_1_1_regex_matcher__coll__graph.pdf Graphic file 
 (type pdf)
@@ -5206,7 +5218,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
  <./class_catch_1_1_generators_1_1_repeat_generator__inherit__graph.pdf>
-<class_catch_1_1_generators_1_1_repeat_generator__inherit__graph.pdf, id=9869, 
+<class_catch_1_1_generators_1_1_repeat_generator__inherit__graph.pdf, id=9872, 
 198.7425pt x 245.91875pt>
 File: class_catch_1_1_generators_1_1_repeat_generator__inherit__graph.pdf Graph
 ic file (type pdf)
@@ -5221,7 +5233,7 @@ pdfTeX warning: pdflatex (file ./class_catch_1_1_generators_1_1_repeat_generato
 r__coll__graph.pdf): PDF inclusion: multiple pdfs with page group included in a
  single page
 >
-<class_catch_1_1_generators_1_1_repeat_generator__coll__graph.pdf, id=9888, 198
+<class_catch_1_1_generators_1_1_repeat_generator__coll__graph.pdf, id=9891, 198
 .7425pt x 245.91875pt>
 File: class_catch_1_1_generators_1_1_repeat_generator__coll__graph.pdf Graphic 
 file (type pdf)
@@ -5231,7 +5243,7 @@ _graph.pdf  used on input line 20.
 (pdftex.def)             Requested size: 198.0pt x 245.00629pt.
  [210]) (./class_catch_1_1_reporter_base.tex <./class_catch_1_1_reporter_base__
 inherit__graph.pdf>
-<class_catch_1_1_reporter_base__inherit__graph.pdf, id=9913, 693.59125pt x 367.
+<class_catch_1_1_reporter_base__inherit__graph.pdf, id=9916, 693.59125pt x 367.
 3725pt>
 File: class_catch_1_1_reporter_base__inherit__graph.pdf Graphic file (type pdf)
 
@@ -5244,7 +5256,7 @@ d on input line 14.
 pdfTeX warning: pdflatex (file ./class_catch_1_1_reporter_base__coll__graph.pdf
 ): PDF inclusion: multiple pdfs with page group included in a single page
 >
-<class_catch_1_1_reporter_base__coll__graph.pdf, id=9921, 849.1725pt x 219.8212
+<class_catch_1_1_reporter_base__coll__graph.pdf, id=9924, 849.1725pt x 219.8212
 4pt>
 File: class_catch_1_1_reporter_base__coll__graph.pdf Graphic file (type pdf)
 <use class_catch_1_1_reporter_base__coll__graph.pdf>
@@ -5276,7 +5288,7 @@ pdfTeX warning: pdflatex (file ./class_catch_1_1_reporter_factory__inherit__gra
 ph.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 
 >
-<class_catch_1_1_reporter_factory__inherit__graph.pdf, id=10013, 218.8175pt x 1
+<class_catch_1_1_reporter_factory__inherit__graph.pdf, id=10016, 218.8175pt x 1
 56.585pt>
 File: class_catch_1_1_reporter_factory__inherit__graph.pdf Graphic file (type p
 df)
@@ -5289,7 +5301,7 @@ used on input line 10.
 pdfTeX warning: pdflatex (file ./class_catch_1_1_reporter_factory__coll__graph.
 pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >
-<class_catch_1_1_reporter_factory__coll__graph.pdf, id=10022, 218.8175pt x 156.
+<class_catch_1_1_reporter_factory__coll__graph.pdf, id=10025, 218.8175pt x 156.
 585pt>
 File: class_catch_1_1_reporter_factory__coll__graph.pdf Graphic file (type pdf)
 
@@ -5317,7 +5329,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 ) (./class_catch_1_1_reporter_registry.tex <./class_catch_1_1_reporter_registry
 __inherit__graph.pdf>
-<class_catch_1_1_reporter_registry__inherit__graph.pdf, id=10061, 202.7575pt x 
+<class_catch_1_1_reporter_registry__inherit__graph.pdf, id=10064, 202.7575pt x 
 156.585pt>
 File: class_catch_1_1_reporter_registry__inherit__graph.pdf Graphic file (type 
 pdf)
@@ -5330,7 +5342,7 @@ Package pdftex.def Info: class_catch_1_1_reporter_registry__inherit__graph.pdf
 pdfTeX warning: pdflatex (file ./class_catch_1_1_reporter_registry__coll__graph
 .pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >
-<class_catch_1_1_reporter_registry__coll__graph.pdf, id=10069, 202.7575pt x 156
+<class_catch_1_1_reporter_registry__coll__graph.pdf, id=10072, 202.7575pt x 156
 .585pt>
 File: class_catch_1_1_reporter_registry__coll__graph.pdf Graphic file (type pdf
 )
@@ -5341,7 +5353,7 @@ ed on input line 20.
  [216]) (./class_catch_1_1_reporter_spec.tex [217])
 (./class_catch_1_1_clara_1_1_detail_1_1_result_base.tex <./class_catch_1_1_clar
 a_1_1_detail_1_1_result_base__inherit__graph.pdf>
-<class_catch_1_1_clara_1_1_detail_1_1_result_base__inherit__graph.pdf, id=10115
+<class_catch_1_1_clara_1_1_detail_1_1_result_base__inherit__graph.pdf, id=10118
 , 480.79625pt x 160.6pt>
 File: class_catch_1_1_clara_1_1_detail_1_1_result_base__inherit__graph.pdf Grap
 hic file (type pdf)
@@ -5370,7 +5382,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
  <./class_catch_1_1_clara_1_1_detail_1_1_result_value_base__inherit__graph.pdf>
 <class_catch_1_1_clara_1_1_detail_1_1_result_value_base__inherit__graph.pdf, id
-=10148, 199.74625pt x 178.6675pt>
+=10151, 199.74625pt x 178.6675pt>
 File: class_catch_1_1_clara_1_1_detail_1_1_result_value_base__inherit__graph.pd
 f Graphic file (type pdf)
 <use class_catch_1_1_clara_1_1_detail_1_1_result_value_base__inherit__graph.pdf
@@ -5385,7 +5397,7 @@ lue_base__coll__graph.pdf): PDF inclusion: multiple pdfs with page group includ
 ed in a single page
 >
 <class_catch_1_1_clara_1_1_detail_1_1_result_value_base__coll__graph.pdf, id=10
-156, 199.74625pt x 178.6675pt>
+159, 199.74625pt x 178.6675pt>
 File: class_catch_1_1_clara_1_1_detail_1_1_result_value_base__coll__graph.pdf G
 raphic file (type pdf)
 <use class_catch_1_1_clara_1_1_detail_1_1_result_value_base__coll__graph.pdf>
@@ -5413,7 +5425,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
  <./class_catch_1_1_clara_1_1_detail_1_1_result_value_base_3_01void_01_4__inher
 it__graph.pdf>
 <class_catch_1_1_clara_1_1_detail_1_1_result_value_base_3_01void_01_4__inherit_
-_graph.pdf, id=10188, 211.79124pt x 245.91875pt>
+_graph.pdf, id=10191, 211.79124pt x 245.91875pt>
 File: class_catch_1_1_clara_1_1_detail_1_1_result_value_base_3_01void_01_4__inh
 erit__graph.pdf Graphic file (type pdf)
 <use class_catch_1_1_clara_1_1_detail_1_1_result_value_base_3_01void_01_4__inhe
@@ -5424,7 +5436,7 @@ _3_01void_01_4__inherit__graph.pdf  used on input line 10.
  [220] <./class_catch_1_1_clara_1_1_detail_1_1_result_value_base_3_01void_01_4_
 _coll__graph.pdf>
 <class_catch_1_1_clara_1_1_detail_1_1_result_value_base_3_01void_01_4__coll__gr
-aph.pdf, id=10212, 211.79124pt x 178.6675pt>
+aph.pdf, id=10215, 211.79124pt x 178.6675pt>
 File: class_catch_1_1_clara_1_1_detail_1_1_result_value_base_3_01void_01_4__col
 l__graph.pdf Graphic file (type pdf)
 <use class_catch_1_1_clara_1_1_detail_1_1_result_value_base_3_01void_01_4__coll
@@ -5435,7 +5447,7 @@ _3_01void_01_4__coll__graph.pdf  used on input line 20.
 ) (./struct_catch_1_1_result_was.tex [221])
 (./class_catch_1_1_reusable_string_stream.tex <./class_catch_1_1_reusable_strin
 g_stream__inherit__graph.pdf>
-<class_catch_1_1_reusable_string_stream__inherit__graph.pdf, id=10237, 224.84pt
+<class_catch_1_1_reusable_string_stream__inherit__graph.pdf, id=10240, 224.84pt
  x 156.585pt>
 File: class_catch_1_1_reusable_string_stream__inherit__graph.pdf Graphic file (
 type pdf)
@@ -5449,7 +5461,7 @@ pdfTeX warning: pdflatex (file ./class_catch_1_1_reusable_string_stream__coll__
 graph.pdf): PDF inclusion: multiple pdfs with page group included in a single p
 age
 >
-<class_catch_1_1_reusable_string_stream__coll__graph.pdf, id=10245, 224.84pt x 
+<class_catch_1_1_reusable_string_stream__coll__graph.pdf, id=10248, 224.84pt x 
 156.585pt>
 File: class_catch_1_1_reusable_string_stream__coll__graph.pdf Graphic file (typ
 e pdf)
@@ -5459,7 +5471,7 @@ f  used on input line 20.
 (pdftex.def)             Requested size: 224.0pt x 156.0064pt.
  [222]) (./class_catch_1_1_run_context.tex <./class_catch_1_1_run_context__inhe
 rit__graph.pdf>
-<class_catch_1_1_run_context__inherit__graph.pdf, id=10266, 191.71625pt x 156.5
+<class_catch_1_1_run_context__inherit__graph.pdf, id=10269, 191.71625pt x 156.5
 85pt>
 File: class_catch_1_1_run_context__inherit__graph.pdf Graphic file (type pdf)
 <use class_catch_1_1_run_context__inherit__graph.pdf>
@@ -5471,7 +5483,7 @@ on input line 10.
 pdfTeX warning: pdflatex (file ./class_catch_1_1_run_context__coll__graph.pdf):
  PDF inclusion: multiple pdfs with page group included in a single page
 >
-<class_catch_1_1_run_context__coll__graph.pdf, id=10274, 191.71625pt x 156.585p
+<class_catch_1_1_run_context__coll__graph.pdf, id=10277, 191.71625pt x 156.585p
 t>
 File: class_catch_1_1_run_context__coll__graph.pdf Graphic file (type pdf)
 <use class_catch_1_1_run_context__coll__graph.pdf>
@@ -5514,7 +5526,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
  <./struct_catch_1_1_benchmark_1_1_sample_analysis__coll__graph.pdf>
-<struct_catch_1_1_benchmark_1_1_sample_analysis__coll__graph.pdf, id=10331, 214
+<struct_catch_1_1_benchmark_1_1_sample_analysis__coll__graph.pdf, id=10334, 214
 .8025pt x 189.70876pt>
 File: struct_catch_1_1_benchmark_1_1_sample_analysis__coll__graph.pdf Graphic f
 ile (type pdf)
@@ -5530,7 +5542,7 @@ graph.pdf
 pdfTeX warning: pdflatex (file ./class_catch_1_1_scoped_message__coll__graph.pd
 f): PDF inclusion: multiple pdfs with page group included in a single page
 >
-<class_catch_1_1_scoped_message__coll__graph.pdf, id=10396, 299.1175pt x 234.87
+<class_catch_1_1_scoped_message__coll__graph.pdf, id=10399, 299.1175pt x 234.87
 75pt>
 File: class_catch_1_1_scoped_message__coll__graph.pdf Graphic file (type pdf)
 <use class_catch_1_1_scoped_message__coll__graph.pdf>
@@ -5539,7 +5551,7 @@ on input line 10.
 (pdftex.def)             Requested size: 298.0pt x 234.01677pt.
  [225]) (./class_catch_1_1_section.tex <./class_catch_1_1_section__inherit__gra
 ph.pdf>
-<class_catch_1_1_section__inherit__graph.pdf, id=10431, 214.8025pt x 156.585pt>
+<class_catch_1_1_section__inherit__graph.pdf, id=10434, 214.8025pt x 156.585pt>
 
 File: class_catch_1_1_section__inherit__graph.pdf Graphic file (type pdf)
 <use class_catch_1_1_section__inherit__graph.pdf>
@@ -5547,7 +5559,7 @@ Package pdftex.def Info: class_catch_1_1_section__inherit__graph.pdf  used on i
 nput line 10.
 (pdftex.def)             Requested size: 214.0pt x 156.00162pt.
  [226] <./class_catch_1_1_section__coll__graph.pdf>
-<class_catch_1_1_section__coll__graph.pdf, id=10453, 214.8025pt x 156.585pt>
+<class_catch_1_1_section__coll__graph.pdf, id=10456, 214.8025pt x 156.585pt>
 File: class_catch_1_1_section__coll__graph.pdf Graphic file (type pdf)
 <use class_catch_1_1_section__coll__graph.pdf>
 Package pdftex.def Info: class_catch_1_1_section__coll__graph.pdf  used on inpu
@@ -5560,7 +5572,7 @@ coll__graph.pdf
 pdfTeX warning: pdflatex (file ./struct_catch_1_1_section_end_info__coll__graph
 .pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >
-<struct_catch_1_1_section_end_info__coll__graph.pdf, id=10463, 288.07625pt x 23
+<struct_catch_1_1_section_end_info__coll__graph.pdf, id=10466, 288.07625pt x 23
 4.8775pt>
 File: struct_catch_1_1_section_end_info__coll__graph.pdf Graphic file (type pdf
 )
@@ -5570,7 +5582,7 @@ ed on input line 10.
 (pdftex.def)             Requested size: 287.0pt x 234.0096pt.
  [227]) (./struct_catch_1_1_section_info.tex <./struct_catch_1_1_section_info__
 coll__graph.pdf>
-<struct_catch_1_1_section_info__coll__graph.pdf, id=10484, 193.72375pt x 167.62
+<struct_catch_1_1_section_info__coll__graph.pdf, id=10487, 193.72375pt x 167.62
 625pt>
 File: struct_catch_1_1_section_info__coll__graph.pdf Graphic file (type pdf)
 <use struct_catch_1_1_section_info__coll__graph.pdf>
@@ -5581,7 +5593,7 @@ n input line 10.
 (./struct_catch_1_1_cumulative_reporter_base_1_1_section_node.tex <./struct_cat
 ch_1_1_cumulative_reporter_base_1_1_section_node__coll__graph.pdf>
 <struct_catch_1_1_cumulative_reporter_base_1_1_section_node__coll__graph.pdf, i
-d=10506, 281.05pt x 313.17pt>
+d=10509, 281.05pt x 313.17pt>
 File: struct_catch_1_1_cumulative_reporter_base_1_1_section_node__coll__graph.p
 df Graphic file (type pdf)
 <use struct_catch_1_1_cumulative_reporter_base_1_1_section_node__coll__graph.pd
@@ -5592,7 +5604,7 @@ node__coll__graph.pdf  used on input line 10.
  [229])
 (./struct_catch_1_1_section_stats.tex <./struct_catch_1_1_section_stats__coll__
 graph.pdf>
-<struct_catch_1_1_section_stats__coll__graph.pdf, id=10536, 281.05pt x 234.8775
+<struct_catch_1_1_section_stats__coll__graph.pdf, id=10539, 281.05pt x 234.8775
 pt>
 File: struct_catch_1_1_section_stats__coll__graph.pdf Graphic file (type pdf)
 <use struct_catch_1_1_section_stats__coll__graph.pdf>
@@ -5607,7 +5619,7 @@ _tracker__inherit__graph.pdf): PDF inclusion: multiple pdfs with page group inc
 luded in a single page
 >
 <class_catch_1_1_test_case_tracking_1_1_section_tracker__inherit__graph.pdf, id
-=10549, 206.7725pt x 245.91875pt>
+=10552, 206.7725pt x 245.91875pt>
 File: class_catch_1_1_test_case_tracking_1_1_section_tracker__inherit__graph.pd
 f Graphic file (type pdf)
 <use class_catch_1_1_test_case_tracking_1_1_section_tracker__inherit__graph.pdf
@@ -5618,7 +5630,7 @@ __inherit__graph.pdf  used on input line 10.
  [230] <./class_catch_1_1_test_case_tracking_1_1_section_tracker__coll__graph.p
 df>
 <class_catch_1_1_test_case_tracking_1_1_section_tracker__coll__graph.pdf, id=10
-577, 412.54124pt x 257.96375pt>
+580, 412.54124pt x 257.96375pt>
 File: class_catch_1_1_test_case_tracking_1_1_section_tracker__coll__graph.pdf G
 raphic file (type pdf)
 <use class_catch_1_1_test_case_tracking_1_1_section_tracker__coll__graph.pdf>
@@ -5627,7 +5639,7 @@ __coll__graph.pdf  used on input line 20.
 (pdftex.def)             Requested size: 350.0pt x 218.86084pt.
  [231]) (./class_catch_1_1_session.tex <./class_catch_1_1_session__inherit__gra
 ph.pdf>
-<class_catch_1_1_session__inherit__graph.pdf, id=10611, 214.8025pt x 156.585pt>
+<class_catch_1_1_session__inherit__graph.pdf, id=10614, 214.8025pt x 156.585pt>
 
 File: class_catch_1_1_session__inherit__graph.pdf Graphic file (type pdf)
 <use class_catch_1_1_session__inherit__graph.pdf>
@@ -5639,7 +5651,7 @@ nput line 10.
 pdfTeX warning: pdflatex (file ./class_catch_1_1_session__coll__graph.pdf): PDF
  inclusion: multiple pdfs with page group included in a single page
 >
-<class_catch_1_1_session__coll__graph.pdf, id=10619, 214.8025pt x 156.585pt>
+<class_catch_1_1_session__coll__graph.pdf, id=10622, 214.8025pt x 156.585pt>
 File: class_catch_1_1_session__coll__graph.pdf Graphic file (type pdf)
 <use class_catch_1_1_session__coll__graph.pdf>
 Package pdftex.def Info: class_catch_1_1_session__coll__graph.pdf  used on inpu
@@ -5664,7 +5676,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
  <./class_catch_1_1_singleton__inherit__graph.pdf>
-<class_catch_1_1_singleton__inherit__graph.pdf, id=10677, 271.0125pt x 167.6262
+<class_catch_1_1_singleton__inherit__graph.pdf, id=10680, 271.0125pt x 167.6262
 5pt>
 File: class_catch_1_1_singleton__inherit__graph.pdf Graphic file (type pdf)
 <use class_catch_1_1_singleton__inherit__graph.pdf>
@@ -5676,7 +5688,7 @@ Package pdftex.def Info: class_catch_1_1_singleton__inherit__graph.pdf  used on
 pdfTeX warning: pdflatex (file ./class_catch_1_1_singleton__coll__graph.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
 >
-<class_catch_1_1_singleton__coll__graph.pdf, id=10685, 271.0125pt x 167.62625pt
+<class_catch_1_1_singleton__coll__graph.pdf, id=10688, 271.0125pt x 167.62625pt
 >
 File: class_catch_1_1_singleton__coll__graph.pdf Graphic file (type pdf)
 <use class_catch_1_1_singleton__coll__graph.pdf>
@@ -5702,7 +5714,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
  <./class_catch_1_1_generators_1_1_single_value_generator__inherit__graph.pdf>
 <class_catch_1_1_generators_1_1_single_value_generator__inherit__graph.pdf, id=
-10707, 214.8025pt x 245.91875pt>
+10710, 214.8025pt x 245.91875pt>
 File: class_catch_1_1_generators_1_1_single_value_generator__inherit__graph.pdf
  Graphic file (type pdf)
 <use class_catch_1_1_generators_1_1_single_value_generator__inherit__graph.pdf>
@@ -5717,7 +5729,7 @@ nerator__coll__graph.pdf): PDF inclusion: multiple pdfs with page group include
 d in a single page
 >
 <class_catch_1_1_generators_1_1_single_value_generator__coll__graph.pdf, id=107
-15, 214.8025pt x 245.91875pt>
+18, 214.8025pt x 245.91875pt>
 File: class_catch_1_1_generators_1_1_single_value_generator__coll__graph.pdf Gr
 aphic file (type pdf)
 <use class_catch_1_1_generators_1_1_single_value_generator__coll__graph.pdf>
@@ -5743,7 +5755,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
  <./class_catch_1_1_matchers_1_1_size_matches_matcher__inherit__graph.pdf>
 <class_catch_1_1_matchers_1_1_size_matches_matcher__inherit__graph.pdf, id=1073
-6, 228.855pt x 245.91875pt>
+9, 228.855pt x 245.91875pt>
 File: class_catch_1_1_matchers_1_1_size_matches_matcher__inherit__graph.pdf Gra
 phic file (type pdf)
 <use class_catch_1_1_matchers_1_1_size_matches_matcher__inherit__graph.pdf>
@@ -5752,7 +5764,7 @@ erit__graph.pdf  used on input line 10.
 (pdftex.def)             Requested size: 228.0pt x 245.01004pt.
 
 [236] <./class_catch_1_1_matchers_1_1_size_matches_matcher__coll__graph.pdf>
-<class_catch_1_1_matchers_1_1_size_matches_matcher__coll__graph.pdf, id=10756, 
+<class_catch_1_1_matchers_1_1_size_matches_matcher__coll__graph.pdf, id=10759, 
 228.855pt x 245.91875pt>
 File: class_catch_1_1_matchers_1_1_size_matches_matcher__coll__graph.pdf Graphi
 c file (type pdf)
@@ -5763,7 +5775,7 @@ l__graph.pdf  used on input line 20.
 
 [237]) (./class_catch_1_1_sonar_qube_reporter.tex <./class_catch_1_1_sonar_qube
 _reporter__inherit__graph.pdf>
-<class_catch_1_1_sonar_qube_reporter__inherit__graph.pdf, id=10778, 235.88126pt
+<class_catch_1_1_sonar_qube_reporter__inherit__graph.pdf, id=10781, 235.88126pt
  x 269.005pt>
 File: class_catch_1_1_sonar_qube_reporter__inherit__graph.pdf Graphic file (typ
 e pdf)
@@ -5777,7 +5789,7 @@ pdfTeX warning: pdflatex (file ./class_catch_1_1_sonar_qube_reporter__coll__gra
 ph.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 
 >
-<class_catch_1_1_sonar_qube_reporter__coll__graph.pdf, id=10786, 1311.90125pt x
+<class_catch_1_1_sonar_qube_reporter__coll__graph.pdf, id=10789, 1311.90125pt x
  224.84pt>
 File: class_catch_1_1_sonar_qube_reporter__coll__graph.pdf Graphic file (type p
 df)
@@ -5788,7 +5800,7 @@ used on input line 20.
  [238]) (./struct_catch_1_1_source_line_info.tex)
 (./class_catch_1_1_matchers_1_1_starts_with_matcher.tex <./class_catch_1_1_matc
 hers_1_1_starts_with_matcher__inherit__graph.pdf>
-<class_catch_1_1_matchers_1_1_starts_with_matcher__inherit__graph.pdf, id=10835
+<class_catch_1_1_matchers_1_1_starts_with_matcher__inherit__graph.pdf, id=10838
 , 255.95625pt x 302.12875pt>
 File: class_catch_1_1_matchers_1_1_starts_with_matcher__inherit__graph.pdf Grap
 hic file (type pdf)
@@ -5802,7 +5814,7 @@ pdfTeX warning: pdflatex (file ./class_catch_1_1_matchers_1_1_starts_with_match
 er__coll__graph.pdf): PDF inclusion: multiple pdfs with page group included in 
 a single page
 >
-<class_catch_1_1_matchers_1_1_starts_with_matcher__coll__graph.pdf, id=10859, 8
+<class_catch_1_1_matchers_1_1_starts_with_matcher__coll__graph.pdf, id=10862, 8
 42.14626pt x 188.705pt>
 File: class_catch_1_1_matchers_1_1_starts_with_matcher__coll__graph.pdf Graphic
  file (type pdf)
@@ -5814,7 +5826,7 @@ __graph.pdf  used on input line 20.
 (./struct_catch_1_1_stream_end_stop.tex)
 (./class_catch_1_1_streaming_reporter_base.tex <./class_catch_1_1_streaming_rep
 orter_base__inherit__graph.pdf>
-<class_catch_1_1_streaming_reporter_base__inherit__graph.pdf, id=10885, 684.557
+<class_catch_1_1_streaming_reporter_base__inherit__graph.pdf, id=10888, 684.557
 5pt x 291.0875pt>
 File: class_catch_1_1_streaming_reporter_base__inherit__graph.pdf Graphic file 
 (type pdf)
@@ -5828,7 +5840,7 @@ pdfTeX warning: pdflatex (file ./class_catch_1_1_streaming_reporter_base__coll_
 _graph.pdf): PDF inclusion: multiple pdfs with page group included in a single 
 page
 >
-<class_catch_1_1_streaming_reporter_base__coll__graph.pdf, id=10893, 1127.21124
+<class_catch_1_1_streaming_reporter_base__coll__graph.pdf, id=10896, 1127.21124
 pt x 329.23pt>
 File: class_catch_1_1_streaming_reporter_base__coll__graph.pdf Graphic file (ty
 pe pdf)
@@ -5844,7 +5856,7 @@ atcher__inherit__graph.pdf): PDF inclusion: multiple pdfs with page group inclu
 ded in a single page
 >
 <class_catch_1_1_matchers_1_1_string_contains_matcher__inherit__graph.pdf, id=1
-1002, 255.95625pt x 302.12875pt>
+1005, 255.95625pt x 302.12875pt>
 File: class_catch_1_1_matchers_1_1_string_contains_matcher__inherit__graph.pdf 
 Graphic file (type pdf)
 <use class_catch_1_1_matchers_1_1_string_contains_matcher__inherit__graph.pdf>
@@ -5859,7 +5871,7 @@ atcher__coll__graph.pdf): PDF inclusion: multiple pdfs with page group included
  in a single page
 >
 <class_catch_1_1_matchers_1_1_string_contains_matcher__coll__graph.pdf, id=1101
-5, 860.21375pt x 188.705pt>
+8, 860.21375pt x 188.705pt>
 File: class_catch_1_1_matchers_1_1_string_contains_matcher__coll__graph.pdf Gra
 phic file (type pdf)
 <use class_catch_1_1_matchers_1_1_string_contains_matcher__coll__graph.pdf>
@@ -5874,7 +5886,7 @@ cher__inherit__graph.pdf): PDF inclusion: multiple pdfs with page group include
 d in a single page
 >
 <class_catch_1_1_matchers_1_1_string_equals_matcher__inherit__graph.pdf, id=110
-25, 255.95625pt x 302.12875pt>
+28, 255.95625pt x 302.12875pt>
 File: class_catch_1_1_matchers_1_1_string_equals_matcher__inherit__graph.pdf Gr
 aphic file (type pdf)
 <use class_catch_1_1_matchers_1_1_string_equals_matcher__inherit__graph.pdf>
@@ -5882,7 +5894,7 @@ Package pdftex.def Info: class_catch_1_1_matchers_1_1_string_equals_matcher__in
 herit__graph.pdf  used on input line 10.
 (pdftex.def)             Requested size: 255.0pt x 300.99852pt.
  [244] <./class_catch_1_1_matchers_1_1_string_equals_matcher__coll__graph.pdf>
-<class_catch_1_1_matchers_1_1_string_equals_matcher__coll__graph.pdf, id=11044,
+<class_catch_1_1_matchers_1_1_string_equals_matcher__coll__graph.pdf, id=11047,
  851.18pt x 188.705pt>
 File: class_catch_1_1_matchers_1_1_string_equals_matcher__coll__graph.pdf Graph
 ic file (type pdf)
@@ -6753,7 +6765,7 @@ pdfTeX warning: pdflatex (file ./class_catch_1_1_matchers_1_1_string_matcher_ba
 se__inherit__graph.pdf): PDF inclusion: multiple pdfs with page group included 
 in a single page
 >
-<class_catch_1_1_matchers_1_1_string_matcher_base__inherit__graph.pdf, id=11206
+<class_catch_1_1_matchers_1_1_string_matcher_base__inherit__graph.pdf, id=11209
 , 774.895pt x 258.9675pt>
 File: class_catch_1_1_matchers_1_1_string_matcher_base__inherit__graph.pdf Grap
 hic file (type pdf)
@@ -6767,7 +6779,7 @@ pdfTeX warning: pdflatex (file ./class_catch_1_1_matchers_1_1_string_matcher_ba
 se__coll__graph.pdf): PDF inclusion: multiple pdfs with page group included in 
 a single page
 >
-<class_catch_1_1_matchers_1_1_string_matcher_base__coll__graph.pdf, id=11214, 6
+<class_catch_1_1_matchers_1_1_string_matcher_base__coll__graph.pdf, id=11217, 6
 67.49374pt x 188.705pt>
 File: class_catch_1_1_matchers_1_1_string_matcher_base__coll__graph.pdf Graphic
  file (type pdf)
@@ -6781,7 +6793,7 @@ __graph.pdf  used on input line 20.
 pdfTeX warning: pdflatex (file ./struct_catch_1_1_tag__coll__graph.pdf): PDF in
 clusion: multiple pdfs with page group included in a single page
 >
-<struct_catch_1_1_tag__coll__graph.pdf, id=11287, 167.62625pt x 167.62625pt>
+<struct_catch_1_1_tag__coll__graph.pdf, id=11290, 167.62625pt x 167.62625pt>
 File: struct_catch_1_1_tag__coll__graph.pdf Graphic file (type pdf)
 <use struct_catch_1_1_tag__coll__graph.pdf>
 Package pdftex.def Info: struct_catch_1_1_tag__coll__graph.pdf  used on input l
@@ -6789,7 +6801,7 @@ ine 14.
 (pdftex.def)             Requested size: 167.0pt x 166.99916pt.
  [256]) (./struct_catch_1_1_tag_alias.tex <./struct_catch_1_1_tag_alias__coll__
 graph.pdf>
-<struct_catch_1_1_tag_alias__coll__graph.pdf, id=11310, 193.72375pt x 167.62625
+<struct_catch_1_1_tag_alias__coll__graph.pdf, id=11313, 193.72375pt x 167.62625
 pt>
 File: struct_catch_1_1_tag_alias__coll__graph.pdf Graphic file (type pdf)
 <use struct_catch_1_1_tag_alias__coll__graph.pdf>
@@ -6803,7 +6815,7 @@ pdfTeX warning: pdflatex (file ./class_catch_1_1_tag_alias_registry__inherit__g
 raph.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
 ge
 >
-<class_catch_1_1_tag_alias_registry__inherit__graph.pdf, id=11321, 203.76125pt 
+<class_catch_1_1_tag_alias_registry__inherit__graph.pdf, id=11324, 203.76125pt 
 x 156.585pt>
 File: class_catch_1_1_tag_alias_registry__inherit__graph.pdf Graphic file (type
  pdf)
@@ -6812,7 +6824,7 @@ Package pdftex.def Info: class_catch_1_1_tag_alias_registry__inherit__graph.pdf
   used on input line 10.
 (pdftex.def)             Requested size: 203.0pt x 156.0064pt.
  [257] <./class_catch_1_1_tag_alias_registry__coll__graph.pdf>
-<class_catch_1_1_tag_alias_registry__coll__graph.pdf, id=11346, 203.76125pt x 1
+<class_catch_1_1_tag_alias_registry__coll__graph.pdf, id=11349, 203.76125pt x 1
 56.585pt>
 File: class_catch_1_1_tag_alias_registry__coll__graph.pdf Graphic file (type pd
 f)
@@ -6840,7 +6852,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
  <./class_catch_1_1_generators_1_1_take_generator__inherit__graph.pdf>
-<class_catch_1_1_generators_1_1_take_generator__inherit__graph.pdf, id=11375, 1
+<class_catch_1_1_generators_1_1_take_generator__inherit__graph.pdf, id=11378, 1
 98.7425pt x 245.91875pt>
 File: class_catch_1_1_generators_1_1_take_generator__inherit__graph.pdf Graphic
  file (type pdf)
@@ -6854,7 +6866,7 @@ pdfTeX warning: pdflatex (file ./class_catch_1_1_generators_1_1_take_generator_
 _coll__graph.pdf): PDF inclusion: multiple pdfs with page group included in a s
 ingle page
 >
-<class_catch_1_1_generators_1_1_take_generator__coll__graph.pdf, id=11383, 198.
+<class_catch_1_1_generators_1_1_take_generator__coll__graph.pdf, id=11386, 198.
 7425pt x 245.91875pt>
 File: class_catch_1_1_generators_1_1_take_generator__coll__graph.pdf Graphic fi
 le (type pdf)
@@ -6864,7 +6876,7 @@ raph.pdf  used on input line 20.
 (pdftex.def)             Requested size: 198.0pt x 245.00629pt.
  [259]) (./class_catch_1_1_t_a_p_reporter.tex <./class_catch_1_1_t_a_p_reporter
 __inherit__graph.pdf>
-<class_catch_1_1_t_a_p_reporter__inherit__graph.pdf, id=11405, 230.8625pt x 269
+<class_catch_1_1_t_a_p_reporter__inherit__graph.pdf, id=11408, 230.8625pt x 269
 .005pt>
 File: class_catch_1_1_t_a_p_reporter__inherit__graph.pdf Graphic file (type pdf
 )
@@ -6873,7 +6885,7 @@ Package pdftex.def Info: class_catch_1_1_t_a_p_reporter__inherit__graph.pdf  us
 ed on input line 10.
 (pdftex.def)             Requested size: 230.0pt x 268.00278pt.
  [260] <./class_catch_1_1_t_a_p_reporter__coll__graph.pdf>
-<class_catch_1_1_t_a_p_reporter__coll__graph.pdf, id=11424, 1267.73625pt x 329.
+<class_catch_1_1_t_a_p_reporter__coll__graph.pdf, id=11427, 1267.73625pt x 329.
 23pt>
 File: class_catch_1_1_t_a_p_reporter__coll__graph.pdf Graphic file (type pdf)
 <use class_catch_1_1_t_a_p_reporter__coll__graph.pdf>
@@ -6882,7 +6894,7 @@ on input line 20.
 (pdftex.def)             Requested size: 350.0pt x 90.89268pt.
  [261]) (./class_catch_1_1_team_city_reporter.tex <./class_catch_1_1_team_city_
 reporter__inherit__graph.pdf>
-<class_catch_1_1_team_city_reporter__inherit__graph.pdf, id=11468, 230.8625pt x
+<class_catch_1_1_team_city_reporter__inherit__graph.pdf, id=11471, 230.8625pt x
  269.005pt>
 File: class_catch_1_1_team_city_reporter__inherit__graph.pdf Graphic file (type
  pdf)
@@ -6895,7 +6907,7 @@ Package pdftex.def Info: class_catch_1_1_team_city_reporter__inherit__graph.pdf
 pdfTeX warning: pdflatex (file ./class_catch_1_1_team_city_reporter__coll__grap
 h.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >
-<class_catch_1_1_team_city_reporter__coll__graph.pdf, id=11476, 1289.81876pt x 
+<class_catch_1_1_team_city_reporter__coll__graph.pdf, id=11479, 1289.81876pt x 
 329.23pt>
 File: class_catch_1_1_team_city_reporter__coll__graph.pdf Graphic file (type pd
 f)
@@ -6906,7 +6918,7 @@ sed on input line 20.
  [262] [263]) (./class_catch_1_1_test_case_handle.tex)
 (./struct_catch_1_1_test_case_info.tex <./struct_catch_1_1_test_case_info__inhe
 rit__graph.pdf>
-<struct_catch_1_1_test_case_info__inherit__graph.pdf, id=11531, 214.8025pt x 15
+<struct_catch_1_1_test_case_info__inherit__graph.pdf, id=11534, 214.8025pt x 15
 6.585pt>
 File: struct_catch_1_1_test_case_info__inherit__graph.pdf Graphic file (type pd
 f)
@@ -6919,7 +6931,7 @@ sed on input line 14.
 pdfTeX warning: pdflatex (file ./struct_catch_1_1_test_case_info__coll__graph.p
 df): PDF inclusion: multiple pdfs with page group included in a single page
 >
-<struct_catch_1_1_test_case_info__coll__graph.pdf, id=11550, 452.69125pt x 167.
+<struct_catch_1_1_test_case_info__coll__graph.pdf, id=11553, 452.69125pt x 167.
 62625pt>
 File: struct_catch_1_1_test_case_info__coll__graph.pdf Graphic file (type pdf)
 <use struct_catch_1_1_test_case_info__coll__graph.pdf>
@@ -6929,7 +6941,7 @@ Package pdftex.def Info: struct_catch_1_1_test_case_info__coll__graph.pdf  used
  [265]) (./class_catch_1_1_test_case_info_hasher.tex)
 (./struct_catch_1_1_test_case_stats.tex <./struct_catch_1_1_test_case_stats__co
 ll__graph.pdf>
-<struct_catch_1_1_test_case_stats__coll__graph.pdf, id=11586, 548.0475pt x 245.
+<struct_catch_1_1_test_case_stats__coll__graph.pdf, id=11589, 548.0475pt x 245.
 91875pt>
 File: struct_catch_1_1_test_case_stats__coll__graph.pdf Graphic file (type pdf)
 
@@ -6945,7 +6957,7 @@ pdfTeX warning: pdflatex (file ./class_catch_1_1_test_invoker_as_function__inhe
 rit__graph.pdf): PDF inclusion: multiple pdfs with page group included in a sin
 gle page
 >
-<class_catch_1_1_test_invoker_as_function__inherit__graph.pdf, id=11617, 228.85
+<class_catch_1_1_test_invoker_as_function__inherit__graph.pdf, id=11620, 228.85
 5pt x 156.585pt>
 File: class_catch_1_1_test_invoker_as_function__inherit__graph.pdf Graphic file
  (type pdf)
@@ -6954,7 +6966,7 @@ Package pdftex.def Info: class_catch_1_1_test_invoker_as_function__inherit__gra
 ph.pdf  used on input line 10.
 (pdftex.def)             Requested size: 228.0pt x 156.0064pt.
  [267] <./class_catch_1_1_test_invoker_as_function__coll__graph.pdf>
-<class_catch_1_1_test_invoker_as_function__coll__graph.pdf, id=11640, 228.855pt
+<class_catch_1_1_test_invoker_as_function__coll__graph.pdf, id=11643, 228.855pt
  x 156.585pt>
 File: class_catch_1_1_test_invoker_as_function__coll__graph.pdf Graphic file (t
 ype pdf)
@@ -6986,7 +6998,7 @@ pdfTeX warning: pdflatex (file ./class_catch_1_1_test_invoker_as_method__inheri
 t__graph.pdf): PDF inclusion: multiple pdfs with page group included in a singl
 e page
 >
-<class_catch_1_1_test_invoker_as_method__inherit__graph.pdf, id=11649, 246.9225
+<class_catch_1_1_test_invoker_as_method__inherit__graph.pdf, id=11652, 246.9225
 pt x 156.585pt>
 File: class_catch_1_1_test_invoker_as_method__inherit__graph.pdf Graphic file (
 type pdf)
@@ -6995,7 +7007,7 @@ Package pdftex.def Info: class_catch_1_1_test_invoker_as_method__inherit__graph
 .pdf  used on input line 10.
 (pdftex.def)             Requested size: 246.0pt x 155.99922pt.
  [268] <./class_catch_1_1_test_invoker_as_method__coll__graph.pdf>
-<class_catch_1_1_test_invoker_as_method__coll__graph.pdf, id=11668, 246.9225pt 
+<class_catch_1_1_test_invoker_as_method__coll__graph.pdf, id=11671, 246.9225pt 
 x 156.585pt>
 File: class_catch_1_1_test_invoker_as_method__coll__graph.pdf Graphic file (typ
 e pdf)
@@ -7010,7 +7022,7 @@ _graph.pdf
 pdfTeX warning: pdflatex (file ./class_catch_1_1_test_registry__inherit__graph.
 pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >
-<class_catch_1_1_test_registry__inherit__graph.pdf, id=11677, 207.77625pt x 156
+<class_catch_1_1_test_registry__inherit__graph.pdf, id=11680, 207.77625pt x 156
 .585pt>
 File: class_catch_1_1_test_registry__inherit__graph.pdf Graphic file (type pdf)
 
@@ -7019,7 +7031,7 @@ Package pdftex.def Info: class_catch_1_1_test_registry__inherit__graph.pdf  use
 d on input line 10.
 (pdftex.def)             Requested size: 207.0pt x 156.0064pt.
  [269] <./class_catch_1_1_test_registry__coll__graph.pdf>
-<class_catch_1_1_test_registry__coll__graph.pdf, id=11695, 207.77625pt x 156.58
+<class_catch_1_1_test_registry__coll__graph.pdf, id=11698, 207.77625pt x 156.58
 5pt>
 File: class_catch_1_1_test_registry__coll__graph.pdf Graphic file (type pdf)
 <use class_catch_1_1_test_registry__coll__graph.pdf>
@@ -7033,7 +7045,7 @@ graph.pdf
 pdfTeX warning: pdflatex (file ./struct_catch_1_1_test_run_info__coll__graph.pd
 f): PDF inclusion: multiple pdfs with page group included in a single page
 >
-<struct_catch_1_1_test_run_info__coll__graph.pdf, id=11712, 180.675pt x 167.626
+<struct_catch_1_1_test_run_info__coll__graph.pdf, id=11715, 180.675pt x 167.626
 25pt>
 File: struct_catch_1_1_test_run_info__coll__graph.pdf Graphic file (type pdf)
 <use struct_catch_1_1_test_run_info__coll__graph.pdf>
@@ -7042,7 +7054,7 @@ on input line 10.
 (pdftex.def)             Requested size: 180.0pt x 167.00172pt.
  [270]) (./struct_catch_1_1_test_run_stats.tex <./struct_catch_1_1_test_run_sta
 ts__coll__graph.pdf>
-<struct_catch_1_1_test_run_stats__coll__graph.pdf, id=11735, 275.0275pt x 245.9
+<struct_catch_1_1_test_run_stats__coll__graph.pdf, id=11738, 275.0275pt x 245.9
 1875pt>
 File: struct_catch_1_1_test_run_stats__coll__graph.pdf Graphic file (type pdf)
 <use struct_catch_1_1_test_run_stats__coll__graph.pdf>
@@ -7132,7 +7144,7 @@ df
 pdfTeX warning: pdflatex (file ./struct_catch_1_1_totals__coll__graph.pdf): PDF
  inclusion: multiple pdfs with page group included in a single page
 >
-<struct_catch_1_1_totals__coll__graph.pdf, id=11920, 167.62625pt x 178.6675pt>
+<struct_catch_1_1_totals__coll__graph.pdf, id=11923, 167.62625pt x 178.6675pt>
 File: struct_catch_1_1_totals__coll__graph.pdf Graphic file (type pdf)
 <use struct_catch_1_1_totals__coll__graph.pdf>
 Package pdftex.def Info: struct_catch_1_1_totals__coll__graph.pdf  used on inpu
@@ -7141,7 +7153,7 @@ t line 10.
  [277]) (./class_catch_1_1_test_case_tracking_1_1_tracker_base.tex <./class_cat
 ch_1_1_test_case_tracking_1_1_tracker_base__inherit__graph.pdf>
 <class_catch_1_1_test_case_tracking_1_1_tracker_base__inherit__graph.pdf, id=11
-952, 206.7725pt x 245.91875pt>
+955, 206.7725pt x 245.91875pt>
 File: class_catch_1_1_test_case_tracking_1_1_tracker_base__inherit__graph.pdf G
 raphic file (type pdf)
 <use class_catch_1_1_test_case_tracking_1_1_tracker_base__inherit__graph.pdf>
@@ -7154,7 +7166,7 @@ pdfTeX warning: pdflatex (file ./class_catch_1_1_test_case_tracking_1_1_tracker
 _base__coll__graph.pdf): PDF inclusion: multiple pdfs with page group included 
 in a single page
 >
-<class_catch_1_1_test_case_tracking_1_1_tracker_base__coll__graph.pdf, id=11960
+<class_catch_1_1_test_case_tracking_1_1_tracker_base__coll__graph.pdf, id=11963
 , 412.54124pt x 189.70876pt>
 File: class_catch_1_1_test_case_tracking_1_1_tracker_base__coll__graph.pdf Grap
 hic file (type pdf)
@@ -7181,7 +7193,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
  <./struct_catch_1_1true__given__inherit__graph.pdf>
-<struct_catch_1_1true__given__inherit__graph.pdf, id=11989, 178.6675pt x 167.62
+<struct_catch_1_1true__given__inherit__graph.pdf, id=11992, 178.6675pt x 167.62
 625pt>
 File: struct_catch_1_1true__given__inherit__graph.pdf Graphic file (type pdf)
 <use struct_catch_1_1true__given__inherit__graph.pdf>
@@ -7193,7 +7205,7 @@ on input line 10.
 pdfTeX warning: pdflatex (file ./struct_catch_1_1true__given__coll__graph.pdf):
  PDF inclusion: multiple pdfs with page group included in a single page
 >
-<struct_catch_1_1true__given__coll__graph.pdf, id=11997, 178.6675pt x 167.62625
+<struct_catch_1_1true__given__coll__graph.pdf, id=12000, 178.6675pt x 167.62625
 pt>
 File: struct_catch_1_1true__given__coll__graph.pdf Graphic file (type pdf)
 <use struct_catch_1_1true__given__coll__graph.pdf>
@@ -7241,7 +7253,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 pdfTeX warning: pdflatex (file ./class_catch_1_1_unary_expr__inherit__graph.pdf
 ): PDF inclusion: multiple pdfs with page group included in a single page
 >
-<class_catch_1_1_unary_expr__inherit__graph.pdf, id=12029, 217.81375pt x 156.58
+<class_catch_1_1_unary_expr__inherit__graph.pdf, id=12032, 217.81375pt x 156.58
 5pt>
 File: class_catch_1_1_unary_expr__inherit__graph.pdf Graphic file (type pdf)
 <use class_catch_1_1_unary_expr__inherit__graph.pdf>
@@ -7249,7 +7261,7 @@ Package pdftex.def Info: class_catch_1_1_unary_expr__inherit__graph.pdf  used o
 n input line 10.
 (pdftex.def)             Requested size: 217.0pt x 155.99922pt.
  [280] <./class_catch_1_1_unary_expr__coll__graph.pdf>
-<class_catch_1_1_unary_expr__coll__graph.pdf, id=12044, 217.81375pt x 156.585pt
+<class_catch_1_1_unary_expr__coll__graph.pdf, id=12047, 217.81375pt x 156.585pt
 >
 File: class_catch_1_1_unary_expr__coll__graph.pdf Graphic file (type pdf)
 <use class_catch_1_1_unary_expr__coll__graph.pdf>
@@ -7377,7 +7389,7 @@ matcher__inherit__graph.pdf): PDF inclusion: multiple pdfs with page group incl
 uded in a single page
 >
 <class_catch_1_1_matchers_1_1_unordered_equals_matcher__inherit__graph.pdf, id=
-12107, 231.86626pt x 268.00125pt>
+12110, 231.86626pt x 268.00125pt>
 File: class_catch_1_1_matchers_1_1_unordered_equals_matcher__inherit__graph.pdf
  Graphic file (type pdf)
 <use class_catch_1_1_matchers_1_1_unordered_equals_matcher__inherit__graph.pdf>
@@ -7392,7 +7404,7 @@ matcher__coll__graph.pdf): PDF inclusion: multiple pdfs with page group include
 d in a single page
 >
 <class_catch_1_1_matchers_1_1_unordered_equals_matcher__coll__graph.pdf, id=121
-15, 231.86626pt x 268.00125pt>
+18, 231.86626pt x 268.00125pt>
 File: class_catch_1_1_matchers_1_1_unordered_equals_matcher__coll__graph.pdf Gr
 aphic file (type pdf)
 <use class_catch_1_1_matchers_1_1_unordered_equals_matcher__coll__graph.pdf>
@@ -7463,7 +7475,7 @@ lement_matcher__inherit__graph.pdf): PDF inclusion: multiple pdfs with page gro
 up included in a single page
 >
 <class_catch_1_1_matchers_1_1_vector_contains_element_matcher__inherit__graph.p
-df, id=12184, 238.8925pt x 256.96pt>
+df, id=12187, 238.8925pt x 256.96pt>
 File: class_catch_1_1_matchers_1_1_vector_contains_element_matcher__inherit__gr
 aph.pdf Graphic file (type pdf)
 <use class_catch_1_1_matchers_1_1_vector_contains_element_matcher__inherit__gra
@@ -7479,7 +7491,7 @@ lement_matcher__coll__graph.pdf): PDF inclusion: multiple pdfs with page group
 included in a single page
 >
 <class_catch_1_1_matchers_1_1_vector_contains_element_matcher__coll__graph.pdf,
- id=12192, 238.8925pt x 256.96pt>
+ id=12195, 238.8925pt x 256.96pt>
 File: class_catch_1_1_matchers_1_1_vector_contains_element_matcher__coll__graph
 .pdf Graphic file (type pdf)
 <use class_catch_1_1_matchers_1_1_vector_contains_element_matcher__coll__graph.
@@ -7553,7 +7565,7 @@ pdfTeX warning: pdflatex (file ./class_catch_1_1_matchers_1_1_within_abs_matche
 r__inherit__graph.pdf): PDF inclusion: multiple pdfs with page group included i
 n a single page
 >
-<class_catch_1_1_matchers_1_1_within_abs_matcher__inherit__graph.pdf, id=12358,
+<class_catch_1_1_matchers_1_1_within_abs_matcher__inherit__graph.pdf, id=12361,
  216.81pt x 245.91875pt>
 File: class_catch_1_1_matchers_1_1_within_abs_matcher__inherit__graph.pdf Graph
 ic file (type pdf)
@@ -7567,7 +7579,7 @@ pdfTeX warning: pdflatex (file ./class_catch_1_1_matchers_1_1_within_abs_matche
 r__coll__graph.pdf): PDF inclusion: multiple pdfs with page group included in a
  single page
 >
-<class_catch_1_1_matchers_1_1_within_abs_matcher__coll__graph.pdf, id=12366, 21
+<class_catch_1_1_matchers_1_1_within_abs_matcher__coll__graph.pdf, id=12369, 21
 6.81pt x 245.91875pt>
 File: class_catch_1_1_matchers_1_1_within_abs_matcher__coll__graph.pdf Graphic 
 file (type pdf)
@@ -7577,7 +7589,7 @@ _graph.pdf  used on input line 20.
 (pdftex.def)             Requested size: 216.0pt x 245.0138pt.
  [293]) (./class_catch_1_1_matchers_1_1_within_rel_matcher.tex <./class_catch_1
 _1_matchers_1_1_within_rel_matcher__inherit__graph.pdf>
-<class_catch_1_1_matchers_1_1_within_rel_matcher__inherit__graph.pdf, id=12386,
+<class_catch_1_1_matchers_1_1_within_rel_matcher__inherit__graph.pdf, id=12389,
  213.79875pt x 245.91875pt>
 File: class_catch_1_1_matchers_1_1_within_rel_matcher__inherit__graph.pdf Graph
 ic file (type pdf)
@@ -7586,7 +7598,7 @@ Package pdftex.def Info: class_catch_1_1_matchers_1_1_within_rel_matcher__inher
 it__graph.pdf  used on input line 10.
 (pdftex.def)             Requested size: 213.0pt x 244.9988pt.
  [294] <./class_catch_1_1_matchers_1_1_within_rel_matcher__coll__graph.pdf>
-<class_catch_1_1_matchers_1_1_within_rel_matcher__coll__graph.pdf, id=12405, 21
+<class_catch_1_1_matchers_1_1_within_rel_matcher__coll__graph.pdf, id=12408, 21
 3.79875pt x 245.91875pt>
 File: class_catch_1_1_matchers_1_1_within_rel_matcher__coll__graph.pdf Graphic 
 file (type pdf)
@@ -7597,7 +7609,7 @@ _graph.pdf  used on input line 20.
  [295])
 (./class_catch_1_1_matchers_1_1_within_ulps_matcher.tex <./class_catch_1_1_matc
 hers_1_1_within_ulps_matcher__inherit__graph.pdf>
-<class_catch_1_1_matchers_1_1_within_ulps_matcher__inherit__graph.pdf, id=12425
+<class_catch_1_1_matchers_1_1_within_ulps_matcher__inherit__graph.pdf, id=12428
 , 219.82124pt x 245.91875pt>
 File: class_catch_1_1_matchers_1_1_within_ulps_matcher__inherit__graph.pdf Grap
 hic file (type pdf)
@@ -7611,7 +7623,7 @@ pdfTeX warning: pdflatex (file ./class_catch_1_1_matchers_1_1_within_ulps_match
 er__coll__graph.pdf): PDF inclusion: multiple pdfs with page group included in 
 a single page
 >
-<class_catch_1_1_matchers_1_1_within_ulps_matcher__coll__graph.pdf, id=12433, 2
+<class_catch_1_1_matchers_1_1_within_ulps_matcher__coll__graph.pdf, id=12436, 2
 19.82124pt x 245.91875pt>
 File: class_catch_1_1_matchers_1_1_within_ulps_matcher__coll__graph.pdf Graphic
  file (type pdf)
@@ -7621,7 +7633,7 @@ __graph.pdf  used on input line 20.
 (pdftex.def)             Requested size: 219.0pt x 245.00629pt.
  [296]) (./class_catch_1_1_xml_encode.tex) (./class_catch_1_1_xml_reporter.tex 
 <./class_catch_1_1_xml_reporter__inherit__graph.pdf>
-<class_catch_1_1_xml_reporter__inherit__graph.pdf, id=12453, 230.8625pt x 269.0
+<class_catch_1_1_xml_reporter__inherit__graph.pdf, id=12456, 230.8625pt x 269.0
 05pt>
 File: class_catch_1_1_xml_reporter__inherit__graph.pdf Graphic file (type pdf)
 <use class_catch_1_1_xml_reporter__inherit__graph.pdf>
@@ -7633,7 +7645,7 @@ Package pdftex.def Info: class_catch_1_1_xml_reporter__inherit__graph.pdf  used
 pdfTeX warning: pdflatex (file ./class_catch_1_1_xml_reporter__coll__graph.pdf)
 : PDF inclusion: multiple pdfs with page group included in a single page
 >
-<class_catch_1_1_xml_reporter__coll__graph.pdf, id=12478, 1265.72874pt x 329.23
+<class_catch_1_1_xml_reporter__coll__graph.pdf, id=12481, 1265.72874pt x 329.23
 pt>
 File: class_catch_1_1_xml_reporter__coll__graph.pdf Graphic file (type pdf)
 <use class_catch_1_1_xml_reporter__coll__graph.pdf>
@@ -7662,7 +7674,7 @@ Chapter 6.
 pdfTeX warning: pdflatex (file ./catch__amalgamated_8hpp__incl.pdf): PDF inclus
 ion: multiple pdfs with page group included in a single page
 >
-<catch__amalgamated_8hpp__incl.pdf, id=12629, 2023.56pt x 167.62625pt>
+<catch__amalgamated_8hpp__incl.pdf, id=12632, 2023.56pt x 167.62625pt>
 File: catch__amalgamated_8hpp__incl.pdf Graphic file (type pdf)
 <use catch__amalgamated_8hpp__incl.pdf>
 Package pdftex.def Info: catch__amalgamated_8hpp__incl.pdf  used on input line 
@@ -8616,10 +8628,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 27196 strings out of 480478
- 781508 string characters out of 5905925
- 911405 words of memory out of 5000000
- 37676 multiletter control sequences out of 15000+600000
+ 27204 strings out of 480478
+ 781857 string characters out of 5905925
+ 910568 words of memory out of 5000000
+ 37681 multiletter control sequences out of 15000+600000
  608687 words of font info for 125 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,96p,1401b,704s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -8638,10 +8650,10 @@ sr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texmf-dist
 /fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texmf-dist/fonts/type1/urw/he
 lvetic/uhvbo8ac.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
 </usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (373 pages, 2700262 bytes).
+Output written on refman.pdf (373 pages, 2700779 bytes).
 PDF statistics:
- 15605 PDF objects out of 18468 (max. 8388607)
- 14109 compressed objects within 142 object streams
- 4548 named destinations out of 5155 (max. 500000)
+ 15609 PDF objects out of 18468 (max. 8388607)
+ 14113 compressed objects within 142 object streams
+ 4551 named destinations out of 5155 (max. 500000)
  5893 words of extra memory for PDF output out of 10000 (max. 10000000)
 
