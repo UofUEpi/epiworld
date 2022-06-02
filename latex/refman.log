@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Alpine Linux) (preloaded format=pdflatex 2022.6.2)  2 JUN 2022 19:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Alpine Linux) (preloaded format=pdflatex 2022.6.2)  2 JUN 2022 20:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8630,7 +8630,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  27204 strings out of 480478
  781857 string characters out of 5905925
- 910568 words of memory out of 5000000
+ 911568 words of memory out of 5000000
  37681 multiletter control sequences out of 15000+600000
  608687 words of font info for 125 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -8650,7 +8650,7 @@ sr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texmf-dist
 /fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texmf-dist/fonts/type1/urw/he
 lvetic/uhvbo8ac.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
 </usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (373 pages, 2700779 bytes).
+Output written on refman.pdf (373 pages, 2700696 bytes).
 PDF statistics:
  15609 PDF objects out of 18468 (max. 8388607)
  14113 compressed objects within 142 object streams
