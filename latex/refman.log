@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Alpine Linux) (preloaded format=pdflatex 2022.6.2)  2 JUN 2022 20:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Alpine Linux) (preloaded format=pdflatex 2022.6.2)  2 JUN 2022 20:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1037,27 +1037,31 @@ LaTeX Warning: Reference `lfmcmc-bones_8hpp' on page 19 undefined on input line
  33.
 
 
+LaTeX Warning: Reference `lfmcmc-meat-print_8hpp' on page 19 undefined on input
+ line 34.
+
+
 LaTeX Warning: Reference `lfmcmc-meat_8hpp' on page 19 undefined on input line 
-34.
+35.
 
 
 LaTeX Warning: Reference `immune__system_8hpp' on page 19 undefined on input li
-ne 35.
+ne 36.
 
 
 LaTeX Warning: Reference `seirconnected_8hpp' on page 19 undefined on input lin
-e 36.
+e 37.
 
 
-LaTeX Warning: Reference `sir_8hpp' on page 19 undefined on input line 37.
+LaTeX Warning: Reference `sir_8hpp' on page 19 undefined on input line 38.
 
 
 LaTeX Warning: Reference `sirconnected_8hpp' on page 19 undefined on input line
- 38.
+ 39.
 
 
 LaTeX Warning: Reference `surveillance_8hpp' on page 19 undefined on input line
- 39.
+ 40.
 
 ) [19] [20
 
@@ -8628,10 +8632,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 27204 strings out of 480478
- 781857 string characters out of 5905925
+ 27205 strings out of 480478
+ 781881 string characters out of 5905925
  911568 words of memory out of 5000000
- 37681 multiletter control sequences out of 15000+600000
+ 37682 multiletter control sequences out of 15000+600000
  608687 words of font info for 125 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,96p,1401b,704s stack positions out of 5000i,500n,10000p,200000b,80000s
