@@ -1,0 +1,160 @@
+\hypertarget{class_catch_1_1_cumulative_reporter_base}{}\doxysection{Catch\+::Cumulative\+Reporter\+Base Class Reference}
+\label{class_catch_1_1_cumulative_reporter_base}\index{Catch::CumulativeReporterBase@{Catch::CumulativeReporterBase}}
+
+
+{\ttfamily \#include $<$catch\+\_\+amalgamated.\+hpp$>$}
+
+
+
+Inheritance diagram for Catch\+::Cumulative\+Reporter\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_catch_1_1_cumulative_reporter_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Catch\+::Cumulative\+Reporter\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_catch_1_1_cumulative_reporter_base__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_catch_1_1_cumulative_reporter_base_1_1_node}{Node}}
+\item 
+struct \mbox{\hyperlink{struct_catch_1_1_cumulative_reporter_base_1_1_section_node}{Section\+Node}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_cumulative_reporter_base_aa9907e56ddf0f8114799f7147677dc1f}\label{class_catch_1_1_cumulative_reporter_base_aa9907e56ddf0f8114799f7147677dc1f}} 
+using {\bfseries Test\+Case\+Node} = \mbox{\hyperlink{struct_catch_1_1_cumulative_reporter_base_1_1_node}{Node}}$<$ \mbox{\hyperlink{struct_catch_1_1_test_case_stats}{Test\+Case\+Stats}}, \mbox{\hyperlink{struct_catch_1_1_cumulative_reporter_base_1_1_section_node}{Section\+Node}} $>$
+\item 
+\mbox{\Hypertarget{class_catch_1_1_cumulative_reporter_base_a6a16c07c308b268d2d88d95c520ed27c}\label{class_catch_1_1_cumulative_reporter_base_a6a16c07c308b268d2d88d95c520ed27c}} 
+using {\bfseries Test\+Run\+Node} = \mbox{\hyperlink{struct_catch_1_1_cumulative_reporter_base_1_1_node}{Node}}$<$ \mbox{\hyperlink{struct_catch_1_1_test_run_stats}{Test\+Run\+Stats}}, \mbox{\hyperlink{struct_catch_1_1_cumulative_reporter_base_1_1_node}{Test\+Case\+Node}} $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_cumulative_reporter_base_a075d874108f3bbf856fad28055677eb0}\label{class_catch_1_1_cumulative_reporter_base_a075d874108f3bbf856fad28055677eb0}} 
+void \mbox{\hyperlink{class_catch_1_1_cumulative_reporter_base_a075d874108f3bbf856fad28055677eb0}{benchmark\+Preparing}} (\mbox{\hyperlink{class_catch_1_1_string_ref}{String\+Ref}}) override
+\begin{DoxyCompactList}\small\item\em Called when user-\/code is being probed before the actual benchmark runs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_cumulative_reporter_base_a4dd873e4d985cd0a9480e057119e44c1}\label{class_catch_1_1_cumulative_reporter_base_a4dd873e4d985cd0a9480e057119e44c1}} 
+void \mbox{\hyperlink{class_catch_1_1_cumulative_reporter_base_a4dd873e4d985cd0a9480e057119e44c1}{benchmark\+Starting}} (\mbox{\hyperlink{struct_catch_1_1_benchmark_info}{Benchmark\+Info}} const \&) override
+\begin{DoxyCompactList}\small\item\em Called after probe but before the user-\/code is being benchmarked. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_cumulative_reporter_base_a5fc556c12d0cb76a93547614b3eb6f1b}\label{class_catch_1_1_cumulative_reporter_base_a5fc556c12d0cb76a93547614b3eb6f1b}} 
+void \mbox{\hyperlink{class_catch_1_1_cumulative_reporter_base_a5fc556c12d0cb76a93547614b3eb6f1b}{benchmark\+Ended}} (\mbox{\hyperlink{struct_catch_1_1_benchmark_stats}{Benchmark\+Stats}}$<$$>$ const \&benchmark\+Stats) override
+\begin{DoxyCompactList}\small\item\em Called with the benchmark results if benchmark successfully finishes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_cumulative_reporter_base_a57f40c3011212cb42c5106051813e91c}\label{class_catch_1_1_cumulative_reporter_base_a57f40c3011212cb42c5106051813e91c}} 
+void \mbox{\hyperlink{class_catch_1_1_cumulative_reporter_base_a57f40c3011212cb42c5106051813e91c}{benchmark\+Failed}} (\mbox{\hyperlink{class_catch_1_1_string_ref}{String\+Ref}}) override
+\begin{DoxyCompactList}\small\item\em Called if running the benchmarks fails for any reason. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_cumulative_reporter_base_a3db2858a3746a437a5472ed44466c978}\label{class_catch_1_1_cumulative_reporter_base_a3db2858a3746a437a5472ed44466c978}} 
+void \mbox{\hyperlink{class_catch_1_1_cumulative_reporter_base_a3db2858a3746a437a5472ed44466c978}{no\+Matching\+Test\+Cases}} (\mbox{\hyperlink{class_catch_1_1_string_ref}{String\+Ref}}) override
+\begin{DoxyCompactList}\small\item\em Called when no test cases match provided test spec. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_cumulative_reporter_base_a00592cae8f0df8086cc0aadb466d42a8}\label{class_catch_1_1_cumulative_reporter_base_a00592cae8f0df8086cc0aadb466d42a8}} 
+void \mbox{\hyperlink{class_catch_1_1_cumulative_reporter_base_a00592cae8f0df8086cc0aadb466d42a8}{report\+Invalid\+Test\+Spec}} (\mbox{\hyperlink{class_catch_1_1_string_ref}{String\+Ref}}) override
+\begin{DoxyCompactList}\small\item\em Called for all invalid test specs from the cli. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_cumulative_reporter_base_a8ba0b7173e169021567dc857855e5c2f}\label{class_catch_1_1_cumulative_reporter_base_a8ba0b7173e169021567dc857855e5c2f}} 
+void \mbox{\hyperlink{class_catch_1_1_cumulative_reporter_base_a8ba0b7173e169021567dc857855e5c2f}{fatal\+Error\+Encountered}} (\mbox{\hyperlink{class_catch_1_1_string_ref}{String\+Ref}}) override
+\begin{DoxyCompactList}\small\item\em Called if a fatal error (signal/structured exception) occured. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_catch_1_1_cumulative_reporter_base_a662e58abd84046ac036417d9c533e42e}{test\+Run\+Starting}} (\mbox{\hyperlink{struct_catch_1_1_test_run_info}{Test\+Run\+Info}} const \&) override
+\item 
+\mbox{\Hypertarget{class_catch_1_1_cumulative_reporter_base_afdcad0f7ae0f16fd60566bc34b52eaee}\label{class_catch_1_1_cumulative_reporter_base_afdcad0f7ae0f16fd60566bc34b52eaee}} 
+void \mbox{\hyperlink{class_catch_1_1_cumulative_reporter_base_afdcad0f7ae0f16fd60566bc34b52eaee}{test\+Case\+Starting}} (\mbox{\hyperlink{struct_catch_1_1_test_case_info}{Test\+Case\+Info}} const \&) override
+\begin{DoxyCompactList}\small\item\em Called {\itshape once} for each TEST\+\_\+\+CASE, no matter how many times it is entered. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_cumulative_reporter_base_af0971c92ec7a5f250d69f4219763afb7}\label{class_catch_1_1_cumulative_reporter_base_af0971c92ec7a5f250d69f4219763afb7}} 
+void \mbox{\hyperlink{class_catch_1_1_cumulative_reporter_base_af0971c92ec7a5f250d69f4219763afb7}{test\+Case\+Partial\+Starting}} (\mbox{\hyperlink{struct_catch_1_1_test_case_info}{Test\+Case\+Info}} const \&, uint64\+\_\+t) override
+\begin{DoxyCompactList}\small\item\em Called {\itshape every time} a TEST\+\_\+\+CASE is entered, including repeats (due to sections) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_cumulative_reporter_base_afdcaeb775e75e563cc3e5fc9ac73c547}\label{class_catch_1_1_cumulative_reporter_base_afdcaeb775e75e563cc3e5fc9ac73c547}} 
+void \mbox{\hyperlink{class_catch_1_1_cumulative_reporter_base_afdcaeb775e75e563cc3e5fc9ac73c547}{section\+Starting}} (\mbox{\hyperlink{struct_catch_1_1_section_info}{Section\+Info}} const \&section\+Info) override
+\begin{DoxyCompactList}\small\item\em Called when a {\ttfamily SECTION} is being entered. Not called for skipped sections. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_cumulative_reporter_base_ad462ac437ebe3a529c8312b9da16ec9b}\label{class_catch_1_1_cumulative_reporter_base_ad462ac437ebe3a529c8312b9da16ec9b}} 
+void \mbox{\hyperlink{class_catch_1_1_cumulative_reporter_base_ad462ac437ebe3a529c8312b9da16ec9b}{assertion\+Starting}} (\mbox{\hyperlink{struct_catch_1_1_assertion_info}{Assertion\+Info}} const \&) override
+\begin{DoxyCompactList}\small\item\em Called before assertion success/failure is evaluated. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_cumulative_reporter_base_a0feaaf7d39fcb4d277146d8137af98c5}\label{class_catch_1_1_cumulative_reporter_base_a0feaaf7d39fcb4d277146d8137af98c5}} 
+void \mbox{\hyperlink{class_catch_1_1_cumulative_reporter_base_a0feaaf7d39fcb4d277146d8137af98c5}{assertion\+Ended}} (\mbox{\hyperlink{struct_catch_1_1_assertion_stats}{Assertion\+Stats}} const \&assertion\+Stats) override
+\begin{DoxyCompactList}\small\item\em Called after assertion was fully evaluated. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_cumulative_reporter_base_a4df3c2ab6ca05f3e049cf68a2c9151b7}\label{class_catch_1_1_cumulative_reporter_base_a4df3c2ab6ca05f3e049cf68a2c9151b7}} 
+void \mbox{\hyperlink{class_catch_1_1_cumulative_reporter_base_a4df3c2ab6ca05f3e049cf68a2c9151b7}{section\+Ended}} (\mbox{\hyperlink{struct_catch_1_1_section_stats}{Section\+Stats}} const \&section\+Stats) override
+\begin{DoxyCompactList}\small\item\em Called after a {\ttfamily SECTION} has finished running. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_cumulative_reporter_base_a40addbab5b199e1311bef4caf4734f45}\label{class_catch_1_1_cumulative_reporter_base_a40addbab5b199e1311bef4caf4734f45}} 
+void \mbox{\hyperlink{class_catch_1_1_cumulative_reporter_base_a40addbab5b199e1311bef4caf4734f45}{test\+Case\+Partial\+Ended}} (\mbox{\hyperlink{struct_catch_1_1_test_case_stats}{Test\+Case\+Stats}} const \&, uint64\+\_\+t) override
+\begin{DoxyCompactList}\small\item\em Called {\itshape every time} a TEST\+\_\+\+CASE is entered, including repeats (due to sections) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_cumulative_reporter_base_a71d47761bf73926e3eabcf50f4edb20e}\label{class_catch_1_1_cumulative_reporter_base_a71d47761bf73926e3eabcf50f4edb20e}} 
+void \mbox{\hyperlink{class_catch_1_1_cumulative_reporter_base_a71d47761bf73926e3eabcf50f4edb20e}{test\+Case\+Ended}} (\mbox{\hyperlink{struct_catch_1_1_test_case_stats}{Test\+Case\+Stats}} const \&test\+Case\+Stats) override
+\begin{DoxyCompactList}\small\item\em Called {\itshape once} for each TEST\+\_\+\+CASE, no matter how many times it is entered. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_catch_1_1_cumulative_reporter_base_a98abe4d60d22e77dfaa04cfd7b76470f}{test\+Run\+Ended}} (\mbox{\hyperlink{struct_catch_1_1_test_run_stats}{Test\+Run\+Stats}} const \&test\+Run\+Stats) override
+\item 
+\mbox{\Hypertarget{class_catch_1_1_cumulative_reporter_base_ad7c42af872ba0dcc1b33bca254f6f66b}\label{class_catch_1_1_cumulative_reporter_base_ad7c42af872ba0dcc1b33bca254f6f66b}} 
+virtual void \mbox{\hyperlink{class_catch_1_1_cumulative_reporter_base_ad7c42af872ba0dcc1b33bca254f6f66b}{test\+Run\+Ended\+Cumulative}} ()=0
+\begin{DoxyCompactList}\small\item\em Customization point\+: called after last test finishes (test\+Run\+Ended has been handled) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_cumulative_reporter_base_a7346fcf7424424604541e2b77dafd766}\label{class_catch_1_1_cumulative_reporter_base_a7346fcf7424424604541e2b77dafd766}} 
+void \mbox{\hyperlink{class_catch_1_1_cumulative_reporter_base_a7346fcf7424424604541e2b77dafd766}{skip\+Test}} (\mbox{\hyperlink{struct_catch_1_1_test_case_info}{Test\+Case\+Info}} const \&) override
+\begin{DoxyCompactList}\small\item\em Called with test cases that are skipped due to the test run aborting. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_cumulative_reporter_base_afe1cb76ff7af81e7c0c10108a41b90ca}\label{class_catch_1_1_cumulative_reporter_base_afe1cb76ff7af81e7c0c10108a41b90ca}} 
+{\bfseries Reporter\+Base} (\mbox{\hyperlink{struct_catch_1_1_reporter_config}{Reporter\+Config}} \&\&config)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_cumulative_reporter_base_adb2a7d7ea4dd571f6308eec59db90dbf}\label{class_catch_1_1_cumulative_reporter_base_adb2a7d7ea4dd571f6308eec59db90dbf}} 
+bool \mbox{\hyperlink{class_catch_1_1_cumulative_reporter_base_adb2a7d7ea4dd571f6308eec59db90dbf}{m\+\_\+should\+Store\+Succesful\+Assertions}} = true
+\begin{DoxyCompactList}\small\item\em Should the cumulative base store the assertion expansion for succesful assertions? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_cumulative_reporter_base_a321b4d5232053bdc043d2360e6020285}\label{class_catch_1_1_cumulative_reporter_base_a321b4d5232053bdc043d2360e6020285}} 
+bool \mbox{\hyperlink{class_catch_1_1_cumulative_reporter_base_a321b4d5232053bdc043d2360e6020285}{m\+\_\+should\+Store\+Failed\+Assertions}} = true
+\begin{DoxyCompactList}\small\item\em Should the cumulative base store the assertion expansion for failed assertions? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_cumulative_reporter_base_ab00810cee084b633c010abb5e6acc40a}\label{class_catch_1_1_cumulative_reporter_base_ab00810cee084b633c010abb5e6acc40a}} 
+\mbox{\hyperlink{class_catch_1_1_detail_1_1unique__ptr}{Detail\+::unique\+\_\+ptr}}$<$ \mbox{\hyperlink{struct_catch_1_1_cumulative_reporter_base_1_1_node}{Test\+Run\+Node}} $>$ \mbox{\hyperlink{class_catch_1_1_cumulative_reporter_base_ab00810cee084b633c010abb5e6acc40a}{m\+\_\+test\+Run}}
+\begin{DoxyCompactList}\small\item\em The root node of the test run tree. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utility base for reporters that need to handle all results at once
+
+It stores tree of all test cases, sections and assertions, and after the test run is finished, calls into {\ttfamily test\+Run\+Ended\+Cumulative} to pass the control to the deriving class.
+
+If you are deriving from this class and override any testing related member functions, you should first call into the base\textquotesingle{}s implementation to avoid breaking the tree construction.
+
+Due to the way this base functions, it has to expand assertions up-\/front, even if they are later unused (e.\+g. because the deriving reporter does not report successful assertions, or because the deriving reporter does not use assertion expansion at all). Derived classes can use two customization points, {\ttfamily m\+\_\+should\+Store\+Succesful\+Assertions} and {\ttfamily m\+\_\+should\+Store\+Failed\+Assertions}, to disable the expansion and gain extra performance. {\bfseries{Accessing the assertion expansions if it wasn\textquotesingle{}t stored is UB.}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_catch_1_1_cumulative_reporter_base_a98abe4d60d22e77dfaa04cfd7b76470f}\label{class_catch_1_1_cumulative_reporter_base_a98abe4d60d22e77dfaa04cfd7b76470f}} 
+\index{Catch::CumulativeReporterBase@{Catch::CumulativeReporterBase}!testRunEnded@{testRunEnded}}
+\index{testRunEnded@{testRunEnded}!Catch::CumulativeReporterBase@{Catch::CumulativeReporterBase}}
+\doxysubsubsection{\texorpdfstring{testRunEnded()}{testRunEnded()}}
+{\footnotesize\ttfamily void Catch\+::\+Cumulative\+Reporter\+Base\+::test\+Run\+Ended (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_catch_1_1_test_run_stats}{Test\+Run\+Stats}} const \&}]{test\+Run\+Stats }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called once after all tests in a testing run are finished
+
+Not called if tests weren\textquotesingle{}t run (e.\+g. only listings happened) 
+
+Implements \mbox{\hyperlink{class_catch_1_1_i_event_listener_a97a17235b82da761043654491db0b17c}{Catch\+::\+IEvent\+Listener}}.
+
+\mbox{\Hypertarget{class_catch_1_1_cumulative_reporter_base_a662e58abd84046ac036417d9c533e42e}\label{class_catch_1_1_cumulative_reporter_base_a662e58abd84046ac036417d9c533e42e}} 
+\index{Catch::CumulativeReporterBase@{Catch::CumulativeReporterBase}!testRunStarting@{testRunStarting}}
+\index{testRunStarting@{testRunStarting}!Catch::CumulativeReporterBase@{Catch::CumulativeReporterBase}}
+\doxysubsubsection{\texorpdfstring{testRunStarting()}{testRunStarting()}}
+{\footnotesize\ttfamily void Catch\+::\+Cumulative\+Reporter\+Base\+::test\+Run\+Starting (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_catch_1_1_test_run_info}{Test\+Run\+Info}} const \&}]{test\+Run\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called once in a testing run before tests are started
+
+Not called if tests won\textquotesingle{}t be run (e.\+g. only listing will happen) 
+
+Implements \mbox{\hyperlink{class_catch_1_1_i_event_listener_a3b7a9118f5b47011216aa31424ec4982}{Catch\+::\+IEvent\+Listener}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_catch_1_1_sonar_qube_reporter_a58ed9dede9b58d4857567e5b9daf5837}{Catch\+::\+Sonar\+Qube\+Reporter}}, and \mbox{\hyperlink{class_catch_1_1_junit_reporter_a416da4586bd135749eea5adc8aa41280}{Catch\+::\+Junit\+Reporter}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/catch2/\mbox{\hyperlink{catch__amalgamated_8hpp}{catch\+\_\+amalgamated.\+hpp}}\end{DoxyCompactItemize}

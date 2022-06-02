@@ -1,0 +1,163 @@
+\hypertarget{class_catch_1_1_xml_reporter}{}\doxysection{Catch\+::Xml\+Reporter Class Reference}
+\label{class_catch_1_1_xml_reporter}\index{Catch::XmlReporter@{Catch::XmlReporter}}
+
+
+Inheritance diagram for Catch\+::Xml\+Reporter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{class_catch_1_1_xml_reporter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Catch\+::Xml\+Reporter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_catch_1_1_xml_reporter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_reporter_a52569de21b23c6f18812fb4369dc0d36}\label{class_catch_1_1_xml_reporter_a52569de21b23c6f18812fb4369dc0d36}} 
+{\bfseries Xml\+Reporter} (\mbox{\hyperlink{struct_catch_1_1_reporter_config}{Reporter\+Config}} \&\&\+\_\+config)
+\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_reporter_aaf94ba2a1d9ce251bfe35784d330e70c}\label{class_catch_1_1_xml_reporter_aaf94ba2a1d9ce251bfe35784d330e70c}} 
+virtual std\+::string {\bfseries get\+Stylesheet\+Ref} () const
+\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_reporter_a190d2ae83de78e06273fa476d3729771}\label{class_catch_1_1_xml_reporter_a190d2ae83de78e06273fa476d3729771}} 
+void {\bfseries write\+Source\+Info} (\mbox{\hyperlink{struct_catch_1_1_source_line_info}{Source\+Line\+Info}} const \&source\+Info)
+\item 
+void \mbox{\hyperlink{class_catch_1_1_xml_reporter_ab5de0b02d5a30612ae5449360d867672}{test\+Run\+Starting}} (\mbox{\hyperlink{struct_catch_1_1_test_run_info}{Test\+Run\+Info}} const \&test\+Info) override
+\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_reporter_a1395b2efb62faaa947a42638a03be32c}\label{class_catch_1_1_xml_reporter_a1395b2efb62faaa947a42638a03be32c}} 
+void \mbox{\hyperlink{class_catch_1_1_xml_reporter_a1395b2efb62faaa947a42638a03be32c}{test\+Case\+Starting}} (\mbox{\hyperlink{struct_catch_1_1_test_case_info}{Test\+Case\+Info}} const \&test\+Info) override
+\begin{DoxyCompactList}\small\item\em Called {\itshape once} for each TEST\+\_\+\+CASE, no matter how many times it is entered. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_reporter_a06befa9cf2b661c5226317bff0f05c64}\label{class_catch_1_1_xml_reporter_a06befa9cf2b661c5226317bff0f05c64}} 
+void \mbox{\hyperlink{class_catch_1_1_xml_reporter_a06befa9cf2b661c5226317bff0f05c64}{section\+Starting}} (\mbox{\hyperlink{struct_catch_1_1_section_info}{Section\+Info}} const \&section\+Info) override
+\begin{DoxyCompactList}\small\item\em Called when a {\ttfamily SECTION} is being entered. Not called for skipped sections. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_reporter_a4f2661042672c0930086700fcd348f04}\label{class_catch_1_1_xml_reporter_a4f2661042672c0930086700fcd348f04}} 
+void \mbox{\hyperlink{class_catch_1_1_xml_reporter_a4f2661042672c0930086700fcd348f04}{assertion\+Starting}} (\mbox{\hyperlink{struct_catch_1_1_assertion_info}{Assertion\+Info}} const \&) override
+\begin{DoxyCompactList}\small\item\em Called before assertion success/failure is evaluated. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_reporter_abb27955d33a41ddb8d425f66664dd10e}\label{class_catch_1_1_xml_reporter_abb27955d33a41ddb8d425f66664dd10e}} 
+void \mbox{\hyperlink{class_catch_1_1_xml_reporter_abb27955d33a41ddb8d425f66664dd10e}{assertion\+Ended}} (\mbox{\hyperlink{struct_catch_1_1_assertion_stats}{Assertion\+Stats}} const \&assertion\+Stats) override
+\begin{DoxyCompactList}\small\item\em Called after assertion was fully evaluated. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_reporter_a73c809f067d58a7a6748cb13643448e5}\label{class_catch_1_1_xml_reporter_a73c809f067d58a7a6748cb13643448e5}} 
+void \mbox{\hyperlink{class_catch_1_1_xml_reporter_a73c809f067d58a7a6748cb13643448e5}{section\+Ended}} (\mbox{\hyperlink{struct_catch_1_1_section_stats}{Section\+Stats}} const \&section\+Stats) override
+\begin{DoxyCompactList}\small\item\em Called after a {\ttfamily SECTION} has finished running. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_reporter_ab641ec7e115cb94efa02f85e9d91de0f}\label{class_catch_1_1_xml_reporter_ab641ec7e115cb94efa02f85e9d91de0f}} 
+void \mbox{\hyperlink{class_catch_1_1_xml_reporter_ab641ec7e115cb94efa02f85e9d91de0f}{test\+Case\+Ended}} (\mbox{\hyperlink{struct_catch_1_1_test_case_stats}{Test\+Case\+Stats}} const \&test\+Case\+Stats) override
+\begin{DoxyCompactList}\small\item\em Called {\itshape once} for each TEST\+\_\+\+CASE, no matter how many times it is entered. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_catch_1_1_xml_reporter_a2458c9f342a446f0b3a7480b53c93705}{test\+Run\+Ended}} (\mbox{\hyperlink{struct_catch_1_1_test_run_stats}{Test\+Run\+Stats}} const \&test\+Run\+Stats) override
+\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_reporter_ac69a3b553943b625dbed4d465152f466}\label{class_catch_1_1_xml_reporter_ac69a3b553943b625dbed4d465152f466}} 
+void \mbox{\hyperlink{class_catch_1_1_xml_reporter_ac69a3b553943b625dbed4d465152f466}{benchmark\+Preparing}} (\mbox{\hyperlink{class_catch_1_1_string_ref}{String\+Ref}} name) override
+\begin{DoxyCompactList}\small\item\em Called when user-\/code is being probed before the actual benchmark runs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_reporter_aedcd354a33e40ba80fdce75b19f0c393}\label{class_catch_1_1_xml_reporter_aedcd354a33e40ba80fdce75b19f0c393}} 
+void \mbox{\hyperlink{class_catch_1_1_xml_reporter_aedcd354a33e40ba80fdce75b19f0c393}{benchmark\+Starting}} (\mbox{\hyperlink{struct_catch_1_1_benchmark_info}{Benchmark\+Info}} const \&) override
+\begin{DoxyCompactList}\small\item\em Called after probe but before the user-\/code is being benchmarked. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_reporter_a025db47f21efafb00017e962622ff330}\label{class_catch_1_1_xml_reporter_a025db47f21efafb00017e962622ff330}} 
+void \mbox{\hyperlink{class_catch_1_1_xml_reporter_a025db47f21efafb00017e962622ff330}{benchmark\+Ended}} (\mbox{\hyperlink{struct_catch_1_1_benchmark_stats}{Benchmark\+Stats}}$<$$>$ const \&) override
+\begin{DoxyCompactList}\small\item\em Called with the benchmark results if benchmark successfully finishes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_reporter_adcc4fccfe8d5935e839b5506404d648f}\label{class_catch_1_1_xml_reporter_adcc4fccfe8d5935e839b5506404d648f}} 
+void \mbox{\hyperlink{class_catch_1_1_xml_reporter_adcc4fccfe8d5935e839b5506404d648f}{benchmark\+Failed}} (\mbox{\hyperlink{class_catch_1_1_string_ref}{String\+Ref}} error) override
+\begin{DoxyCompactList}\small\item\em Called if running the benchmarks fails for any reason. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_catch_1_1_xml_reporter_af227f44ca796d664b6a7b44b8954c8b4}{list\+Reporters}} (std\+::vector$<$ \mbox{\hyperlink{struct_catch_1_1_reporter_description}{Reporter\+Description}} $>$ const \&descriptions) override
+\item 
+void \mbox{\hyperlink{class_catch_1_1_xml_reporter_a4afe4f0a8a85f5d1c7ab0204d4586c72}{list\+Listeners}} (std\+::vector$<$ \mbox{\hyperlink{struct_catch_1_1_listener_description}{Listener\+Description}} $>$ const \&descriptions) override
+\item 
+void \mbox{\hyperlink{class_catch_1_1_xml_reporter_a35ef5f6751d53704f95398bd6cfe18aa}{list\+Tests}} (std\+::vector$<$ \mbox{\hyperlink{class_catch_1_1_test_case_handle}{Test\+Case\+Handle}} $>$ const \&tests) override
+\item 
+void \mbox{\hyperlink{class_catch_1_1_xml_reporter_a25a83bb25a7b3b5c9d831da9d290a145}{list\+Tags}} (std\+::vector$<$ \mbox{\hyperlink{struct_catch_1_1_tag_info}{Tag\+Info}} $>$ const \&tags) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_reporter_a921696ab21aa21356aa4c5d7130748a9}\label{class_catch_1_1_xml_reporter_a921696ab21aa21356aa4c5d7130748a9}} 
+static std\+::string {\bfseries get\+Description} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_catch_1_1_xml_reporter_a4afe4f0a8a85f5d1c7ab0204d4586c72}\label{class_catch_1_1_xml_reporter_a4afe4f0a8a85f5d1c7ab0204d4586c72}} 
+\index{Catch::XmlReporter@{Catch::XmlReporter}!listListeners@{listListeners}}
+\index{listListeners@{listListeners}!Catch::XmlReporter@{Catch::XmlReporter}}
+\doxysubsubsection{\texorpdfstring{listListeners()}{listListeners()}}
+{\footnotesize\ttfamily void Catch\+::\+Xml\+Reporter\+::list\+Listeners (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_catch_1_1_listener_description}{Listener\+Description}} $>$ const \&}]{descriptions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Provides a simple default listing of listeners
+
+Looks similarly to listing of reporters, but with listener type instead of reporter name. 
+
+Reimplemented from \mbox{\hyperlink{class_catch_1_1_reporter_base_a80fc94e76ca6273bde21892472cfb590}{Catch\+::\+Reporter\+Base}}.
+
+\mbox{\Hypertarget{class_catch_1_1_xml_reporter_af227f44ca796d664b6a7b44b8954c8b4}\label{class_catch_1_1_xml_reporter_af227f44ca796d664b6a7b44b8954c8b4}} 
+\index{Catch::XmlReporter@{Catch::XmlReporter}!listReporters@{listReporters}}
+\index{listReporters@{listReporters}!Catch::XmlReporter@{Catch::XmlReporter}}
+\doxysubsubsection{\texorpdfstring{listReporters()}{listReporters()}}
+{\footnotesize\ttfamily void Catch\+::\+Xml\+Reporter\+::list\+Reporters (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_catch_1_1_reporter_description}{Reporter\+Description}} $>$ const \&}]{descriptions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Provides a simple default listing of reporters.
+
+Should look roughly like the reporter listing in v2 and earlier versions of Catch2. 
+
+Reimplemented from \mbox{\hyperlink{class_catch_1_1_reporter_base_a6b49fcddf9430c782bf33cc7ab3b8f6a}{Catch\+::\+Reporter\+Base}}.
+
+\mbox{\Hypertarget{class_catch_1_1_xml_reporter_a25a83bb25a7b3b5c9d831da9d290a145}\label{class_catch_1_1_xml_reporter_a25a83bb25a7b3b5c9d831da9d290a145}} 
+\index{Catch::XmlReporter@{Catch::XmlReporter}!listTags@{listTags}}
+\index{listTags@{listTags}!Catch::XmlReporter@{Catch::XmlReporter}}
+\doxysubsubsection{\texorpdfstring{listTags()}{listTags()}}
+{\footnotesize\ttfamily void Catch\+::\+Xml\+Reporter\+::list\+Tags (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_catch_1_1_tag_info}{Tag\+Info}} $>$ const \&}]{tags }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Provides a simple default listing of tags.
+
+Should look roughly like the tag listing in v2 and earlier versions of Catch2. 
+
+Reimplemented from \mbox{\hyperlink{class_catch_1_1_reporter_base_a327d4a5ee9b271e19ac19951ae3cd0e1}{Catch\+::\+Reporter\+Base}}.
+
+\mbox{\Hypertarget{class_catch_1_1_xml_reporter_a35ef5f6751d53704f95398bd6cfe18aa}\label{class_catch_1_1_xml_reporter_a35ef5f6751d53704f95398bd6cfe18aa}} 
+\index{Catch::XmlReporter@{Catch::XmlReporter}!listTests@{listTests}}
+\index{listTests@{listTests}!Catch::XmlReporter@{Catch::XmlReporter}}
+\doxysubsubsection{\texorpdfstring{listTests()}{listTests()}}
+{\footnotesize\ttfamily void Catch\+::\+Xml\+Reporter\+::list\+Tests (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_catch_1_1_test_case_handle}{Test\+Case\+Handle}} $>$ const \&}]{tests }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Provides a simple default listing of tests.
+
+Should look roughly like the test listing in v2 and earlier versions of Catch2. Especially supports low-\/verbosity listing that mimics the old {\ttfamily -\/-\/list-\/test-\/names-\/only} output. 
+
+Reimplemented from \mbox{\hyperlink{class_catch_1_1_reporter_base_a15ed28e8f838691c3c374027547d914b}{Catch\+::\+Reporter\+Base}}.
+
+\mbox{\Hypertarget{class_catch_1_1_xml_reporter_a2458c9f342a446f0b3a7480b53c93705}\label{class_catch_1_1_xml_reporter_a2458c9f342a446f0b3a7480b53c93705}} 
+\index{Catch::XmlReporter@{Catch::XmlReporter}!testRunEnded@{testRunEnded}}
+\index{testRunEnded@{testRunEnded}!Catch::XmlReporter@{Catch::XmlReporter}}
+\doxysubsubsection{\texorpdfstring{testRunEnded()}{testRunEnded()}}
+{\footnotesize\ttfamily void Catch\+::\+Xml\+Reporter\+::test\+Run\+Ended (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_catch_1_1_test_run_stats}{Test\+Run\+Stats}} const \&}]{test\+Run\+Stats }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called once after all tests in a testing run are finished
+
+Not called if tests weren\textquotesingle{}t run (e.\+g. only listings happened) 
+
+Reimplemented from \mbox{\hyperlink{class_catch_1_1_streaming_reporter_base_abc6e39389e0bb22fb2fce977ced959af}{Catch\+::\+Streaming\+Reporter\+Base}}.
+
+\mbox{\Hypertarget{class_catch_1_1_xml_reporter_ab5de0b02d5a30612ae5449360d867672}\label{class_catch_1_1_xml_reporter_ab5de0b02d5a30612ae5449360d867672}} 
+\index{Catch::XmlReporter@{Catch::XmlReporter}!testRunStarting@{testRunStarting}}
+\index{testRunStarting@{testRunStarting}!Catch::XmlReporter@{Catch::XmlReporter}}
+\doxysubsubsection{\texorpdfstring{testRunStarting()}{testRunStarting()}}
+{\footnotesize\ttfamily void Catch\+::\+Xml\+Reporter\+::test\+Run\+Starting (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_catch_1_1_test_run_info}{Test\+Run\+Info}} const \&}]{test\+Run\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called once in a testing run before tests are started
+
+Not called if tests won\textquotesingle{}t be run (e.\+g. only listing will happen) 
+
+Reimplemented from \mbox{\hyperlink{class_catch_1_1_streaming_reporter_base_a5ce94d2e8b64c49e4ace01c64f249716}{Catch\+::\+Streaming\+Reporter\+Base}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/catch2/\mbox{\hyperlink{catch__amalgamated_8hpp}{catch\+\_\+amalgamated.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,75 @@
+\hypertarget{class_catch_1_1_clara_1_1_detail_1_1_basic_result}{}\doxysection{Catch\+::Clara\+::Detail\+::Basic\+Result$<$ T $>$ Class Template Reference}
+\label{class_catch_1_1_clara_1_1_detail_1_1_basic_result}\index{Catch::Clara::Detail::BasicResult$<$ T $>$@{Catch::Clara::Detail::BasicResult$<$ T $>$}}
+
+
+Inheritance diagram for Catch\+::Clara\+::Detail\+::Basic\+Result$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{class_catch_1_1_clara_1_1_detail_1_1_basic_result__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Catch\+::Clara\+::Detail\+::Basic\+Result$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{class_catch_1_1_clara_1_1_detail_1_1_basic_result__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_clara_1_1_detail_1_1_basic_result_a4fff47323e9c1d47912c8968719d97a0}\label{class_catch_1_1_clara_1_1_detail_1_1_basic_result_a4fff47323e9c1d47912c8968719d97a0}} 
+{\footnotesize template$<$typename U $>$ }\\{\bfseries Basic\+Result} (\mbox{\hyperlink{class_catch_1_1_clara_1_1_detail_1_1_basic_result}{Basic\+Result}}$<$ U $>$ const \&other)
+\item 
+\mbox{\Hypertarget{class_catch_1_1_clara_1_1_detail_1_1_basic_result_a015816d63f3b71d246d95142e3223e13}\label{class_catch_1_1_clara_1_1_detail_1_1_basic_result_a015816d63f3b71d246d95142e3223e13}} 
+{\bfseries operator bool} () const
+\item 
+\mbox{\Hypertarget{class_catch_1_1_clara_1_1_detail_1_1_basic_result_ac043c61d7ad6b9fe6660cb85e1380c16}\label{class_catch_1_1_clara_1_1_detail_1_1_basic_result_ac043c61d7ad6b9fe6660cb85e1380c16}} 
+auto {\bfseries type} () const -\/$>$ \mbox{\hyperlink{catch__amalgamated_8hpp_a58800f68faab69c44d58b2c0038875d1}{Result\+Type}}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_clara_1_1_detail_1_1_basic_result_a72212341d12d38b9ef6f8c3ecaae3d66}\label{class_catch_1_1_clara_1_1_detail_1_1_basic_result_a72212341d12d38b9ef6f8c3ecaae3d66}} 
+auto {\bfseries error\+Message} () const -\/$>$ std\+::string const \&
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_clara_1_1_detail_1_1_basic_result_aea4710c2006f74eb3e8b45face7856be}\label{class_catch_1_1_clara_1_1_detail_1_1_basic_result_aea4710c2006f74eb3e8b45face7856be}} 
+{\footnotesize template$<$typename U $>$ }\\static auto {\bfseries ok} (U const \&value) -\/$>$ \mbox{\hyperlink{class_catch_1_1_clara_1_1_detail_1_1_basic_result}{Basic\+Result}}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_clara_1_1_detail_1_1_basic_result_a4d9c94c86f71eaa76356ab808a221b62}\label{class_catch_1_1_clara_1_1_detail_1_1_basic_result_a4d9c94c86f71eaa76356ab808a221b62}} 
+static auto {\bfseries ok} () -\/$>$ \mbox{\hyperlink{class_catch_1_1_clara_1_1_detail_1_1_basic_result}{Basic\+Result}}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_clara_1_1_detail_1_1_basic_result_ae6c470af1becfc54d75df69104e45160}\label{class_catch_1_1_clara_1_1_detail_1_1_basic_result_ae6c470af1becfc54d75df69104e45160}} 
+static auto {\bfseries logic\+Error} (std\+::string \&\&message) -\/$>$ \mbox{\hyperlink{class_catch_1_1_clara_1_1_detail_1_1_basic_result}{Basic\+Result}}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_clara_1_1_detail_1_1_basic_result_a8adbd2c9cd517ae768a18b9d9dca2c01}\label{class_catch_1_1_clara_1_1_detail_1_1_basic_result_a8adbd2c9cd517ae768a18b9d9dca2c01}} 
+static auto {\bfseries runtime\+Error} (std\+::string \&\&message) -\/$>$ \mbox{\hyperlink{class_catch_1_1_clara_1_1_detail_1_1_basic_result}{Basic\+Result}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_clara_1_1_detail_1_1_basic_result_a87690846616d49ba834603770909055d}\label{class_catch_1_1_clara_1_1_detail_1_1_basic_result_a87690846616d49ba834603770909055d}} 
+void {\bfseries enforce\+Ok} () const override
+\item 
+\mbox{\Hypertarget{class_catch_1_1_clara_1_1_detail_1_1_basic_result_a881617c5872c403eacc22966a046fc82}\label{class_catch_1_1_clara_1_1_detail_1_1_basic_result_a881617c5872c403eacc22966a046fc82}} 
+{\bfseries Basic\+Result} (\mbox{\hyperlink{catch__amalgamated_8hpp_a58800f68faab69c44d58b2c0038875d1}{Result\+Type}} type, std\+::string \&\&message)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_clara_1_1_detail_1_1_basic_result_a84c9409f5c91ba6794ea9ea87a38fdf8}\label{class_catch_1_1_clara_1_1_detail_1_1_basic_result_a84c9409f5c91ba6794ea9ea87a38fdf8}} 
+std\+::string {\bfseries m\+\_\+error\+Message}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_clara_1_1_detail_1_1_basic_result_af794d366dd0035764edf572222725eb2}\label{class_catch_1_1_clara_1_1_detail_1_1_basic_result_af794d366dd0035764edf572222725eb2}} 
+\mbox{\hyperlink{catch__amalgamated_8hpp_a58800f68faab69c44d58b2c0038875d1}{Result\+Type}} {\bfseries m\+\_\+type}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/catch2/\mbox{\hyperlink{catch__amalgamated_8hpp}{catch\+\_\+amalgamated.\+hpp}}\end{DoxyCompactItemize}

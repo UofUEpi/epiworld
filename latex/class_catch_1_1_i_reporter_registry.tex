@@ -1,0 +1,38 @@
+\hypertarget{class_catch_1_1_i_reporter_registry}{}\doxysection{Catch\+::IReporter\+Registry Class Reference}
+\label{class_catch_1_1_i_reporter_registry}\index{Catch::IReporterRegistry@{Catch::IReporterRegistry}}
+
+
+Inheritance diagram for Catch\+::IReporter\+Registry\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{class_catch_1_1_i_reporter_registry__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_i_reporter_registry_a6499a47369c8e1abc94840ab47b1abdd}\label{class_catch_1_1_i_reporter_registry_a6499a47369c8e1abc94840ab47b1abdd}} 
+using {\bfseries Factory\+Map} = std\+::map$<$ std\+::string, \mbox{\hyperlink{class_catch_1_1_detail_1_1unique__ptr}{IReporter\+Factory\+Ptr}}, \mbox{\hyperlink{struct_catch_1_1_detail_1_1_case_insensitive_less}{Detail\+::\+Case\+Insensitive\+Less}} $>$
+\item 
+\mbox{\Hypertarget{class_catch_1_1_i_reporter_registry_a82b998a4736592c444225f79b2bd26e9}\label{class_catch_1_1_i_reporter_registry_a82b998a4736592c444225f79b2bd26e9}} 
+using {\bfseries Listeners} = std\+::vector$<$ \mbox{\hyperlink{class_catch_1_1_detail_1_1unique__ptr}{Detail\+::unique\+\_\+ptr}}$<$ \mbox{\hyperlink{class_catch_1_1_event_listener_factory}{Event\+Listener\+Factory}} $>$ $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_i_reporter_registry_a793c205ddc9feeb1375a76af05869cff}\label{class_catch_1_1_i_reporter_registry_a793c205ddc9feeb1375a76af05869cff}} 
+virtual \mbox{\hyperlink{class_catch_1_1_detail_1_1unique__ptr}{IEvent\+Listener\+Ptr}} {\bfseries create} (std\+::string const \&name, \mbox{\hyperlink{struct_catch_1_1_reporter_config}{Reporter\+Config}} \&\&config) const =0
+\item 
+\mbox{\Hypertarget{class_catch_1_1_i_reporter_registry_a76ffc8a26c38929f370196937ed112b5}\label{class_catch_1_1_i_reporter_registry_a76ffc8a26c38929f370196937ed112b5}} 
+virtual Factory\+Map const  \& {\bfseries get\+Factories} () const =0
+\item 
+\mbox{\Hypertarget{class_catch_1_1_i_reporter_registry_a784a7eb1c731d20c32779087126c6933}\label{class_catch_1_1_i_reporter_registry_a784a7eb1c731d20c32779087126c6933}} 
+virtual Listeners const  \& {\bfseries get\+Listeners} () const =0
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/catch2/\mbox{\hyperlink{catch__amalgamated_8hpp}{catch\+\_\+amalgamated.\+hpp}}\end{DoxyCompactItemize}

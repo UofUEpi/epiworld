@@ -1,0 +1,27 @@
+\hypertarget{class_catch_1_1_fatal_condition_handler}{}\doxysection{Catch\+::Fatal\+Condition\+Handler Class Reference}
+\label{class_catch_1_1_fatal_condition_handler}\index{Catch::FatalConditionHandler@{Catch::FatalConditionHandler}}
+
+
+{\ttfamily \#include $<$catch\+\_\+amalgamated.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_fatal_condition_handler_a223969cc9e7f10f54f45bfd2348bd382}\label{class_catch_1_1_fatal_condition_handler_a223969cc9e7f10f54f45bfd2348bd382}} 
+void {\bfseries engage} ()
+\item 
+\mbox{\Hypertarget{class_catch_1_1_fatal_condition_handler_a6e19de699ad72bd50d5bd63b9526f3d8}\label{class_catch_1_1_fatal_condition_handler_a6e19de699ad72bd50d5bd63b9526f3d8}} 
+void {\bfseries disengage} () noexcept
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Wrapper for platform-\/specific fatal error (signals/\+SEH) handlers
+
+Tries to be cooperative with other handlers, and not step over other handlers. This means that unknown structured exceptions are passed on, previous signal handlers are called, and so on.
+
+Can only be instantiated once, and assumes that once a signal is caught, the binary will end up terminating. Thus, there 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/catch2/\mbox{\hyperlink{catch__amalgamated_8hpp}{catch\+\_\+amalgamated.\+hpp}}\end{DoxyCompactItemize}

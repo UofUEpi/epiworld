@@ -1,0 +1,28 @@
+\hypertarget{class_catch_1_1_i_stream}{}\doxysection{Catch\+::IStream Class Reference}
+\label{class_catch_1_1_i_stream}\index{Catch::IStream@{Catch::IStream}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_i_stream_a304cd86e5acf7e8accdfa1a5c567e14d}\label{class_catch_1_1_i_stream_a304cd86e5acf7e8accdfa1a5c567e14d}} 
+virtual std\+::ostream \& {\bfseries stream} ()=0
+\item 
+virtual bool \mbox{\hyperlink{class_catch_1_1_i_stream_a60a6fae56c60dab1d00073ef686a0d65}{is\+Console}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_catch_1_1_i_stream_a60a6fae56c60dab1d00073ef686a0d65}\label{class_catch_1_1_i_stream_a60a6fae56c60dab1d00073ef686a0d65}} 
+\index{Catch::IStream@{Catch::IStream}!isConsole@{isConsole}}
+\index{isConsole@{isConsole}!Catch::IStream@{Catch::IStream}}
+\doxysubsubsection{\texorpdfstring{isConsole()}{isConsole()}}
+{\footnotesize\ttfamily virtual bool Catch\+::\+IStream\+::is\+Console (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Best guess on whether the instance is writing to a console (e.\+g. via stdout/stderr)
+
+This is useful for e.\+g. Win32 colour support, because the Win32 API manipulates console directly, unlike POSIX escape codes, that can be written anywhere.
+
+Due to variety of ways to change where the stdout/stderr is {\itshape actually} being written, users should always assume that the answer might be wrong. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/catch2/\mbox{\hyperlink{catch__amalgamated_8hpp}{catch\+\_\+amalgamated.\+hpp}}\end{DoxyCompactItemize}

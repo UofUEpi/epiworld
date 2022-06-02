@@ -1,0 +1,39 @@
+\hypertarget{class_catch_1_1_xml_encode}{}\doxysection{Catch\+::Xml\+Encode Class Reference}
+\label{class_catch_1_1_xml_encode}\index{Catch::XmlEncode@{Catch::XmlEncode}}
+
+
+{\ttfamily \#include $<$catch\+\_\+amalgamated.\+hpp$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_encode_a81ed50fe458d1aae3481781b4d599b7a}\label{class_catch_1_1_xml_encode_a81ed50fe458d1aae3481781b4d599b7a}} 
+enum {\bfseries For\+What} \{ {\bfseries For\+Text\+Nodes}
+, {\bfseries For\+Attributes}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_encode_ad4bf8ef6158ae9c8da0359e7d9f88327}\label{class_catch_1_1_xml_encode_ad4bf8ef6158ae9c8da0359e7d9f88327}} 
+{\bfseries Xml\+Encode} (\mbox{\hyperlink{class_catch_1_1_string_ref}{String\+Ref}} str, For\+What for\+What=For\+Text\+Nodes)
+\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_encode_a030fe9de7193fcdbdc06ade38f0113ce}\label{class_catch_1_1_xml_encode_a030fe9de7193fcdbdc06ade38f0113ce}} 
+void {\bfseries encode\+To} (std\+::ostream \&os) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_encode_a71a0843679dd0e5742b4e0a0cbfcb8c8}\label{class_catch_1_1_xml_encode_a71a0843679dd0e5742b4e0a0cbfcb8c8}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, \mbox{\hyperlink{class_catch_1_1_xml_encode}{Xml\+Encode}} const \&xml\+Encode)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Helper for XML-\/encoding text (escaping angle brackets, quotes, etc)
+
+Note\+: doesn\textquotesingle{}t take ownership of passed strings, and thus the encoded string must outlive the encoding instance. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/catch2/\mbox{\hyperlink{catch__amalgamated_8hpp}{catch\+\_\+amalgamated.\+hpp}}\end{DoxyCompactItemize}

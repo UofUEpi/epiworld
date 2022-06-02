@@ -1,0 +1,67 @@
+\hypertarget{class_catch_1_1_colour_impl_1_1_colour_guard}{}\doxysection{Catch\+::Colour\+Impl\+::Colour\+Guard Class Reference}
+\label{class_catch_1_1_colour_impl_1_1_colour_guard}\index{Catch::ColourImpl::ColourGuard@{Catch::ColourImpl::ColourGuard}}
+
+
+{\ttfamily \#include $<$catch\+\_\+amalgamated.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_colour_impl_1_1_colour_guard_a98caafd603a40b0cf4680725e8a7c782}\label{class_catch_1_1_colour_impl_1_1_colour_guard_a98caafd603a40b0cf4680725e8a7c782}} 
+\mbox{\hyperlink{class_catch_1_1_colour_impl_1_1_colour_guard_a98caafd603a40b0cf4680725e8a7c782}{Colour\+Guard}} (Colour\+::\+Code code, \mbox{\hyperlink{class_catch_1_1_colour_impl}{Colour\+Impl}} const $\ast$colour)
+\begin{DoxyCompactList}\small\item\em Does {\bfseries{not}} engage the guard/start the colour. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_colour_impl_1_1_colour_guard_a88313a95895097b490f1a0bc4e8ab3df}\label{class_catch_1_1_colour_impl_1_1_colour_guard_a88313a95895097b490f1a0bc4e8ab3df}} 
+{\bfseries Colour\+Guard} (\mbox{\hyperlink{class_catch_1_1_colour_impl_1_1_colour_guard}{Colour\+Guard}} const \&rhs)=delete
+\item 
+\mbox{\Hypertarget{class_catch_1_1_colour_impl_1_1_colour_guard_ade54ffe13f32be18575a9ffdd7687702}\label{class_catch_1_1_colour_impl_1_1_colour_guard_ade54ffe13f32be18575a9ffdd7687702}} 
+\mbox{\hyperlink{class_catch_1_1_colour_impl_1_1_colour_guard}{Colour\+Guard}} \& {\bfseries operator=} (\mbox{\hyperlink{class_catch_1_1_colour_impl_1_1_colour_guard}{Colour\+Guard}} const \&rhs)=delete
+\item 
+\mbox{\Hypertarget{class_catch_1_1_colour_impl_1_1_colour_guard_a2312b11b3e340eef9cd613d986ee007d}\label{class_catch_1_1_colour_impl_1_1_colour_guard_a2312b11b3e340eef9cd613d986ee007d}} 
+{\bfseries Colour\+Guard} (\mbox{\hyperlink{class_catch_1_1_colour_impl_1_1_colour_guard}{Colour\+Guard}} \&\&rhs) noexcept
+\item 
+\mbox{\Hypertarget{class_catch_1_1_colour_impl_1_1_colour_guard_aa95ffcb82b6ba5469e6b4edc64cccbeb}\label{class_catch_1_1_colour_impl_1_1_colour_guard_aa95ffcb82b6ba5469e6b4edc64cccbeb}} 
+\mbox{\hyperlink{class_catch_1_1_colour_impl_1_1_colour_guard}{Colour\+Guard}} \& {\bfseries operator=} (\mbox{\hyperlink{class_catch_1_1_colour_impl_1_1_colour_guard}{Colour\+Guard}} \&\&rhs) noexcept
+\item 
+\mbox{\Hypertarget{class_catch_1_1_colour_impl_1_1_colour_guard_ac8c979671a30e05c25d8c135340e2c96}\label{class_catch_1_1_colour_impl_1_1_colour_guard_ac8c979671a30e05c25d8c135340e2c96}} 
+\mbox{\hyperlink{class_catch_1_1_colour_impl_1_1_colour_guard_ac8c979671a30e05c25d8c135340e2c96}{$\sim$\+Colour\+Guard}} ()
+\begin{DoxyCompactList}\small\item\em Removes colour {\itshape if} the guard was engaged. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_catch_1_1_colour_impl_1_1_colour_guard}{Colour\+Guard}} \& \mbox{\hyperlink{class_catch_1_1_colour_impl_1_1_colour_guard_ad03c3dae95b80066a52674f8bee63ac4}{engage}} (std\+::ostream \&stream) \&
+\item 
+\mbox{\hyperlink{class_catch_1_1_colour_impl_1_1_colour_guard}{Colour\+Guard}} \&\& \mbox{\hyperlink{class_catch_1_1_colour_impl_1_1_colour_guard_af74473db7af4df1ec9e8cc0e00fc253b}{engage}} (std\+::ostream \&stream) \&\&
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_colour_impl_1_1_colour_guard_af4380a3d4ca7503dd2f439124ce10c77}\label{class_catch_1_1_colour_impl_1_1_colour_guard_af4380a3d4ca7503dd2f439124ce10c77}} 
+std\+::ostream \& \mbox{\hyperlink{class_catch_1_1_colour_impl_1_1_colour_guard_af4380a3d4ca7503dd2f439124ce10c77}{operator$<$$<$}} (std\+::ostream \&lhs, \mbox{\hyperlink{class_catch_1_1_colour_impl_1_1_colour_guard}{Colour\+Guard}} \&guard)
+\begin{DoxyCompactList}\small\item\em Engages the guard and starts using colour. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_colour_impl_1_1_colour_guard_a759fc9a97bb98584b4ace5d6d9f83162}\label{class_catch_1_1_colour_impl_1_1_colour_guard_a759fc9a97bb98584b4ace5d6d9f83162}} 
+std\+::ostream \& \mbox{\hyperlink{class_catch_1_1_colour_impl_1_1_colour_guard_a759fc9a97bb98584b4ace5d6d9f83162}{operator$<$$<$}} (std\+::ostream \&lhs, \mbox{\hyperlink{class_catch_1_1_colour_impl_1_1_colour_guard}{Colour\+Guard}} \&\&guard)
+\begin{DoxyCompactList}\small\item\em Engages the guard and starts using colour. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+RAII wrapper around writing specific colour of text using specific colour impl into a stream. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_catch_1_1_colour_impl_1_1_colour_guard_ad03c3dae95b80066a52674f8bee63ac4}\label{class_catch_1_1_colour_impl_1_1_colour_guard_ad03c3dae95b80066a52674f8bee63ac4}} 
+\index{Catch::ColourImpl::ColourGuard@{Catch::ColourImpl::ColourGuard}!engage@{engage}}
+\index{engage@{engage}!Catch::ColourImpl::ColourGuard@{Catch::ColourImpl::ColourGuard}}
+\doxysubsubsection{\texorpdfstring{engage()}{engage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_catch_1_1_colour_impl_1_1_colour_guard}{Colour\+Guard}}\& Catch\+::\+Colour\+Impl\+::\+Colour\+Guard\+::engage (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream }\end{DoxyParamCaption}) \&}
+
+Explicitly engages colour for given stream.
+
+The API based on operator$<$$<$ should be preferred. \mbox{\Hypertarget{class_catch_1_1_colour_impl_1_1_colour_guard_af74473db7af4df1ec9e8cc0e00fc253b}\label{class_catch_1_1_colour_impl_1_1_colour_guard_af74473db7af4df1ec9e8cc0e00fc253b}} 
+\index{Catch::ColourImpl::ColourGuard@{Catch::ColourImpl::ColourGuard}!engage@{engage}}
+\index{engage@{engage}!Catch::ColourImpl::ColourGuard@{Catch::ColourImpl::ColourGuard}}
+\doxysubsubsection{\texorpdfstring{engage()}{engage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_catch_1_1_colour_impl_1_1_colour_guard}{Colour\+Guard}}\&\& Catch\+::\+Colour\+Impl\+::\+Colour\+Guard\+::engage (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream }\end{DoxyParamCaption}) \&\&}
+
+Explicitly engages colour for given stream.
+
+The API based on operator$<$$<$ should be preferred. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/catch2/\mbox{\hyperlink{catch__amalgamated_8hpp}{catch\+\_\+amalgamated.\+hpp}}\end{DoxyCompactItemize}

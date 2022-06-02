@@ -21,17 +21,17 @@ void {\bfseries run} (VEC(epiworld\+\_\+double) param\+\_\+init, size\+\_\+t n\+
 \mbox{\Hypertarget{class_l_f_m_c_m_c_a8f078bba19c15c35ecd775abf061c5a8}\label{class_l_f_m_c_m_c_a8f078bba19c15c35ecd775abf061c5a8}} 
 void {\bfseries set\+\_\+observed\+\_\+data} (TData \&observed\+\_\+data\+\_\+)
 \item 
-\mbox{\Hypertarget{class_l_f_m_c_m_c_ada552c7e5b37f2ac4e40ea3919c0684d}\label{class_l_f_m_c_m_c_ada552c7e5b37f2ac4e40ea3919c0684d}} 
-void {\bfseries set\+\_\+proposal\+\_\+fun} (FUN$<$ void(VEC(epiworld\+\_\+double)\&, \mbox{\hyperlink{class_l_f_m_c_m_c}{LFMCMC}}$<$ TData $>$ $\ast$)$>$ fun)
+\mbox{\Hypertarget{class_l_f_m_c_m_c_a736d4534764b7f9cbfcf8c158ac12491}\label{class_l_f_m_c_m_c_a736d4534764b7f9cbfcf8c158ac12491}} 
+void {\bfseries set\+\_\+proposal\+\_\+fun} (LFMCMCProposal\+Fun$<$ TData $>$ fun)
 \item 
-\mbox{\Hypertarget{class_l_f_m_c_m_c_aea04a440b1c2ab087c54f8479df3f7d9}\label{class_l_f_m_c_m_c_aea04a440b1c2ab087c54f8479df3f7d9}} 
-void {\bfseries set\+\_\+simulation\+\_\+fun} (FUN$<$ TData(VEC(epiworld\+\_\+double)\&, \mbox{\hyperlink{class_l_f_m_c_m_c}{LFMCMC}}$<$ TData $>$ $\ast$)$>$ fun)
+\mbox{\Hypertarget{class_l_f_m_c_m_c_af52f8b554d4370146a51218e880c04e3}\label{class_l_f_m_c_m_c_af52f8b554d4370146a51218e880c04e3}} 
+void {\bfseries set\+\_\+simulation\+\_\+fun} (LFMCMCSim\+Fun$<$ TData $>$ fun)
 \item 
-\mbox{\Hypertarget{class_l_f_m_c_m_c_af4a1b8b977e9ab6944a163d4f62ea0a4}\label{class_l_f_m_c_m_c_af4a1b8b977e9ab6944a163d4f62ea0a4}} 
-void {\bfseries set\+\_\+summary\+\_\+fun} (FUN$<$ VEC(epiworld\+\_\+double)(TData \&, \mbox{\hyperlink{class_l_f_m_c_m_c}{LFMCMC}}$<$ TData $>$ $\ast$)$>$ fun)
+\mbox{\Hypertarget{class_l_f_m_c_m_c_a2b4e83802e717bad2b6a4aaa5308ea2d}\label{class_l_f_m_c_m_c_a2b4e83802e717bad2b6a4aaa5308ea2d}} 
+void {\bfseries set\+\_\+summary\+\_\+fun} (LFMCMCSummary\+Fun$<$ TData $>$ fun)
 \item 
-\mbox{\Hypertarget{class_l_f_m_c_m_c_a96647ce34cd5891a4a6802fa95a48588}\label{class_l_f_m_c_m_c_a96647ce34cd5891a4a6802fa95a48588}} 
-void {\bfseries set\+\_\+kernel\+\_\+fun} (FUN$<$ epiworld\+\_\+double(VEC(epiworld\+\_\+double)\&, epiworld\+\_\+double, \mbox{\hyperlink{class_l_f_m_c_m_c}{LFMCMC}}$<$ TData $>$ $\ast$)$>$ fun)
+\mbox{\Hypertarget{class_l_f_m_c_m_c_a4b96f9837e8eddeca52524124438b6cd}\label{class_l_f_m_c_m_c_a4b96f9837e8eddeca52524124438b6cd}} 
+void {\bfseries set\+\_\+kernel\+\_\+fun} (LFMCMCKernel\+Fun$<$ TData $>$ fun)
 \item 
 \mbox{\Hypertarget{class_l_f_m_c_m_c_a14908203c50406e6f44cfb1995d55b85}\label{class_l_f_m_c_m_c_a14908203c50406e6f44cfb1995d55b85}} 
 const size\+\_\+t {\bfseries get\+\_\+n\+\_\+samples} ()

@@ -1,0 +1,66 @@
+\hypertarget{class_catch_1_1_xml_writer}{}\doxysection{Catch\+::Xml\+Writer Class Reference}
+\label{class_catch_1_1_xml_writer}\index{Catch::XmlWriter@{Catch::XmlWriter}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_catch_1_1_xml_writer_1_1_scoped_element}{Scoped\+Element}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_writer_a179557581b3b64fa2576236ec4da95e3}\label{class_catch_1_1_xml_writer_a179557581b3b64fa2576236ec4da95e3}} 
+{\bfseries Xml\+Writer} (std\+::ostream \&os)
+\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_writer_a735da4465c68e34d099d8ae06a3e48d4}\label{class_catch_1_1_xml_writer_a735da4465c68e34d099d8ae06a3e48d4}} 
+{\bfseries Xml\+Writer} (\mbox{\hyperlink{class_catch_1_1_xml_writer}{Xml\+Writer}} const \&)=delete
+\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_writer_aaae41eb06e64a82d0e148aaf5153a72a}\label{class_catch_1_1_xml_writer_aaae41eb06e64a82d0e148aaf5153a72a}} 
+\mbox{\hyperlink{class_catch_1_1_xml_writer}{Xml\+Writer}} \& {\bfseries operator=} (\mbox{\hyperlink{class_catch_1_1_xml_writer}{Xml\+Writer}} const \&)=delete
+\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_writer_a7fd0af7b7101bbf7335f1a19fb465e22}\label{class_catch_1_1_xml_writer_a7fd0af7b7101bbf7335f1a19fb465e22}} 
+\mbox{\hyperlink{class_catch_1_1_xml_writer}{Xml\+Writer}} \& {\bfseries start\+Element} (std\+::string const \&name, Xml\+Formatting fmt=Xml\+Formatting\+::\+Newline$\vert$Xml\+Formatting\+::\+Indent)
+\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_writer_afc7bc97c78e5dbf61f915420afdb6e75}\label{class_catch_1_1_xml_writer_afc7bc97c78e5dbf61f915420afdb6e75}} 
+\mbox{\hyperlink{class_catch_1_1_xml_writer_1_1_scoped_element}{Scoped\+Element}} {\bfseries scoped\+Element} (std\+::string const \&name, Xml\+Formatting fmt=Xml\+Formatting\+::\+Newline$\vert$Xml\+Formatting\+::\+Indent)
+\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_writer_ab3b34ac4c7a020081d7c46058ee9cd60}\label{class_catch_1_1_xml_writer_ab3b34ac4c7a020081d7c46058ee9cd60}} 
+\mbox{\hyperlink{class_catch_1_1_xml_writer}{Xml\+Writer}} \& {\bfseries end\+Element} (Xml\+Formatting fmt=Xml\+Formatting\+::\+Newline$\vert$Xml\+Formatting\+::\+Indent)
+\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_writer_ada1ec2c5600755495f5468df6a7f8579}\label{class_catch_1_1_xml_writer_ada1ec2c5600755495f5468df6a7f8579}} 
+\mbox{\hyperlink{class_catch_1_1_xml_writer}{Xml\+Writer}} \& \mbox{\hyperlink{class_catch_1_1_xml_writer_ada1ec2c5600755495f5468df6a7f8579}{write\+Attribute}} (\mbox{\hyperlink{class_catch_1_1_string_ref}{String\+Ref}} name, \mbox{\hyperlink{class_catch_1_1_string_ref}{String\+Ref}} attribute)
+\begin{DoxyCompactList}\small\item\em The attribute content is XML-\/encoded. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_writer_a287e198ecd946b2f087beb3db068061c}\label{class_catch_1_1_xml_writer_a287e198ecd946b2f087beb3db068061c}} 
+\mbox{\hyperlink{class_catch_1_1_xml_writer}{Xml\+Writer}} \& \mbox{\hyperlink{class_catch_1_1_xml_writer_a287e198ecd946b2f087beb3db068061c}{write\+Attribute}} (\mbox{\hyperlink{class_catch_1_1_string_ref}{String\+Ref}} name, bool attribute)
+\begin{DoxyCompactList}\small\item\em Writes the attribute as \char`\"{}true/false\char`\"{}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_writer_ad7ce6548d44c6b93c2e8b654f2685fe2}\label{class_catch_1_1_xml_writer_ad7ce6548d44c6b93c2e8b654f2685fe2}} 
+\mbox{\hyperlink{class_catch_1_1_xml_writer}{Xml\+Writer}} \& \mbox{\hyperlink{class_catch_1_1_xml_writer_ad7ce6548d44c6b93c2e8b654f2685fe2}{write\+Attribute}} (\mbox{\hyperlink{class_catch_1_1_string_ref}{String\+Ref}} name, char const $\ast$attribute)
+\begin{DoxyCompactList}\small\item\em The attribute content is XML-\/encoded. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T , typename  = typename std\+::enable\+\_\+if\+\_\+t$<$                      !std\+::is\+\_\+convertible$<$\+T, String\+Ref$>$\+::value$>$$>$ }\\\mbox{\hyperlink{class_catch_1_1_xml_writer}{Xml\+Writer}} \& \mbox{\hyperlink{class_catch_1_1_xml_writer_a73fe12ec388c501ed491e5617d95d524}{write\+Attribute}} (\mbox{\hyperlink{class_catch_1_1_string_ref}{String\+Ref}} name, T const \&attribute)
+\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_writer_ad0ec4c72d79d09e88ef0e1692b431667}\label{class_catch_1_1_xml_writer_ad0ec4c72d79d09e88ef0e1692b431667}} 
+\mbox{\hyperlink{class_catch_1_1_xml_writer}{Xml\+Writer}} \& \mbox{\hyperlink{class_catch_1_1_xml_writer_ad0ec4c72d79d09e88ef0e1692b431667}{write\+Text}} (\mbox{\hyperlink{class_catch_1_1_string_ref}{String\+Ref}} text, Xml\+Formatting fmt=Xml\+Formatting\+::\+Newline$\vert$Xml\+Formatting\+::\+Indent)
+\begin{DoxyCompactList}\small\item\em Writes escaped {\ttfamily text} in a element. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_writer_a637c6c66fd64e20b64b6fd47870b9e1a}\label{class_catch_1_1_xml_writer_a637c6c66fd64e20b64b6fd47870b9e1a}} 
+\mbox{\hyperlink{class_catch_1_1_xml_writer}{Xml\+Writer}} \& \mbox{\hyperlink{class_catch_1_1_xml_writer_a637c6c66fd64e20b64b6fd47870b9e1a}{write\+Comment}} (\mbox{\hyperlink{class_catch_1_1_string_ref}{String\+Ref}} text, Xml\+Formatting fmt=Xml\+Formatting\+::\+Newline$\vert$Xml\+Formatting\+::\+Indent)
+\begin{DoxyCompactList}\small\item\em Writes XML comment as \char`\"{}$<$!-\/-\/ text -\/-\/$>$\char`\"{}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_writer_ade046e855890067b64d59a3bf6223d39}\label{class_catch_1_1_xml_writer_ade046e855890067b64d59a3bf6223d39}} 
+void {\bfseries write\+Stylesheet\+Ref} (\mbox{\hyperlink{class_catch_1_1_string_ref}{String\+Ref}} url)
+\item 
+\mbox{\Hypertarget{class_catch_1_1_xml_writer_aba98703d9852416e237de82aed4a9c4f}\label{class_catch_1_1_xml_writer_aba98703d9852416e237de82aed4a9c4f}} 
+void {\bfseries ensure\+Tag\+Closed} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_catch_1_1_xml_writer_a73fe12ec388c501ed491e5617d95d524}\label{class_catch_1_1_xml_writer_a73fe12ec388c501ed491e5617d95d524}} 
+\index{Catch::XmlWriter@{Catch::XmlWriter}!writeAttribute@{writeAttribute}}
+\index{writeAttribute@{writeAttribute}!Catch::XmlWriter@{Catch::XmlWriter}}
+\doxysubsubsection{\texorpdfstring{writeAttribute()}{writeAttribute()}}
+{\footnotesize\ttfamily template$<$typename T , typename  = typename std\+::enable\+\_\+if\+\_\+t$<$                      !std\+::is\+\_\+convertible$<$\+T, String\+Ref$>$\+::value$>$$>$ \\
+\mbox{\hyperlink{class_catch_1_1_xml_writer}{Xml\+Writer}}\& Catch\+::\+Xml\+Writer\+::write\+Attribute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_catch_1_1_string_ref}{String\+Ref}}}]{name,  }\item[{T const \&}]{attribute }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The attribute value must provide op$<$$<$(ostream\&, T). The resulting serialization is XML-\/encoded 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/catch2/\mbox{\hyperlink{catch__amalgamated_8hpp}{catch\+\_\+amalgamated.\+hpp}}\end{DoxyCompactItemize}

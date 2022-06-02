@@ -1,0 +1,35 @@
+\hypertarget{struct_catch_1_1_benchmark_1_1_detail_1_1_benchmark_function}{}\doxysection{Catch\+::Benchmark\+::Detail\+::Benchmark\+Function Struct Reference}
+\label{struct_catch_1_1_benchmark_1_1_detail_1_1_benchmark_function}\index{Catch::Benchmark::Detail::BenchmarkFunction@{Catch::Benchmark::Detail::BenchmarkFunction}}
+
+
+{\ttfamily \#include $<$catch\+\_\+amalgamated.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_catch_1_1_benchmark_1_1_detail_1_1_benchmark_function_a6d0382763e5fef9706efa32c5f0c09d7}\label{struct_catch_1_1_benchmark_1_1_detail_1_1_benchmark_function_a6d0382763e5fef9706efa32c5f0c09d7}} 
+{\footnotesize template$<$typename Fun , std\+::enable\+\_\+if\+\_\+t$<$!is\+\_\+related$<$ Fun, Benchmark\+Function $>$\+::value, int $>$  = 0$>$ }\\{\bfseries Benchmark\+Function} (Fun \&\&fun)
+\item 
+\mbox{\Hypertarget{struct_catch_1_1_benchmark_1_1_detail_1_1_benchmark_function_a3b377f8e165a715089431c2fdd8dcd57}\label{struct_catch_1_1_benchmark_1_1_detail_1_1_benchmark_function_a3b377f8e165a715089431c2fdd8dcd57}} 
+{\bfseries Benchmark\+Function} (\mbox{\hyperlink{struct_catch_1_1_benchmark_1_1_detail_1_1_benchmark_function}{Benchmark\+Function}} \&\&that) noexcept
+\item 
+\mbox{\Hypertarget{struct_catch_1_1_benchmark_1_1_detail_1_1_benchmark_function_a7589b0a85bfc2695817f5faf79b54f90}\label{struct_catch_1_1_benchmark_1_1_detail_1_1_benchmark_function_a7589b0a85bfc2695817f5faf79b54f90}} 
+{\bfseries Benchmark\+Function} (\mbox{\hyperlink{struct_catch_1_1_benchmark_1_1_detail_1_1_benchmark_function}{Benchmark\+Function}} const \&that)
+\item 
+\mbox{\Hypertarget{struct_catch_1_1_benchmark_1_1_detail_1_1_benchmark_function_a889d0f9c16070f3531f633d93ef32694}\label{struct_catch_1_1_benchmark_1_1_detail_1_1_benchmark_function_a889d0f9c16070f3531f633d93ef32694}} 
+\mbox{\hyperlink{struct_catch_1_1_benchmark_1_1_detail_1_1_benchmark_function}{Benchmark\+Function}} \& {\bfseries operator=} (\mbox{\hyperlink{struct_catch_1_1_benchmark_1_1_detail_1_1_benchmark_function}{Benchmark\+Function}} \&\&that) noexcept
+\item 
+\mbox{\Hypertarget{struct_catch_1_1_benchmark_1_1_detail_1_1_benchmark_function_a7fc0b541556547578d7392271c5d3ec4}\label{struct_catch_1_1_benchmark_1_1_detail_1_1_benchmark_function_a7fc0b541556547578d7392271c5d3ec4}} 
+\mbox{\hyperlink{struct_catch_1_1_benchmark_1_1_detail_1_1_benchmark_function}{Benchmark\+Function}} \& {\bfseries operator=} (\mbox{\hyperlink{struct_catch_1_1_benchmark_1_1_detail_1_1_benchmark_function}{Benchmark\+Function}} const \&that)
+\item 
+\mbox{\Hypertarget{struct_catch_1_1_benchmark_1_1_detail_1_1_benchmark_function_ab78ffb29682af780ec2a4eac521351a5}\label{struct_catch_1_1_benchmark_1_1_detail_1_1_benchmark_function_ab78ffb29682af780ec2a4eac521351a5}} 
+void {\bfseries operator()} (\mbox{\hyperlink{struct_catch_1_1_benchmark_1_1_chronometer}{Chronometer}} meter) const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+We need to reinvent std\+::function because every piece of code that might add overhead in a measurement context needs to have consistent performance characteristics so that we can account for it in the measurement. Implementations of std\+::function with optimizations that aren\textquotesingle{}t always applicable, like small buffer optimizations, are not uncommon. This is effectively an implementation of std\+::function without any such optimizations; it may be slow, but it is consistently slow. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/catch2/\mbox{\hyperlink{catch__amalgamated_8hpp}{catch\+\_\+amalgamated.\+hpp}}\end{DoxyCompactItemize}

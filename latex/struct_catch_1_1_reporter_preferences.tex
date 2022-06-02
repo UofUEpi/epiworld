@@ -1,0 +1,36 @@
+\hypertarget{struct_catch_1_1_reporter_preferences}{}\doxysection{Catch\+::Reporter\+Preferences Struct Reference}
+\label{struct_catch_1_1_reporter_preferences}\index{Catch::ReporterPreferences@{Catch::ReporterPreferences}}
+
+
+{\ttfamily \#include $<$catch\+\_\+amalgamated.\+hpp$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{struct_catch_1_1_reporter_preferences_a434511c4080edbbc12e0d1c31ea14769}{should\+Redirect\+Std\+Out}} = false
+\item 
+bool \mbox{\hyperlink{struct_catch_1_1_reporter_preferences_a10e13e10dfdc9a97dde0a72c573d7419}{should\+Report\+All\+Assertions}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+By setting up its preferences, a reporter can modify Catch2\textquotesingle{}s behaviour in some regards, e.\+g. it can request Catch2 to capture writes to stdout/stderr during test execution, and pass them to the reporter. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_catch_1_1_reporter_preferences_a434511c4080edbbc12e0d1c31ea14769}\label{struct_catch_1_1_reporter_preferences_a434511c4080edbbc12e0d1c31ea14769}} 
+\index{Catch::ReporterPreferences@{Catch::ReporterPreferences}!shouldRedirectStdOut@{shouldRedirectStdOut}}
+\index{shouldRedirectStdOut@{shouldRedirectStdOut}!Catch::ReporterPreferences@{Catch::ReporterPreferences}}
+\doxysubsubsection{\texorpdfstring{shouldRedirectStdOut}{shouldRedirectStdOut}}
+{\footnotesize\ttfamily bool Catch\+::\+Reporter\+Preferences\+::should\+Redirect\+Std\+Out = false}
+
+Catch2 should redirect writes to stdout and pass them to the reporter \mbox{\Hypertarget{struct_catch_1_1_reporter_preferences_a10e13e10dfdc9a97dde0a72c573d7419}\label{struct_catch_1_1_reporter_preferences_a10e13e10dfdc9a97dde0a72c573d7419}} 
+\index{Catch::ReporterPreferences@{Catch::ReporterPreferences}!shouldReportAllAssertions@{shouldReportAllAssertions}}
+\index{shouldReportAllAssertions@{shouldReportAllAssertions}!Catch::ReporterPreferences@{Catch::ReporterPreferences}}
+\doxysubsubsection{\texorpdfstring{shouldReportAllAssertions}{shouldReportAllAssertions}}
+{\footnotesize\ttfamily bool Catch\+::\+Reporter\+Preferences\+::should\+Report\+All\+Assertions = false}
+
+Catch2 should call {\ttfamily Reporter\+::assertion\+Ended} even for passing assertions 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/catch2/\mbox{\hyperlink{catch__amalgamated_8hpp}{catch\+\_\+amalgamated.\+hpp}}\end{DoxyCompactItemize}

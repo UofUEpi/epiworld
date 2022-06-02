@@ -1,0 +1,77 @@
+\hypertarget{class_catch_1_1_t_a_p_reporter}{}\doxysection{Catch\+::TAPReporter Class Reference}
+\label{class_catch_1_1_t_a_p_reporter}\index{Catch::TAPReporter@{Catch::TAPReporter}}
+
+
+Inheritance diagram for Catch\+::TAPReporter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{class_catch_1_1_t_a_p_reporter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Catch\+::TAPReporter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_catch_1_1_t_a_p_reporter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_t_a_p_reporter_ac3c825870e2f649504dfdc7c180df6dd}\label{class_catch_1_1_t_a_p_reporter_ac3c825870e2f649504dfdc7c180df6dd}} 
+{\bfseries TAPReporter} (\mbox{\hyperlink{struct_catch_1_1_reporter_config}{Reporter\+Config}} \&\&config)
+\item 
+void \mbox{\hyperlink{class_catch_1_1_t_a_p_reporter_a8305b2fafb71c9cca89169c324c184b4}{test\+Run\+Starting}} (\mbox{\hyperlink{struct_catch_1_1_test_run_info}{Test\+Run\+Info}} const \&test\+Info) override
+\item 
+\mbox{\Hypertarget{class_catch_1_1_t_a_p_reporter_a789f94ab1b9ad5b3140db9c0e0aca1e5}\label{class_catch_1_1_t_a_p_reporter_a789f94ab1b9ad5b3140db9c0e0aca1e5}} 
+void \mbox{\hyperlink{class_catch_1_1_t_a_p_reporter_a789f94ab1b9ad5b3140db9c0e0aca1e5}{no\+Matching\+Test\+Cases}} (\mbox{\hyperlink{class_catch_1_1_string_ref}{String\+Ref}} unmatched\+Spec) override
+\begin{DoxyCompactList}\small\item\em Called when no test cases match provided test spec. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_t_a_p_reporter_a150c1070fd87746044cf82b1e74287ed}\label{class_catch_1_1_t_a_p_reporter_a150c1070fd87746044cf82b1e74287ed}} 
+void \mbox{\hyperlink{class_catch_1_1_t_a_p_reporter_a150c1070fd87746044cf82b1e74287ed}{assertion\+Ended}} (\mbox{\hyperlink{struct_catch_1_1_assertion_stats}{Assertion\+Stats}} const \&\+\_\+assertion\+Stats) override
+\begin{DoxyCompactList}\small\item\em Called after assertion was fully evaluated. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_catch_1_1_t_a_p_reporter_a991c5fc83855f65e11e840044335198a}{test\+Run\+Ended}} (\mbox{\hyperlink{struct_catch_1_1_test_run_stats}{Test\+Run\+Stats}} const \&\+\_\+test\+Run\+Stats) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_t_a_p_reporter_a759e00c12939a018753ee14be68bf15e}\label{class_catch_1_1_t_a_p_reporter_a759e00c12939a018753ee14be68bf15e}} 
+static std\+::string {\bfseries get\+Description} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_catch_1_1_t_a_p_reporter_a991c5fc83855f65e11e840044335198a}\label{class_catch_1_1_t_a_p_reporter_a991c5fc83855f65e11e840044335198a}} 
+\index{Catch::TAPReporter@{Catch::TAPReporter}!testRunEnded@{testRunEnded}}
+\index{testRunEnded@{testRunEnded}!Catch::TAPReporter@{Catch::TAPReporter}}
+\doxysubsubsection{\texorpdfstring{testRunEnded()}{testRunEnded()}}
+{\footnotesize\ttfamily void Catch\+::\+TAPReporter\+::test\+Run\+Ended (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_catch_1_1_test_run_stats}{Test\+Run\+Stats}} const \&}]{test\+Run\+Stats }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called once after all tests in a testing run are finished
+
+Not called if tests weren\textquotesingle{}t run (e.\+g. only listings happened) 
+
+Reimplemented from \mbox{\hyperlink{class_catch_1_1_streaming_reporter_base_abc6e39389e0bb22fb2fce977ced959af}{Catch\+::\+Streaming\+Reporter\+Base}}.
+
+\mbox{\Hypertarget{class_catch_1_1_t_a_p_reporter_a8305b2fafb71c9cca89169c324c184b4}\label{class_catch_1_1_t_a_p_reporter_a8305b2fafb71c9cca89169c324c184b4}} 
+\index{Catch::TAPReporter@{Catch::TAPReporter}!testRunStarting@{testRunStarting}}
+\index{testRunStarting@{testRunStarting}!Catch::TAPReporter@{Catch::TAPReporter}}
+\doxysubsubsection{\texorpdfstring{testRunStarting()}{testRunStarting()}}
+{\footnotesize\ttfamily void Catch\+::\+TAPReporter\+::test\+Run\+Starting (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_catch_1_1_test_run_info}{Test\+Run\+Info}} const \&}]{test\+Run\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called once in a testing run before tests are started
+
+Not called if tests won\textquotesingle{}t be run (e.\+g. only listing will happen) 
+
+Reimplemented from \mbox{\hyperlink{class_catch_1_1_streaming_reporter_base_a5ce94d2e8b64c49e4ace01c64f249716}{Catch\+::\+Streaming\+Reporter\+Base}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/catch2/\mbox{\hyperlink{catch__amalgamated_8hpp}{catch\+\_\+amalgamated.\+hpp}}\end{DoxyCompactItemize}

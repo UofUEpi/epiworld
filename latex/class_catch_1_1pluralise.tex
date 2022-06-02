@@ -1,0 +1,35 @@
+\hypertarget{class_catch_1_1pluralise}{}\doxysection{Catch\+::pluralise Class Reference}
+\label{class_catch_1_1pluralise}\index{Catch::pluralise@{Catch::pluralise}}
+
+
+{\ttfamily \#include $<$catch\+\_\+amalgamated.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1pluralise_aaa6721f0dffc28ed4236427b929e4ccd}\label{class_catch_1_1pluralise_aaa6721f0dffc28ed4236427b929e4ccd}} 
+constexpr {\bfseries pluralise} (std\+::uint64\+\_\+t count, \mbox{\hyperlink{class_catch_1_1_string_ref}{String\+Ref}} label)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1pluralise_aa7dac6b165514c1f85e0695d678fdef5}\label{class_catch_1_1pluralise_aa7dac6b165514c1f85e0695d678fdef5}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, \mbox{\hyperlink{class_catch_1_1pluralise}{pluralise}} const \&pluraliser)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Helper for streaming a \char`\"{}count \mbox{[}maybe-\/plural-\/of-\/label\mbox{]}\char`\"{} human-\/friendly string
+
+Usage example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{std::cout << \textcolor{stringliteral}{"{}Found "{}} << pluralise(count, \textcolor{stringliteral}{"{}error"{}}) << \textcolor{charliteral}{'\(\backslash\)n'};}
+
+\end{DoxyCode}
+
+
+{\bfseries{Important\+:}} The provided string must outlive the instance 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/catch2/\mbox{\hyperlink{catch__amalgamated_8hpp}{catch\+\_\+amalgamated.\+hpp}}\end{DoxyCompactItemize}

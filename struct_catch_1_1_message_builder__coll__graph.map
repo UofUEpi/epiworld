@@ -1,0 +1,9 @@
+<map id="Catch::MessageBuilder" name="Catch::MessageBuilder">
+<area shape="rect" id="node1" title=" " alt="" coords="128,260,283,287"/>
+<area shape="rect" id="node2" href="$struct_catch_1_1_message_stream.html" title=" " alt="" coords="41,171,199,197"/>
+<area shape="rect" id="node3" href="$class_catch_1_1_reusable_string_stream.html" title=" " alt="" coords="5,81,197,108"/>
+<area shape="rect" id="node4" href="$class_catch_1_1_detail_1_1_non_copyable.html" title="Deriving classes become noncopyable and nonmovable." alt="" coords="12,5,191,32"/>
+<area shape="rect" id="node5" href="$struct_catch_1_1_message_info.html" title=" " alt="" coords="229,171,366,197"/>
+<area shape="rect" id="node6" href="$struct_catch_1_1_source_line_info.html" title=" " alt="" coords="222,81,373,108"/>
+<area shape="rect" id="node7" href="$class_catch_1_1_string_ref.html" title=" " alt="" coords="397,81,513,108"/>
+</map>

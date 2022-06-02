@@ -1,0 +1,37 @@
+\hypertarget{class_catch_1_1_expr_lhs}{}\doxysection{Catch\+::Expr\+Lhs$<$ LhsT $>$ Class Template Reference}
+\label{class_catch_1_1_expr_lhs}\index{Catch::ExprLhs$<$ LhsT $>$@{Catch::ExprLhs$<$ LhsT $>$}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_expr_lhs_ad22c6af1a7d6993240624d299714a479}\label{class_catch_1_1_expr_lhs_ad22c6af1a7d6993240624d299714a479}} 
+{\bfseries Expr\+Lhs} (LhsT lhs)
+\item 
+\mbox{\Hypertarget{class_catch_1_1_expr_lhs_ab68bd6d5d3ae21b7fba9010150fba95d}\label{class_catch_1_1_expr_lhs_ab68bd6d5d3ae21b7fba9010150fba95d}} 
+auto {\bfseries make\+Unary\+Expr} () const -\/$>$ \mbox{\hyperlink{class_catch_1_1_unary_expr}{Unary\+Expr}}$<$ LhsT $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_expr_lhs_a79952825567a744f6ced6d6b1cf50bda}\label{class_catch_1_1_expr_lhs_a79952825567a744f6ced6d6b1cf50bda}} 
+{\footnotesize template$<$typename RhsT , std\+::enable\+\_\+if\+\_\+t$<$!std\+::is\+\_\+arithmetic$<$ std\+::remove\+\_\+reference\+\_\+t$<$ Rhs\+T $>$$>$\+::value, int $>$  = 0$>$ }\\auto {\bfseries operator==} (\mbox{\hyperlink{class_catch_1_1_expr_lhs}{Expr\+Lhs}} \&\&lhs, RhsT \&\&rhs) -\/$>$ \mbox{\hyperlink{class_catch_1_1_binary_expr}{Binary\+Expr}}$<$ LhsT, RhsT const \& $>$
+\item 
+\mbox{\Hypertarget{class_catch_1_1_expr_lhs_a8d36f70d76f25d1752c113eb88fefa9a}\label{class_catch_1_1_expr_lhs_a8d36f70d76f25d1752c113eb88fefa9a}} 
+{\footnotesize template$<$typename RhsT , std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+arithmetic$<$ Rhs\+T $>$\+::value, int $>$  = 0$>$ }\\auto {\bfseries operator==} (\mbox{\hyperlink{class_catch_1_1_expr_lhs}{Expr\+Lhs}} \&\&lhs, RhsT rhs) -\/$>$ \mbox{\hyperlink{class_catch_1_1_binary_expr}{Binary\+Expr}}$<$ LhsT, RhsT $>$
+\item 
+\mbox{\Hypertarget{class_catch_1_1_expr_lhs_ac5a120fed46d578ad9df7a6931bff86e}\label{class_catch_1_1_expr_lhs_ac5a120fed46d578ad9df7a6931bff86e}} 
+{\footnotesize template$<$typename RhsT , std\+::enable\+\_\+if\+\_\+t$<$!std\+::is\+\_\+arithmetic$<$ std\+::remove\+\_\+reference\+\_\+t$<$ Rhs\+T $>$$>$\+::value, int $>$  = 0$>$ }\\auto {\bfseries operator!=} (\mbox{\hyperlink{class_catch_1_1_expr_lhs}{Expr\+Lhs}} \&\&lhs, RhsT \&\&rhs) -\/$>$ \mbox{\hyperlink{class_catch_1_1_binary_expr}{Binary\+Expr}}$<$ LhsT, RhsT const \& $>$
+\item 
+\mbox{\Hypertarget{class_catch_1_1_expr_lhs_afcbf72506ae47b44fa42911afd628d0e}\label{class_catch_1_1_expr_lhs_afcbf72506ae47b44fa42911afd628d0e}} 
+{\footnotesize template$<$typename RhsT , std\+::enable\+\_\+if\+\_\+t$<$ std\+::is\+\_\+arithmetic$<$ Rhs\+T $>$\+::value, int $>$  = 0$>$ }\\auto {\bfseries operator!=} (\mbox{\hyperlink{class_catch_1_1_expr_lhs}{Expr\+Lhs}} \&\&lhs, RhsT rhs) -\/$>$ \mbox{\hyperlink{class_catch_1_1_binary_expr}{Binary\+Expr}}$<$ LhsT, RhsT $>$
+\item 
+\mbox{\Hypertarget{class_catch_1_1_expr_lhs_a2487e4194bedf06148be122d439b9679}\label{class_catch_1_1_expr_lhs_a2487e4194bedf06148be122d439b9679}} 
+{\footnotesize template$<$typename RhsT $>$ }\\auto {\bfseries operator\&\&} (\mbox{\hyperlink{class_catch_1_1_expr_lhs}{Expr\+Lhs}} \&\&, RhsT \&\&) -\/$>$ \mbox{\hyperlink{class_catch_1_1_binary_expr}{Binary\+Expr}}$<$ LhsT, RhsT const \& $>$
+\item 
+\mbox{\Hypertarget{class_catch_1_1_expr_lhs_ac1bf585060441dde2511a1caf26b4af1}\label{class_catch_1_1_expr_lhs_ac1bf585060441dde2511a1caf26b4af1}} 
+{\footnotesize template$<$typename RhsT $>$ }\\auto {\bfseries operator$\vert$$\vert$} (\mbox{\hyperlink{class_catch_1_1_expr_lhs}{Expr\+Lhs}} \&\&, RhsT \&\&) -\/$>$ \mbox{\hyperlink{class_catch_1_1_binary_expr}{Binary\+Expr}}$<$ LhsT, RhsT const \& $>$
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/catch2/\mbox{\hyperlink{catch__amalgamated_8hpp}{catch\+\_\+amalgamated.\+hpp}}\end{DoxyCompactItemize}

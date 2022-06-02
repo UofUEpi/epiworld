@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['userdata_64',['UserData',['../class_user_data.html',1,'']]]
+  ['junitreporter_642',['JunitReporter',['../class_catch_1_1_junit_reporter.html',1,'Catch']]]
 ];

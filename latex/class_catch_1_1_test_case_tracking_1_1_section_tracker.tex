@@ -1,0 +1,75 @@
+\hypertarget{class_catch_1_1_test_case_tracking_1_1_section_tracker}{}\doxysection{Catch\+::Test\+Case\+Tracking\+::Section\+Tracker Class Reference}
+\label{class_catch_1_1_test_case_tracking_1_1_section_tracker}\index{Catch::TestCaseTracking::SectionTracker@{Catch::TestCaseTracking::SectionTracker}}
+
+
+Inheritance diagram for Catch\+::Test\+Case\+Tracking\+::Section\+Tracker\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{class_catch_1_1_test_case_tracking_1_1_section_tracker__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Catch\+::Test\+Case\+Tracking\+::Section\+Tracker\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_catch_1_1_test_case_tracking_1_1_section_tracker__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_test_case_tracking_1_1_section_tracker_ab21390d8245edc58212f1f857c219d39}\label{class_catch_1_1_test_case_tracking_1_1_section_tracker_ab21390d8245edc58212f1f857c219d39}} 
+{\bfseries Section\+Tracker} (\mbox{\hyperlink{struct_catch_1_1_test_case_tracking_1_1_name_and_location}{Name\+And\+Location}} const \&name\+And\+Location, \mbox{\hyperlink{class_catch_1_1_test_case_tracking_1_1_tracker_context}{Tracker\+Context}} \&ctx, \mbox{\hyperlink{class_catch_1_1_test_case_tracking_1_1_i_tracker}{ITracker}} $\ast$parent)
+\item 
+bool \mbox{\hyperlink{class_catch_1_1_test_case_tracking_1_1_section_tracker_a4996613c5766729872f1bf6b96613909}{is\+Section\+Tracker}} () const override
+\item 
+\mbox{\Hypertarget{class_catch_1_1_test_case_tracking_1_1_section_tracker_a5e295d30f100c7c07343cebc65b9c595}\label{class_catch_1_1_test_case_tracking_1_1_section_tracker_a5e295d30f100c7c07343cebc65b9c595}} 
+bool \mbox{\hyperlink{class_catch_1_1_test_case_tracking_1_1_section_tracker_a5e295d30f100c7c07343cebc65b9c595}{is\+Complete}} () const override
+\begin{DoxyCompactList}\small\item\em Returns true if tracker run to completion (successfully or not) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_test_case_tracking_1_1_section_tracker_a9b89c5e4093d39282d02963a9a0f5b12}\label{class_catch_1_1_test_case_tracking_1_1_section_tracker_a9b89c5e4093d39282d02963a9a0f5b12}} 
+void {\bfseries try\+Open} ()
+\item 
+\mbox{\Hypertarget{class_catch_1_1_test_case_tracking_1_1_section_tracker_a140768f3281b9ac9350aaaf9c617a8f3}\label{class_catch_1_1_test_case_tracking_1_1_section_tracker_a140768f3281b9ac9350aaaf9c617a8f3}} 
+void {\bfseries add\+Initial\+Filters} (std\+::vector$<$ std\+::string $>$ const \&filters)
+\item 
+\mbox{\Hypertarget{class_catch_1_1_test_case_tracking_1_1_section_tracker_aacb304830608dca2f480b8f5732a396b}\label{class_catch_1_1_test_case_tracking_1_1_section_tracker_aacb304830608dca2f480b8f5732a396b}} 
+void {\bfseries add\+Next\+Filters} (std\+::vector$<$ \mbox{\hyperlink{class_catch_1_1_string_ref}{String\+Ref}} $>$ const \&filters)
+\item 
+\mbox{\Hypertarget{class_catch_1_1_test_case_tracking_1_1_section_tracker_aed2b0573d2c8a3ab86f53b5334c4738b}\label{class_catch_1_1_test_case_tracking_1_1_section_tracker_aed2b0573d2c8a3ab86f53b5334c4738b}} 
+std\+::vector$<$ \mbox{\hyperlink{class_catch_1_1_string_ref}{String\+Ref}} $>$ const  \& \mbox{\hyperlink{class_catch_1_1_test_case_tracking_1_1_section_tracker_aed2b0573d2c8a3ab86f53b5334c4738b}{get\+Filters}} () const
+\begin{DoxyCompactList}\small\item\em Returns filters active in this tracker. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_test_case_tracking_1_1_section_tracker_ac4b27535677b446e5a1a08dd8bdb1ee8}\label{class_catch_1_1_test_case_tracking_1_1_section_tracker_ac4b27535677b446e5a1a08dd8bdb1ee8}} 
+\mbox{\hyperlink{class_catch_1_1_string_ref}{String\+Ref}} \mbox{\hyperlink{class_catch_1_1_test_case_tracking_1_1_section_tracker_ac4b27535677b446e5a1a08dd8bdb1ee8}{trimmed\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Returns whitespace-\/trimmed name of the tracked section. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_test_case_tracking_1_1_section_tracker_a3bf8b2a4557912142e13f19d3ef958bb}\label{class_catch_1_1_test_case_tracking_1_1_section_tracker_a3bf8b2a4557912142e13f19d3ef958bb}} 
+static \mbox{\hyperlink{class_catch_1_1_test_case_tracking_1_1_section_tracker}{Section\+Tracker}} \& {\bfseries acquire} (\mbox{\hyperlink{class_catch_1_1_test_case_tracking_1_1_tracker_context}{Tracker\+Context}} \&ctx, \mbox{\hyperlink{struct_catch_1_1_test_case_tracking_1_1_name_and_location}{Name\+And\+Location}} const \&name\+And\+Location)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_catch_1_1_test_case_tracking_1_1_section_tracker_a4996613c5766729872f1bf6b96613909}\label{class_catch_1_1_test_case_tracking_1_1_section_tracker_a4996613c5766729872f1bf6b96613909}} 
+\index{Catch::TestCaseTracking::SectionTracker@{Catch::TestCaseTracking::SectionTracker}!isSectionTracker@{isSectionTracker}}
+\index{isSectionTracker@{isSectionTracker}!Catch::TestCaseTracking::SectionTracker@{Catch::TestCaseTracking::SectionTracker}}
+\doxysubsubsection{\texorpdfstring{isSectionTracker()}{isSectionTracker()}}
+{\footnotesize\ttfamily bool Catch\+::\+Test\+Case\+Tracking\+::\+Section\+Tracker\+::is\+Section\+Tracker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns true if the instance is a section tracker
+
+Subclasses should override to true if they are, replaces RTTI for internal debug checks. 
+
+Reimplemented from \mbox{\hyperlink{class_catch_1_1_test_case_tracking_1_1_i_tracker_aae61603316e5bc2e88c41ebe99686bc0}{Catch\+::\+Test\+Case\+Tracking\+::\+ITracker}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/catch2/\mbox{\hyperlink{catch__amalgamated_8hpp}{catch\+\_\+amalgamated.\+hpp}}\end{DoxyCompactItemize}

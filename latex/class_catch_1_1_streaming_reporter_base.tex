@@ -1,0 +1,132 @@
+\hypertarget{class_catch_1_1_streaming_reporter_base}{}\doxysection{Catch\+::Streaming\+Reporter\+Base Class Reference}
+\label{class_catch_1_1_streaming_reporter_base}\index{Catch::StreamingReporterBase@{Catch::StreamingReporterBase}}
+
+
+Inheritance diagram for Catch\+::Streaming\+Reporter\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_catch_1_1_streaming_reporter_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Catch\+::Streaming\+Reporter\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_catch_1_1_streaming_reporter_base__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_streaming_reporter_base_a0a58760a218c47969e05aa5097e2fc04}\label{class_catch_1_1_streaming_reporter_base_a0a58760a218c47969e05aa5097e2fc04}} 
+void \mbox{\hyperlink{class_catch_1_1_streaming_reporter_base_a0a58760a218c47969e05aa5097e2fc04}{benchmark\+Preparing}} (\mbox{\hyperlink{class_catch_1_1_string_ref}{String\+Ref}}) override
+\begin{DoxyCompactList}\small\item\em Called when user-\/code is being probed before the actual benchmark runs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_streaming_reporter_base_aa7a219bb6a3b578f1feb8a352e63d247}\label{class_catch_1_1_streaming_reporter_base_aa7a219bb6a3b578f1feb8a352e63d247}} 
+void \mbox{\hyperlink{class_catch_1_1_streaming_reporter_base_aa7a219bb6a3b578f1feb8a352e63d247}{benchmark\+Starting}} (\mbox{\hyperlink{struct_catch_1_1_benchmark_info}{Benchmark\+Info}} const \&) override
+\begin{DoxyCompactList}\small\item\em Called after probe but before the user-\/code is being benchmarked. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_streaming_reporter_base_a33ec3872d7d5b221568555ff6ac631c6}\label{class_catch_1_1_streaming_reporter_base_a33ec3872d7d5b221568555ff6ac631c6}} 
+void \mbox{\hyperlink{class_catch_1_1_streaming_reporter_base_a33ec3872d7d5b221568555ff6ac631c6}{benchmark\+Ended}} (\mbox{\hyperlink{struct_catch_1_1_benchmark_stats}{Benchmark\+Stats}}$<$$>$ const \&) override
+\begin{DoxyCompactList}\small\item\em Called with the benchmark results if benchmark successfully finishes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_streaming_reporter_base_a91ea142e8396bd3ab69b3e32b2eb513e}\label{class_catch_1_1_streaming_reporter_base_a91ea142e8396bd3ab69b3e32b2eb513e}} 
+void \mbox{\hyperlink{class_catch_1_1_streaming_reporter_base_a91ea142e8396bd3ab69b3e32b2eb513e}{benchmark\+Failed}} (\mbox{\hyperlink{class_catch_1_1_string_ref}{String\+Ref}}) override
+\begin{DoxyCompactList}\small\item\em Called if running the benchmarks fails for any reason. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_streaming_reporter_base_ac4fdeb6e1346d59cad24a74c3cbeef58}\label{class_catch_1_1_streaming_reporter_base_ac4fdeb6e1346d59cad24a74c3cbeef58}} 
+void \mbox{\hyperlink{class_catch_1_1_streaming_reporter_base_ac4fdeb6e1346d59cad24a74c3cbeef58}{fatal\+Error\+Encountered}} (\mbox{\hyperlink{class_catch_1_1_string_ref}{String\+Ref}}) override
+\begin{DoxyCompactList}\small\item\em Called if a fatal error (signal/structured exception) occured. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_streaming_reporter_base_aefc11d7016246564f57f941f1ff583d9}\label{class_catch_1_1_streaming_reporter_base_aefc11d7016246564f57f941f1ff583d9}} 
+void \mbox{\hyperlink{class_catch_1_1_streaming_reporter_base_aefc11d7016246564f57f941f1ff583d9}{no\+Matching\+Test\+Cases}} (\mbox{\hyperlink{class_catch_1_1_string_ref}{String\+Ref}}) override
+\begin{DoxyCompactList}\small\item\em Called when no test cases match provided test spec. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_streaming_reporter_base_adfde6846b8dccfad4f0fae0ce8d11f1f}\label{class_catch_1_1_streaming_reporter_base_adfde6846b8dccfad4f0fae0ce8d11f1f}} 
+void \mbox{\hyperlink{class_catch_1_1_streaming_reporter_base_adfde6846b8dccfad4f0fae0ce8d11f1f}{report\+Invalid\+Test\+Spec}} (\mbox{\hyperlink{class_catch_1_1_string_ref}{String\+Ref}}) override
+\begin{DoxyCompactList}\small\item\em Called for all invalid test specs from the cli. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_catch_1_1_streaming_reporter_base_a5ce94d2e8b64c49e4ace01c64f249716}{test\+Run\+Starting}} (\mbox{\hyperlink{struct_catch_1_1_test_run_info}{Test\+Run\+Info}} const \&\+\_\+test\+Run\+Info) override
+\item 
+\mbox{\Hypertarget{class_catch_1_1_streaming_reporter_base_a40e91b413710721143981bfd4c78a37b}\label{class_catch_1_1_streaming_reporter_base_a40e91b413710721143981bfd4c78a37b}} 
+void \mbox{\hyperlink{class_catch_1_1_streaming_reporter_base_a40e91b413710721143981bfd4c78a37b}{test\+Case\+Starting}} (\mbox{\hyperlink{struct_catch_1_1_test_case_info}{Test\+Case\+Info}} const \&\+\_\+test\+Info) override
+\begin{DoxyCompactList}\small\item\em Called {\itshape once} for each TEST\+\_\+\+CASE, no matter how many times it is entered. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_streaming_reporter_base_af6f4599ca6f53625379d1d785e856433}\label{class_catch_1_1_streaming_reporter_base_af6f4599ca6f53625379d1d785e856433}} 
+void \mbox{\hyperlink{class_catch_1_1_streaming_reporter_base_af6f4599ca6f53625379d1d785e856433}{test\+Case\+Partial\+Starting}} (\mbox{\hyperlink{struct_catch_1_1_test_case_info}{Test\+Case\+Info}} const \&, uint64\+\_\+t) override
+\begin{DoxyCompactList}\small\item\em Called {\itshape every time} a TEST\+\_\+\+CASE is entered, including repeats (due to sections) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_streaming_reporter_base_a2138331de72f8dbae4e46cdd741f9656}\label{class_catch_1_1_streaming_reporter_base_a2138331de72f8dbae4e46cdd741f9656}} 
+void \mbox{\hyperlink{class_catch_1_1_streaming_reporter_base_a2138331de72f8dbae4e46cdd741f9656}{section\+Starting}} (\mbox{\hyperlink{struct_catch_1_1_section_info}{Section\+Info}} const \&\+\_\+section\+Info) override
+\begin{DoxyCompactList}\small\item\em Called when a {\ttfamily SECTION} is being entered. Not called for skipped sections. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_streaming_reporter_base_a820fa157b402050fa1af4bdebf2b2a7c}\label{class_catch_1_1_streaming_reporter_base_a820fa157b402050fa1af4bdebf2b2a7c}} 
+void \mbox{\hyperlink{class_catch_1_1_streaming_reporter_base_a820fa157b402050fa1af4bdebf2b2a7c}{assertion\+Starting}} (\mbox{\hyperlink{struct_catch_1_1_assertion_info}{Assertion\+Info}} const \&) override
+\begin{DoxyCompactList}\small\item\em Called before assertion success/failure is evaluated. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_streaming_reporter_base_a89acc09398d5b8078e3fe2ae5e61e68d}\label{class_catch_1_1_streaming_reporter_base_a89acc09398d5b8078e3fe2ae5e61e68d}} 
+void \mbox{\hyperlink{class_catch_1_1_streaming_reporter_base_a89acc09398d5b8078e3fe2ae5e61e68d}{assertion\+Ended}} (\mbox{\hyperlink{struct_catch_1_1_assertion_stats}{Assertion\+Stats}} const \&) override
+\begin{DoxyCompactList}\small\item\em Called after assertion was fully evaluated. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_streaming_reporter_base_a8572eff6839988af6bf2866922d30c7b}\label{class_catch_1_1_streaming_reporter_base_a8572eff6839988af6bf2866922d30c7b}} 
+void \mbox{\hyperlink{class_catch_1_1_streaming_reporter_base_a8572eff6839988af6bf2866922d30c7b}{section\+Ended}} (\mbox{\hyperlink{struct_catch_1_1_section_stats}{Section\+Stats}} const \&) override
+\begin{DoxyCompactList}\small\item\em Called after a {\ttfamily SECTION} has finished running. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_streaming_reporter_base_a8757208f79d83984ea5dae0678839df4}\label{class_catch_1_1_streaming_reporter_base_a8757208f79d83984ea5dae0678839df4}} 
+void \mbox{\hyperlink{class_catch_1_1_streaming_reporter_base_a8757208f79d83984ea5dae0678839df4}{test\+Case\+Partial\+Ended}} (\mbox{\hyperlink{struct_catch_1_1_test_case_stats}{Test\+Case\+Stats}} const \&, uint64\+\_\+t) override
+\begin{DoxyCompactList}\small\item\em Called {\itshape every time} a TEST\+\_\+\+CASE is entered, including repeats (due to sections) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_streaming_reporter_base_a6aaf2ea1da223091c4d29ef1883ac5ca}\label{class_catch_1_1_streaming_reporter_base_a6aaf2ea1da223091c4d29ef1883ac5ca}} 
+void \mbox{\hyperlink{class_catch_1_1_streaming_reporter_base_a6aaf2ea1da223091c4d29ef1883ac5ca}{test\+Case\+Ended}} (\mbox{\hyperlink{struct_catch_1_1_test_case_stats}{Test\+Case\+Stats}} const \&) override
+\begin{DoxyCompactList}\small\item\em Called {\itshape once} for each TEST\+\_\+\+CASE, no matter how many times it is entered. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_catch_1_1_streaming_reporter_base_abc6e39389e0bb22fb2fce977ced959af}{test\+Run\+Ended}} (\mbox{\hyperlink{struct_catch_1_1_test_run_stats}{Test\+Run\+Stats}} const \&) override
+\item 
+\mbox{\Hypertarget{class_catch_1_1_streaming_reporter_base_aa532201eaf113730b0b16fc8710f5381}\label{class_catch_1_1_streaming_reporter_base_aa532201eaf113730b0b16fc8710f5381}} 
+void \mbox{\hyperlink{class_catch_1_1_streaming_reporter_base_aa532201eaf113730b0b16fc8710f5381}{skip\+Test}} (\mbox{\hyperlink{struct_catch_1_1_test_case_info}{Test\+Case\+Info}} const \&) override
+\begin{DoxyCompactList}\small\item\em Called with test cases that are skipped due to the test run aborting. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_catch_1_1_streaming_reporter_base_afe1cb76ff7af81e7c0c10108a41b90ca}\label{class_catch_1_1_streaming_reporter_base_afe1cb76ff7af81e7c0c10108a41b90ca}} 
+{\bfseries Reporter\+Base} (\mbox{\hyperlink{struct_catch_1_1_reporter_config}{Reporter\+Config}} \&\&config)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_streaming_reporter_base_a973ae44ceadf335cd07e48cd4ea61335}\label{class_catch_1_1_streaming_reporter_base_a973ae44ceadf335cd07e48cd4ea61335}} 
+\mbox{\hyperlink{struct_catch_1_1_test_run_info}{Test\+Run\+Info}} {\bfseries current\+Test\+Run\+Info} \{ \char`\"{}test run has not started yet\char`\"{}\+\_\+sr \}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_streaming_reporter_base_af9ca5c5966f269475d9621aa5e63a111}\label{class_catch_1_1_streaming_reporter_base_af9ca5c5966f269475d9621aa5e63a111}} 
+\mbox{\hyperlink{struct_catch_1_1_test_case_info}{Test\+Case\+Info}} const  $\ast$ {\bfseries current\+Test\+Case\+Info} = nullptr
+\item 
+\mbox{\Hypertarget{class_catch_1_1_streaming_reporter_base_a82f2a7a5dec58bc093f6ab26a9e47bd8}\label{class_catch_1_1_streaming_reporter_base_a82f2a7a5dec58bc093f6ab26a9e47bd8}} 
+std\+::vector$<$ \mbox{\hyperlink{struct_catch_1_1_section_info}{Section\+Info}} $>$ \mbox{\hyperlink{class_catch_1_1_streaming_reporter_base_a82f2a7a5dec58bc093f6ab26a9e47bd8}{m\+\_\+section\+Stack}}
+\begin{DoxyCompactList}\small\item\em Stack of all {\itshape active} sections in the {\itshape current} test case. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_catch_1_1_streaming_reporter_base_abc6e39389e0bb22fb2fce977ced959af}\label{class_catch_1_1_streaming_reporter_base_abc6e39389e0bb22fb2fce977ced959af}} 
+\index{Catch::StreamingReporterBase@{Catch::StreamingReporterBase}!testRunEnded@{testRunEnded}}
+\index{testRunEnded@{testRunEnded}!Catch::StreamingReporterBase@{Catch::StreamingReporterBase}}
+\doxysubsubsection{\texorpdfstring{testRunEnded()}{testRunEnded()}}
+{\footnotesize\ttfamily void Catch\+::\+Streaming\+Reporter\+Base\+::test\+Run\+Ended (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_catch_1_1_test_run_stats}{Test\+Run\+Stats}} const \&}]{test\+Run\+Stats }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called once after all tests in a testing run are finished
+
+Not called if tests weren\textquotesingle{}t run (e.\+g. only listings happened) 
+
+Implements \mbox{\hyperlink{class_catch_1_1_i_event_listener_a97a17235b82da761043654491db0b17c}{Catch\+::\+IEvent\+Listener}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_catch_1_1_xml_reporter_a2458c9f342a446f0b3a7480b53c93705}{Catch\+::\+Xml\+Reporter}}, \mbox{\hyperlink{class_catch_1_1_team_city_reporter_a24b5605a24211cfa676367083a617de2}{Catch\+::\+Team\+City\+Reporter}}, \mbox{\hyperlink{class_catch_1_1_t_a_p_reporter_a991c5fc83855f65e11e840044335198a}{Catch\+::\+TAPReporter}}, \mbox{\hyperlink{class_catch_1_1_console_reporter_a665c8005050d0f1745935e0dde76e280}{Catch\+::\+Console\+Reporter}}, and \mbox{\hyperlink{class_catch_1_1_compact_reporter_abf31540bf74013cb7736f28291712d53}{Catch\+::\+Compact\+Reporter}}.
+
+\mbox{\Hypertarget{class_catch_1_1_streaming_reporter_base_a5ce94d2e8b64c49e4ace01c64f249716}\label{class_catch_1_1_streaming_reporter_base_a5ce94d2e8b64c49e4ace01c64f249716}} 
+\index{Catch::StreamingReporterBase@{Catch::StreamingReporterBase}!testRunStarting@{testRunStarting}}
+\index{testRunStarting@{testRunStarting}!Catch::StreamingReporterBase@{Catch::StreamingReporterBase}}
+\doxysubsubsection{\texorpdfstring{testRunStarting()}{testRunStarting()}}
+{\footnotesize\ttfamily void Catch\+::\+Streaming\+Reporter\+Base\+::test\+Run\+Starting (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_catch_1_1_test_run_info}{Test\+Run\+Info}} const \&}]{test\+Run\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Called once in a testing run before tests are started
+
+Not called if tests won\textquotesingle{}t be run (e.\+g. only listing will happen) 
+
+Implements \mbox{\hyperlink{class_catch_1_1_i_event_listener_a3b7a9118f5b47011216aa31424ec4982}{Catch\+::\+IEvent\+Listener}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_catch_1_1_xml_reporter_ab5de0b02d5a30612ae5449360d867672}{Catch\+::\+Xml\+Reporter}}, \mbox{\hyperlink{class_catch_1_1_t_a_p_reporter_a8305b2fafb71c9cca89169c324c184b4}{Catch\+::\+TAPReporter}}, \mbox{\hyperlink{class_catch_1_1_team_city_reporter_a9bca0ba3145a94f3fb38cdc7a4d0fac0}{Catch\+::\+Team\+City\+Reporter}}, \mbox{\hyperlink{class_catch_1_1_console_reporter_a89d08018bf29583341bdfe7422007011}{Catch\+::\+Console\+Reporter}}, and \mbox{\hyperlink{class_catch_1_1_compact_reporter_a3369af7c6cedb376cb6b8f6e46be5ebf}{Catch\+::\+Compact\+Reporter}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/catch2/\mbox{\hyperlink{catch__amalgamated_8hpp}{catch\+\_\+amalgamated.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,79 @@
+\hypertarget{class_catch_1_1_detail_1_1unique__ptr}{}\doxysection{Catch\+::Detail\+::unique\+\_\+ptr$<$ T $>$ Class Template Reference}
+\label{class_catch_1_1_detail_1_1unique__ptr}\index{Catch::Detail::unique\_ptr$<$ T $>$@{Catch::Detail::unique\_ptr$<$ T $>$}}
+
+
+{\ttfamily \#include $<$catch\+\_\+amalgamated.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_detail_1_1unique__ptr_a7ab896098db02738739c9e66a466585d}\label{class_catch_1_1_detail_1_1unique__ptr_a7ab896098db02738739c9e66a466585d}} 
+constexpr {\bfseries unique\+\_\+ptr} (std\+::nullptr\+\_\+t=nullptr)
+\item 
+\mbox{\Hypertarget{class_catch_1_1_detail_1_1unique__ptr_ade89e9372df0a1d95755a9d2a36cb161}\label{class_catch_1_1_detail_1_1unique__ptr_ade89e9372df0a1d95755a9d2a36cb161}} 
+constexpr {\bfseries unique\+\_\+ptr} (T $\ast$ptr)
+\item 
+\mbox{\Hypertarget{class_catch_1_1_detail_1_1unique__ptr_af9a3368047f17545019d9f59e393dbd2}\label{class_catch_1_1_detail_1_1unique__ptr_af9a3368047f17545019d9f59e393dbd2}} 
+{\footnotesize template$<$typename U , typename  = std\+::enable\+\_\+if\+\_\+t$<$std\+::is\+\_\+base\+\_\+of$<$\+T, U$>$\+::value$>$$>$ }\\{\bfseries unique\+\_\+ptr} (\mbox{\hyperlink{class_catch_1_1_detail_1_1unique__ptr}{unique\+\_\+ptr}}$<$ U $>$ \&\&from)
+\item 
+\mbox{\Hypertarget{class_catch_1_1_detail_1_1unique__ptr_a7546c6dd35d165131d79bc80b6dc3006}\label{class_catch_1_1_detail_1_1unique__ptr_a7546c6dd35d165131d79bc80b6dc3006}} 
+{\footnotesize template$<$typename U , typename  = std\+::enable\+\_\+if\+\_\+t$<$std\+::is\+\_\+base\+\_\+of$<$\+T, U$>$\+::value$>$$>$ }\\\mbox{\hyperlink{class_catch_1_1_detail_1_1unique__ptr}{unique\+\_\+ptr}} \& {\bfseries operator=} (\mbox{\hyperlink{class_catch_1_1_detail_1_1unique__ptr}{unique\+\_\+ptr}}$<$ U $>$ \&\&from)
+\item 
+\mbox{\Hypertarget{class_catch_1_1_detail_1_1unique__ptr_aa9c7f2059c8c6ef34bbd5e6968c31c0c}\label{class_catch_1_1_detail_1_1unique__ptr_aa9c7f2059c8c6ef34bbd5e6968c31c0c}} 
+{\bfseries unique\+\_\+ptr} (\mbox{\hyperlink{class_catch_1_1_detail_1_1unique__ptr}{unique\+\_\+ptr}} const \&)=delete
+\item 
+\mbox{\Hypertarget{class_catch_1_1_detail_1_1unique__ptr_af7b1bfc30bd55948676a2d91f5d4dfdc}\label{class_catch_1_1_detail_1_1unique__ptr_af7b1bfc30bd55948676a2d91f5d4dfdc}} 
+\mbox{\hyperlink{class_catch_1_1_detail_1_1unique__ptr}{unique\+\_\+ptr}} \& {\bfseries operator=} (\mbox{\hyperlink{class_catch_1_1_detail_1_1unique__ptr}{unique\+\_\+ptr}} const \&)=delete
+\item 
+\mbox{\Hypertarget{class_catch_1_1_detail_1_1unique__ptr_a5266a33f00a306a6156c6d4356e772ae}\label{class_catch_1_1_detail_1_1unique__ptr_a5266a33f00a306a6156c6d4356e772ae}} 
+{\bfseries unique\+\_\+ptr} (\mbox{\hyperlink{class_catch_1_1_detail_1_1unique__ptr}{unique\+\_\+ptr}} \&\&rhs) noexcept
+\item 
+\mbox{\Hypertarget{class_catch_1_1_detail_1_1unique__ptr_a3b1362e0b124f15ff8748989a22f5bca}\label{class_catch_1_1_detail_1_1unique__ptr_a3b1362e0b124f15ff8748989a22f5bca}} 
+\mbox{\hyperlink{class_catch_1_1_detail_1_1unique__ptr}{unique\+\_\+ptr}} \& {\bfseries operator=} (\mbox{\hyperlink{class_catch_1_1_detail_1_1unique__ptr}{unique\+\_\+ptr}} \&\&rhs) noexcept
+\item 
+\mbox{\Hypertarget{class_catch_1_1_detail_1_1unique__ptr_a8d07060bd8f19c98c3a3b78a8260e8bb}\label{class_catch_1_1_detail_1_1unique__ptr_a8d07060bd8f19c98c3a3b78a8260e8bb}} 
+T \& {\bfseries operator$\ast$} ()
+\item 
+\mbox{\Hypertarget{class_catch_1_1_detail_1_1unique__ptr_a6859a1b6730623182adb7df7651d5627}\label{class_catch_1_1_detail_1_1unique__ptr_a6859a1b6730623182adb7df7651d5627}} 
+T const  \& {\bfseries operator$\ast$} () const
+\item 
+\mbox{\Hypertarget{class_catch_1_1_detail_1_1unique__ptr_a901db5a70adc5a50f6c31f201111d550}\label{class_catch_1_1_detail_1_1unique__ptr_a901db5a70adc5a50f6c31f201111d550}} 
+T $\ast$ {\bfseries operator-\/$>$} () noexcept
+\item 
+\mbox{\Hypertarget{class_catch_1_1_detail_1_1unique__ptr_a4219bdb2941c668e8c092409126f59d6}\label{class_catch_1_1_detail_1_1unique__ptr_a4219bdb2941c668e8c092409126f59d6}} 
+T const  $\ast$ {\bfseries operator-\/$>$} () const noexcept
+\item 
+\mbox{\Hypertarget{class_catch_1_1_detail_1_1unique__ptr_ab627d9d4253629eb99b8f2a38465c808}\label{class_catch_1_1_detail_1_1unique__ptr_ab627d9d4253629eb99b8f2a38465c808}} 
+T $\ast$ {\bfseries get} ()
+\item 
+\mbox{\Hypertarget{class_catch_1_1_detail_1_1unique__ptr_a408382fc0fb1cac5ca649ec47af5466a}\label{class_catch_1_1_detail_1_1unique__ptr_a408382fc0fb1cac5ca649ec47af5466a}} 
+T const  $\ast$ {\bfseries get} () const
+\item 
+\mbox{\Hypertarget{class_catch_1_1_detail_1_1unique__ptr_ab7ef130f75c1073991ac87db1dea7a9a}\label{class_catch_1_1_detail_1_1unique__ptr_ab7ef130f75c1073991ac87db1dea7a9a}} 
+void {\bfseries reset} (T $\ast$ptr=nullptr)
+\item 
+\mbox{\Hypertarget{class_catch_1_1_detail_1_1unique__ptr_a6c2ee19a28353e3c7340de26b0c0c76c}\label{class_catch_1_1_detail_1_1unique__ptr_a6c2ee19a28353e3c7340de26b0c0c76c}} 
+T $\ast$ {\bfseries release} ()
+\item 
+\mbox{\Hypertarget{class_catch_1_1_detail_1_1unique__ptr_aa3bb65a8d1bee50025335052b088372f}\label{class_catch_1_1_detail_1_1unique__ptr_aa3bb65a8d1bee50025335052b088372f}} 
+{\bfseries operator bool} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_catch_1_1_detail_1_1unique__ptr_a6b7061af88a95f3ca8ec86dac1ac0c47}\label{class_catch_1_1_detail_1_1unique__ptr_a6b7061af88a95f3ca8ec86dac1ac0c47}} 
+void {\bfseries swap} (\mbox{\hyperlink{class_catch_1_1_detail_1_1unique__ptr}{unique\+\_\+ptr}} \&lhs, \mbox{\hyperlink{class_catch_1_1_detail_1_1unique__ptr}{unique\+\_\+ptr}} \&rhs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Catch\+::\+Detail\+::unique\+\_\+ptr$<$ T $>$}
+
+A reimplementation of {\ttfamily std\+::unique\+\_\+ptr} for improved compilation performance
+
+Does not support arrays nor custom deleters. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/catch2/\mbox{\hyperlink{catch__amalgamated_8hpp}{catch\+\_\+amalgamated.\+hpp}}\end{DoxyCompactItemize}
