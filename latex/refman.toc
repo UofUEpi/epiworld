@@ -114,6 +114,7 @@
 \contentsline {subsection}{\numberline {5.69.2}Member Function Documentation}{91}{subsection.5.69.2}%
 \contentsline {subsubsection}{\numberline {5.69.2.1}record\_variant()}{91}{subsubsection.5.69.2.1}%
 \contentsline {subsubsection}{\numberline {5.69.2.2}reproductive\_number()}{92}{subsubsection.5.69.2.2}%
+\contentsline {subsubsection}{\numberline {5.69.2.3}transition\_probability()}{92}{subsubsection.5.69.2.3}%
 \contentsline {section}{\numberline {5.70}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Decomposer Struct Reference}{92}{section.5.70}%
 \contentsline {section}{\numberline {5.71}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Ends\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}With\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matcher Class Reference}{93}{section.5.71}%
 \contentsline {section}{\numberline {5.72}Entity$<$ TSeq $>$ Class Template Reference}{94}{section.5.72}%

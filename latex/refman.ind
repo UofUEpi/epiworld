@@ -555,7 +555,8 @@
 
   \item {DataBase$<$ TSeq $>$}, \hyperpage{90}
     \subitem {record\_variant}, \hyperpage{91}
-    \subitem {reproductive\_number}, \hyperpage{91}
+    \subitem {reproductive\_number}, \hyperpage{92}
+    \subitem {transition\_probability}, \hyperpage{92}
   \item {Default}
     \subitem {catch\_amalgamated.hpp}, \hyperpage{345}
   \item {defaultListListeners}
@@ -773,7 +774,7 @@
   \item {registerReporterImpl}
     \subitem {catch\_amalgamated.hpp}, \hyperpage{349}
   \item {reproductive\_number}
-    \subitem {DataBase$<$ TSeq $>$}, \hyperpage{91}
+    \subitem {DataBase$<$ TSeq $>$}, \hyperpage{92}
   \item {reset}
     \subitem {Model$<$ TSeq $>$}, \hyperpage{181}
   \item {ResultType}
@@ -819,6 +820,8 @@
   \item {Tool$<$ TSeq $>$}, \hyperpage{274}
   \item {Tools$<$ TSeq $>$}, \hyperpage{275}
   \item {Tools\_const$<$ TSeq $>$}, \hyperpage{276}
+  \item {transition\_probability}
+    \subitem {DataBase$<$ TSeq $>$}, \hyperpage{92}
 
   \indexspace
 

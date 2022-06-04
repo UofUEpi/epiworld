@@ -95,8 +95,10 @@
 \indexentry{DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}|hyperpage}{90}
 \indexentry{DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}!record\_variant@{record\_variant}|hyperpage}{91}
 \indexentry{record\_variant@{record\_variant}!DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}|hyperpage}{91}
-\indexentry{DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}!reproductive\_number@{reproductive\_number}|hyperpage}{91}
-\indexentry{reproductive\_number@{reproductive\_number}!DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}|hyperpage}{91}
+\indexentry{DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}!reproductive\_number@{reproductive\_number}|hyperpage}{92}
+\indexentry{reproductive\_number@{reproductive\_number}!DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}|hyperpage}{92}
+\indexentry{DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}!transition\_probability@{transition\_probability}|hyperpage}{92}
+\indexentry{transition\_probability@{transition\_probability}!DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}|hyperpage}{92}
 \indexentry{Catch::Decomposer@{Catch::Decomposer}|hyperpage}{92}
 \indexentry{Catch::Matchers::EndsWithMatcher@{Catch::Matchers::EndsWithMatcher}|hyperpage}{93}
 \indexentry{Entity$<$ TSeq $>$@{Entity$<$ TSeq $>$}|hyperpage}{94}

@@ -67,7 +67,9 @@ void {\bfseries add\+\_\+user\+\_\+data} (unsigned int j, epiworld\+\_\+double x
 \item 
 \mbox{\Hypertarget{class_data_base_a3323ea7c7b2fbd8366ac7e8efd5528b8}\label{class_data_base_a3323ea7c7b2fbd8366ac7e8efd5528b8}} 
 \mbox{\hyperlink{class_user_data}{User\+Data}}$<$ TSeq $>$ \& {\bfseries get\+\_\+user\+\_\+data} ()
-\end{DoxyCompactItemize}
+\item 
+std\+::vector$<$ epiworld\+\_\+double $>$ \mbox{\hyperlink{class_data_base_a3391ab73b07892c8b66160e61dd294fd}{transition\+\_\+probability}} (bool print=true) const
+\begin{DoxyCompactList}\small\item\em Calculates the transition probabilities. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \begin{Indent}\textbf{ Get recorded information from the model}\par
 {\em 
 \begin{DoxyParams}{Parameters}
@@ -181,6 +183,20 @@ Computes the reproductive number of each case.
 {\em fn} & File where to write out the reproductive number. \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{class_data_base_a3391ab73b07892c8b66160e61dd294fd}\label{class_data_base_a3391ab73b07892c8b66160e61dd294fd}} 
+\index{DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}!transition\_probability@{transition\_probability}}
+\index{transition\_probability@{transition\_probability}!DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}}
+\doxysubsubsection{\texorpdfstring{transition\_probability()}{transition\_probability()}}
+{\footnotesize\ttfamily template$<$typename TSeq $>$ \\
+std\+::vector$<$ epiworld\+\_\+double $>$ \mbox{\hyperlink{class_data_base}{Data\+Base}}$<$ TSeq $>$\+::transition\+\_\+probability (\begin{DoxyParamCaption}\item[{bool}]{print = {\ttfamily true} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calculates the transition probabilities. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$ epiworld\+\_\+double $>$ 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

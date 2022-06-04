@@ -249,16 +249,16 @@ $(function() {
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    {</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        </div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_model.html#aa3ce8d5f025e239f8090ab9645f3e917">today</a>() != 0)</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            fmt = <span class="stringliteral">&quot; - (%&quot;</span> + std::to_string(nstatus).length() +</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            fmt = <span class="stringliteral">&quot;  - (%&quot;</span> + std::to_string(nstatus).length() +</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                std::string(<span class="stringliteral">&quot;d) %-&quot;</span>) + std::to_string(nchar) + <span class="stringliteral">&quot;s : %&quot;</span> +</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                std::to_string(std::to_string(size()).length()) + <span class="stringliteral">&quot;i -&gt; %i\n&quot;</span>;</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            fmt = <span class="stringliteral">&quot; - (%&quot;</span> + std::to_string(nstatus).length() +</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            fmt = <span class="stringliteral">&quot;  - (%&quot;</span> + std::to_string(nstatus).length() +</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                std::string(<span class="stringliteral">&quot;d) %-&quot;</span>) + std::to_string(nchar) + <span class="stringliteral">&quot;s : %i\n&quot;</span>;</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    }</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        fmt = <span class="stringliteral">&quot; - (%&quot;</span> + std::to_string(nstatus).length() +</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        fmt = <span class="stringliteral">&quot;  - (%&quot;</span> + std::to_string(nstatus).length() +</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            std::string(<span class="stringliteral">&quot;d) %-&quot;</span>) + std::to_string(nchar) + <span class="stringliteral">&quot;s : %s\n&quot;</span>;</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        </div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    printf_epiworld(<span class="stringliteral">&quot;\nDistribution of the population at time %i:\n&quot;</span>, <a class="code" href="class_model.html#aa3ce8d5f025e239f8090ab9645f3e917">today</a>());</div>

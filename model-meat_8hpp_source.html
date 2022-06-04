@@ -1437,7 +1437,7 @@ $(function() {
 <div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;}</div>
 <div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160; </div>
 <div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;template&lt;typename TSeq&gt;</div>
-<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;inline epiworld_double <a class="code" href="class_model.html">Model</a>&lt;TSeq&gt;::get_param(std::<span class="keywordtype">string</span> pname)</div>
+<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;inline constexpr epiworld_double <a class="code" href="class_model.html">Model</a>&lt;TSeq&gt;::get_param(std::<span class="keywordtype">string</span> pname)</div>
 <div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;{</div>
 <div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;    <span class="keywordflow">if</span> (parameters.find(pname) == parameters.end())</div>
 <div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;        <span class="keywordflow">throw</span> std::logic_error(<span class="stringliteral">&quot;The parameter &quot;</span> + pname + <span class="stringliteral">&quot; does not exists.&quot;</span>);</div>
@@ -1446,7 +1446,7 @@ $(function() {
 <div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;}</div>
 <div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160; </div>
 <div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;<span class="keyword">inline</span> epiworld_double <a class="code" href="class_model.html">Model&lt;TSeq&gt;::par</a>(std::string pname)</div>
+<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;<span class="keyword">inline</span> constexpr epiworld_double <a class="code" href="class_model.html">Model&lt;TSeq&gt;::par</a>(std::string pname)</div>
 <div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;{</div>
 <div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;    <span class="keywordflow">return</span> parameters[pname];</div>
 <div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;}</div>
