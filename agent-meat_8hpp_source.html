@@ -694,9 +694,32 @@ $(function() {
 <div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160; </div>
 <div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;}</div>
 <div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160; </div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;<span class="preprocessor">#undef CHECK_COALESCE_</span></div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160; </div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_agent.html">Agent&lt;TSeq&gt;::print</a>(<span class="keywordtype">bool</span> compressed)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160; </div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;    <span class="keywordflow">if</span> (compressed)</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;    {</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;        printf_epiworld(</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;            <span class="stringliteral">&quot;Agent: %i, Status: %s (%lu), Nvirus: %lu, NTools: %lu, NNeigh: %lu\n&quot;</span>,</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;            <span class="keywordtype">id</span>, model-&gt;status_labels[status].c_str(), status, n_tools, n_viruses, neighbors.size()</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;        );</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;    }</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;        printf_epiworld(<span class="stringliteral">&quot;Information about agent id %i\n&quot;</span>, this-&gt;<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;        printf_epiworld(<span class="stringliteral">&quot;  Status       : %s (%lu)\n&quot;</span>, model-&gt;status_labels[status].c_str(), status);</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;        printf_epiworld(<span class="stringliteral">&quot;  Tool count   : %lu\n&quot;</span>, n_tools);</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;        printf_epiworld(<span class="stringliteral">&quot;  Virus count  : %lu\n&quot;</span>, n_viruses);</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;        printf_epiworld(<span class="stringliteral">&quot;  Neigh. count : %lu\n&quot;</span>, neighbors.size());</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;    }</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160; </div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160; </div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;}</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160; </div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;<span class="preprocessor">#undef CHECK_COALESCE_</span></div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160; </div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_agent_html"><div class="ttname"><a href="class_agent.html">Agent&lt; TSeq &gt;</a></div></div>
 <div class="ttc" id="aclass_agent_html_a3763f12b56e8dd7f0e23bbca4f183c8a"><div class="ttname"><a href="class_agent.html#a3763f12b56e8dd7f0e23bbca4f183c8a">Agent::get_id</a></div><div class="ttdeci">int get_id() const</div><div class="ttdoc">Id of the individual.</div></div>
 <div class="ttc" id="aclass_agent_html_ad5f1f07d77bc303809af93c49025c434"><div class="ttname"><a href="class_agent.html#ad5f1f07d77bc303809af93c49025c434">Agent::rm_agent_by_virus</a></div><div class="ttdeci">void rm_agent_by_virus(epiworld_fast_uint virus_idx, epiworld_fast_int status_new=-99, epiworld_fast_int queue=-99)</div><div class="ttdoc">Agent removed by virus.</div></div>

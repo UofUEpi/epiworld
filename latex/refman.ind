@@ -5,7 +5,7 @@
   \item {Action$<$ TSeq $>$}, \hyperpage{21}
     \subitem {Action}, \hyperpage{22}
   \item {add\_global\_action}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{180}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{181}
   \item {AdjList}, \hyperpage{23}
     \subitem {AdjList}, \hyperpage{23}
     \subitem {read\_edgelist}, \hyperpage{24}
@@ -18,438 +18,438 @@
 
   \item {Catch::always\_false$<$ T $>$}, \hyperpage{28}
   \item {Catch::Approx}, \hyperpage{30}
-  \item {Catch::AssertionHandler}, \hyperpage{34}
-  \item {Catch::AssertionInfo}, \hyperpage{34}
-  \item {Catch::AssertionReaction}, \hyperpage{35}
-  \item {Catch::AssertionResult}, \hyperpage{36}
-  \item {Catch::AssertionResultData}, \hyperpage{37}
-  \item {Catch::AssertionStats}, \hyperpage{38}
-  \item {Catch::AutomakeReporter}, \hyperpage{39}
-  \item {Catch::AutoReg}, \hyperpage{40}
-  \item {Catch::Benchmark::Benchmark}, \hyperpage{42}
-  \item {Catch::Benchmark::Chronometer}, \hyperpage{63}
-  \item {Catch::Benchmark::Detail::BenchmarkFunction}, \hyperpage{42}
-  \item {Catch::Benchmark::Detail::bootstrap\_analysis}, \hyperpage{46}
-  \item {Catch::Benchmark::Detail::ChronometerConcept}, \hyperpage{63}
+  \item {Catch::AssertionHandler}, \hyperpage{35}
+  \item {Catch::AssertionInfo}, \hyperpage{35}
+  \item {Catch::AssertionReaction}, \hyperpage{36}
+  \item {Catch::AssertionResult}, \hyperpage{37}
+  \item {Catch::AssertionResultData}, \hyperpage{38}
+  \item {Catch::AssertionStats}, \hyperpage{39}
+  \item {Catch::AutomakeReporter}, \hyperpage{40}
+  \item {Catch::AutoReg}, \hyperpage{41}
+  \item {Catch::Benchmark::Benchmark}, \hyperpage{43}
+  \item {Catch::Benchmark::Chronometer}, \hyperpage{64}
+  \item {Catch::Benchmark::Detail::BenchmarkFunction}, \hyperpage{43}
+  \item {Catch::Benchmark::Detail::bootstrap\_analysis}, \hyperpage{47}
+  \item {Catch::Benchmark::Detail::ChronometerConcept}, \hyperpage{64}
   \item {Catch::Benchmark::Detail::ChronometerModel$<$ Clock $>$}, 
-		\hyperpage{64}
+		\hyperpage{65}
   \item {Catch::Benchmark::Detail::CompleteInvoker$<$ Result $>$}, 
-		\hyperpage{72}
+		\hyperpage{73}
   \item {Catch::Benchmark::Detail::CompleteInvoker$<$ void $>$}, 
-		\hyperpage{73}
-  \item {Catch::Benchmark::Detail::CompleteType$<$ T $>$}, 
-		\hyperpage{73}
-  \item {Catch::Benchmark::Detail::CompleteType$<$ void $>$}, 
-		\hyperpage{73}
-  \item {Catch::Benchmark::Detail::CompleteType$<$ void $>$::type}, 
-		\hyperpage{280}
-  \item {Catch::Benchmark::Detail::is\_related$<$ T, U $>$}, 
-		\hyperpage{138}
-  \item {Catch::Benchmark::Detail::ObjectStorage$<$ T, Destruct $>$}, 
-		\hyperpage{189}
-  \item {Catch::Benchmark::Detail::repeater$<$ Fun $>$}, 
-		\hyperpage{209}
-  \item {Catch::Benchmark::Environment$<$ Clock $>$}, \hyperpage{96}
-  \item {Catch::Benchmark::EnvironmentEstimate$<$ Duration $>$}, 
-		\hyperpage{97}
-  \item {Catch::Benchmark::Estimate$<$ Duration $>$}, \hyperpage{99}
-  \item {Catch::Benchmark::ExecutionPlan$<$ Duration $>$}, 
-		\hyperpage{105}
-  \item {Catch::Benchmark::now$<$ Clock $>$}, \hyperpage{189}
-  \item {Catch::Benchmark::OutlierClassification}, \hyperpage{192}
-  \item {Catch::Benchmark::SampleAnalysis$<$ Duration $>$}, 
-		\hyperpage{225}
-  \item {Catch::Benchmark::Timing$<$ Duration, Result $>$}, 
-		\hyperpage{273}
-  \item {Catch::BenchmarkInfo}, \hyperpage{43}
-  \item {Catch::BenchmarkStats$<$ Duration $>$}, \hyperpage{44}
-  \item {Catch::BinaryExpr$<$ LhsT, RhsT $>$}, \hyperpage{45}
-  \item {Catch::Capturer}, \hyperpage{61}
-  \item {Catch::Clara::accept\_many\_t}, \hyperpage{21}
-  \item {Catch::Clara::Arg}, \hyperpage{32}
-  \item {Catch::Clara::Args}, \hyperpage{33}
-  \item {Catch::Clara::Detail::BasicResult$<$ T $>$}, \hyperpage{41}
-  \item {Catch::Clara::Detail::BoundFlagLambda$<$ L $>$}, 
-		\hyperpage{47}
-  \item {Catch::Clara::Detail::BoundFlagRef}, \hyperpage{49}
-  \item {Catch::Clara::Detail::BoundFlagRefBase}, \hyperpage{51}
-  \item {Catch::Clara::Detail::BoundLambda$<$ L $>$}, \hyperpage{52}
-  \item {Catch::Clara::Detail::BoundManyLambda$<$ L $>$}, 
-		\hyperpage{54}
-  \item {Catch::Clara::Detail::BoundRef}, \hyperpage{56}
-  \item {Catch::Clara::Detail::BoundValueRef$<$ std::vector$<$ T $>$ $>$}, 
-		\hyperpage{59}
-  \item {Catch::Clara::Detail::BoundValueRef$<$ T $>$}, \hyperpage{57}
-  \item {Catch::Clara::Detail::BoundValueRefBase}, \hyperpage{60}
-  \item {Catch::Clara::Detail::ComposableParserImpl$<$ DerivedT $>$}, 
 		\hyperpage{74}
-  \item {Catch::Clara::Detail::fake\_arg}, \hyperpage{107}
-  \item {Catch::Clara::Detail::HelpColumns}, \hyperpage{121}
-  \item {Catch::Clara::Detail::is\_unary\_function$<$ F, Catch::Detail::void\_t$<$ decltype(std::declval$<$ F $>$()(fake\_arg())) $>$ $>$}, 
-		\hyperpage{140}
-  \item {Catch::Clara::Detail::is\_unary\_function$<$ F, typename $>$}, 
-		\hyperpage{139}
-  \item {Catch::Clara::Detail::LambdaInvoker$<$ ReturnType $>$}, 
-		\hyperpage{151}
-  \item {Catch::Clara::Detail::LambdaInvoker$<$ void $>$}, 
-		\hyperpage{152}
-  \item {Catch::Clara::Detail::ParserBase}, \hyperpage{194}
-  \item {Catch::Clara::Detail::ParserRefImpl$<$ DerivedT $>$}, 
-		\hyperpage{195}
-  \item {Catch::Clara::Detail::ParseState}, \hyperpage{196}
-  \item {Catch::Clara::Detail::ResultBase}, \hyperpage{218}
-  \item {Catch::Clara::Detail::ResultValueBase$<$ T $>$}, 
-		\hyperpage{219}
-  \item {Catch::Clara::Detail::ResultValueBase$<$ void $>$}, 
-		\hyperpage{221}
-  \item {Catch::Clara::Detail::Token}, \hyperpage{273}
-  \item {Catch::Clara::Detail::TokenStream}, \hyperpage{274}
-  \item {Catch::Clara::Detail::UnaryLambdaTraits$<$ L $>$}, 
+  \item {Catch::Benchmark::Detail::CompleteType$<$ T $>$}, 
+		\hyperpage{74}
+  \item {Catch::Benchmark::Detail::CompleteType$<$ void $>$}, 
+		\hyperpage{74}
+  \item {Catch::Benchmark::Detail::CompleteType$<$ void $>$::type}, 
 		\hyperpage{281}
+  \item {Catch::Benchmark::Detail::is\_related$<$ T, U $>$}, 
+		\hyperpage{139}
+  \item {Catch::Benchmark::Detail::ObjectStorage$<$ T, Destruct $>$}, 
+		\hyperpage{190}
+  \item {Catch::Benchmark::Detail::repeater$<$ Fun $>$}, 
+		\hyperpage{210}
+  \item {Catch::Benchmark::Environment$<$ Clock $>$}, \hyperpage{97}
+  \item {Catch::Benchmark::EnvironmentEstimate$<$ Duration $>$}, 
+		\hyperpage{98}
+  \item {Catch::Benchmark::Estimate$<$ Duration $>$}, \hyperpage{100}
+  \item {Catch::Benchmark::ExecutionPlan$<$ Duration $>$}, 
+		\hyperpage{106}
+  \item {Catch::Benchmark::now$<$ Clock $>$}, \hyperpage{190}
+  \item {Catch::Benchmark::OutlierClassification}, \hyperpage{193}
+  \item {Catch::Benchmark::SampleAnalysis$<$ Duration $>$}, 
+		\hyperpage{226}
+  \item {Catch::Benchmark::Timing$<$ Duration, Result $>$}, 
+		\hyperpage{274}
+  \item {Catch::BenchmarkInfo}, \hyperpage{44}
+  \item {Catch::BenchmarkStats$<$ Duration $>$}, \hyperpage{45}
+  \item {Catch::BinaryExpr$<$ LhsT, RhsT $>$}, \hyperpage{46}
+  \item {Catch::Capturer}, \hyperpage{62}
+  \item {Catch::Clara::accept\_many\_t}, \hyperpage{21}
+  \item {Catch::Clara::Arg}, \hyperpage{33}
+  \item {Catch::Clara::Args}, \hyperpage{34}
+  \item {Catch::Clara::Detail::BasicResult$<$ T $>$}, \hyperpage{42}
+  \item {Catch::Clara::Detail::BoundFlagLambda$<$ L $>$}, 
+		\hyperpage{48}
+  \item {Catch::Clara::Detail::BoundFlagRef}, \hyperpage{50}
+  \item {Catch::Clara::Detail::BoundFlagRefBase}, \hyperpage{52}
+  \item {Catch::Clara::Detail::BoundLambda$<$ L $>$}, \hyperpage{53}
+  \item {Catch::Clara::Detail::BoundManyLambda$<$ L $>$}, 
+		\hyperpage{55}
+  \item {Catch::Clara::Detail::BoundRef}, \hyperpage{57}
+  \item {Catch::Clara::Detail::BoundValueRef$<$ std::vector$<$ T $>$ $>$}, 
+		\hyperpage{60}
+  \item {Catch::Clara::Detail::BoundValueRef$<$ T $>$}, \hyperpage{58}
+  \item {Catch::Clara::Detail::BoundValueRefBase}, \hyperpage{61}
+  \item {Catch::Clara::Detail::ComposableParserImpl$<$ DerivedT $>$}, 
+		\hyperpage{75}
+  \item {Catch::Clara::Detail::fake\_arg}, \hyperpage{108}
+  \item {Catch::Clara::Detail::HelpColumns}, \hyperpage{122}
+  \item {Catch::Clara::Detail::is\_unary\_function$<$ F, Catch::Detail::void\_t$<$ decltype(std::declval$<$ F $>$()(fake\_arg())) $>$ $>$}, 
+		\hyperpage{141}
+  \item {Catch::Clara::Detail::is\_unary\_function$<$ F, typename $>$}, 
+		\hyperpage{140}
+  \item {Catch::Clara::Detail::LambdaInvoker$<$ ReturnType $>$}, 
+		\hyperpage{152}
+  \item {Catch::Clara::Detail::LambdaInvoker$<$ void $>$}, 
+		\hyperpage{153}
+  \item {Catch::Clara::Detail::ParserBase}, \hyperpage{195}
+  \item {Catch::Clara::Detail::ParserRefImpl$<$ DerivedT $>$}, 
+		\hyperpage{196}
+  \item {Catch::Clara::Detail::ParseState}, \hyperpage{197}
+  \item {Catch::Clara::Detail::ResultBase}, \hyperpage{219}
+  \item {Catch::Clara::Detail::ResultValueBase$<$ T $>$}, 
+		\hyperpage{220}
+  \item {Catch::Clara::Detail::ResultValueBase$<$ void $>$}, 
+		\hyperpage{222}
+  \item {Catch::Clara::Detail::Token}, \hyperpage{274}
+  \item {Catch::Clara::Detail::TokenStream}, \hyperpage{275}
+  \item {Catch::Clara::Detail::UnaryLambdaTraits$<$ L $>$}, 
+		\hyperpage{282}
   \item {Catch::Clara::Detail::UnaryLambdaTraits$<$ ReturnT(ClassT::$\ast$)(Args...) const $>$}, 
-		\hyperpage{282}
+		\hyperpage{283}
   \item {Catch::Clara::Detail::UnaryLambdaTraits$<$ ReturnT(ClassT::$\ast$)(ArgT) const $>$}, 
-		\hyperpage{282}
-  \item {Catch::Clara::ExeName}, \hyperpage{106}
-  \item {Catch::Clara::Help}, \hyperpage{120}
-  \item {Catch::Clara::Opt}, \hyperpage{190}
-  \item {Catch::Clara::Parser}, \hyperpage{193}
-  \item {Catch::Colour}, \hyperpage{67}
-  \item {Catch::ColourImpl}, \hyperpage{68}
-    \subitem {guardColour}, \hyperpage{69}
-  \item {Catch::ColourImpl::ColourGuard}, \hyperpage{67}
-    \subitem {engage}, \hyperpage{68}
-  \item {Catch::CompactReporter}, \hyperpage{71}
-    \subitem {testRunEnded}, \hyperpage{72}
-    \subitem {testRunStarting}, \hyperpage{72}
-  \item {Catch::Config}, \hyperpage{75}
-  \item {Catch::ConfigData}, \hyperpage{76}
-  \item {Catch::ConsoleReporter}, \hyperpage{79}
-    \subitem {testRunEnded}, \hyperpage{80}
-    \subitem {testRunStarting}, \hyperpage{81}
-  \item {Catch::Counts}, \hyperpage{86}
-  \item {Catch::CumulativeReporterBase}, \hyperpage{87}
-    \subitem {testRunEnded}, \hyperpage{89}
-    \subitem {testRunStarting}, \hyperpage{89}
+		\hyperpage{283}
+  \item {Catch::Clara::ExeName}, \hyperpage{107}
+  \item {Catch::Clara::Help}, \hyperpage{121}
+  \item {Catch::Clara::Opt}, \hyperpage{191}
+  \item {Catch::Clara::Parser}, \hyperpage{194}
+  \item {Catch::Colour}, \hyperpage{68}
+  \item {Catch::ColourImpl}, \hyperpage{69}
+    \subitem {guardColour}, \hyperpage{70}
+  \item {Catch::ColourImpl::ColourGuard}, \hyperpage{68}
+    \subitem {engage}, \hyperpage{69}
+  \item {Catch::CompactReporter}, \hyperpage{72}
+    \subitem {testRunEnded}, \hyperpage{73}
+    \subitem {testRunStarting}, \hyperpage{73}
+  \item {Catch::Config}, \hyperpage{76}
+  \item {Catch::ConfigData}, \hyperpage{77}
+  \item {Catch::ConsoleReporter}, \hyperpage{80}
+    \subitem {testRunEnded}, \hyperpage{81}
+    \subitem {testRunStarting}, \hyperpage{82}
+  \item {Catch::Counts}, \hyperpage{87}
+  \item {Catch::CumulativeReporterBase}, \hyperpage{88}
+    \subitem {testRunEnded}, \hyperpage{90}
+    \subitem {testRunStarting}, \hyperpage{90}
   \item {Catch::CumulativeReporterBase::Node$<$ T, ChildNodeT $>$}, 
-		\hyperpage{186}
-  \item {Catch::CumulativeReporterBase::SectionNode}, \hyperpage{229}
-  \item {Catch::Decomposer}, \hyperpage{92}
-  \item {Catch::Detail::AssertionOrBenchmarkResult}, \hyperpage{35}
-  \item {Catch::Detail::CaseInsensitiveEqualTo}, \hyperpage{62}
-  \item {Catch::Detail::CaseInsensitiveLess}, \hyperpage{62}
-  \item {Catch::Detail::EnumInfo}, \hyperpage{94}
-  \item {Catch::Detail::EnumValuesRegistry}, \hyperpage{95}
+		\hyperpage{187}
+  \item {Catch::CumulativeReporterBase::SectionNode}, \hyperpage{230}
+  \item {Catch::Decomposer}, \hyperpage{93}
+  \item {Catch::Detail::AssertionOrBenchmarkResult}, \hyperpage{36}
+  \item {Catch::Detail::CaseInsensitiveEqualTo}, \hyperpage{63}
+  \item {Catch::Detail::CaseInsensitiveLess}, \hyperpage{63}
+  \item {Catch::Detail::EnumInfo}, \hyperpage{95}
+  \item {Catch::Detail::EnumValuesRegistry}, \hyperpage{96}
   \item {Catch::Detail::has\_description$<$ T, typename $>$}, 
-		\hyperpage{117}
-  \item {Catch::Detail::has\_description$<$ T, void\_t$<$ decltype(T::getDescription())$>$ $>$}, 
 		\hyperpage{118}
+  \item {Catch::Detail::has\_description$<$ T, void\_t$<$ decltype(T::getDescription())$>$ $>$}, 
+		\hyperpage{119}
   \item {Catch::Detail::is\_range\_impl$<$ T, typename $>$}, 
-		\hyperpage{136}
-  \item {Catch::Detail::is\_range\_impl$<$ T, void\_t$<$ decltype(begin(std::declval$<$ T $>$()))$>$ $>$}, 
 		\hyperpage{137}
-  \item {Catch::Detail::IsStreamInsertable$<$ T $>$}, \hyperpage{143}
-  \item {Catch::Detail::make\_void$<$... $>$}, \hyperpage{155}
-  \item {Catch::Detail::NonCopyable}, \hyperpage{187}
-  \item {Catch::Detail::unique\_ptr$<$ T $>$}, \hyperpage{282}
-  \item {Catch::ErrnoGuard}, \hyperpage{99}
-  \item {Catch::EventListenerBase}, \hyperpage{100}
-    \subitem {testRunEnded}, \hyperpage{102}
-    \subitem {testRunStarting}, \hyperpage{102}
-  \item {Catch::EventListenerFactory}, \hyperpage{102}
-  \item {Catch::ExceptionTranslatorRegistrar}, \hyperpage{104}
-  \item {Catch::ExceptionTranslatorRegistry}, \hyperpage{104}
-  \item {Catch::ExprLhs$<$ LhsT $>$}, \hyperpage{107}
-  \item {Catch::FatalConditionHandler}, \hyperpage{108}
-  \item {Catch::FatalConditionHandlerGuard}, \hyperpage{108}
-  \item {Catch::GeneratorException}, \hyperpage{112}
-  \item {Catch::Generators::as$<$ T $>$}, \hyperpage{34}
-  \item {Catch::Generators::ChunkGenerator$<$ T $>$}, \hyperpage{65}
-    \subitem {next}, \hyperpage{66}
+  \item {Catch::Detail::is\_range\_impl$<$ T, void\_t$<$ decltype(begin(std::declval$<$ T $>$()))$>$ $>$}, 
+		\hyperpage{138}
+  \item {Catch::Detail::IsStreamInsertable$<$ T $>$}, \hyperpage{144}
+  \item {Catch::Detail::make\_void$<$... $>$}, \hyperpage{156}
+  \item {Catch::Detail::NonCopyable}, \hyperpage{188}
+  \item {Catch::Detail::unique\_ptr$<$ T $>$}, \hyperpage{283}
+  \item {Catch::ErrnoGuard}, \hyperpage{100}
+  \item {Catch::EventListenerBase}, \hyperpage{101}
+    \subitem {testRunEnded}, \hyperpage{103}
+    \subitem {testRunStarting}, \hyperpage{103}
+  \item {Catch::EventListenerFactory}, \hyperpage{103}
+  \item {Catch::ExceptionTranslatorRegistrar}, \hyperpage{105}
+  \item {Catch::ExceptionTranslatorRegistry}, \hyperpage{105}
+  \item {Catch::ExprLhs$<$ LhsT $>$}, \hyperpage{108}
+  \item {Catch::FatalConditionHandler}, \hyperpage{109}
+  \item {Catch::FatalConditionHandlerGuard}, \hyperpage{109}
+  \item {Catch::GeneratorException}, \hyperpage{113}
+  \item {Catch::Generators::as$<$ T $>$}, \hyperpage{35}
+  \item {Catch::Generators::ChunkGenerator$<$ T $>$}, \hyperpage{66}
+    \subitem {next}, \hyperpage{67}
   \item {Catch::Generators::FilterGenerator$<$ T, Predicate $>$}, 
-		\hyperpage{109}
-    \subitem {next}, \hyperpage{110}
+		\hyperpage{110}
+    \subitem {next}, \hyperpage{111}
   \item {Catch::Generators::FixedValuesGenerator$<$ T $>$}, 
-		\hyperpage{111}
-    \subitem {next}, \hyperpage{112}
-  \item {Catch::Generators::Generators$<$ T $>$}, \hyperpage{113}
-    \subitem {next}, \hyperpage{114}
-  \item {Catch::Generators::GeneratorUntypedBase}, \hyperpage{115}
-    \subitem {countedNext}, \hyperpage{115}
-    \subitem {currentElementAsString}, \hyperpage{116}
-  \item {Catch::Generators::GeneratorWrapper$<$ T $>$}, \hyperpage{116}
-  \item {Catch::Generators::IGenerator$<$ T $>$}, \hyperpage{128}
+		\hyperpage{112}
+    \subitem {next}, \hyperpage{113}
+  \item {Catch::Generators::Generators$<$ T $>$}, \hyperpage{114}
+    \subitem {next}, \hyperpage{115}
+  \item {Catch::Generators::GeneratorUntypedBase}, \hyperpage{116}
+    \subitem {countedNext}, \hyperpage{116}
+    \subitem {currentElementAsString}, \hyperpage{117}
+  \item {Catch::Generators::GeneratorWrapper$<$ T $>$}, \hyperpage{117}
+  \item {Catch::Generators::IGenerator$<$ T $>$}, \hyperpage{129}
   \item {Catch::Generators::IteratorGenerator$<$ T $>$}, 
-		\hyperpage{145}
-    \subitem {next}, \hyperpage{146}
+		\hyperpage{146}
+    \subitem {next}, \hyperpage{147}
   \item {Catch::Generators::MapGenerator$<$ T, U, Func $>$}, 
-		\hyperpage{155}
-    \subitem {next}, \hyperpage{156}
+		\hyperpage{156}
+    \subitem {next}, \hyperpage{157}
   \item {Catch::Generators::RandomFloatingGenerator$<$ Float $>$}, 
-		\hyperpage{200}
-    \subitem {next}, \hyperpage{201}
+		\hyperpage{201}
+    \subitem {next}, \hyperpage{202}
   \item {Catch::Generators::RandomIntegerGenerator$<$ Integer $>$}, 
-		\hyperpage{202}
-    \subitem {next}, \hyperpage{203}
-  \item {Catch::Generators::RangeGenerator$<$ T $>$}, \hyperpage{203}
+		\hyperpage{203}
     \subitem {next}, \hyperpage{204}
-  \item {Catch::Generators::RepeatGenerator$<$ T $>$}, \hyperpage{210}
-    \subitem {next}, \hyperpage{211}
+  \item {Catch::Generators::RangeGenerator$<$ T $>$}, \hyperpage{204}
+    \subitem {next}, \hyperpage{205}
+  \item {Catch::Generators::RepeatGenerator$<$ T $>$}, \hyperpage{211}
+    \subitem {next}, \hyperpage{212}
   \item {Catch::Generators::SingleValueGenerator$<$ T $>$}, 
-		\hyperpage{235}
-    \subitem {next}, \hyperpage{236}
-  \item {Catch::Generators::TakeGenerator$<$ T $>$}, \hyperpage{259}
-    \subitem {next}, \hyperpage{260}
-  \item {Catch::IConfig}, \hyperpage{122}
-  \item {Catch::IContext}, \hyperpage{123}
-  \item {Catch::IEventListener}, \hyperpage{124}
-    \subitem {testRunEnded}, \hyperpage{126}
-    \subitem {testRunStarting}, \hyperpage{126}
-  \item {Catch::IExceptionTranslator}, \hyperpage{127}
-  \item {Catch::IExceptionTranslatorRegistry}, \hyperpage{127}
-  \item {Catch::IGeneratorTracker}, \hyperpage{129}
-  \item {Catch::IMutableContext}, \hyperpage{129}
-  \item {Catch::IMutableEnumValuesRegistry}, \hyperpage{130}
-  \item {Catch::IMutableRegistryHub}, \hyperpage{131}
-  \item {Catch::IRegistryHub}, \hyperpage{131}
-  \item {Catch::IReporterFactory}, \hyperpage{131}
-  \item {Catch::IReporterRegistry}, \hyperpage{132}
-  \item {Catch::IResultCapture}, \hyperpage{133}
-  \item {Catch::is\_callable$<$ Fun(Args...)$>$}, \hyperpage{134}
-  \item {Catch::is\_callable$<$ T $>$}, \hyperpage{134}
-  \item {Catch::is\_callable\_tester}, \hyperpage{135}
-  \item {Catch::is\_range$<$ T $>$}, \hyperpage{135}
-  \item {Catch::ISingleton}, \hyperpage{142}
-  \item {Catch::IStream}, \hyperpage{143}
-    \subitem {isConsole}, \hyperpage{143}
-  \item {Catch::ITagAliasRegistry}, \hyperpage{144}
-  \item {Catch::ITestCaseRegistry}, \hyperpage{146}
-  \item {Catch::ITestInvoker}, \hyperpage{147}
-  \item {Catch::ITransientExpression}, \hyperpage{149}
-  \item {Catch::JunitReporter}, \hyperpage{150}
-    \subitem {testRunStarting}, \hyperpage{151}
-  \item {Catch::LazyExpression}, \hyperpage{152}
-  \item {Catch::LeakDetector}, \hyperpage{152}
-  \item {Catch::lineOfChars}, \hyperpage{154}
-  \item {Catch::ListenerDescription}, \hyperpage{154}
-  \item {Catch::ListenerRegistrar$<$ T $>$}, \hyperpage{155}
+		\hyperpage{236}
+    \subitem {next}, \hyperpage{237}
+  \item {Catch::Generators::TakeGenerator$<$ T $>$}, \hyperpage{260}
+    \subitem {next}, \hyperpage{261}
+  \item {Catch::IConfig}, \hyperpage{123}
+  \item {Catch::IContext}, \hyperpage{124}
+  \item {Catch::IEventListener}, \hyperpage{125}
+    \subitem {testRunEnded}, \hyperpage{127}
+    \subitem {testRunStarting}, \hyperpage{127}
+  \item {Catch::IExceptionTranslator}, \hyperpage{128}
+  \item {Catch::IExceptionTranslatorRegistry}, \hyperpage{128}
+  \item {Catch::IGeneratorTracker}, \hyperpage{130}
+  \item {Catch::IMutableContext}, \hyperpage{130}
+  \item {Catch::IMutableEnumValuesRegistry}, \hyperpage{131}
+  \item {Catch::IMutableRegistryHub}, \hyperpage{132}
+  \item {Catch::IRegistryHub}, \hyperpage{132}
+  \item {Catch::IReporterFactory}, \hyperpage{132}
+  \item {Catch::IReporterRegistry}, \hyperpage{133}
+  \item {Catch::IResultCapture}, \hyperpage{134}
+  \item {Catch::is\_callable$<$ Fun(Args...)$>$}, \hyperpage{135}
+  \item {Catch::is\_callable$<$ T $>$}, \hyperpage{135}
+  \item {Catch::is\_callable\_tester}, \hyperpage{136}
+  \item {Catch::is\_range$<$ T $>$}, \hyperpage{136}
+  \item {Catch::ISingleton}, \hyperpage{143}
+  \item {Catch::IStream}, \hyperpage{144}
+    \subitem {isConsole}, \hyperpage{144}
+  \item {Catch::ITagAliasRegistry}, \hyperpage{145}
+  \item {Catch::ITestCaseRegistry}, \hyperpage{147}
+  \item {Catch::ITestInvoker}, \hyperpage{148}
+  \item {Catch::ITransientExpression}, \hyperpage{150}
+  \item {Catch::JunitReporter}, \hyperpage{151}
+    \subitem {testRunStarting}, \hyperpage{152}
+  \item {Catch::LazyExpression}, \hyperpage{153}
+  \item {Catch::LeakDetector}, \hyperpage{153}
+  \item {Catch::lineOfChars}, \hyperpage{155}
+  \item {Catch::ListenerDescription}, \hyperpage{155}
+  \item {Catch::ListenerRegistrar$<$ T $>$}, \hyperpage{156}
   \item {Catch::Matchers::AllMatchMatcher$<$ Matcher $>$}, 
 		\hyperpage{27}
   \item {Catch::Matchers::AnyMatchMatcher$<$ Matcher $>$}, 
 		\hyperpage{29}
   \item {Catch::Matchers::ApproxMatcher$<$ T, AllocComp, AllocMatch $>$}, 
 		\hyperpage{31}
-  \item {Catch::Matchers::CasedString}, \hyperpage{62}
+  \item {Catch::Matchers::CasedString}, \hyperpage{63}
   \item {Catch::Matchers::ContainsElementMatcher$<$ T, Equality $>$}, 
-		\hyperpage{82}
+		\hyperpage{83}
   \item {Catch::Matchers::ContainsMatcher$<$ T, AllocComp, AllocMatch $>$}, 
-		\hyperpage{84}
-  \item {Catch::Matchers::ContainsMatcherMatcher$<$ Matcher $>$}, 
 		\hyperpage{85}
+  \item {Catch::Matchers::ContainsMatcherMatcher$<$ Matcher $>$}, 
+		\hyperpage{86}
   \item {Catch::Matchers::Detail::conjunction$<$ Cond $>$}, 
-		\hyperpage{77}
-  \item {Catch::Matchers::Detail::conjunction$<$ Cond, Rest... $>$}, 
 		\hyperpage{78}
+  \item {Catch::Matchers::Detail::conjunction$<$ Cond, Rest... $>$}, 
+		\hyperpage{79}
   \item {Catch::Matchers::Detail::MatchAllOf$<$ ArgT $>$}, 
-		\hyperpage{157}
-  \item {Catch::Matchers::Detail::MatchAllOfGeneric$<$ MatcherTs $>$}, 
 		\hyperpage{158}
+  \item {Catch::Matchers::Detail::MatchAllOfGeneric$<$ MatcherTs $>$}, 
+		\hyperpage{159}
   \item {Catch::Matchers::Detail::MatchAnyOf$<$ ArgT $>$}, 
-		\hyperpage{160}
-  \item {Catch::Matchers::Detail::MatchAnyOfGeneric$<$ MatcherTs $>$}, 
 		\hyperpage{161}
+  \item {Catch::Matchers::Detail::MatchAnyOfGeneric$<$ MatcherTs $>$}, 
+		\hyperpage{162}
   \item {Catch::Matchers::Detail::MatchNotOf$<$ ArgT $>$}, 
-		\hyperpage{168}
+		\hyperpage{169}
   \item {Catch::Matchers::Detail::MatchNotOfGeneric$<$ MatcherT $>$}, 
-		\hyperpage{170}
-  \item {Catch::Matchers::EndsWithMatcher}, \hyperpage{93}
+		\hyperpage{171}
+  \item {Catch::Matchers::EndsWithMatcher}, \hyperpage{94}
   \item {Catch::Matchers::EqualsMatcher$<$ T, AllocComp, AllocMatch $>$}, 
-		\hyperpage{98}
-  \item {Catch::Matchers::ExceptionMessageMatcher}, \hyperpage{103}
-  \item {Catch::Matchers::HasSizeMatcher}, \hyperpage{119}
-  \item {Catch::Matchers::IsEmptyMatcher}, \hyperpage{141}
-  \item {Catch::Matchers::MatcherBase$<$ T $>$}, \hyperpage{163}
-  \item {Catch::Matchers::MatcherGenericBase}, \hyperpage{164}
-  \item {Catch::Matchers::MatcherUntypedBase}, \hyperpage{166}
+		\hyperpage{99}
+  \item {Catch::Matchers::ExceptionMessageMatcher}, \hyperpage{104}
+  \item {Catch::Matchers::HasSizeMatcher}, \hyperpage{120}
+  \item {Catch::Matchers::IsEmptyMatcher}, \hyperpage{142}
+  \item {Catch::Matchers::MatcherBase$<$ T $>$}, \hyperpage{164}
+  \item {Catch::Matchers::MatcherGenericBase}, \hyperpage{165}
+  \item {Catch::Matchers::MatcherUntypedBase}, \hyperpage{167}
   \item {Catch::Matchers::NoneMatchMatcher$<$ Matcher $>$}, 
-		\hyperpage{188}
+		\hyperpage{189}
   \item {Catch::Matchers::PredicateMatcher$<$ T, Predicate $>$}, 
-		\hyperpage{197}
-  \item {Catch::Matchers::RegexMatcher}, \hyperpage{208}
+		\hyperpage{198}
+  \item {Catch::Matchers::RegexMatcher}, \hyperpage{209}
   \item {Catch::Matchers::SizeMatchesMatcher$<$ Matcher $>$}, 
-		\hyperpage{237}
-  \item {Catch::Matchers::StartsWithMatcher}, \hyperpage{240}
-  \item {Catch::Matchers::StringContainsMatcher}, \hyperpage{244}
-  \item {Catch::Matchers::StringEqualsMatcher}, \hyperpage{245}
-  \item {Catch::Matchers::StringMatcherBase}, \hyperpage{254}
+		\hyperpage{238}
+  \item {Catch::Matchers::StartsWithMatcher}, \hyperpage{241}
+  \item {Catch::Matchers::StringContainsMatcher}, \hyperpage{245}
+  \item {Catch::Matchers::StringEqualsMatcher}, \hyperpage{246}
+  \item {Catch::Matchers::StringMatcherBase}, \hyperpage{255}
   \item {Catch::Matchers::UnorderedEqualsMatcher$<$ T, AllocComp, AllocMatch $>$}, 
-		\hyperpage{283}
+		\hyperpage{284}
   \item {Catch::Matchers::VectorContainsElementMatcher$<$ T, Alloc $>$}, 
-		\hyperpage{287}
-  \item {Catch::Matchers::WithinAbsMatcher}, \hyperpage{293}
-  \item {Catch::Matchers::WithinRelMatcher}, \hyperpage{295}
-  \item {Catch::Matchers::WithinUlpsMatcher}, \hyperpage{296}
-  \item {Catch::MatchExpr$<$ ArgT, MatcherT $>$}, \hyperpage{167}
-  \item {Catch::MessageBuilder}, \hyperpage{171}
-  \item {Catch::MessageInfo}, \hyperpage{172}
-  \item {Catch::MessageStream}, \hyperpage{173}
-  \item {Catch::MultiReporter}, \hyperpage{182}
-    \subitem {testRunEnded}, \hyperpage{184}
-    \subitem {testRunStarting}, \hyperpage{184}
-  \item {Catch::NameAndTags}, \hyperpage{186}
-  \item {Catch::Optional$<$ T $>$}, \hyperpage{192}
-  \item {Catch::pluralise}, \hyperpage{197}
-  \item {Catch::ProcessedReporterSpec}, \hyperpage{198}
-  \item {Catch::ratio\_string$<$ Ratio $>$}, \hyperpage{205}
-  \item {Catch::ratio\_string$<$ std::atto $>$}, \hyperpage{205}
-  \item {Catch::ratio\_string$<$ std::femto $>$}, \hyperpage{205}
-  \item {Catch::ratio\_string$<$ std::micro $>$}, \hyperpage{205}
-  \item {Catch::ratio\_string$<$ std::milli $>$}, \hyperpage{206}
-  \item {Catch::ratio\_string$<$ std::nano $>$}, \hyperpage{206}
-  \item {Catch::ratio\_string$<$ std::pico $>$}, \hyperpage{206}
-  \item {Catch::RedirectedStdErr}, \hyperpage{206}
-  \item {Catch::RedirectedStdOut}, \hyperpage{207}
-  \item {Catch::RedirectedStream}, \hyperpage{207}
-  \item {Catch::RedirectedStreams}, \hyperpage{207}
-  \item {Catch::RegistrarForTagAliases}, \hyperpage{209}
-  \item {Catch::ReporterBase}, \hyperpage{211}
-    \subitem {listListeners}, \hyperpage{212}
-    \subitem {listReporters}, \hyperpage{212}
-    \subitem {listTags}, \hyperpage{213}
-    \subitem {listTests}, \hyperpage{213}
-    \subitem {m\_stream}, \hyperpage{213}
-  \item {Catch::ReporterConfig}, \hyperpage{214}
-  \item {Catch::ReporterDescription}, \hyperpage{214}
-  \item {Catch::ReporterFactory$<$ T $>$}, \hyperpage{215}
-  \item {Catch::ReporterPreferences}, \hyperpage{215}
-    \subitem {shouldRedirectStdOut}, \hyperpage{216}
-    \subitem {shouldReportAllAssertions}, \hyperpage{216}
-  \item {Catch::ReporterRegistrar$<$ T $>$}, \hyperpage{216}
-  \item {Catch::ReporterRegistry}, \hyperpage{217}
-  \item {Catch::ReporterSpec}, \hyperpage{218}
-  \item {Catch::ResultDisposition}, \hyperpage{219}
-  \item {Catch::ResultWas}, \hyperpage{222}
-  \item {Catch::ReusableStringStream}, \hyperpage{222}
-  \item {Catch::RunContext}, \hyperpage{223}
-  \item {Catch::ScopedMessage}, \hyperpage{226}
-  \item {Catch::Section}, \hyperpage{227}
-  \item {Catch::SectionEndInfo}, \hyperpage{228}
-  \item {Catch::SectionInfo}, \hyperpage{228}
-  \item {Catch::SectionStats}, \hyperpage{230}
-  \item {Catch::Session}, \hyperpage{232}
-  \item {Catch::SimplePcg32}, \hyperpage{233}
+		\hyperpage{288}
+  \item {Catch::Matchers::WithinAbsMatcher}, \hyperpage{294}
+  \item {Catch::Matchers::WithinRelMatcher}, \hyperpage{296}
+  \item {Catch::Matchers::WithinUlpsMatcher}, \hyperpage{297}
+  \item {Catch::MatchExpr$<$ ArgT, MatcherT $>$}, \hyperpage{168}
+  \item {Catch::MessageBuilder}, \hyperpage{172}
+  \item {Catch::MessageInfo}, \hyperpage{173}
+  \item {Catch::MessageStream}, \hyperpage{174}
+  \item {Catch::MultiReporter}, \hyperpage{183}
+    \subitem {testRunEnded}, \hyperpage{185}
+    \subitem {testRunStarting}, \hyperpage{185}
+  \item {Catch::NameAndTags}, \hyperpage{187}
+  \item {Catch::Optional$<$ T $>$}, \hyperpage{193}
+  \item {Catch::pluralise}, \hyperpage{198}
+  \item {Catch::ProcessedReporterSpec}, \hyperpage{199}
+  \item {Catch::ratio\_string$<$ Ratio $>$}, \hyperpage{206}
+  \item {Catch::ratio\_string$<$ std::atto $>$}, \hyperpage{206}
+  \item {Catch::ratio\_string$<$ std::femto $>$}, \hyperpage{206}
+  \item {Catch::ratio\_string$<$ std::micro $>$}, \hyperpage{206}
+  \item {Catch::ratio\_string$<$ std::milli $>$}, \hyperpage{207}
+  \item {Catch::ratio\_string$<$ std::nano $>$}, \hyperpage{207}
+  \item {Catch::ratio\_string$<$ std::pico $>$}, \hyperpage{207}
+  \item {Catch::RedirectedStdErr}, \hyperpage{207}
+  \item {Catch::RedirectedStdOut}, \hyperpage{208}
+  \item {Catch::RedirectedStream}, \hyperpage{208}
+  \item {Catch::RedirectedStreams}, \hyperpage{208}
+  \item {Catch::RegistrarForTagAliases}, \hyperpage{210}
+  \item {Catch::ReporterBase}, \hyperpage{212}
+    \subitem {listListeners}, \hyperpage{213}
+    \subitem {listReporters}, \hyperpage{213}
+    \subitem {listTags}, \hyperpage{214}
+    \subitem {listTests}, \hyperpage{214}
+    \subitem {m\_stream}, \hyperpage{214}
+  \item {Catch::ReporterConfig}, \hyperpage{215}
+  \item {Catch::ReporterDescription}, \hyperpage{215}
+  \item {Catch::ReporterFactory$<$ T $>$}, \hyperpage{216}
+  \item {Catch::ReporterPreferences}, \hyperpage{216}
+    \subitem {shouldRedirectStdOut}, \hyperpage{217}
+    \subitem {shouldReportAllAssertions}, \hyperpage{217}
+  \item {Catch::ReporterRegistrar$<$ T $>$}, \hyperpage{217}
+  \item {Catch::ReporterRegistry}, \hyperpage{218}
+  \item {Catch::ReporterSpec}, \hyperpage{219}
+  \item {Catch::ResultDisposition}, \hyperpage{220}
+  \item {Catch::ResultWas}, \hyperpage{223}
+  \item {Catch::ReusableStringStream}, \hyperpage{223}
+  \item {Catch::RunContext}, \hyperpage{224}
+  \item {Catch::ScopedMessage}, \hyperpage{227}
+  \item {Catch::Section}, \hyperpage{228}
+  \item {Catch::SectionEndInfo}, \hyperpage{229}
+  \item {Catch::SectionInfo}, \hyperpage{229}
+  \item {Catch::SectionStats}, \hyperpage{231}
+  \item {Catch::Session}, \hyperpage{233}
+  \item {Catch::SimplePcg32}, \hyperpage{234}
   \item {Catch::Singleton$<$ SingletonImplT, InterfaceT, MutableInterfaceT $>$}, 
-		\hyperpage{234}
-  \item {Catch::SonarQubeReporter}, \hyperpage{238}
-    \subitem {testRunStarting}, \hyperpage{239}
-  \item {Catch::SourceLineInfo}, \hyperpage{239}
-  \item {Catch::StartupExceptionRegistry}, \hyperpage{241}
-  \item {Catch::StreamEndStop}, \hyperpage{241}
-  \item {Catch::StreamingReporterBase}, \hyperpage{241}
-    \subitem {testRunEnded}, \hyperpage{242}
-    \subitem {testRunStarting}, \hyperpage{243}
-  \item {Catch::StringMaker$<$ bool $>$}, \hyperpage{246}
-  \item {Catch::StringMaker$<$ Catch::Approx $>$}, \hyperpage{246}
-  \item {Catch::StringMaker$<$ char $>$}, \hyperpage{247}
-  \item {Catch::StringMaker$<$ char $\ast$ $>$}, \hyperpage{246}
-  \item {Catch::StringMaker$<$ char const $\ast$ $>$}, \hyperpage{247}
-  \item {Catch::StringMaker$<$ char[SZ]$>$}, \hyperpage{247}
-  \item {Catch::StringMaker$<$ double $>$}, \hyperpage{247}
-  \item {Catch::StringMaker$<$ float $>$}, \hyperpage{248}
-  \item {Catch::StringMaker$<$ int $>$}, \hyperpage{248}
-  \item {Catch::StringMaker$<$ long $>$}, \hyperpage{248}
-  \item {Catch::StringMaker$<$ long long $>$}, \hyperpage{248}
-  \item {Catch::StringMaker$<$ R C::$\ast$ $>$}, \hyperpage{249}
+		\hyperpage{235}
+  \item {Catch::SonarQubeReporter}, \hyperpage{239}
+    \subitem {testRunStarting}, \hyperpage{240}
+  \item {Catch::SourceLineInfo}, \hyperpage{240}
+  \item {Catch::StartupExceptionRegistry}, \hyperpage{242}
+  \item {Catch::StreamEndStop}, \hyperpage{242}
+  \item {Catch::StreamingReporterBase}, \hyperpage{242}
+    \subitem {testRunEnded}, \hyperpage{243}
+    \subitem {testRunStarting}, \hyperpage{244}
+  \item {Catch::StringMaker$<$ bool $>$}, \hyperpage{247}
+  \item {Catch::StringMaker$<$ Catch::Approx $>$}, \hyperpage{247}
+  \item {Catch::StringMaker$<$ char $>$}, \hyperpage{248}
+  \item {Catch::StringMaker$<$ char $\ast$ $>$}, \hyperpage{247}
+  \item {Catch::StringMaker$<$ char const $\ast$ $>$}, \hyperpage{248}
+  \item {Catch::StringMaker$<$ char[SZ]$>$}, \hyperpage{248}
+  \item {Catch::StringMaker$<$ double $>$}, \hyperpage{248}
+  \item {Catch::StringMaker$<$ float $>$}, \hyperpage{249}
+  \item {Catch::StringMaker$<$ int $>$}, \hyperpage{249}
+  \item {Catch::StringMaker$<$ long $>$}, \hyperpage{249}
+  \item {Catch::StringMaker$<$ long long $>$}, \hyperpage{249}
+  \item {Catch::StringMaker$<$ R C::$\ast$ $>$}, \hyperpage{250}
   \item {Catch::StringMaker$<$ R, std::enable\_if\_t$<$ is\_range$<$ R $>$::value \&\&!::Catch::Detail::IsStreamInsertable$<$ R $>$::value $>$ $>$}, 
-		\hyperpage{249}
-  \item {Catch::StringMaker$<$ signed char $>$}, \hyperpage{249}
-  \item {Catch::StringMaker$<$ signed char[SZ]$>$}, \hyperpage{249}
+		\hyperpage{250}
+  \item {Catch::StringMaker$<$ signed char $>$}, \hyperpage{250}
+  \item {Catch::StringMaker$<$ signed char[SZ]$>$}, \hyperpage{250}
   \item {Catch::StringMaker$<$ std::chrono::duration$<$ Value, Ratio $>$ $>$}, 
-		\hyperpage{250}
+		\hyperpage{251}
   \item {Catch::StringMaker$<$ std::chrono::duration$<$ Value, std::ratio$<$ 1 $>$ $>$ $>$}, 
-		\hyperpage{250}
+		\hyperpage{251}
   \item {Catch::StringMaker$<$ std::chrono::duration$<$ Value, std::ratio$<$ 3600 $>$ $>$ $>$}, 
-		\hyperpage{250}
+		\hyperpage{251}
   \item {Catch::StringMaker$<$ std::chrono::duration$<$ Value, std::ratio$<$ 60 $>$ $>$ $>$}, 
-		\hyperpage{250}
+		\hyperpage{251}
   \item {Catch::StringMaker$<$ std::chrono::time\_point$<$ Clock, Duration $>$ $>$}, 
-		\hyperpage{251}
+		\hyperpage{252}
   \item {Catch::StringMaker$<$ std::chrono::time\_point$<$ std::chrono::system\_clock, Duration $>$ $>$}, 
-		\hyperpage{251}
-  \item {Catch::StringMaker$<$ std::nullptr\_t $>$}, \hyperpage{251}
-  \item {Catch::StringMaker$<$ std::string $>$}, \hyperpage{251}
-  \item {Catch::StringMaker$<$ std::wstring $>$}, \hyperpage{252}
-  \item {Catch::StringMaker$<$ T $\ast$ $>$}, \hyperpage{252}
-  \item {Catch::StringMaker$<$ T, typename $>$}, \hyperpage{246}
-  \item {Catch::StringMaker$<$ T[SZ]$>$}, \hyperpage{252}
-  \item {Catch::StringMaker$<$ unsigned char $>$}, \hyperpage{252}
-  \item {Catch::StringMaker$<$ unsigned char[SZ]$>$}, \hyperpage{253}
-  \item {Catch::StringMaker$<$ unsigned int $>$}, \hyperpage{253}
-  \item {Catch::StringMaker$<$ unsigned long $>$}, \hyperpage{253}
-  \item {Catch::StringMaker$<$ unsigned long long $>$}, \hyperpage{253}
-  \item {Catch::StringMaker$<$ wchar\_t $\ast$ $>$}, \hyperpage{254}
+		\hyperpage{252}
+  \item {Catch::StringMaker$<$ std::nullptr\_t $>$}, \hyperpage{252}
+  \item {Catch::StringMaker$<$ std::string $>$}, \hyperpage{252}
+  \item {Catch::StringMaker$<$ std::wstring $>$}, \hyperpage{253}
+  \item {Catch::StringMaker$<$ T $\ast$ $>$}, \hyperpage{253}
+  \item {Catch::StringMaker$<$ T, typename $>$}, \hyperpage{247}
+  \item {Catch::StringMaker$<$ T[SZ]$>$}, \hyperpage{253}
+  \item {Catch::StringMaker$<$ unsigned char $>$}, \hyperpage{253}
+  \item {Catch::StringMaker$<$ unsigned char[SZ]$>$}, \hyperpage{254}
+  \item {Catch::StringMaker$<$ unsigned int $>$}, \hyperpage{254}
+  \item {Catch::StringMaker$<$ unsigned long $>$}, \hyperpage{254}
+  \item {Catch::StringMaker$<$ unsigned long long $>$}, \hyperpage{254}
+  \item {Catch::StringMaker$<$ wchar\_t $\ast$ $>$}, \hyperpage{255}
   \item {Catch::StringMaker$<$ wchar\_t const $\ast$ $>$}, 
-		\hyperpage{254}
-  \item {Catch::StringRef}, \hyperpage{255}
-    \subitem {compare}, \hyperpage{256}
-  \item {Catch::Tag}, \hyperpage{256}
-  \item {Catch::TagAlias}, \hyperpage{257}
-  \item {Catch::TagAliasRegistry}, \hyperpage{258}
-  \item {Catch::TagInfo}, \hyperpage{258}
-  \item {Catch::TAPReporter}, \hyperpage{261}
-    \subitem {testRunEnded}, \hyperpage{262}
-    \subitem {testRunStarting}, \hyperpage{262}
-  \item {Catch::TeamCityReporter}, \hyperpage{263}
-    \subitem {testRunEnded}, \hyperpage{264}
-    \subitem {testRunStarting}, \hyperpage{264}
-  \item {Catch::TestCaseHandle}, \hyperpage{264}
-  \item {Catch::TestCaseInfo}, \hyperpage{265}
-  \item {Catch::TestCaseInfoHasher}, \hyperpage{266}
-  \item {Catch::TestCaseStats}, \hyperpage{267}
-  \item {Catch::TestCaseTracking::ITracker}, \hyperpage{147}
-    \subitem {findChild}, \hyperpage{149}
-    \subitem {isGeneratorTracker}, \hyperpage{149}
-    \subitem {isSectionTracker}, \hyperpage{149}
-  \item {Catch::TestCaseTracking::NameAndLocation}, \hyperpage{185}
-  \item {Catch::TestCaseTracking::SectionTracker}, \hyperpage{231}
-    \subitem {isSectionTracker}, \hyperpage{232}
-  \item {Catch::TestCaseTracking::TrackerBase}, \hyperpage{278}
-  \item {Catch::TestCaseTracking::TrackerContext}, \hyperpage{279}
-  \item {Catch::TestFailureException}, \hyperpage{267}
-  \item {Catch::TestInvokerAsFunction}, \hyperpage{268}
-  \item {Catch::TestInvokerAsMethod$<$ C $>$}, \hyperpage{269}
-  \item {Catch::TestRegistry}, \hyperpage{270}
-  \item {Catch::TestRunInfo}, \hyperpage{271}
-  \item {Catch::TestRunStats}, \hyperpage{271}
-  \item {Catch::TestSpec}, \hyperpage{272}
-  \item {Catch::TestSpec::FilterMatch}, \hyperpage{110}
-  \item {Catch::TestSpecParser}, \hyperpage{273}
-  \item {Catch::TextFlow::Column}, \hyperpage{69}
-  \item {Catch::TextFlow::Column::const\_iterator}, \hyperpage{81}
-  \item {Catch::TextFlow::Columns}, \hyperpage{70}
-  \item {Catch::TextFlow::Columns::iterator}, \hyperpage{144}
-  \item {Catch::Timer}, \hyperpage{273}
-  \item {Catch::Totals}, \hyperpage{277}
-  \item {Catch::true\_given$<$ typename $>$}, \hyperpage{280}
-  \item {Catch::UnaryExpr$<$ LhsT $>$}, \hyperpage{281}
-  \item {Catch::Version}, \hyperpage{288}
-  \item {Catch::WaitForKeypress}, \hyperpage{292}
-  \item {Catch::WarnAbout}, \hyperpage{292}
-    \subitem {NoAssertions}, \hyperpage{293}
-    \subitem {UnmatchedTestSpec}, \hyperpage{293}
-    \subitem {What}, \hyperpage{293}
-  \item {Catch::WildcardPattern}, \hyperpage{293}
-  \item {Catch::XmlEncode}, \hyperpage{297}
-  \item {Catch::XmlReporter}, \hyperpage{298}
-    \subitem {listListeners}, \hyperpage{299}
-    \subitem {listReporters}, \hyperpage{299}
-    \subitem {listTags}, \hyperpage{299}
-    \subitem {listTests}, \hyperpage{300}
-    \subitem {testRunEnded}, \hyperpage{300}
-    \subitem {testRunStarting}, \hyperpage{300}
-  \item {Catch::XmlWriter}, \hyperpage{301}
-    \subitem {writeAttribute}, \hyperpage{301}
-  \item {Catch::XmlWriter::ScopedElement}, \hyperpage{225}
+		\hyperpage{255}
+  \item {Catch::StringRef}, \hyperpage{256}
+    \subitem {compare}, \hyperpage{257}
+  \item {Catch::Tag}, \hyperpage{257}
+  \item {Catch::TagAlias}, \hyperpage{258}
+  \item {Catch::TagAliasRegistry}, \hyperpage{259}
+  \item {Catch::TagInfo}, \hyperpage{259}
+  \item {Catch::TAPReporter}, \hyperpage{262}
+    \subitem {testRunEnded}, \hyperpage{263}
+    \subitem {testRunStarting}, \hyperpage{263}
+  \item {Catch::TeamCityReporter}, \hyperpage{264}
+    \subitem {testRunEnded}, \hyperpage{265}
+    \subitem {testRunStarting}, \hyperpage{265}
+  \item {Catch::TestCaseHandle}, \hyperpage{265}
+  \item {Catch::TestCaseInfo}, \hyperpage{266}
+  \item {Catch::TestCaseInfoHasher}, \hyperpage{267}
+  \item {Catch::TestCaseStats}, \hyperpage{268}
+  \item {Catch::TestCaseTracking::ITracker}, \hyperpage{148}
+    \subitem {findChild}, \hyperpage{150}
+    \subitem {isGeneratorTracker}, \hyperpage{150}
+    \subitem {isSectionTracker}, \hyperpage{150}
+  \item {Catch::TestCaseTracking::NameAndLocation}, \hyperpage{186}
+  \item {Catch::TestCaseTracking::SectionTracker}, \hyperpage{232}
+    \subitem {isSectionTracker}, \hyperpage{233}
+  \item {Catch::TestCaseTracking::TrackerBase}, \hyperpage{279}
+  \item {Catch::TestCaseTracking::TrackerContext}, \hyperpage{280}
+  \item {Catch::TestFailureException}, \hyperpage{268}
+  \item {Catch::TestInvokerAsFunction}, \hyperpage{269}
+  \item {Catch::TestInvokerAsMethod$<$ C $>$}, \hyperpage{270}
+  \item {Catch::TestRegistry}, \hyperpage{271}
+  \item {Catch::TestRunInfo}, \hyperpage{272}
+  \item {Catch::TestRunStats}, \hyperpage{272}
+  \item {Catch::TestSpec}, \hyperpage{273}
+  \item {Catch::TestSpec::FilterMatch}, \hyperpage{111}
+  \item {Catch::TestSpecParser}, \hyperpage{274}
+  \item {Catch::TextFlow::Column}, \hyperpage{70}
+  \item {Catch::TextFlow::Column::const\_iterator}, \hyperpage{82}
+  \item {Catch::TextFlow::Columns}, \hyperpage{71}
+  \item {Catch::TextFlow::Columns::iterator}, \hyperpage{145}
+  \item {Catch::Timer}, \hyperpage{274}
+  \item {Catch::Totals}, \hyperpage{278}
+  \item {Catch::true\_given$<$ typename $>$}, \hyperpage{281}
+  \item {Catch::UnaryExpr$<$ LhsT $>$}, \hyperpage{282}
+  \item {Catch::Version}, \hyperpage{289}
+  \item {Catch::WaitForKeypress}, \hyperpage{293}
+  \item {Catch::WarnAbout}, \hyperpage{293}
+    \subitem {NoAssertions}, \hyperpage{294}
+    \subitem {UnmatchedTestSpec}, \hyperpage{294}
+    \subitem {What}, \hyperpage{294}
+  \item {Catch::WildcardPattern}, \hyperpage{294}
+  \item {Catch::XmlEncode}, \hyperpage{298}
+  \item {Catch::XmlReporter}, \hyperpage{299}
+    \subitem {listListeners}, \hyperpage{300}
+    \subitem {listReporters}, \hyperpage{300}
+    \subitem {listTags}, \hyperpage{300}
+    \subitem {listTests}, \hyperpage{301}
+    \subitem {testRunEnded}, \hyperpage{301}
+    \subitem {testRunStarting}, \hyperpage{301}
+  \item {Catch::XmlWriter}, \hyperpage{302}
+    \subitem {writeAttribute}, \hyperpage{302}
+  \item {Catch::XmlWriter::ScopedElement}, \hyperpage{226}
   \item {catch\_amalgamated.hpp}
     \subitem {ANSI}, \hyperpage{345}
     \subitem {CATCH\_INTERNAL\_DEFINE\_EXPRESSION\_OPERATOR}, 
@@ -530,7 +530,7 @@
     \subitem {RuntimeError}, \hyperpage{346}
     \subitem {ulpDistance}, \hyperpage{349}
     \subitem {Win32}, \hyperpage{345}
-  \item {Catch\_global\_namespace\_dummy}, \hyperpage{63}
+  \item {Catch\_global\_namespace\_dummy}, \hyperpage{64}
   \item {CATCH\_INTERNAL\_DEFINE\_EXPRESSION\_OPERATOR}
     \subitem {catch\_amalgamated.hpp}, \hyperpage{331}
   \item {CATCH\_REGISTER\_LISTENER}
@@ -542,22 +542,22 @@
   \item {ColourMode}
     \subitem {catch\_amalgamated.hpp}, \hyperpage{345}
   \item {compare}
-    \subitem {Catch::StringRef}, \hyperpage{256}
+    \subitem {Catch::StringRef}, \hyperpage{257}
   \item {Contains}
     \subitem {catch\_amalgamated.hpp}, \hyperpage{346}
   \item {convertIntoString}
     \subitem {catch\_amalgamated.hpp}, \hyperpage{346}
   \item {countedNext}
-    \subitem {Catch::Generators::GeneratorUntypedBase}, \hyperpage{115}
-  \item {currentElementAsString}
     \subitem {Catch::Generators::GeneratorUntypedBase}, \hyperpage{116}
+  \item {currentElementAsString}
+    \subitem {Catch::Generators::GeneratorUntypedBase}, \hyperpage{117}
 
   \indexspace
 
-  \item {DataBase$<$ TSeq $>$}, \hyperpage{90}
-    \subitem {record\_variant}, \hyperpage{91}
-    \subitem {reproductive\_number}, \hyperpage{92}
-    \subitem {transition\_probability}, \hyperpage{92}
+  \item {DataBase$<$ TSeq $>$}, \hyperpage{91}
+    \subitem {record\_variant}, \hyperpage{92}
+    \subitem {reproductive\_number}, \hyperpage{93}
+    \subitem {transition\_probability}, \hyperpage{93}
   \item {Default}
     \subitem {catch\_amalgamated.hpp}, \hyperpage{345}
   \item {defaultListListeners}
@@ -572,13 +572,13 @@
   \indexspace
 
   \item {engage}
-    \subitem {Catch::ColourImpl::ColourGuard}, \hyperpage{68}
-  \item {Entity$<$ TSeq $>$}, \hyperpage{94}
+    \subitem {Catch::ColourImpl::ColourGuard}, \hyperpage{69}
+  \item {Entity$<$ TSeq $>$}, \hyperpage{95}
 
   \indexspace
 
   \item {findChild}
-    \subitem {Catch::TestCaseTracking::ITracker}, \hyperpage{149}
+    \subitem {Catch::TestCaseTracking::ITracker}, \hyperpage{150}
 
   \indexspace
 
@@ -591,7 +591,7 @@
   \item {GenerateFrom}
     \subitem {catch\_amalgamated.hpp}, \hyperpage{345}
   \item {guardColour}
-    \subitem {Catch::ColourImpl}, \hyperpage{69}
+    \subitem {Catch::ColourImpl}, \hyperpage{70}
 
   \indexspace
 
@@ -673,71 +673,71 @@
   \item {INTERNAL\_CHECK\_THAT}
     \subitem {catch\_amalgamated.hpp}, \hyperpage{344}
   \item {isConsole}
-    \subitem {Catch::IStream}, \hyperpage{143}
+    \subitem {Catch::IStream}, \hyperpage{144}
   \item {isGeneratorTracker}
-    \subitem {Catch::TestCaseTracking::ITracker}, \hyperpage{149}
+    \subitem {Catch::TestCaseTracking::ITracker}, \hyperpage{150}
   \item {isSectionTracker}
-    \subitem {Catch::TestCaseTracking::ITracker}, \hyperpage{149}
-    \subitem {Catch::TestCaseTracking::SectionTracker}, \hyperpage{232}
+    \subitem {Catch::TestCaseTracking::ITracker}, \hyperpage{150}
+    \subitem {Catch::TestCaseTracking::SectionTracker}, \hyperpage{233}
 
   \indexspace
 
-  \item {LFMCMC$<$ TData $>$}, \hyperpage{152}
+  \item {LFMCMC$<$ TData $>$}, \hyperpage{153}
   \item {listListeners}
-    \subitem {Catch::ReporterBase}, \hyperpage{212}
-    \subitem {Catch::XmlReporter}, \hyperpage{299}
-  \item {listReporters}
-    \subitem {Catch::ReporterBase}, \hyperpage{212}
-    \subitem {Catch::XmlReporter}, \hyperpage{299}
-  \item {listTags}
-    \subitem {Catch::ReporterBase}, \hyperpage{213}
-    \subitem {Catch::XmlReporter}, \hyperpage{299}
-  \item {listTests}
     \subitem {Catch::ReporterBase}, \hyperpage{213}
     \subitem {Catch::XmlReporter}, \hyperpage{300}
+  \item {listReporters}
+    \subitem {Catch::ReporterBase}, \hyperpage{213}
+    \subitem {Catch::XmlReporter}, \hyperpage{300}
+  \item {listTags}
+    \subitem {Catch::ReporterBase}, \hyperpage{214}
+    \subitem {Catch::XmlReporter}, \hyperpage{300}
+  \item {listTests}
+    \subitem {Catch::ReporterBase}, \hyperpage{214}
+    \subitem {Catch::XmlReporter}, \hyperpage{301}
   \item {LogicError}
     \subitem {catch\_amalgamated.hpp}, \hyperpage{346}
 
   \indexspace
 
   \item {m\_stream}
-    \subitem {Catch::ReporterBase}, \hyperpage{213}
+    \subitem {Catch::ReporterBase}, \hyperpage{214}
   \item {makeStream}
     \subitem {catch\_amalgamated.hpp}, \hyperpage{347}
-  \item {Model$<$ TSeq $>$}, \hyperpage{174}
-    \subitem {add\_global\_action}, \hyperpage{180}
-    \subitem {reset}, \hyperpage{180}
-    \subitem {run\_multiple}, \hyperpage{181}
-    \subitem {write\_data}, \hyperpage{181}
+  \item {Model$<$ TSeq $>$}, \hyperpage{175}
+    \subitem {add\_global\_action}, \hyperpage{181}
+    \subitem {reset}, \hyperpage{181}
+    \subitem {run\_multiple}, \hyperpage{182}
+    \subitem {write\_data}, \hyperpage{182}
 
   \indexspace
 
   \item {next}
     \subitem {Catch::Generators::ChunkGenerator$<$ T $>$}, 
-		\hyperpage{66}
+		\hyperpage{67}
     \subitem {Catch::Generators::FilterGenerator$<$ T, Predicate $>$}, 
-		\hyperpage{110}
+		\hyperpage{111}
     \subitem {Catch::Generators::FixedValuesGenerator$<$ T $>$}, 
-		\hyperpage{112}
-    \subitem {Catch::Generators::Generators$<$ T $>$}, \hyperpage{114}
+		\hyperpage{113}
+    \subitem {Catch::Generators::Generators$<$ T $>$}, \hyperpage{115}
     \subitem {Catch::Generators::IteratorGenerator$<$ T $>$}, 
-		\hyperpage{146}
+		\hyperpage{147}
     \subitem {Catch::Generators::MapGenerator$<$ T, U, Func $>$}, 
-		\hyperpage{156}
+		\hyperpage{157}
     \subitem {Catch::Generators::RandomFloatingGenerator$<$ Float $>$}, 
-		\hyperpage{201}
+		\hyperpage{202}
     \subitem {Catch::Generators::RandomIntegerGenerator$<$ Integer $>$}, 
-		\hyperpage{203}
-    \subitem {Catch::Generators::RangeGenerator$<$ T $>$}, 
 		\hyperpage{204}
+    \subitem {Catch::Generators::RangeGenerator$<$ T $>$}, 
+		\hyperpage{205}
     \subitem {Catch::Generators::RepeatGenerator$<$ T $>$}, 
-		\hyperpage{211}
+		\hyperpage{212}
     \subitem {Catch::Generators::SingleValueGenerator$<$ T $>$}, 
-		\hyperpage{236}
+		\hyperpage{237}
     \subitem {Catch::Generators::TakeGenerator$<$ T $>$}, 
-		\hyperpage{260}
+		\hyperpage{261}
   \item {NoAssertions}
-    \subitem {Catch::WarnAbout}, \hyperpage{293}
+    \subitem {Catch::WarnAbout}, \hyperpage{294}
   \item {None}
     \subitem {catch\_amalgamated.hpp}, \hyperpage{345}
 
@@ -754,103 +754,103 @@
 
   \item {parseReporterSpec}
     \subitem {catch\_amalgamated.hpp}, \hyperpage{348}
-  \item {PersonTools$<$ TSeq $>$}, \hyperpage{196}
+  \item {PersonTools$<$ TSeq $>$}, \hyperpage{197}
   \item {PlatformDefault}
     \subitem {catch\_amalgamated.hpp}, \hyperpage{345}
   \item {Predicate}
     \subitem {catch\_amalgamated.hpp}, \hyperpage{349}
-  \item {Progress}, \hyperpage{199}
+  \item {Progress}, \hyperpage{200}
 
   \indexspace
 
-  \item {Queue$<$ TSeq $>$}, \hyperpage{199}
+  \item {Queue$<$ TSeq $>$}, \hyperpage{200}
 
   \indexspace
 
-  \item {RandGraph}, \hyperpage{200}
+  \item {RandGraph}, \hyperpage{201}
   \item {read\_edgelist}
     \subitem {AdjList}, \hyperpage{24}
   \item {record\_variant}
-    \subitem {DataBase$<$ TSeq $>$}, \hyperpage{91}
+    \subitem {DataBase$<$ TSeq $>$}, \hyperpage{92}
   \item {registerReporterImpl}
     \subitem {catch\_amalgamated.hpp}, \hyperpage{349}
   \item {reproductive\_number}
-    \subitem {DataBase$<$ TSeq $>$}, \hyperpage{92}
+    \subitem {DataBase$<$ TSeq $>$}, \hyperpage{93}
   \item {reset}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{180}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{181}
   \item {ResultType}
     \subitem {catch\_amalgamated.hpp}, \hyperpage{345}
   \item {run\_multiple}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{181}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{182}
   \item {RuntimeError}
     \subitem {catch\_amalgamated.hpp}, \hyperpage{346}
 
   \indexspace
 
   \item {shouldRedirectStdOut}
-    \subitem {Catch::ReporterPreferences}, \hyperpage{216}
+    \subitem {Catch::ReporterPreferences}, \hyperpage{217}
   \item {shouldReportAllAssertions}
-    \subitem {Catch::ReporterPreferences}, \hyperpage{216}
+    \subitem {Catch::ReporterPreferences}, \hyperpage{217}
 
   \indexspace
 
   \item {testRunEnded}
-    \subitem {Catch::CompactReporter}, \hyperpage{72}
-    \subitem {Catch::ConsoleReporter}, \hyperpage{80}
-    \subitem {Catch::CumulativeReporterBase}, \hyperpage{89}
-    \subitem {Catch::EventListenerBase}, \hyperpage{102}
-    \subitem {Catch::IEventListener}, \hyperpage{126}
-    \subitem {Catch::MultiReporter}, \hyperpage{184}
-    \subitem {Catch::StreamingReporterBase}, \hyperpage{242}
-    \subitem {Catch::TAPReporter}, \hyperpage{262}
-    \subitem {Catch::TeamCityReporter}, \hyperpage{264}
-    \subitem {Catch::XmlReporter}, \hyperpage{300}
-  \item {testRunStarting}
-    \subitem {Catch::CompactReporter}, \hyperpage{72}
+    \subitem {Catch::CompactReporter}, \hyperpage{73}
     \subitem {Catch::ConsoleReporter}, \hyperpage{81}
-    \subitem {Catch::CumulativeReporterBase}, \hyperpage{89}
-    \subitem {Catch::EventListenerBase}, \hyperpage{102}
-    \subitem {Catch::IEventListener}, \hyperpage{126}
-    \subitem {Catch::JunitReporter}, \hyperpage{151}
-    \subitem {Catch::MultiReporter}, \hyperpage{184}
-    \subitem {Catch::SonarQubeReporter}, \hyperpage{239}
+    \subitem {Catch::CumulativeReporterBase}, \hyperpage{90}
+    \subitem {Catch::EventListenerBase}, \hyperpage{103}
+    \subitem {Catch::IEventListener}, \hyperpage{127}
+    \subitem {Catch::MultiReporter}, \hyperpage{185}
     \subitem {Catch::StreamingReporterBase}, \hyperpage{243}
-    \subitem {Catch::TAPReporter}, \hyperpage{262}
-    \subitem {Catch::TeamCityReporter}, \hyperpage{264}
-    \subitem {Catch::XmlReporter}, \hyperpage{300}
-  \item {Tool$<$ TSeq $>$}, \hyperpage{274}
-  \item {Tools$<$ TSeq $>$}, \hyperpage{275}
-  \item {Tools\_const$<$ TSeq $>$}, \hyperpage{276}
+    \subitem {Catch::TAPReporter}, \hyperpage{263}
+    \subitem {Catch::TeamCityReporter}, \hyperpage{265}
+    \subitem {Catch::XmlReporter}, \hyperpage{301}
+  \item {testRunStarting}
+    \subitem {Catch::CompactReporter}, \hyperpage{73}
+    \subitem {Catch::ConsoleReporter}, \hyperpage{82}
+    \subitem {Catch::CumulativeReporterBase}, \hyperpage{90}
+    \subitem {Catch::EventListenerBase}, \hyperpage{103}
+    \subitem {Catch::IEventListener}, \hyperpage{127}
+    \subitem {Catch::JunitReporter}, \hyperpage{152}
+    \subitem {Catch::MultiReporter}, \hyperpage{185}
+    \subitem {Catch::SonarQubeReporter}, \hyperpage{240}
+    \subitem {Catch::StreamingReporterBase}, \hyperpage{244}
+    \subitem {Catch::TAPReporter}, \hyperpage{263}
+    \subitem {Catch::TeamCityReporter}, \hyperpage{265}
+    \subitem {Catch::XmlReporter}, \hyperpage{301}
+  \item {Tool$<$ TSeq $>$}, \hyperpage{275}
+  \item {Tools$<$ TSeq $>$}, \hyperpage{276}
+  \item {Tools\_const$<$ TSeq $>$}, \hyperpage{277}
   \item {transition\_probability}
-    \subitem {DataBase$<$ TSeq $>$}, \hyperpage{92}
+    \subitem {DataBase$<$ TSeq $>$}, \hyperpage{93}
 
   \indexspace
 
   \item {ulpDistance}
     \subitem {catch\_amalgamated.hpp}, \hyperpage{349}
   \item {UnmatchedTestSpec}
-    \subitem {Catch::WarnAbout}, \hyperpage{293}
+    \subitem {Catch::WarnAbout}, \hyperpage{294}
   \item {UserData}
-    \subitem {UserData$<$ TSeq $>$}, \hyperpage{286}
-  \item {UserData$<$ TSeq $>$}, \hyperpage{284}
-    \subitem {UserData}, \hyperpage{286}
+    \subitem {UserData$<$ TSeq $>$}, \hyperpage{287}
+  \item {UserData$<$ TSeq $>$}, \hyperpage{285}
+    \subitem {UserData}, \hyperpage{287}
 
   \indexspace
 
-  \item {vecHasher$<$ T $>$}, \hyperpage{286}
-  \item {Virus$<$ TSeq $>$}, \hyperpage{289}
-  \item {Viruses$<$ TSeq $>$}, \hyperpage{291}
-  \item {Viruses\_const$<$ TSeq $>$}, \hyperpage{291}
+  \item {vecHasher$<$ T $>$}, \hyperpage{287}
+  \item {Virus$<$ TSeq $>$}, \hyperpage{290}
+  \item {Viruses$<$ TSeq $>$}, \hyperpage{292}
+  \item {Viruses\_const$<$ TSeq $>$}, \hyperpage{292}
 
   \indexspace
 
   \item {What}
-    \subitem {Catch::WarnAbout}, \hyperpage{293}
+    \subitem {Catch::WarnAbout}, \hyperpage{294}
   \item {Win32}
     \subitem {catch\_amalgamated.hpp}, \hyperpage{345}
   \item {write\_data}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{181}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{182}
   \item {writeAttribute}
-    \subitem {Catch::XmlWriter}, \hyperpage{301}
+    \subitem {Catch::XmlWriter}, \hyperpage{302}
 
 \end{theindex}
