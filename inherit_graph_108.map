@@ -1,5 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_catch_1_1_i_test_invoker.html" title=" " alt="" coords="5,31,140,57"/>
-<area shape="rect" id="node2" href="$class_catch_1_1_test_invoker_as_function.html" title=" " alt="" coords="200,5,397,32"/>
-<area shape="rect" id="node3" href="$class_catch_1_1_test_invoker_as_method.html" title=" " alt="" coords="188,56,409,83"/>
+<area shape="rect" id="node1" href="$class_catch_1_1_i_test_case_registry.html" title=" " alt="" coords="5,5,175,32"/>
+<area shape="rect" id="node2" href="$class_catch_1_1_test_registry.html" title=" " alt="" coords="223,5,357,32"/>
 </map>

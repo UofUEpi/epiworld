@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['resulttype_983',['ResultType',['../catch__amalgamated_8hpp.html#a58800f68faab69c44d58b2c0038875d1',1,'Catch::Clara::Detail']]]
+  ['resulttype_985',['ResultType',['../catch__amalgamated_8hpp.html#a58800f68faab69c44d58b2c0038875d1',1,'Catch::Clara::Detail']]]
 ];

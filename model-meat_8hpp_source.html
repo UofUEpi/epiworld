@@ -1423,217 +1423,203 @@ $(function() {
 <div class="line"><a name="l01378"></a><span class="lineno"> 1378</span>&#160;}</div>
 <div class="line"><a name="l01379"></a><span class="lineno"> 1379</span>&#160; </div>
 <div class="line"><a name="l01380"></a><span class="lineno"> 1380</span>&#160;template&lt;typename TSeq&gt;</div>
-<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;inline epiworld_double <a class="code" href="class_model.html">Model</a>&lt;TSeq&gt;::set_param(</div>
-<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;    std::<span class="keywordtype">string</span> pname</div>
-<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;    ) {</div>
-<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160; </div>
-<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;    <span class="keywordflow">if</span> (parameters.find(pname) == parameters.end())</div>
-<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;        <span class="keywordflow">throw</span> std::logic_error(<span class="stringliteral">&quot;The parameter &quot;</span> + pname + <span class="stringliteral">&quot; does not exists.&quot;</span>);</div>
-<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160; </div>
-<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;    CASES_PAR(npar_used++)</div>
-<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160; </div>
-<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;    return parameters[pname];</div>
-<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;    </div>
-<div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;}</div>
-<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160; </div>
-<div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160;template&lt;typename TSeq&gt;</div>
-<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;inline constexpr epiworld_double <a class="code" href="class_model.html">Model</a>&lt;TSeq&gt;::get_param(std::<span class="keywordtype">string</span> pname)</div>
-<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;{</div>
-<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;    <span class="keywordflow">if</span> (parameters.find(pname) == parameters.end())</div>
-<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;        <span class="keywordflow">throw</span> std::logic_error(<span class="stringliteral">&quot;The parameter &quot;</span> + pname + <span class="stringliteral">&quot; does not exists.&quot;</span>);</div>
-<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160; </div>
-<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;    <span class="keywordflow">return</span> parameters[pname];</div>
-<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;}</div>
-<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160; </div>
-<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;<span class="keyword">inline</span> constexpr epiworld_double <a class="code" href="class_model.html">Model&lt;TSeq&gt;::par</a>(std::string pname)</div>
-<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;{</div>
-<div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;    <span class="keywordflow">return</span> parameters[pname];</div>
-<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;}</div>
-<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160; </div>
-<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;<span class="preprocessor">#define DURCAST(tunit,txtunit) {\</span></div>
-<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;<span class="preprocessor">        elapsed       = std::chrono::duration_cast&lt;std::chrono:: tunit&gt;(\</span></div>
-<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;<span class="preprocessor">            time_end - time_start).count(); \</span></div>
-<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;<span class="preprocessor">        elapsed_total = std::chrono::duration_cast&lt;std::chrono:: tunit&gt;(time_elapsed).count(); \</span></div>
-<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;<span class="preprocessor">        abbr_unit     = txtunit;}</span></div>
-<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160; </div>
-<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_model.html">Model&lt;TSeq&gt;::get_elapsed</a>(</div>
-<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;    std::string unit,</div>
-<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;    epiworld_double * last_elapsed,</div>
-<div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;    epiworld_double * total_elapsed,</div>
-<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;    std::string * unit_abbr,</div>
-<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;    <span class="keywordtype">bool</span> print</div>
-<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160; </div>
-<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;    <span class="comment">// Preparing the result</span></div>
-<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;    epiworld_double elapsed, elapsed_total;</div>
-<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;    std::string abbr_unit;</div>
-<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160; </div>
-<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;    <span class="comment">// Figuring out the length</span></div>
-<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;    <span class="keywordflow">if</span> (unit == <span class="stringliteral">&quot;auto&quot;</span>)</div>
-<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;    {</div>
-<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160; </div>
-<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;        <span class="keywordtype">size_t</span> tlength = std::to_string(</div>
-<div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;            <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(floor(time_elapsed.count()))</div>
-<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;            ).length();</div>
-<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;        </div>
-<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;        <span class="keywordflow">if</span> (tlength &lt;= 1)</div>
-<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;            unit = <span class="stringliteral">&quot;nanoseconds&quot;</span>;</div>
-<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (tlength &lt;= 3)</div>
-<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;            unit = <span class="stringliteral">&quot;microseconds&quot;</span>;</div>
-<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (tlength &lt;= 6)</div>
-<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;            unit = <span class="stringliteral">&quot;milliseconds&quot;</span>;</div>
-<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (tlength &lt;= 8)</div>
-<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;            unit = <span class="stringliteral">&quot;seconds&quot;</span>;</div>
-<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (tlength &lt;= 9)</div>
-<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;            unit = <span class="stringliteral">&quot;minutes&quot;</span>;</div>
-<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;        <span class="keywordflow">else</span> </div>
-<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;            unit = <span class="stringliteral">&quot;hours&quot;</span>;</div>
-<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160; </div>
-<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;    }</div>
-<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160; </div>
-<div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160;    <span class="keywordflow">if</span> (unit == <span class="stringliteral">&quot;nanoseconds&quot;</span>)       DURCAST(nanoseconds,<span class="stringliteral">&quot;ns&quot;</span>)</div>
-<div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160;    else if (unit == &quot;microseconds&quot;) DURCAST(microseconds,&quot;\xC2\xB5s&quot;)</div>
-<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;    else if (unit == &quot;milliseconds&quot;) DURCAST(milliseconds,&quot;ms&quot;)</div>
-<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;    else if (unit == &quot;seconds&quot;)      DURCAST(seconds,&quot;s&quot;)</div>
-<div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;    else if (unit == &quot;minutes&quot;)      DURCAST(minutes,&quot;m&quot;)</div>
-<div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;    else if (unit == &quot;hours&quot;)        DURCAST(hours,&quot;h&quot;)</div>
-<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;    else</div>
-<div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160;        throw std::range_error(&quot;The time unit &quot; + unit + &quot; is not supported.&quot;);</div>
-<div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160; </div>
-<div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160; </div>
-<div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;    if (last_elapsed != <span class="keywordtype">nullptr</span>)</div>
-<div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;        *last_elapsed = elapsed;</div>
-<div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160;    if (total_elapsed != <span class="keywordtype">nullptr</span>)</div>
-<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;        *total_elapsed = elapsed_total;</div>
-<div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160;    if (unit_abbr != <span class="keywordtype">nullptr</span>)</div>
-<div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160;        *unit_abbr = abbr_unit;</div>
+<div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;inline epiworld_double <a class="code" href="class_model.html">Model</a>&lt;TSeq&gt;::get_param(std::<span class="keywordtype">string</span> pname)</div>
+<div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;{</div>
+<div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;    <span class="keywordflow">if</span> (parameters.find(pname) == parameters.end())</div>
+<div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;        <span class="keywordflow">throw</span> std::logic_error(<span class="stringliteral">&quot;The parameter &quot;</span> + pname + <span class="stringliteral">&quot; does not exists.&quot;</span>);</div>
+<div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160; </div>
+<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;    <span class="keywordflow">return</span> parameters[pname];</div>
+<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;}</div>
+<div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160; </div>
+<div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
+<div class="line"><a name="l01390"></a><span class="lineno"> 1390</span>&#160;<span class="keyword">inline</span> epiworld_double <a class="code" href="class_model.html">Model&lt;TSeq&gt;::par</a>(std::string pname)</div>
+<div class="line"><a name="l01391"></a><span class="lineno"> 1391</span>&#160;{</div>
+<div class="line"><a name="l01392"></a><span class="lineno"> 1392</span>&#160;    <span class="keywordflow">return</span> parameters[pname];</div>
+<div class="line"><a name="l01393"></a><span class="lineno"> 1393</span>&#160;}</div>
+<div class="line"><a name="l01394"></a><span class="lineno"> 1394</span>&#160; </div>
+<div class="line"><a name="l01395"></a><span class="lineno"> 1395</span>&#160;<span class="preprocessor">#define DURCAST(tunit,txtunit) {\</span></div>
+<div class="line"><a name="l01396"></a><span class="lineno"> 1396</span>&#160;<span class="preprocessor">        elapsed       = std::chrono::duration_cast&lt;std::chrono:: tunit&gt;(\</span></div>
+<div class="line"><a name="l01397"></a><span class="lineno"> 1397</span>&#160;<span class="preprocessor">            time_end - time_start).count(); \</span></div>
+<div class="line"><a name="l01398"></a><span class="lineno"> 1398</span>&#160;<span class="preprocessor">        elapsed_total = std::chrono::duration_cast&lt;std::chrono:: tunit&gt;(time_elapsed).count(); \</span></div>
+<div class="line"><a name="l01399"></a><span class="lineno"> 1399</span>&#160;<span class="preprocessor">        abbr_unit     = txtunit;}</span></div>
+<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160; </div>
+<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
+<div class="line"><a name="l01402"></a><span class="lineno"> 1402</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_model.html">Model&lt;TSeq&gt;::get_elapsed</a>(</div>
+<div class="line"><a name="l01403"></a><span class="lineno"> 1403</span>&#160;    std::string unit,</div>
+<div class="line"><a name="l01404"></a><span class="lineno"> 1404</span>&#160;    epiworld_double * last_elapsed,</div>
+<div class="line"><a name="l01405"></a><span class="lineno"> 1405</span>&#160;    epiworld_double * total_elapsed,</div>
+<div class="line"><a name="l01406"></a><span class="lineno"> 1406</span>&#160;    std::string * unit_abbr,</div>
+<div class="line"><a name="l01407"></a><span class="lineno"> 1407</span>&#160;    <span class="keywordtype">bool</span> print</div>
+<div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160; </div>
+<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;    <span class="comment">// Preparing the result</span></div>
+<div class="line"><a name="l01411"></a><span class="lineno"> 1411</span>&#160;    epiworld_double elapsed, elapsed_total;</div>
+<div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;    std::string abbr_unit;</div>
+<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160; </div>
+<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;    <span class="comment">// Figuring out the length</span></div>
+<div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;    <span class="keywordflow">if</span> (unit == <span class="stringliteral">&quot;auto&quot;</span>)</div>
+<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;    {</div>
+<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160; </div>
+<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;        <span class="keywordtype">size_t</span> tlength = std::to_string(</div>
+<div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;            <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(floor(time_elapsed.count()))</div>
+<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;            ).length();</div>
+<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;        </div>
+<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;        <span class="keywordflow">if</span> (tlength &lt;= 1)</div>
+<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;            unit = <span class="stringliteral">&quot;nanoseconds&quot;</span>;</div>
+<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (tlength &lt;= 3)</div>
+<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;            unit = <span class="stringliteral">&quot;microseconds&quot;</span>;</div>
+<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (tlength &lt;= 6)</div>
+<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;            unit = <span class="stringliteral">&quot;milliseconds&quot;</span>;</div>
+<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (tlength &lt;= 8)</div>
+<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;            unit = <span class="stringliteral">&quot;seconds&quot;</span>;</div>
+<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (tlength &lt;= 9)</div>
+<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;            unit = <span class="stringliteral">&quot;minutes&quot;</span>;</div>
+<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;        <span class="keywordflow">else</span> </div>
+<div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;            unit = <span class="stringliteral">&quot;hours&quot;</span>;</div>
+<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160; </div>
+<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;    }</div>
+<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160; </div>
+<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;    <span class="keywordflow">if</span> (unit == <span class="stringliteral">&quot;nanoseconds&quot;</span>)       DURCAST(nanoseconds,<span class="stringliteral">&quot;ns&quot;</span>)</div>
+<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;    else if (unit == &quot;microseconds&quot;) DURCAST(microseconds,&quot;\xC2\xB5s&quot;)</div>
+<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;    else if (unit == &quot;milliseconds&quot;) DURCAST(milliseconds,&quot;ms&quot;)</div>
+<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;    else if (unit == &quot;seconds&quot;)      DURCAST(seconds,&quot;s&quot;)</div>
+<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;    else if (unit == &quot;minutes&quot;)      DURCAST(minutes,&quot;m&quot;)</div>
+<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;    else if (unit == &quot;hours&quot;)        DURCAST(hours,&quot;h&quot;)</div>
+<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;    else</div>
+<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;        throw std::range_error(&quot;The time unit &quot; + unit + &quot; is not supported.&quot;);</div>
+<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160; </div>
+<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160; </div>
+<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;    if (last_elapsed != <span class="keywordtype">nullptr</span>)</div>
+<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;        *last_elapsed = elapsed;</div>
+<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;    if (total_elapsed != <span class="keywordtype">nullptr</span>)</div>
+<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;        *total_elapsed = elapsed_total;</div>
+<div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160;    if (unit_abbr != <span class="keywordtype">nullptr</span>)</div>
+<div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160;        *unit_abbr = abbr_unit;</div>
+<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160; </div>
+<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;    if (!print)</div>
+<div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;        return;</div>
+<div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160; </div>
+<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;    if (n_replicates &gt; 1u)</div>
+<div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160;    {</div>
+<div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;        printf_epiworld(<span class="stringliteral">&quot;last run elapsed time : %.2f%s\n&quot;</span>,</div>
+<div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160;            elapsed, abbr_unit.c_str());</div>
+<div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;        printf_epiworld(<span class="stringliteral">&quot;total elapsed time    : %.2f%s\n&quot;</span>,</div>
+<div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;            elapsed_total, abbr_unit.c_str());</div>
+<div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160;        printf_epiworld(<span class="stringliteral">&quot;total runs            : %i\n&quot;</span>,</div>
+<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;            <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(n_replicates));</div>
+<div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160;        printf_epiworld(<span class="stringliteral">&quot;mean run elapsed time : %.2f%s\n&quot;</span>,</div>
+<div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160;            elapsed_total/<span class="keyword">static_cast&lt;</span>epiworld_double<span class="keyword">&gt;</span>(n_replicates), abbr_unit.c_str());</div>
 <div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160; </div>
-<div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160;    if (!print)</div>
-<div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160;        return;</div>
-<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160; </div>
-<div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;    if (n_replicates &gt; 1u)</div>
-<div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;    {</div>
-<div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160;        printf_epiworld(<span class="stringliteral">&quot;last run elapsed time : %.2f%s\n&quot;</span>,</div>
-<div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;            elapsed, abbr_unit.c_str());</div>
-<div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;        printf_epiworld(<span class="stringliteral">&quot;total elapsed time    : %.2f%s\n&quot;</span>,</div>
-<div class="line"><a name="l01476"></a><span class="lineno"> 1476</span>&#160;            elapsed_total, abbr_unit.c_str());</div>
-<div class="line"><a name="l01477"></a><span class="lineno"> 1477</span>&#160;        printf_epiworld(<span class="stringliteral">&quot;total runs            : %i\n&quot;</span>,</div>
-<div class="line"><a name="l01478"></a><span class="lineno"> 1478</span>&#160;            <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(n_replicates));</div>
-<div class="line"><a name="l01479"></a><span class="lineno"> 1479</span>&#160;        printf_epiworld(<span class="stringliteral">&quot;mean run elapsed time : %.2f%s\n&quot;</span>,</div>
-<div class="line"><a name="l01480"></a><span class="lineno"> 1480</span>&#160;            elapsed_total/<span class="keyword">static_cast&lt;</span>epiworld_double<span class="keyword">&gt;</span>(n_replicates), abbr_unit.c_str());</div>
-<div class="line"><a name="l01481"></a><span class="lineno"> 1481</span>&#160; </div>
-<div class="line"><a name="l01482"></a><span class="lineno"> 1482</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01483"></a><span class="lineno"> 1483</span>&#160;        printf_epiworld(<span class="stringliteral">&quot;last run elapsed time : %.2f%s.\n&quot;</span>, elapsed, abbr_unit.c_str());</div>
-<div class="line"><a name="l01484"></a><span class="lineno"> 1484</span>&#160;    }</div>
-<div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160;}</div>
-<div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160; </div>
-<div class="line"><a name="l01487"></a><span class="lineno"> 1487</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l01488"></a><span class="lineno"> 1488</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_model.html#adc8d49825ecf57ac045a4c93e4d63924">Model&lt;TSeq&gt;::set_user_data</a>(std::vector&lt; std::string &gt; names)</div>
-<div class="line"><a name="l01489"></a><span class="lineno"> 1489</span>&#160;{</div>
-<div class="line"><a name="l01490"></a><span class="lineno"> 1490</span>&#160;    db.set_user_data(names);</div>
-<div class="line"><a name="l01491"></a><span class="lineno"> 1491</span>&#160;}</div>
-<div class="line"><a name="l01492"></a><span class="lineno"> 1492</span>&#160; </div>
-<div class="line"><a name="l01493"></a><span class="lineno"> 1493</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l01494"></a><span class="lineno"> 1494</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_model.html">Model&lt;TSeq&gt;::add_user_data</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j, epiworld_double x)</div>
-<div class="line"><a name="l01495"></a><span class="lineno"> 1495</span>&#160;{</div>
-<div class="line"><a name="l01496"></a><span class="lineno"> 1496</span>&#160;    db.add_user_data(j, x);</div>
-<div class="line"><a name="l01497"></a><span class="lineno"> 1497</span>&#160;}</div>
-<div class="line"><a name="l01498"></a><span class="lineno"> 1498</span>&#160; </div>
-<div class="line"><a name="l01499"></a><span class="lineno"> 1499</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l01500"></a><span class="lineno"> 1500</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_model.html">Model&lt;TSeq&gt;::add_user_data</a>(std::vector&lt;epiworld_double&gt; x)</div>
-<div class="line"><a name="l01501"></a><span class="lineno"> 1501</span>&#160;{</div>
-<div class="line"><a name="l01502"></a><span class="lineno"> 1502</span>&#160;    db.add_user_data(x);</div>
-<div class="line"><a name="l01503"></a><span class="lineno"> 1503</span>&#160;}</div>
-<div class="line"><a name="l01504"></a><span class="lineno"> 1504</span>&#160; </div>
-<div class="line"><a name="l01505"></a><span class="lineno"> 1505</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l01506"></a><span class="lineno"> 1506</span>&#160;<span class="keyword">inline</span> <a class="code" href="class_user_data.html">UserData&lt;TSeq&gt;</a> &amp; <a class="code" href="class_model.html">Model&lt;TSeq&gt;::get_user_data</a>()</div>
-<div class="line"><a name="l01507"></a><span class="lineno"> 1507</span>&#160;{</div>
-<div class="line"><a name="l01508"></a><span class="lineno"> 1508</span>&#160;    <span class="keywordflow">return</span> db.get_user_data();</div>
-<div class="line"><a name="l01509"></a><span class="lineno"> 1509</span>&#160;}</div>
-<div class="line"><a name="l01510"></a><span class="lineno"> 1510</span>&#160; </div>
-<div class="line"><a name="l01511"></a><span class="lineno"> 1511</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l01512"></a><span class="lineno"> 1512</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_model.html#adc3b2119335ffa4b0128123be919f454">Model&lt;TSeq&gt;::add_global_action</a>(</div>
-<div class="line"><a name="l01513"></a><span class="lineno"> 1513</span>&#160;    std::function&lt;<span class="keywordtype">void</span>(<a class="code" href="class_model.html">Model&lt;TSeq&gt;</a>*)&gt; fun,</div>
-<div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;    <span class="keywordtype">int</span> date</div>
-<div class="line"><a name="l01515"></a><span class="lineno"> 1515</span>&#160;)</div>
-<div class="line"><a name="l01516"></a><span class="lineno"> 1516</span>&#160;{</div>
-<div class="line"><a name="l01517"></a><span class="lineno"> 1517</span>&#160; </div>
-<div class="line"><a name="l01518"></a><span class="lineno"> 1518</span>&#160;    global_action_functions.push_back(fun);</div>
-<div class="line"><a name="l01519"></a><span class="lineno"> 1519</span>&#160;    global_action_dates.push_back(date);</div>
+<div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160;        printf_epiworld(<span class="stringliteral">&quot;last run elapsed time : %.2f%s.\n&quot;</span>, elapsed, abbr_unit.c_str());</div>
+<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;    }</div>
+<div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;}</div>
+<div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160; </div>
+<div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
+<div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_model.html#adc8d49825ecf57ac045a4c93e4d63924">Model&lt;TSeq&gt;::set_user_data</a>(std::vector&lt; std::string &gt; names)</div>
+<div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;{</div>
+<div class="line"><a name="l01476"></a><span class="lineno"> 1476</span>&#160;    db.set_user_data(names);</div>
+<div class="line"><a name="l01477"></a><span class="lineno"> 1477</span>&#160;}</div>
+<div class="line"><a name="l01478"></a><span class="lineno"> 1478</span>&#160; </div>
+<div class="line"><a name="l01479"></a><span class="lineno"> 1479</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
+<div class="line"><a name="l01480"></a><span class="lineno"> 1480</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_model.html">Model&lt;TSeq&gt;::add_user_data</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j, epiworld_double x)</div>
+<div class="line"><a name="l01481"></a><span class="lineno"> 1481</span>&#160;{</div>
+<div class="line"><a name="l01482"></a><span class="lineno"> 1482</span>&#160;    db.add_user_data(j, x);</div>
+<div class="line"><a name="l01483"></a><span class="lineno"> 1483</span>&#160;}</div>
+<div class="line"><a name="l01484"></a><span class="lineno"> 1484</span>&#160; </div>
+<div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
+<div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_model.html">Model&lt;TSeq&gt;::add_user_data</a>(std::vector&lt;epiworld_double&gt; x)</div>
+<div class="line"><a name="l01487"></a><span class="lineno"> 1487</span>&#160;{</div>
+<div class="line"><a name="l01488"></a><span class="lineno"> 1488</span>&#160;    db.add_user_data(x);</div>
+<div class="line"><a name="l01489"></a><span class="lineno"> 1489</span>&#160;}</div>
+<div class="line"><a name="l01490"></a><span class="lineno"> 1490</span>&#160; </div>
+<div class="line"><a name="l01491"></a><span class="lineno"> 1491</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
+<div class="line"><a name="l01492"></a><span class="lineno"> 1492</span>&#160;<span class="keyword">inline</span> <a class="code" href="class_user_data.html">UserData&lt;TSeq&gt;</a> &amp; <a class="code" href="class_model.html">Model&lt;TSeq&gt;::get_user_data</a>()</div>
+<div class="line"><a name="l01493"></a><span class="lineno"> 1493</span>&#160;{</div>
+<div class="line"><a name="l01494"></a><span class="lineno"> 1494</span>&#160;    <span class="keywordflow">return</span> db.get_user_data();</div>
+<div class="line"><a name="l01495"></a><span class="lineno"> 1495</span>&#160;}</div>
+<div class="line"><a name="l01496"></a><span class="lineno"> 1496</span>&#160; </div>
+<div class="line"><a name="l01497"></a><span class="lineno"> 1497</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
+<div class="line"><a name="l01498"></a><span class="lineno"> 1498</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_model.html#adc3b2119335ffa4b0128123be919f454">Model&lt;TSeq&gt;::add_global_action</a>(</div>
+<div class="line"><a name="l01499"></a><span class="lineno"> 1499</span>&#160;    std::function&lt;<span class="keywordtype">void</span>(<a class="code" href="class_model.html">Model&lt;TSeq&gt;</a>*)&gt; fun,</div>
+<div class="line"><a name="l01500"></a><span class="lineno"> 1500</span>&#160;    <span class="keywordtype">int</span> date</div>
+<div class="line"><a name="l01501"></a><span class="lineno"> 1501</span>&#160;)</div>
+<div class="line"><a name="l01502"></a><span class="lineno"> 1502</span>&#160;{</div>
+<div class="line"><a name="l01503"></a><span class="lineno"> 1503</span>&#160; </div>
+<div class="line"><a name="l01504"></a><span class="lineno"> 1504</span>&#160;    global_action_functions.push_back(fun);</div>
+<div class="line"><a name="l01505"></a><span class="lineno"> 1505</span>&#160;    global_action_dates.push_back(date);</div>
+<div class="line"><a name="l01506"></a><span class="lineno"> 1506</span>&#160; </div>
+<div class="line"><a name="l01507"></a><span class="lineno"> 1507</span>&#160;}</div>
+<div class="line"><a name="l01508"></a><span class="lineno"> 1508</span>&#160; </div>
+<div class="line"><a name="l01509"></a><span class="lineno"> 1509</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
+<div class="line"><a name="l01510"></a><span class="lineno"> 1510</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_model.html">Model&lt;TSeq&gt;::run_global_actions</a>()</div>
+<div class="line"><a name="l01511"></a><span class="lineno"> 1511</span>&#160;{</div>
+<div class="line"><a name="l01512"></a><span class="lineno"> 1512</span>&#160; </div>
+<div class="line"><a name="l01513"></a><span class="lineno"> 1513</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0u; i &lt; global_action_dates.size(); ++i)</div>
+<div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;    {</div>
+<div class="line"><a name="l01515"></a><span class="lineno"> 1515</span>&#160; </div>
+<div class="line"><a name="l01516"></a><span class="lineno"> 1516</span>&#160;        <span class="keywordflow">if</span> (global_action_dates[i] &lt; 0)</div>
+<div class="line"><a name="l01517"></a><span class="lineno"> 1517</span>&#160;        {</div>
+<div class="line"><a name="l01518"></a><span class="lineno"> 1518</span>&#160; </div>
+<div class="line"><a name="l01519"></a><span class="lineno"> 1519</span>&#160;            global_action_functions[i](<span class="keyword">this</span>);</div>
 <div class="line"><a name="l01520"></a><span class="lineno"> 1520</span>&#160; </div>
-<div class="line"><a name="l01521"></a><span class="lineno"> 1521</span>&#160;}</div>
-<div class="line"><a name="l01522"></a><span class="lineno"> 1522</span>&#160; </div>
-<div class="line"><a name="l01523"></a><span class="lineno"> 1523</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l01524"></a><span class="lineno"> 1524</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_model.html">Model&lt;TSeq&gt;::run_global_actions</a>()</div>
-<div class="line"><a name="l01525"></a><span class="lineno"> 1525</span>&#160;{</div>
+<div class="line"><a name="l01521"></a><span class="lineno"> 1521</span>&#160;        }</div>
+<div class="line"><a name="l01522"></a><span class="lineno"> 1522</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (global_action_dates[i] == <a class="code" href="class_model.html#aa3ce8d5f025e239f8090ab9645f3e917">today</a>())</div>
+<div class="line"><a name="l01523"></a><span class="lineno"> 1523</span>&#160;        {</div>
+<div class="line"><a name="l01524"></a><span class="lineno"> 1524</span>&#160; </div>
+<div class="line"><a name="l01525"></a><span class="lineno"> 1525</span>&#160;            global_action_functions[i](<span class="keyword">this</span>);</div>
 <div class="line"><a name="l01526"></a><span class="lineno"> 1526</span>&#160; </div>
-<div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0u; i &lt; global_action_dates.size(); ++i)</div>
-<div class="line"><a name="l01528"></a><span class="lineno"> 1528</span>&#160;    {</div>
-<div class="line"><a name="l01529"></a><span class="lineno"> 1529</span>&#160; </div>
-<div class="line"><a name="l01530"></a><span class="lineno"> 1530</span>&#160;        <span class="keywordflow">if</span> (global_action_dates[i] &lt; 0)</div>
-<div class="line"><a name="l01531"></a><span class="lineno"> 1531</span>&#160;        {</div>
+<div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160;        }</div>
+<div class="line"><a name="l01528"></a><span class="lineno"> 1528</span>&#160; </div>
+<div class="line"><a name="l01529"></a><span class="lineno"> 1529</span>&#160;        actions_run();</div>
+<div class="line"><a name="l01530"></a><span class="lineno"> 1530</span>&#160; </div>
+<div class="line"><a name="l01531"></a><span class="lineno"> 1531</span>&#160;    }</div>
 <div class="line"><a name="l01532"></a><span class="lineno"> 1532</span>&#160; </div>
-<div class="line"><a name="l01533"></a><span class="lineno"> 1533</span>&#160;            global_action_functions[i](<span class="keyword">this</span>);</div>
+<div class="line"><a name="l01533"></a><span class="lineno"> 1533</span>&#160;}</div>
 <div class="line"><a name="l01534"></a><span class="lineno"> 1534</span>&#160; </div>
-<div class="line"><a name="l01535"></a><span class="lineno"> 1535</span>&#160;        }</div>
-<div class="line"><a name="l01536"></a><span class="lineno"> 1536</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (global_action_dates[i] == <a class="code" href="class_model.html#aa3ce8d5f025e239f8090ab9645f3e917">today</a>())</div>
-<div class="line"><a name="l01537"></a><span class="lineno"> 1537</span>&#160;        {</div>
-<div class="line"><a name="l01538"></a><span class="lineno"> 1538</span>&#160; </div>
-<div class="line"><a name="l01539"></a><span class="lineno"> 1539</span>&#160;            global_action_functions[i](<span class="keyword">this</span>);</div>
+<div class="line"><a name="l01535"></a><span class="lineno"> 1535</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
+<div class="line"><a name="l01536"></a><span class="lineno"> 1536</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_model.html#a1cbe26a38285095c62d1971251a6c3db">Model&lt;TSeq&gt;::queuing_on</a>()</div>
+<div class="line"><a name="l01537"></a><span class="lineno"> 1537</span>&#160;{</div>
+<div class="line"><a name="l01538"></a><span class="lineno"> 1538</span>&#160;    use_queuing = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01539"></a><span class="lineno"> 1539</span>&#160;}</div>
 <div class="line"><a name="l01540"></a><span class="lineno"> 1540</span>&#160; </div>
-<div class="line"><a name="l01541"></a><span class="lineno"> 1541</span>&#160;        }</div>
-<div class="line"><a name="l01542"></a><span class="lineno"> 1542</span>&#160; </div>
-<div class="line"><a name="l01543"></a><span class="lineno"> 1543</span>&#160;        actions_run();</div>
-<div class="line"><a name="l01544"></a><span class="lineno"> 1544</span>&#160; </div>
-<div class="line"><a name="l01545"></a><span class="lineno"> 1545</span>&#160;    }</div>
+<div class="line"><a name="l01541"></a><span class="lineno"> 1541</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
+<div class="line"><a name="l01542"></a><span class="lineno"> 1542</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_model.html#a70f0e1d4c74e1cfc887aca35984c52b6">Model&lt;TSeq&gt;::queuing_off</a>()</div>
+<div class="line"><a name="l01543"></a><span class="lineno"> 1543</span>&#160;{</div>
+<div class="line"><a name="l01544"></a><span class="lineno"> 1544</span>&#160;    use_queuing = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01545"></a><span class="lineno"> 1545</span>&#160;}</div>
 <div class="line"><a name="l01546"></a><span class="lineno"> 1546</span>&#160; </div>
-<div class="line"><a name="l01547"></a><span class="lineno"> 1547</span>&#160;}</div>
-<div class="line"><a name="l01548"></a><span class="lineno"> 1548</span>&#160; </div>
-<div class="line"><a name="l01549"></a><span class="lineno"> 1549</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l01550"></a><span class="lineno"> 1550</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_model.html#a1cbe26a38285095c62d1971251a6c3db">Model&lt;TSeq&gt;::queuing_on</a>()</div>
-<div class="line"><a name="l01551"></a><span class="lineno"> 1551</span>&#160;{</div>
-<div class="line"><a name="l01552"></a><span class="lineno"> 1552</span>&#160;    use_queuing = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01553"></a><span class="lineno"> 1553</span>&#160;}</div>
-<div class="line"><a name="l01554"></a><span class="lineno"> 1554</span>&#160; </div>
-<div class="line"><a name="l01555"></a><span class="lineno"> 1555</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l01556"></a><span class="lineno"> 1556</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_model.html#a70f0e1d4c74e1cfc887aca35984c52b6">Model&lt;TSeq&gt;::queuing_off</a>()</div>
-<div class="line"><a name="l01557"></a><span class="lineno"> 1557</span>&#160;{</div>
-<div class="line"><a name="l01558"></a><span class="lineno"> 1558</span>&#160;    use_queuing = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l01559"></a><span class="lineno"> 1559</span>&#160;}</div>
-<div class="line"><a name="l01560"></a><span class="lineno"> 1560</span>&#160; </div>
-<div class="line"><a name="l01561"></a><span class="lineno"> 1561</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l01562"></a><span class="lineno"> 1562</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_model.html#a2c4ac58e918e9e8dc2e58be6521d8827">Model&lt;TSeq&gt;::is_queuing_on</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l01563"></a><span class="lineno"> 1563</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l01564"></a><span class="lineno"> 1564</span>&#160;    <span class="keywordflow">return</span> use_queuing;</div>
-<div class="line"><a name="l01565"></a><span class="lineno"> 1565</span>&#160;}</div>
-<div class="line"><a name="l01566"></a><span class="lineno"> 1566</span>&#160; </div>
-<div class="line"><a name="l01567"></a><span class="lineno"> 1567</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l01568"></a><span class="lineno"> 1568</span>&#160;<span class="keyword">inline</span> <a class="code" href="class_queue.html">Queue&lt;TSeq&gt;</a> &amp; <a class="code" href="class_model.html#aaf33c877732b9bdc7cb77e063ad0c1a6">Model&lt;TSeq&gt;::get_queue</a>()</div>
-<div class="line"><a name="l01569"></a><span class="lineno"> 1569</span>&#160;{</div>
-<div class="line"><a name="l01570"></a><span class="lineno"> 1570</span>&#160;    <span class="keywordflow">return</span> queue;</div>
-<div class="line"><a name="l01571"></a><span class="lineno"> 1571</span>&#160;}</div>
+<div class="line"><a name="l01547"></a><span class="lineno"> 1547</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
+<div class="line"><a name="l01548"></a><span class="lineno"> 1548</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_model.html#a2c4ac58e918e9e8dc2e58be6521d8827">Model&lt;TSeq&gt;::is_queuing_on</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l01549"></a><span class="lineno"> 1549</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l01550"></a><span class="lineno"> 1550</span>&#160;    <span class="keywordflow">return</span> use_queuing;</div>
+<div class="line"><a name="l01551"></a><span class="lineno"> 1551</span>&#160;}</div>
+<div class="line"><a name="l01552"></a><span class="lineno"> 1552</span>&#160; </div>
+<div class="line"><a name="l01553"></a><span class="lineno"> 1553</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
+<div class="line"><a name="l01554"></a><span class="lineno"> 1554</span>&#160;<span class="keyword">inline</span> <a class="code" href="class_queue.html">Queue&lt;TSeq&gt;</a> &amp; <a class="code" href="class_model.html#aaf33c877732b9bdc7cb77e063ad0c1a6">Model&lt;TSeq&gt;::get_queue</a>()</div>
+<div class="line"><a name="l01555"></a><span class="lineno"> 1555</span>&#160;{</div>
+<div class="line"><a name="l01556"></a><span class="lineno"> 1556</span>&#160;    <span class="keywordflow">return</span> queue;</div>
+<div class="line"><a name="l01557"></a><span class="lineno"> 1557</span>&#160;}</div>
+<div class="line"><a name="l01558"></a><span class="lineno"> 1558</span>&#160; </div>
+<div class="line"><a name="l01559"></a><span class="lineno"> 1559</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
+<div class="line"><a name="l01560"></a><span class="lineno"> 1560</span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> std::vector&lt; VirusPtr&lt;TSeq&gt; &gt; &amp; <a class="code" href="class_model.html">Model&lt;TSeq&gt;::get_viruses</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l01561"></a><span class="lineno"> 1561</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l01562"></a><span class="lineno"> 1562</span>&#160;    <span class="keywordflow">return</span> viruses;</div>
+<div class="line"><a name="l01563"></a><span class="lineno"> 1563</span>&#160;}</div>
+<div class="line"><a name="l01564"></a><span class="lineno"> 1564</span>&#160; </div>
+<div class="line"><a name="l01565"></a><span class="lineno"> 1565</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
+<div class="line"><a name="l01566"></a><span class="lineno"> 1566</span>&#160;<span class="keyword">const</span> std::vector&lt; ToolPtr&lt;TSeq&gt; &gt; &amp; <a class="code" href="class_model.html">Model&lt;TSeq&gt;::get_tools</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l01567"></a><span class="lineno"> 1567</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l01568"></a><span class="lineno"> 1568</span>&#160;    <span class="keywordflow">return</span> tools;</div>
+<div class="line"><a name="l01569"></a><span class="lineno"> 1569</span>&#160;}</div>
+<div class="line"><a name="l01570"></a><span class="lineno"> 1570</span>&#160; </div>
+<div class="line"><a name="l01571"></a><span class="lineno"> 1571</span>&#160;<span class="preprocessor">#undef DURCAST</span></div>
 <div class="line"><a name="l01572"></a><span class="lineno"> 1572</span>&#160; </div>
-<div class="line"><a name="l01573"></a><span class="lineno"> 1573</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l01574"></a><span class="lineno"> 1574</span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> std::vector&lt; VirusPtr&lt;TSeq&gt; &gt; &amp; <a class="code" href="class_model.html">Model&lt;TSeq&gt;::get_viruses</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l01575"></a><span class="lineno"> 1575</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l01576"></a><span class="lineno"> 1576</span>&#160;    <span class="keywordflow">return</span> viruses;</div>
-<div class="line"><a name="l01577"></a><span class="lineno"> 1577</span>&#160;}</div>
-<div class="line"><a name="l01578"></a><span class="lineno"> 1578</span>&#160; </div>
-<div class="line"><a name="l01579"></a><span class="lineno"> 1579</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> TSeq&gt;</div>
-<div class="line"><a name="l01580"></a><span class="lineno"> 1580</span>&#160;<span class="keyword">const</span> std::vector&lt; ToolPtr&lt;TSeq&gt; &gt; &amp; <a class="code" href="class_model.html">Model&lt;TSeq&gt;::get_tools</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l01581"></a><span class="lineno"> 1581</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l01582"></a><span class="lineno"> 1582</span>&#160;    <span class="keywordflow">return</span> tools;</div>
-<div class="line"><a name="l01583"></a><span class="lineno"> 1583</span>&#160;}</div>
-<div class="line"><a name="l01584"></a><span class="lineno"> 1584</span>&#160; </div>
-<div class="line"><a name="l01585"></a><span class="lineno"> 1585</span>&#160;<span class="preprocessor">#undef DURCAST</span></div>
-<div class="line"><a name="l01586"></a><span class="lineno"> 1586</span>&#160; </div>
-<div class="line"><a name="l01587"></a><span class="lineno"> 1587</span>&#160;<span class="preprocessor">#undef CASES_PAR</span></div>
-<div class="line"><a name="l01588"></a><span class="lineno"> 1588</span>&#160;<span class="preprocessor">#undef CASE_PAR</span></div>
-<div class="line"><a name="l01589"></a><span class="lineno"> 1589</span>&#160; </div>
-<div class="line"><a name="l01590"></a><span class="lineno"> 1590</span>&#160;<span class="preprocessor">#undef CHECK_INIT</span></div>
-<div class="line"><a name="l01591"></a><span class="lineno"> 1591</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01573"></a><span class="lineno"> 1573</span>&#160;<span class="preprocessor">#undef CASES_PAR</span></div>
+<div class="line"><a name="l01574"></a><span class="lineno"> 1574</span>&#160;<span class="preprocessor">#undef CASE_PAR</span></div>
+<div class="line"><a name="l01575"></a><span class="lineno"> 1575</span>&#160; </div>
+<div class="line"><a name="l01576"></a><span class="lineno"> 1576</span>&#160;<span class="preprocessor">#undef CHECK_INIT</span></div>
+<div class="line"><a name="l01577"></a><span class="lineno"> 1577</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_adj_list_html"><div class="ttname"><a href="class_adj_list.html">AdjList</a></div><div class="ttdef"><b>Definition:</b> adjlist-bones.hpp:4</div></div>
 <div class="ttc" id="aclass_adj_list_html_a2bf3a057863c9dfb958d44ff370690d1"><div class="ttname"><a href="class_adj_list.html#a2bf3a057863c9dfb958d44ff370690d1">AdjList::vcount</a></div><div class="ttdeci">size_t vcount() const</div><div class="ttdoc">Number of vertices/nodes in the network.</div><div class="ttdef"><b>Definition:</b> adjlist-meat.hpp:167</div></div>
 <div class="ttc" id="aclass_adj_list_html_aa08631a4605cc3037f017bb437a96ef0"><div class="ttname"><a href="class_adj_list.html#aa08631a4605cc3037f017bb437a96ef0">AdjList::read_edgelist</a></div><div class="ttdeci">void read_edgelist(std::string fn, int size, int skip=0, bool directed=true)</div><div class="ttdoc">Read an edgelist.</div><div class="ttdef"><b>Definition:</b> adjlist-meat.hpp:60</div></div>

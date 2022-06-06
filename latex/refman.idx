@@ -8,6 +8,7 @@
 \indexentry{AdjList@{AdjList}!read\_edgelist@{read\_edgelist}|hyperpage}{24}
 \indexentry{read\_edgelist@{read\_edgelist}!AdjList@{AdjList}|hyperpage}{24}
 \indexentry{Agent$<$ TSeq $>$@{Agent$<$ TSeq $>$}|hyperpage}{24}
+\indexentry{Agents$<$ TSeq $>$@{Agents$<$ TSeq $>$}|hyperpage}{26}
 \indexentry{Catch::Matchers::AllMatchMatcher$<$ Matcher $>$@{Catch::Matchers::AllMatchMatcher$<$ Matcher $>$}|hyperpage}{27}
 \indexentry{Catch::always\_false$<$ T $>$@{Catch::always\_false$<$ T $>$}|hyperpage}{28}
 \indexentry{Catch::Matchers::AnyMatchMatcher$<$ Matcher $>$@{Catch::Matchers::AnyMatchMatcher$<$ Matcher $>$}|hyperpage}{29}
@@ -225,8 +226,8 @@
 \indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{174}
 \indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!add\_global\_action@{add\_global\_action}|hyperpage}{180}
 \indexentry{add\_global\_action@{add\_global\_action}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{180}
-\indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!reset@{reset}|hyperpage}{181}
-\indexentry{reset@{reset}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{181}
+\indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!reset@{reset}|hyperpage}{180}
+\indexentry{reset@{reset}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{180}
 \indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!run\_multiple@{run\_multiple}|hyperpage}{181}
 \indexentry{run\_multiple@{run\_multiple}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{181}
 \indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!write\_data@{write\_data}|hyperpage}{181}

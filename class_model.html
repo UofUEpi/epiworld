@@ -401,6 +401,9 @@ Friends</h2></td></tr>
 <tr class="memitem:a4ebc26ee7b812cd7314ef1f7eb4cdebb"><td class="memItemLeft" align="right" valign="top"><a id="a4ebc26ee7b812cd7314ef1f7eb4cdebb"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>Agent&lt; TSeq &gt;</b></td></tr>
 <tr class="separator:a4ebc26ee7b812cd7314ef1f7eb4cdebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eada6fe328f92cf138bc9c91c3ff25c"><td class="memItemLeft" align="right" valign="top"><a id="a8eada6fe328f92cf138bc9c91c3ff25c"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Agents&lt; TSeq &gt;</b></td></tr>
+<tr class="separator:a8eada6fe328f92cf138bc9c91c3ff25c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c2c72b4a49cd6654843fe6fb4c36aa4"><td class="memItemLeft" align="right" valign="top"><a id="a8c2c72b4a49cd6654843fe6fb4c36aa4"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>DataBase&lt; TSeq &gt;</b></td></tr>
 <tr class="separator:a8c2c72b4a49cd6654843fe6fb4c36aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -438,7 +441,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>clone_population</b> 
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Setting and accessing parameters from the model</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp61207d51bcc1b661804b11cec5dc845e"></a> <a class="el" href="class_tools.html" title="Set of tools (useful for building iterators)">Tools</a> can incorporate parameters included in the model. Internally, parameters in the tool are stored as pointers to an std::map&lt;&gt; of parameters in the model. Using the <code>unsigned int</code> method directly fetches the parameters in the order these were added to the tool. Accessing parameters via the <code>std::string</code> method involves searching the parameter directly in the std::map&lt;&gt; member of the model (so it is not recommended.)</p>
-<p>The function <code>set_param()</code> can be used when the parameter already exists in the model.</p>
 <p>The <code>par()</code> function members are aliases for <code>get_param()</code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -575,21 +577,18 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>npar_used</b>
 <tr class="memitem:a412e4addbe3799787dccc43322aa2954"><td class="memItemLeft" align="right" valign="top"><a id="a412e4addbe3799787dccc43322aa2954"></a>
 epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>add_param</b> (epiworld_double initial_val, std::string pname)</td></tr>
 <tr class="separator:a412e4addbe3799787dccc43322aa2954"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1db9259e58b919268420fa54f2aba8fb"><td class="memItemLeft" align="right" valign="top"><a id="a1db9259e58b919268420fa54f2aba8fb"></a>
-epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>set_param</b> (std::string pname)</td></tr>
-<tr class="separator:a1db9259e58b919268420fa54f2aba8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93c1f4837afc5770e0072414249e085a"><td class="memItemLeft" align="right" valign="top"><a id="a93c1f4837afc5770e0072414249e085a"></a>
-constexpr epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>get_param</b> (unsigned int k)</td></tr>
-<tr class="separator:a93c1f4837afc5770e0072414249e085a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af102ff97bd4277e267a710efff83af57"><td class="memItemLeft" align="right" valign="top"><a id="af102ff97bd4277e267a710efff83af57"></a>
-constexpr epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>get_param</b> (std::string pname)</td></tr>
-<tr class="separator:af102ff97bd4277e267a710efff83af57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0913ec690be8a6a7947b68ba43b28b9f"><td class="memItemLeft" align="right" valign="top"><a id="a0913ec690be8a6a7947b68ba43b28b9f"></a>
-constexpr epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>par</b> (unsigned int k)</td></tr>
-<tr class="separator:a0913ec690be8a6a7947b68ba43b28b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2682edc76364d3ecd2eb25fad73eb14a"><td class="memItemLeft" align="right" valign="top"><a id="a2682edc76364d3ecd2eb25fad73eb14a"></a>
-constexpr epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>par</b> (std::string pname)</td></tr>
-<tr class="separator:a2682edc76364d3ecd2eb25fad73eb14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96a918aa6fe562d73f3bd9699e6a2bec"><td class="memItemLeft" align="right" valign="top"><a id="a96a918aa6fe562d73f3bd9699e6a2bec"></a>
+epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>get_param</b> (unsigned int k)</td></tr>
+<tr class="separator:a96a918aa6fe562d73f3bd9699e6a2bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d6350ebba9df34b279a8c36d318311b"><td class="memItemLeft" align="right" valign="top"><a id="a6d6350ebba9df34b279a8c36d318311b"></a>
+epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>get_param</b> (std::string pname)</td></tr>
+<tr class="separator:a6d6350ebba9df34b279a8c36d318311b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed6d5436c5cd4a61e296ab044037190c"><td class="memItemLeft" align="right" valign="top"><a id="aed6d5436c5cd4a61e296ab044037190c"></a>
+epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>par</b> (unsigned int k)</td></tr>
+<tr class="separator:aed6d5436c5cd4a61e296ab044037190c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada5e71c658245167f80d44ca3859afc9"><td class="memItemLeft" align="right" valign="top"><a id="ada5e71c658245167f80d44ca3859afc9"></a>
+epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>par</b> (std::string pname)</td></tr>
+<tr class="separator:ada5e71c658245167f80d44ca3859afc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename TSeq = int&gt;<br />

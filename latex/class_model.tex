@@ -355,6 +355,9 @@ void {\bfseries set\+\_\+death\+\_\+reduction\+\_\+mixer} (Mixer\+Fun$<$ TSeq $>
 \mbox{\Hypertarget{class_model_a4ebc26ee7b812cd7314ef1f7eb4cdebb}\label{class_model_a4ebc26ee7b812cd7314ef1f7eb4cdebb}} 
 class {\bfseries Agent$<$ TSeq $>$}
 \item 
+\mbox{\Hypertarget{class_model_a8eada6fe328f92cf138bc9c91c3ff25c}\label{class_model_a8eada6fe328f92cf138bc9c91c3ff25c}} 
+class {\bfseries Agents$<$ TSeq $>$}
+\item 
 \mbox{\Hypertarget{class_model_a8c2c72b4a49cd6654843fe6fb4c36aa4}\label{class_model_a8c2c72b4a49cd6654843fe6fb4c36aa4}} 
 class {\bfseries Data\+Base$<$ TSeq $>$}
 \item 
@@ -392,8 +395,6 @@ void {\bfseries clone\+\_\+population} (const \mbox{\hyperlink{class_model}{Mode
 \doxysubsection*{Setting and accessing parameters from the model}
 \label{_amgrp61207d51bcc1b661804b11cec5dc845e}%
  \mbox{\hyperlink{class_tools}{Tools}} can incorporate parameters included in the model. Internally, parameters in the tool are stored as pointers to an std\+::map$<$$>$ of parameters in the model. Using the {\ttfamily unsigned int} method directly fetches the parameters in the order these were added to the tool. Accessing parameters via the {\ttfamily std\+::string} method involves searching the parameter directly in the std\+::map$<$$>$ member of the model (so it is not recommended.)
-
-The function {\ttfamily set\+\_\+param()} can be used when the parameter already exists in the model.
 
 The {\ttfamily par()} function members are aliases for {\ttfamily get\+\_\+param()}.
 
@@ -535,20 +536,17 @@ unsigned int {\bfseries npar\+\_\+used} = 0u
 \mbox{\Hypertarget{class_model_a412e4addbe3799787dccc43322aa2954}\label{class_model_a412e4addbe3799787dccc43322aa2954}} 
 epiworld\+\_\+double {\bfseries add\+\_\+param} (epiworld\+\_\+double initial\+\_\+val, std\+::string pname)
 \item 
-\mbox{\Hypertarget{class_model_a1db9259e58b919268420fa54f2aba8fb}\label{class_model_a1db9259e58b919268420fa54f2aba8fb}} 
-epiworld\+\_\+double {\bfseries set\+\_\+param} (std\+::string pname)
+\mbox{\Hypertarget{class_model_a96a918aa6fe562d73f3bd9699e6a2bec}\label{class_model_a96a918aa6fe562d73f3bd9699e6a2bec}} 
+epiworld\+\_\+double {\bfseries get\+\_\+param} (unsigned int k)
 \item 
-\mbox{\Hypertarget{class_model_a93c1f4837afc5770e0072414249e085a}\label{class_model_a93c1f4837afc5770e0072414249e085a}} 
-constexpr epiworld\+\_\+double {\bfseries get\+\_\+param} (unsigned int k)
+\mbox{\Hypertarget{class_model_a6d6350ebba9df34b279a8c36d318311b}\label{class_model_a6d6350ebba9df34b279a8c36d318311b}} 
+epiworld\+\_\+double {\bfseries get\+\_\+param} (std\+::string pname)
 \item 
-\mbox{\Hypertarget{class_model_af102ff97bd4277e267a710efff83af57}\label{class_model_af102ff97bd4277e267a710efff83af57}} 
-constexpr epiworld\+\_\+double {\bfseries get\+\_\+param} (std\+::string pname)
+\mbox{\Hypertarget{class_model_aed6d5436c5cd4a61e296ab044037190c}\label{class_model_aed6d5436c5cd4a61e296ab044037190c}} 
+epiworld\+\_\+double {\bfseries par} (unsigned int k)
 \item 
-\mbox{\Hypertarget{class_model_a0913ec690be8a6a7947b68ba43b28b9f}\label{class_model_a0913ec690be8a6a7947b68ba43b28b9f}} 
-constexpr epiworld\+\_\+double {\bfseries par} (unsigned int k)
-\item 
-\mbox{\Hypertarget{class_model_a2682edc76364d3ecd2eb25fad73eb14a}\label{class_model_a2682edc76364d3ecd2eb25fad73eb14a}} 
-constexpr epiworld\+\_\+double {\bfseries par} (std\+::string pname)
+\mbox{\Hypertarget{class_model_ada5e71c658245167f80d44ca3859afc9}\label{class_model_ada5e71c658245167f80d44ca3859afc9}} 
+epiworld\+\_\+double {\bfseries par} (std\+::string pname)
 \end{DoxyCompactItemize}
 
 

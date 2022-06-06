@@ -1,3 +1,16 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_catch_1_1_i_exception_translator.html" title=" " alt="" coords="5,5,185,32"/>
+<area shape="rect" id="node1" href="$class_catch_1_1_i_event_listener.html" title=" " alt="" coords="5,81,152,108"/>
+<area shape="rect" id="node2" href="$class_catch_1_1_event_listener_base.html" title=" " alt="" coords="200,31,372,57"/>
+<area shape="rect" id="node3" href="$class_catch_1_1_multi_reporter.html" title=" " alt="" coords="217,81,355,108"/>
+<area shape="rect" id="node4" href="$class_catch_1_1_reporter_base.html" title=" " alt="" coords="215,132,357,159"/>
+<area shape="rect" id="node5" href="$class_catch_1_1_cumulative_reporter_base.html" title=" " alt="" coords="420,56,627,83"/>
+<area shape="rect" id="node8" href="$class_catch_1_1_streaming_reporter_base.html" title=" " alt="" coords="423,208,623,235"/>
+<area shape="rect" id="node6" href="$class_catch_1_1_junit_reporter.html" title=" " alt="" coords="693,5,832,32"/>
+<area shape="rect" id="node7" href="$class_catch_1_1_sonar_qube_reporter.html" title=" " alt="" coords="675,56,851,83"/>
+<area shape="rect" id="node9" href="$class_catch_1_1_automake_reporter.html" title=" " alt="" coords="677,107,848,133"/>
+<area shape="rect" id="node10" href="$class_catch_1_1_compact_reporter.html" title=" " alt="" coords="681,157,844,184"/>
+<area shape="rect" id="node11" href="$class_catch_1_1_console_reporter.html" title=" " alt="" coords="683,208,842,235"/>
+<area shape="rect" id="node12" href="$class_catch_1_1_t_a_p_reporter.html" title=" " alt="" coords="694,259,831,285"/>
+<area shape="rect" id="node13" href="$class_catch_1_1_team_city_reporter.html" title=" " alt="" coords="679,309,846,336"/>
+<area shape="rect" id="node14" href="$class_catch_1_1_xml_reporter.html" title=" " alt="" coords="695,360,830,387"/>
 </map>

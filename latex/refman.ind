@@ -10,6 +10,7 @@
     \subitem {AdjList}, \hyperpage{23}
     \subitem {read\_edgelist}, \hyperpage{24}
   \item {Agent$<$ TSeq $>$}, \hyperpage{24}
+  \item {Agents$<$ TSeq $>$}, \hyperpage{26}
   \item {ANSI}
     \subitem {catch\_amalgamated.hpp}, \hyperpage{345}
 
@@ -705,7 +706,7 @@
     \subitem {catch\_amalgamated.hpp}, \hyperpage{347}
   \item {Model$<$ TSeq $>$}, \hyperpage{174}
     \subitem {add\_global\_action}, \hyperpage{180}
-    \subitem {reset}, \hyperpage{181}
+    \subitem {reset}, \hyperpage{180}
     \subitem {run\_multiple}, \hyperpage{181}
     \subitem {write\_data}, \hyperpage{181}
 
@@ -776,7 +777,7 @@
   \item {reproductive\_number}
     \subitem {DataBase$<$ TSeq $>$}, \hyperpage{92}
   \item {reset}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{181}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{180}
   \item {ResultType}
     \subitem {catch\_amalgamated.hpp}, \hyperpage{345}
   \item {run\_multiple}
