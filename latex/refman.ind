@@ -10,14 +10,15 @@
     \subitem {AdjList}, \hyperpage{23}
     \subitem {read\_edgelist}, \hyperpage{24}
   \item {Agent$<$ TSeq $>$}, \hyperpage{24}
-  \item {AgentsSample$<$ TSeq $>$}, \hyperpage{26}
+    \subitem {operator()}, \hyperpage{26}
+  \item {AgentsSample$<$ TSeq $>$}, \hyperpage{27}
   \item {ANSI}
     \subitem {catch\_amalgamated.hpp}, \hyperpage{345}
 
   \indexspace
 
-  \item {Catch::always\_false$<$ T $>$}, \hyperpage{28}
-  \item {Catch::Approx}, \hyperpage{30}
+  \item {Catch::always\_false$<$ T $>$}, \hyperpage{29}
+  \item {Catch::Approx}, \hyperpage{31}
   \item {Catch::AssertionHandler}, \hyperpage{35}
   \item {Catch::AssertionInfo}, \hyperpage{35}
   \item {Catch::AssertionReaction}, \hyperpage{36}
@@ -234,11 +235,11 @@
   \item {Catch::ListenerDescription}, \hyperpage{155}
   \item {Catch::ListenerRegistrar$<$ T $>$}, \hyperpage{156}
   \item {Catch::Matchers::AllMatchMatcher$<$ Matcher $>$}, 
-		\hyperpage{27}
+		\hyperpage{28}
   \item {Catch::Matchers::AnyMatchMatcher$<$ Matcher $>$}, 
-		\hyperpage{29}
+		\hyperpage{30}
   \item {Catch::Matchers::ApproxMatcher$<$ T, AllocComp, AllocMatch $>$}, 
-		\hyperpage{31}
+		\hyperpage{32}
   \item {Catch::Matchers::CasedString}, \hyperpage{63}
   \item {Catch::Matchers::ContainsElementMatcher$<$ T, Equality $>$}, 
 		\hyperpage{83}
@@ -708,7 +709,8 @@
     \subitem {add\_global\_action}, \hyperpage{181}
     \subitem {reset}, \hyperpage{181}
     \subitem {run\_multiple}, \hyperpage{182}
-    \subitem {write\_data}, \hyperpage{182}
+    \subitem {set\_agents\_data}, \hyperpage{182}
+    \subitem {write\_data}, \hyperpage{183}
 
   \indexspace
 
@@ -745,6 +747,8 @@
 
   \item {Ok}
     \subitem {catch\_amalgamated.hpp}, \hyperpage{346}
+  \item {operator()}
+    \subitem {Agent$<$ TSeq $>$}, \hyperpage{26}
   \item {operator\&\&}
     \subitem {catch\_amalgamated.hpp}, \hyperpage{348}
   \item {operator\texttt{|}\texttt{|}}
@@ -787,6 +791,8 @@
 
   \indexspace
 
+  \item {set\_agents\_data}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{182}
   \item {shouldRedirectStdOut}
     \subitem {Catch::ReporterPreferences}, \hyperpage{217}
   \item {shouldReportAllAssertions}
@@ -849,7 +855,7 @@
   \item {Win32}
     \subitem {catch\_amalgamated.hpp}, \hyperpage{345}
   \item {write\_data}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{182}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{183}
   \item {writeAttribute}
     \subitem {Catch::XmlWriter}, \hyperpage{302}
 

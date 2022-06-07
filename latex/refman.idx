@@ -8,12 +8,14 @@
 \indexentry{AdjList@{AdjList}!read\_edgelist@{read\_edgelist}|hyperpage}{24}
 \indexentry{read\_edgelist@{read\_edgelist}!AdjList@{AdjList}|hyperpage}{24}
 \indexentry{Agent$<$ TSeq $>$@{Agent$<$ TSeq $>$}|hyperpage}{24}
-\indexentry{AgentsSample$<$ TSeq $>$@{AgentsSample$<$ TSeq $>$}|hyperpage}{26}
-\indexentry{Catch::Matchers::AllMatchMatcher$<$ Matcher $>$@{Catch::Matchers::AllMatchMatcher$<$ Matcher $>$}|hyperpage}{27}
-\indexentry{Catch::always\_false$<$ T $>$@{Catch::always\_false$<$ T $>$}|hyperpage}{28}
-\indexentry{Catch::Matchers::AnyMatchMatcher$<$ Matcher $>$@{Catch::Matchers::AnyMatchMatcher$<$ Matcher $>$}|hyperpage}{29}
-\indexentry{Catch::Approx@{Catch::Approx}|hyperpage}{30}
-\indexentry{Catch::Matchers::ApproxMatcher$<$ T, AllocComp, AllocMatch $>$@{Catch::Matchers::ApproxMatcher$<$ T, AllocComp, AllocMatch $>$}|hyperpage}{31}
+\indexentry{Agent$<$ TSeq $>$@{Agent$<$ TSeq $>$}!operator()@{operator()}|hyperpage}{26}
+\indexentry{operator()@{operator()}!Agent$<$ TSeq $>$@{Agent$<$ TSeq $>$}|hyperpage}{26}
+\indexentry{AgentsSample$<$ TSeq $>$@{AgentsSample$<$ TSeq $>$}|hyperpage}{27}
+\indexentry{Catch::Matchers::AllMatchMatcher$<$ Matcher $>$@{Catch::Matchers::AllMatchMatcher$<$ Matcher $>$}|hyperpage}{28}
+\indexentry{Catch::always\_false$<$ T $>$@{Catch::always\_false$<$ T $>$}|hyperpage}{29}
+\indexentry{Catch::Matchers::AnyMatchMatcher$<$ Matcher $>$@{Catch::Matchers::AnyMatchMatcher$<$ Matcher $>$}|hyperpage}{30}
+\indexentry{Catch::Approx@{Catch::Approx}|hyperpage}{31}
+\indexentry{Catch::Matchers::ApproxMatcher$<$ T, AllocComp, AllocMatch $>$@{Catch::Matchers::ApproxMatcher$<$ T, AllocComp, AllocMatch $>$}|hyperpage}{32}
 \indexentry{Catch::Clara::Arg@{Catch::Clara::Arg}|hyperpage}{33}
 \indexentry{Catch::Clara::Args@{Catch::Clara::Args}|hyperpage}{34}
 \indexentry{Catch::Generators::as$<$ T $>$@{Catch::Generators::as$<$ T $>$}|hyperpage}{35}
@@ -230,8 +232,10 @@
 \indexentry{reset@{reset}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{181}
 \indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!run\_multiple@{run\_multiple}|hyperpage}{182}
 \indexentry{run\_multiple@{run\_multiple}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{182}
-\indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!write\_data@{write\_data}|hyperpage}{182}
-\indexentry{write\_data@{write\_data}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{182}
+\indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!set\_agents\_data@{set\_agents\_data}|hyperpage}{182}
+\indexentry{set\_agents\_data@{set\_agents\_data}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{182}
+\indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!write\_data@{write\_data}|hyperpage}{183}
+\indexentry{write\_data@{write\_data}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{183}
 \indexentry{Catch::MultiReporter@{Catch::MultiReporter}|hyperpage}{183}
 \indexentry{Catch::MultiReporter@{Catch::MultiReporter}!testRunEnded@{testRunEnded}|hyperpage}{185}
 \indexentry{testRunEnded@{testRunEnded}!Catch::MultiReporter@{Catch::MultiReporter}|hyperpage}{185}

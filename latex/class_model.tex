@@ -77,7 +77,9 @@ const std\+::vector$<$ Virus\+Ptr$<$ TSeq $>$ $>$ \& {\bfseries get\+\_\+viruses
 \item 
 \mbox{\Hypertarget{class_model_af5ce54646c8b1073fcdc711890650d97}\label{class_model_af5ce54646c8b1073fcdc711890650d97}} 
 const std\+::vector$<$ Tool\+Ptr$<$ TSeq $>$ $>$ \& {\bfseries get\+\_\+tools} () const
-\end{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_model_a14758e0476fd4a05643ab41190530513}{set\+\_\+agents\+\_\+data}} (double $\ast$data\+\_\+, size\+\_\+t ncols\+\_\+)
+\begin{DoxyCompactList}\small\item\em Set the agents data object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \begin{Indent}\textbf{ Set the backup object}\par
 {\em {\ttfamily backup} can be used to restore the entire object after a run. This can be useful if the user wishes to have individuals start with the same network from the beginning. }\begin{DoxyCompactItemize}
 \item 
@@ -612,6 +614,26 @@ void \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$\+::run\+\_\+multiple (\be
 
 \begin{DoxyParams}{Parameters}
 {\em nexperiments} & Multiple runs of the simulation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_a14758e0476fd4a05643ab41190530513}\label{class_model_a14758e0476fd4a05643ab41190530513}} 
+\index{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!set\_agents\_data@{set\_agents\_data}}
+\index{set\_agents\_data@{set\_agents\_data}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}}
+\doxysubsubsection{\texorpdfstring{set\_agents\_data()}{set\_agents\_data()}}
+{\footnotesize\ttfamily template$<$typename TSeq  = int$>$ \\
+void \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$\+::set\+\_\+agents\+\_\+data (\begin{DoxyParamCaption}\item[{double $\ast$}]{data\+\_\+,  }\item[{size\+\_\+t}]{ncols\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Set the agents data object. 
+
+The data should be an array with the data stored in a column major order, i.\+e., by column.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+\_\+} & Pointer to the first element of an array of size {\ttfamily size() $\ast$ ncols\+\_\+}. \\
+\hline
+{\em ncols\+\_\+} & Number of features included in the data. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{class_model_a4664c30171aa08485430cc8c1cb4e23f}\label{class_model_a4664c30171aa08485430cc8c1cb4e23f}} 

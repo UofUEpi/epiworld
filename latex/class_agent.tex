@@ -152,6 +152,15 @@ epiworld\+\_\+double {\bfseries get\+\_\+recovery\+\_\+enhancer} (Virus\+Ptr$<$ 
 epiworld\+\_\+double {\bfseries get\+\_\+death\+\_\+reduction} (Virus\+Ptr$<$ TSeq $>$ v)
 \end{DoxyCompactItemize}
 \end{Indent}
+\textbf{ }\par
+\begin{DoxyCompactItemize}
+\item 
+double \& \mbox{\hyperlink{class_agent_ae518258e4a3fe35547db7f0a8d3a0f84}{operator()}} (size\+\_\+t j)
+\begin{DoxyCompactList}\small\item\em Access the j-\/th column of the agent. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_agent_ac4bbb39033f0cfb5c8dc0577d85a47a6}\label{class_agent_ac4bbb39033f0cfb5c8dc0577d85a47a6}} 
+double \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t j)
+\end{DoxyCompactItemize}
+
 \doxysubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
@@ -201,6 +210,32 @@ class Agent$<$ TSeq $>$}
 {\em TSeq} & Sequence type (should match {\ttfamily TSeq} across the model) \\
 \hline
 \end{DoxyTemplParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_agent_ae518258e4a3fe35547db7f0a8d3a0f84}\label{class_agent_ae518258e4a3fe35547db7f0a8d3a0f84}} 
+\index{Agent$<$ TSeq $>$@{Agent$<$ TSeq $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!Agent$<$ TSeq $>$@{Agent$<$ TSeq $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename TSeq  = int$>$ \\
+double\& \mbox{\hyperlink{class_agent}{Agent}}$<$ TSeq $>$\+::operator() (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{j }\end{DoxyParamCaption})}
+
+
+
+Access the j-\/th column of the agent. 
+
+If an external array has been specified, then these two functions can be used to access additional agent\textquotesingle{}s features not included in the model.
+
+The {\ttfamily operator\mbox{[}\mbox{]}} method is with no boundary check, whereas the {\ttfamily operator()} method checks boundaries. The former can result in a segfault.
+
+
+\begin{DoxyParams}{Parameters}
+{\em j} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double\& 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

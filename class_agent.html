@@ -213,6 +213,13 @@ epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>get_recove
 <tr class="memitem:a9ebfa8ca3896ab7a1466f94f991d6056"><td class="memItemLeft" align="right" valign="top"><a id="a9ebfa8ca3896ab7a1466f94f991d6056"></a>
 epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>get_death_reduction</b> (VirusPtr&lt; TSeq &gt; v)</td></tr>
 <tr class="separator:a9ebfa8ca3896ab7a1466f94f991d6056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:ae518258e4a3fe35547db7f0a8d3a0f84"><td class="memItemLeft" align="right" valign="top">double &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_agent.html#ae518258e4a3fe35547db7f0a8d3a0f84">operator()</a> (size_t j)</td></tr>
+<tr class="memdesc:ae518258e4a3fe35547db7f0a8d3a0f84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the j-th column of the agent.  <a href="class_agent.html#ae518258e4a3fe35547db7f0a8d3a0f84">More...</a><br /></td></tr>
+<tr class="separator:ae518258e4a3fe35547db7f0a8d3a0f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4bbb39033f0cfb5c8dc0577d85a47a6"><td class="memItemLeft" align="right" valign="top"><a id="ac4bbb39033f0cfb5c8dc0577d85a47a6"></a>
+double &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (size_t j)</td></tr>
+<tr class="separator:ac4bbb39033f0cfb5c8dc0577d85a47a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -261,7 +268,39 @@ class Agent&lt; TSeq &gt;</h3>
   </table>
   </dd>
 </dl>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae518258e4a3fe35547db7f0a8d3a0f84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae518258e4a3fe35547db7f0a8d3a0f84">&#9670;&nbsp;</a></span>operator()()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TSeq  = int&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">double&amp; <a class="el" href="class_agent.html">Agent</a>&lt; TSeq &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>j</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Access the j-th column of the agent. </p>
+<p>If an external array has been specified, then these two functions can be used to access additional agent's features not included in the model.</p>
+<p>The <code>operator[]</code> method is with no boundary check, whereas the <code>operator()</code> method checks boundaries. The former can result in a segfault.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">j</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double&amp; </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/epiworld/<a class="el" href="agent-bones_8hpp_source.html">agent-bones.hpp</a></li>
 </ul>
 </div><!-- contents -->

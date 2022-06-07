@@ -148,6 +148,9 @@ const std::vector&lt; VirusPtr&lt; TSeq &gt; &gt; &amp;&#160;</td><td class="mem
 <tr class="memitem:af5ce54646c8b1073fcdc711890650d97"><td class="memItemLeft" align="right" valign="top"><a id="af5ce54646c8b1073fcdc711890650d97"></a>
 const std::vector&lt; ToolPtr&lt; TSeq &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_tools</b> () const</td></tr>
 <tr class="separator:af5ce54646c8b1073fcdc711890650d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14758e0476fd4a05643ab41190530513"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a14758e0476fd4a05643ab41190530513">set_agents_data</a> (double *data_, size_t ncols_)</td></tr>
+<tr class="memdesc:a14758e0476fd4a05643ab41190530513"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the agents data object.  <a href="class_model.html#a14758e0476fd4a05643ab41190530513">More...</a><br /></td></tr>
+<tr class="separator:a14758e0476fd4a05643ab41190530513"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Set the backup object</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p><code>backup</code> can be used to restore the entire object after a run. This can be useful if the user wishes to have individuals start with the same network from the beginning. </p>
 </div></td></tr>
@@ -713,6 +716,46 @@ template&lt;typename TSeq  = int&gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nexperiments</td><td>Multiple runs of the simulation </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a14758e0476fd4a05643ab41190530513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14758e0476fd4a05643ab41190530513">&#9670;&nbsp;</a></span>set_agents_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TSeq  = int&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_model.html">Model</a>&lt; TSeq &gt;::set_agents_data </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>data_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>ncols_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the agents data object. </p>
+<p>The data should be an array with the data stored in a column major order, i.e., by column.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data_</td><td>Pointer to the first element of an array of size <code>size() * ncols_</code>. </td></tr>
+    <tr><td class="paramname">ncols_</td><td>Number of features included in the data. </td></tr>
   </table>
   </dd>
 </dl>
