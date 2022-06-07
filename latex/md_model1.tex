@@ -1,0 +1,61 @@
+The dynamics of the simulation process are\+:
+
+
+\begin{DoxyEnumerate}
+\item Discrete Markov process.
+\item The simulation has the following parameters\+:
+
+a. New variant emergence at rate {\ttfamily X.} b. For each variant {\ttfamily k}\+:
+\begin{DoxyItemize}
+\item Unvaccinated individuals become sick rate {\ttfamily C(k),}
+\item Mortality rate {\ttfamily D(k),}
+\item Recovery rate {\ttfamily H(k),}
+\item Vaccines have an efficaccy rate {\ttfamily E(v,k)} and pseudo vaccines (recovered) have efficacy rate {\ttfamily E(r,k) $<$ E(v,k).} In general, the probability of {\ttfamily i} acquiring the disease {\ttfamily k} from {\ttfamily j} will be equal to
+\end{DoxyItemize}
+
+\`{}\`{}\`{} P(i gets the disease from j $\vert$ their states) = C(k) $\ast$ (1 -\/ E(i,k)) $\ast$ (1 -\/ E(j, k)) \`{}\`{}\`{}
+
+where {\ttfamily (i,j) in (u,v,r).} Efficacy rate for unvaccinated is zero.
+\begin{DoxyItemize}
+\item Vaccinated individuals have a reduced mortality rate {\ttfamily D(k,v) $>$ D(k),} and recovered individuals {\ttfamily D(k,r) in (D(k,v), D(k)\mbox{]}}
+\item Vaccinated individuals have an increased recovery rate {\ttfamily H(k,v) $>$ H(k)}, whereas recovered\textquotesingle{}s rate {\ttfamily H(k,r) in \mbox{[}H(k), H(k,v)).}
+\end{DoxyItemize}
+
+The sum of mortality and recovery rates is less than one since the difference represents no change.
+
+c. Each country vaccinates citizens at rate {\ttfamily V} function of {\ttfamily A} (availability) and {\ttfamily B} (citizens\textquotesingle{} acceptance rate.) d. In each country {\ttfamily i,} the entire population {\ttfamily N(i)} distributes between the following states\+:
+\begin{DoxyItemize}
+\item Healthy unvaccinated ({\ttfamily N(i,t,u)}),
+\item Healthy vaccinated ({\ttfamily N(i,t,v)}),
+\item Deceased ({\ttfamily N(i,t,d)}),
+\item Recovered ({\ttfamily N(i,t,r)}),
+\item Unvaccinated and sick with variant ({\ttfamily N(i,t,s,k$\vert$u)}) {\ttfamily k.}, and
+\item Vaccinated and sick with variant ({\ttfamily N(i,t,s,k$\vert$v)}) {\ttfamily k.}
+\end{DoxyItemize}
+
+Total sick are {\ttfamily N(i,t,k,s) = sum(g in \{u,v\}) N(i,t,k,s$\vert$g)}
+
+Globally, we keep track of the prevalence of new variants. Variants can disappear if no more individuals port the variant, i.\+e., the prevalence rate {\ttfamily P(k,t)=sum(i) N(i,s,k)} equals zero.
+
+d. Vaccines are manufactured at each country at rates {\ttfamily M(i)} and uniformly shared with other countries at rate {\ttfamily S(i).} c. Population flows between each country pair {\ttfamily (i,j)} at a rate {\ttfamily F(i,j).} Flows between countries do not change Population and are symmetric.
+\item The simulation process is as follows\+:
+\begin{DoxyEnumerate}
+\item Countries are initialized with a total population {\ttfamily N(i).}
+\item Variant zero initializes at a random location {\ttfamily i,} with an initial prevalence {\ttfamily P(k,t) = N(i,t,k).}
+\item For time {\ttfamily t} in {\ttfamily (0,T)} do\+:
+
+a. Unvaccinated individuals can become sick of variant {\ttfamily k} with probability\+:
+
+\`{}\`{}\`{} Pr(h-\/$>$s$\vert$i,t,k,u) $\sim$ sum(g in \{u,v\}) (N(i,t -\/ 1,s,k$\vert$g) + sum(j != i) F(i,j) $\ast$ N(j,t-\/1,s,k$\vert$g)) $\ast$ C(k) / (N(i) + sum(j != i) N(j)) \`{}\`{}\`{}
+
+b. Vaccinated individuals can become sick of variant {\ttfamily k} with probability\+: {\ttfamily Pr(v-\/$>$s$\vert$i,t,k,v) $\sim$ Pr(h-\/$>$s$\vert$i,t,k) $\ast$ (1 -\/ E(v,k)).}
+
+b. Recovered individuals can become sick of variant {\ttfamily k} with probability\+: {\ttfamily Pr(v-\/$>$s$\vert$i,t,k,r) $\sim$ Pr(h-\/$>$s$\vert$i,t,k) $\ast$ (1 -\/ E(r,k)).}
+
+c. Sick individuals with variant {\ttfamily k} die with probability {\ttfamily D(k)} or recover with probability {\ttfamily H(k)}, otherwise they stay infected; with the rates depending on their vaccination status {\ttfamily v} or {\ttfamily n.}
+
+d. Unvaccinated individuals vaccinate in country {\ttfamily i} with probability {\ttfamily P(u-\/$>$v) $\sim$ V(A(i,t), B(i)).}
+
+e. The country vaccine supply changes. 
+\end{DoxyEnumerate}
+\end{DoxyEnumerate}

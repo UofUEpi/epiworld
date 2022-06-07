@@ -1,5 +1,37 @@
-\label{index_md_include_README}%
-\Hypertarget{index_md_include_README}%
- Although {\ttfamily epiworld} is a header-\/only C++ library, we do make use of other cool projects in some of the examples and for testing. The \href{https://github.com/jarro2783/cxxopts}{\texttt{ {\ttfamily cxxopts}}} library provides a smooth interface for using options in your C++ program. \href{https://github.com/catchorg/Catch2}{\texttt{ {\ttfamily catch2}}} is a great C++ unit-\/tests framework that we have use in \href{https://github.com/USCbiostats/barry}{\texttt{ other projects}}.
+\label{index_md_examples_00_hello_world_README}%
+\Hypertarget{index_md_examples_00_hello_world_README}%
+ Output from the program\+:
 
-Although you are free to use {\ttfamily epiworld/}, we also have a single-\/header version that incorporates all its components \href{../epiworld.hpp}{\texttt{ here}}. 
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Running the model...}
+\DoxyCodeLine{\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_}
+\DoxyCodeLine{||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| done.}
+\DoxyCodeLine{}
+\DoxyCodeLine{\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_}
+\DoxyCodeLine{SIMULATION STUDY}
+\DoxyCodeLine{}
+\DoxyCodeLine{Population size    : 100000}
+\DoxyCodeLine{Days (duration)    : 100 (of 100)}
+\DoxyCodeLine{Number of variants : 1}
+\DoxyCodeLine{Last run elapsed t : 256.00ms}
+\DoxyCodeLine{Rewiring           : off}
+\DoxyCodeLine{}
+\DoxyCodeLine{Virus(es):}
+\DoxyCodeLine{ -\/ covid 19 (baseline prevalence: 5 seeds)}
+\DoxyCodeLine{Tool(s):}
+\DoxyCodeLine{ -\/ vaccine (baseline prevalence: 50.00\%)}
+\DoxyCodeLine{}
+\DoxyCodeLine{Model parameters:}
+\DoxyCodeLine{}
+\DoxyCodeLine{Distribution of the population at time 100:}
+\DoxyCodeLine{ -\/ Total healthy (S)   :   99995 -\/> 97390}
+\DoxyCodeLine{ -\/ Total recovered (S) :       0 -\/> 2554}
+\DoxyCodeLine{ -\/ Total infected (I)  :       5 -\/> 56}
+\DoxyCodeLine{ -\/ Total removed (R)   :       0 -\/> 0}
+\DoxyCodeLine{}
+\DoxyCodeLine{(S): Susceptible, (I): Infected, (R): Recovered}
+\DoxyCodeLine{\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_}
+
+\end{DoxyCode}
+ 

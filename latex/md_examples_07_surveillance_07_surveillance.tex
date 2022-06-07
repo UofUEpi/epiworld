@@ -1,0 +1,258 @@
+\hypertarget{md_examples_07_surveillance_07_surveillance_autotoc_md9}{}\doxysection{Main features}\label{md_examples_07_surveillance_07_surveillance_autotoc_md9}
+This C++ template-\/header-\/only library provides a general framework for epidemiologic simulation. The main features of the library are\+:
+
+
+\begin{DoxyEnumerate}
+\item Four key classes\+: {\ttfamily \mbox{\hyperlink{class_model}{Model}}}, {\ttfamily Person}, {\ttfamily \mbox{\hyperlink{class_tool}{Tool}}}, and {\ttfamily \mbox{\hyperlink{class_virus}{Virus}}}.
+\item The model features a social networks of {\ttfamily Persons}.
+\item {\ttfamily Persons} can have multiple {\ttfamily \mbox{\hyperlink{class_tools}{Tools}}} as a defense system.
+\item {\ttfamily \mbox{\hyperlink{class_tools}{Tools}}} can reduce contagion rate, transmissibility, death rates, and improve recovery rates.
+\item {\ttfamily \mbox{\hyperlink{class_viruses}{Viruses}}} can mutate (generating new variants).
+\item {\ttfamily Models} can feature multiple states, e.\+g., {\ttfamily HEALTHY}, {\ttfamily SUSCEPTIBLE}, etc.
+\item {\ttfamily Models} can have an arbitrary number of parameters.
+\item {\bfseries{REALLY FAST}} About 6.\+5 Million person/day simulations per second.
+\end{DoxyEnumerate}
+
+\hypertarget{md_examples_07_surveillance_07_surveillance_autotoc_md10}{}\doxysection{Algorithm}\label{md_examples_07_surveillance_07_surveillance_autotoc_md10}
+Setup
+
+
+\begin{DoxyItemize}
+\item Create viruses.
+\item Create tools (arbitrary).
+\item Set model parameters (arbitrary).
+\item Create global events (e.\+g., surveillance).
+\item Set up the population\+: small world network (default).
+\item Set up rewiring (optional).
+\item Set statuses (arbitrary number of them).
+\end{DoxyItemize}
+
+Run
+
+
+\begin{DoxyEnumerate}
+\item Distribute the tool(s) and virus(es)
+\item For each t in 1 -\/$>$ Duration\+:
+\begin{DoxyItemize}
+\item Update status for susceptible/infected/removed(?)
+\item Mutate virus(es) (each individual)
+\item Run global actions (e.\+g., surveillance)
+\item Run rewiring algorithm
+\end{DoxyItemize}
+\end{DoxyEnumerate}
+
+Along update\+:
+
+
+\begin{DoxyItemize}
+\item Contagion events are applied recorded.
+\item New variants are recorded.
+\item Optional user data is recorded.
+\end{DoxyItemize}\hypertarget{md_examples_07_surveillance_07_surveillance_autotoc_md11}{}\doxysection{Hello world (\+C++)}\label{md_examples_07_surveillance_07_surveillance_autotoc_md11}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\#include "{}include/epiworld/epiworld.hpp"{}}
+\DoxyCodeLine{}
+\DoxyCodeLine{int main()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{}
+\DoxyCodeLine{  // Creating a virus}
+\DoxyCodeLine{  epiworld::Virus<> covid19("{}covid 19"{});}
+\DoxyCodeLine{  covid19.set\_infectiousness(.8);}
+\DoxyCodeLine{  }
+\DoxyCodeLine{  // Creating a tool}
+\DoxyCodeLine{  epiworld::Tool<> vax("{}vaccine"{});}
+\DoxyCodeLine{  vax.set\_contagion\_reduction(.95);}
+\DoxyCodeLine{}
+\DoxyCodeLine{  // Creating a model}
+\DoxyCodeLine{  epiworld::Model<> model;}
+\DoxyCodeLine{}
+\DoxyCodeLine{  // Adding the tool and virus}
+\DoxyCodeLine{  model.add\_virus(covid19, .01);}
+\DoxyCodeLine{  model.add\_tool(vax, .5);}
+\DoxyCodeLine{}
+\DoxyCodeLine{  // Generating a random pop}
+\DoxyCodeLine{  model.population\_from\_adjlist(}
+\DoxyCodeLine{    epiworld::rgraph\_smallworld(1000, 5, .2)}
+\DoxyCodeLine{  );}
+\DoxyCodeLine{}
+\DoxyCodeLine{  // Initializing setting days and seed}
+\DoxyCodeLine{  model.init(60, 123123);}
+\DoxyCodeLine{}
+\DoxyCodeLine{  // Running the model}
+\DoxyCodeLine{  model.run();}
+\DoxyCodeLine{}
+\DoxyCodeLine{  model.print();}
+\DoxyCodeLine{}
+\DoxyCodeLine{  return;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{md_examples_07_surveillance_07_surveillance_autotoc_md12}{}\doxysection{Surveillance simulation}\label{md_examples_07_surveillance_07_surveillance_autotoc_md12}
+
+\begin{DoxyItemize}
+\item Incubation time of the disease {\ttfamily $\sim$ Gamma(3, 1)}
+\item Duration of the disease {\ttfamily $\sim$\+Gamma(12, 1)}
+\item Probability of becoming symptomatic\+: 0.\+9
+\item Prob. of transmission\+: 1.\+0.
+\item Vaccinated population\+: 25\%
+\item Vaccine efficacy\+: .9.
+\item Vaccine reduction on transmission\+: 0.\+5.
+\item Surveillance program of x\% of the population at random.
+\item Individuals who test positive become isolated.
+\end{DoxyItemize}\hypertarget{md_examples_07_surveillance_07_surveillance_autotoc_md13}{}\doxysubsection{Preliminary results}\label{md_examples_07_surveillance_07_surveillance_autotoc_md13}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\# With low surveillance}
+\DoxyCodeLine{pop\_size <-\/ 20e3}
+\DoxyCodeLine{pop\_seed <-\/ pop\_size * .01}
+\DoxyCodeLine{s\_levels <-\/ c(0.0001, 0.002)}
+\DoxyCodeLine{system(sprintf("{}./07-\/surveillance.o \%i \%i 100 \%.04f 2>\&1"{}, pop\_seed, pop\_size, s\_levels[1]), intern = TRUE) |>}
+\DoxyCodeLine{  cat(sep = "{}\(\backslash\)n"{})}
+
+\end{DoxyCode}
+ \begin{DoxyVerb}## Running the model...
+## _________________________________________________________________________
+## ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| done.
+## 
+## ________________________________________________________________________________
+## SIMULATION STUDY
+## 
+## Population size    : 20000
+## Days (duration)    : 200 (of 200)
+## Number of variants : 1
+## Last run elapsed t : 505.00ms
+## Rewiring           : off
+## 
+## Virus(es):
+##  - Covid19 (baseline prevalence: 100 seeds)
+## Tool(s):
+##  - Vaccine (baseline prevalence: 25.00%)
+## 
+## Model parameters:
+##  - Infect period         : 12.0000
+##  - Latent period         : 3.0000
+##  - Prob of symptoms      : 0.7000
+##  - Prob of transmission  : 1.0000
+##  - Prob. death           : 0.0010
+##  - Prob. reinfect        : 0.1000
+##  - Surveilance prob.     : 1.0e-04
+##  - Vax efficacy          : 0.9000
+##  - Vax redux transmision : 0.5000
+## 
+## Distribution of the population at time 200:
+##  - Total susceptible (S)           :   19900 -> 2106
+##  - Total recovered (S)             :       0 -> 17369
+##  - Total latent (I)                :     100 -> 109
+##  - Total symptomatic (I)           :       0 -> 155
+##  - Total symptomatic isolated (I)  :       0 -> 2
+##  - Total asymptomatic (I)          :       0 -> 72
+##  - Total asymptomatic isolated (I) :       0 -> 0
+##  - Total removed (R)               :       0 -> 187
+## 
+## (S): Susceptible, (I): Infected, (R): Recovered
+## ________________________________________________________________________________
+\end{DoxyVerb}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{hist1 <-\/ read.csv("{}07-\/surveillance\_hist.txt"{}, sep = "{} "{})}
+\DoxyCodeLine{surv1 <-\/ read.csv("{}07-\/surveillance\_user\_data.txt"{}, sep = "{} "{})}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# With high surveillance}
+\DoxyCodeLine{system(sprintf("{}./07-\/surveillance.o \%i \%i 100 \%.04f 2>\&1"{}, pop\_seed, pop\_size, s\_levels[2]), intern = TRUE) |>}
+\DoxyCodeLine{  cat(sep = "{}\(\backslash\)n"{})}
+
+\end{DoxyCode}
+ \begin{DoxyVerb}## Running the model...
+## _________________________________________________________________________
+## ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| done.
+## 
+## ________________________________________________________________________________
+## SIMULATION STUDY
+## 
+## Population size    : 20000
+## Days (duration)    : 200 (of 200)
+## Number of variants : 1
+## Last run elapsed t : 530.00ms
+## Rewiring           : off
+## 
+## Virus(es):
+##  - Covid19 (baseline prevalence: 100 seeds)
+## Tool(s):
+##  - Vaccine (baseline prevalence: 25.00%)
+## 
+## Model parameters:
+##  - Infect period         : 12.0000
+##  - Latent period         : 3.0000
+##  - Prob of symptoms      : 0.7000
+##  - Prob of transmission  : 1.0000
+##  - Prob. death           : 0.0010
+##  - Prob. reinfect        : 0.1000
+##  - Surveilance prob.     : 0.0020
+##  - Vax efficacy          : 0.9000
+##  - Vax redux transmision : 0.5000
+## 
+## Distribution of the population at time 200:
+##  - Total susceptible (S)           :   19900 -> 2125
+##  - Total recovered (S)             :       0 -> 17325
+##  - Total latent (I)                :     100 -> 109
+##  - Total symptomatic (I)           :       0 -> 155
+##  - Total symptomatic isolated (I)  :       0 -> 8
+##  - Total asymptomatic (I)          :       0 -> 76
+##  - Total asymptomatic isolated (I) :       0 -> 1
+##  - Total removed (R)               :       0 -> 201
+## 
+## (S): Susceptible, (I): Infected, (R): Recovered
+## ________________________________________________________________________________
+\end{DoxyVerb}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{hist2 <-\/ read.csv("{}07-\/surveillance\_hist.txt"{}, sep = "{} "{})}
+\DoxyCodeLine{surv2 <-\/ read.csv("{}07-\/surveillance\_user\_data.txt"{}, sep = "{} "{})}
+\DoxyCodeLine{hist\_comb <-\/ rbind(}
+\DoxyCodeLine{  cbind(sim = as.character(s\_levels[1]), hist1),}
+\DoxyCodeLine{  cbind(sim = as.character(s\_levels[2]), hist2)}
+\DoxyCodeLine{  )}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ggplot(hist\_comb, aes(x = date, y = counts + 1, colour = status, linetype=sim)) +}
+\DoxyCodeLine{  geom\_line() +}
+\DoxyCodeLine{  \# scale\_y\_log10() +}
+\DoxyCodeLine{  labs(y = "{}Counts (log)"{})}
+
+\end{DoxyCode}
+
+
+\hypertarget{md_examples_07_surveillance_07_surveillance_autotoc_md14}{}\doxysubsection{Cases detected}\label{md_examples_07_surveillance_07_surveillance_autotoc_md14}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{survdat <-\/ rbind(}
+\DoxyCodeLine{  with(surv1, rbind(}
+\DoxyCodeLine{    data.frame(Id = as.character(s\_levels[1]), Date = date, Type = "{}N Sampled"{},  n = nsampled),}
+\DoxyCodeLine{    data.frame(Id = as.character(s\_levels[1]), Date = date, Type = "{}N detected"{},  n = ndetected),}
+\DoxyCodeLine{    data.frame(Id = as.character(s\_levels[1]), Date = date, Type = "{}N detected Asymp"{},  n = ndetected\_asympt),}
+\DoxyCodeLine{    data.frame(Id = as.character(s\_levels[1]), Date = date, Type = "{}N Asymp"{},  n = nasymptomatic)}
+\DoxyCodeLine{  )),}
+\DoxyCodeLine{  with(surv2, rbind(}
+\DoxyCodeLine{    data.frame(Id = as.character(s\_levels[2]), Date = date, Type = "{}N Sampled"{},  n = nsampled),}
+\DoxyCodeLine{    data.frame(Id = as.character(s\_levels[2]), Date = date, Type = "{}N detected"{},  n = ndetected),}
+\DoxyCodeLine{    data.frame(Id = as.character(s\_levels[2]), Date = date, Type = "{}N detected Asymp"{},  n = ndetected\_asympt),}
+\DoxyCodeLine{    data.frame(Id = as.character(s\_levels[2]), Date = date, Type = "{}N Asymp"{},  n = nasymptomatic)}
+\DoxyCodeLine{  ))}
+\DoxyCodeLine{)}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{ggplot(survdat, aes(x = Date, y = n + 1, colour = Type)) +}
+\DoxyCodeLine{  geom\_line() +}
+\DoxyCodeLine{  facet\_wrap(\string~Id) +}
+\DoxyCodeLine{  scale\_y\_log10() +}
+\DoxyCodeLine{  labs(y = "{}Counts (log)"{})}
+
+\end{DoxyCode}
+
+
+ 

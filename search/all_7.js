@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['has_5fdescription_142',['has_description',['../struct_catch_1_1_detail_1_1has__description.html',1,'Catch::Detail']]],
-  ['has_5fdescription_3c_20t_2c_20void_5ft_3c_20decltype_28t_3a_3agetdescription_28_29_29_3e_20_3e_143',['has_description&lt; T, void_t&lt; decltype(T::getDescription())&gt; &gt;',['../struct_catch_1_1_detail_1_1has__description_3_01_t_00_01void__t_3_01decltype_07_t_1_1get_description_07_08_08_4_01_4.html',1,'Catch::Detail']]],
-  ['haschildren_144',['hasChildren',['../class_catch_1_1_test_case_tracking_1_1_i_tracker.html#a157e9ca628aa9369c207c1272bd5ed30',1,'Catch::TestCaseTracking::ITracker']]],
-  ['hassizematcher_145',['HasSizeMatcher',['../class_catch_1_1_matchers_1_1_has_size_matcher.html',1,'Catch::Matchers']]],
-  ['hasstarted_146',['hasStarted',['../class_catch_1_1_test_case_tracking_1_1_i_tracker.html#a757546305449fa2f16228f23347bf8b5',1,'Catch::TestCaseTracking::ITracker']]],
-  ['help_147',['Help',['../struct_catch_1_1_clara_1_1_help.html',1,'Catch::Clara']]],
-  ['helpcolumns_148',['HelpColumns',['../struct_catch_1_1_clara_1_1_detail_1_1_help_columns.html',1,'Catch::Clara::Detail']]]
+  ['mit_20license_34',['MIT License',['../md__l_i_c_e_n_s_e.html',1,'(Global Namespace)'],['../md_rpackage__l_i_c_e_n_s_e.html',1,'(Global Namespace)']]],
+  ['model_35',['Model',['../classepiworld_1_1_model.html',1,'epiworld::Model&lt; TSeq &gt;'],['../class_model.html',1,'Model&lt; TSeq &gt;']]],
+  ['model1_36',['model1',['../md_model1.html',1,'']]],
+  ['model_3c_20bool_20_3e_37',['Model&lt; bool &gt;',['../classepiworld_1_1_model.html',1,'epiworld']]],
+  ['model_3c_20int_20_3e_38',['Model&lt; int &gt;',['../class_model.html',1,'']]],
+  ['model_3c_20tseq_20_3e_39',['Model&lt; TSeq &gt;',['../class_model.html',1,'']]]
 ];

@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['openchild_922',['openChild',['../class_catch_1_1_test_case_tracking_1_1_i_tracker.html#a10edab78a342419794e9b90d9f4f4293',1,'Catch::TestCaseTracking::ITracker']]],
-  ['operator_21_923',['operator!',['../catch__amalgamated_8hpp.html#ad5192d385e1c1c77b89987bcc6a84db4',1,'Catch::Matchers']]],
-  ['operator_26_26_924',['operator&amp;&amp;',['../catch__amalgamated_8hpp.html#a3592fcd3cf9b2cbd8926db50783a5a10',1,'Catch::Matchers::Detail::operator&amp;&amp;(MatchAllOf&lt; ArgT &gt; const &amp;lhs, MatcherBase&lt; ArgT &gt; const &amp;rhs)=delete'],['../catch__amalgamated_8hpp.html#a438b078c78616cec205ef61173ef6fc0',1,'Catch::Matchers::Detail::operator&amp;&amp;(MatcherBase&lt; ArgT &gt; const &amp;lhs, MatchAllOf&lt; ArgT &gt; const &amp;rhs)=delete']]],
-  ['operator_28_29_925',['operator()',['../class_agent.html#ae518258e4a3fe35547db7f0a8d3a0f84',1,'Agent']]],
-  ['operator_7c_7c_926',['operator||',['../catch__amalgamated_8hpp.html#a2b0a2d4a87bb1fec2d583239baf9dbe2',1,'Catch::Matchers::Detail::operator||(MatchAnyOf&lt; ArgT &gt; const &amp;lhs, MatcherBase&lt; ArgT &gt; const &amp;rhs)=delete'],['../catch__amalgamated_8hpp.html#a713d260e861691409ab0d7dfcd5acbaa',1,'Catch::Matchers::Detail::operator||(MatcherBase&lt; ArgT &gt; const &amp;lhs, MatchAnyOf&lt; ArgT &gt; const &amp;rhs)=delete']]]
+  ['write_5fdata_163',['write_data',['../classepiworld_1_1_model.html#a02135cd989e6fdadaf71d3140fb4a2e8',1,'epiworld::Model::write_data()'],['../class_model.html#a02135cd989e6fdadaf71d3140fb4a2e8',1,'Model::write_data()'],['../classepiworld_1_1_data_base.html#a728d678114efad7b3184e0ae7198a1c1',1,'epiworld::DataBase::write_data()'],['../classepiworld_1_1_model.html#a6c07199ce0c9102cccb9749a7eda421d',1,'epiworld::Model::write_data(std::string fn_variant_info, std::string fn_variant_hist, std::string fn_total_hist, std::string fn_transmission, std::string fn_transition) const']]],
+  ['write_5fedgelist_164',['write_edgelist',['../classepiworld_1_1_model.html#a9843d2f6c92916f775baf47e6d5a9fde',1,'epiworld::Model']]]
 ];

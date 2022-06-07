@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>epiworld: Source code</title>
+<title>epiworld: Example: 00-hello-world</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,12 +63,39 @@ $(function() {
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Source code </div>  </div>
+<div class="title">Example: 00-hello-world </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_include_README"></a> Although <code>epiworld</code> is a header-only C++ library, we do make use of other cool projects in some of the examples and for testing. The <a href="https://github.com/jarro2783/cxxopts"><code>cxxopts</code></a> library provides a smooth interface for using options in your C++ program. <a href="https://github.com/catchorg/Catch2"><code>catch2</code></a> is a great C++ unit-tests framework that we have use in <a href="https://github.com/USCbiostats/barry">other projects</a>.</p>
-<p>Although you are free to use <code>epiworld/</code>, we also have a single-header version that incorporates all its components <a href="../epiworld.hpp">here</a>. </p>
-</div></div><!-- PageDoc -->
+<div class="textblock"><p><a class="anchor" id="md_examples_00_hello_world_README"></a> Output from the program:</p>
+<div class="fragment"><div class="line">Running the model...</div>
+<div class="line">_________________________________________________________________________</div>
+<div class="line">||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| done.</div>
+<div class="line"> </div>
+<div class="line">________________________________________________________________________________</div>
+<div class="line">SIMULATION STUDY</div>
+<div class="line"> </div>
+<div class="line">Population size    : 100000</div>
+<div class="line">Days (duration)    : 100 (of 100)</div>
+<div class="line">Number of variants : 1</div>
+<div class="line">Last run elapsed t : 256.00ms</div>
+<div class="line">Rewiring           : off</div>
+<div class="line"> </div>
+<div class="line">Virus(es):</div>
+<div class="line"> - covid 19 (baseline prevalence: 5 seeds)</div>
+<div class="line">Tool(s):</div>
+<div class="line"> - vaccine (baseline prevalence: 50.00%)</div>
+<div class="line"> </div>
+<div class="line">Model parameters:</div>
+<div class="line"> </div>
+<div class="line">Distribution of the population at time 100:</div>
+<div class="line"> - Total healthy (S)   :   99995 -&gt; 97390</div>
+<div class="line"> - Total recovered (S) :       0 -&gt; 2554</div>
+<div class="line"> - Total infected (I)  :       5 -&gt; 56</div>
+<div class="line"> - Total removed (R)   :       0 -&gt; 0</div>
+<div class="line"> </div>
+<div class="line">(S): Susceptible, (I): Infected, (R): Recovered</div>
+<div class="line">________________________________________________________________________________</div>
+</div><!-- fragment --> </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

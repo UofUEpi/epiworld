@@ -1,619 +1,127 @@
-\indexentry{Catch::Clara::accept\_many\_t@{Catch::Clara::accept\_many\_t}|hyperpage}{21}
-\indexentry{Action$<$ TSeq $>$@{Action$<$ TSeq $>$}|hyperpage}{21}
-\indexentry{Action$<$ TSeq $>$@{Action$<$ TSeq $>$}!Action@{Action}|hyperpage}{22}
-\indexentry{Action@{Action}!Action$<$ TSeq $>$@{Action$<$ TSeq $>$}|hyperpage}{22}
-\indexentry{AdjList@{AdjList}|hyperpage}{23}
-\indexentry{AdjList@{AdjList}!AdjList@{AdjList}|hyperpage}{23}
-\indexentry{AdjList@{AdjList}!AdjList@{AdjList}|hyperpage}{23}
-\indexentry{AdjList@{AdjList}!read\_edgelist@{read\_edgelist}|hyperpage}{24}
-\indexentry{read\_edgelist@{read\_edgelist}!AdjList@{AdjList}|hyperpage}{24}
-\indexentry{Agent$<$ TSeq $>$@{Agent$<$ TSeq $>$}|hyperpage}{24}
-\indexentry{Agent$<$ TSeq $>$@{Agent$<$ TSeq $>$}!operator()@{operator()}|hyperpage}{26}
-\indexentry{operator()@{operator()}!Agent$<$ TSeq $>$@{Agent$<$ TSeq $>$}|hyperpage}{26}
-\indexentry{AgentsSample$<$ TSeq $>$@{AgentsSample$<$ TSeq $>$}|hyperpage}{27}
-\indexentry{Catch::Matchers::AllMatchMatcher$<$ Matcher $>$@{Catch::Matchers::AllMatchMatcher$<$ Matcher $>$}|hyperpage}{28}
-\indexentry{Catch::always\_false$<$ T $>$@{Catch::always\_false$<$ T $>$}|hyperpage}{29}
-\indexentry{Catch::Matchers::AnyMatchMatcher$<$ Matcher $>$@{Catch::Matchers::AnyMatchMatcher$<$ Matcher $>$}|hyperpage}{30}
-\indexentry{Catch::Approx@{Catch::Approx}|hyperpage}{31}
-\indexentry{Catch::Matchers::ApproxMatcher$<$ T, AllocComp, AllocMatch $>$@{Catch::Matchers::ApproxMatcher$<$ T, AllocComp, AllocMatch $>$}|hyperpage}{32}
-\indexentry{Catch::Clara::Arg@{Catch::Clara::Arg}|hyperpage}{33}
-\indexentry{Catch::Clara::Args@{Catch::Clara::Args}|hyperpage}{34}
-\indexentry{Catch::Generators::as$<$ T $>$@{Catch::Generators::as$<$ T $>$}|hyperpage}{35}
-\indexentry{Catch::AssertionHandler@{Catch::AssertionHandler}|hyperpage}{35}
-\indexentry{Catch::AssertionInfo@{Catch::AssertionInfo}|hyperpage}{35}
-\indexentry{Catch::Detail::AssertionOrBenchmarkResult@{Catch::Detail::AssertionOrBenchmarkResult}|hyperpage}{36}
-\indexentry{Catch::AssertionReaction@{Catch::AssertionReaction}|hyperpage}{36}
-\indexentry{Catch::AssertionResult@{Catch::AssertionResult}|hyperpage}{37}
-\indexentry{Catch::AssertionResultData@{Catch::AssertionResultData}|hyperpage}{38}
-\indexentry{Catch::AssertionStats@{Catch::AssertionStats}|hyperpage}{39}
-\indexentry{Catch::AutomakeReporter@{Catch::AutomakeReporter}|hyperpage}{40}
-\indexentry{Catch::AutoReg@{Catch::AutoReg}|hyperpage}{41}
-\indexentry{Catch::Clara::Detail::BasicResult$<$ T $>$@{Catch::Clara::Detail::BasicResult$<$ T $>$}|hyperpage}{42}
-\indexentry{Catch::Benchmark::Benchmark@{Catch::Benchmark::Benchmark}|hyperpage}{43}
-\indexentry{Catch::Benchmark::Detail::BenchmarkFunction@{Catch::Benchmark::Detail::BenchmarkFunction}|hyperpage}{43}
-\indexentry{Catch::BenchmarkInfo@{Catch::BenchmarkInfo}|hyperpage}{44}
-\indexentry{Catch::BenchmarkStats$<$ Duration $>$@{Catch::BenchmarkStats$<$ Duration $>$}|hyperpage}{45}
-\indexentry{Catch::BinaryExpr$<$ LhsT, RhsT $>$@{Catch::BinaryExpr$<$ LhsT, RhsT $>$}|hyperpage}{46}
-\indexentry{Catch::Benchmark::Detail::bootstrap\_analysis@{Catch::Benchmark::Detail::bootstrap\_analysis}|hyperpage}{47}
-\indexentry{Catch::Clara::Detail::BoundFlagLambda$<$ L $>$@{Catch::Clara::Detail::BoundFlagLambda$<$ L $>$}|hyperpage}{48}
-\indexentry{Catch::Clara::Detail::BoundFlagRef@{Catch::Clara::Detail::BoundFlagRef}|hyperpage}{50}
-\indexentry{Catch::Clara::Detail::BoundFlagRefBase@{Catch::Clara::Detail::BoundFlagRefBase}|hyperpage}{52}
-\indexentry{Catch::Clara::Detail::BoundLambda$<$ L $>$@{Catch::Clara::Detail::BoundLambda$<$ L $>$}|hyperpage}{53}
-\indexentry{Catch::Clara::Detail::BoundManyLambda$<$ L $>$@{Catch::Clara::Detail::BoundManyLambda$<$ L $>$}|hyperpage}{55}
-\indexentry{Catch::Clara::Detail::BoundRef@{Catch::Clara::Detail::BoundRef}|hyperpage}{57}
-\indexentry{Catch::Clara::Detail::BoundValueRef$<$ T $>$@{Catch::Clara::Detail::BoundValueRef$<$ T $>$}|hyperpage}{58}
-\indexentry{Catch::Clara::Detail::BoundValueRef$<$ std::vector$<$ T $>$ $>$@{Catch::Clara::Detail::BoundValueRef$<$ std::vector$<$ T $>$ $>$}|hyperpage}{60}
-\indexentry{Catch::Clara::Detail::BoundValueRefBase@{Catch::Clara::Detail::BoundValueRefBase}|hyperpage}{61}
-\indexentry{Catch::Capturer@{Catch::Capturer}|hyperpage}{62}
-\indexentry{Catch::Matchers::CasedString@{Catch::Matchers::CasedString}|hyperpage}{63}
-\indexentry{Catch::Detail::CaseInsensitiveEqualTo@{Catch::Detail::CaseInsensitiveEqualTo}|hyperpage}{63}
-\indexentry{Catch::Detail::CaseInsensitiveLess@{Catch::Detail::CaseInsensitiveLess}|hyperpage}{63}
-\indexentry{Catch\_global\_namespace\_dummy@{Catch\_global\_namespace\_dummy}|hyperpage}{64}
-\indexentry{Catch::Benchmark::Chronometer@{Catch::Benchmark::Chronometer}|hyperpage}{64}
-\indexentry{Catch::Benchmark::Detail::ChronometerConcept@{Catch::Benchmark::Detail::ChronometerConcept}|hyperpage}{64}
-\indexentry{Catch::Benchmark::Detail::ChronometerModel$<$ Clock $>$@{Catch::Benchmark::Detail::ChronometerModel$<$ Clock $>$}|hyperpage}{65}
-\indexentry{Catch::Generators::ChunkGenerator$<$ T $>$@{Catch::Generators::ChunkGenerator$<$ T $>$}|hyperpage}{66}
-\indexentry{Catch::Generators::ChunkGenerator$<$ T $>$@{Catch::Generators::ChunkGenerator$<$ T $>$}!next@{next}|hyperpage}{67}
-\indexentry{next@{next}!Catch::Generators::ChunkGenerator$<$ T $>$@{Catch::Generators::ChunkGenerator$<$ T $>$}|hyperpage}{67}
-\indexentry{Catch::Colour@{Catch::Colour}|hyperpage}{68}
-\indexentry{Catch::ColourImpl::ColourGuard@{Catch::ColourImpl::ColourGuard}|hyperpage}{68}
-\indexentry{Catch::ColourImpl::ColourGuard@{Catch::ColourImpl::ColourGuard}!engage@{engage}|hyperpage}{69}
-\indexentry{engage@{engage}!Catch::ColourImpl::ColourGuard@{Catch::ColourImpl::ColourGuard}|hyperpage}{69}
-\indexentry{Catch::ColourImpl::ColourGuard@{Catch::ColourImpl::ColourGuard}!engage@{engage}|hyperpage}{69}
-\indexentry{engage@{engage}!Catch::ColourImpl::ColourGuard@{Catch::ColourImpl::ColourGuard}|hyperpage}{69}
-\indexentry{Catch::ColourImpl@{Catch::ColourImpl}|hyperpage}{69}
-\indexentry{Catch::ColourImpl@{Catch::ColourImpl}!guardColour@{guardColour}|hyperpage}{70}
-\indexentry{guardColour@{guardColour}!Catch::ColourImpl@{Catch::ColourImpl}|hyperpage}{70}
-\indexentry{Catch::TextFlow::Column@{Catch::TextFlow::Column}|hyperpage}{70}
-\indexentry{Catch::TextFlow::Columns@{Catch::TextFlow::Columns}|hyperpage}{71}
-\indexentry{Catch::CompactReporter@{Catch::CompactReporter}|hyperpage}{72}
-\indexentry{Catch::CompactReporter@{Catch::CompactReporter}!testRunEnded@{testRunEnded}|hyperpage}{73}
-\indexentry{testRunEnded@{testRunEnded}!Catch::CompactReporter@{Catch::CompactReporter}|hyperpage}{73}
-\indexentry{Catch::CompactReporter@{Catch::CompactReporter}!testRunStarting@{testRunStarting}|hyperpage}{73}
-\indexentry{testRunStarting@{testRunStarting}!Catch::CompactReporter@{Catch::CompactReporter}|hyperpage}{73}
-\indexentry{Catch::Benchmark::Detail::CompleteInvoker$<$ Result $>$@{Catch::Benchmark::Detail::CompleteInvoker$<$ Result $>$}|hyperpage}{73}
-\indexentry{Catch::Benchmark::Detail::CompleteInvoker$<$ void $>$@{Catch::Benchmark::Detail::CompleteInvoker$<$ void $>$}|hyperpage}{74}
-\indexentry{Catch::Benchmark::Detail::CompleteType$<$ T $>$@{Catch::Benchmark::Detail::CompleteType$<$ T $>$}|hyperpage}{74}
-\indexentry{Catch::Benchmark::Detail::CompleteType$<$ void $>$@{Catch::Benchmark::Detail::CompleteType$<$ void $>$}|hyperpage}{74}
-\indexentry{Catch::Clara::Detail::ComposableParserImpl$<$ DerivedT $>$@{Catch::Clara::Detail::ComposableParserImpl$<$ DerivedT $>$}|hyperpage}{75}
-\indexentry{Catch::Config@{Catch::Config}|hyperpage}{76}
-\indexentry{Catch::ConfigData@{Catch::ConfigData}|hyperpage}{77}
-\indexentry{Catch::Matchers::Detail::conjunction$<$ Cond $>$@{Catch::Matchers::Detail::conjunction$<$ Cond $>$}|hyperpage}{78}
-\indexentry{Catch::Matchers::Detail::conjunction$<$ Cond, Rest... $>$@{Catch::Matchers::Detail::conjunction$<$ Cond, Rest... $>$}|hyperpage}{79}
-\indexentry{Catch::ConsoleReporter@{Catch::ConsoleReporter}|hyperpage}{80}
-\indexentry{Catch::ConsoleReporter@{Catch::ConsoleReporter}!testRunEnded@{testRunEnded}|hyperpage}{81}
-\indexentry{testRunEnded@{testRunEnded}!Catch::ConsoleReporter@{Catch::ConsoleReporter}|hyperpage}{81}
-\indexentry{Catch::ConsoleReporter@{Catch::ConsoleReporter}!testRunStarting@{testRunStarting}|hyperpage}{82}
-\indexentry{testRunStarting@{testRunStarting}!Catch::ConsoleReporter@{Catch::ConsoleReporter}|hyperpage}{82}
-\indexentry{Catch::TextFlow::Column::const\_iterator@{Catch::TextFlow::Column::const\_iterator}|hyperpage}{82}
-\indexentry{Catch::Matchers::ContainsElementMatcher$<$ T, Equality $>$@{Catch::Matchers::ContainsElementMatcher$<$ T, Equality $>$}|hyperpage}{83}
-\indexentry{Catch::Matchers::ContainsMatcher$<$ T, AllocComp, AllocMatch $>$@{Catch::Matchers::ContainsMatcher$<$ T, AllocComp, AllocMatch $>$}|hyperpage}{85}
-\indexentry{Catch::Matchers::ContainsMatcherMatcher$<$ Matcher $>$@{Catch::Matchers::ContainsMatcherMatcher$<$ Matcher $>$}|hyperpage}{86}
-\indexentry{Catch::Counts@{Catch::Counts}|hyperpage}{87}
-\indexentry{Catch::CumulativeReporterBase@{Catch::CumulativeReporterBase}|hyperpage}{88}
-\indexentry{Catch::CumulativeReporterBase@{Catch::CumulativeReporterBase}!testRunEnded@{testRunEnded}|hyperpage}{90}
-\indexentry{testRunEnded@{testRunEnded}!Catch::CumulativeReporterBase@{Catch::CumulativeReporterBase}|hyperpage}{90}
-\indexentry{Catch::CumulativeReporterBase@{Catch::CumulativeReporterBase}!testRunStarting@{testRunStarting}|hyperpage}{90}
-\indexentry{testRunStarting@{testRunStarting}!Catch::CumulativeReporterBase@{Catch::CumulativeReporterBase}|hyperpage}{90}
-\indexentry{DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}|hyperpage}{91}
-\indexentry{DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}!record\_variant@{record\_variant}|hyperpage}{92}
-\indexentry{record\_variant@{record\_variant}!DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}|hyperpage}{92}
-\indexentry{DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}!reproductive\_number@{reproductive\_number}|hyperpage}{93}
-\indexentry{reproductive\_number@{reproductive\_number}!DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}|hyperpage}{93}
-\indexentry{DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}!transition\_probability@{transition\_probability}|hyperpage}{93}
-\indexentry{transition\_probability@{transition\_probability}!DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}|hyperpage}{93}
-\indexentry{Catch::Decomposer@{Catch::Decomposer}|hyperpage}{93}
-\indexentry{Catch::Matchers::EndsWithMatcher@{Catch::Matchers::EndsWithMatcher}|hyperpage}{94}
-\indexentry{Entity$<$ TSeq $>$@{Entity$<$ TSeq $>$}|hyperpage}{95}
-\indexentry{Catch::Detail::EnumInfo@{Catch::Detail::EnumInfo}|hyperpage}{95}
-\indexentry{Catch::Detail::EnumValuesRegistry@{Catch::Detail::EnumValuesRegistry}|hyperpage}{96}
-\indexentry{Catch::Benchmark::Environment$<$ Clock $>$@{Catch::Benchmark::Environment$<$ Clock $>$}|hyperpage}{97}
-\indexentry{Catch::Benchmark::EnvironmentEstimate$<$ Duration $>$@{Catch::Benchmark::EnvironmentEstimate$<$ Duration $>$}|hyperpage}{98}
-\indexentry{Catch::Matchers::EqualsMatcher$<$ T, AllocComp, AllocMatch $>$@{Catch::Matchers::EqualsMatcher$<$ T, AllocComp, AllocMatch $>$}|hyperpage}{99}
-\indexentry{Catch::ErrnoGuard@{Catch::ErrnoGuard}|hyperpage}{100}
-\indexentry{Catch::Benchmark::Estimate$<$ Duration $>$@{Catch::Benchmark::Estimate$<$ Duration $>$}|hyperpage}{100}
-\indexentry{Catch::EventListenerBase@{Catch::EventListenerBase}|hyperpage}{101}
-\indexentry{Catch::EventListenerBase@{Catch::EventListenerBase}!testRunEnded@{testRunEnded}|hyperpage}{103}
-\indexentry{testRunEnded@{testRunEnded}!Catch::EventListenerBase@{Catch::EventListenerBase}|hyperpage}{103}
-\indexentry{Catch::EventListenerBase@{Catch::EventListenerBase}!testRunStarting@{testRunStarting}|hyperpage}{103}
-\indexentry{testRunStarting@{testRunStarting}!Catch::EventListenerBase@{Catch::EventListenerBase}|hyperpage}{103}
-\indexentry{Catch::EventListenerFactory@{Catch::EventListenerFactory}|hyperpage}{103}
-\indexentry{Catch::Matchers::ExceptionMessageMatcher@{Catch::Matchers::ExceptionMessageMatcher}|hyperpage}{104}
-\indexentry{Catch::ExceptionTranslatorRegistrar@{Catch::ExceptionTranslatorRegistrar}|hyperpage}{105}
-\indexentry{Catch::ExceptionTranslatorRegistry@{Catch::ExceptionTranslatorRegistry}|hyperpage}{105}
-\indexentry{Catch::Benchmark::ExecutionPlan$<$ Duration $>$@{Catch::Benchmark::ExecutionPlan$<$ Duration $>$}|hyperpage}{106}
-\indexentry{Catch::Clara::ExeName@{Catch::Clara::ExeName}|hyperpage}{107}
-\indexentry{Catch::ExprLhs$<$ LhsT $>$@{Catch::ExprLhs$<$ LhsT $>$}|hyperpage}{108}
-\indexentry{Catch::Clara::Detail::fake\_arg@{Catch::Clara::Detail::fake\_arg}|hyperpage}{108}
-\indexentry{Catch::FatalConditionHandler@{Catch::FatalConditionHandler}|hyperpage}{109}
-\indexentry{Catch::FatalConditionHandlerGuard@{Catch::FatalConditionHandlerGuard}|hyperpage}{109}
-\indexentry{Catch::Generators::FilterGenerator$<$ T, Predicate $>$@{Catch::Generators::FilterGenerator$<$ T, Predicate $>$}|hyperpage}{110}
-\indexentry{Catch::Generators::FilterGenerator$<$ T, Predicate $>$@{Catch::Generators::FilterGenerator$<$ T, Predicate $>$}!next@{next}|hyperpage}{111}
-\indexentry{next@{next}!Catch::Generators::FilterGenerator$<$ T, Predicate $>$@{Catch::Generators::FilterGenerator$<$ T, Predicate $>$}|hyperpage}{111}
-\indexentry{Catch::TestSpec::FilterMatch@{Catch::TestSpec::FilterMatch}|hyperpage}{111}
-\indexentry{Catch::Generators::FixedValuesGenerator$<$ T $>$@{Catch::Generators::FixedValuesGenerator$<$ T $>$}|hyperpage}{112}
-\indexentry{Catch::Generators::FixedValuesGenerator$<$ T $>$@{Catch::Generators::FixedValuesGenerator$<$ T $>$}!next@{next}|hyperpage}{113}
-\indexentry{next@{next}!Catch::Generators::FixedValuesGenerator$<$ T $>$@{Catch::Generators::FixedValuesGenerator$<$ T $>$}|hyperpage}{113}
-\indexentry{Catch::GeneratorException@{Catch::GeneratorException}|hyperpage}{113}
-\indexentry{Catch::Generators::Generators$<$ T $>$@{Catch::Generators::Generators$<$ T $>$}|hyperpage}{114}
-\indexentry{Catch::Generators::Generators$<$ T $>$@{Catch::Generators::Generators$<$ T $>$}!next@{next}|hyperpage}{115}
-\indexentry{next@{next}!Catch::Generators::Generators$<$ T $>$@{Catch::Generators::Generators$<$ T $>$}|hyperpage}{115}
-\indexentry{Catch::Generators::GeneratorUntypedBase@{Catch::Generators::GeneratorUntypedBase}|hyperpage}{116}
-\indexentry{Catch::Generators::GeneratorUntypedBase@{Catch::Generators::GeneratorUntypedBase}!countedNext@{countedNext}|hyperpage}{116}
-\indexentry{countedNext@{countedNext}!Catch::Generators::GeneratorUntypedBase@{Catch::Generators::GeneratorUntypedBase}|hyperpage}{116}
-\indexentry{Catch::Generators::GeneratorUntypedBase@{Catch::Generators::GeneratorUntypedBase}!currentElementAsString@{currentElementAsString}|hyperpage}{117}
-\indexentry{currentElementAsString@{currentElementAsString}!Catch::Generators::GeneratorUntypedBase@{Catch::Generators::GeneratorUntypedBase}|hyperpage}{117}
-\indexentry{Catch::Generators::GeneratorWrapper$<$ T $>$@{Catch::Generators::GeneratorWrapper$<$ T $>$}|hyperpage}{117}
-\indexentry{Catch::Detail::has\_description$<$ T, typename $>$@{Catch::Detail::has\_description$<$ T, typename $>$}|hyperpage}{118}
-\indexentry{Catch::Detail::has\_description$<$ T, void\_t$<$ decltype(T::getDescription())$>$ $>$@{Catch::Detail::has\_description$<$ T, void\_t$<$ decltype(T::getDescription())$>$ $>$}|hyperpage}{119}
-\indexentry{Catch::Matchers::HasSizeMatcher@{Catch::Matchers::HasSizeMatcher}|hyperpage}{120}
-\indexentry{Catch::Clara::Help@{Catch::Clara::Help}|hyperpage}{121}
-\indexentry{Catch::Clara::Detail::HelpColumns@{Catch::Clara::Detail::HelpColumns}|hyperpage}{122}
-\indexentry{Catch::IConfig@{Catch::IConfig}|hyperpage}{123}
-\indexentry{Catch::IContext@{Catch::IContext}|hyperpage}{124}
-\indexentry{Catch::IEventListener@{Catch::IEventListener}|hyperpage}{125}
-\indexentry{Catch::IEventListener@{Catch::IEventListener}!testRunEnded@{testRunEnded}|hyperpage}{127}
-\indexentry{testRunEnded@{testRunEnded}!Catch::IEventListener@{Catch::IEventListener}|hyperpage}{127}
-\indexentry{Catch::IEventListener@{Catch::IEventListener}!testRunStarting@{testRunStarting}|hyperpage}{127}
-\indexentry{testRunStarting@{testRunStarting}!Catch::IEventListener@{Catch::IEventListener}|hyperpage}{127}
-\indexentry{Catch::IExceptionTranslator@{Catch::IExceptionTranslator}|hyperpage}{128}
-\indexentry{Catch::IExceptionTranslatorRegistry@{Catch::IExceptionTranslatorRegistry}|hyperpage}{128}
-\indexentry{Catch::Generators::IGenerator$<$ T $>$@{Catch::Generators::IGenerator$<$ T $>$}|hyperpage}{129}
-\indexentry{Catch::IGeneratorTracker@{Catch::IGeneratorTracker}|hyperpage}{130}
-\indexentry{Catch::IMutableContext@{Catch::IMutableContext}|hyperpage}{130}
-\indexentry{Catch::IMutableEnumValuesRegistry@{Catch::IMutableEnumValuesRegistry}|hyperpage}{131}
-\indexentry{Catch::IMutableRegistryHub@{Catch::IMutableRegistryHub}|hyperpage}{132}
-\indexentry{Catch::IRegistryHub@{Catch::IRegistryHub}|hyperpage}{132}
-\indexentry{Catch::IReporterFactory@{Catch::IReporterFactory}|hyperpage}{132}
-\indexentry{Catch::IReporterRegistry@{Catch::IReporterRegistry}|hyperpage}{133}
-\indexentry{Catch::IResultCapture@{Catch::IResultCapture}|hyperpage}{134}
-\indexentry{Catch::is\_callable$<$ T $>$@{Catch::is\_callable$<$ T $>$}|hyperpage}{135}
-\indexentry{Catch::is\_callable$<$ Fun(Args...)$>$@{Catch::is\_callable$<$ Fun(Args...)$>$}|hyperpage}{135}
-\indexentry{Catch::is\_callable\_tester@{Catch::is\_callable\_tester}|hyperpage}{136}
-\indexentry{Catch::is\_range$<$ T $>$@{Catch::is\_range$<$ T $>$}|hyperpage}{136}
-\indexentry{Catch::Detail::is\_range\_impl$<$ T, typename $>$@{Catch::Detail::is\_range\_impl$<$ T, typename $>$}|hyperpage}{137}
-\indexentry{Catch::Detail::is\_range\_impl$<$ T, void\_t$<$ decltype(begin(std::declval$<$ T $>$()))$>$ $>$@{Catch::Detail::is\_range\_impl$<$ T, void\_t$<$ decltype(begin(std::declval$<$ T $>$()))$>$ $>$}|hyperpage}{138}
-\indexentry{Catch::Benchmark::Detail::is\_related$<$ T, U $>$@{Catch::Benchmark::Detail::is\_related$<$ T, U $>$}|hyperpage}{139}
-\indexentry{Catch::Clara::Detail::is\_unary\_function$<$ F, typename $>$@{Catch::Clara::Detail::is\_unary\_function$<$ F, typename $>$}|hyperpage}{140}
-\indexentry{Catch::Clara::Detail::is\_unary\_function$<$ F, Catch::Detail::void\_t$<$ decltype(std::declval$<$ F $>$()(fake\_arg())) $>$ $>$@{Catch::Clara::Detail::is\_unary\_function$<$ F, Catch::Detail::void\_t$<$ decltype(std::declval$<$ F $>$()(fake\_arg())) $>$ $>$}|hyperpage}{141}
-\indexentry{Catch::Matchers::IsEmptyMatcher@{Catch::Matchers::IsEmptyMatcher}|hyperpage}{142}
-\indexentry{Catch::ISingleton@{Catch::ISingleton}|hyperpage}{143}
-\indexentry{Catch::Detail::IsStreamInsertable$<$ T $>$@{Catch::Detail::IsStreamInsertable$<$ T $>$}|hyperpage}{144}
-\indexentry{Catch::IStream@{Catch::IStream}|hyperpage}{144}
-\indexentry{Catch::IStream@{Catch::IStream}!isConsole@{isConsole}|hyperpage}{144}
-\indexentry{isConsole@{isConsole}!Catch::IStream@{Catch::IStream}|hyperpage}{144}
-\indexentry{Catch::ITagAliasRegistry@{Catch::ITagAliasRegistry}|hyperpage}{145}
-\indexentry{Catch::TextFlow::Columns::iterator@{Catch::TextFlow::Columns::iterator}|hyperpage}{145}
-\indexentry{Catch::Generators::IteratorGenerator$<$ T $>$@{Catch::Generators::IteratorGenerator$<$ T $>$}|hyperpage}{146}
-\indexentry{Catch::Generators::IteratorGenerator$<$ T $>$@{Catch::Generators::IteratorGenerator$<$ T $>$}!next@{next}|hyperpage}{147}
-\indexentry{next@{next}!Catch::Generators::IteratorGenerator$<$ T $>$@{Catch::Generators::IteratorGenerator$<$ T $>$}|hyperpage}{147}
-\indexentry{Catch::ITestCaseRegistry@{Catch::ITestCaseRegistry}|hyperpage}{147}
-\indexentry{Catch::ITestInvoker@{Catch::ITestInvoker}|hyperpage}{148}
-\indexentry{Catch::TestCaseTracking::ITracker@{Catch::TestCaseTracking::ITracker}|hyperpage}{148}
-\indexentry{Catch::TestCaseTracking::ITracker@{Catch::TestCaseTracking::ITracker}!findChild@{findChild}|hyperpage}{150}
-\indexentry{findChild@{findChild}!Catch::TestCaseTracking::ITracker@{Catch::TestCaseTracking::ITracker}|hyperpage}{150}
-\indexentry{Catch::TestCaseTracking::ITracker@{Catch::TestCaseTracking::ITracker}!isGeneratorTracker@{isGeneratorTracker}|hyperpage}{150}
-\indexentry{isGeneratorTracker@{isGeneratorTracker}!Catch::TestCaseTracking::ITracker@{Catch::TestCaseTracking::ITracker}|hyperpage}{150}
-\indexentry{Catch::TestCaseTracking::ITracker@{Catch::TestCaseTracking::ITracker}!isSectionTracker@{isSectionTracker}|hyperpage}{150}
-\indexentry{isSectionTracker@{isSectionTracker}!Catch::TestCaseTracking::ITracker@{Catch::TestCaseTracking::ITracker}|hyperpage}{150}
-\indexentry{Catch::ITransientExpression@{Catch::ITransientExpression}|hyperpage}{150}
-\indexentry{Catch::JunitReporter@{Catch::JunitReporter}|hyperpage}{151}
-\indexentry{Catch::JunitReporter@{Catch::JunitReporter}!testRunStarting@{testRunStarting}|hyperpage}{152}
-\indexentry{testRunStarting@{testRunStarting}!Catch::JunitReporter@{Catch::JunitReporter}|hyperpage}{152}
-\indexentry{Catch::Clara::Detail::LambdaInvoker$<$ ReturnType $>$@{Catch::Clara::Detail::LambdaInvoker$<$ ReturnType $>$}|hyperpage}{152}
-\indexentry{Catch::Clara::Detail::LambdaInvoker$<$ void $>$@{Catch::Clara::Detail::LambdaInvoker$<$ void $>$}|hyperpage}{153}
-\indexentry{Catch::LazyExpression@{Catch::LazyExpression}|hyperpage}{153}
-\indexentry{Catch::LeakDetector@{Catch::LeakDetector}|hyperpage}{153}
-\indexentry{LFMCMC$<$ TData $>$@{LFMCMC$<$ TData $>$}|hyperpage}{153}
-\indexentry{Catch::lineOfChars@{Catch::lineOfChars}|hyperpage}{155}
-\indexentry{Catch::ListenerDescription@{Catch::ListenerDescription}|hyperpage}{155}
-\indexentry{Catch::ListenerRegistrar$<$ T $>$@{Catch::ListenerRegistrar$<$ T $>$}|hyperpage}{156}
-\indexentry{Catch::Detail::make\_void$<$... $>$@{Catch::Detail::make\_void$<$... $>$}|hyperpage}{156}
-\indexentry{Catch::Generators::MapGenerator$<$ T, U, Func $>$@{Catch::Generators::MapGenerator$<$ T, U, Func $>$}|hyperpage}{156}
-\indexentry{Catch::Generators::MapGenerator$<$ T, U, Func $>$@{Catch::Generators::MapGenerator$<$ T, U, Func $>$}!next@{next}|hyperpage}{157}
-\indexentry{next@{next}!Catch::Generators::MapGenerator$<$ T, U, Func $>$@{Catch::Generators::MapGenerator$<$ T, U, Func $>$}|hyperpage}{157}
-\indexentry{Catch::Matchers::Detail::MatchAllOf$<$ ArgT $>$@{Catch::Matchers::Detail::MatchAllOf$<$ ArgT $>$}|hyperpage}{158}
-\indexentry{Catch::Matchers::Detail::MatchAllOfGeneric$<$ MatcherTs $>$@{Catch::Matchers::Detail::MatchAllOfGeneric$<$ MatcherTs $>$}|hyperpage}{159}
-\indexentry{Catch::Matchers::Detail::MatchAnyOf$<$ ArgT $>$@{Catch::Matchers::Detail::MatchAnyOf$<$ ArgT $>$}|hyperpage}{161}
-\indexentry{Catch::Matchers::Detail::MatchAnyOfGeneric$<$ MatcherTs $>$@{Catch::Matchers::Detail::MatchAnyOfGeneric$<$ MatcherTs $>$}|hyperpage}{162}
-\indexentry{Catch::Matchers::MatcherBase$<$ T $>$@{Catch::Matchers::MatcherBase$<$ T $>$}|hyperpage}{164}
-\indexentry{Catch::Matchers::MatcherGenericBase@{Catch::Matchers::MatcherGenericBase}|hyperpage}{165}
-\indexentry{Catch::Matchers::MatcherUntypedBase@{Catch::Matchers::MatcherUntypedBase}|hyperpage}{167}
-\indexentry{Catch::MatchExpr$<$ ArgT, MatcherT $>$@{Catch::MatchExpr$<$ ArgT, MatcherT $>$}|hyperpage}{168}
-\indexentry{Catch::Matchers::Detail::MatchNotOf$<$ ArgT $>$@{Catch::Matchers::Detail::MatchNotOf$<$ ArgT $>$}|hyperpage}{169}
-\indexentry{Catch::Matchers::Detail::MatchNotOfGeneric$<$ MatcherT $>$@{Catch::Matchers::Detail::MatchNotOfGeneric$<$ MatcherT $>$}|hyperpage}{171}
-\indexentry{Catch::MessageBuilder@{Catch::MessageBuilder}|hyperpage}{172}
-\indexentry{Catch::MessageInfo@{Catch::MessageInfo}|hyperpage}{173}
-\indexentry{Catch::MessageStream@{Catch::MessageStream}|hyperpage}{174}
-\indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{175}
-\indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!add\_global\_action@{add\_global\_action}|hyperpage}{181}
-\indexentry{add\_global\_action@{add\_global\_action}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{181}
-\indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!reset@{reset}|hyperpage}{181}
-\indexentry{reset@{reset}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{181}
-\indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!run\_multiple@{run\_multiple}|hyperpage}{182}
-\indexentry{run\_multiple@{run\_multiple}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{182}
-\indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!set\_agents\_data@{set\_agents\_data}|hyperpage}{182}
-\indexentry{set\_agents\_data@{set\_agents\_data}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{182}
-\indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!write\_data@{write\_data}|hyperpage}{183}
-\indexentry{write\_data@{write\_data}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{183}
-\indexentry{Catch::MultiReporter@{Catch::MultiReporter}|hyperpage}{183}
-\indexentry{Catch::MultiReporter@{Catch::MultiReporter}!testRunEnded@{testRunEnded}|hyperpage}{185}
-\indexentry{testRunEnded@{testRunEnded}!Catch::MultiReporter@{Catch::MultiReporter}|hyperpage}{185}
-\indexentry{Catch::MultiReporter@{Catch::MultiReporter}!testRunStarting@{testRunStarting}|hyperpage}{185}
-\indexentry{testRunStarting@{testRunStarting}!Catch::MultiReporter@{Catch::MultiReporter}|hyperpage}{185}
-\indexentry{Catch::TestCaseTracking::NameAndLocation@{Catch::TestCaseTracking::NameAndLocation}|hyperpage}{186}
-\indexentry{Catch::NameAndTags@{Catch::NameAndTags}|hyperpage}{187}
-\indexentry{Catch::CumulativeReporterBase::Node$<$ T, ChildNodeT $>$@{Catch::CumulativeReporterBase::Node$<$ T, ChildNodeT $>$}|hyperpage}{187}
-\indexentry{Catch::Detail::NonCopyable@{Catch::Detail::NonCopyable}|hyperpage}{188}
-\indexentry{Catch::Matchers::NoneMatchMatcher$<$ Matcher $>$@{Catch::Matchers::NoneMatchMatcher$<$ Matcher $>$}|hyperpage}{189}
-\indexentry{Catch::Benchmark::now$<$ Clock $>$@{Catch::Benchmark::now$<$ Clock $>$}|hyperpage}{190}
-\indexentry{Catch::Benchmark::Detail::ObjectStorage$<$ T, Destruct $>$@{Catch::Benchmark::Detail::ObjectStorage$<$ T, Destruct $>$}|hyperpage}{190}
-\indexentry{Catch::Clara::Opt@{Catch::Clara::Opt}|hyperpage}{191}
-\indexentry{Catch::Optional$<$ T $>$@{Catch::Optional$<$ T $>$}|hyperpage}{193}
-\indexentry{Catch::Benchmark::OutlierClassification@{Catch::Benchmark::OutlierClassification}|hyperpage}{193}
-\indexentry{Catch::Clara::Parser@{Catch::Clara::Parser}|hyperpage}{194}
-\indexentry{Catch::Clara::Detail::ParserBase@{Catch::Clara::Detail::ParserBase}|hyperpage}{195}
-\indexentry{Catch::Clara::Detail::ParserRefImpl$<$ DerivedT $>$@{Catch::Clara::Detail::ParserRefImpl$<$ DerivedT $>$}|hyperpage}{196}
-\indexentry{Catch::Clara::Detail::ParseState@{Catch::Clara::Detail::ParseState}|hyperpage}{197}
-\indexentry{PersonTools$<$ TSeq $>$@{PersonTools$<$ TSeq $>$}|hyperpage}{197}
-\indexentry{Catch::pluralise@{Catch::pluralise}|hyperpage}{198}
-\indexentry{Catch::Matchers::PredicateMatcher$<$ T, Predicate $>$@{Catch::Matchers::PredicateMatcher$<$ T, Predicate $>$}|hyperpage}{198}
-\indexentry{Catch::ProcessedReporterSpec@{Catch::ProcessedReporterSpec}|hyperpage}{199}
-\indexentry{Progress@{Progress}|hyperpage}{200}
-\indexentry{Queue$<$ TSeq $>$@{Queue$<$ TSeq $>$}|hyperpage}{200}
-\indexentry{RandGraph@{RandGraph}|hyperpage}{201}
-\indexentry{Catch::Generators::RandomFloatingGenerator$<$ Float $>$@{Catch::Generators::RandomFloatingGenerator$<$ Float $>$}|hyperpage}{201}
-\indexentry{Catch::Generators::RandomFloatingGenerator$<$ Float $>$@{Catch::Generators::RandomFloatingGenerator$<$ Float $>$}!next@{next}|hyperpage}{202}
-\indexentry{next@{next}!Catch::Generators::RandomFloatingGenerator$<$ Float $>$@{Catch::Generators::RandomFloatingGenerator$<$ Float $>$}|hyperpage}{202}
-\indexentry{Catch::Generators::RandomIntegerGenerator$<$ Integer $>$@{Catch::Generators::RandomIntegerGenerator$<$ Integer $>$}|hyperpage}{203}
-\indexentry{Catch::Generators::RandomIntegerGenerator$<$ Integer $>$@{Catch::Generators::RandomIntegerGenerator$<$ Integer $>$}!next@{next}|hyperpage}{204}
-\indexentry{next@{next}!Catch::Generators::RandomIntegerGenerator$<$ Integer $>$@{Catch::Generators::RandomIntegerGenerator$<$ Integer $>$}|hyperpage}{204}
-\indexentry{Catch::Generators::RangeGenerator$<$ T $>$@{Catch::Generators::RangeGenerator$<$ T $>$}|hyperpage}{204}
-\indexentry{Catch::Generators::RangeGenerator$<$ T $>$@{Catch::Generators::RangeGenerator$<$ T $>$}!next@{next}|hyperpage}{205}
-\indexentry{next@{next}!Catch::Generators::RangeGenerator$<$ T $>$@{Catch::Generators::RangeGenerator$<$ T $>$}|hyperpage}{205}
-\indexentry{Catch::ratio\_string$<$ Ratio $>$@{Catch::ratio\_string$<$ Ratio $>$}|hyperpage}{206}
-\indexentry{Catch::ratio\_string$<$ std::atto $>$@{Catch::ratio\_string$<$ std::atto $>$}|hyperpage}{206}
-\indexentry{Catch::ratio\_string$<$ std::femto $>$@{Catch::ratio\_string$<$ std::femto $>$}|hyperpage}{206}
-\indexentry{Catch::ratio\_string$<$ std::micro $>$@{Catch::ratio\_string$<$ std::micro $>$}|hyperpage}{206}
-\indexentry{Catch::ratio\_string$<$ std::milli $>$@{Catch::ratio\_string$<$ std::milli $>$}|hyperpage}{207}
-\indexentry{Catch::ratio\_string$<$ std::nano $>$@{Catch::ratio\_string$<$ std::nano $>$}|hyperpage}{207}
-\indexentry{Catch::ratio\_string$<$ std::pico $>$@{Catch::ratio\_string$<$ std::pico $>$}|hyperpage}{207}
-\indexentry{Catch::RedirectedStdErr@{Catch::RedirectedStdErr}|hyperpage}{207}
-\indexentry{Catch::RedirectedStdOut@{Catch::RedirectedStdOut}|hyperpage}{208}
-\indexentry{Catch::RedirectedStream@{Catch::RedirectedStream}|hyperpage}{208}
-\indexentry{Catch::RedirectedStreams@{Catch::RedirectedStreams}|hyperpage}{208}
-\indexentry{Catch::Matchers::RegexMatcher@{Catch::Matchers::RegexMatcher}|hyperpage}{209}
-\indexentry{Catch::RegistrarForTagAliases@{Catch::RegistrarForTagAliases}|hyperpage}{210}
-\indexentry{Catch::Benchmark::Detail::repeater$<$ Fun $>$@{Catch::Benchmark::Detail::repeater$<$ Fun $>$}|hyperpage}{210}
-\indexentry{Catch::Generators::RepeatGenerator$<$ T $>$@{Catch::Generators::RepeatGenerator$<$ T $>$}|hyperpage}{211}
-\indexentry{Catch::Generators::RepeatGenerator$<$ T $>$@{Catch::Generators::RepeatGenerator$<$ T $>$}!next@{next}|hyperpage}{212}
-\indexentry{next@{next}!Catch::Generators::RepeatGenerator$<$ T $>$@{Catch::Generators::RepeatGenerator$<$ T $>$}|hyperpage}{212}
-\indexentry{Catch::ReporterBase@{Catch::ReporterBase}|hyperpage}{212}
-\indexentry{Catch::ReporterBase@{Catch::ReporterBase}!listListeners@{listListeners}|hyperpage}{213}
-\indexentry{listListeners@{listListeners}!Catch::ReporterBase@{Catch::ReporterBase}|hyperpage}{213}
-\indexentry{Catch::ReporterBase@{Catch::ReporterBase}!listReporters@{listReporters}|hyperpage}{213}
-\indexentry{listReporters@{listReporters}!Catch::ReporterBase@{Catch::ReporterBase}|hyperpage}{213}
-\indexentry{Catch::ReporterBase@{Catch::ReporterBase}!listTags@{listTags}|hyperpage}{214}
-\indexentry{listTags@{listTags}!Catch::ReporterBase@{Catch::ReporterBase}|hyperpage}{214}
-\indexentry{Catch::ReporterBase@{Catch::ReporterBase}!listTests@{listTests}|hyperpage}{214}
-\indexentry{listTests@{listTests}!Catch::ReporterBase@{Catch::ReporterBase}|hyperpage}{214}
-\indexentry{Catch::ReporterBase@{Catch::ReporterBase}!m\_stream@{m\_stream}|hyperpage}{214}
-\indexentry{m\_stream@{m\_stream}!Catch::ReporterBase@{Catch::ReporterBase}|hyperpage}{214}
-\indexentry{Catch::ReporterConfig@{Catch::ReporterConfig}|hyperpage}{215}
-\indexentry{Catch::ReporterDescription@{Catch::ReporterDescription}|hyperpage}{215}
-\indexentry{Catch::ReporterFactory$<$ T $>$@{Catch::ReporterFactory$<$ T $>$}|hyperpage}{216}
-\indexentry{Catch::ReporterPreferences@{Catch::ReporterPreferences}|hyperpage}{216}
-\indexentry{Catch::ReporterPreferences@{Catch::ReporterPreferences}!shouldRedirectStdOut@{shouldRedirectStdOut}|hyperpage}{217}
-\indexentry{shouldRedirectStdOut@{shouldRedirectStdOut}!Catch::ReporterPreferences@{Catch::ReporterPreferences}|hyperpage}{217}
-\indexentry{Catch::ReporterPreferences@{Catch::ReporterPreferences}!shouldReportAllAssertions@{shouldReportAllAssertions}|hyperpage}{217}
-\indexentry{shouldReportAllAssertions@{shouldReportAllAssertions}!Catch::ReporterPreferences@{Catch::ReporterPreferences}|hyperpage}{217}
-\indexentry{Catch::ReporterRegistrar$<$ T $>$@{Catch::ReporterRegistrar$<$ T $>$}|hyperpage}{217}
-\indexentry{Catch::ReporterRegistry@{Catch::ReporterRegistry}|hyperpage}{218}
-\indexentry{Catch::ReporterSpec@{Catch::ReporterSpec}|hyperpage}{219}
-\indexentry{Catch::Clara::Detail::ResultBase@{Catch::Clara::Detail::ResultBase}|hyperpage}{219}
-\indexentry{Catch::ResultDisposition@{Catch::ResultDisposition}|hyperpage}{220}
-\indexentry{Catch::Clara::Detail::ResultValueBase$<$ T $>$@{Catch::Clara::Detail::ResultValueBase$<$ T $>$}|hyperpage}{220}
-\indexentry{Catch::Clara::Detail::ResultValueBase$<$ void $>$@{Catch::Clara::Detail::ResultValueBase$<$ void $>$}|hyperpage}{222}
-\indexentry{Catch::ResultWas@{Catch::ResultWas}|hyperpage}{223}
-\indexentry{Catch::ReusableStringStream@{Catch::ReusableStringStream}|hyperpage}{223}
-\indexentry{Catch::RunContext@{Catch::RunContext}|hyperpage}{224}
-\indexentry{Catch::Benchmark::SampleAnalysis$<$ Duration $>$@{Catch::Benchmark::SampleAnalysis$<$ Duration $>$}|hyperpage}{226}
-\indexentry{Catch::XmlWriter::ScopedElement@{Catch::XmlWriter::ScopedElement}|hyperpage}{226}
-\indexentry{Catch::ScopedMessage@{Catch::ScopedMessage}|hyperpage}{227}
-\indexentry{Catch::Section@{Catch::Section}|hyperpage}{228}
-\indexentry{Catch::SectionEndInfo@{Catch::SectionEndInfo}|hyperpage}{229}
-\indexentry{Catch::SectionInfo@{Catch::SectionInfo}|hyperpage}{229}
-\indexentry{Catch::CumulativeReporterBase::SectionNode@{Catch::CumulativeReporterBase::SectionNode}|hyperpage}{230}
-\indexentry{Catch::SectionStats@{Catch::SectionStats}|hyperpage}{231}
-\indexentry{Catch::TestCaseTracking::SectionTracker@{Catch::TestCaseTracking::SectionTracker}|hyperpage}{232}
-\indexentry{Catch::TestCaseTracking::SectionTracker@{Catch::TestCaseTracking::SectionTracker}!isSectionTracker@{isSectionTracker}|hyperpage}{233}
-\indexentry{isSectionTracker@{isSectionTracker}!Catch::TestCaseTracking::SectionTracker@{Catch::TestCaseTracking::SectionTracker}|hyperpage}{233}
-\indexentry{Catch::Session@{Catch::Session}|hyperpage}{233}
-\indexentry{Catch::SimplePcg32@{Catch::SimplePcg32}|hyperpage}{234}
-\indexentry{Catch::Singleton$<$ SingletonImplT, InterfaceT, MutableInterfaceT $>$@{Catch::Singleton$<$ SingletonImplT, InterfaceT, MutableInterfaceT $>$}|hyperpage}{235}
-\indexentry{Catch::Generators::SingleValueGenerator$<$ T $>$@{Catch::Generators::SingleValueGenerator$<$ T $>$}|hyperpage}{236}
-\indexentry{Catch::Generators::SingleValueGenerator$<$ T $>$@{Catch::Generators::SingleValueGenerator$<$ T $>$}!next@{next}|hyperpage}{237}
-\indexentry{next@{next}!Catch::Generators::SingleValueGenerator$<$ T $>$@{Catch::Generators::SingleValueGenerator$<$ T $>$}|hyperpage}{237}
-\indexentry{Catch::Matchers::SizeMatchesMatcher$<$ Matcher $>$@{Catch::Matchers::SizeMatchesMatcher$<$ Matcher $>$}|hyperpage}{238}
-\indexentry{Catch::SonarQubeReporter@{Catch::SonarQubeReporter}|hyperpage}{239}
-\indexentry{Catch::SonarQubeReporter@{Catch::SonarQubeReporter}!testRunStarting@{testRunStarting}|hyperpage}{240}
-\indexentry{testRunStarting@{testRunStarting}!Catch::SonarQubeReporter@{Catch::SonarQubeReporter}|hyperpage}{240}
-\indexentry{Catch::SourceLineInfo@{Catch::SourceLineInfo}|hyperpage}{240}
-\indexentry{Catch::Matchers::StartsWithMatcher@{Catch::Matchers::StartsWithMatcher}|hyperpage}{241}
-\indexentry{Catch::StartupExceptionRegistry@{Catch::StartupExceptionRegistry}|hyperpage}{242}
-\indexentry{Catch::StreamEndStop@{Catch::StreamEndStop}|hyperpage}{242}
-\indexentry{Catch::StreamingReporterBase@{Catch::StreamingReporterBase}|hyperpage}{242}
-\indexentry{Catch::StreamingReporterBase@{Catch::StreamingReporterBase}!testRunEnded@{testRunEnded}|hyperpage}{243}
-\indexentry{testRunEnded@{testRunEnded}!Catch::StreamingReporterBase@{Catch::StreamingReporterBase}|hyperpage}{243}
-\indexentry{Catch::StreamingReporterBase@{Catch::StreamingReporterBase}!testRunStarting@{testRunStarting}|hyperpage}{244}
-\indexentry{testRunStarting@{testRunStarting}!Catch::StreamingReporterBase@{Catch::StreamingReporterBase}|hyperpage}{244}
-\indexentry{Catch::Matchers::StringContainsMatcher@{Catch::Matchers::StringContainsMatcher}|hyperpage}{245}
-\indexentry{Catch::Matchers::StringEqualsMatcher@{Catch::Matchers::StringEqualsMatcher}|hyperpage}{246}
-\indexentry{Catch::StringMaker$<$ T, typename $>$@{Catch::StringMaker$<$ T, typename $>$}|hyperpage}{247}
-\indexentry{Catch::StringMaker$<$ bool $>$@{Catch::StringMaker$<$ bool $>$}|hyperpage}{247}
-\indexentry{Catch::StringMaker$<$ Catch::Approx $>$@{Catch::StringMaker$<$ Catch::Approx $>$}|hyperpage}{247}
-\indexentry{Catch::StringMaker$<$ char $\ast$ $>$@{Catch::StringMaker$<$ char $\ast$ $>$}|hyperpage}{247}
-\indexentry{Catch::StringMaker$<$ char $>$@{Catch::StringMaker$<$ char $>$}|hyperpage}{248}
-\indexentry{Catch::StringMaker$<$ char const $\ast$ $>$@{Catch::StringMaker$<$ char const $\ast$ $>$}|hyperpage}{248}
-\indexentry{Catch::StringMaker$<$ char\mbox{[}SZ\mbox{]}$>$@{Catch::StringMaker$<$ char[SZ]$>$}|hyperpage}{248}
-\indexentry{Catch::StringMaker$<$ double $>$@{Catch::StringMaker$<$ double $>$}|hyperpage}{248}
-\indexentry{Catch::StringMaker$<$ float $>$@{Catch::StringMaker$<$ float $>$}|hyperpage}{249}
-\indexentry{Catch::StringMaker$<$ int $>$@{Catch::StringMaker$<$ int $>$}|hyperpage}{249}
-\indexentry{Catch::StringMaker$<$ long $>$@{Catch::StringMaker$<$ long $>$}|hyperpage}{249}
-\indexentry{Catch::StringMaker$<$ long long $>$@{Catch::StringMaker$<$ long long $>$}|hyperpage}{249}
-\indexentry{Catch::StringMaker$<$ R C::$\ast$ $>$@{Catch::StringMaker$<$ R C::$\ast$ $>$}|hyperpage}{250}
-\indexentry{Catch::StringMaker$<$ R, std::enable\_if\_t$<$ is\_range$<$ R $>$::value \&\&"!::Catch::Detail::IsStreamInsertable$<$ R $>$::value $>$ $>$@{Catch::StringMaker$<$ R, std::enable\_if\_t$<$ is\_range$<$ R $>$::value \&\&"!::Catch::Detail::IsStreamInsertable$<$ R $>$::value $>$ $>$}|hyperpage}{250}
-\indexentry{Catch::StringMaker$<$ signed char $>$@{Catch::StringMaker$<$ signed char $>$}|hyperpage}{250}
-\indexentry{Catch::StringMaker$<$ signed char\mbox{[}SZ\mbox{]}$>$@{Catch::StringMaker$<$ signed char[SZ]$>$}|hyperpage}{250}
-\indexentry{Catch::StringMaker$<$ std::chrono::duration$<$ Value, Ratio $>$ $>$@{Catch::StringMaker$<$ std::chrono::duration$<$ Value, Ratio $>$ $>$}|hyperpage}{251}
-\indexentry{Catch::StringMaker$<$ std::chrono::duration$<$ Value, std::ratio$<$ 1 $>$ $>$ $>$@{Catch::StringMaker$<$ std::chrono::duration$<$ Value, std::ratio$<$ 1 $>$ $>$ $>$}|hyperpage}{251}
-\indexentry{Catch::StringMaker$<$ std::chrono::duration$<$ Value, std::ratio$<$ 3600 $>$ $>$ $>$@{Catch::StringMaker$<$ std::chrono::duration$<$ Value, std::ratio$<$ 3600 $>$ $>$ $>$}|hyperpage}{251}
-\indexentry{Catch::StringMaker$<$ std::chrono::duration$<$ Value, std::ratio$<$ 60 $>$ $>$ $>$@{Catch::StringMaker$<$ std::chrono::duration$<$ Value, std::ratio$<$ 60 $>$ $>$ $>$}|hyperpage}{251}
-\indexentry{Catch::StringMaker$<$ std::chrono::time\_point$<$ Clock, Duration $>$ $>$@{Catch::StringMaker$<$ std::chrono::time\_point$<$ Clock, Duration $>$ $>$}|hyperpage}{252}
-\indexentry{Catch::StringMaker$<$ std::chrono::time\_point$<$ std::chrono::system\_clock, Duration $>$ $>$@{Catch::StringMaker$<$ std::chrono::time\_point$<$ std::chrono::system\_clock, Duration $>$ $>$}|hyperpage}{252}
-\indexentry{Catch::StringMaker$<$ std::nullptr\_t $>$@{Catch::StringMaker$<$ std::nullptr\_t $>$}|hyperpage}{252}
-\indexentry{Catch::StringMaker$<$ std::string $>$@{Catch::StringMaker$<$ std::string $>$}|hyperpage}{252}
-\indexentry{Catch::StringMaker$<$ std::wstring $>$@{Catch::StringMaker$<$ std::wstring $>$}|hyperpage}{253}
-\indexentry{Catch::StringMaker$<$ T $\ast$ $>$@{Catch::StringMaker$<$ T $\ast$ $>$}|hyperpage}{253}
-\indexentry{Catch::StringMaker$<$ T\mbox{[}SZ\mbox{]}$>$@{Catch::StringMaker$<$ T[SZ]$>$}|hyperpage}{253}
-\indexentry{Catch::StringMaker$<$ unsigned char $>$@{Catch::StringMaker$<$ unsigned char $>$}|hyperpage}{253}
-\indexentry{Catch::StringMaker$<$ unsigned char\mbox{[}SZ\mbox{]}$>$@{Catch::StringMaker$<$ unsigned char[SZ]$>$}|hyperpage}{254}
-\indexentry{Catch::StringMaker$<$ unsigned int $>$@{Catch::StringMaker$<$ unsigned int $>$}|hyperpage}{254}
-\indexentry{Catch::StringMaker$<$ unsigned long $>$@{Catch::StringMaker$<$ unsigned long $>$}|hyperpage}{254}
-\indexentry{Catch::StringMaker$<$ unsigned long long $>$@{Catch::StringMaker$<$ unsigned long long $>$}|hyperpage}{254}
-\indexentry{Catch::StringMaker$<$ wchar\_t $\ast$ $>$@{Catch::StringMaker$<$ wchar\_t $\ast$ $>$}|hyperpage}{255}
-\indexentry{Catch::StringMaker$<$ wchar\_t const $\ast$ $>$@{Catch::StringMaker$<$ wchar\_t const $\ast$ $>$}|hyperpage}{255}
-\indexentry{Catch::Matchers::StringMatcherBase@{Catch::Matchers::StringMatcherBase}|hyperpage}{255}
-\indexentry{Catch::StringRef@{Catch::StringRef}|hyperpage}{256}
-\indexentry{Catch::StringRef@{Catch::StringRef}!compare@{compare}|hyperpage}{257}
-\indexentry{compare@{compare}!Catch::StringRef@{Catch::StringRef}|hyperpage}{257}
-\indexentry{Catch::Tag@{Catch::Tag}|hyperpage}{257}
-\indexentry{Catch::TagAlias@{Catch::TagAlias}|hyperpage}{258}
-\indexentry{Catch::TagAliasRegistry@{Catch::TagAliasRegistry}|hyperpage}{259}
-\indexentry{Catch::TagInfo@{Catch::TagInfo}|hyperpage}{259}
-\indexentry{Catch::Generators::TakeGenerator$<$ T $>$@{Catch::Generators::TakeGenerator$<$ T $>$}|hyperpage}{260}
-\indexentry{Catch::Generators::TakeGenerator$<$ T $>$@{Catch::Generators::TakeGenerator$<$ T $>$}!next@{next}|hyperpage}{261}
-\indexentry{next@{next}!Catch::Generators::TakeGenerator$<$ T $>$@{Catch::Generators::TakeGenerator$<$ T $>$}|hyperpage}{261}
-\indexentry{Catch::TAPReporter@{Catch::TAPReporter}|hyperpage}{262}
-\indexentry{Catch::TAPReporter@{Catch::TAPReporter}!testRunEnded@{testRunEnded}|hyperpage}{263}
-\indexentry{testRunEnded@{testRunEnded}!Catch::TAPReporter@{Catch::TAPReporter}|hyperpage}{263}
-\indexentry{Catch::TAPReporter@{Catch::TAPReporter}!testRunStarting@{testRunStarting}|hyperpage}{263}
-\indexentry{testRunStarting@{testRunStarting}!Catch::TAPReporter@{Catch::TAPReporter}|hyperpage}{263}
-\indexentry{Catch::TeamCityReporter@{Catch::TeamCityReporter}|hyperpage}{264}
-\indexentry{Catch::TeamCityReporter@{Catch::TeamCityReporter}!testRunEnded@{testRunEnded}|hyperpage}{265}
-\indexentry{testRunEnded@{testRunEnded}!Catch::TeamCityReporter@{Catch::TeamCityReporter}|hyperpage}{265}
-\indexentry{Catch::TeamCityReporter@{Catch::TeamCityReporter}!testRunStarting@{testRunStarting}|hyperpage}{265}
-\indexentry{testRunStarting@{testRunStarting}!Catch::TeamCityReporter@{Catch::TeamCityReporter}|hyperpage}{265}
-\indexentry{Catch::TestCaseHandle@{Catch::TestCaseHandle}|hyperpage}{265}
-\indexentry{Catch::TestCaseInfo@{Catch::TestCaseInfo}|hyperpage}{266}
-\indexentry{Catch::TestCaseInfoHasher@{Catch::TestCaseInfoHasher}|hyperpage}{267}
-\indexentry{Catch::TestCaseStats@{Catch::TestCaseStats}|hyperpage}{268}
-\indexentry{Catch::TestFailureException@{Catch::TestFailureException}|hyperpage}{268}
-\indexentry{Catch::TestInvokerAsFunction@{Catch::TestInvokerAsFunction}|hyperpage}{269}
-\indexentry{Catch::TestInvokerAsMethod$<$ C $>$@{Catch::TestInvokerAsMethod$<$ C $>$}|hyperpage}{270}
-\indexentry{Catch::TestRegistry@{Catch::TestRegistry}|hyperpage}{271}
-\indexentry{Catch::TestRunInfo@{Catch::TestRunInfo}|hyperpage}{272}
-\indexentry{Catch::TestRunStats@{Catch::TestRunStats}|hyperpage}{272}
-\indexentry{Catch::TestSpec@{Catch::TestSpec}|hyperpage}{273}
-\indexentry{Catch::TestSpecParser@{Catch::TestSpecParser}|hyperpage}{274}
-\indexentry{Catch::Timer@{Catch::Timer}|hyperpage}{274}
-\indexentry{Catch::Benchmark::Timing$<$ Duration, Result $>$@{Catch::Benchmark::Timing$<$ Duration, Result $>$}|hyperpage}{274}
-\indexentry{Catch::Clara::Detail::Token@{Catch::Clara::Detail::Token}|hyperpage}{274}
-\indexentry{Catch::Clara::Detail::TokenStream@{Catch::Clara::Detail::TokenStream}|hyperpage}{275}
-\indexentry{Tool$<$ TSeq $>$@{Tool$<$ TSeq $>$}|hyperpage}{275}
-\indexentry{Tools$<$ TSeq $>$@{Tools$<$ TSeq $>$}|hyperpage}{276}
-\indexentry{Tools\_const$<$ TSeq $>$@{Tools\_const$<$ TSeq $>$}|hyperpage}{277}
-\indexentry{Catch::Totals@{Catch::Totals}|hyperpage}{278}
-\indexentry{Catch::TestCaseTracking::TrackerBase@{Catch::TestCaseTracking::TrackerBase}|hyperpage}{279}
-\indexentry{Catch::TestCaseTracking::TrackerContext@{Catch::TestCaseTracking::TrackerContext}|hyperpage}{280}
-\indexentry{Catch::true\_given$<$ typename $>$@{Catch::true\_given$<$ typename $>$}|hyperpage}{281}
-\indexentry{Catch::Benchmark::Detail::CompleteType$<$ void $>$::type@{Catch::Benchmark::Detail::CompleteType$<$ void $>$::type}|hyperpage}{281}
-\indexentry{Catch::UnaryExpr$<$ LhsT $>$@{Catch::UnaryExpr$<$ LhsT $>$}|hyperpage}{282}
-\indexentry{Catch::Clara::Detail::UnaryLambdaTraits$<$ L $>$@{Catch::Clara::Detail::UnaryLambdaTraits$<$ L $>$}|hyperpage}{282}
-\indexentry{Catch::Clara::Detail::UnaryLambdaTraits$<$ ReturnT(ClassT::$\ast$)(Args...) const $>$@{Catch::Clara::Detail::UnaryLambdaTraits$<$ ReturnT(ClassT::$\ast$)(Args...) const $>$}|hyperpage}{283}
-\indexentry{Catch::Clara::Detail::UnaryLambdaTraits$<$ ReturnT(ClassT::$\ast$)(ArgT) const $>$@{Catch::Clara::Detail::UnaryLambdaTraits$<$ ReturnT(ClassT::$\ast$)(ArgT) const $>$}|hyperpage}{283}
-\indexentry{Catch::Detail::unique\_ptr$<$ T $>$@{Catch::Detail::unique\_ptr$<$ T $>$}|hyperpage}{283}
-\indexentry{Catch::Matchers::UnorderedEqualsMatcher$<$ T, AllocComp, AllocMatch $>$@{Catch::Matchers::UnorderedEqualsMatcher$<$ T, AllocComp, AllocMatch $>$}|hyperpage}{284}
-\indexentry{UserData$<$ TSeq $>$@{UserData$<$ TSeq $>$}|hyperpage}{285}
-\indexentry{UserData$<$ TSeq $>$@{UserData$<$ TSeq $>$}!UserData@{UserData}|hyperpage}{287}
-\indexentry{UserData@{UserData}!UserData$<$ TSeq $>$@{UserData$<$ TSeq $>$}|hyperpage}{287}
-\indexentry{vecHasher$<$ T $>$@{vecHasher$<$ T $>$}|hyperpage}{287}
-\indexentry{Catch::Matchers::VectorContainsElementMatcher$<$ T, Alloc $>$@{Catch::Matchers::VectorContainsElementMatcher$<$ T, Alloc $>$}|hyperpage}{288}
-\indexentry{Catch::Version@{Catch::Version}|hyperpage}{289}
-\indexentry{Virus$<$ TSeq $>$@{Virus$<$ TSeq $>$}|hyperpage}{290}
-\indexentry{Viruses$<$ TSeq $>$@{Viruses$<$ TSeq $>$}|hyperpage}{292}
-\indexentry{Viruses\_const$<$ TSeq $>$@{Viruses\_const$<$ TSeq $>$}|hyperpage}{292}
-\indexentry{Catch::WaitForKeypress@{Catch::WaitForKeypress}|hyperpage}{293}
-\indexentry{Catch::WarnAbout@{Catch::WarnAbout}|hyperpage}{293}
-\indexentry{Catch::WarnAbout@{Catch::WarnAbout}!What@{What}|hyperpage}{294}
-\indexentry{What@{What}!Catch::WarnAbout@{Catch::WarnAbout}|hyperpage}{294}
-\indexentry{NoAssertions@{NoAssertions}!Catch::WarnAbout@{Catch::WarnAbout}|hyperpage}{294}
-\indexentry{Catch::WarnAbout@{Catch::WarnAbout}!NoAssertions@{NoAssertions}|hyperpage}{294}
-\indexentry{UnmatchedTestSpec@{UnmatchedTestSpec}!Catch::WarnAbout@{Catch::WarnAbout}|hyperpage}{294}
-\indexentry{Catch::WarnAbout@{Catch::WarnAbout}!UnmatchedTestSpec@{UnmatchedTestSpec}|hyperpage}{294}
-\indexentry{Catch::WildcardPattern@{Catch::WildcardPattern}|hyperpage}{294}
-\indexentry{Catch::Matchers::WithinAbsMatcher@{Catch::Matchers::WithinAbsMatcher}|hyperpage}{294}
-\indexentry{Catch::Matchers::WithinRelMatcher@{Catch::Matchers::WithinRelMatcher}|hyperpage}{296}
-\indexentry{Catch::Matchers::WithinUlpsMatcher@{Catch::Matchers::WithinUlpsMatcher}|hyperpage}{297}
-\indexentry{Catch::XmlEncode@{Catch::XmlEncode}|hyperpage}{298}
-\indexentry{Catch::XmlReporter@{Catch::XmlReporter}|hyperpage}{299}
-\indexentry{Catch::XmlReporter@{Catch::XmlReporter}!listListeners@{listListeners}|hyperpage}{300}
-\indexentry{listListeners@{listListeners}!Catch::XmlReporter@{Catch::XmlReporter}|hyperpage}{300}
-\indexentry{Catch::XmlReporter@{Catch::XmlReporter}!listReporters@{listReporters}|hyperpage}{300}
-\indexentry{listReporters@{listReporters}!Catch::XmlReporter@{Catch::XmlReporter}|hyperpage}{300}
-\indexentry{Catch::XmlReporter@{Catch::XmlReporter}!listTags@{listTags}|hyperpage}{300}
-\indexentry{listTags@{listTags}!Catch::XmlReporter@{Catch::XmlReporter}|hyperpage}{300}
-\indexentry{Catch::XmlReporter@{Catch::XmlReporter}!listTests@{listTests}|hyperpage}{301}
-\indexentry{listTests@{listTests}!Catch::XmlReporter@{Catch::XmlReporter}|hyperpage}{301}
-\indexentry{Catch::XmlReporter@{Catch::XmlReporter}!testRunEnded@{testRunEnded}|hyperpage}{301}
-\indexentry{testRunEnded@{testRunEnded}!Catch::XmlReporter@{Catch::XmlReporter}|hyperpage}{301}
-\indexentry{Catch::XmlReporter@{Catch::XmlReporter}!testRunStarting@{testRunStarting}|hyperpage}{301}
-\indexentry{testRunStarting@{testRunStarting}!Catch::XmlReporter@{Catch::XmlReporter}|hyperpage}{301}
-\indexentry{Catch::XmlWriter@{Catch::XmlWriter}|hyperpage}{302}
-\indexentry{Catch::XmlWriter@{Catch::XmlWriter}!writeAttribute@{writeAttribute}|hyperpage}{302}
-\indexentry{writeAttribute@{writeAttribute}!Catch::XmlWriter@{Catch::XmlWriter}|hyperpage}{302}
-\indexentry{include/catch2/catch\_amalgamated.hpp@{include/catch2/catch\_amalgamated.hpp}|hyperpage}{303}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!CATCH\_INTERNAL\_DEFINE\_EXPRESSION\_OPERATOR@{CATCH\_INTERNAL\_DEFINE\_EXPRESSION\_OPERATOR}|hyperpage}{331}
-\indexentry{CATCH\_INTERNAL\_DEFINE\_EXPRESSION\_OPERATOR@{CATCH\_INTERNAL\_DEFINE\_EXPRESSION\_OPERATOR}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{331}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!CATCH\_REGISTER\_LISTENER@{CATCH\_REGISTER\_LISTENER}|hyperpage}{331}
-\indexentry{CATCH\_REGISTER\_LISTENER@{CATCH\_REGISTER\_LISTENER}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{331}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!CATCH\_REGISTER\_REPORTER@{CATCH\_REGISTER\_REPORTER}|hyperpage}{331}
-\indexentry{CATCH\_REGISTER\_REPORTER@{CATCH\_REGISTER\_REPORTER}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{331}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!CATCH\_REGISTER\_TAG\_ALIAS@{CATCH\_REGISTER\_TAG\_ALIAS}|hyperpage}{331}
-\indexentry{CATCH\_REGISTER\_TAG\_ALIAS@{CATCH\_REGISTER\_TAG\_ALIAS}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{331}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!GENERATE@{GENERATE}|hyperpage}{332}
-\indexentry{GENERATE@{GENERATE}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{332}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!GENERATE\_COPY@{GENERATE\_COPY}|hyperpage}{332}
-\indexentry{GENERATE\_COPY@{GENERATE\_COPY}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{332}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!GENERATE\_REF@{GENERATE\_REF}|hyperpage}{332}
-\indexentry{GENERATE\_REF@{GENERATE\_REF}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{332}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_BENCHMARK@{INTERNAL\_CATCH\_BENCHMARK}|hyperpage}{332}
-\indexentry{INTERNAL\_CATCH\_BENCHMARK@{INTERNAL\_CATCH\_BENCHMARK}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{332}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_BENCHMARK\_ADVANCED@{INTERNAL\_CATCH\_BENCHMARK\_ADVANCED}|hyperpage}{333}
-\indexentry{INTERNAL\_CATCH\_BENCHMARK\_ADVANCED@{INTERNAL\_CATCH\_BENCHMARK\_ADVANCED}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{333}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_CAPTURE@{INTERNAL\_CATCH\_CAPTURE}|hyperpage}{333}
-\indexentry{INTERNAL\_CATCH\_CAPTURE@{INTERNAL\_CATCH\_CAPTURE}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{333}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_DECLARE\_SIG\_TEST1@{INTERNAL\_CATCH\_DECLARE\_SIG\_TEST1}|hyperpage}{333}
-\indexentry{INTERNAL\_CATCH\_DECLARE\_SIG\_TEST1@{INTERNAL\_CATCH\_DECLARE\_SIG\_TEST1}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{333}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_DECLARE\_SIG\_TEST\_METHOD1@{INTERNAL\_CATCH\_DECLARE\_SIG\_TEST\_METHOD1}|hyperpage}{333}
-\indexentry{INTERNAL\_CATCH\_DECLARE\_SIG\_TEST\_METHOD1@{INTERNAL\_CATCH\_DECLARE\_SIG\_TEST\_METHOD1}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{333}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_DECLARE\_SIG\_TEST\_METHOD\_X@{INTERNAL\_CATCH\_DECLARE\_SIG\_TEST\_METHOD\_X}|hyperpage}{334}
-\indexentry{INTERNAL\_CATCH\_DECLARE\_SIG\_TEST\_METHOD\_X@{INTERNAL\_CATCH\_DECLARE\_SIG\_TEST\_METHOD\_X}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{334}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_DECLARE\_SIG\_TEST\_X@{INTERNAL\_CATCH\_DECLARE\_SIG\_TEST\_X}|hyperpage}{334}
-\indexentry{INTERNAL\_CATCH\_DECLARE\_SIG\_TEST\_X@{INTERNAL\_CATCH\_DECLARE\_SIG\_TEST\_X}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{334}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_DEFINE\_SIG\_TEST1@{INTERNAL\_CATCH\_DEFINE\_SIG\_TEST1}|hyperpage}{334}
-\indexentry{INTERNAL\_CATCH\_DEFINE\_SIG\_TEST1@{INTERNAL\_CATCH\_DEFINE\_SIG\_TEST1}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{334}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_DEFINE\_SIG\_TEST\_METHOD1@{INTERNAL\_CATCH\_DEFINE\_SIG\_TEST\_METHOD1}|hyperpage}{334}
-\indexentry{INTERNAL\_CATCH\_DEFINE\_SIG\_TEST\_METHOD1@{INTERNAL\_CATCH\_DEFINE\_SIG\_TEST\_METHOD1}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{334}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_DEFINE\_SIG\_TEST\_METHOD\_X@{INTERNAL\_CATCH\_DEFINE\_SIG\_TEST\_METHOD\_X}|hyperpage}{335}
-\indexentry{INTERNAL\_CATCH\_DEFINE\_SIG\_TEST\_METHOD\_X@{INTERNAL\_CATCH\_DEFINE\_SIG\_TEST\_METHOD\_X}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{335}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_DEFINE\_SIG\_TEST\_X@{INTERNAL\_CATCH\_DEFINE\_SIG\_TEST\_X}|hyperpage}{335}
-\indexentry{INTERNAL\_CATCH\_DEFINE\_SIG\_TEST\_X@{INTERNAL\_CATCH\_DEFINE\_SIG\_TEST\_X}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{335}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_DYNAMIC\_SECTION@{INTERNAL\_CATCH\_DYNAMIC\_SECTION}|hyperpage}{335}
-\indexentry{INTERNAL\_CATCH\_DYNAMIC\_SECTION@{INTERNAL\_CATCH\_DYNAMIC\_SECTION}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{335}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_ELSE@{INTERNAL\_CATCH\_ELSE}|hyperpage}{335}
-\indexentry{INTERNAL\_CATCH\_ELSE@{INTERNAL\_CATCH\_ELSE}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{335}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_IF@{INTERNAL\_CATCH\_IF}|hyperpage}{336}
-\indexentry{INTERNAL\_CATCH\_IF@{INTERNAL\_CATCH\_IF}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{336}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_METHOD\_AS\_TEST\_CASE@{INTERNAL\_CATCH\_METHOD\_AS\_TEST\_CASE}|hyperpage}{336}
-\indexentry{INTERNAL\_CATCH\_METHOD\_AS\_TEST\_CASE@{INTERNAL\_CATCH\_METHOD\_AS\_TEST\_CASE}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{336}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_MSG@{INTERNAL\_CATCH\_MSG}|hyperpage}{336}
-\indexentry{INTERNAL\_CATCH\_MSG@{INTERNAL\_CATCH\_MSG}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{336}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_NO\_THROW@{INTERNAL\_CATCH\_NO\_THROW}|hyperpage}{336}
-\indexentry{INTERNAL\_CATCH\_NO\_THROW@{INTERNAL\_CATCH\_NO\_THROW}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{336}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_NTTP\_1@{INTERNAL\_CATCH\_NTTP\_1}|hyperpage}{337}
-\indexentry{INTERNAL\_CATCH\_NTTP\_1@{INTERNAL\_CATCH\_NTTP\_1}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{337}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_NTTP\_REGISTER@{INTERNAL\_CATCH\_NTTP\_REGISTER}|hyperpage}{337}
-\indexentry{INTERNAL\_CATCH\_NTTP\_REGISTER@{INTERNAL\_CATCH\_NTTP\_REGISTER}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{337}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_NTTP\_REGISTER0@{INTERNAL\_CATCH\_NTTP\_REGISTER0}|hyperpage}{337}
-\indexentry{INTERNAL\_CATCH\_NTTP\_REGISTER0@{INTERNAL\_CATCH\_NTTP\_REGISTER0}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{337}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_NTTP\_REGISTER\_METHOD@{INTERNAL\_CATCH\_NTTP\_REGISTER\_METHOD}|hyperpage}{338}
-\indexentry{INTERNAL\_CATCH\_NTTP\_REGISTER\_METHOD@{INTERNAL\_CATCH\_NTTP\_REGISTER\_METHOD}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{338}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_NTTP\_REGISTER\_METHOD0@{INTERNAL\_CATCH\_NTTP\_REGISTER\_METHOD0}|hyperpage}{338}
-\indexentry{INTERNAL\_CATCH\_NTTP\_REGISTER\_METHOD0@{INTERNAL\_CATCH\_NTTP\_REGISTER\_METHOD0}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{338}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_REGISTER\_ENUM@{INTERNAL\_CATCH\_REGISTER\_ENUM}|hyperpage}{338}
-\indexentry{INTERNAL\_CATCH\_REGISTER\_ENUM@{INTERNAL\_CATCH\_REGISTER\_ENUM}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{338}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_REGISTER\_TESTCASE@{INTERNAL\_CATCH\_REGISTER\_TESTCASE}|hyperpage}{338}
-\indexentry{INTERNAL\_CATCH\_REGISTER\_TESTCASE@{INTERNAL\_CATCH\_REGISTER\_TESTCASE}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{338}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_SECTION@{INTERNAL\_CATCH\_SECTION}|hyperpage}{339}
-\indexentry{INTERNAL\_CATCH\_SECTION@{INTERNAL\_CATCH\_SECTION}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{339}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_TEMPLATE\_LIST\_TEST\_CASE\_2@{INTERNAL\_CATCH\_TEMPLATE\_LIST\_TEST\_CASE\_2}|hyperpage}{339}
-\indexentry{INTERNAL\_CATCH\_TEMPLATE\_LIST\_TEST\_CASE\_2@{INTERNAL\_CATCH\_TEMPLATE\_LIST\_TEST\_CASE\_2}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{339}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_TEMPLATE\_LIST\_TEST\_CASE\_METHOD\_2@{INTERNAL\_CATCH\_TEMPLATE\_LIST\_TEST\_CASE\_METHOD\_2}|hyperpage}{339}
-\indexentry{INTERNAL\_CATCH\_TEMPLATE\_LIST\_TEST\_CASE\_METHOD\_2@{INTERNAL\_CATCH\_TEMPLATE\_LIST\_TEST\_CASE\_METHOD\_2}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{339}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_TEMPLATE\_TEST\_CASE\_2@{INTERNAL\_CATCH\_TEMPLATE\_TEST\_CASE\_2}|hyperpage}{340}
-\indexentry{INTERNAL\_CATCH\_TEMPLATE\_TEST\_CASE\_2@{INTERNAL\_CATCH\_TEMPLATE\_TEST\_CASE\_2}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{340}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_TEMPLATE\_TEST\_CASE\_METHOD\_2@{INTERNAL\_CATCH\_TEMPLATE\_TEST\_CASE\_METHOD\_2}|hyperpage}{341}
-\indexentry{INTERNAL\_CATCH\_TEMPLATE\_TEST\_CASE\_METHOD\_2@{INTERNAL\_CATCH\_TEMPLATE\_TEST\_CASE\_METHOD\_2}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{341}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_TEST@{INTERNAL\_CATCH\_TEST}|hyperpage}{341}
-\indexentry{INTERNAL\_CATCH\_TEST@{INTERNAL\_CATCH\_TEST}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{341}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_TEST\_CASE\_METHOD2@{INTERNAL\_CATCH\_TEST\_CASE\_METHOD2}|hyperpage}{342}
-\indexentry{INTERNAL\_CATCH\_TEST\_CASE\_METHOD2@{INTERNAL\_CATCH\_TEST\_CASE\_METHOD2}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{342}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_TESTCASE2@{INTERNAL\_CATCH\_TESTCASE2}|hyperpage}{342}
-\indexentry{INTERNAL\_CATCH\_TESTCASE2@{INTERNAL\_CATCH\_TESTCASE2}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{342}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_THROWS@{INTERNAL\_CATCH\_THROWS}|hyperpage}{342}
-\indexentry{INTERNAL\_CATCH\_THROWS@{INTERNAL\_CATCH\_THROWS}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{342}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_THROWS\_AS@{INTERNAL\_CATCH\_THROWS\_AS}|hyperpage}{343}
-\indexentry{INTERNAL\_CATCH\_THROWS\_AS@{INTERNAL\_CATCH\_THROWS\_AS}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{343}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_THROWS\_MATCHES@{INTERNAL\_CATCH\_THROWS\_MATCHES}|hyperpage}{343}
-\indexentry{INTERNAL\_CATCH\_THROWS\_MATCHES@{INTERNAL\_CATCH\_THROWS\_MATCHES}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{343}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_THROWS\_STR\_MATCHES@{INTERNAL\_CATCH\_THROWS\_STR\_MATCHES}|hyperpage}{344}
-\indexentry{INTERNAL\_CATCH\_THROWS\_STR\_MATCHES@{INTERNAL\_CATCH\_THROWS\_STR\_MATCHES}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{344}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CATCH\_TRANSLATE\_EXCEPTION2@{INTERNAL\_CATCH\_TRANSLATE\_EXCEPTION2}|hyperpage}{344}
-\indexentry{INTERNAL\_CATCH\_TRANSLATE\_EXCEPTION2@{INTERNAL\_CATCH\_TRANSLATE\_EXCEPTION2}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{344}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!INTERNAL\_CHECK\_THAT@{INTERNAL\_CHECK\_THAT}|hyperpage}{344}
-\indexentry{INTERNAL\_CHECK\_THAT@{INTERNAL\_CHECK\_THAT}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{344}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!ColourMode@{ColourMode}|hyperpage}{345}
-\indexentry{ColourMode@{ColourMode}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{345}
-\indexentry{PlatformDefault@{PlatformDefault}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{345}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!PlatformDefault@{PlatformDefault}|hyperpage}{345}
-\indexentry{ANSI@{ANSI}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{345}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!ANSI@{ANSI}|hyperpage}{345}
-\indexentry{Win32@{Win32}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{345}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!Win32@{Win32}|hyperpage}{345}
-\indexentry{None@{None}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{345}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!None@{None}|hyperpage}{345}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!GenerateFrom@{GenerateFrom}|hyperpage}{345}
-\indexentry{GenerateFrom@{GenerateFrom}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{345}
-\indexentry{Default@{Default}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{345}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!Default@{Default}|hyperpage}{345}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!ResultType@{ResultType}|hyperpage}{345}
-\indexentry{ResultType@{ResultType}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{345}
-\indexentry{Ok@{Ok}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{346}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!Ok@{Ok}|hyperpage}{346}
-\indexentry{LogicError@{LogicError}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{346}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!LogicError@{LogicError}|hyperpage}{346}
-\indexentry{RuntimeError@{RuntimeError}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{346}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!RuntimeError@{RuntimeError}|hyperpage}{346}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!Contains@{Contains}|hyperpage}{346}
-\indexentry{Contains@{Contains}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{346}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!Contains@{Contains}|hyperpage}{346}
-\indexentry{Contains@{Contains}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{346}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!convertIntoString@{convertIntoString}|hyperpage}{346}
-\indexentry{convertIntoString@{convertIntoString}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{346}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!defaultListListeners@{defaultListListeners}|hyperpage}{346}
-\indexentry{defaultListListeners@{defaultListListeners}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{346}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!defaultListReporters@{defaultListReporters}|hyperpage}{346}
-\indexentry{defaultListReporters@{defaultListReporters}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{346}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!defaultListTags@{defaultListTags}|hyperpage}{347}
-\indexentry{defaultListTags@{defaultListTags}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{347}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!defaultListTests@{defaultListTests}|hyperpage}{347}
-\indexentry{defaultListTests@{defaultListTests}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{347}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!makeStream@{makeStream}|hyperpage}{347}
-\indexentry{makeStream@{makeStream}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{347}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!operator\&\&@{operator\&\&}|hyperpage}{348}
-\indexentry{operator\&\&@{operator\&\&}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{348}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!operator\&\&@{operator\&\&}|hyperpage}{348}
-\indexentry{operator\&\&@{operator\&\&}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{348}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!operator\texttt{"|}\texttt{"|}@{operator\texttt{"|}\texttt{"|}}|hyperpage}{348}
-\indexentry{operator\texttt{"|}\texttt{"|}@{operator\texttt{"|}\texttt{"|}}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{348}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!operator\texttt{"|}\texttt{"|}@{operator\texttt{"|}\texttt{"|}}|hyperpage}{348}
-\indexentry{operator\texttt{"|}\texttt{"|}@{operator\texttt{"|}\texttt{"|}}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{348}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!parseReporterSpec@{parseReporterSpec}|hyperpage}{348}
-\indexentry{parseReporterSpec@{parseReporterSpec}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{348}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!Predicate@{Predicate}|hyperpage}{349}
-\indexentry{Predicate@{Predicate}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{349}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!registerReporterImpl@{registerReporterImpl}|hyperpage}{349}
-\indexentry{registerReporterImpl@{registerReporterImpl}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{349}
-\indexentry{catch\_amalgamated.hpp@{catch\_amalgamated.hpp}!ulpDistance@{ulpDistance}|hyperpage}{349}
-\indexentry{ulpDistance@{ulpDistance}!catch\_amalgamated.hpp@{catch\_amalgamated.hpp}|hyperpage}{349}
+\indexentry{Action$<$ TSeq $>$@{Action$<$ TSeq $>$}|hyperpage}{27}
+\indexentry{Action$<$ TSeq $>$@{Action$<$ TSeq $>$}!Action@{Action}|hyperpage}{28}
+\indexentry{Action@{Action}!Action$<$ TSeq $>$@{Action$<$ TSeq $>$}|hyperpage}{28}
+\indexentry{epiworld::Action$<$ TSeq $>$@{epiworld::Action$<$ TSeq $>$}|hyperpage}{29}
+\indexentry{epiworld::Action$<$ TSeq $>$@{epiworld::Action$<$ TSeq $>$}!Action@{Action}|hyperpage}{29}
+\indexentry{Action@{Action}!epiworld::Action$<$ TSeq $>$@{epiworld::Action$<$ TSeq $>$}|hyperpage}{29}
+\indexentry{AdjList@{AdjList}|hyperpage}{30}
+\indexentry{AdjList@{AdjList}!AdjList@{AdjList}|hyperpage}{30}
+\indexentry{AdjList@{AdjList}!AdjList@{AdjList}|hyperpage}{30}
+\indexentry{AdjList@{AdjList}!read\_edgelist@{read\_edgelist}|hyperpage}{31}
+\indexentry{read\_edgelist@{read\_edgelist}!AdjList@{AdjList}|hyperpage}{31}
+\indexentry{epiworld::AdjList@{epiworld::AdjList}|hyperpage}{31}
+\indexentry{epiworld::AdjList@{epiworld::AdjList}!AdjList@{AdjList}|hyperpage}{32}
+\indexentry{AdjList@{AdjList}!epiworld::AdjList@{epiworld::AdjList}|hyperpage}{32}
+\indexentry{epiworld::AdjList@{epiworld::AdjList}!AdjList@{AdjList}|hyperpage}{32}
+\indexentry{AdjList@{AdjList}!epiworld::AdjList@{epiworld::AdjList}|hyperpage}{32}
+\indexentry{epiworld::AdjList@{epiworld::AdjList}!read\_edgelist@{read\_edgelist}|hyperpage}{33}
+\indexentry{read\_edgelist@{read\_edgelist}!epiworld::AdjList@{epiworld::AdjList}|hyperpage}{33}
+\indexentry{Agent$<$ TSeq $>$@{Agent$<$ TSeq $>$}|hyperpage}{33}
+\indexentry{Agent$<$ TSeq $>$@{Agent$<$ TSeq $>$}!operator()@{operator()}|hyperpage}{36}
+\indexentry{operator()@{operator()}!Agent$<$ TSeq $>$@{Agent$<$ TSeq $>$}|hyperpage}{36}
+\indexentry{epiworld::Agent$<$ TSeq $>$@{epiworld::Agent$<$ TSeq $>$}|hyperpage}{36}
+\indexentry{epiworld::Agent$<$ TSeq $>$@{epiworld::Agent$<$ TSeq $>$}!operator()@{operator()}|hyperpage}{38}
+\indexentry{operator()@{operator()}!epiworld::Agent$<$ TSeq $>$@{epiworld::Agent$<$ TSeq $>$}|hyperpage}{38}
+\indexentry{AgentsSample$<$ TSeq $>$@{AgentsSample$<$ TSeq $>$}|hyperpage}{39}
+\indexentry{epiworld::AgentsSample$<$ TSeq $>$@{epiworld::AgentsSample$<$ TSeq $>$}|hyperpage}{40}
+\indexentry{DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}|hyperpage}{41}
+\indexentry{DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}!record\_variant@{record\_variant}|hyperpage}{42}
+\indexentry{record\_variant@{record\_variant}!DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}|hyperpage}{42}
+\indexentry{DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}!reproductive\_number@{reproductive\_number}|hyperpage}{43}
+\indexentry{reproductive\_number@{reproductive\_number}!DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}|hyperpage}{43}
+\indexentry{DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}!transition\_probability@{transition\_probability}|hyperpage}{43}
+\indexentry{transition\_probability@{transition\_probability}!DataBase$<$ TSeq $>$@{DataBase$<$ TSeq $>$}|hyperpage}{43}
+\indexentry{epiworld::DataBase$<$ TSeq $>$@{epiworld::DataBase$<$ TSeq $>$}|hyperpage}{43}
+\indexentry{epiworld::DataBase$<$ TSeq $>$@{epiworld::DataBase$<$ TSeq $>$}!get\_today\_total@{get\_today\_total}|hyperpage}{46}
+\indexentry{get\_today\_total@{get\_today\_total}!epiworld::DataBase$<$ TSeq $>$@{epiworld::DataBase$<$ TSeq $>$}|hyperpage}{46}
+\indexentry{epiworld::DataBase$<$ TSeq $>$@{epiworld::DataBase$<$ TSeq $>$}!record\_variant@{record\_variant}|hyperpage}{46}
+\indexentry{record\_variant@{record\_variant}!epiworld::DataBase$<$ TSeq $>$@{epiworld::DataBase$<$ TSeq $>$}|hyperpage}{46}
+\indexentry{epiworld::DataBase$<$ TSeq $>$@{epiworld::DataBase$<$ TSeq $>$}!record\_variant@{record\_variant}|hyperpage}{46}
+\indexentry{record\_variant@{record\_variant}!epiworld::DataBase$<$ TSeq $>$@{epiworld::DataBase$<$ TSeq $>$}|hyperpage}{46}
+\indexentry{epiworld::DataBase$<$ TSeq $>$@{epiworld::DataBase$<$ TSeq $>$}!reproductive\_number@{reproductive\_number}|hyperpage}{47}
+\indexentry{reproductive\_number@{reproductive\_number}!epiworld::DataBase$<$ TSeq $>$@{epiworld::DataBase$<$ TSeq $>$}|hyperpage}{47}
+\indexentry{epiworld::DataBase$<$ TSeq $>$@{epiworld::DataBase$<$ TSeq $>$}!transition\_probability@{transition\_probability}|hyperpage}{47}
+\indexentry{transition\_probability@{transition\_probability}!epiworld::DataBase$<$ TSeq $>$@{epiworld::DataBase$<$ TSeq $>$}|hyperpage}{47}
+\indexentry{Entity$<$ TSeq $>$@{Entity$<$ TSeq $>$}|hyperpage}{48}
+\indexentry{epiworld::Entity$<$ TSeq $>$@{epiworld::Entity$<$ TSeq $>$}|hyperpage}{48}
+\indexentry{epiworld::LFMCMC$<$ TData $>$@{epiworld::LFMCMC$<$ TData $>$}|hyperpage}{49}
+\indexentry{LFMCMC$<$ TData $>$@{LFMCMC$<$ TData $>$}|hyperpage}{50}
+\indexentry{epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}|hyperpage}{51}
+\indexentry{epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}!add\_global\_action@{add\_global\_action}|hyperpage}{59}
+\indexentry{add\_global\_action@{add\_global\_action}!epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}|hyperpage}{59}
+\indexentry{epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}!add\_param@{add\_param}|hyperpage}{60}
+\indexentry{add\_param@{add\_param}!epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}|hyperpage}{60}
+\indexentry{epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}!add\_status\_susceptible@{add\_status\_susceptible}|hyperpage}{60}
+\indexentry{add\_status\_susceptible@{add\_status\_susceptible}!epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}|hyperpage}{60}
+\indexentry{epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}!init@{init}|hyperpage}{61}
+\indexentry{init@{init}!epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}|hyperpage}{61}
+\indexentry{epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}!pop\_from\_adjlist@{pop\_from\_adjlist}|hyperpage}{61}
+\indexentry{pop\_from\_adjlist@{pop\_from\_adjlist}!epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}|hyperpage}{61}
+\indexentry{epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}!reset@{reset}|hyperpage}{62}
+\indexentry{reset@{reset}!epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}|hyperpage}{62}
+\indexentry{epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}!reset@{reset}|hyperpage}{62}
+\indexentry{reset@{reset}!epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}|hyperpage}{62}
+\indexentry{epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}!reset\_status\_codes@{reset\_status\_codes}|hyperpage}{62}
+\indexentry{reset\_status\_codes@{reset\_status\_codes}!epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}|hyperpage}{62}
+\indexentry{epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}!run\_multiple@{run\_multiple}|hyperpage}{63}
+\indexentry{run\_multiple@{run\_multiple}!epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}|hyperpage}{63}
+\indexentry{epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}!set\_agents\_data@{set\_agents\_data}|hyperpage}{63}
+\indexentry{set\_agents\_data@{set\_agents\_data}!epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}|hyperpage}{63}
+\indexentry{epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}!set\_backup@{set\_backup}|hyperpage}{63}
+\indexentry{set\_backup@{set\_backup}!epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}|hyperpage}{63}
+\indexentry{epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}!set\_rand\_engine@{set\_rand\_engine}|hyperpage}{64}
+\indexentry{set\_rand\_engine@{set\_rand\_engine}!epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}|hyperpage}{64}
+\indexentry{epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}!set\_rewire\_fun@{set\_rewire\_fun}|hyperpage}{64}
+\indexentry{set\_rewire\_fun@{set\_rewire\_fun}!epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}|hyperpage}{64}
+\indexentry{epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}!set\_user\_data@{set\_user\_data}|hyperpage}{64}
+\indexentry{set\_user\_data@{set\_user\_data}!epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}|hyperpage}{64}
+\indexentry{epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}!write\_data@{write\_data}|hyperpage}{65}
+\indexentry{write\_data@{write\_data}!epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}|hyperpage}{65}
+\indexentry{epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}!write\_data@{write\_data}|hyperpage}{65}
+\indexentry{write\_data@{write\_data}!epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}|hyperpage}{65}
+\indexentry{epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}!write\_edgelist@{write\_edgelist}|hyperpage}{66}
+\indexentry{write\_edgelist@{write\_edgelist}!epiworld::Model$<$ TSeq $>$@{epiworld::Model$<$ TSeq $>$}|hyperpage}{66}
+\indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{66}
+\indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!add\_global\_action@{add\_global\_action}|hyperpage}{73}
+\indexentry{add\_global\_action@{add\_global\_action}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{73}
+\indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!reset@{reset}|hyperpage}{73}
+\indexentry{reset@{reset}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{73}
+\indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!run\_multiple@{run\_multiple}|hyperpage}{73}
+\indexentry{run\_multiple@{run\_multiple}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{73}
+\indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!set\_agents\_data@{set\_agents\_data}|hyperpage}{75}
+\indexentry{set\_agents\_data@{set\_agents\_data}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{75}
+\indexentry{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!write\_data@{write\_data}|hyperpage}{75}
+\indexentry{write\_data@{write\_data}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}|hyperpage}{75}
+\indexentry{epiworld::Person$<$ TSeq $>$@{epiworld::Person$<$ TSeq $>$}|hyperpage}{76}
+\indexentry{epiworld::PersonTools$<$ TSeq $>$@{epiworld::PersonTools$<$ TSeq $>$}|hyperpage}{77}
+\indexentry{PersonTools$<$ TSeq $>$@{PersonTools$<$ TSeq $>$}|hyperpage}{78}
+\indexentry{epiworld::PersonViruses$<$ TSeq $>$@{epiworld::PersonViruses$<$ TSeq $>$}|hyperpage}{78}
+\indexentry{epiworld::Progress@{epiworld::Progress}|hyperpage}{79}
+\indexentry{Progress@{Progress}|hyperpage}{79}
+\indexentry{epiworld::Queue$<$ TSeq $>$@{epiworld::Queue$<$ TSeq $>$}|hyperpage}{80}
+\indexentry{Queue$<$ TSeq $>$@{Queue$<$ TSeq $>$}|hyperpage}{80}
+\indexentry{RandGraph@{RandGraph}|hyperpage}{81}
+\indexentry{epiworld::Tool$<$ TSeq $>$@{epiworld::Tool$<$ TSeq $>$}|hyperpage}{81}
+\indexentry{epiworld::Tool$<$ TSeq $>$@{epiworld::Tool$<$ TSeq $>$}!get\_susceptibility\_reduction@{get\_susceptibility\_reduction}|hyperpage}{83}
+\indexentry{get\_susceptibility\_reduction@{get\_susceptibility\_reduction}!epiworld::Tool$<$ TSeq $>$@{epiworld::Tool$<$ TSeq $>$}|hyperpage}{83}
+\indexentry{Tool$<$ TSeq $>$@{Tool$<$ TSeq $>$}|hyperpage}{84}
+\indexentry{epiworld::Tools$<$ TSeq $>$@{epiworld::Tools$<$ TSeq $>$}|hyperpage}{85}
+\indexentry{Tools$<$ TSeq $>$@{Tools$<$ TSeq $>$}|hyperpage}{86}
+\indexentry{epiworld::Tools\_const$<$ TSeq $>$@{epiworld::Tools\_const$<$ TSeq $>$}|hyperpage}{87}
+\indexentry{Tools\_const$<$ TSeq $>$@{Tools\_const$<$ TSeq $>$}|hyperpage}{88}
+\indexentry{epiworld::UserData$<$ TSeq $>$@{epiworld::UserData$<$ TSeq $>$}|hyperpage}{88}
+\indexentry{epiworld::UserData$<$ TSeq $>$@{epiworld::UserData$<$ TSeq $>$}!UserData@{UserData}|hyperpage}{90}
+\indexentry{UserData@{UserData}!epiworld::UserData$<$ TSeq $>$@{epiworld::UserData$<$ TSeq $>$}|hyperpage}{90}
+\indexentry{UserData$<$ TSeq $>$@{UserData$<$ TSeq $>$}|hyperpage}{90}
+\indexentry{UserData$<$ TSeq $>$@{UserData$<$ TSeq $>$}!UserData@{UserData}|hyperpage}{92}
+\indexentry{UserData@{UserData}!UserData$<$ TSeq $>$@{UserData$<$ TSeq $>$}|hyperpage}{92}
+\indexentry{epiworld::vecHasher$<$ T $>$@{epiworld::vecHasher$<$ T $>$}|hyperpage}{92}
+\indexentry{vecHasher$<$ T $>$@{vecHasher$<$ T $>$}|hyperpage}{93}
+\indexentry{epiworld::Virus$<$ TSeq $>$@{epiworld::Virus$<$ TSeq $>$}|hyperpage}{93}
+\indexentry{epiworld::Virus$<$ TSeq $>$@{epiworld::Virus$<$ TSeq $>$}!get\_prob\_infecting@{get\_prob\_infecting}|hyperpage}{96}
+\indexentry{get\_prob\_infecting@{get\_prob\_infecting}!epiworld::Virus$<$ TSeq $>$@{epiworld::Virus$<$ TSeq $>$}|hyperpage}{96}
+\indexentry{Virus$<$ TSeq $>$@{Virus$<$ TSeq $>$}|hyperpage}{97}
+\indexentry{epiworld::Viruses$<$ TSeq $>$@{epiworld::Viruses$<$ TSeq $>$}|hyperpage}{98}
+\indexentry{Viruses$<$ TSeq $>$@{Viruses$<$ TSeq $>$}|hyperpage}{99}
+\indexentry{epiworld::Viruses\_const$<$ TSeq $>$@{epiworld::Viruses\_const$<$ TSeq $>$}|hyperpage}{100}
+\indexentry{Viruses\_const$<$ TSeq $>$@{Viruses\_const$<$ TSeq $>$}|hyperpage}{101}

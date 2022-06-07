@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['colourguard_876',['ColourGuard',['../class_catch_1_1_colour_impl_1_1_colour_guard.html#a98caafd603a40b0cf4680725e8a7c782',1,'Catch::ColourImpl::ColourGuard']]],
-  ['compare_877',['compare',['../class_catch_1_1_string_ref.html#a4634fb03222f376c5d76e8c16f1743d1',1,'Catch::StringRef']]],
-  ['contains_878',['Contains',['../catch__amalgamated_8hpp.html#a3daedac3f40eac073e62c4accc4324b7',1,'Catch::Matchers::Contains(T &amp;&amp;elem)'],['../catch__amalgamated_8hpp.html#a144f02bf6cb7a82a3cc7d0264b28e60d',1,'Catch::Matchers::Contains(Matcher &amp;&amp;matcher)'],['../catch__amalgamated_8hpp.html#a9e2bae0f0102b4c2b3f0922848e4df43',1,'Catch::Matchers::Contains(T &amp;&amp;elem, Equality &amp;&amp;eq)'],['../catch__amalgamated_8hpp.html#a2f349450aae98f4504985e28039c3eaf',1,'Catch::Matchers::Contains(std::vector&lt; T, AllocComp &gt; const &amp;comparator)']]],
-  ['containssubstring_879',['ContainsSubstring',['../catch__amalgamated_8hpp.html#a9aba71937cefd730def71d573ef96edb',1,'Catch::Matchers']]],
-  ['convertintostring_880',['convertIntoString',['../catch__amalgamated_8hpp.html#a23bdcac0ef138b222c3747e2af979e9a',1,'Catch::Detail::convertIntoString(StringRef string, bool escapeInvisibles)'],['../catch__amalgamated_8hpp.html#a0dc4241ab150d3d8e1d0a3d30c781c39',1,'Catch::Detail::convertIntoString(StringRef string)']]],
-  ['countednext_881',['countedNext',['../class_catch_1_1_generators_1_1_generator_untyped_base.html#a1ea657675ef9274645608f521238ff54',1,'Catch::Generators::GeneratorUntypedBase']]],
-  ['currentelementasstring_882',['currentElementAsString',['../class_catch_1_1_generators_1_1_generator_untyped_base.html#a9c9f450ab1a1aa6ed6ae9e1bfed2e5c1',1,'Catch::Generators::GeneratorUntypedBase']]]
+  ['get_5fdb_129',['get_db',['../classepiworld_1_1_model.html#a9b1ca7337427a404cf44ad3fbb6e9c3b',1,'epiworld::Model']]],
+  ['get_5felapsed_130',['get_elapsed',['../classepiworld_1_1_model.html#a6d3c8549e9666ab93664995e79a3cab7',1,'epiworld::Model']]],
+  ['get_5fid_131',['get_id',['../classepiworld_1_1_agent.html#a3763f12b56e8dd7f0e23bbca4f183c8a',1,'epiworld::Agent::get_id()'],['../class_agent.html#a3763f12b56e8dd7f0e23bbca4f183c8a',1,'Agent::get_id()']]],
+  ['get_5fprob_5finfecting_132',['get_prob_infecting',['../classepiworld_1_1_virus.html#ab4cfb589ad71d273636be3d9c3f50d45',1,'epiworld::Virus']]],
+  ['get_5fqueue_133',['get_queue',['../classepiworld_1_1_model.html#a3cf5b4f14dcd54816785b38894c8088f',1,'epiworld::Model::get_queue()'],['../class_model.html#aaf33c877732b9bdc7cb77e063ad0c1a6',1,'Model::get_queue()']]],
+  ['get_5fsusceptibility_5freduction_134',['get_susceptibility_reduction',['../classepiworld_1_1_tool.html#adbc3bec3b25a2768fb51275c680be2d9',1,'epiworld::Tool']]],
+  ['get_5ftoday_5ftotal_135',['get_today_total',['../classepiworld_1_1_data_base.html#a048cc81c3c16ed7d3cdbd65e84d24b11',1,'epiworld::DataBase']]]
 ];

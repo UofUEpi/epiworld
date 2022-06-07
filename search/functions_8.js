@@ -1,13 +1,10 @@
 var searchData=
 [
-  ['is_5fdirected_902',['is_directed',['../class_adj_list.html#a70e14a9f262278d028cecae547382049',1,'AdjList']]],
-  ['is_5fqueuing_5fon_903',['is_queuing_on',['../class_model.html#a2c4ac58e918e9e8dc2e58be6521d8827',1,'Model']]],
-  ['iscolourimplavailable_904',['isColourImplAvailable',['../catch__amalgamated_8hpp.html#a76a7aa70b229be45ef1eec1d5ca8d87c',1,'Catch']]],
-  ['iscomplete_905',['isComplete',['../class_catch_1_1_test_case_tracking_1_1_i_tracker.html#abe7e5f4437ce1fece2a6e665942f85d3',1,'Catch::TestCaseTracking::ITracker::isComplete()'],['../class_catch_1_1_test_case_tracking_1_1_tracker_base.html#a1e624d09e19b813365d2be9adcf4d375',1,'Catch::TestCaseTracking::TrackerBase::isComplete()'],['../class_catch_1_1_test_case_tracking_1_1_section_tracker.html#a5e295d30f100c7c07343cebc65b9c595',1,'Catch::TestCaseTracking::SectionTracker::isComplete()']]],
-  ['isconsole_906',['isConsole',['../class_catch_1_1_i_stream.html#a60a6fae56c60dab1d00073ef686a0d65',1,'Catch::IStream']]],
-  ['isempty_907',['IsEmpty',['../catch__amalgamated_8hpp.html#ae345560f84f68d52fc5df4ac77eb4b92',1,'Catch::Matchers']]],
-  ['isgeneratortracker_908',['isGeneratorTracker',['../class_catch_1_1_test_case_tracking_1_1_i_tracker.html#ae6a7a2894100de765bc442a5c6f51476',1,'Catch::TestCaseTracking::ITracker']]],
-  ['isopen_909',['isOpen',['../class_catch_1_1_test_case_tracking_1_1_i_tracker.html#a604d759accff73c232a6a479cf852351',1,'Catch::TestCaseTracking::ITracker']]],
-  ['issectiontracker_910',['isSectionTracker',['../class_catch_1_1_test_case_tracking_1_1_i_tracker.html#aae61603316e5bc2e88c41ebe99686bc0',1,'Catch::TestCaseTracking::ITracker::isSectionTracker()'],['../class_catch_1_1_test_case_tracking_1_1_section_tracker.html#a4996613c5766729872f1bf6b96613909',1,'Catch::TestCaseTracking::SectionTracker::isSectionTracker()']]],
-  ['issuccessfullycompleted_911',['isSuccessfullyCompleted',['../class_catch_1_1_test_case_tracking_1_1_i_tracker.html#a62fdfbdd6c844b32650f6b1cffe6357b',1,'Catch::TestCaseTracking::ITracker']]]
+  ['set_5fagents_5fdata_152',['set_agents_data',['../classepiworld_1_1_model.html#a14758e0476fd4a05643ab41190530513',1,'epiworld::Model::set_agents_data()'],['../class_model.html#a14758e0476fd4a05643ab41190530513',1,'Model::set_agents_data()']]],
+  ['set_5fbackup_153',['set_backup',['../classepiworld_1_1_model.html#a8dac7be907b0ddeb4109562e8d16a4d1',1,'epiworld::Model']]],
+  ['set_5fname_154',['set_name',['../classepiworld_1_1_virus.html#aafcddea084bce283c6e881a5d5f81459',1,'epiworld::Virus::set_name()'],['../classepiworld_1_1_tool.html#a31c515c9aac7551af30719cc6d6ed3c9',1,'epiworld::Tool::set_name()']]],
+  ['set_5frand_5fengine_155',['set_rand_engine',['../classepiworld_1_1_model.html#a8d87fcc71abe84e341ea56a4e251cb08',1,'epiworld::Model']]],
+  ['set_5frewire_5ffun_156',['set_rewire_fun',['../classepiworld_1_1_model.html#ae3c3f9d908aebef89e5ce98823af8cb1',1,'epiworld::Model']]],
+  ['set_5fupdate_5fsusceptible_157',['set_update_susceptible',['../classepiworld_1_1_model.html#acd773e1a9dd762b8735886e6f27598bd',1,'epiworld::Model']]],
+  ['set_5fuser_5fdata_158',['set_user_data',['../classepiworld_1_1_model.html#adc8d49825ecf57ac045a4c93e4d63924',1,'epiworld::Model::set_user_data()'],['../class_model.html#adc8d49825ecf57ac045a4c93e4d63924',1,'Model::set_user_data()'],['../classepiworld_1_1_model.html#a61893953dc4fa046b84a77c89a5bc458',1,'epiworld::Model::set_user_data()']]]
 ];

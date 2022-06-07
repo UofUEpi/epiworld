@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['database_572',['DataBase',['../class_data_base.html',1,'']]],
-  ['database_3c_20int_20_3e_573',['DataBase&lt; int &gt;',['../class_data_base.html',1,'']]],
-  ['decomposer_574',['Decomposer',['../struct_catch_1_1_decomposer.html',1,'Catch']]]
+  ['lfmcmc_96',['LFMCMC',['../classepiworld_1_1_l_f_m_c_m_c.html',1,'epiworld::LFMCMC&lt; TData &gt;'],['../class_l_f_m_c_m_c.html',1,'LFMCMC&lt; TData &gt;']]]
 ];

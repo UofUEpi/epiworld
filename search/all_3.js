@@ -1,11 +1,9 @@
 var searchData=
 [
-  ['database_91',['DataBase',['../class_data_base.html',1,'']]],
-  ['database_3c_20int_20_3e_92',['DataBase&lt; int &gt;',['../class_data_base.html',1,'']]],
-  ['decomposer_93',['Decomposer',['../struct_catch_1_1_decomposer.html',1,'Catch']]],
-  ['default_94',['Default',['../catch__amalgamated_8hpp.html#a0e8d3a1107ecbaa1943e0a462db99a3da7a1920d61156abc05a60135aefe8bc67',1,'Catch']]],
-  ['defaultlistlisteners_95',['defaultListListeners',['../catch__amalgamated_8hpp.html#a906d1c90c5a8118e737bd14bef2885ea',1,'Catch']]],
-  ['defaultlistreporters_96',['defaultListReporters',['../catch__amalgamated_8hpp.html#a7fc9276bf852d1625d986c0cbc3eabce',1,'Catch']]],
-  ['defaultlisttags_97',['defaultListTags',['../catch__amalgamated_8hpp.html#a29d53521f0da176f732c3a022dbb04df',1,'Catch']]],
-  ['defaultlisttests_98',['defaultListTests',['../catch__amalgamated_8hpp.html#a6dce9f6d9a416fe7a06e6394d557606a',1,'Catch']]]
+  ['ecount_17',['ecount',['../classepiworld_1_1_adj_list.html#a776cefb7cc85d544e4eb9e61aaa46f83',1,'epiworld::AdjList::ecount()'],['../class_adj_list.html#a776cefb7cc85d544e4eb9e61aaa46f83',1,'AdjList::ecount()']]],
+  ['entity_18',['Entity',['../class_entity.html',1,'Entity&lt; TSeq &gt;'],['../classepiworld_1_1_entity.html',1,'epiworld::Entity&lt; TSeq &gt;']]],
+  ['epi_20simulator_19',['EPI Simulator',['../md__r_e_a_d_m_e_old.html',1,'']]],
+  ['epiworld_201_2e0_20',['epiworld 1.0',['../md_rpackage__n_e_w_s.html',1,'']]],
+  ['epiworld_20c_2b_2b_20template_20library_21',['epiworld c++ template library',['../md_examples_07_surveillance_07_surveillance.html',1,'']]],
+  ['example_3a_2000_2dhello_2dworld_22',['Example: 00-hello-world',['../index.html',1,'']]]
 ];

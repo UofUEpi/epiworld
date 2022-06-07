@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['junitreporter_647',['JunitReporter',['../class_catch_1_1_junit_reporter.html',1,'Catch']]]
+  ['userdata_115',['UserData',['../classepiworld_1_1_user_data.html',1,'epiworld::UserData&lt; TSeq &gt;'],['../class_user_data.html',1,'UserData&lt; TSeq &gt;']]]
 ];

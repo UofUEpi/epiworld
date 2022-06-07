@@ -1,566 +1,172 @@
 \@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
-\contentsline {chapter}{\numberline {1}Source code}{1}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Hierarchical Index}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Class Hierarchy}{3}{section.2.1}%
-\contentsline {chapter}{\numberline {3}Class Index}{11}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Class List}{11}{section.3.1}%
-\contentsline {chapter}{\numberline {4}File Index}{19}{chapter.4}%
-\contentsline {section}{\numberline {4.1}File List}{19}{section.4.1}%
-\contentsline {chapter}{\numberline {5}Class Documentation}{21}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::accept\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}many\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t Struct Reference}{21}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Action$<$ TSeq $>$ Struct Template Reference}{21}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Detailed Description}{22}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Constructor \& Destructor Documentation}{22}{subsection.5.2.2}%
-\contentsline {subsubsection}{\numberline {5.2.2.1}Action()}{22}{subsubsection.5.2.2.1}%
-\contentsline {section}{\numberline {5.3}Adj\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}List Class Reference}{23}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Constructor \& Destructor Documentation}{23}{subsection.5.3.1}%
-\contentsline {subsubsection}{\numberline {5.3.1.1}AdjList()}{23}{subsubsection.5.3.1.1}%
-\contentsline {subsection}{\numberline {5.3.2}Member Function Documentation}{24}{subsection.5.3.2}%
-\contentsline {subsubsection}{\numberline {5.3.2.1}read\_edgelist()}{24}{subsubsection.5.3.2.1}%
-\contentsline {section}{\numberline {5.4}Agent$<$ TSeq $>$ Class Template Reference}{24}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Detailed Description}{26}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Member Function Documentation}{26}{subsection.5.4.2}%
-\contentsline {subsubsection}{\numberline {5.4.2.1}operator()()}{26}{subsubsection.5.4.2.1}%
-\contentsline {section}{\numberline {5.5}Agents\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sample$<$ TSeq $>$ Class Template Reference}{27}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}Detailed Description}{27}{subsection.5.5.1}%
-\contentsline {section}{\numberline {5.6}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::All\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Match\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matcher$<$ Matcher $>$ Class Template Reference}{28}{section.5.6}%
-\contentsline {section}{\numberline {5.7}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::always\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}false$<$ T $>$ Struct Template Reference}{29}{section.5.7}%
-\contentsline {section}{\numberline {5.8}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Any\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Match\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matcher$<$ Matcher $>$ Class Template Reference}{30}{section.5.8}%
-\contentsline {section}{\numberline {5.9}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Approx Class Reference}{31}{section.5.9}%
-\contentsline {section}{\numberline {5.10}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Approx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matcher$<$ T, Alloc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Comp, Alloc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Match $>$ Class Template Reference}{32}{section.5.10}%
-\contentsline {section}{\numberline {5.11}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Arg Class Reference}{33}{section.5.11}%
-\contentsline {section}{\numberline {5.12}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Args Class Reference}{34}{section.5.12}%
-\contentsline {section}{\numberline {5.13}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Generators\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::as$<$ T $>$ Struct Template Reference}{35}{section.5.13}%
-\contentsline {section}{\numberline {5.14}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Assertion\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handler Class Reference}{35}{section.5.14}%
-\contentsline {section}{\numberline {5.15}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Assertion\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info Struct Reference}{35}{section.5.15}%
-\contentsline {section}{\numberline {5.16}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Assertion\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Or\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Benchmark\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Result Class Reference}{36}{section.5.16}%
-\contentsline {subsection}{\numberline {5.16.1}Detailed Description}{36}{subsection.5.16.1}%
-\contentsline {section}{\numberline {5.17}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Assertion\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Reaction Struct Reference}{36}{section.5.17}%
-\contentsline {section}{\numberline {5.18}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Assertion\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Result Class Reference}{37}{section.5.18}%
-\contentsline {section}{\numberline {5.19}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Assertion\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Result\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data Struct Reference}{38}{section.5.19}%
-\contentsline {section}{\numberline {5.20}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Assertion\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stats Struct Reference}{39}{section.5.20}%
-\contentsline {section}{\numberline {5.21}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Automake\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Reporter Class Reference}{40}{section.5.21}%
-\contentsline {section}{\numberline {5.22}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Auto\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Reg Struct Reference}{41}{section.5.22}%
-\contentsline {section}{\numberline {5.23}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Basic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Result$<$ T $>$ Class Template Reference}{42}{section.5.23}%
-\contentsline {section}{\numberline {5.24}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Benchmark\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Benchmark Struct Reference}{43}{section.5.24}%
-\contentsline {section}{\numberline {5.25}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Benchmark\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Benchmark\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Function Struct Reference}{43}{section.5.25}%
-\contentsline {subsection}{\numberline {5.25.1}Detailed Description}{44}{subsection.5.25.1}%
-\contentsline {section}{\numberline {5.26}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Benchmark\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info Struct Reference}{44}{section.5.26}%
-\contentsline {section}{\numberline {5.27}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Benchmark\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stats$<$ Duration $>$ Struct Template Reference}{45}{section.5.27}%
-\contentsline {section}{\numberline {5.28}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Binary\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Expr$<$ LhsT, RhsT $>$ Class Template Reference}{46}{section.5.28}%
-\contentsline {section}{\numberline {5.29}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Benchmark\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::bootstrap\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}analysis Struct Reference}{47}{section.5.29}%
-\contentsline {section}{\numberline {5.30}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Bound\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Flag\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lambda$<$ L $>$ Struct Template Reference}{48}{section.5.30}%
-\contentsline {section}{\numberline {5.31}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Bound\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Flag\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ref Struct Reference}{50}{section.5.31}%
-\contentsline {section}{\numberline {5.32}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Bound\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Flag\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ref\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base Struct Reference}{52}{section.5.32}%
-\contentsline {section}{\numberline {5.33}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Bound\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lambda$<$ L $>$ Struct Template Reference}{53}{section.5.33}%
-\contentsline {section}{\numberline {5.34}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Bound\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Many\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lambda$<$ L $>$ Struct Template Reference}{55}{section.5.34}%
-\contentsline {section}{\numberline {5.35}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Bound\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ref Struct Reference}{57}{section.5.35}%
-\contentsline {section}{\numberline {5.36}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Bound\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Value\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ref$<$ T $>$ Struct Template Reference}{58}{section.5.36}%
-\contentsline {section}{\numberline {5.37}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Bound\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Value\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ref$<$ std\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::vector$<$ T $>$ $>$ Struct Template Reference}{60}{section.5.37}%
-\contentsline {section}{\numberline {5.38}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Bound\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Value\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ref\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base Struct Reference}{61}{section.5.38}%
-\contentsline {section}{\numberline {5.39}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Capturer Class Reference}{62}{section.5.39}%
-\contentsline {section}{\numberline {5.40}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Cased\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}String Struct Reference}{63}{section.5.40}%
-\contentsline {section}{\numberline {5.41}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Case\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Insensitive\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Equal\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}To Struct Reference}{63}{section.5.41}%
-\contentsline {subsection}{\numberline {5.41.1}Detailed Description}{63}{subsection.5.41.1}%
-\contentsline {section}{\numberline {5.42}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Case\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Insensitive\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Less Struct Reference}{63}{section.5.42}%
-\contentsline {subsection}{\numberline {5.42.1}Detailed Description}{64}{subsection.5.42.1}%
-\contentsline {section}{\numberline {5.43}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}global\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}namespace\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}dummy Struct Reference}{64}{section.5.43}%
-\contentsline {section}{\numberline {5.44}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Benchmark\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Chronometer Struct Reference}{64}{section.5.44}%
-\contentsline {section}{\numberline {5.45}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Benchmark\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Chronometer\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Concept Struct Reference}{64}{section.5.45}%
-\contentsline {section}{\numberline {5.46}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Benchmark\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Chronometer\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Model$<$ Clock $>$ Struct Template Reference}{65}{section.5.46}%
-\contentsline {section}{\numberline {5.47}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Generators\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Chunk\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Generator$<$ T $>$ Class Template Reference}{66}{section.5.47}%
-\contentsline {subsection}{\numberline {5.47.1}Member Function Documentation}{67}{subsection.5.47.1}%
-\contentsline {subsubsection}{\numberline {5.47.1.1}next()}{67}{subsubsection.5.47.1.1}%
-\contentsline {section}{\numberline {5.48}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Colour Struct Reference}{68}{section.5.48}%
-\contentsline {section}{\numberline {5.49}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Colour\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Impl\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Colour\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Guard Class Reference}{68}{section.5.49}%
-\contentsline {subsection}{\numberline {5.49.1}Detailed Description}{68}{subsection.5.49.1}%
-\contentsline {subsection}{\numberline {5.49.2}Member Function Documentation}{69}{subsection.5.49.2}%
-\contentsline {subsubsection}{\numberline {5.49.2.1}engage()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{69}{subsubsection.5.49.2.1}%
-\contentsline {subsubsection}{\numberline {5.49.2.2}engage()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{69}{subsubsection.5.49.2.2}%
-\contentsline {section}{\numberline {5.50}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Colour\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Impl Class Reference}{69}{section.5.50}%
-\contentsline {subsection}{\numberline {5.50.1}Member Function Documentation}{70}{subsection.5.50.1}%
-\contentsline {subsubsection}{\numberline {5.50.1.1}guardColour()}{70}{subsubsection.5.50.1.1}%
-\contentsline {section}{\numberline {5.51}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Text\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Flow\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Column Class Reference}{70}{section.5.51}%
-\contentsline {subsection}{\numberline {5.51.1}Detailed Description}{71}{subsection.5.51.1}%
-\contentsline {section}{\numberline {5.52}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Text\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Flow\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Columns Class Reference}{71}{section.5.52}%
-\contentsline {section}{\numberline {5.53}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Compact\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Reporter Class Reference}{72}{section.5.53}%
-\contentsline {subsection}{\numberline {5.53.1}Member Function Documentation}{73}{subsection.5.53.1}%
-\contentsline {subsubsection}{\numberline {5.53.1.1}testRunEnded()}{73}{subsubsection.5.53.1.1}%
-\contentsline {subsubsection}{\numberline {5.53.1.2}testRunStarting()}{73}{subsubsection.5.53.1.2}%
-\contentsline {section}{\numberline {5.54}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Benchmark\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Complete\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Invoker$<$ Result $>$ Struct Template Reference}{73}{section.5.54}%
-\contentsline {section}{\numberline {5.55}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Benchmark\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Complete\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Invoker$<$ void $>$ Struct Reference}{74}{section.5.55}%
-\contentsline {section}{\numberline {5.56}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Benchmark\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Complete\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Type$<$ T $>$ Struct Template Reference}{74}{section.5.56}%
-\contentsline {section}{\numberline {5.57}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Benchmark\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Complete\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Type$<$ void $>$ Struct Reference}{74}{section.5.57}%
-\contentsline {section}{\numberline {5.58}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Composable\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Parser\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Impl$<$ DerivedT $>$ Class Template Reference}{75}{section.5.58}%
-\contentsline {section}{\numberline {5.59}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Config Class Reference}{76}{section.5.59}%
-\contentsline {section}{\numberline {5.60}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Config\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data Struct Reference}{77}{section.5.60}%
-\contentsline {section}{\numberline {5.61}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::conjunction$<$ Cond $>$ Struct Template Reference}{78}{section.5.61}%
-\contentsline {section}{\numberline {5.62}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::conjunction$<$ Cond, Rest... $>$ Struct Template Reference}{79}{section.5.62}%
-\contentsline {section}{\numberline {5.63}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Console\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Reporter Class Reference}{80}{section.5.63}%
-\contentsline {subsection}{\numberline {5.63.1}Member Function Documentation}{81}{subsection.5.63.1}%
-\contentsline {subsubsection}{\numberline {5.63.1.1}testRunEnded()}{82}{subsubsection.5.63.1.1}%
-\contentsline {subsubsection}{\numberline {5.63.1.2}testRunStarting()}{82}{subsubsection.5.63.1.2}%
-\contentsline {section}{\numberline {5.64}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Text\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Flow\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Column\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::const\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}iterator Class Reference}{82}{section.5.64}%
-\contentsline {subsection}{\numberline {5.64.1}Detailed Description}{83}{subsection.5.64.1}%
-\contentsline {section}{\numberline {5.65}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Contains\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Element\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matcher$<$ T, Equality $>$ Class Template Reference}{83}{section.5.65}%
-\contentsline {subsection}{\numberline {5.65.1}Detailed Description}{84}{subsection.5.65.1}%
-\contentsline {section}{\numberline {5.66}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Contains\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matcher$<$ T, Alloc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Comp, Alloc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Match $>$ Class Template Reference}{85}{section.5.66}%
-\contentsline {section}{\numberline {5.67}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Contains\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matcher\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matcher$<$ Matcher $>$ Class Template Reference}{86}{section.5.67}%
-\contentsline {subsection}{\numberline {5.67.1}Detailed Description}{87}{subsection.5.67.1}%
-\contentsline {section}{\numberline {5.68}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Counts Struct Reference}{87}{section.5.68}%
-\contentsline {section}{\numberline {5.69}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Cumulative\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Reporter\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base Class Reference}{88}{section.5.69}%
-\contentsline {subsection}{\numberline {5.69.1}Detailed Description}{90}{subsection.5.69.1}%
-\contentsline {subsection}{\numberline {5.69.2}Member Function Documentation}{90}{subsection.5.69.2}%
-\contentsline {subsubsection}{\numberline {5.69.2.1}testRunEnded()}{90}{subsubsection.5.69.2.1}%
-\contentsline {subsubsection}{\numberline {5.69.2.2}testRunStarting()}{90}{subsubsection.5.69.2.2}%
-\contentsline {section}{\numberline {5.70}Data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base$<$ TSeq $>$ Class Template Reference}{91}{section.5.70}%
-\contentsline {subsection}{\numberline {5.70.1}Detailed Description}{92}{subsection.5.70.1}%
-\contentsline {subsection}{\numberline {5.70.2}Member Function Documentation}{92}{subsection.5.70.2}%
-\contentsline {subsubsection}{\numberline {5.70.2.1}record\_variant()}{92}{subsubsection.5.70.2.1}%
-\contentsline {subsubsection}{\numberline {5.70.2.2}reproductive\_number()}{93}{subsubsection.5.70.2.2}%
-\contentsline {subsubsection}{\numberline {5.70.2.3}transition\_probability()}{93}{subsubsection.5.70.2.3}%
-\contentsline {section}{\numberline {5.71}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Decomposer Struct Reference}{93}{section.5.71}%
-\contentsline {section}{\numberline {5.72}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Ends\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}With\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matcher Class Reference}{94}{section.5.72}%
-\contentsline {section}{\numberline {5.73}Entity$<$ TSeq $>$ Class Template Reference}{95}{section.5.73}%
-\contentsline {section}{\numberline {5.74}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Enum\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info Struct Reference}{95}{section.5.74}%
-\contentsline {section}{\numberline {5.75}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Enum\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Values\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Registry Class Reference}{96}{section.5.75}%
-\contentsline {section}{\numberline {5.76}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Benchmark\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Environment$<$ Clock $>$ Struct Template Reference}{97}{section.5.76}%
-\contentsline {section}{\numberline {5.77}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Benchmark\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Environment\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Estimate$<$ Duration $>$ Struct Template Reference}{98}{section.5.77}%
-\contentsline {section}{\numberline {5.78}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Equals\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matcher$<$ T, Alloc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Comp, Alloc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Match $>$ Class Template Reference}{99}{section.5.78}%
-\contentsline {section}{\numberline {5.79}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Errno\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Guard Class Reference}{100}{section.5.79}%
-\contentsline {subsection}{\numberline {5.79.1}Detailed Description}{100}{subsection.5.79.1}%
-\contentsline {section}{\numberline {5.80}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Benchmark\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Estimate$<$ Duration $>$ Struct Template Reference}{100}{section.5.80}%
-\contentsline {section}{\numberline {5.81}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Event\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Listener\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base Class Reference}{101}{section.5.81}%
-\contentsline {subsection}{\numberline {5.81.1}Detailed Description}{102}{subsection.5.81.1}%
-\contentsline {subsection}{\numberline {5.81.2}Member Function Documentation}{103}{subsection.5.81.2}%
-\contentsline {subsubsection}{\numberline {5.81.2.1}testRunEnded()}{103}{subsubsection.5.81.2.1}%
-\contentsline {subsubsection}{\numberline {5.81.2.2}testRunStarting()}{103}{subsubsection.5.81.2.2}%
-\contentsline {section}{\numberline {5.82}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Event\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Listener\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Factory Class Reference}{103}{section.5.82}%
-\contentsline {section}{\numberline {5.83}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Exception\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Message\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matcher Class Reference}{104}{section.5.83}%
-\contentsline {section}{\numberline {5.84}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Exception\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Translator\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Registrar Class Reference}{105}{section.5.84}%
-\contentsline {section}{\numberline {5.85}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Exception\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Translator\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Registry Class Reference}{105}{section.5.85}%
-\contentsline {section}{\numberline {5.86}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Benchmark\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Execution\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Plan$<$ Duration $>$ Struct Template Reference}{106}{section.5.86}%
-\contentsline {section}{\numberline {5.87}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Exe\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Name Class Reference}{107}{section.5.87}%
-\contentsline {section}{\numberline {5.88}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Expr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lhs$<$ LhsT $>$ Class Template Reference}{108}{section.5.88}%
-\contentsline {section}{\numberline {5.89}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::fake\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}arg Struct Reference}{108}{section.5.89}%
-\contentsline {section}{\numberline {5.90}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Fatal\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Condition\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handler Class Reference}{109}{section.5.90}%
-\contentsline {subsection}{\numberline {5.90.1}Detailed Description}{109}{subsection.5.90.1}%
-\contentsline {section}{\numberline {5.91}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Fatal\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Condition\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handler\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Guard Class Reference}{109}{section.5.91}%
-\contentsline {subsection}{\numberline {5.91.1}Detailed Description}{109}{subsection.5.91.1}%
-\contentsline {section}{\numberline {5.92}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Generators\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Filter\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Generator$<$ T, Predicate $>$ Class Template Reference}{110}{section.5.92}%
-\contentsline {subsection}{\numberline {5.92.1}Member Function Documentation}{111}{subsection.5.92.1}%
-\contentsline {subsubsection}{\numberline {5.92.1.1}next()}{111}{subsubsection.5.92.1.1}%
-\contentsline {section}{\numberline {5.93}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Test\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Spec\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Filter\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Match Struct Reference}{111}{section.5.93}%
-\contentsline {section}{\numberline {5.94}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Generators\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Fixed\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Values\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Generator$<$ T $>$ Class Template Reference}{112}{section.5.94}%
-\contentsline {subsection}{\numberline {5.94.1}Member Function Documentation}{113}{subsection.5.94.1}%
-\contentsline {subsubsection}{\numberline {5.94.1.1}next()}{113}{subsubsection.5.94.1.1}%
-\contentsline {section}{\numberline {5.95}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Generator\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception Class Reference}{113}{section.5.95}%
-\contentsline {section}{\numberline {5.96}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Generators\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Generators$<$ T $>$ Class Template Reference}{114}{section.5.96}%
-\contentsline {subsection}{\numberline {5.96.1}Member Function Documentation}{115}{subsection.5.96.1}%
-\contentsline {subsubsection}{\numberline {5.96.1.1}next()}{115}{subsubsection.5.96.1.1}%
-\contentsline {section}{\numberline {5.97}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Generators\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Generator\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Untyped\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base Class Reference}{116}{section.5.97}%
-\contentsline {subsection}{\numberline {5.97.1}Member Function Documentation}{116}{subsection.5.97.1}%
-\contentsline {subsubsection}{\numberline {5.97.1.1}countedNext()}{117}{subsubsection.5.97.1.1}%
-\contentsline {subsubsection}{\numberline {5.97.1.2}currentElementAsString()}{117}{subsubsection.5.97.1.2}%
-\contentsline {section}{\numberline {5.98}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Generators\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Generator\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Wrapper$<$ T $>$ Class Template Reference}{117}{section.5.98}%
-\contentsline {section}{\numberline {5.99}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::has\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}description$<$ T, typename $>$ Struct Template Reference}{118}{section.5.99}%
-\contentsline {section}{\numberline {5.100}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::has\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}description$<$ T, void\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t$<$ decltype(T\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::get\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Description())$>$ $>$ Struct Template Reference}{119}{section.5.100}%
-\contentsline {section}{\numberline {5.101}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Has\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Size\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matcher Class Reference}{120}{section.5.101}%
-\contentsline {section}{\numberline {5.102}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Help Struct Reference}{121}{section.5.102}%
-\contentsline {section}{\numberline {5.103}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Help\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Columns Struct Reference}{122}{section.5.103}%
-\contentsline {section}{\numberline {5.104}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::IConfig Class Reference}{123}{section.5.104}%
-\contentsline {section}{\numberline {5.105}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::IContext Class Reference}{124}{section.5.105}%
-\contentsline {section}{\numberline {5.106}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::IEvent\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Listener Class Reference}{125}{section.5.106}%
-\contentsline {subsection}{\numberline {5.106.1}Detailed Description}{127}{subsection.5.106.1}%
-\contentsline {subsection}{\numberline {5.106.2}Member Function Documentation}{127}{subsection.5.106.2}%
-\contentsline {subsubsection}{\numberline {5.106.2.1}testRunEnded()}{127}{subsubsection.5.106.2.1}%
-\contentsline {subsubsection}{\numberline {5.106.2.2}testRunStarting()}{127}{subsubsection.5.106.2.2}%
-\contentsline {section}{\numberline {5.107}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::IException\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Translator Class Reference}{128}{section.5.107}%
-\contentsline {section}{\numberline {5.108}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::IException\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Translator\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Registry Class Reference}{128}{section.5.108}%
-\contentsline {section}{\numberline {5.109}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Generators\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::IGenerator$<$ T $>$ Class Template Reference}{129}{section.5.109}%
-\contentsline {section}{\numberline {5.110}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::IGenerator\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tracker Class Reference}{130}{section.5.110}%
-\contentsline {section}{\numberline {5.111}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::IMutable\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Context Class Reference}{130}{section.5.111}%
-\contentsline {section}{\numberline {5.112}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::IMutable\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Enum\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Values\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Registry Class Reference}{131}{section.5.112}%
-\contentsline {section}{\numberline {5.113}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::IMutable\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Registry\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub Class Reference}{132}{section.5.113}%
-\contentsline {section}{\numberline {5.114}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::IRegistry\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub Class Reference}{132}{section.5.114}%
-\contentsline {section}{\numberline {5.115}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::IReporter\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Factory Class Reference}{132}{section.5.115}%
-\contentsline {section}{\numberline {5.116}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::IReporter\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Registry Class Reference}{133}{section.5.116}%
-\contentsline {section}{\numberline {5.117}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::IResult\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Capture Class Reference}{134}{section.5.117}%
-\contentsline {section}{\numberline {5.118}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::is\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}callable$<$ T $>$ Struct Template Reference}{135}{section.5.118}%
-\contentsline {section}{\numberline {5.119}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::is\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}callable$<$ Fun(Args...)$>$ Struct Template Reference}{135}{section.5.119}%
-\contentsline {section}{\numberline {5.120}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::is\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}callable\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}tester Struct Reference}{136}{section.5.120}%
-\contentsline {section}{\numberline {5.121}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::is\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}range$<$ T $>$ Struct Template Reference}{136}{section.5.121}%
-\contentsline {section}{\numberline {5.122}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::is\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}range\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl$<$ T, typename $>$ Struct Template Reference}{137}{section.5.122}%
-\contentsline {section}{\numberline {5.123}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::is\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}range\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}impl$<$ T, void\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t$<$ decltype(begin(std\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::declval$<$ T $>$()))$>$ $>$ Struct Template Reference}{138}{section.5.123}%
-\contentsline {section}{\numberline {5.124}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Benchmark\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::is\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}related$<$ T, U $>$ Struct Template Reference}{139}{section.5.124}%
-\contentsline {section}{\numberline {5.125}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::is\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}unary\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}function$<$ F, typename $>$ Struct Template Reference}{140}{section.5.125}%
-\contentsline {section}{\numberline {5.126}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::is\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}unary\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}function$<$ F, Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::void\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t$<$ decltype(std\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::declval$<$ F $>$()(fake\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}arg())) $>$ $>$ Struct Template Reference}{141}{section.5.126}%
-\contentsline {section}{\numberline {5.127}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Is\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Empty\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matcher Class Reference}{142}{section.5.127}%
-\contentsline {section}{\numberline {5.128}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ISingleton Struct Reference}{143}{section.5.128}%
-\contentsline {section}{\numberline {5.129}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Is\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stream\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Insertable$<$ T $>$ Class Template Reference}{144}{section.5.129}%
-\contentsline {section}{\numberline {5.130}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::IStream Class Reference}{144}{section.5.130}%
-\contentsline {subsection}{\numberline {5.130.1}Member Function Documentation}{144}{subsection.5.130.1}%
-\contentsline {subsubsection}{\numberline {5.130.1.1}isConsole()}{144}{subsubsection.5.130.1.1}%
-\contentsline {section}{\numberline {5.131}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ITag\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Alias\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Registry Class Reference}{145}{section.5.131}%
-\contentsline {section}{\numberline {5.132}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Text\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Flow\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Columns\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::iterator Class Reference}{145}{section.5.132}%
-\contentsline {section}{\numberline {5.133}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Generators\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Iterator\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Generator$<$ T $>$ Class Template Reference}{146}{section.5.133}%
-\contentsline {subsection}{\numberline {5.133.1}Member Function Documentation}{147}{subsection.5.133.1}%
-\contentsline {subsubsection}{\numberline {5.133.1.1}next()}{147}{subsubsection.5.133.1.1}%
-\contentsline {section}{\numberline {5.134}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ITest\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Case\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Registry Class Reference}{147}{section.5.134}%
-\contentsline {section}{\numberline {5.135}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ITest\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Invoker Class Reference}{148}{section.5.135}%
-\contentsline {section}{\numberline {5.136}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Test\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Case\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tracking\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ITracker Class Reference}{148}{section.5.136}%
-\contentsline {subsection}{\numberline {5.136.1}Member Function Documentation}{150}{subsection.5.136.1}%
-\contentsline {subsubsection}{\numberline {5.136.1.1}findChild()}{150}{subsubsection.5.136.1.1}%
-\contentsline {subsubsection}{\numberline {5.136.1.2}isGeneratorTracker()}{150}{subsubsection.5.136.1.2}%
-\contentsline {subsubsection}{\numberline {5.136.1.3}isSectionTracker()}{150}{subsubsection.5.136.1.3}%
-\contentsline {section}{\numberline {5.137}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ITransient\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Expression Class Reference}{150}{section.5.137}%
-\contentsline {section}{\numberline {5.138}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Junit\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Reporter Class Reference}{151}{section.5.138}%
-\contentsline {subsection}{\numberline {5.138.1}Member Function Documentation}{152}{subsection.5.138.1}%
-\contentsline {subsubsection}{\numberline {5.138.1.1}testRunStarting()}{152}{subsubsection.5.138.1.1}%
-\contentsline {section}{\numberline {5.139}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Lambda\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Invoker$<$ Return\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Type $>$ Struct Template Reference}{152}{section.5.139}%
-\contentsline {section}{\numberline {5.140}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Lambda\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Invoker$<$ void $>$ Struct Reference}{153}{section.5.140}%
-\contentsline {section}{\numberline {5.141}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Lazy\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Expression Class Reference}{153}{section.5.141}%
-\contentsline {section}{\numberline {5.142}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Leak\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Detector Struct Reference}{153}{section.5.142}%
-\contentsline {section}{\numberline {5.143}LFMCMC$<$ TData $>$ Class Template Reference}{153}{section.5.143}%
-\contentsline {subsection}{\numberline {5.143.1}Detailed Description}{154}{subsection.5.143.1}%
-\contentsline {section}{\numberline {5.144}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::line\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Of\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Chars Struct Reference}{155}{section.5.144}%
-\contentsline {section}{\numberline {5.145}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Listener\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Description Struct Reference}{155}{section.5.145}%
-\contentsline {section}{\numberline {5.146}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Listener\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Registrar$<$ T $>$ Class Template Reference}{156}{section.5.146}%
-\contentsline {section}{\numberline {5.147}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::make\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}void$<$... $>$ Struct Template Reference}{156}{section.5.147}%
-\contentsline {section}{\numberline {5.148}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Generators\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Map\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Generator$<$ T, U, Func $>$ Class Template Reference}{156}{section.5.148}%
-\contentsline {subsection}{\numberline {5.148.1}Member Function Documentation}{157}{subsection.5.148.1}%
-\contentsline {subsubsection}{\numberline {5.148.1.1}next()}{157}{subsubsection.5.148.1.1}%
-\contentsline {section}{\numberline {5.149}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Match\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}All\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Of$<$ ArgT $>$ Class Template Reference}{158}{section.5.149}%
-\contentsline {section}{\numberline {5.150}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Match\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}All\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Of\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Generic$<$ Matcher\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ts $>$ Class Template Reference}{159}{section.5.150}%
-\contentsline {section}{\numberline {5.151}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Match\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Any\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Of$<$ ArgT $>$ Class Template Reference}{161}{section.5.151}%
-\contentsline {section}{\numberline {5.152}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Match\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Any\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Of\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Generic$<$ Matcher\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ts $>$ Class Template Reference}{162}{section.5.152}%
-\contentsline {section}{\numberline {5.153}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matcher\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base$<$ T $>$ Class Template Reference}{164}{section.5.153}%
-\contentsline {section}{\numberline {5.154}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matcher\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Generic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base Class Reference}{165}{section.5.154}%
-\contentsline {section}{\numberline {5.155}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matcher\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Untyped\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base Class Reference}{167}{section.5.155}%
-\contentsline {section}{\numberline {5.156}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Match\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Expr$<$ ArgT, MatcherT $>$ Class Template Reference}{168}{section.5.156}%
-\contentsline {section}{\numberline {5.157}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Match\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Not\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Of$<$ ArgT $>$ Class Template Reference}{169}{section.5.157}%
-\contentsline {section}{\numberline {5.158}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Match\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Not\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Of\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Generic$<$ MatcherT $>$ Class Template Reference}{171}{section.5.158}%
-\contentsline {section}{\numberline {5.159}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Message\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Builder Struct Reference}{172}{section.5.159}%
-\contentsline {section}{\numberline {5.160}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Message\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info Struct Reference}{173}{section.5.160}%
-\contentsline {section}{\numberline {5.161}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Message\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stream Struct Reference}{174}{section.5.161}%
-\contentsline {section}{\numberline {5.162}Model$<$ TSeq $>$ Class Template Reference}{175}{section.5.162}%
-\contentsline {subsection}{\numberline {5.162.1}Detailed Description}{181}{subsection.5.162.1}%
-\contentsline {subsection}{\numberline {5.162.2}Member Function Documentation}{181}{subsection.5.162.2}%
-\contentsline {subsubsection}{\numberline {5.162.2.1}add\_global\_action()}{181}{subsubsection.5.162.2.1}%
-\contentsline {subsubsection}{\numberline {5.162.2.2}reset()}{182}{subsubsection.5.162.2.2}%
-\contentsline {subsubsection}{\numberline {5.162.2.3}run\_multiple()}{182}{subsubsection.5.162.2.3}%
-\contentsline {subsubsection}{\numberline {5.162.2.4}set\_agents\_data()}{182}{subsubsection.5.162.2.4}%
-\contentsline {subsubsection}{\numberline {5.162.2.5}write\_data()}{183}{subsubsection.5.162.2.5}%
-\contentsline {section}{\numberline {5.163}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Multi\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Reporter Class Reference}{183}{section.5.163}%
-\contentsline {subsection}{\numberline {5.163.1}Member Function Documentation}{185}{subsection.5.163.1}%
-\contentsline {subsubsection}{\numberline {5.163.1.1}testRunEnded()}{185}{subsubsection.5.163.1.1}%
-\contentsline {subsubsection}{\numberline {5.163.1.2}testRunStarting()}{185}{subsubsection.5.163.1.2}%
-\contentsline {section}{\numberline {5.164}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Test\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Case\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tracking\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Name\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}And\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Location Struct Reference}{186}{section.5.164}%
-\contentsline {section}{\numberline {5.165}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Name\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}And\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tags Struct Reference}{187}{section.5.165}%
-\contentsline {section}{\numberline {5.166}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Cumulative\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Reporter\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Node$<$ T, Child\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}NodeT $>$ Struct Template Reference}{187}{section.5.166}%
-\contentsline {section}{\numberline {5.167}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Non\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Copyable Class Reference}{188}{section.5.167}%
-\contentsline {subsection}{\numberline {5.167.1}Detailed Description}{188}{subsection.5.167.1}%
-\contentsline {section}{\numberline {5.168}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::None\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Match\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matcher$<$ Matcher $>$ Class Template Reference}{189}{section.5.168}%
-\contentsline {section}{\numberline {5.169}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Benchmark\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::now$<$ Clock $>$ Struct Template Reference}{190}{section.5.169}%
-\contentsline {section}{\numberline {5.170}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Benchmark\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Object\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Storage$<$ T, Destruct $>$ Struct Template Reference}{190}{section.5.170}%
-\contentsline {section}{\numberline {5.171}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Opt Class Reference}{191}{section.5.171}%
-\contentsline {section}{\numberline {5.172}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Optional$<$ T $>$ Class Template Reference}{193}{section.5.172}%
-\contentsline {section}{\numberline {5.173}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Benchmark\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Outlier\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Classification Struct Reference}{193}{section.5.173}%
-\contentsline {section}{\numberline {5.174}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Parser Class Reference}{194}{section.5.174}%
-\contentsline {section}{\numberline {5.175}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Parser\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base Class Reference}{195}{section.5.175}%
-\contentsline {section}{\numberline {5.176}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Parser\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ref\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Impl$<$ DerivedT $>$ Class Template Reference}{196}{section.5.176}%
-\contentsline {section}{\numberline {5.177}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Parse\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}State Class Reference}{197}{section.5.177}%
-\contentsline {section}{\numberline {5.178}Person\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tools$<$ TSeq $>$ Class Template Reference}{197}{section.5.178}%
-\contentsline {section}{\numberline {5.179}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::pluralise Class Reference}{198}{section.5.179}%
-\contentsline {subsection}{\numberline {5.179.1}Detailed Description}{198}{subsection.5.179.1}%
-\contentsline {section}{\numberline {5.180}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Predicate\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matcher$<$ T, Predicate $>$ Class Template Reference}{198}{section.5.180}%
-\contentsline {section}{\numberline {5.181}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Processed\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Reporter\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Spec Struct Reference}{199}{section.5.181}%
-\contentsline {subsection}{\numberline {5.181.1}Detailed Description}{200}{subsection.5.181.1}%
-\contentsline {section}{\numberline {5.182}Progress Class Reference}{200}{section.5.182}%
-\contentsline {subsection}{\numberline {5.182.1}Detailed Description}{200}{subsection.5.182.1}%
-\contentsline {section}{\numberline {5.183}Queue$<$ TSeq $>$ Class Template Reference}{200}{section.5.183}%
-\contentsline {subsection}{\numberline {5.183.1}Detailed Description}{200}{subsection.5.183.1}%
-\contentsline {section}{\numberline {5.184}Rand\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Graph Class Reference}{201}{section.5.184}%
-\contentsline {section}{\numberline {5.185}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Generators\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Random\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Floating\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Generator$<$ Float $>$ Class Template Reference}{201}{section.5.185}%
-\contentsline {subsection}{\numberline {5.185.1}Member Function Documentation}{202}{subsection.5.185.1}%
-\contentsline {subsubsection}{\numberline {5.185.1.1}next()}{202}{subsubsection.5.185.1.1}%
-\contentsline {section}{\numberline {5.186}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Generators\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Random\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Integer\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Generator$<$ Integer $>$ Class Template Reference}{203}{section.5.186}%
-\contentsline {subsection}{\numberline {5.186.1}Member Function Documentation}{204}{subsection.5.186.1}%
-\contentsline {subsubsection}{\numberline {5.186.1.1}next()}{204}{subsubsection.5.186.1.1}%
-\contentsline {section}{\numberline {5.187}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Generators\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Range\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Generator$<$ T $>$ Class Template Reference}{204}{section.5.187}%
-\contentsline {subsection}{\numberline {5.187.1}Member Function Documentation}{205}{subsection.5.187.1}%
-\contentsline {subsubsection}{\numberline {5.187.1.1}next()}{205}{subsubsection.5.187.1.1}%
-\contentsline {section}{\numberline {5.188}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ratio\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}string$<$ Ratio $>$ Struct Template Reference}{206}{section.5.188}%
-\contentsline {section}{\numberline {5.189}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ratio\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}string$<$ std\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::atto $>$ Struct Reference}{206}{section.5.189}%
-\contentsline {section}{\numberline {5.190}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ratio\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}string$<$ std\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::femto $>$ Struct Reference}{206}{section.5.190}%
-\contentsline {section}{\numberline {5.191}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ratio\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}string$<$ std\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::micro $>$ Struct Reference}{206}{section.5.191}%
-\contentsline {section}{\numberline {5.192}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ratio\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}string$<$ std\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::milli $>$ Struct Reference}{207}{section.5.192}%
-\contentsline {section}{\numberline {5.193}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ratio\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}string$<$ std\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::nano $>$ Struct Reference}{207}{section.5.193}%
-\contentsline {section}{\numberline {5.194}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ratio\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}string$<$ std\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::pico $>$ Struct Reference}{207}{section.5.194}%
-\contentsline {section}{\numberline {5.195}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Redirected\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Std\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Err Class Reference}{207}{section.5.195}%
-\contentsline {section}{\numberline {5.196}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Redirected\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Std\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Out Class Reference}{208}{section.5.196}%
-\contentsline {section}{\numberline {5.197}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Redirected\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stream Class Reference}{208}{section.5.197}%
-\contentsline {section}{\numberline {5.198}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Redirected\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Streams Class Reference}{208}{section.5.198}%
-\contentsline {section}{\numberline {5.199}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Regex\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matcher Class Reference}{209}{section.5.199}%
-\contentsline {section}{\numberline {5.200}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Registrar\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}For\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tag\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Aliases Struct Reference}{210}{section.5.200}%
-\contentsline {section}{\numberline {5.201}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Benchmark\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::repeater$<$ Fun $>$ Struct Template Reference}{210}{section.5.201}%
-\contentsline {section}{\numberline {5.202}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Generators\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Repeat\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Generator$<$ T $>$ Class Template Reference}{211}{section.5.202}%
-\contentsline {subsection}{\numberline {5.202.1}Member Function Documentation}{212}{subsection.5.202.1}%
-\contentsline {subsubsection}{\numberline {5.202.1.1}next()}{212}{subsubsection.5.202.1.1}%
-\contentsline {section}{\numberline {5.203}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Reporter\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base Class Reference}{212}{section.5.203}%
-\contentsline {subsection}{\numberline {5.203.1}Detailed Description}{213}{subsection.5.203.1}%
-\contentsline {subsection}{\numberline {5.203.2}Member Function Documentation}{213}{subsection.5.203.2}%
-\contentsline {subsubsection}{\numberline {5.203.2.1}listListeners()}{213}{subsubsection.5.203.2.1}%
-\contentsline {subsubsection}{\numberline {5.203.2.2}listReporters()}{214}{subsubsection.5.203.2.2}%
-\contentsline {subsubsection}{\numberline {5.203.2.3}listTags()}{214}{subsubsection.5.203.2.3}%
-\contentsline {subsubsection}{\numberline {5.203.2.4}listTests()}{214}{subsubsection.5.203.2.4}%
-\contentsline {subsection}{\numberline {5.203.3}Member Data Documentation}{214}{subsection.5.203.3}%
-\contentsline {subsubsection}{\numberline {5.203.3.1}m\_stream}{215}{subsubsection.5.203.3.1}%
-\contentsline {section}{\numberline {5.204}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Reporter\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Config Struct Reference}{215}{section.5.204}%
-\contentsline {section}{\numberline {5.205}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Reporter\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Description Struct Reference}{215}{section.5.205}%
-\contentsline {section}{\numberline {5.206}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Reporter\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Factory$<$ T $>$ Class Template Reference}{216}{section.5.206}%
-\contentsline {section}{\numberline {5.207}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Reporter\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Preferences Struct Reference}{216}{section.5.207}%
-\contentsline {subsection}{\numberline {5.207.1}Detailed Description}{217}{subsection.5.207.1}%
-\contentsline {subsection}{\numberline {5.207.2}Member Data Documentation}{217}{subsection.5.207.2}%
-\contentsline {subsubsection}{\numberline {5.207.2.1}shouldRedirectStdOut}{217}{subsubsection.5.207.2.1}%
-\contentsline {subsubsection}{\numberline {5.207.2.2}shouldReportAllAssertions}{217}{subsubsection.5.207.2.2}%
-\contentsline {section}{\numberline {5.208}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Reporter\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Registrar$<$ T $>$ Class Template Reference}{217}{section.5.208}%
-\contentsline {section}{\numberline {5.209}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Reporter\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Registry Class Reference}{218}{section.5.209}%
-\contentsline {section}{\numberline {5.210}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Reporter\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Spec Class Reference}{219}{section.5.210}%
-\contentsline {subsection}{\numberline {5.210.1}Detailed Description}{219}{subsection.5.210.1}%
-\contentsline {section}{\numberline {5.211}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Result\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base Class Reference}{219}{section.5.211}%
-\contentsline {section}{\numberline {5.212}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Result\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Disposition Struct Reference}{220}{section.5.212}%
-\contentsline {section}{\numberline {5.213}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Result\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Value\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base$<$ T $>$ Class Template Reference}{220}{section.5.213}%
-\contentsline {section}{\numberline {5.214}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Result\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Value\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base$<$ void $>$ Class Reference}{222}{section.5.214}%
-\contentsline {section}{\numberline {5.215}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Result\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Was Struct Reference}{223}{section.5.215}%
-\contentsline {section}{\numberline {5.216}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Reusable\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stream Class Reference}{223}{section.5.216}%
-\contentsline {section}{\numberline {5.217}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Run\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Context Class Reference}{224}{section.5.217}%
-\contentsline {section}{\numberline {5.218}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Benchmark\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Sample\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Analysis$<$ Duration $>$ Struct Template Reference}{226}{section.5.218}%
-\contentsline {section}{\numberline {5.219}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Xml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Writer\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Scoped\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Element Class Reference}{226}{section.5.219}%
-\contentsline {section}{\numberline {5.220}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Scoped\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Message Class Reference}{227}{section.5.220}%
-\contentsline {section}{\numberline {5.221}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Section Class Reference}{228}{section.5.221}%
-\contentsline {section}{\numberline {5.222}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Section\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info Struct Reference}{229}{section.5.222}%
-\contentsline {section}{\numberline {5.223}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Section\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info Struct Reference}{229}{section.5.223}%
-\contentsline {section}{\numberline {5.224}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Cumulative\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Reporter\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Section\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Node Struct Reference}{230}{section.5.224}%
-\contentsline {section}{\numberline {5.225}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Section\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stats Struct Reference}{231}{section.5.225}%
-\contentsline {section}{\numberline {5.226}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Test\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Case\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tracking\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Section\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tracker Class Reference}{232}{section.5.226}%
-\contentsline {subsection}{\numberline {5.226.1}Member Function Documentation}{233}{subsection.5.226.1}%
-\contentsline {subsubsection}{\numberline {5.226.1.1}isSectionTracker()}{233}{subsubsection.5.226.1.1}%
-\contentsline {section}{\numberline {5.227}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Session Class Reference}{233}{section.5.227}%
-\contentsline {section}{\numberline {5.228}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Simple\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pcg32 Class Reference}{234}{section.5.228}%
-\contentsline {section}{\numberline {5.229}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Singleton$<$ Singleton\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ImplT, InterfaceT, Mutable\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}InterfaceT $>$ Class Template Reference}{235}{section.5.229}%
-\contentsline {section}{\numberline {5.230}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Generators\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Single\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Value\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Generator$<$ T $>$ Class Template Reference}{236}{section.5.230}%
-\contentsline {subsection}{\numberline {5.230.1}Member Function Documentation}{237}{subsection.5.230.1}%
-\contentsline {subsubsection}{\numberline {5.230.1.1}next()}{237}{subsubsection.5.230.1.1}%
-\contentsline {section}{\numberline {5.231}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Size\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matches\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matcher$<$ Matcher $>$ Class Template Reference}{238}{section.5.231}%
-\contentsline {section}{\numberline {5.232}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Sonar\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Qube\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Reporter Class Reference}{239}{section.5.232}%
-\contentsline {subsection}{\numberline {5.232.1}Member Function Documentation}{240}{subsection.5.232.1}%
-\contentsline {subsubsection}{\numberline {5.232.1.1}testRunStarting()}{240}{subsubsection.5.232.1.1}%
-\contentsline {section}{\numberline {5.233}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Source\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Line\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info Struct Reference}{240}{section.5.233}%
-\contentsline {section}{\numberline {5.234}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Starts\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}With\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matcher Class Reference}{241}{section.5.234}%
-\contentsline {section}{\numberline {5.235}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Startup\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Registry Class Reference}{242}{section.5.235}%
-\contentsline {section}{\numberline {5.236}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Stream\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}End\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stop Struct Reference}{242}{section.5.236}%
-\contentsline {section}{\numberline {5.237}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Streaming\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Reporter\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base Class Reference}{242}{section.5.237}%
-\contentsline {subsection}{\numberline {5.237.1}Member Function Documentation}{243}{subsection.5.237.1}%
-\contentsline {subsubsection}{\numberline {5.237.1.1}testRunEnded()}{244}{subsubsection.5.237.1.1}%
-\contentsline {subsubsection}{\numberline {5.237.1.2}testRunStarting()}{244}{subsubsection.5.237.1.2}%
-\contentsline {section}{\numberline {5.238}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Contains\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matcher Class Reference}{245}{section.5.238}%
-\contentsline {section}{\numberline {5.239}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Equals\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matcher Class Reference}{246}{section.5.239}%
-\contentsline {section}{\numberline {5.240}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ T, typename $>$ Struct Template Reference}{247}{section.5.240}%
-\contentsline {section}{\numberline {5.241}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ bool $>$ Struct Reference}{247}{section.5.241}%
-\contentsline {section}{\numberline {5.242}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Approx $>$ Struct Reference}{247}{section.5.242}%
-\contentsline {section}{\numberline {5.243}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ char $\ast $ $>$ Struct Reference}{247}{section.5.243}%
-\contentsline {section}{\numberline {5.244}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ char $>$ Struct Reference}{248}{section.5.244}%
-\contentsline {section}{\numberline {5.245}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ char const $\ast $ $>$ Struct Reference}{248}{section.5.245}%
-\contentsline {section}{\numberline {5.246}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ char\mbox {[}SZ\mbox {]}$>$ Struct Template Reference}{248}{section.5.246}%
-\contentsline {section}{\numberline {5.247}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ double $>$ Struct Reference}{248}{section.5.247}%
-\contentsline {section}{\numberline {5.248}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ float $>$ Struct Reference}{249}{section.5.248}%
-\contentsline {section}{\numberline {5.249}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ int $>$ Struct Reference}{249}{section.5.249}%
-\contentsline {section}{\numberline {5.250}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ long $>$ Struct Reference}{249}{section.5.250}%
-\contentsline {section}{\numberline {5.251}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ long long $>$ Struct Reference}{249}{section.5.251}%
-\contentsline {section}{\numberline {5.252}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ R C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::$\ast $ $>$ Struct Template Reference}{250}{section.5.252}%
-\contentsline {section}{\numberline {5.253}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ R, std\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::enable\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}if\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t$<$ is\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}range$<$ R $>$\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::value \&\&!\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Is\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stream\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Insertable$<$ R $>$\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::value $>$ $>$ Struct Template Reference}{250}{section.5.253}%
-\contentsline {section}{\numberline {5.254}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ signed char $>$ Struct Reference}{250}{section.5.254}%
-\contentsline {section}{\numberline {5.255}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ signed char\mbox {[}SZ\mbox {]}$>$ Struct Template Reference}{250}{section.5.255}%
-\contentsline {section}{\numberline {5.256}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ std\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::chrono\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::duration$<$ Value, Ratio $>$ $>$ Struct Template Reference}{251}{section.5.256}%
-\contentsline {section}{\numberline {5.257}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ std\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::chrono\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::duration$<$ Value, std\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ratio$<$ 1 $>$ $>$ $>$ Struct Template Reference}{251}{section.5.257}%
-\contentsline {section}{\numberline {5.258}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ std\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::chrono\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::duration$<$ Value, std\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ratio$<$ 3600 $>$ $>$ $>$ Struct Template Reference}{251}{section.5.258}%
-\contentsline {section}{\numberline {5.259}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ std\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::chrono\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::duration$<$ Value, std\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::ratio$<$ 60 $>$ $>$ $>$ Struct Template Reference}{251}{section.5.259}%
-\contentsline {section}{\numberline {5.260}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ std\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::chrono\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::time\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}point$<$ Clock, Duration $>$ $>$ Struct Template Reference}{252}{section.5.260}%
-\contentsline {section}{\numberline {5.261}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ std\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::chrono\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::time\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}point$<$ std\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::chrono\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::system\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}clock, Duration $>$ $>$ Struct Template Reference}{252}{section.5.261}%
-\contentsline {section}{\numberline {5.262}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ std\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::nullptr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t $>$ Struct Reference}{252}{section.5.262}%
-\contentsline {section}{\numberline {5.263}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ std\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::string $>$ Struct Reference}{252}{section.5.263}%
-\contentsline {section}{\numberline {5.264}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ std\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::wstring $>$ Struct Reference}{253}{section.5.264}%
-\contentsline {section}{\numberline {5.265}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ T $\ast $ $>$ Struct Template Reference}{253}{section.5.265}%
-\contentsline {section}{\numberline {5.266}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ T\mbox {[}SZ\mbox {]}$>$ Struct Template Reference}{253}{section.5.266}%
-\contentsline {section}{\numberline {5.267}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ unsigned char $>$ Struct Reference}{253}{section.5.267}%
-\contentsline {section}{\numberline {5.268}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ unsigned char\mbox {[}SZ\mbox {]}$>$ Struct Template Reference}{254}{section.5.268}%
-\contentsline {section}{\numberline {5.269}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ unsigned int $>$ Struct Reference}{254}{section.5.269}%
-\contentsline {section}{\numberline {5.270}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ unsigned long $>$ Struct Reference}{254}{section.5.270}%
-\contentsline {section}{\numberline {5.271}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ unsigned long long $>$ Struct Reference}{254}{section.5.271}%
-\contentsline {section}{\numberline {5.272}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ wchar\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t $\ast $ $>$ Struct Reference}{255}{section.5.272}%
-\contentsline {section}{\numberline {5.273}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Maker$<$ wchar\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}t const $\ast $ $>$ Struct Reference}{255}{section.5.273}%
-\contentsline {section}{\numberline {5.274}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matcher\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base Class Reference}{255}{section.5.274}%
-\contentsline {section}{\numberline {5.275}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::String\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ref Class Reference}{256}{section.5.275}%
-\contentsline {subsection}{\numberline {5.275.1}Detailed Description}{257}{subsection.5.275.1}%
-\contentsline {subsection}{\numberline {5.275.2}Member Function Documentation}{257}{subsection.5.275.2}%
-\contentsline {subsubsection}{\numberline {5.275.2.1}compare()}{257}{subsubsection.5.275.2.1}%
-\contentsline {section}{\numberline {5.276}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Tag Struct Reference}{257}{section.5.276}%
-\contentsline {subsection}{\numberline {5.276.1}Detailed Description}{258}{subsection.5.276.1}%
-\contentsline {section}{\numberline {5.277}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Tag\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Alias Struct Reference}{258}{section.5.277}%
-\contentsline {section}{\numberline {5.278}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Tag\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Alias\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Registry Class Reference}{259}{section.5.278}%
-\contentsline {section}{\numberline {5.279}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Tag\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info Struct Reference}{259}{section.5.279}%
-\contentsline {section}{\numberline {5.280}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Generators\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Take\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Generator$<$ T $>$ Class Template Reference}{260}{section.5.280}%
-\contentsline {subsection}{\numberline {5.280.1}Member Function Documentation}{261}{subsection.5.280.1}%
-\contentsline {subsubsection}{\numberline {5.280.1.1}next()}{261}{subsubsection.5.280.1.1}%
-\contentsline {section}{\numberline {5.281}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::TAPReporter Class Reference}{262}{section.5.281}%
-\contentsline {subsection}{\numberline {5.281.1}Member Function Documentation}{263}{subsection.5.281.1}%
-\contentsline {subsubsection}{\numberline {5.281.1.1}testRunEnded()}{263}{subsubsection.5.281.1.1}%
-\contentsline {subsubsection}{\numberline {5.281.1.2}testRunStarting()}{263}{subsubsection.5.281.1.2}%
-\contentsline {section}{\numberline {5.282}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Team\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}City\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Reporter Class Reference}{264}{section.5.282}%
-\contentsline {subsection}{\numberline {5.282.1}Member Function Documentation}{265}{subsection.5.282.1}%
-\contentsline {subsubsection}{\numberline {5.282.1.1}testRunEnded()}{265}{subsubsection.5.282.1.1}%
-\contentsline {subsubsection}{\numberline {5.282.1.2}testRunStarting()}{265}{subsubsection.5.282.1.2}%
-\contentsline {section}{\numberline {5.283}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Test\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Case\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handle Class Reference}{265}{section.5.283}%
-\contentsline {subsection}{\numberline {5.283.1}Detailed Description}{266}{subsection.5.283.1}%
-\contentsline {section}{\numberline {5.284}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Test\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Case\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info Struct Reference}{266}{section.5.284}%
-\contentsline {subsection}{\numberline {5.284.1}Detailed Description}{267}{subsection.5.284.1}%
-\contentsline {section}{\numberline {5.285}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Test\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Case\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hasher Class Reference}{267}{section.5.285}%
-\contentsline {section}{\numberline {5.286}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Test\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Case\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stats Struct Reference}{268}{section.5.286}%
-\contentsline {section}{\numberline {5.287}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Test\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Failure\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception Struct Reference}{268}{section.5.287}%
-\contentsline {subsection}{\numberline {5.287.1}Detailed Description}{268}{subsection.5.287.1}%
-\contentsline {section}{\numberline {5.288}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Test\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Invoker\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}As\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Function Class Reference}{269}{section.5.288}%
-\contentsline {section}{\numberline {5.289}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Test\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Invoker\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}As\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Method$<$ C $>$ Class Template Reference}{270}{section.5.289}%
-\contentsline {section}{\numberline {5.290}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Test\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Registry Class Reference}{271}{section.5.290}%
-\contentsline {section}{\numberline {5.291}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Test\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Run\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info Struct Reference}{272}{section.5.291}%
-\contentsline {section}{\numberline {5.292}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Test\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Run\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stats Struct Reference}{272}{section.5.292}%
-\contentsline {section}{\numberline {5.293}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Test\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Spec Class Reference}{273}{section.5.293}%
-\contentsline {section}{\numberline {5.294}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Test\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Spec\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Parser Class Reference}{274}{section.5.294}%
-\contentsline {section}{\numberline {5.295}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Timer Class Reference}{274}{section.5.295}%
-\contentsline {section}{\numberline {5.296}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Benchmark\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Timing$<$ Duration, Result $>$ Struct Template Reference}{274}{section.5.296}%
-\contentsline {section}{\numberline {5.297}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Token Struct Reference}{274}{section.5.297}%
-\contentsline {section}{\numberline {5.298}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Token\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stream Class Reference}{275}{section.5.298}%
-\contentsline {section}{\numberline {5.299}Tool$<$ TSeq $>$ Class Template Reference}{275}{section.5.299}%
-\contentsline {subsection}{\numberline {5.299.1}Detailed Description}{276}{subsection.5.299.1}%
-\contentsline {section}{\numberline {5.300}Tools$<$ TSeq $>$ Class Template Reference}{276}{section.5.300}%
-\contentsline {subsection}{\numberline {5.300.1}Detailed Description}{277}{subsection.5.300.1}%
-\contentsline {section}{\numberline {5.301}Tools\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}const$<$ TSeq $>$ Class Template Reference}{277}{section.5.301}%
-\contentsline {subsection}{\numberline {5.301.1}Detailed Description}{278}{subsection.5.301.1}%
-\contentsline {section}{\numberline {5.302}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Totals Struct Reference}{278}{section.5.302}%
-\contentsline {section}{\numberline {5.303}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Test\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Case\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tracking\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Tracker\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base Class Reference}{279}{section.5.303}%
-\contentsline {section}{\numberline {5.304}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Test\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Case\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tracking\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Tracker\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Context Class Reference}{280}{section.5.304}%
-\contentsline {section}{\numberline {5.305}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::true\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}given$<$ typename $>$ Struct Template Reference}{281}{section.5.305}%
-\contentsline {section}{\numberline {5.306}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Benchmark\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Complete\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Type$<$ void $>$\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::type Struct Reference}{281}{section.5.306}%
-\contentsline {section}{\numberline {5.307}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Unary\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Expr$<$ LhsT $>$ Class Template Reference}{282}{section.5.307}%
-\contentsline {section}{\numberline {5.308}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Unary\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lambda\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Traits$<$ L $>$ Struct Template Reference}{282}{section.5.308}%
-\contentsline {section}{\numberline {5.309}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Unary\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lambda\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Traits$<$ ReturnT(ClassT\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::$\ast $)(Args...) const $>$ Struct Template Reference}{283}{section.5.309}%
-\contentsline {section}{\numberline {5.310}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Clara\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Unary\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lambda\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Traits$<$ ReturnT(ClassT\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::$\ast $)(ArgT) const $>$ Struct Template Reference}{283}{section.5.310}%
-\contentsline {section}{\numberline {5.311}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Detail\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::unique\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}ptr$<$ T $>$ Class Template Reference}{283}{section.5.311}%
-\contentsline {subsection}{\numberline {5.311.1}Detailed Description}{284}{subsection.5.311.1}%
-\contentsline {section}{\numberline {5.312}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Unordered\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Equals\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matcher$<$ T, Alloc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Comp, Alloc\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Match $>$ Class Template Reference}{284}{section.5.312}%
-\contentsline {section}{\numberline {5.313}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data$<$ TSeq $>$ Class Template Reference}{285}{section.5.313}%
-\contentsline {subsection}{\numberline {5.313.1}Detailed Description}{286}{subsection.5.313.1}%
-\contentsline {subsection}{\numberline {5.313.2}Constructor \& Destructor Documentation}{287}{subsection.5.313.2}%
-\contentsline {subsubsection}{\numberline {5.313.2.1}UserData()}{287}{subsubsection.5.313.2.1}%
-\contentsline {section}{\numberline {5.314}vec\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hasher$<$ T $>$ Struct Template Reference}{287}{section.5.314}%
-\contentsline {subsection}{\numberline {5.314.1}Detailed Description}{287}{subsection.5.314.1}%
-\contentsline {section}{\numberline {5.315}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Vector\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Contains\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Element\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matcher$<$ T, Alloc $>$ Class Template Reference}{288}{section.5.315}%
-\contentsline {section}{\numberline {5.316}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Version Struct Reference}{289}{section.5.316}%
-\contentsline {section}{\numberline {5.317}Virus$<$ TSeq $>$ Class Template Reference}{290}{section.5.317}%
-\contentsline {subsection}{\numberline {5.317.1}Detailed Description}{291}{subsection.5.317.1}%
-\contentsline {section}{\numberline {5.318}Viruses$<$ TSeq $>$ Class Template Reference}{292}{section.5.318}%
-\contentsline {subsection}{\numberline {5.318.1}Detailed Description}{292}{subsection.5.318.1}%
-\contentsline {section}{\numberline {5.319}Viruses\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}const$<$ TSeq $>$ Class Template Reference}{292}{section.5.319}%
-\contentsline {subsection}{\numberline {5.319.1}Detailed Description}{293}{subsection.5.319.1}%
-\contentsline {section}{\numberline {5.320}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Wait\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}For\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Keypress Struct Reference}{293}{section.5.320}%
-\contentsline {section}{\numberline {5.321}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Warn\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}About Struct Reference}{293}{section.5.321}%
-\contentsline {subsection}{\numberline {5.321.1}Member Enumeration Documentation}{294}{subsection.5.321.1}%
-\contentsline {subsubsection}{\numberline {5.321.1.1}What}{294}{subsubsection.5.321.1.1}%
-\contentsline {section}{\numberline {5.322}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Wildcard\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pattern Class Reference}{294}{section.5.322}%
-\contentsline {section}{\numberline {5.323}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Within\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Abs\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matcher Class Reference}{294}{section.5.323}%
-\contentsline {section}{\numberline {5.324}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Within\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Rel\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matcher Class Reference}{296}{section.5.324}%
-\contentsline {section}{\numberline {5.325}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Within\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ulps\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matcher Class Reference}{297}{section.5.325}%
-\contentsline {section}{\numberline {5.326}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Xml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Encode Class Reference}{298}{section.5.326}%
-\contentsline {subsection}{\numberline {5.326.1}Detailed Description}{298}{subsection.5.326.1}%
-\contentsline {section}{\numberline {5.327}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Xml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Reporter Class Reference}{299}{section.5.327}%
-\contentsline {subsection}{\numberline {5.327.1}Member Function Documentation}{300}{subsection.5.327.1}%
-\contentsline {subsubsection}{\numberline {5.327.1.1}listListeners()}{300}{subsubsection.5.327.1.1}%
-\contentsline {subsubsection}{\numberline {5.327.1.2}listReporters()}{300}{subsubsection.5.327.1.2}%
-\contentsline {subsubsection}{\numberline {5.327.1.3}listTags()}{301}{subsubsection.5.327.1.3}%
-\contentsline {subsubsection}{\numberline {5.327.1.4}listTests()}{301}{subsubsection.5.327.1.4}%
-\contentsline {subsubsection}{\numberline {5.327.1.5}testRunEnded()}{301}{subsubsection.5.327.1.5}%
-\contentsline {subsubsection}{\numberline {5.327.1.6}testRunStarting()}{301}{subsubsection.5.327.1.6}%
-\contentsline {section}{\numberline {5.328}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Xml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Writer Class Reference}{302}{section.5.328}%
-\contentsline {subsection}{\numberline {5.328.1}Member Function Documentation}{302}{subsection.5.328.1}%
-\contentsline {subsubsection}{\numberline {5.328.1.1}writeAttribute()}{302}{subsubsection.5.328.1.1}%
-\contentsline {chapter}{\numberline {6}File Documentation}{303}{chapter.6}%
-\contentsline {section}{\numberline {6.1}include/catch2/catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}amalgamated.hpp File Reference}{303}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Detailed Description}{330}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Macro Definition Documentation}{331}{subsection.6.1.2}%
-\contentsline {subsubsection}{\numberline {6.1.2.1}CATCH\_INTERNAL\_DEFINE\_EXPRESSION\_OPERATOR}{331}{subsubsection.6.1.2.1}%
-\contentsline {subsubsection}{\numberline {6.1.2.2}CATCH\_REGISTER\_LISTENER}{331}{subsubsection.6.1.2.2}%
-\contentsline {subsubsection}{\numberline {6.1.2.3}CATCH\_REGISTER\_REPORTER}{331}{subsubsection.6.1.2.3}%
-\contentsline {subsubsection}{\numberline {6.1.2.4}CATCH\_REGISTER\_TAG\_ALIAS}{332}{subsubsection.6.1.2.4}%
-\contentsline {subsubsection}{\numberline {6.1.2.5}GENERATE}{332}{subsubsection.6.1.2.5}%
-\contentsline {subsubsection}{\numberline {6.1.2.6}GENERATE\_COPY}{332}{subsubsection.6.1.2.6}%
-\contentsline {subsubsection}{\numberline {6.1.2.7}GENERATE\_REF}{332}{subsubsection.6.1.2.7}%
-\contentsline {subsubsection}{\numberline {6.1.2.8}INTERNAL\_CATCH\_BENCHMARK}{333}{subsubsection.6.1.2.8}%
-\contentsline {subsubsection}{\numberline {6.1.2.9}INTERNAL\_CATCH\_BENCHMARK\_ADVANCED}{333}{subsubsection.6.1.2.9}%
-\contentsline {subsubsection}{\numberline {6.1.2.10}INTERNAL\_CATCH\_CAPTURE}{333}{subsubsection.6.1.2.10}%
-\contentsline {subsubsection}{\numberline {6.1.2.11}INTERNAL\_CATCH\_DECLARE\_SIG\_TEST1}{333}{subsubsection.6.1.2.11}%
-\contentsline {subsubsection}{\numberline {6.1.2.12}INTERNAL\_CATCH\_DECLARE\_SIG\_TEST\_METHOD1}{334}{subsubsection.6.1.2.12}%
-\contentsline {subsubsection}{\numberline {6.1.2.13}INTERNAL\_CATCH\_DECLARE\_SIG\_TEST\_METHOD\_X}{334}{subsubsection.6.1.2.13}%
-\contentsline {subsubsection}{\numberline {6.1.2.14}INTERNAL\_CATCH\_DECLARE\_SIG\_TEST\_X}{334}{subsubsection.6.1.2.14}%
-\contentsline {subsubsection}{\numberline {6.1.2.15}INTERNAL\_CATCH\_DEFINE\_SIG\_TEST1}{334}{subsubsection.6.1.2.15}%
-\contentsline {subsubsection}{\numberline {6.1.2.16}INTERNAL\_CATCH\_DEFINE\_SIG\_TEST\_METHOD1}{335}{subsubsection.6.1.2.16}%
-\contentsline {subsubsection}{\numberline {6.1.2.17}INTERNAL\_CATCH\_DEFINE\_SIG\_TEST\_METHOD\_X}{335}{subsubsection.6.1.2.17}%
-\contentsline {subsubsection}{\numberline {6.1.2.18}INTERNAL\_CATCH\_DEFINE\_SIG\_TEST\_X}{335}{subsubsection.6.1.2.18}%
-\contentsline {subsubsection}{\numberline {6.1.2.19}INTERNAL\_CATCH\_DYNAMIC\_SECTION}{335}{subsubsection.6.1.2.19}%
-\contentsline {subsubsection}{\numberline {6.1.2.20}INTERNAL\_CATCH\_ELSE}{336}{subsubsection.6.1.2.20}%
-\contentsline {subsubsection}{\numberline {6.1.2.21}INTERNAL\_CATCH\_IF}{336}{subsubsection.6.1.2.21}%
-\contentsline {subsubsection}{\numberline {6.1.2.22}INTERNAL\_CATCH\_METHOD\_AS\_TEST\_CASE}{336}{subsubsection.6.1.2.22}%
-\contentsline {subsubsection}{\numberline {6.1.2.23}INTERNAL\_CATCH\_MSG}{336}{subsubsection.6.1.2.23}%
-\contentsline {subsubsection}{\numberline {6.1.2.24}INTERNAL\_CATCH\_NO\_THROW}{337}{subsubsection.6.1.2.24}%
-\contentsline {subsubsection}{\numberline {6.1.2.25}INTERNAL\_CATCH\_NTTP\_1}{337}{subsubsection.6.1.2.25}%
-\contentsline {subsubsection}{\numberline {6.1.2.26}INTERNAL\_CATCH\_NTTP\_REGISTER}{337}{subsubsection.6.1.2.26}%
-\contentsline {subsubsection}{\numberline {6.1.2.27}INTERNAL\_CATCH\_NTTP\_REGISTER0}{338}{subsubsection.6.1.2.27}%
-\contentsline {subsubsection}{\numberline {6.1.2.28}INTERNAL\_CATCH\_NTTP\_REGISTER\_METHOD}{338}{subsubsection.6.1.2.28}%
-\contentsline {subsubsection}{\numberline {6.1.2.29}INTERNAL\_CATCH\_NTTP\_REGISTER\_METHOD0}{338}{subsubsection.6.1.2.29}%
-\contentsline {subsubsection}{\numberline {6.1.2.30}INTERNAL\_CATCH\_REGISTER\_ENUM}{338}{subsubsection.6.1.2.30}%
-\contentsline {subsubsection}{\numberline {6.1.2.31}INTERNAL\_CATCH\_REGISTER\_TESTCASE}{339}{subsubsection.6.1.2.31}%
-\contentsline {subsubsection}{\numberline {6.1.2.32}INTERNAL\_CATCH\_SECTION}{339}{subsubsection.6.1.2.32}%
-\contentsline {subsubsection}{\numberline {6.1.2.33}INTERNAL\_CATCH\_TEMPLATE\_LIST\_TEST\_CASE\_2}{339}{subsubsection.6.1.2.33}%
-\contentsline {subsubsection}{\numberline {6.1.2.34}INTERNAL\_CATCH\_TEMPLATE\_LIST\_TEST\_CASE\_METHOD\_2}{340}{subsubsection.6.1.2.34}%
-\contentsline {subsubsection}{\numberline {6.1.2.35}INTERNAL\_CATCH\_TEMPLATE\_TEST\_CASE\_2}{340}{subsubsection.6.1.2.35}%
-\contentsline {subsubsection}{\numberline {6.1.2.36}INTERNAL\_CATCH\_TEMPLATE\_TEST\_CASE\_METHOD\_2}{341}{subsubsection.6.1.2.36}%
-\contentsline {subsubsection}{\numberline {6.1.2.37}INTERNAL\_CATCH\_TEST}{341}{subsubsection.6.1.2.37}%
-\contentsline {subsubsection}{\numberline {6.1.2.38}INTERNAL\_CATCH\_TEST\_CASE\_METHOD2}{342}{subsubsection.6.1.2.38}%
-\contentsline {subsubsection}{\numberline {6.1.2.39}INTERNAL\_CATCH\_TESTCASE2}{342}{subsubsection.6.1.2.39}%
-\contentsline {subsubsection}{\numberline {6.1.2.40}INTERNAL\_CATCH\_THROWS}{343}{subsubsection.6.1.2.40}%
-\contentsline {subsubsection}{\numberline {6.1.2.41}INTERNAL\_CATCH\_THROWS\_AS}{343}{subsubsection.6.1.2.41}%
-\contentsline {subsubsection}{\numberline {6.1.2.42}INTERNAL\_CATCH\_THROWS\_MATCHES}{343}{subsubsection.6.1.2.42}%
-\contentsline {subsubsection}{\numberline {6.1.2.43}INTERNAL\_CATCH\_THROWS\_STR\_MATCHES}{344}{subsubsection.6.1.2.43}%
-\contentsline {subsubsection}{\numberline {6.1.2.44}INTERNAL\_CATCH\_TRANSLATE\_EXCEPTION2}{344}{subsubsection.6.1.2.44}%
-\contentsline {subsubsection}{\numberline {6.1.2.45}INTERNAL\_CHECK\_THAT}{345}{subsubsection.6.1.2.45}%
-\contentsline {subsection}{\numberline {6.1.3}Enumeration Type Documentation}{345}{subsection.6.1.3}%
-\contentsline {subsubsection}{\numberline {6.1.3.1}ColourMode}{345}{subsubsection.6.1.3.1}%
-\contentsline {subsubsection}{\numberline {6.1.3.2}GenerateFrom}{345}{subsubsection.6.1.3.2}%
-\contentsline {subsubsection}{\numberline {6.1.3.3}ResultType}{345}{subsubsection.6.1.3.3}%
-\contentsline {subsection}{\numberline {6.1.4}Function Documentation}{346}{subsection.6.1.4}%
-\contentsline {subsubsection}{\numberline {6.1.4.1}Contains()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{346}{subsubsection.6.1.4.1}%
-\contentsline {subsubsection}{\numberline {6.1.4.2}Contains()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{346}{subsubsection.6.1.4.2}%
-\contentsline {subsubsection}{\numberline {6.1.4.3}convertIntoString()}{346}{subsubsection.6.1.4.3}%
-\contentsline {subsubsection}{\numberline {6.1.4.4}defaultListListeners()}{346}{subsubsection.6.1.4.4}%
-\contentsline {subsubsection}{\numberline {6.1.4.5}defaultListReporters()}{347}{subsubsection.6.1.4.5}%
-\contentsline {subsubsection}{\numberline {6.1.4.6}defaultListTags()}{347}{subsubsection.6.1.4.6}%
-\contentsline {subsubsection}{\numberline {6.1.4.7}defaultListTests()}{347}{subsubsection.6.1.4.7}%
-\contentsline {subsubsection}{\numberline {6.1.4.8}makeStream()}{347}{subsubsection.6.1.4.8}%
-\contentsline {subsubsection}{\numberline {6.1.4.9}operator\&\&()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{348}{subsubsection.6.1.4.9}%
-\contentsline {subsubsection}{\numberline {6.1.4.10}operator\&\&()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{348}{subsubsection.6.1.4.10}%
-\contentsline {subsubsection}{\numberline {6.1.4.11}operator\texttt {"|}\texttt {"|}()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{348}{subsubsection.6.1.4.11}%
-\contentsline {subsubsection}{\numberline {6.1.4.12}operator\texttt {"|}\texttt {"|}()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{348}{subsubsection.6.1.4.12}%
-\contentsline {subsubsection}{\numberline {6.1.4.13}parseReporterSpec()}{349}{subsubsection.6.1.4.13}%
-\contentsline {subsubsection}{\numberline {6.1.4.14}Predicate()}{349}{subsubsection.6.1.4.14}%
-\contentsline {subsubsection}{\numberline {6.1.4.15}registerReporterImpl()}{349}{subsubsection.6.1.4.15}%
-\contentsline {subsubsection}{\numberline {6.1.4.16}ulpDistance()}{349}{subsubsection.6.1.4.16}%
-\contentsline {chapter}{Index}{351}{section*.815}%
+\contentsline {chapter}{\numberline {1}Example\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}: 00-\/hello-\/world}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Contributor Code of Conduct}{3}{chapter.2}%
+\contentsline {chapter}{\numberline {3}SIR Multiple Runs (b)}{5}{chapter.3}%
+\contentsline {chapter}{\numberline {4}epiworld c++ template library}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Main features}{7}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Algorithm}{7}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Hello world (\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C++)}{8}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Surveillance simulation}{8}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Preliminary results}{9}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Cases detected}{10}{subsection.4.4.2}%
+\contentsline {chapter}{\numberline {5}MIT License}{11}{chapter.5}%
+\contentsline {chapter}{\numberline {6}model1}{13}{chapter.6}%
+\contentsline {chapter}{\numberline {7}EPI Simulator}{15}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Disease dynamics}{15}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Network dynamics}{15}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Contagion dynamics}{15}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Time dynamics}{15}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Updating agent\textquotesingle {}s status}{16}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}Other parameters}{16}{subsection.7.5.1}%
+\contentsline {chapter}{\numberline {8}Contributor Covenant Code of Conduct}{17}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Our Pledge}{17}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Our Standards}{17}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Enforcement Responsibilities}{18}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Scope}{18}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Enforcement}{18}{section.8.5}%
+\contentsline {section}{\numberline {8.6}Enforcement Guidelines}{18}{section.8.6}%
+\contentsline {subsection}{\numberline {8.6.1}1. Correction}{18}{subsection.8.6.1}%
+\contentsline {subsection}{\numberline {8.6.2}2. Warning}{18}{subsection.8.6.2}%
+\contentsline {subsection}{\numberline {8.6.3}3. Temporary Ban}{19}{subsection.8.6.3}%
+\contentsline {subsection}{\numberline {8.6.4}4. Permanent Ban}{19}{subsection.8.6.4}%
+\contentsline {section}{\numberline {8.7}Attribution}{19}{section.8.7}%
+\contentsline {chapter}{\numberline {9}MIT License}{21}{chapter.9}%
+\contentsline {chapter}{\numberline {10}epiworld 1.0}{23}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Class Index}{25}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Class List}{25}{section.11.1}%
+\contentsline {chapter}{\numberline {12}Class Documentation}{27}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Action$<$ TSeq $>$ Struct Template Reference}{27}{section.12.1}%
+\contentsline {subsection}{\numberline {12.1.1}Detailed Description}{28}{subsection.12.1.1}%
+\contentsline {subsection}{\numberline {12.1.2}Constructor \& Destructor Documentation}{28}{subsection.12.1.2}%
+\contentsline {subsubsection}{\numberline {12.1.2.1}Action()}{28}{subsubsection.12.1.2.1}%
+\contentsline {section}{\numberline {12.2}epiworld\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Action$<$ TSeq $>$ Struct Template Reference}{29}{section.12.2}%
+\contentsline {subsection}{\numberline {12.2.1}Detailed Description}{29}{subsection.12.2.1}%
+\contentsline {subsection}{\numberline {12.2.2}Constructor \& Destructor Documentation}{29}{subsection.12.2.2}%
+\contentsline {subsubsection}{\numberline {12.2.2.1}Action()}{29}{subsubsection.12.2.2.1}%
+\contentsline {section}{\numberline {12.3}Adj\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}List Class Reference}{30}{section.12.3}%
+\contentsline {subsection}{\numberline {12.3.1}Constructor \& Destructor Documentation}{30}{subsection.12.3.1}%
+\contentsline {subsubsection}{\numberline {12.3.1.1}AdjList()}{30}{subsubsection.12.3.1.1}%
+\contentsline {subsection}{\numberline {12.3.2}Member Function Documentation}{31}{subsection.12.3.2}%
+\contentsline {subsubsection}{\numberline {12.3.2.1}read\_edgelist()}{31}{subsubsection.12.3.2.1}%
+\contentsline {section}{\numberline {12.4}epiworld\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Adj\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}List Class Reference}{31}{section.12.4}%
+\contentsline {subsection}{\numberline {12.4.1}Constructor \& Destructor Documentation}{32}{subsection.12.4.1}%
+\contentsline {subsubsection}{\numberline {12.4.1.1}AdjList()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{32}{subsubsection.12.4.1.1}%
+\contentsline {subsubsection}{\numberline {12.4.1.2}AdjList()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{32}{subsubsection.12.4.1.2}%
+\contentsline {subsection}{\numberline {12.4.2}Member Function Documentation}{33}{subsection.12.4.2}%
+\contentsline {subsubsection}{\numberline {12.4.2.1}read\_edgelist()}{33}{subsubsection.12.4.2.1}%
+\contentsline {section}{\numberline {12.5}Agent$<$ TSeq $>$ Class Template Reference}{33}{section.12.5}%
+\contentsline {subsection}{\numberline {12.5.1}Detailed Description}{35}{subsection.12.5.1}%
+\contentsline {subsection}{\numberline {12.5.2}Member Function Documentation}{36}{subsection.12.5.2}%
+\contentsline {subsubsection}{\numberline {12.5.2.1}operator()()}{36}{subsubsection.12.5.2.1}%
+\contentsline {section}{\numberline {12.6}epiworld\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Agent$<$ TSeq $>$ Class Template Reference}{36}{section.12.6}%
+\contentsline {subsection}{\numberline {12.6.1}Detailed Description}{38}{subsection.12.6.1}%
+\contentsline {subsection}{\numberline {12.6.2}Member Function Documentation}{38}{subsection.12.6.2}%
+\contentsline {subsubsection}{\numberline {12.6.2.1}operator()()}{38}{subsubsection.12.6.2.1}%
+\contentsline {section}{\numberline {12.7}Agents\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sample$<$ TSeq $>$ Class Template Reference}{39}{section.12.7}%
+\contentsline {subsection}{\numberline {12.7.1}Detailed Description}{39}{subsection.12.7.1}%
+\contentsline {section}{\numberline {12.8}epiworld\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Agents\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sample$<$ TSeq $>$ Class Template Reference}{40}{section.12.8}%
+\contentsline {subsection}{\numberline {12.8.1}Detailed Description}{40}{subsection.12.8.1}%
+\contentsline {section}{\numberline {12.9}Data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base$<$ TSeq $>$ Class Template Reference}{41}{section.12.9}%
+\contentsline {subsection}{\numberline {12.9.1}Detailed Description}{42}{subsection.12.9.1}%
+\contentsline {subsection}{\numberline {12.9.2}Member Function Documentation}{42}{subsection.12.9.2}%
+\contentsline {subsubsection}{\numberline {12.9.2.1}record\_variant()}{42}{subsubsection.12.9.2.1}%
+\contentsline {subsubsection}{\numberline {12.9.2.2}reproductive\_number()}{43}{subsubsection.12.9.2.2}%
+\contentsline {subsubsection}{\numberline {12.9.2.3}transition\_probability()}{43}{subsubsection.12.9.2.3}%
+\contentsline {section}{\numberline {12.10}epiworld\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base$<$ TSeq $>$ Class Template Reference}{43}{section.12.10}%
+\contentsline {subsection}{\numberline {12.10.1}Detailed Description}{45}{subsection.12.10.1}%
+\contentsline {subsection}{\numberline {12.10.2}Member Function Documentation}{46}{subsection.12.10.2}%
+\contentsline {subsubsection}{\numberline {12.10.2.1}get\_today\_total()}{46}{subsubsection.12.10.2.1}%
+\contentsline {subsubsection}{\numberline {12.10.2.2}record\_variant()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{46}{subsubsection.12.10.2.2}%
+\contentsline {subsubsection}{\numberline {12.10.2.3}record\_variant()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{47}{subsubsection.12.10.2.3}%
+\contentsline {subsubsection}{\numberline {12.10.2.4}reproductive\_number()}{47}{subsubsection.12.10.2.4}%
+\contentsline {subsubsection}{\numberline {12.10.2.5}transition\_probability()}{47}{subsubsection.12.10.2.5}%
+\contentsline {section}{\numberline {12.11}Entity$<$ TSeq $>$ Class Template Reference}{48}{section.12.11}%
+\contentsline {section}{\numberline {12.12}epiworld\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Entity$<$ TSeq $>$ Class Template Reference}{48}{section.12.12}%
+\contentsline {section}{\numberline {12.13}epiworld\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::LFMCMC$<$ TData $>$ Class Template Reference}{49}{section.12.13}%
+\contentsline {subsection}{\numberline {12.13.1}Detailed Description}{49}{subsection.12.13.1}%
+\contentsline {section}{\numberline {12.14}LFMCMC$<$ TData $>$ Class Template Reference}{50}{section.12.14}%
+\contentsline {subsection}{\numberline {12.14.1}Detailed Description}{51}{subsection.12.14.1}%
+\contentsline {section}{\numberline {12.15}epiworld\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Model$<$ TSeq $>$ Class Template Reference}{51}{section.12.15}%
+\contentsline {subsection}{\numberline {12.15.1}Detailed Description}{59}{subsection.12.15.1}%
+\contentsline {subsection}{\numberline {12.15.2}Member Function Documentation}{59}{subsection.12.15.2}%
+\contentsline {subsubsection}{\numberline {12.15.2.1}add\_global\_action()}{59}{subsubsection.12.15.2.1}%
+\contentsline {subsubsection}{\numberline {12.15.2.2}add\_param()}{60}{subsubsection.12.15.2.2}%
+\contentsline {subsubsection}{\numberline {12.15.2.3}add\_status\_susceptible()}{60}{subsubsection.12.15.2.3}%
+\contentsline {subsubsection}{\numberline {12.15.2.4}init()}{61}{subsubsection.12.15.2.4}%
+\contentsline {subsubsection}{\numberline {12.15.2.5}pop\_from\_adjlist()}{61}{subsubsection.12.15.2.5}%
+\contentsline {subsubsection}{\numberline {12.15.2.6}reset()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{62}{subsubsection.12.15.2.6}%
+\contentsline {subsubsection}{\numberline {12.15.2.7}reset()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{62}{subsubsection.12.15.2.7}%
+\contentsline {subsubsection}{\numberline {12.15.2.8}reset\_status\_codes()}{62}{subsubsection.12.15.2.8}%
+\contentsline {subsubsection}{\numberline {12.15.2.9}run\_multiple()}{63}{subsubsection.12.15.2.9}%
+\contentsline {subsubsection}{\numberline {12.15.2.10}set\_agents\_data()}{63}{subsubsection.12.15.2.10}%
+\contentsline {subsubsection}{\numberline {12.15.2.11}set\_backup()}{63}{subsubsection.12.15.2.11}%
+\contentsline {subsubsection}{\numberline {12.15.2.12}set\_rand\_engine()}{64}{subsubsection.12.15.2.12}%
+\contentsline {subsubsection}{\numberline {12.15.2.13}set\_rewire\_fun()}{64}{subsubsection.12.15.2.13}%
+\contentsline {subsubsection}{\numberline {12.15.2.14}set\_user\_data()}{64}{subsubsection.12.15.2.14}%
+\contentsline {subsubsection}{\numberline {12.15.2.15}write\_data()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{65}{subsubsection.12.15.2.15}%
+\contentsline {subsubsection}{\numberline {12.15.2.16}write\_data()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{65}{subsubsection.12.15.2.16}%
+\contentsline {subsubsection}{\numberline {12.15.2.17}write\_edgelist()}{66}{subsubsection.12.15.2.17}%
+\contentsline {section}{\numberline {12.16}Model$<$ TSeq $>$ Class Template Reference}{66}{section.12.16}%
+\contentsline {subsection}{\numberline {12.16.1}Detailed Description}{72}{subsection.12.16.1}%
+\contentsline {subsection}{\numberline {12.16.2}Member Function Documentation}{73}{subsection.12.16.2}%
+\contentsline {subsubsection}{\numberline {12.16.2.1}add\_global\_action()}{73}{subsubsection.12.16.2.1}%
+\contentsline {subsubsection}{\numberline {12.16.2.2}reset()}{73}{subsubsection.12.16.2.2}%
+\contentsline {subsubsection}{\numberline {12.16.2.3}run\_multiple()}{74}{subsubsection.12.16.2.3}%
+\contentsline {subsubsection}{\numberline {12.16.2.4}set\_agents\_data()}{75}{subsubsection.12.16.2.4}%
+\contentsline {subsubsection}{\numberline {12.16.2.5}write\_data()}{75}{subsubsection.12.16.2.5}%
+\contentsline {section}{\numberline {12.17}epiworld\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Person$<$ TSeq $>$ Class Template Reference}{76}{section.12.17}%
+\contentsline {section}{\numberline {12.18}epiworld\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Person\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tools$<$ TSeq $>$ Class Template Reference}{77}{section.12.18}%
+\contentsline {subsection}{\numberline {12.18.1}Detailed Description}{77}{subsection.12.18.1}%
+\contentsline {section}{\numberline {12.19}Person\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tools$<$ TSeq $>$ Class Template Reference}{78}{section.12.19}%
+\contentsline {section}{\numberline {12.20}epiworld\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Person\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Viruses$<$ TSeq $>$ Class Template Reference}{78}{section.12.20}%
+\contentsline {subsection}{\numberline {12.20.1}Detailed Description}{78}{subsection.12.20.1}%
+\contentsline {section}{\numberline {12.21}epiworld\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Progress Class Reference}{79}{section.12.21}%
+\contentsline {subsection}{\numberline {12.21.1}Detailed Description}{79}{subsection.12.21.1}%
+\contentsline {section}{\numberline {12.22}Progress Class Reference}{79}{section.12.22}%
+\contentsline {subsection}{\numberline {12.22.1}Detailed Description}{79}{subsection.12.22.1}%
+\contentsline {section}{\numberline {12.23}epiworld\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Queue$<$ TSeq $>$ Class Template Reference}{80}{section.12.23}%
+\contentsline {subsection}{\numberline {12.23.1}Detailed Description}{80}{subsection.12.23.1}%
+\contentsline {section}{\numberline {12.24}Queue$<$ TSeq $>$ Class Template Reference}{80}{section.12.24}%
+\contentsline {subsection}{\numberline {12.24.1}Detailed Description}{81}{subsection.12.24.1}%
+\contentsline {section}{\numberline {12.25}Rand\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Graph Class Reference}{81}{section.12.25}%
+\contentsline {section}{\numberline {12.26}epiworld\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Tool$<$ TSeq $>$ Class Template Reference}{81}{section.12.26}%
+\contentsline {subsection}{\numberline {12.26.1}Detailed Description}{83}{subsection.12.26.1}%
+\contentsline {subsection}{\numberline {12.26.2}Member Function Documentation}{83}{subsection.12.26.2}%
+\contentsline {subsubsection}{\numberline {12.26.2.1}get\_susceptibility\_reduction()}{83}{subsubsection.12.26.2.1}%
+\contentsline {section}{\numberline {12.27}Tool$<$ TSeq $>$ Class Template Reference}{84}{section.12.27}%
+\contentsline {subsection}{\numberline {12.27.1}Detailed Description}{85}{subsection.12.27.1}%
+\contentsline {section}{\numberline {12.28}epiworld\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Tools$<$ TSeq $>$ Class Template Reference}{85}{section.12.28}%
+\contentsline {subsection}{\numberline {12.28.1}Detailed Description}{86}{subsection.12.28.1}%
+\contentsline {section}{\numberline {12.29}Tools$<$ TSeq $>$ Class Template Reference}{86}{section.12.29}%
+\contentsline {subsection}{\numberline {12.29.1}Detailed Description}{87}{subsection.12.29.1}%
+\contentsline {section}{\numberline {12.30}epiworld\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Tools\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}const$<$ TSeq $>$ Class Template Reference}{87}{section.12.30}%
+\contentsline {subsection}{\numberline {12.30.1}Detailed Description}{87}{subsection.12.30.1}%
+\contentsline {section}{\numberline {12.31}Tools\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}const$<$ TSeq $>$ Class Template Reference}{88}{section.12.31}%
+\contentsline {subsection}{\numberline {12.31.1}Detailed Description}{88}{subsection.12.31.1}%
+\contentsline {section}{\numberline {12.32}epiworld\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data$<$ TSeq $>$ Class Template Reference}{88}{section.12.32}%
+\contentsline {subsection}{\numberline {12.32.1}Detailed Description}{90}{subsection.12.32.1}%
+\contentsline {subsection}{\numberline {12.32.2}Constructor \& Destructor Documentation}{90}{subsection.12.32.2}%
+\contentsline {subsubsection}{\numberline {12.32.2.1}UserData()}{90}{subsubsection.12.32.2.1}%
+\contentsline {section}{\numberline {12.33}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data$<$ TSeq $>$ Class Template Reference}{90}{section.12.33}%
+\contentsline {subsection}{\numberline {12.33.1}Detailed Description}{91}{subsection.12.33.1}%
+\contentsline {subsection}{\numberline {12.33.2}Constructor \& Destructor Documentation}{92}{subsection.12.33.2}%
+\contentsline {subsubsection}{\numberline {12.33.2.1}UserData()}{92}{subsubsection.12.33.2.1}%
+\contentsline {section}{\numberline {12.34}epiworld\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::vec\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hasher$<$ T $>$ Struct Template Reference}{92}{section.12.34}%
+\contentsline {subsection}{\numberline {12.34.1}Detailed Description}{92}{subsection.12.34.1}%
+\contentsline {section}{\numberline {12.35}vec\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hasher$<$ T $>$ Struct Template Reference}{93}{section.12.35}%
+\contentsline {subsection}{\numberline {12.35.1}Detailed Description}{93}{subsection.12.35.1}%
+\contentsline {section}{\numberline {12.36}epiworld\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Virus$<$ TSeq $>$ Class Template Reference}{93}{section.12.36}%
+\contentsline {subsection}{\numberline {12.36.1}Detailed Description}{96}{subsection.12.36.1}%
+\contentsline {subsection}{\numberline {12.36.2}Member Function Documentation}{96}{subsection.12.36.2}%
+\contentsline {subsubsection}{\numberline {12.36.2.1}get\_prob\_infecting()}{96}{subsubsection.12.36.2.1}%
+\contentsline {section}{\numberline {12.37}Virus$<$ TSeq $>$ Class Template Reference}{97}{section.12.37}%
+\contentsline {subsection}{\numberline {12.37.1}Detailed Description}{98}{subsection.12.37.1}%
+\contentsline {section}{\numberline {12.38}epiworld\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Viruses$<$ TSeq $>$ Class Template Reference}{98}{section.12.38}%
+\contentsline {subsection}{\numberline {12.38.1}Detailed Description}{99}{subsection.12.38.1}%
+\contentsline {section}{\numberline {12.39}Viruses$<$ TSeq $>$ Class Template Reference}{99}{section.12.39}%
+\contentsline {subsection}{\numberline {12.39.1}Detailed Description}{100}{subsection.12.39.1}%
+\contentsline {section}{\numberline {12.40}epiworld\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Viruses\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}const$<$ TSeq $>$ Class Template Reference}{100}{section.12.40}%
+\contentsline {subsection}{\numberline {12.40.1}Detailed Description}{100}{subsection.12.40.1}%
+\contentsline {section}{\numberline {12.41}Viruses\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}const$<$ TSeq $>$ Class Template Reference}{101}{section.12.41}%
+\contentsline {subsection}{\numberline {12.41.1}Detailed Description}{101}{subsection.12.41.1}%
+\contentsline {chapter}{Index}{103}{section*.105}%
