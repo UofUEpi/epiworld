@@ -10,7 +10,7 @@
     \subitem {AdjList}, \hyperpage{23}
     \subitem {read\_edgelist}, \hyperpage{24}
   \item {Agent$<$ TSeq $>$}, \hyperpage{24}
-  \item {Agents$<$ TSeq $>$}, \hyperpage{26}
+  \item {AgentsSample$<$ TSeq $>$}, \hyperpage{26}
   \item {ANSI}
     \subitem {catch\_amalgamated.hpp}, \hyperpage{345}
 

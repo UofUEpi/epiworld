@@ -6,7 +6,7 @@ var searchData=
   ['agent_501',['Agent',['../class_agent.html',1,'']]],
   ['agent_3c_20int_20_3e_502',['Agent&lt; int &gt;',['../class_agent.html',1,'']]],
   ['agent_3c_20tseq_20_3e_503',['Agent&lt; TSeq &gt;',['../class_agent.html',1,'']]],
-  ['agents_504',['Agents',['../class_agents.html',1,'']]],
+  ['agentssample_504',['AgentsSample',['../class_agents_sample.html',1,'']]],
   ['allmatchmatcher_505',['AllMatchMatcher',['../class_catch_1_1_matchers_1_1_all_match_matcher.html',1,'Catch::Matchers']]],
   ['always_5ffalse_506',['always_false',['../struct_catch_1_1always__false.html',1,'Catch']]],
   ['anymatchmatcher_507',['AnyMatchMatcher',['../class_catch_1_1_matchers_1_1_any_match_matcher.html',1,'Catch::Matchers']]],

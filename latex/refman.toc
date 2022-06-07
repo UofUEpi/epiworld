@@ -19,7 +19,8 @@
 \contentsline {subsubsection}{\numberline {5.3.2.1}read\_edgelist()}{24}{subsubsection.5.3.2.1}%
 \contentsline {section}{\numberline {5.4}Agent$<$ TSeq $>$ Class Template Reference}{24}{section.5.4}%
 \contentsline {subsection}{\numberline {5.4.1}Detailed Description}{26}{subsection.5.4.1}%
-\contentsline {section}{\numberline {5.5}Agents$<$ TSeq $>$ Class Template Reference}{26}{section.5.5}%
+\contentsline {section}{\numberline {5.5}Agents\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sample$<$ TSeq $>$ Class Template Reference}{26}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Detailed Description}{27}{subsection.5.5.1}%
 \contentsline {section}{\numberline {5.6}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::All\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Match\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matcher$<$ Matcher $>$ Class Template Reference}{27}{section.5.6}%
 \contentsline {section}{\numberline {5.7}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::always\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}false$<$ T $>$ Struct Template Reference}{28}{section.5.7}%
 \contentsline {section}{\numberline {5.8}Catch\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Matchers\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Any\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Match\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matcher$<$ Matcher $>$ Class Template Reference}{29}{section.5.8}%
@@ -559,4 +560,4 @@
 \contentsline {subsubsection}{\numberline {6.1.4.14}Predicate()}{349}{subsubsection.6.1.4.14}%
 \contentsline {subsubsection}{\numberline {6.1.4.15}registerReporterImpl()}{349}{subsubsection.6.1.4.15}%
 \contentsline {subsubsection}{\numberline {6.1.4.16}ulpDistance()}{349}{subsubsection.6.1.4.16}%
-\contentsline {chapter}{Index}{351}{section*.814}%
+\contentsline {chapter}{Index}{351}{section*.815}%

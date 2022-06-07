@@ -8,7 +8,7 @@
 \indexentry{AdjList@{AdjList}!read\_edgelist@{read\_edgelist}|hyperpage}{24}
 \indexentry{read\_edgelist@{read\_edgelist}!AdjList@{AdjList}|hyperpage}{24}
 \indexentry{Agent$<$ TSeq $>$@{Agent$<$ TSeq $>$}|hyperpage}{24}
-\indexentry{Agents$<$ TSeq $>$@{Agents$<$ TSeq $>$}|hyperpage}{26}
+\indexentry{AgentsSample$<$ TSeq $>$@{AgentsSample$<$ TSeq $>$}|hyperpage}{26}
 \indexentry{Catch::Matchers::AllMatchMatcher$<$ Matcher $>$@{Catch::Matchers::AllMatchMatcher$<$ Matcher $>$}|hyperpage}{27}
 \indexentry{Catch::always\_false$<$ T $>$@{Catch::always\_false$<$ T $>$}|hyperpage}{28}
 \indexentry{Catch::Matchers::AnyMatchMatcher$<$ Matcher $>$@{Catch::Matchers::AnyMatchMatcher$<$ Matcher $>$}|hyperpage}{29}

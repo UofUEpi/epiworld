@@ -8,7 +8,7 @@ var searchData=
   ['agent_5',['Agent',['../class_agent.html',1,'']]],
   ['agent_3c_20int_20_3e_6',['Agent&lt; int &gt;',['../class_agent.html',1,'']]],
   ['agent_3c_20tseq_20_3e_7',['Agent&lt; TSeq &gt;',['../class_agent.html',1,'']]],
-  ['agents_8',['Agents',['../class_agents.html#a050efa3bb00ced346db0967554748699',1,'Agents::Agents(Agents&lt; TSeq &gt; &amp;&amp;a)=delete'],['../class_agents.html#ac75cd3fc6094a6afa76c09b275f5bc2b',1,'Agents::Agents(const Agents&lt; TSeq &gt; &amp;a)=delete'],['../class_agents.html#acdcae23662d27d82091942b679ffa14f',1,'Agents::Agents()=delete'],['../class_agents.html',1,'Agents&lt; TSeq &gt;']]],
+  ['agentssample_8',['AgentsSample',['../class_agents_sample.html#a72a5fbd68c783534d832c2a805fb721c',1,'AgentsSample::AgentsSample(AgentsSample&lt; TSeq &gt; &amp;&amp;a)=delete'],['../class_agents_sample.html#a32788c41c036370466e6a1ea3744f707',1,'AgentsSample::AgentsSample(const AgentsSample&lt; TSeq &gt; &amp;a)=delete'],['../class_agents_sample.html#a717cf37c3b957528979241e0170527ad',1,'AgentsSample::AgentsSample()=delete'],['../class_agents_sample.html',1,'AgentsSample&lt; TSeq &gt;']]],
   ['allmatchmatcher_9',['AllMatchMatcher',['../class_catch_1_1_matchers_1_1_all_match_matcher.html',1,'Catch::Matchers']]],
   ['always_5ffalse_10',['always_false',['../struct_catch_1_1always__false.html',1,'Catch']]],
   ['ansi_11',['ANSI',['../catch__amalgamated_8hpp.html#a91308e87521e370e591065a22b010025ad403321c965e6b83c88e6d3b1eca5270',1,'Catch']]],
