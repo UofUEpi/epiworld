@@ -87,9 +87,9 @@ Collaboration diagram for Action&lt; TSeq &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a07f9963681b7409f9034fa654fd691de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_action.html#a07f9963681b7409f9034fa654fd691de">Action</a> (<a class="el" href="class_agent.html">Agent</a>&lt; TSeq &gt; *agent_, VirusPtr&lt; TSeq &gt; virus_, ToolPtr&lt; TSeq &gt; tool_, epiworld_fast_int new_status_, epiworld_fast_int queue_, ActionFun&lt; TSeq &gt; call_)</td></tr>
-<tr class="memdesc:a07f9963681b7409f9034fa654fd691de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="struct_action.html" title="Action data for update an agent.">Action</a> object.  <a href="struct_action.html#a07f9963681b7409f9034fa654fd691de">More...</a><br /></td></tr>
-<tr class="separator:a07f9963681b7409f9034fa654fd691de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bbda9f410bea38da0dd4058ee32afaf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_action.html#a9bbda9f410bea38da0dd4058ee32afaf">Action</a> (<a class="el" href="class_agent.html">Agent</a>&lt; TSeq &gt; *agent_, VirusPtr&lt; TSeq &gt; virus_, ToolPtr&lt; TSeq &gt; tool_, <a class="el" href="class_entity.html">Entity</a>&lt; TSeq &gt; *entity_, epiworld_fast_int new_status_, epiworld_fast_int queue_, ActionFun&lt; TSeq &gt; call_, int idx_agent_, int idx_object_)</td></tr>
+<tr class="memdesc:a9bbda9f410bea38da0dd4058ee32afaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="struct_action.html" title="Action data for update an agent.">Action</a> object.  <a href="struct_action.html#a9bbda9f410bea38da0dd4058ee32afaf">More...</a><br /></td></tr>
+<tr class="separator:a9bbda9f410bea38da0dd4058ee32afaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -102,6 +102,9 @@ VirusPtr&lt; TSeq &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>vir
 <tr class="memitem:ab4a25fa61fbcc167d2b065ec911bf7d4"><td class="memItemLeft" align="right" valign="top"><a id="ab4a25fa61fbcc167d2b065ec911bf7d4"></a>
 ToolPtr&lt; TSeq &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>tool</b></td></tr>
 <tr class="separator:ab4a25fa61fbcc167d2b065ec911bf7d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace2e96ce58c1a2604ac7b5953b87a093"><td class="memItemLeft" align="right" valign="top"><a id="ace2e96ce58c1a2604ac7b5953b87a093"></a>
+<a class="el" href="class_entity.html">Entity</a>&lt; TSeq &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>entity</b></td></tr>
+<tr class="separator:ace2e96ce58c1a2604ac7b5953b87a093"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8f217ed63a2686c44289c7cf44adcd3"><td class="memItemLeft" align="right" valign="top"><a id="af8f217ed63a2686c44289c7cf44adcd3"></a>
 epiworld_fast_int&#160;</td><td class="memItemRight" valign="bottom"><b>new_status</b></td></tr>
 <tr class="separator:af8f217ed63a2686c44289c7cf44adcd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -111,6 +114,12 @@ epiworld_fast_int&#160;</td><td class="memItemRight" valign="bottom"><b>queue</b
 <tr class="memitem:a52521c8ca7ceb943be88a3edd1bc51ff"><td class="memItemLeft" align="right" valign="top"><a id="a52521c8ca7ceb943be88a3edd1bc51ff"></a>
 ActionFun&lt; TSeq &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>call</b></td></tr>
 <tr class="separator:a52521c8ca7ceb943be88a3edd1bc51ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5d5151af6b4b4335ff964afa3cf46e7"><td class="memItemLeft" align="right" valign="top"><a id="af5d5151af6b4b4335ff964afa3cf46e7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>idx_agent</b></td></tr>
+<tr class="separator:af5d5151af6b4b4335ff964afa3cf46e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57d927b116c4c792c36a4bae9be74809"><td class="memItemLeft" align="right" valign="top"><a id="a57d927b116c4c792c36a4bae9be74809"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>idx_object</b></td></tr>
+<tr class="separator:a57d927b116c4c792c36a4bae9be74809"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename TSeq&gt;<br />
@@ -124,8 +133,8 @@ struct Action&lt; TSeq &gt;</h3>
   </dd>
 </dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a07f9963681b7409f9034fa654fd691de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07f9963681b7409f9034fa654fd691de">&#9670;&nbsp;</a></span>Action()</h2>
+<a id="a9bbda9f410bea38da0dd4058ee32afaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bbda9f410bea38da0dd4058ee32afaf">&#9670;&nbsp;</a></span>Action()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -156,6 +165,12 @@ template&lt;typename TSeq &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="class_entity.html">Entity</a>&lt; TSeq &gt; *&#160;</td>
+          <td class="paramname"><em>entity_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">epiworld_fast_int&#160;</td>
           <td class="paramname"><em>new_status_</em>, </td>
         </tr>
@@ -169,7 +184,19 @@ template&lt;typename TSeq &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">ActionFun&lt; TSeq &gt;&#160;</td>
-          <td class="paramname"><em>call_</em>&#160;</td>
+          <td class="paramname"><em>call_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idx_agent_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idx_object_</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -196,6 +223,8 @@ template&lt;typename TSeq &gt; </div>
     <tr><td class="paramname">new_status_</td><td>Next status </td></tr>
     <tr><td class="paramname">queue_</td><td>Efect on the queue </td></tr>
     <tr><td class="paramname">call_</td><td>The action call (if needed) </td></tr>
+    <tr><td class="paramname">idx_agent_</td><td>Location of agent in object. </td></tr>
+    <tr><td class="paramname">idx_object_</td><td>Location of object in agent. </td></tr>
   </table>
   </dd>
 </dl>

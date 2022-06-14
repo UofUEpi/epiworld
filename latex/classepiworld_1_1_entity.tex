@@ -3,6 +3,12 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classepiworld_1_1_entity_a02fc8a83131e098f3c4fdf5fea1c9878}\label{classepiworld_1_1_entity_a02fc8a83131e098f3c4fdf5fea1c9878}} 
+{\bfseries Entity} (\mbox{\hyperlink{classepiworld_1_1_entity}{Entity}}$<$ TSeq $>$ \&\&e)=delete
+\item 
+\mbox{\Hypertarget{classepiworld_1_1_entity_a4c43cc9f19295b226034f83b2ec93e53}\label{classepiworld_1_1_entity_a4c43cc9f19295b226034f83b2ec93e53}} 
+{\bfseries Entity} (std\+::string name)
+\item 
 \mbox{\Hypertarget{classepiworld_1_1_entity_a08d621a708f27628dc066770216745eb}\label{classepiworld_1_1_entity_a08d621a708f27628dc066770216745eb}} 
 void {\bfseries add\+\_\+agent} (\mbox{\hyperlink{classepiworld_1_1_agent}{Agent}}$<$ TSeq $>$ \&p)
 \item 
@@ -32,6 +38,24 @@ std\+::vector$<$ \mbox{\hyperlink{classepiworld_1_1_agent}{Agent}}$<$ TSeq $>$ $
 \item 
 \mbox{\Hypertarget{classepiworld_1_1_entity_ab5fb3cce28cf0abaa1021a4e07976488}\label{classepiworld_1_1_entity_ab5fb3cce28cf0abaa1021a4e07976488}} 
 std\+::vector$<$ \mbox{\hyperlink{classepiworld_1_1_agent}{Agent}}$<$ TSeq $>$ $\ast$ $>$\+::const\+\_\+iterator {\bfseries end} () const
+\item 
+\mbox{\Hypertarget{classepiworld_1_1_entity_afbd3cd347b31afde92f0fe8f8308984a}\label{classepiworld_1_1_entity_afbd3cd347b31afde92f0fe8f8308984a}} 
+int {\bfseries get\+\_\+id} () const noexcept
+\item 
+\mbox{\Hypertarget{classepiworld_1_1_entity_a5087eede601ab9986eb72b3824fb1a88}\label{classepiworld_1_1_entity_a5087eede601ab9986eb72b3824fb1a88}} 
+const std\+::string \& {\bfseries get\+\_\+name} () const noexcept
+\item 
+\mbox{\Hypertarget{classepiworld_1_1_entity_aed940a451a7ddd9f39b878691ee8dc41}\label{classepiworld_1_1_entity_aed940a451a7ddd9f39b878691ee8dc41}} 
+void {\bfseries set\+\_\+status} (epiworld\+\_\+fast\+\_\+int init, epiworld\+\_\+fast\+\_\+int post)
+\item 
+\mbox{\Hypertarget{classepiworld_1_1_entity_a36281005f7a67f021f424931a20821ec}\label{classepiworld_1_1_entity_a36281005f7a67f021f424931a20821ec}} 
+void {\bfseries set\+\_\+queue} (epiworld\+\_\+fast\+\_\+int init, epiworld\+\_\+fast\+\_\+int post)
+\item 
+\mbox{\Hypertarget{classepiworld_1_1_entity_a2aacb1113088477ed1b99d21a02d2260}\label{classepiworld_1_1_entity_a2aacb1113088477ed1b99d21a02d2260}} 
+void {\bfseries get\+\_\+status} (epiworld\+\_\+fast\+\_\+int $\ast$init, epiworld\+\_\+fast\+\_\+int $\ast$post)
+\item 
+\mbox{\Hypertarget{classepiworld_1_1_entity_ad1d3636d18dc51ee8eca7261a6d022d5}\label{classepiworld_1_1_entity_ad1d3636d18dc51ee8eca7261a6d022d5}} 
+void {\bfseries get\+\_\+queue} (epiworld\+\_\+fast\+\_\+int $\ast$init, epiworld\+\_\+fast\+\_\+int $\ast$post)
 \end{DoxyCompactItemize}
 \doxysubsection*{Friends}
 \begin{DoxyCompactItemize}
@@ -44,6 +68,12 @@ class {\bfseries Agents\+Sample$<$ TSeq $>$}
 \item 
 \mbox{\Hypertarget{classepiworld_1_1_entity_aa4532e80368ab60b4fda5bb917f6f0ca}\label{classepiworld_1_1_entity_aa4532e80368ab60b4fda5bb917f6f0ca}} 
 class {\bfseries Model$<$ TSeq $>$}
+\item 
+\mbox{\Hypertarget{classepiworld_1_1_entity_a622a497f9a29a8bbd8681a8edb4e4b1f}\label{classepiworld_1_1_entity_a622a497f9a29a8bbd8681a8edb4e4b1f}} 
+void {\bfseries default\+\_\+add\+\_\+entity} (\mbox{\hyperlink{structepiworld_1_1_action}{Action}}$<$ TSeq $>$ \&a, \mbox{\hyperlink{classepiworld_1_1_model}{Model}}$<$ TSeq $>$ $\ast$m)
+\item 
+\mbox{\Hypertarget{classepiworld_1_1_entity_a7ec73f896617a4997dbd2311a11bc835}\label{classepiworld_1_1_entity_a7ec73f896617a4997dbd2311a11bc835}} 
+void {\bfseries default\+\_\+rm\+\_\+entity} (\mbox{\hyperlink{structepiworld_1_1_action}{Action}}$<$ TSeq $>$ \&a, \mbox{\hyperlink{classepiworld_1_1_model}{Model}}$<$ TSeq $>$ $\ast$m)
 \end{DoxyCompactItemize}
 
 

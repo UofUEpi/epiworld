@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['action_0',['Action',['../struct_action.html',1,'Action&lt; TSeq &gt;'],['../struct_action.html#a07f9963681b7409f9034fa654fd691de',1,'Action::Action()'],['../structepiworld_1_1_action.html#a851797a312736633711d9b2f03396bd2',1,'epiworld::Action::Action()'],['../structepiworld_1_1_action.html',1,'epiworld::Action&lt; TSeq &gt;']]],
+  ['action_0',['Action',['../struct_action.html',1,'Action&lt; TSeq &gt;'],['../struct_action.html#a9bbda9f410bea38da0dd4058ee32afaf',1,'Action::Action()'],['../structepiworld_1_1_action.html#a4b4d766f062bfbbcca2f7a09e17a1c43',1,'epiworld::Action::Action()'],['../structepiworld_1_1_action.html',1,'epiworld::Action&lt; TSeq &gt;']]],
   ['add_5fglobal_5faction_1',['add_global_action',['../class_model.html#adc3b2119335ffa4b0128123be919f454',1,'Model::add_global_action()'],['../classepiworld_1_1_model.html#ac935c51bfdbf17d5061b325d971f10fd',1,'epiworld::Model::add_global_action(std::function&lt; void(Model&lt; TSeq &gt; *)&gt; fun, int date)'],['../classepiworld_1_1_model.html#adc3b2119335ffa4b0128123be919f454',1,'epiworld::Model::add_global_action(std::function&lt; void(Model&lt; TSeq &gt; *)&gt; fun, int date=-99)']]],
   ['add_5fparam_2',['add_param',['../classepiworld_1_1_model.html#a9aa4e37291fdc6e6b8643e5d28080961',1,'epiworld::Model']]],
   ['add_5fstatus_5fsusceptible_3',['add_status_susceptible',['../classepiworld_1_1_model.html#ad8dcbd73a6af4d2136641d66121c0c51',1,'epiworld::Model']]],

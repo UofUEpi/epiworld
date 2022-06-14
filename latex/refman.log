@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Alpine Linux) (preloaded format=pdflatex 2022.6.7)  7 JUN 2022 20:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Alpine Linux) (preloaded format=pdflatex 2022.6.14)  14 JUN 2022 23:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1042,15 +1042,15 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 8.09995pt on input line 26.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 8.99994pt on input line 52.
+(Font)              scaled to size 8.99994pt on input line 61.
  [27
 
 ]
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 69.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 78.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 69.
-) (./structepiworld_1_1_action.tex
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 78.
+ [28]) (./structepiworld_1_1_action.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1067,14 +1067,14 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[28] [29]) (./class_adj_list.tex
+[29]) (./class_adj_list.tex [30]
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <9> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 27.
- [30]) (./classepiworld_1_1_adj_list.tex
-[31]
+ [31]) (./classepiworld_1_1_adj_list.tex
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 7.19995pt on input line 63.
- [32]) (./class_agent.tex
+
+[32] [33]) (./class_agent.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1091,13 +1091,20 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[33] [34]
-Underfull \hbox (badness 10000) detected at line 137
+[34]
+Underfull \hbox (badness 1590) in paragraph at lines 130--133
+[][] \T1/phv/m/n/10 void \T1/phv/b/n/10 rm[]_[]entity \T1/phv/m/n/10 (epiworld[
+]_[]fast[]_[]uint entity[]_[]idx, epiworld[]_[]fast[]_[]int status[]_[]new=-99,
+ epiworld[]_[]fast[]_[]int
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 149
 [][][]
  []
 
-[35]
-Underfull \hbox (badness 10000) detected at line 236
+[35] [36]
+Underfull \hbox (badness 10000) detected at line 254
 [][][]
  []
 
@@ -1118,13 +1125,24 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[36]
-Underfull \hbox (badness 10000) detected at line 137
+
+Overfull \vbox (16.19313pt too high) has occurred while \output is active []
+
+
+[37]
+Underfull \hbox (badness 1590) in paragraph at lines 130--133
+[][] \T1/phv/m/n/10 void \T1/phv/b/n/10 rm[]_[]entity \T1/phv/m/n/10 (epiworld[
+]_[]fast[]_[]uint entity[]_[]idx, epiworld[]_[]fast[]_[]int status[]_[]new=-99,
+ epiworld[]_[]fast[]_[]int
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 149
 [][][]
  []
 
-[37] [38]
-Underfull \hbox (badness 10000) detected at line 236
+[38]
+Underfull \hbox (badness 10000) detected at line 254
 [][][]
  []
 
@@ -1162,7 +1180,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-) (./class_data_base.tex
+[40]) (./class_data_base.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1179,15 +1197,15 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[40]
+[41]
 Underfull \hbox (badness 10000) detected at line 79
 [][][]
  []
 
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 80.
-[41] [42]
-Underfull \hbox (badness 10000) detected at line 197
+[42] [43]
+Underfull \hbox (badness 10000) detected at line 199
 [][][]
  []
 
@@ -1208,40 +1226,42 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[43] [44pdfTeX warning (ext4): destination with the same identifier (name{class
-epiworld_1_1_data_base_a427e8c011bc973c8360e4396ed29b54b}) has been already use
-d, duplicate ignored
+[44pdfTeX warning (ext4): destination with the same identifier (name{classepiwo
+rld_1_1_data_base_a427e8c011bc973c8360e4396ed29b54b}) has been already used, du
+plicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.149 \mbox
-           {\Hypertarget{classepiworld_1_1_data_base_aafc346ba158cb2999d6a9e...
+l.119 \mbox
+           {\Hypertarget{classepiworld_1_1_data_base_a876ccc8c3c19867176e15c...
 pdfTeX warning (ext4): destination with the same identifier (name{classepiworld
 _1_1_data_base_adfc7e74e5946d3948cb1bbc9709017d6}) has been already used, dupli
 cate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.149 \mbox
-           {\Hypertarget{classepiworld_1_1_data_base_aafc346ba158cb2999d6a9e...
+l.119 \mbox
+           {\Hypertarget{classepiworld_1_1_data_base_a876ccc8c3c19867176e15c...
 ]
 Underfull \hbox (badness 10000) detected at line 158
 [][][]
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{classepiworld
-_1_1_data_base_a1ef5bc8fbaabf3f5b2506de0f1b9b3f4}) has been already used, dupli
-cate ignored
-<to be read again> 
-                   \relax 
-l.174 ..._base_a1ef5bc8fbaabf3f5b2506de0f1b9b3f4}}
-                                                   [45]
+[45pdfTeX warning (ext4): destination with the same identifier (name{classepiwo
+rld_1_1_data_base_a1ef5bc8fbaabf3f5b2506de0f1b9b3f4}) has been already used, du
+plicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.205 \mbox
+           {\Hypertarget{classepiworld_1_1_data_base_a5a80a0876b1453c31734f5...
+]
 Underfull \hbox (badness 10000) detected at line 249
 [][][]
  []
 
-[46]
-Underfull \hbox (badness 10000) detected at line 319
+[46] [47]
+Underfull \hbox (badness 10000) detected at line 321
 [][][]
  []
 
@@ -1262,7 +1282,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[47]) (./classepiworld_1_1_entity.tex
+) (./classepiworld_1_1_entity.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1279,7 +1299,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-) (./classepiworld_1_1_l_f_m_c_m_c.tex
+[48]) (./classepiworld_1_1_l_f_m_c_m_c.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1296,7 +1316,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[48] [49]) (./class_l_f_m_c_m_c.tex
+[49]
+Overfull \vbox (1.70619pt too high) has occurred while \output is active []
+
+
+[50]) (./class_l_f_m_c_m_c.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1313,7 +1337,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[50]) (./classepiworld_1_1_model.tex
+[51]) (./classepiworld_1_1_model.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1330,19 +1354,19 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[51] [52] [53]pdfTeX warning (ext4): destination with the same identifier (name
+[52] [53] [54]pdfTeX warning (ext4): destination with the same identifier (name
 {classepiworld_1_1_model_aae43e087c6d2fd8c1f0ad92d50f78eb8}) has been already u
 sed, duplicate ignored
 <to be read again> 
                    \relax 
 l.329 ...model_aae43e087c6d2fd8c1f0ad92d50f78eb8}}
-                                                   [54] [55]
-Underfull \hbox (badness 10000) detected at line 492
+                                                   [55] [56]
+Underfull \hbox (badness 10000) detected at line 501
 [][][]
  []
 
 
-Underfull \hbox (badness 808) in paragraph at lines 497--500
+Underfull \hbox (badness 808) in paragraph at lines 506--509
 [][] \T1/phv/m/n/10 void \T1/phv/b/n/10 set[]_[]rewire[]_[]fun \T1/phv/m/n/10 (
 std[]::function$\OML/cmm/m/it/10 <$ \T1/phv/m/n/10 void(std[]::vector$\OML/cmm/
 m/it/10 <$ []$<$ \T1/phv/m/n/10 TSeq $\OML/cmm/m/it/10 >$$>$ $\OMS/cmsy/m/n/10 
@@ -1355,14 +1379,14 @@ _1_1_model_ac0c29dd30c5d89399a10922e29fcfed2}) has been already used, duplicate
  ignored
 <to be read again> 
                    \relax 
-l.525 ...model_ac0c29dd30c5d89399a10922e29fcfed2}}
+l.534 ...model_ac0c29dd30c5d89399a10922e29fcfed2}}
                                                   
-Underfull \hbox (badness 10000) detected at line 537
+Underfull \hbox (badness 10000) detected at line 546
 [][][]
  []
 
-[56]
-Underfull \hbox (badness 10000) detected at line 600
+[57]
+Underfull \hbox (badness 10000) detected at line 609
 [][][]
  []
 
@@ -1371,45 +1395,41 @@ _1_1_model_ae29e3a0872a42368b168b01cb9167885}) has been already used, duplicate
  ignored
 <to be read again> 
                    \relax 
-l.655 ...model_ae29e3a0872a42368b168b01cb9167885}}
-                                                   [57]
-Underfull \hbox (badness 10000) detected at line 677
+l.664 ...model_ae29e3a0872a42368b168b01cb9167885}}
+                                                   [58]
+Underfull \hbox (badness 10000) detected at line 686
 [][][]
  []
 
-[58]pdfTeX warning (ext4): destination with the same identifier (name{classepiw
+[59]pdfTeX warning (ext4): destination with the same identifier (name{classepiw
 orld_1_1_model_a6039bba88efd91d8993a96c154f1ac28}) has been already used, dupli
 cate ignored
 <to be read again> 
                    \relax 
-l.808 ...model_a6039bba88efd91d8993a96c154f1ac28}}
+l.817 ...model_a6039bba88efd91d8993a96c154f1ac28}}
                                                   pdfTeX warning (ext4): destin
 ation with the same identifier (name{classepiworld_1_1_model_ac5cf9b418167050c9
 b842dc847a78f48}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.814 ...model_ac5cf9b418167050c9b842dc847a78f48}}
-                                                   [59]
-Underfull \hbox (badness 10000) detected at line 880
-[][][]
- []
-
-[60]
-Underfull \hbox (badness 10000) detected at line 905
+l.823 ...model_ac5cf9b418167050c9b842dc847a78f48}}
+                                                   [60]
+Underfull \hbox (badness 10000) detected at line 889
 [][][]
  []
 
 
-Overfull \vbox (23.45503pt too high) has occurred while \output is active []
+Underfull \hbox (badness 10000) detected at line 914
+[][][]
+ []
 
-
-[61] [62]
+[61] [62] [63]
 Overfull \hbox (3.9776pt too wide) in paragraph at lines 3--3
 []\T1/phv/m/sl/10 ncols[] 
  []
 
-[63]
-Underfull \hbox (badness 10000) in paragraph at lines 1081--1083
+[64]
+Underfull \hbox (badness 10000) in paragraph at lines 1090--1092
 |  \T1/pcr/m/n/8 std[]::function$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 void(std[]::v
 ector$\OML/cmm/m/it/8 <$ []$<$ \T1/pcr/m/n/8 TSeq $\OML/cmm/m/it/8 >$$>$ $\OMS/
 cmsy/m/n/8 ^^C$\T1/pcr/m/n/8 , []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 TSeq $\OML/c
@@ -1417,15 +1437,11 @@ mm/m/it/8 >$ $\OMS/cmsy/m/n/8 ^^C$\T1/pcr/m/n/8 , epiworld[]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1095
+Underfull \hbox (badness 10000) detected at line 1104
 [][][]
  []
 
-[64]
-Overfull \vbox (40.90529pt too high) has occurred while \output is active []
-
-
-[65]) (./class_model.tex
+[65] [66]) (./class_model.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1442,13 +1458,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[66] [67]
-Underfull \hbox (badness 10000) detected at line 228
+[67] [68]
+Underfull \hbox (badness 10000) detected at line 237
 [][][]
  []
 
 
-Underfull \hbox (badness 808) in paragraph at lines 233--236
+Underfull \hbox (badness 808) in paragraph at lines 242--245
 [][] \T1/phv/m/n/10 void \T1/phv/b/n/10 set[]_[]rewire[]_[]fun \T1/phv/m/n/10 (
 std[]::function$\OML/cmm/m/it/10 <$ \T1/phv/m/n/10 void(std[]::vector$\OML/cmm/
 m/it/10 <$ []$<$ \T1/phv/m/n/10 TSeq $\OML/cmm/m/it/10 >$$>$ $\OMS/cmsy/m/n/10 
@@ -1456,22 +1472,22 @@ m/it/10 <$ []$<$ \T1/phv/m/n/10 TSeq $\OML/cmm/m/it/10 >$$>$ $\OMS/cmsy/m/n/10
 10 >$ $\OMS/cmsy/m/n/10 ^^C$\T1/phv/m/n/10 ,
  []
 
-[68]
-Underfull \hbox (badness 10000) detected at line 273
-[][][]
- []
-
 [69]
-Underfull \hbox (badness 10000) detected at line 336
+Underfull \hbox (badness 10000) detected at line 282
 [][][]
  []
 
 [70]
-Underfull \hbox (badness 10000) detected at line 410
+Underfull \hbox (badness 10000) detected at line 345
 [][][]
  []
 
-[71] [72] [73] [74]
+[71]
+Underfull \hbox (badness 10000) detected at line 419
+[][][]
+ []
+
+[72] [73] [74] [75]
 Overfull \hbox (3.9776pt too wide) in paragraph at lines 3--3
 []\T1/phv/m/sl/10 ncols[] 
  []
@@ -1480,7 +1496,7 @@ Overfull \hbox (3.9776pt too wide) in paragraph at lines 3--3
 Overfull \vbox (9.44873pt too high) has occurred while \output is active []
 
 
-[75]) (./classepiworld_1_1_person.tex
+[76]) (./classepiworld_1_1_person.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1514,7 +1530,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[76]) (./class_person_tools.tex
+[77]) (./class_person_tools.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1531,7 +1547,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[77]) (./classepiworld_1_1_person_viruses.tex
+[78]) (./classepiworld_1_1_person_viruses.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1548,7 +1564,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-) (./classepiworld_1_1_progress.tex [78]) (./class_progress.tex)
+) (./classepiworld_1_1_progress.tex [79]) (./class_progress.tex)
 (./classepiworld_1_1_queue.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1566,7 +1582,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[79]) (./class_queue.tex
+[80]) (./class_queue.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1583,7 +1599,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[80]) (./class_rand_graph.tex) (./classepiworld_1_1_tool.tex
+[81]) (./class_rand_graph.tex) (./classepiworld_1_1_tool.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1600,17 +1616,17 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[81]
+[82]
 Overfull \vbox (0.94257pt too high) has occurred while \output is active []
 
 
-[82]
+[83]
 Underfull \hbox (badness 10000) detected at line 151
 [][][]
  []
 
-[83]
-Underfull \hbox (badness 10000) detected at line 268
+[84] [85]
+Underfull \hbox (badness 10000) detected at line 262
 [][][]
  []
 
@@ -1631,11 +1647,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-
-Overfull \vbox (0.30345pt too high) has occurred while \output is active []
-
-
-[84]
+[86]
 Underfull \hbox (badness 10000) detected at line 74
 [][][]
  []
@@ -1657,7 +1669,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[85]) (./class_tools.tex
+[87]) (./class_tools.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1674,7 +1686,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[86]) (./classepiworld_1_1_tools__const.tex
+[88]) (./classepiworld_1_1_tools__const.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1695,7 +1707,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Overfull \vbox (5.6108pt too high) has occurred while \output is active []
 
 
-[87]) (./class_tools__const.tex
+[89]) (./class_tools__const.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1729,12 +1741,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[88]
+[90]
 Underfull \hbox (badness 10000) detected at line 108
 [][][]
  []
 
-[89]) (./class_user_data.tex
+[91]) (./class_user_data.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1751,12 +1763,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[90]
+[92]
 Underfull \hbox (badness 10000) detected at line 69
 [][][]
  []
 
-[91]) (./structepiworld_1_1vec_hasher.tex
+[93]) (./structepiworld_1_1vec_hasher.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1773,7 +1785,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[92pdfTeX warning (ext4): destination with the same identifier (name{structepiw
+[94pdfTeX warning (ext4): destination with the same identifier (name{structepiw
 orld_1_1vec_hasher_a3484745808cbb87d6815f66be56ef5eb}) has been already used, d
 uplicate ignored
 
@@ -1815,13 +1827,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[93] [94]
+[95] [96]
 Underfull \hbox (badness 10000) detected at line 163
 [][][]
  []
 
-[95]
-Underfull \hbox (badness 10000) detected at line 315
+[97] [98]
+Underfull \hbox (badness 10000) detected at line 309
 [][][]
  []
 
@@ -1842,12 +1854,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[96]
+[99]
 Underfull \hbox (badness 10000) detected at line 68
 [][][]
  []
 
-[97]) (./classepiworld_1_1_viruses.tex
+[100]) (./classepiworld_1_1_viruses.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1864,7 +1876,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[98]) (./class_viruses.tex
+[101]) (./class_viruses.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1881,7 +1893,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[99]) (./classepiworld_1_1_viruses__const.tex
+[102]) (./classepiworld_1_1_viruses__const.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1898,11 +1910,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-
-Overfull \vbox (5.6108pt too high) has occurred while \output is active []
-
-
-[100]) (./class_viruses__const.tex
+) (./class_viruses__const.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1919,12 +1927,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-) [101] [102
-
-] (./refman.ind [103
+[103]) [104] (./refman.ind [105
 
 
-] [104
+
+] [106
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 266.
@@ -1940,13 +1947,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19867 strings out of 480478
- 379209 string characters out of 5905925
- 633883 words of memory out of 5000000
- 33762 multiletter control sequences out of 15000+600000
+ 19945 strings out of 480478
+ 383081 string characters out of 5905924
+ 635801 words of memory out of 5000000
+ 33802 multiletter control sequences out of 15000+600000
  602234 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,16n,96p,938b,710s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,16n,96p,938b,720s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
@@ -1960,10 +1967,10 @@ e1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb
 8ac.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvbo8ac.pfb></usr/shar
 e/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/t
 ype1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (112 pages, 431137 bytes).
+Output written on refman.pdf (114 pages, 437589 bytes).
 PDF statistics:
- 3934 PDF objects out of 4296 (max. 8388607)
- 3725 compressed objects within 38 object streams
- 1698 named destinations out of 1728 (max. 500000)
+ 4016 PDF objects out of 4296 (max. 8388607)
+ 3804 compressed objects within 39 object streams
+ 1736 named destinations out of 2073 (max. 500000)
  1374 words of extra memory for PDF output out of 10000 (max. 10000000)
 

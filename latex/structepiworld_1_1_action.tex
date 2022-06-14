@@ -12,7 +12,7 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{structepiworld_1_1_action_a851797a312736633711d9b2f03396bd2}{Action}} (\mbox{\hyperlink{classepiworld_1_1_agent}{Agent}}$<$ TSeq $>$ $\ast$agent\+\_\+, Virus\+Ptr$<$ TSeq $>$ virus\+\_\+, Tool\+Ptr$<$ TSeq $>$ tool\+\_\+, epiworld\+\_\+fast\+\_\+int new\+\_\+status\+\_\+, epiworld\+\_\+fast\+\_\+int queue\+\_\+, Action\+Fun$<$ TSeq $>$ call\+\_\+)
+\mbox{\hyperlink{structepiworld_1_1_action_a4b4d766f062bfbbcca2f7a09e17a1c43}{Action}} (\mbox{\hyperlink{classepiworld_1_1_agent}{Agent}}$<$ TSeq $>$ $\ast$agent\+\_\+, Virus\+Ptr$<$ TSeq $>$ virus\+\_\+, Tool\+Ptr$<$ TSeq $>$ tool\+\_\+, \mbox{\hyperlink{classepiworld_1_1_entity}{Entity}}$<$ TSeq $>$ $\ast$entity\+\_\+, epiworld\+\_\+fast\+\_\+int new\+\_\+status\+\_\+, epiworld\+\_\+fast\+\_\+int queue\+\_\+, Action\+Fun$<$ TSeq $>$ call\+\_\+, int idx\+\_\+agent\+\_\+, int idx\+\_\+object\+\_\+)
 \begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{structepiworld_1_1_action}{Action}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -26,6 +26,9 @@ Virus\+Ptr$<$ TSeq $>$ {\bfseries virus}
 \mbox{\Hypertarget{structepiworld_1_1_action_a2a07d162e70fd6ac46210813ff6a1eca}\label{structepiworld_1_1_action_a2a07d162e70fd6ac46210813ff6a1eca}} 
 Tool\+Ptr$<$ TSeq $>$ {\bfseries tool}
 \item 
+\mbox{\Hypertarget{structepiworld_1_1_action_ad5b387cfa208e7b8fea8a67f722e3869}\label{structepiworld_1_1_action_ad5b387cfa208e7b8fea8a67f722e3869}} 
+\mbox{\hyperlink{classepiworld_1_1_entity}{Entity}}$<$ TSeq $>$ $\ast$ {\bfseries entity}
+\item 
 \mbox{\Hypertarget{structepiworld_1_1_action_a141fbf7fa6e10bb2be68f6eed77c4518}\label{structepiworld_1_1_action_a141fbf7fa6e10bb2be68f6eed77c4518}} 
 epiworld\+\_\+fast\+\_\+int {\bfseries new\+\_\+status}
 \item 
@@ -34,6 +37,12 @@ epiworld\+\_\+fast\+\_\+int {\bfseries queue}
 \item 
 \mbox{\Hypertarget{structepiworld_1_1_action_ab0cd574228354c3c6fc7dea8341e24ec}\label{structepiworld_1_1_action_ab0cd574228354c3c6fc7dea8341e24ec}} 
 Action\+Fun$<$ TSeq $>$ {\bfseries call}
+\item 
+\mbox{\Hypertarget{structepiworld_1_1_action_aced822f6fd1b2a970f13bb850374ac06}\label{structepiworld_1_1_action_aced822f6fd1b2a970f13bb850374ac06}} 
+int {\bfseries idx\+\_\+agent}
+\item 
+\mbox{\Hypertarget{structepiworld_1_1_action_aabf33dd568316fe469a8f6877424e8f5}\label{structepiworld_1_1_action_aabf33dd568316fe469a8f6877424e8f5}} 
+int {\bfseries idx\+\_\+object}
 \end{DoxyCompactItemize}
 
 
@@ -51,12 +60,12 @@ struct epiworld\+::\+Action$<$ TSeq $>$}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{structepiworld_1_1_action_a851797a312736633711d9b2f03396bd2}\label{structepiworld_1_1_action_a851797a312736633711d9b2f03396bd2}} 
+\mbox{\Hypertarget{structepiworld_1_1_action_a4b4d766f062bfbbcca2f7a09e17a1c43}\label{structepiworld_1_1_action_a4b4d766f062bfbbcca2f7a09e17a1c43}} 
 \index{epiworld::Action$<$ TSeq $>$@{epiworld::Action$<$ TSeq $>$}!Action@{Action}}
 \index{Action@{Action}!epiworld::Action$<$ TSeq $>$@{epiworld::Action$<$ TSeq $>$}}
 \doxysubsubsection{\texorpdfstring{Action()}{Action()}}
 {\footnotesize\ttfamily template$<$typename TSeq $>$ \\
-\mbox{\hyperlink{structepiworld_1_1_action}{epiworld\+::\+Action}}$<$ TSeq $>$\+::\mbox{\hyperlink{structepiworld_1_1_action}{Action}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classepiworld_1_1_agent}{Agent}}$<$ TSeq $>$ $\ast$}]{agent\+\_\+,  }\item[{Virus\+Ptr$<$ TSeq $>$}]{virus\+\_\+,  }\item[{Tool\+Ptr$<$ TSeq $>$}]{tool\+\_\+,  }\item[{epiworld\+\_\+fast\+\_\+int}]{new\+\_\+status\+\_\+,  }\item[{epiworld\+\_\+fast\+\_\+int}]{queue\+\_\+,  }\item[{Action\+Fun$<$ TSeq $>$}]{call\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\hyperlink{structepiworld_1_1_action}{epiworld\+::\+Action}}$<$ TSeq $>$\+::\mbox{\hyperlink{structepiworld_1_1_action}{Action}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classepiworld_1_1_agent}{Agent}}$<$ TSeq $>$ $\ast$}]{agent\+\_\+,  }\item[{Virus\+Ptr$<$ TSeq $>$}]{virus\+\_\+,  }\item[{Tool\+Ptr$<$ TSeq $>$}]{tool\+\_\+,  }\item[{\mbox{\hyperlink{classepiworld_1_1_entity}{Entity}}$<$ TSeq $>$ $\ast$}]{entity\+\_\+,  }\item[{epiworld\+\_\+fast\+\_\+int}]{new\+\_\+status\+\_\+,  }\item[{epiworld\+\_\+fast\+\_\+int}]{queue\+\_\+,  }\item[{Action\+Fun$<$ TSeq $>$}]{call\+\_\+,  }\item[{int}]{idx\+\_\+agent\+\_\+,  }\item[{int}]{idx\+\_\+object\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -81,6 +90,10 @@ All the parameters are rather optional.
 {\em queue\+\_\+} & Efect on the queue \\
 \hline
 {\em call\+\_\+} & The action call (if needed) \\
+\hline
+{\em idx\+\_\+agent\+\_\+} & Location of agent in object. \\
+\hline
+{\em idx\+\_\+object\+\_\+} & Location of object in agent. \\
 \hline
 \end{DoxyParams}
 

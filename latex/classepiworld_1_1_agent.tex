@@ -80,6 +80,9 @@ bool {\bfseries has\+\_\+virus} (std\+::string name) const
 \item 
 \mbox{\Hypertarget{classepiworld_1_1_agent_a2510243ae327dc9ca10fb3fd5a244ce3}\label{classepiworld_1_1_agent_a2510243ae327dc9ca10fb3fd5a244ce3}} 
 void {\bfseries print} (bool compressed=false) const
+\item 
+\mbox{\Hypertarget{classepiworld_1_1_agent_a4d19b7248ebc77b239852a283da27ea6}\label{classepiworld_1_1_agent_a4d19b7248ebc77b239852a283da27ea6}} 
+const std\+::vector$<$ \mbox{\hyperlink{classepiworld_1_1_entity}{Entity}}$<$ TSeq $>$ $\ast$ $>$ {\bfseries get\+\_\+entities} ()
 \end{DoxyCompactItemize}
 \begin{Indent}\textbf{ Add/\+Remove Virus/\+Tool}\par
 {\em Any of these is ultimately reflected at the end of the iteration.
@@ -109,6 +112,9 @@ void {\bfseries add\+\_\+virus} (Virus\+Ptr$<$ TSeq $>$ virus, epiworld\+\_\+fas
 \mbox{\Hypertarget{classepiworld_1_1_agent_ae53251a3addd19e9c0446a25b358bb27}\label{classepiworld_1_1_agent_ae53251a3addd19e9c0446a25b358bb27}} 
 void {\bfseries add\+\_\+virus} (\mbox{\hyperlink{classepiworld_1_1_virus}{Virus}}$<$ TSeq $>$ virus, epiworld\+\_\+fast\+\_\+int status\+\_\+new=-\/99, epiworld\+\_\+fast\+\_\+int queue=-\/99)
 \item 
+\mbox{\Hypertarget{classepiworld_1_1_agent_afd6b6dcd14548c7902ff617a738f1743}\label{classepiworld_1_1_agent_afd6b6dcd14548c7902ff617a738f1743}} 
+void {\bfseries add\+\_\+entity} (\mbox{\hyperlink{classepiworld_1_1_entity}{Entity}}$<$ TSeq $>$ \&entity, epiworld\+\_\+fast\+\_\+int status\+\_\+new=-\/99, epiworld\+\_\+fast\+\_\+int queue=-\/99)
+\item 
 \mbox{\Hypertarget{classepiworld_1_1_agent_a1f85f05cf94b82aeebc2011a1ce8cfeb}\label{classepiworld_1_1_agent_a1f85f05cf94b82aeebc2011a1ce8cfeb}} 
 void {\bfseries rm\+\_\+tool} (epiworld\+\_\+fast\+\_\+uint tool\+\_\+idx, epiworld\+\_\+fast\+\_\+int status\+\_\+new=-\/99, epiworld\+\_\+fast\+\_\+int queue=-\/99)
 \item 
@@ -120,6 +126,12 @@ void {\bfseries rm\+\_\+virus} (epiworld\+\_\+fast\+\_\+uint virus\+\_\+idx, epi
 \item 
 \mbox{\Hypertarget{classepiworld_1_1_agent_a544419b60fb8aff92e89e4fa2d3c1875}\label{classepiworld_1_1_agent_a544419b60fb8aff92e89e4fa2d3c1875}} 
 void {\bfseries rm\+\_\+virus} (Virus\+Ptr$<$ TSeq $>$ \&virus, epiworld\+\_\+fast\+\_\+int status\+\_\+new=-\/99, epiworld\+\_\+fast\+\_\+int queue=-\/99)
+\item 
+\mbox{\Hypertarget{classepiworld_1_1_agent_a4542af72747c10d8ba9165e19aae0336}\label{classepiworld_1_1_agent_a4542af72747c10d8ba9165e19aae0336}} 
+void {\bfseries rm\+\_\+entity} (epiworld\+\_\+fast\+\_\+uint entity\+\_\+idx, epiworld\+\_\+fast\+\_\+int status\+\_\+new=-\/99, epiworld\+\_\+fast\+\_\+int queue=-\/99)
+\item 
+\mbox{\Hypertarget{classepiworld_1_1_agent_ae88f1fa1edb56b544bedc8af90a399b1}\label{classepiworld_1_1_agent_ae88f1fa1edb56b544bedc8af90a399b1}} 
+void {\bfseries rm\+\_\+entity} (\mbox{\hyperlink{classepiworld_1_1_entity}{Entity}}$<$ TSeq $>$ \&entity, epiworld\+\_\+fast\+\_\+int status\+\_\+new=-\/99, epiworld\+\_\+fast\+\_\+int queue=-\/99)
 \item 
 \mbox{\Hypertarget{classepiworld_1_1_agent_ad5f1f07d77bc303809af93c49025c434}\label{classepiworld_1_1_agent_ad5f1f07d77bc303809af93c49025c434}} 
 void \mbox{\hyperlink{classepiworld_1_1_agent_ad5f1f07d77bc303809af93c49025c434}{rm\+\_\+agent\+\_\+by\+\_\+virus}} (epiworld\+\_\+fast\+\_\+uint virus\+\_\+idx, epiworld\+\_\+fast\+\_\+int status\+\_\+new=-\/99, epiworld\+\_\+fast\+\_\+int queue=-\/99)
@@ -191,11 +203,17 @@ void {\bfseries default\+\_\+add\+\_\+virus} (\mbox{\hyperlink{structepiworld_1_
 \mbox{\Hypertarget{classepiworld_1_1_agent_a1f4deae20e873213f82b53cd4d5db4f7}\label{classepiworld_1_1_agent_a1f4deae20e873213f82b53cd4d5db4f7}} 
 void {\bfseries default\+\_\+add\+\_\+tool} (\mbox{\hyperlink{structepiworld_1_1_action}{Action}}$<$ TSeq $>$ \&a, \mbox{\hyperlink{classepiworld_1_1_model}{Model}}$<$ TSeq $>$ $\ast$m)
 \item 
+\mbox{\Hypertarget{classepiworld_1_1_agent_a622a497f9a29a8bbd8681a8edb4e4b1f}\label{classepiworld_1_1_agent_a622a497f9a29a8bbd8681a8edb4e4b1f}} 
+void {\bfseries default\+\_\+add\+\_\+entity} (\mbox{\hyperlink{structepiworld_1_1_action}{Action}}$<$ TSeq $>$ \&a, \mbox{\hyperlink{classepiworld_1_1_model}{Model}}$<$ TSeq $>$ $\ast$m)
+\item 
 \mbox{\Hypertarget{classepiworld_1_1_agent_a16cc390e86f20526d2e9c2fde4bffb2e}\label{classepiworld_1_1_agent_a16cc390e86f20526d2e9c2fde4bffb2e}} 
 void {\bfseries default\+\_\+rm\+\_\+virus} (\mbox{\hyperlink{structepiworld_1_1_action}{Action}}$<$ TSeq $>$ \&a, \mbox{\hyperlink{classepiworld_1_1_model}{Model}}$<$ TSeq $>$ $\ast$m)
 \item 
 \mbox{\Hypertarget{classepiworld_1_1_agent_a9d273869be3324c1e3de0ff81bf8c112}\label{classepiworld_1_1_agent_a9d273869be3324c1e3de0ff81bf8c112}} 
 void {\bfseries default\+\_\+rm\+\_\+tool} (\mbox{\hyperlink{structepiworld_1_1_action}{Action}}$<$ TSeq $>$ \&a, \mbox{\hyperlink{classepiworld_1_1_model}{Model}}$<$ TSeq $>$ $\ast$m)
+\item 
+\mbox{\Hypertarget{classepiworld_1_1_agent_a7ec73f896617a4997dbd2311a11bc835}\label{classepiworld_1_1_agent_a7ec73f896617a4997dbd2311a11bc835}} 
+void {\bfseries default\+\_\+rm\+\_\+entity} (\mbox{\hyperlink{structepiworld_1_1_action}{Action}}$<$ TSeq $>$ \&a, \mbox{\hyperlink{classepiworld_1_1_model}{Model}}$<$ TSeq $>$ $\ast$m)
 \end{DoxyCompactItemize}
 
 

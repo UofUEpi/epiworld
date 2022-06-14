@@ -77,6 +77,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a02fc8a83131e098f3c4fdf5fea1c9878"><td class="memItemLeft" align="right" valign="top"><a id="a02fc8a83131e098f3c4fdf5fea1c9878"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Entity</b> (<a class="el" href="classepiworld_1_1_entity.html">Entity</a>&lt; TSeq &gt; &amp;&amp;e)=delete</td></tr>
+<tr class="separator:a02fc8a83131e098f3c4fdf5fea1c9878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c43cc9f19295b226034f83b2ec93e53"><td class="memItemLeft" align="right" valign="top"><a id="a4c43cc9f19295b226034f83b2ec93e53"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Entity</b> (std::string name)</td></tr>
+<tr class="separator:a4c43cc9f19295b226034f83b2ec93e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08d621a708f27628dc066770216745eb"><td class="memItemLeft" align="right" valign="top"><a id="a08d621a708f27628dc066770216745eb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>add_agent</b> (<a class="el" href="classepiworld_1_1_agent.html">Agent</a>&lt; TSeq &gt; &amp;p)</td></tr>
 <tr class="separator:a08d621a708f27628dc066770216745eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,6 +113,24 @@ std::vector&lt; <a class="el" href="classepiworld_1_1_agent.html">Agent</a>&lt; 
 <tr class="memitem:ab5fb3cce28cf0abaa1021a4e07976488"><td class="memItemLeft" align="right" valign="top"><a id="ab5fb3cce28cf0abaa1021a4e07976488"></a>
 std::vector&lt; <a class="el" href="classepiworld_1_1_agent.html">Agent</a>&lt; TSeq &gt; * &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () const</td></tr>
 <tr class="separator:ab5fb3cce28cf0abaa1021a4e07976488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbd3cd347b31afde92f0fe8f8308984a"><td class="memItemLeft" align="right" valign="top"><a id="afbd3cd347b31afde92f0fe8f8308984a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>get_id</b> () const noexcept</td></tr>
+<tr class="separator:afbd3cd347b31afde92f0fe8f8308984a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5087eede601ab9986eb72b3824fb1a88"><td class="memItemLeft" align="right" valign="top"><a id="a5087eede601ab9986eb72b3824fb1a88"></a>
+const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_name</b> () const noexcept</td></tr>
+<tr class="separator:a5087eede601ab9986eb72b3824fb1a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed940a451a7ddd9f39b878691ee8dc41"><td class="memItemLeft" align="right" valign="top"><a id="aed940a451a7ddd9f39b878691ee8dc41"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_status</b> (epiworld_fast_int init, epiworld_fast_int post)</td></tr>
+<tr class="separator:aed940a451a7ddd9f39b878691ee8dc41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36281005f7a67f021f424931a20821ec"><td class="memItemLeft" align="right" valign="top"><a id="a36281005f7a67f021f424931a20821ec"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_queue</b> (epiworld_fast_int init, epiworld_fast_int post)</td></tr>
+<tr class="separator:a36281005f7a67f021f424931a20821ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aacb1113088477ed1b99d21a02d2260"><td class="memItemLeft" align="right" valign="top"><a id="a2aacb1113088477ed1b99d21a02d2260"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>get_status</b> (epiworld_fast_int *init, epiworld_fast_int *post)</td></tr>
+<tr class="separator:a2aacb1113088477ed1b99d21a02d2260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1d3636d18dc51ee8eca7261a6d022d5"><td class="memItemLeft" align="right" valign="top"><a id="ad1d3636d18dc51ee8eca7261a6d022d5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>get_queue</b> (epiworld_fast_int *init, epiworld_fast_int *post)</td></tr>
+<tr class="separator:ad1d3636d18dc51ee8eca7261a6d022d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -119,6 +143,12 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>AgentsSample&lt; TSe
 <tr class="memitem:aa4532e80368ab60b4fda5bb917f6f0ca"><td class="memItemLeft" align="right" valign="top"><a id="aa4532e80368ab60b4fda5bb917f6f0ca"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>Model&lt; TSeq &gt;</b></td></tr>
 <tr class="separator:aa4532e80368ab60b4fda5bb917f6f0ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a622a497f9a29a8bbd8681a8edb4e4b1f"><td class="memItemLeft" align="right" valign="top"><a id="a622a497f9a29a8bbd8681a8edb4e4b1f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>default_add_entity</b> (<a class="el" href="structepiworld_1_1_action.html">Action</a>&lt; TSeq &gt; &amp;a, <a class="el" href="classepiworld_1_1_model.html">Model</a>&lt; TSeq &gt; *m)</td></tr>
+<tr class="separator:a622a497f9a29a8bbd8681a8edb4e4b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ec73f896617a4997dbd2311a11bc835"><td class="memItemLeft" align="right" valign="top"><a id="a7ec73f896617a4997dbd2311a11bc835"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>default_rm_entity</b> (<a class="el" href="structepiworld_1_1_action.html">Action</a>&lt; TSeq &gt; &amp;a, <a class="el" href="classepiworld_1_1_model.html">Model</a>&lt; TSeq &gt; *m)</td></tr>
+<tr class="separator:a7ec73f896617a4997dbd2311a11bc835"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="epiworld_8hpp_source.html">epiworld.hpp</a></li>
