@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['params_146',['params',['../classepiworld_1_1_model.html#a4c9648dcf5ad648eaa6610e2d884b5c8',1,'epiworld::Model']]],
-  ['pop_5ffrom_5fadjlist_147',['pop_from_adjlist',['../classepiworld_1_1_model.html#ad228aed8654e0f1eb6f5ccc58156cfb6',1,'epiworld::Model']]]
+  ['operator_28_29_156',['operator()',['../classepiworld_1_1_agent.html#a370107b9e18076bce06f7bffb32f2757',1,'epiworld::Agent::operator()()'],['../class_agent.html#ae518258e4a3fe35547db7f0a8d3a0f84',1,'Agent::operator()()']]]
 ];

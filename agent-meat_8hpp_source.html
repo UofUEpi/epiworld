@@ -387,7 +387,7 @@ $(function() {
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        <span class="comment">// By default, it will be removed from the queue... unless the user</span></div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        <span class="comment">// says the contrary!</span></div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        (dead_queue == -99) ? -model-&gt;<a class="code" href="class_model.html#aaf33c877732b9bdc7cb77e063ad0c1a6">get_queue</a>()[<span class="keywordtype">id</span>] : dead_queue</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        (dead_queue == -99) ? QueueValues::NoOne : dead_queue</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    );</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;}</div>
@@ -710,7 +710,6 @@ $(function() {
 <div class="ttc" id="aclass_entities_html"><div class="ttname"><a href="class_entities.html">Entities</a></div><div class="ttdoc">Set of Entities (useful for building iterators)</div><div class="ttdef"><b>Definition:</b> entities-bones.hpp:17</div></div>
 <div class="ttc" id="aclass_entity_html"><div class="ttname"><a href="class_entity.html">Entity</a></div><div class="ttdef"><b>Definition:</b> entity-bones.hpp:20</div></div>
 <div class="ttc" id="aclass_model_html"><div class="ttname"><a href="class_model.html">Model&lt; TSeq &gt;</a></div></div>
-<div class="ttc" id="aclass_model_html_aaf33c877732b9bdc7cb77e063ad0c1a6"><div class="ttname"><a href="class_model.html#aaf33c877732b9bdc7cb77e063ad0c1a6">Model::get_queue</a></div><div class="ttdeci">Queue&lt; TSeq &gt; &amp; get_queue()</div><div class="ttdoc">Retrieve the Queue object.</div></div>
 <div class="ttc" id="aclass_tool_html"><div class="ttname"><a href="class_tool.html">Tool</a></div><div class="ttdoc">Tools for defending the agent against the virus.</div><div class="ttdef"><b>Definition:</b> tool-bones.hpp:23</div></div>
 <div class="ttc" id="aclass_tools__const_html"><div class="ttname"><a href="class_tools__const.html">Tools_const</a></div><div class="ttdoc">Set of Tools (const) (useful for iterators)</div><div class="ttdef"><b>Definition:</b> tools-bones.hpp:88</div></div>
 <div class="ttc" id="aclass_tools_html"><div class="ttname"><a href="class_tools.html">Tools</a></div><div class="ttdoc">Set of tools (useful for building iterators)</div><div class="ttdef"><b>Definition:</b> tools-bones.hpp:18</div></div>

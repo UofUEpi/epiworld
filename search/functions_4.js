@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['operator_28_29_145',['operator()',['../classepiworld_1_1_agent.html#a370107b9e18076bce06f7bffb32f2757',1,'epiworld::Agent::operator()()'],['../class_agent.html#ae518258e4a3fe35547db7f0a8d3a0f84',1,'Agent::operator()()']]]
+  ['make_5fsample_5fvirus_5fneighbors_154',['make_sample_virus_neighbors',['../namespaceepiworld_1_1sampler.html#a058e471163798e71719e9580b016692f',1,'epiworld::sampler::make_sample_virus_neighbors()'],['../namespacesampler.html#a4cafc444e0a6c563f34ed5f9b5366ae4',1,'sampler::make_sample_virus_neighbors()']]],
+  ['make_5fupdate_5fsusceptible_155',['make_update_susceptible',['../namespaceepiworld_1_1sampler.html#af58114de37befaa5de5450e3d4414b22',1,'epiworld::sampler::make_update_susceptible()'],['../namespacesampler.html#a9f4c303b5e9016b050dd008fec902448',1,'sampler::make_update_susceptible()']]]
 ];
