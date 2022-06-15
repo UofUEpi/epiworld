@@ -81,8 +81,11 @@ bool {\bfseries has\+\_\+virus} (std\+::string name) const
 \mbox{\Hypertarget{class_agent_a2510243ae327dc9ca10fb3fd5a244ce3}\label{class_agent_a2510243ae327dc9ca10fb3fd5a244ce3}} 
 void {\bfseries print} (bool compressed=false) const
 \item 
-\mbox{\Hypertarget{class_agent_a01f3b1117b9d7fe80c706a1b7c1871e5}\label{class_agent_a01f3b1117b9d7fe80c706a1b7c1871e5}} 
-const std\+::vector$<$ \mbox{\hyperlink{class_entity}{Entity}}$<$ TSeq $>$ $\ast$ $>$ {\bfseries get\+\_\+entities} ()
+\mbox{\Hypertarget{class_agent_aa4b123e8146223e7c1c07fd102208664}\label{class_agent_aa4b123e8146223e7c1c07fd102208664}} 
+\mbox{\hyperlink{class_entities}{Entities}}$<$ TSeq $>$ {\bfseries get\+\_\+entities} ()
+\item 
+\mbox{\Hypertarget{class_agent_a9b2c738aad2854d069effa9fea83c3ff}\label{class_agent_a9b2c738aad2854d069effa9fea83c3ff}} 
+const \mbox{\hyperlink{class_entities__const}{Entities\+\_\+const}}$<$ TSeq $>$ {\bfseries get\+\_\+entities} () const
 \end{DoxyCompactItemize}
 \begin{Indent}\textbf{ Add/\+Remove Virus/\+Tool}\par
 {\em Any of these is ultimately reflected at the end of the iteration.
@@ -196,6 +199,12 @@ class {\bfseries Tools$<$ TSeq $>$}
 \item 
 \mbox{\Hypertarget{class_agent_a2bfabd70b21ded1907307daeb724ae58}\label{class_agent_a2bfabd70b21ded1907307daeb724ae58}} 
 class {\bfseries Queue$<$ TSeq $>$}
+\item 
+\mbox{\Hypertarget{class_agent_a33cc1fa61603143782cace659211e5b6}\label{class_agent_a33cc1fa61603143782cace659211e5b6}} 
+class {\bfseries Entities$<$ TSeq $>$}
+\item 
+\mbox{\Hypertarget{class_agent_aaa28984b5e383d052d1df053b21d60cd}\label{class_agent_aaa28984b5e383d052d1df053b21d60cd}} 
+class {\bfseries Agents\+Sample$<$ TSeq $>$}
 \item 
 \mbox{\Hypertarget{class_agent_a5a80a0876b1453c31734f5728c30144f}\label{class_agent_a5a80a0876b1453c31734f5728c30144f}} 
 void {\bfseries default\+\_\+add\+\_\+virus} (\mbox{\hyperlink{struct_action}{Action}}$<$ TSeq $>$ \&a, \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$m)
