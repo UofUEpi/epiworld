@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Alpine Linux) (preloaded format=pdflatex 2022.6.14)  14 JUN 2022 23:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Alpine Linux) (preloaded format=pdflatex 2022.6.15)  15 JUN 2022 00:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1947,10 +1947,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19945 strings out of 480478
- 383081 string characters out of 5905924
- 635801 words of memory out of 5000000
- 33802 multiletter control sequences out of 15000+600000
+ 19941 strings out of 480478
+ 382869 string characters out of 5905924
+ 635695 words of memory out of 5000000
+ 33800 multiletter control sequences out of 15000+600000
  602234 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,96p,938b,720s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1967,10 +1967,10 @@ e1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb
 8ac.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvbo8ac.pfb></usr/shar
 e/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/t
 ype1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (114 pages, 437589 bytes).
+Output written on refman.pdf (114 pages, 437241 bytes).
 PDF statistics:
- 4016 PDF objects out of 4296 (max. 8388607)
- 3804 compressed objects within 39 object streams
- 1736 named destinations out of 2073 (max. 500000)
+ 4010 PDF objects out of 4296 (max. 8388607)
+ 3799 compressed objects within 38 object streams
+ 1734 named destinations out of 2073 (max. 500000)
  1374 words of extra memory for PDF output out of 10000 (max. 10000000)
 
