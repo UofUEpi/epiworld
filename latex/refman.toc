@@ -113,29 +113,29 @@
 \contentsline {subsection}{\numberline {15.18.1}Detailed Description}{67}{subsection.15.18.1}%
 \contentsline {section}{\numberline {15.19}epiworld\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Model$<$ TSeq $>$ Class Template Reference}{67}{section.15.19}%
 \contentsline {subsection}{\numberline {15.19.1}Detailed Description}{75}{subsection.15.19.1}%
-\contentsline {subsection}{\numberline {15.19.2}Member Function Documentation}{75}{subsection.15.19.2}%
-\contentsline {subsubsection}{\numberline {15.19.2.1}add\_global\_action()}{75}{subsubsection.15.19.2.1}%
+\contentsline {subsection}{\numberline {15.19.2}Member Function Documentation}{76}{subsection.15.19.2}%
+\contentsline {subsubsection}{\numberline {15.19.2.1}add\_global\_action()}{76}{subsubsection.15.19.2.1}%
 \contentsline {subsubsection}{\numberline {15.19.2.2}add\_param()}{76}{subsubsection.15.19.2.2}%
-\contentsline {subsubsection}{\numberline {15.19.2.3}add\_status\_susceptible()}{76}{subsubsection.15.19.2.3}%
+\contentsline {subsubsection}{\numberline {15.19.2.3}add\_status\_susceptible()}{77}{subsubsection.15.19.2.3}%
 \contentsline {subsubsection}{\numberline {15.19.2.4}init()}{77}{subsubsection.15.19.2.4}%
 \contentsline {subsubsection}{\numberline {15.19.2.5}pop\_from\_adjlist()}{77}{subsubsection.15.19.2.5}%
 \contentsline {subsubsection}{\numberline {15.19.2.6}reset()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{78}{subsubsection.15.19.2.6}%
 \contentsline {subsubsection}{\numberline {15.19.2.7}reset()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{78}{subsubsection.15.19.2.7}%
-\contentsline {subsubsection}{\numberline {15.19.2.8}reset\_status\_codes()}{78}{subsubsection.15.19.2.8}%
+\contentsline {subsubsection}{\numberline {15.19.2.8}reset\_status\_codes()}{79}{subsubsection.15.19.2.8}%
 \contentsline {subsubsection}{\numberline {15.19.2.9}run\_multiple()}{79}{subsubsection.15.19.2.9}%
 \contentsline {subsubsection}{\numberline {15.19.2.10}set\_agents\_data()}{79}{subsubsection.15.19.2.10}%
-\contentsline {subsubsection}{\numberline {15.19.2.11}set\_backup()}{79}{subsubsection.15.19.2.11}%
+\contentsline {subsubsection}{\numberline {15.19.2.11}set\_backup()}{80}{subsubsection.15.19.2.11}%
 \contentsline {subsubsection}{\numberline {15.19.2.12}set\_rand\_engine()}{80}{subsubsection.15.19.2.12}%
 \contentsline {subsubsection}{\numberline {15.19.2.13}set\_rewire\_fun()}{80}{subsubsection.15.19.2.13}%
-\contentsline {subsubsection}{\numberline {15.19.2.14}set\_user\_data()}{80}{subsubsection.15.19.2.14}%
+\contentsline {subsubsection}{\numberline {15.19.2.14}set\_user\_data()}{81}{subsubsection.15.19.2.14}%
 \contentsline {subsubsection}{\numberline {15.19.2.15}write\_data()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{81}{subsubsection.15.19.2.15}%
-\contentsline {subsubsection}{\numberline {15.19.2.16}write\_data()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{81}{subsubsection.15.19.2.16}%
+\contentsline {subsubsection}{\numberline {15.19.2.16}write\_data()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{82}{subsubsection.15.19.2.16}%
 \contentsline {subsubsection}{\numberline {15.19.2.17}write\_edgelist()}{82}{subsubsection.15.19.2.17}%
 \contentsline {section}{\numberline {15.20}Model$<$ TSeq $>$ Class Template Reference}{82}{section.15.20}%
-\contentsline {subsection}{\numberline {15.20.1}Detailed Description}{88}{subsection.15.20.1}%
+\contentsline {subsection}{\numberline {15.20.1}Detailed Description}{89}{subsection.15.20.1}%
 \contentsline {subsection}{\numberline {15.20.2}Member Function Documentation}{89}{subsection.15.20.2}%
 \contentsline {subsubsection}{\numberline {15.20.2.1}add\_global\_action()}{89}{subsubsection.15.20.2.1}%
-\contentsline {subsubsection}{\numberline {15.20.2.2}reset()}{89}{subsubsection.15.20.2.2}%
+\contentsline {subsubsection}{\numberline {15.20.2.2}reset()}{90}{subsubsection.15.20.2.2}%
 \contentsline {subsubsection}{\numberline {15.20.2.3}run\_multiple()}{90}{subsubsection.15.20.2.3}%
 \contentsline {subsubsection}{\numberline {15.20.2.4}set\_agents\_data()}{91}{subsubsection.15.20.2.4}%
 \contentsline {subsubsection}{\numberline {15.20.2.5}write\_data()}{91}{subsubsection.15.20.2.5}%

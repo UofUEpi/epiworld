@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Alpine Linux) (preloaded format=pdflatex 2022.6.15)  15 JUN 2022 18:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Alpine Linux) (preloaded format=pdflatex 2022.6.29)  29 JUN 2022 23:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1684,12 +1684,20 @@ sed, duplicate ignored
                    \relax 
 l.329 ...model_aae43e087c6d2fd8c1f0ad92d50f78eb8}}
                                                    [70] [71]
-Underfull \hbox (badness 10000) detected at line 501
+Underfull \hbox (badness 2293) in paragraph at lines 496--497
+[]\T1/phv/m/n/10 void [] (un-signed int nex-per-i-ments, std[]::function$\OML/c
+mm/m/it/10 <$ \T1/phv/m/n/10 void(size[]_[]t, []$\OML/cmm/m/it/10 <$ \T1/phv/m/
+n/10 TSeq $\OML/cmm/m/it/10 >$ $\OMS/cmsy/m/n/10 ^^C$\T1/phv/m/n/10 )$\OML/cmm/
+m/it/10 >$
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 507
 [][][]
  []
 
 
-Underfull \hbox (badness 808) in paragraph at lines 506--509
+Underfull \hbox (badness 808) in paragraph at lines 512--515
 [][] \T1/phv/m/n/10 void \T1/phv/b/n/10 set[]_[]rewire[]_[]fun \T1/phv/m/n/10 (
 std[]::function$\OML/cmm/m/it/10 <$ \T1/phv/m/n/10 void(std[]::vector$\OML/cmm/
 m/it/10 <$ []$<$ \T1/phv/m/n/10 TSeq $\OML/cmm/m/it/10 >$$>$ $\OMS/cmsy/m/n/10 
@@ -1702,14 +1710,14 @@ _1_1_model_ac0c29dd30c5d89399a10922e29fcfed2}) has been already used, duplicate
  ignored
 <to be read again> 
                    \relax 
-l.534 ...model_ac0c29dd30c5d89399a10922e29fcfed2}}
+l.540 ...model_ac0c29dd30c5d89399a10922e29fcfed2}}
                                                    [72]
-Underfull \hbox (badness 10000) detected at line 546
+Underfull \hbox (badness 10000) detected at line 552
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 609
+Underfull \hbox (badness 10000) detected at line 615
 [][][]
  []
 
@@ -1718,9 +1726,9 @@ orld_1_1_model_ae29e3a0872a42368b168b01cb9167885}) has been already used, dupli
 cate ignored
 <to be read again> 
                    \relax 
-l.664 ...model_ae29e3a0872a42368b168b01cb9167885}}
+l.670 ...model_ae29e3a0872a42368b168b01cb9167885}}
                                                   
-Underfull \hbox (badness 10000) detected at line 686
+Underfull \hbox (badness 10000) detected at line 707
 [][][]
  []
 
@@ -1729,26 +1737,22 @@ orld_1_1_model_a6039bba88efd91d8993a96c154f1ac28}) has been already used, dupli
 cate ignored
 <to be read again> 
                    \relax 
-l.817 ...model_a6039bba88efd91d8993a96c154f1ac28}}
+l.841 ...model_a6039bba88efd91d8993a96c154f1ac28}}
                                                   pdfTeX warning (ext4): destin
 ation with the same identifier (name{classepiworld_1_1_model_ac5cf9b418167050c9
 b842dc847a78f48}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.823 ...model_ac5cf9b418167050c9b842dc847a78f48}}
+l.847 ...model_ac5cf9b418167050c9b842dc847a78f48}}
                                                    [75]
-Underfull \hbox (badness 10000) detected at line 889
+Underfull \hbox (badness 10000) detected at line 913
 [][][]
  []
 
 [76]
-Underfull \hbox (badness 10000) detected at line 914
+Underfull \hbox (badness 10000) detected at line 938
 [][][]
  []
-
-
-Overfull \vbox (23.45503pt too high) has occurred while \output is active []
-
 
 [77] [78]
 Overfull \hbox (3.9776pt too wide) in paragraph at lines 3--3
@@ -1756,21 +1760,17 @@ Overfull \hbox (3.9776pt too wide) in paragraph at lines 3--3
  []
 
 [79]
-Underfull \hbox (badness 10000) in paragraph at lines 1090--1092
+Underfull \hbox (badness 10000) in paragraph at lines 1114--1116
 |  \T1/pcr/m/n/8 std[]::function$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 void(std[]::v
 ector$\OML/cmm/m/it/8 <$ []$<$ \T1/pcr/m/n/8 TSeq $\OML/cmm/m/it/8 >$$>$ $\OMS/
 cmsy/m/n/8 ^^C$\T1/pcr/m/n/8 , []$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 TSeq $\OML/c
 mm/m/it/8 >$ $\OMS/cmsy/m/n/8 ^^C$\T1/pcr/m/n/8 , epiworld[]
  []
 
-
-Underfull \hbox (badness 10000) detected at line 1104
+[80]
+Underfull \hbox (badness 10000) detected at line 1128
 [][][]
  []
-
-[80]
-Overfull \vbox (40.90529pt too high) has occurred while \output is active []
-
 
 [81]) (./class_model.tex
 
@@ -1789,13 +1789,21 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[82] [83]
-Underfull \hbox (badness 10000) detected at line 237
+[82] [83] [84]
+Underfull \hbox (badness 2293) in paragraph at lines 232--233
+[]\T1/phv/m/n/10 void [] (un-signed int nex-per-i-ments, std[]::function$\OML/c
+mm/m/it/10 <$ \T1/phv/m/n/10 void(size[]_[]t, []$\OML/cmm/m/it/10 <$ \T1/phv/m/
+n/10 TSeq $\OML/cmm/m/it/10 >$ $\OMS/cmsy/m/n/10 ^^C$\T1/phv/m/n/10 )$\OML/cmm/
+m/it/10 >$
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 243
 [][][]
  []
 
 
-Underfull \hbox (badness 808) in paragraph at lines 242--245
+Underfull \hbox (badness 808) in paragraph at lines 248--251
 [][] \T1/phv/m/n/10 void \T1/phv/b/n/10 set[]_[]rewire[]_[]fun \T1/phv/m/n/10 (
 std[]::function$\OML/cmm/m/it/10 <$ \T1/phv/m/n/10 void(std[]::vector$\OML/cmm/
 m/it/10 <$ []$<$ \T1/phv/m/n/10 TSeq $\OML/cmm/m/it/10 >$$>$ $\OMS/cmsy/m/n/10 
@@ -1803,31 +1811,27 @@ m/it/10 <$ []$<$ \T1/phv/m/n/10 TSeq $\OML/cmm/m/it/10 >$$>$ $\OMS/cmsy/m/n/10
 10 >$ $\OMS/cmsy/m/n/10 ^^C$\T1/phv/m/n/10 ,
  []
 
-[84]
-Underfull \hbox (badness 10000) detected at line 282
+
+Underfull \hbox (badness 10000) detected at line 288
 [][][]
  []
 
-[85]
-Underfull \hbox (badness 10000) detected at line 345
+[85] [86]
+Underfull \hbox (badness 10000) detected at line 351
 [][][]
  []
 
-[86]
-Underfull \hbox (badness 10000) detected at line 419
+[87]
+Underfull \hbox (badness 10000) detected at line 440
 [][][]
  []
 
-[87] [88] [89] [90]
+[88] [89] [90]
 Overfull \hbox (3.9776pt too wide) in paragraph at lines 3--3
 []\T1/phv/m/sl/10 ncols[] 
  []
 
-
-Overfull \vbox (9.44873pt too high) has occurred while \output is active []
-
-
-[91]) (./class_network.tex
+) (./class_network.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1844,7 +1848,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-) (./classepiworld_1_1_person.tex
+[91]) (./classepiworld_1_1_person.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -2284,7 +2288,7 @@ Chapter 16.
 pdfTeX warning: pdflatex (file ./agent-meat-status_8hpp__incl.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
 >
-<agent-meat-status_8hpp__incl.pdf, id=3867, 229.85875pt x 167.62625pt>
+<agent-meat-status_8hpp__incl.pdf, id=3877, 229.85875pt x 167.62625pt>
 File: agent-meat-status_8hpp__incl.pdf Graphic file (type pdf)
 <use agent-meat-status_8hpp__incl.pdf>
 Package pdftex.def Info: agent-meat-status_8hpp__incl.pdf  used on input line 1
@@ -2295,7 +2299,7 @@ Package pdftex.def Info: agent-meat-status_8hpp__incl.pdf  used on input line 1
 pdfTeX warning: pdflatex (file ./agent-meat-status_8hpp__dep__incl.pdf): PDF in
 clusion: multiple pdfs with page group included in a single page
 >
-<agent-meat-status_8hpp__dep__incl.pdf, id=3875, 293.095pt x 234.8775pt>
+<agent-meat-status_8hpp__dep__incl.pdf, id=3885, 293.095pt x 234.8775pt>
 File: agent-meat-status_8hpp__dep__incl.pdf Graphic file (type pdf)
 <use agent-meat-status_8hpp__dep__incl.pdf>
 Package pdftex.def Info: agent-meat-status_8hpp__dep__incl.pdf  used on input l
@@ -2342,10 +2346,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 20291 strings out of 480478
- 393720 string characters out of 5905924
- 646938 words of memory out of 5000000
- 33983 multiletter control sequences out of 15000+600000
+ 20303 strings out of 480478
+ 394344 string characters out of 5905924
+ 647304 words of memory out of 5000000
+ 33989 multiletter control sequences out of 15000+600000
  603388 words of font info for 114 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,16n,96p,938b,710s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2362,10 +2366,10 @@ e1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb
 8ac.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvbo8ac.pfb></usr/shar
 e/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/t
 ype1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (132 pages, 482240 bytes).
+Output written on refman.pdf (132 pages, 483641 bytes).
 PDF statistics:
- 4492 PDF objects out of 5155 (max. 8388607)
- 4250 compressed objects within 43 object streams
- 1880 named destinations out of 2073 (max. 500000)
+ 4503 PDF objects out of 5155 (max. 8388607)
+ 4261 compressed objects within 43 object streams
+ 1886 named destinations out of 2073 (max. 500000)
  1616 words of extra memory for PDF output out of 10000 (max. 10000000)
 

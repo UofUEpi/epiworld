@@ -148,11 +148,17 @@ void {\bfseries add\+\_\+virus} (\mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $
 \mbox{\Hypertarget{class_model_a78854237bf9bb5b810240db4b19845f1}\label{class_model_a78854237bf9bb5b810240db4b19845f1}} 
 void {\bfseries add\+\_\+virus\+\_\+n} (\mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ v, unsigned int preval)
 \item 
+\mbox{\Hypertarget{class_model_a63aad17303decfa9dc250c7c7b9b54c6}\label{class_model_a63aad17303decfa9dc250c7c7b9b54c6}} 
+void {\bfseries add\+\_\+virus\+\_\+fun} (\mbox{\hyperlink{class_virus}{Virus}}$<$ TSeq $>$ v, Virus\+To\+Agent\+Fun$<$ TSeq $>$ fun)
+\item 
 \mbox{\Hypertarget{class_model_a1ad232953a10299b7a82d53ad7b64cd0}\label{class_model_a1ad232953a10299b7a82d53ad7b64cd0}} 
 void {\bfseries add\+\_\+tool} (\mbox{\hyperlink{class_tool}{Tool}}$<$ TSeq $>$ t, epiworld\+\_\+double preval)
 \item 
 \mbox{\Hypertarget{class_model_aae8acdadbe354fd81f789ef267b061f0}\label{class_model_aae8acdadbe354fd81f789ef267b061f0}} 
 void {\bfseries add\+\_\+tool\+\_\+n} (\mbox{\hyperlink{class_tool}{Tool}}$<$ TSeq $>$ t, unsigned int preval)
+\item 
+\mbox{\Hypertarget{class_model_af5aa87536d8ff020442add27b8f48870}\label{class_model_af5aa87536d8ff020442add27b8f48870}} 
+void {\bfseries add\+\_\+tool\+\_\+fun} (\mbox{\hyperlink{class_tool}{Tool}}$<$ TSeq $>$ t, Tool\+To\+Agent\+Fun$<$ TSeq $>$ fun)
 \item 
 \mbox{\Hypertarget{class_model_ac1a5c8f23f69b61aeb2689d20ebb5f9c}\label{class_model_ac1a5c8f23f69b61aeb2689d20ebb5f9c}} 
 void {\bfseries add\+\_\+entity} (\mbox{\hyperlink{class_entity}{Entity}}$<$ TSeq $>$ e, epiworld\+\_\+double preval)
@@ -223,7 +229,7 @@ void {\bfseries next} ()
 \mbox{\Hypertarget{class_model_a825c7fb2498c7693cbf1bfcd0a416ef4}\label{class_model_a825c7fb2498c7693cbf1bfcd0a416ef4}} 
 void \mbox{\hyperlink{class_model_a825c7fb2498c7693cbf1bfcd0a416ef4}{run}} ()
 \begin{DoxyCompactList}\small\item\em Runs the simulation (after initialization) \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_model_a5be93bf007d2ca71c2ad3cb4cd84a9eb}{run\+\_\+multiple}} (unsigned int nexperiments, std\+::function$<$ void(size\+\_\+t, \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$)$>$ fun=save\+\_\+run$<$ TSeq $>$(), bool \mbox{\hyperlink{class_model_a9591eb76c7cf1ed7e1510342ff602d37}{reset}}=true, bool verbose=true)
+void \mbox{\hyperlink{class_model_ac1c996c80a2834f6ed010b9c5c9ba6f2}{run\+\_\+multiple}} (unsigned int nexperiments, std\+::function$<$ void(size\+\_\+t, \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$)$>$ fun=make\+\_\+save\+\_\+run$<$ TSeq $>$(), bool \mbox{\hyperlink{class_model_a9591eb76c7cf1ed7e1510342ff602d37}{reset}}=true, bool verbose=true)
 \end{DoxyCompactItemize}
 \end{Indent}
 \begin{Indent}\textbf{ Rewire the network preserving the degree sequence.}\par
@@ -409,11 +415,26 @@ void {\bfseries clone\+\_\+population} (const \mbox{\hyperlink{class_model}{Mode
 
 The {\ttfamily par()} function members are aliases for {\ttfamily get\+\_\+param()}.
 
+In the case of the function {\ttfamily read\+\_\+params}, users can pass a file listing parameters to be included in the model. Each line in the file should have the following structure\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{[name of parameter 1]: [value in double]}
+\DoxyCodeLine{[name of parameter 2]: [value in double]}
+\DoxyCodeLine{...}
+
+\end{DoxyCode}
+
+
+The only condition for parameter names is that these do not include a colon.
+
 
 \begin{DoxyParams}{Parameters}
 {\em initial\+\_\+val} & \\
 \hline
 {\em pname} & Name of the parameter to add or to fetch \\
+\hline
+{\em fn} & Path to the file containing parameters \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -547,6 +568,9 @@ unsigned int {\bfseries npar\+\_\+used} = 0u
 \mbox{\Hypertarget{class_model_a412e4addbe3799787dccc43322aa2954}\label{class_model_a412e4addbe3799787dccc43322aa2954}} 
 epiworld\+\_\+double {\bfseries add\+\_\+param} (epiworld\+\_\+double initial\+\_\+val, std\+::string pname)
 \item 
+\mbox{\Hypertarget{class_model_a5c77cd0dbf9bc4eadb94bec62ce9279d}\label{class_model_a5c77cd0dbf9bc4eadb94bec62ce9279d}} 
+void {\bfseries read\+\_\+params} (std\+::string fn)
+\item 
 \mbox{\Hypertarget{class_model_a96a918aa6fe562d73f3bd9699e6a2bec}\label{class_model_a96a918aa6fe562d73f3bd9699e6a2bec}} 
 epiworld\+\_\+double {\bfseries get\+\_\+param} (unsigned int k)
 \item 
@@ -613,12 +637,12 @@ Resetting the model will\+:
 \item re-\/distribute tools
 \item re-\/distribute viruses
 \item set the date to 0 
-\end{DoxyItemize}\mbox{\Hypertarget{class_model_a5be93bf007d2ca71c2ad3cb4cd84a9eb}\label{class_model_a5be93bf007d2ca71c2ad3cb4cd84a9eb}} 
+\end{DoxyItemize}\mbox{\Hypertarget{class_model_ac1c996c80a2834f6ed010b9c5c9ba6f2}\label{class_model_ac1c996c80a2834f6ed010b9c5c9ba6f2}} 
 \index{Model$<$ TSeq $>$@{Model$<$ TSeq $>$}!run\_multiple@{run\_multiple}}
 \index{run\_multiple@{run\_multiple}!Model$<$ TSeq $>$@{Model$<$ TSeq $>$}}
 \doxysubsubsection{\texorpdfstring{run\_multiple()}{run\_multiple()}}
 {\footnotesize\ttfamily template$<$typename TSeq  = int$>$ \\
-void \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$\+::run\+\_\+multiple (\begin{DoxyParamCaption}\item[{unsigned int}]{nexperiments,  }\item[{std\+::function$<$ void(size\+\_\+t, \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$)$>$}]{fun = {\ttfamily save\+\_\+run$<$~TSeq~$>$()},  }\item[{bool}]{reset = {\ttfamily true},  }\item[{bool}]{verbose = {\ttfamily true} }\end{DoxyParamCaption})}
+void \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$\+::run\+\_\+multiple (\begin{DoxyParamCaption}\item[{unsigned int}]{nexperiments,  }\item[{std\+::function$<$ void(size\+\_\+t, \mbox{\hyperlink{class_model}{Model}}$<$ TSeq $>$ $\ast$)$>$}]{fun = {\ttfamily make\+\_\+save\+\_\+run$<$~TSeq~$>$()},  }\item[{bool}]{reset = {\ttfamily true},  }\item[{bool}]{verbose = {\ttfamily true} }\end{DoxyParamCaption})}
 
 
 \begin{DoxyParams}{Parameters}

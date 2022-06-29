@@ -6,7 +6,7 @@
   \item {Action$<$ TSeq $>$}, \hyperpage{39}
     \subitem {Action}, \hyperpage{40}
   \item {add\_global\_action}
-    \subitem {epiworld::Model$<$ TSeq $>$}, \hyperpage{75}
+    \subitem {epiworld::Model$<$ TSeq $>$}, \hyperpage{76}
     \subitem {Model$<$ TSeq $>$}, \hyperpage{89}
   \item {add\_param}
     \subitem {epiworld::Model$<$ TSeq $>$}, \hyperpage{76}
@@ -50,7 +50,7 @@
   \item {epiworld::Entity$<$ TSeq $>$}, \hyperpage{64}
   \item {epiworld::LFMCMC$<$ TData $>$}, \hyperpage{65}
   \item {epiworld::Model$<$ TSeq $>$}, \hyperpage{67}
-    \subitem {add\_global\_action}, \hyperpage{75}
+    \subitem {add\_global\_action}, \hyperpage{76}
     \subitem {add\_param}, \hyperpage{76}
     \subitem {add\_status\_susceptible}, \hyperpage{76}
     \subitem {init}, \hyperpage{77}
@@ -59,10 +59,10 @@
     \subitem {reset\_status\_codes}, \hyperpage{78}
     \subitem {run\_multiple}, \hyperpage{79}
     \subitem {set\_agents\_data}, \hyperpage{79}
-    \subitem {set\_backup}, \hyperpage{79}
+    \subitem {set\_backup}, \hyperpage{80}
     \subitem {set\_rand\_engine}, \hyperpage{80}
     \subitem {set\_rewire\_fun}, \hyperpage{80}
-    \subitem {set\_user\_data}, \hyperpage{80}
+    \subitem {set\_user\_data}, \hyperpage{81}
     \subitem {write\_data}, \hyperpage{81}
     \subitem {write\_edgelist}, \hyperpage{82}
   \item {epiworld::Person$<$ TSeq $>$}, \hyperpage{92}
@@ -115,9 +115,9 @@
     \subitem {sampler}, \hyperpage{35}
   \item {Model$<$ TSeq $>$}, \hyperpage{82}
     \subitem {add\_global\_action}, \hyperpage{89}
-    \subitem {reset}, \hyperpage{89}
-    \subitem {run\_multiple}, \hyperpage{89}
-    \subitem {set\_agents\_data}, \hyperpage{91}
+    \subitem {reset}, \hyperpage{90}
+    \subitem {run\_multiple}, \hyperpage{90}
+    \subitem {set\_agents\_data}, \hyperpage{90}
     \subitem {write\_data}, \hyperpage{91}
 
   \indexspace
@@ -155,12 +155,12 @@
     \subitem {epiworld::DataBase$<$ TSeq $>$}, \hyperpage{60}
   \item {reset}
     \subitem {epiworld::Model$<$ TSeq $>$}, \hyperpage{78}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{89}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{90}
   \item {reset\_status\_codes}
     \subitem {epiworld::Model$<$ TSeq $>$}, \hyperpage{78}
   \item {run\_multiple}
     \subitem {epiworld::Model$<$ TSeq $>$}, \hyperpage{79}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{89}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{90}
 
   \indexspace
 
@@ -173,15 +173,15 @@
     \subitem {sample\_virus\_single}, \hyperpage{35}
   \item {set\_agents\_data}
     \subitem {epiworld::Model$<$ TSeq $>$}, \hyperpage{79}
-    \subitem {Model$<$ TSeq $>$}, \hyperpage{91}
+    \subitem {Model$<$ TSeq $>$}, \hyperpage{90}
   \item {set\_backup}
-    \subitem {epiworld::Model$<$ TSeq $>$}, \hyperpage{79}
+    \subitem {epiworld::Model$<$ TSeq $>$}, \hyperpage{80}
   \item {set\_rand\_engine}
     \subitem {epiworld::Model$<$ TSeq $>$}, \hyperpage{80}
   \item {set\_rewire\_fun}
     \subitem {epiworld::Model$<$ TSeq $>$}, \hyperpage{80}
   \item {set\_user\_data}
-    \subitem {epiworld::Model$<$ TSeq $>$}, \hyperpage{80}
+    \subitem {epiworld::Model$<$ TSeq $>$}, \hyperpage{81}
 
   \indexspace
 

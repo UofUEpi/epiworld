@@ -213,12 +213,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>add_virus</b> (<a cla
 <tr class="memitem:a78854237bf9bb5b810240db4b19845f1"><td class="memItemLeft" align="right" valign="top"><a id="a78854237bf9bb5b810240db4b19845f1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>add_virus_n</b> (<a class="el" href="class_virus.html">Virus</a>&lt; TSeq &gt; v, unsigned int preval)</td></tr>
 <tr class="separator:a78854237bf9bb5b810240db4b19845f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63aad17303decfa9dc250c7c7b9b54c6"><td class="memItemLeft" align="right" valign="top"><a id="a63aad17303decfa9dc250c7c7b9b54c6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add_virus_fun</b> (<a class="el" href="class_virus.html">Virus</a>&lt; TSeq &gt; v, VirusToAgentFun&lt; TSeq &gt; fun)</td></tr>
+<tr class="separator:a63aad17303decfa9dc250c7c7b9b54c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ad232953a10299b7a82d53ad7b64cd0"><td class="memItemLeft" align="right" valign="top"><a id="a1ad232953a10299b7a82d53ad7b64cd0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>add_tool</b> (<a class="el" href="class_tool.html">Tool</a>&lt; TSeq &gt; t, epiworld_double preval)</td></tr>
 <tr class="separator:a1ad232953a10299b7a82d53ad7b64cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae8acdadbe354fd81f789ef267b061f0"><td class="memItemLeft" align="right" valign="top"><a id="aae8acdadbe354fd81f789ef267b061f0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>add_tool_n</b> (<a class="el" href="class_tool.html">Tool</a>&lt; TSeq &gt; t, unsigned int preval)</td></tr>
 <tr class="separator:aae8acdadbe354fd81f789ef267b061f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5aa87536d8ff020442add27b8f48870"><td class="memItemLeft" align="right" valign="top"><a id="af5aa87536d8ff020442add27b8f48870"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add_tool_fun</b> (<a class="el" href="class_tool.html">Tool</a>&lt; TSeq &gt; t, ToolToAgentFun&lt; TSeq &gt; fun)</td></tr>
+<tr class="separator:af5aa87536d8ff020442add27b8f48870"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1a5c8f23f69b61aeb2689d20ebb5f9c"><td class="memItemLeft" align="right" valign="top"><a id="ac1a5c8f23f69b61aeb2689d20ebb5f9c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>add_entity</b> (<a class="el" href="class_entity.html">Entity</a>&lt; TSeq &gt; e, epiworld_double preval)</td></tr>
 <tr class="separator:ac1a5c8f23f69b61aeb2689d20ebb5f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -281,8 +287,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>next</b> ()</td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a825c7fb2498c7693cbf1bfcd0a416ef4">run</a> ()</td></tr>
 <tr class="memdesc:a825c7fb2498c7693cbf1bfcd0a416ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the simulation (after initialization) <br /></td></tr>
 <tr class="separator:a825c7fb2498c7693cbf1bfcd0a416ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5be93bf007d2ca71c2ad3cb4cd84a9eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a5be93bf007d2ca71c2ad3cb4cd84a9eb">run_multiple</a> (unsigned int nexperiments, std::function&lt; void(size_t, <a class="el" href="class_model.html">Model</a>&lt; TSeq &gt; *)&gt; fun=save_run&lt; TSeq &gt;(), bool <a class="el" href="class_model.html#a9591eb76c7cf1ed7e1510342ff602d37">reset</a>=true, bool verbose=true)</td></tr>
-<tr class="separator:a5be93bf007d2ca71c2ad3cb4cd84a9eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1c996c80a2834f6ed010b9c5c9ba6f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#ac1c996c80a2834f6ed010b9c5c9ba6f2">run_multiple</a> (unsigned int nexperiments, std::function&lt; void(size_t, <a class="el" href="class_model.html">Model</a>&lt; TSeq &gt; *)&gt; fun=make_save_run&lt; TSeq &gt;(), bool <a class="el" href="class_model.html#a9591eb76c7cf1ed7e1510342ff602d37">reset</a>=true, bool verbose=true)</td></tr>
+<tr class="separator:ac1c996c80a2834f6ed010b9c5c9ba6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Rewire the network preserving the degree sequence.</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>This implementation assumes an undirected network, thus if {(i,j), (k,l)} -&gt; {(i,l), (k,j)}, the reciprocal is also true, i.e., {(j,i), (l,k)} -&gt; {(j,k), (l,i)}.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -454,10 +460,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>clone_population</b> 
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Setting and accessing parameters from the model</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp61207d51bcc1b661804b11cec5dc845e"></a> <a class="el" href="class_tools.html" title="Set of tools (useful for building iterators)">Tools</a> can incorporate parameters included in the model. Internally, parameters in the tool are stored as pointers to an std::map&lt;&gt; of parameters in the model. Using the <code>unsigned int</code> method directly fetches the parameters in the order these were added to the tool. Accessing parameters via the <code>std::string</code> method involves searching the parameter directly in the std::map&lt;&gt; member of the model (so it is not recommended.)</p>
 <p>The <code>par()</code> function members are aliases for <code>get_param()</code>.</p>
+<p>In the case of the function <code>read_params</code>, users can pass a file listing parameters to be included in the model. Each line in the file should have the following structure:</p>
+<div class="fragment"><div class="line">[name of parameter 1]: [value in double]</div>
+<div class="line">[name of parameter 2]: [value in double]</div>
+<div class="line">...</div>
+</div><!-- fragment --><p>The only condition for parameter names is that these do not include a colon.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">initial_val</td><td></td></tr>
     <tr><td class="paramname">pname</td><td>Name of the parameter to add or to fetch </td></tr>
+    <tr><td class="paramname">fn</td><td>Path to the file containing parameters </td></tr>
   </table>
   </dd>
 </dl>
@@ -589,6 +601,9 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>npar_used</b>
 <tr class="memitem:a412e4addbe3799787dccc43322aa2954"><td class="memItemLeft" align="right" valign="top"><a id="a412e4addbe3799787dccc43322aa2954"></a>
 epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>add_param</b> (epiworld_double initial_val, std::string pname)</td></tr>
 <tr class="separator:a412e4addbe3799787dccc43322aa2954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c77cd0dbf9bc4eadb94bec62ce9279d"><td class="memItemLeft" align="right" valign="top"><a id="a5c77cd0dbf9bc4eadb94bec62ce9279d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>read_params</b> (std::string fn)</td></tr>
+<tr class="separator:a5c77cd0dbf9bc4eadb94bec62ce9279d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96a918aa6fe562d73f3bd9699e6a2bec"><td class="memItemLeft" align="right" valign="top"><a id="a96a918aa6fe562d73f3bd9699e6a2bec"></a>
 epiworld_double&#160;</td><td class="memItemRight" valign="bottom"><b>get_param</b> (unsigned int k)</td></tr>
 <tr class="separator:a96a918aa6fe562d73f3bd9699e6a2bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -683,8 +698,8 @@ template&lt;typename TSeq  = int&gt; </div>
 
 </div>
 </div>
-<a id="a5be93bf007d2ca71c2ad3cb4cd84a9eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5be93bf007d2ca71c2ad3cb4cd84a9eb">&#9670;&nbsp;</a></span>run_multiple()</h2>
+<a id="ac1c996c80a2834f6ed010b9c5c9ba6f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1c996c80a2834f6ed010b9c5c9ba6f2">&#9670;&nbsp;</a></span>run_multiple()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -701,7 +716,7 @@ template&lt;typename TSeq  = int&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::function&lt; void(size_t, <a class="el" href="class_model.html">Model</a>&lt; TSeq &gt; *)&gt;&#160;</td>
-          <td class="paramname"><em>fun</em> = <code>save_run&lt;&#160;TSeq&#160;&gt;()</code>, </td>
+          <td class="paramname"><em>fun</em> = <code>make_save_run&lt;&#160;TSeq&#160;&gt;()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
